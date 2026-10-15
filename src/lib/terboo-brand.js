@@ -6,6 +6,10 @@
 // ═══════════════════════════════════════════════
 
 import config from "../../config.js";
+// رابط الموقع يأتي من باني الروابط المركزي وحده (config.website.publicBaseUrl
+// بعد تحقّق الدومين). لا يُستعمل info.website ولا socialLinks.website لأنهما
+// يشيران إلى قناة واتساب الرسمية ومعناهما مختلف.
+import { websiteUrl as webPlatformUrl } from "../web/url-builder.js";
 
 const FALLBACK = {
   botName: "Bot Terboo",
@@ -114,6 +118,20 @@ function socialLinks() {
   return config.socialLinks || {};
 }
 
+/**
+ * رابط منصة Bot Terboo Web، أو "" حين لا يصلح أن يُرسل زر:
+ * الموقع معطَّل · لا عنوان عام · دومين لم يُتحقَّق منه بعد.
+ * مصدر الحقيقة الوحيد — لا تبنِ رابط الموقع في أي مكان آخر.
+ */
+function websiteUrl() {
+  return webPlatformUrl();
+}
+
+/** هل يوجد رابط موقع صالح يُعرض الآن؟ */
+function hasWebsite() {
+  return Boolean(webPlatformUrl());
+}
+
 /** اسم حزمة الملصقات */
 function stickerPack() {
   return displayName(config.sticker?.packname) || FALLBACK.stickerPack;
@@ -219,6 +237,8 @@ const brand = {
   communityUrl,
   whatsappUrl,
   socialLinks,
+  websiteUrl,
+  hasWebsite,
   stickerPack,
   stickerAuthor,
   channelContext,
@@ -249,6 +269,8 @@ export {
   communityUrl,
   whatsappUrl,
   socialLinks,
+  websiteUrl,
+  hasWebsite,
   stickerPack,
   stickerAuthor,
   channelContext,

@@ -20,6 +20,7 @@ import { listSections, visibleCategories } from "../../src/lib/terboo-menus.js";
 import { sendMenu } from "../../src/lib/terboo-menu-send.js";
 import { WIDE_IMAGE, getAssetBuffer } from "../../src/lib/terboo-asset-manager.js";
 import { quotedOf, resolveTarget } from "../../src/lib/terboo-menu-delivery.js";
+import { button } from "../../src/lib/terboo-interactive-builder.js";
 
 const pluginConfig = {
   name: "menu",
@@ -139,9 +140,16 @@ async function handler(m, { sock, config: botConfig, db, uptime }) {
   //          فـ Native Flow بصورة البوت · الشكل 2: صورة المصغّرة + زر المطوّر · غيرهما: بلا صورة.
   const imageKey = variant === 1 || variant === 2 ? "terboo-banner" : null;
   const image = imageKey ? await menuHeader(imageKey) : null;
-  const extraButtons = variant === 2
-    ? [{ name: "cta_url", buttonParamsJson: JSON.stringify({ display_text: t(lang, "menu.buttonOwner"), url: brand.whatsappUrl(), merchant_url: brand.whatsappUrl() }) }]
-    : [];
+  // أزرار CTA عبر البنّاء المركزي (terboo-interactive-builder) لا ببناء حمولة يدوياً.
+  // زر الموقع يظهر في كل الأشكال **فقط** حين يوجد رابط صالح فعلاً: الموقع
+  // مُشغَّل وله عنوان عام ودومينه متحقَّق منه. بغير ذلك لا يُرسل زر مكسور
+  // ولا يُستعمل رابط قناة واتساب بالخطأ (brand.websiteUrl() يعيد "" وحينها
+  // يُحذف الزر). راجع src/web/url-builder.js — مصدر الحقيقة الوحيد للرابط.
+  const websiteLink = brand.websiteUrl();
+  const extraButtons = [
+    ...(websiteLink ? [button.url(t(lang, "menu.buttonWebsite"), websiteLink)] : []),
+    ...(variant === 2 ? [button.url(t(lang, "menu.buttonOwner"), brand.whatsappUrl())] : []),
+  ];
   const floating = variant === 1
     ? {
       thumbnail: await menuThumbnail("terboo-banner"),
