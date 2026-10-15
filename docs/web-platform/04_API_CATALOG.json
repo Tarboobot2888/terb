@@ -1,0 +1,5358 @@
+{
+  "generatedAt": "2026-10-15T16:49:38.653Z",
+  "gitHead": "bc8edf6d996b15c10d19263da06c00af325265f0",
+  "policy": "hosts and paths only — query strings, tokens and credential values are never recorded",
+  "totals": {
+    "hosts": 378,
+    "secretEnvNames": 62
+  },
+  "secretEnvNames": [
+    "ANTHROPIC_API_KEY",
+    "ANTHROPIC_AUTH_TOKEN",
+    "ANTHROPIC_BASE_URL",
+    "ANTHROPIC_EFFORT",
+    "ANTHROPIC_MAX_TOKENS",
+    "ANTHROPIC_MODEL",
+    "ASSEMBLYAI_KEY",
+    "CLOUDFLARE_ACCOUNT_ID",
+    "CLOUDFLARE_AI_TOKEN",
+    "EMOJI_KITCHEN_API_KEY",
+    "FIXCODE_API_KEY",
+    "FONTCONFIG_FILE",
+    "IMGDROP_COOKIE",
+    "KIMI_SESSION_ID",
+    "MANUS_API_BASE_URL",
+    "MANUS_API_KEY",
+    "MAROBOT_BRIDGE_URL",
+    "MAROBOT_PRIMARY_NUMBER",
+    "MAROBOT_PRIORITY_SUBBOTS",
+    "MAROBOT_WEBHOOK_TOKEN",
+    "MONICA_SESSION_ID",
+    "NEOXR_APIKEY",
+    "NODE_ENV",
+    "NO_PROXY",
+    "NVIDIA_API_KEY",
+    "NVIDIA_API_KEYS",
+    "PATH",
+    "SOUNDCLOUD_CLIENT_ID",
+    "SPOTIFY_DL_API_TOKEN",
+    "SPOTIFY_DL_CONVERT_URL",
+    "SPOTIFY_DL_MAX_POLLS",
+    "SPOTIFY_DL_META_URL",
+    "SPOTIFY_DL_POLL_MS",
+    "SPOTIFY_DL_TASK_URL",
+    "SPOTIFY_DL_TIMEOUT_MS",
+    "TARBOO_PRIMARY_NUMBER",
+    "TARBOO_PRIORITY_SUBBOTS",
+    "TERBOO_AGENT_STATE_DIR",
+    "TERBOO_ARCADE_HTML",
+    "TERBOO_BRIDGE_URL",
+    "TERBOO_BROADCAST_GAP_MS",
+    "TERBOO_BULK_BACKOFF_MS",
+    "TERBOO_BULK_BATCH",
+    "TERBOO_BULK_GAP_MS",
+    "TERBOO_FONTCONFIG",
+    "TERBOO_LID_CACHE_PATH",
+    "TERBOO_MASTER_KEY",
+    "TERBOO_MASTER_KEY_FILE",
+    "TERBOO_OCR_CACHE",
+    "TERBOO_PRIMARY_NUMBER",
+    "TERBOO_PRIORITY_SUBBOTS",
+    "TERBOO_QUIET_LOAD",
+    "TERBOO_RENDER_JOBS",
+    "TERBOO_SSH_HOSTS",
+    "TERBOO_SSH_STORE",
+    "TERBOO_TASKS_PATH",
+    "TERBOO_VPS_STORE",
+    "TERBOO_WEBHOOK_TOKEN",
+    "TIKTOK_SEARCH_API_KEY",
+    "TIKTOK_SEARCH_API_URL",
+    "TIKTOK_SEARCH_FALLBACK_URL",
+    "X"
+  ],
+  "hosts": [
+    {
+      "host": "api.neoxr.eu",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/ai-anime",
+        "/api/an1",
+        "/api/an1-get",
+        "/api/asupan",
+        "/api/attp3",
+        "/api/cai",
+        "/api/cai-search",
+        "/api/dcstalk",
+        "/api/emoimg",
+        "/api/emojito",
+        "/api/film",
+        "/api/fml",
+        "/api/invoice-maker",
+        "/api/linesticker",
+        "/api/meme",
+        "/api/pixeldrain",
+        "/api/pixiv-search",
+        "/api/puisi",
+        "/api/quotesimage",
+        "/api/roblox-search",
+        "/api/sfile",
+        "/api/videy",
+        "/api/whatanime"
+      ],
+      "pathCount": 24,
+      "calledFrom": [
+        "plugins/ai/#U0631#U0633#U0645_#U0627#U0646#U0645#U064a.js",
+        "plugins/ai/#U0634#U062e#U0635#U064a#U0629.js",
+        "plugins/asupan/#U062a#U064a#U0643_#U0639#U0634#U0648#U0627#U0626#U064a.js",
+        "plugins/downloader/#U0628#U0643#U0633#U0644_#U062f#U0631#U064a#U0646.js",
+        "plugins/downloader/#U0633#U0641#U0627#U064a#U0644.js",
+        "plugins/downloader/#U0641#U064a#U062f#U064a.js",
+        "plugins/fun/#U062d#U064a#U0627#U062a#U064a_#U062a#U0639#U064a#U0633#U0629.js",
+        "plugins/fun/#U0634#U0639#U0631.js",
+        "plugins/random/#U0635#U0648#U0631_#U0627#U0642#U062a#U0628#U0627#U0633#U0627#U062a.js",
+        "plugins/random/#U0645#U064a#U0645.js",
+        "plugins/search/#U0627#U0646#U062f#U0631#U0648#U064a#U062f.js",
+        "plugins/search/#U0627#U0646#U0645#U064a_#U0627#U064a.js"
+      ],
+      "callerCount": 24,
+      "buildsQueryString": true
+    },
+    {
+      "host": "api.nexray.eu.cc",
+      "pathsWithoutQuery": [
+        "/ai/dracin-tts",
+        "/ai/mathgpt",
+        "/ai/quillbot",
+        "/ai/simisimi",
+        "/ai/sologo",
+        "/ai/suno",
+        "/canvas/gura",
+        "/canvas/musiccard",
+        "/downloader/v1/ytmp3",
+        "/information/growagarden",
+        "/information/hari-libur",
+        "/maker/balogo",
+        "/maker/fakecall",
+        "/maker/ttp",
+        "/maker/v1/iqc",
+        "/random/anime",
+        "/search/bingimage",
+        "/search/lyrics",
+        "/stalker/freefire",
+        "/stalker/genshin",
+        "/stalker/pinterest"
+      ],
+      "pathCount": 21,
+      "calledFrom": [
+        "plugins/ai/#U0627#U0644#U062d#U0627#U0646.js",
+        "plugins/ai/#U0631#U064a#U0627#U0636#U064a#U0627#U062a.js",
+        "plugins/ai/#U0634#U0639#U0627#U0631.js",
+        "plugins/ai/#U0635#U064a#U0627#U063a#U0629.js",
+        "plugins/ai/simi.js",
+        "plugins/canvas/#U062c#U0648#U0631#U0627.js",
+        "plugins/canvas/#U0634#U0627#U062a_#U0648#U0647#U0645#U064a.js",
+        "plugins/canvas/#U0644#U0648#U063a#U0648.js",
+        "plugins/canvas/#U0645#U0643#U0627#U0644#U0645#U0629.js",
+        "plugins/canvas/imagejpg.js",
+        "plugins/downloader/#U064a#U0648#U062a_#U0635#U0648#U062a.js",
+        "plugins/info/#U0627#U0644#U0639#U0637#U0644.js"
+      ],
+      "callerCount": 21,
+      "buildsQueryString": true
+    },
+    {
+      "host": "example.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/1",
+        "/1,",
+        "/2",
+        "/a",
+        "/code.png",
+        "/file.pdf",
+        "/image.png",
+        "/post/abc",
+        "/tiktok.com",
+        "/track/123",
+        "/v.mp4",
+        "/video.mp4",
+        "/x"
+      ],
+      "pathCount": 14,
+      "calledFrom": [
+        "plugins/tools/#U062c#U0644#U0628_#U0645#U0641#U062a#U0627#U062d.js",
+        "plugins/tools/#U0631#U064a#U062f.js",
+        "plugins/tools/#U0633#U0643#U0631#U064a#U0646.js",
+        "plugins/tools/#U0639#U0632#U0644.js",
+        "plugins/tools/#U0641#U062d#U0635.js",
+        "plugins/tools/cfbypass.js",
+        "src/lib/terboo-auto-ai.js",
+        "src/lib/terboo-message.js",
+        "src/lib/terboo-utils.js",
+        "tests/reddit.test.mjs",
+        "tests/spotify-provider.test.mjs",
+        "tests/terboo-baileys-migration.test.mjs"
+      ],
+      "callerCount": 21,
+      "buildsQueryString": true
+    },
+    {
+      "host": "api.nexray.web.id",
+      "pathsWithoutQuery": [
+        "/",
+        "/maker/bratanime",
+        "/maker/fakelobyff",
+        "/maker/fakelobyml",
+        "/random/ba",
+        "/random/cecan/china",
+        "/random/cecan/egypt",
+        "/random/cecan/indonesia",
+        "/random/cecan/japan",
+        "/random/cecan/korea",
+        "/random/cecan/thailand",
+        "/random/cecan/vietnam",
+        "/random/loli",
+        "/search/applemusic"
+      ],
+      "pathCount": 14,
+      "calledFrom": [
+        "plugins/canvas/#U0641#U0631#U064a_#U0648#U0647#U0645#U064a.js",
+        "plugins/canvas/#U0645#U0644_#U0648#U0647#U0645#U064a.js",
+        "plugins/cecan/#U0641#U062a#U064a#U0627#U062a_#U0625#U0646#U062f#U0648#U0646#U064a#U0633#U064a#U0627.js",
+        "plugins/cecan/#U0641#U062a#U064a#U0627#U062a_#U0627#U0644#U0635#U064a#U0646.js",
+        "plugins/cecan/#U0641#U062a#U064a#U0627#U062a_#U0627#U0644#U064a#U0627#U0628#U0627#U0646.js",
+        "plugins/cecan/#U0641#U062a#U064a#U0627#U062a_#U062a#U0627#U064a#U0644#U0627#U0646#U062f.js",
+        "plugins/cecan/#U0641#U062a#U064a#U0627#U062a_#U0641#U064a#U062a#U0646#U0627#U0645.js",
+        "plugins/cecan/#U0641#U062a#U064a#U0627#U062a_#U0643#U0648#U0631#U064a#U0627.js",
+        "plugins/cecan/#U0641#U062a#U064a#U0627#U062a_#U0645#U0635#U0631.js",
+        "plugins/random/#U0623#U0631#U0634#U064a#U0641_#U0623#U0632#U0631#U0642.js",
+        "plugins/random/#U0644#U0648#U0644#U064a.js",
+        "plugins/search/#U0627#U0628#U0644.js"
+      ],
+      "callerCount": 14,
+      "buildsQueryString": true
+    },
+    {
+      "host": "api.siputzx.my.id",
+      "pathsWithoutQuery": [
+        "/api/d/capcut",
+        "/api/primbon/artinama",
+        "/api/primbon/cek_potensi_penyakit",
+        "/api/primbon/kecocokan_nama_pasangan",
+        "/api/primbon/nomorhoki",
+        "/api/primbon/ramalanjodoh",
+        "/api/primbon/sifat_usaha_bisnis",
+        "/api/primbon/tafsirmimpi",
+        "/api/primbon/zodiak",
+        "/api/s/pinterest",
+        "/api/s/surah"
+      ],
+      "pathCount": 11,
+      "calledFrom": [
+        "plugins/downloader/#U0643#U0627#U0628#U0643#U062a.js",
+        "plugins/primbon/#U0627#U062d#U062a#U0645#U0627#U0644#U064a#U0629_#U0627#U0644#U0623#U0645#U0631#U0627#U0636.js",
+        "plugins/primbon/#U0628#U0631#U062c#U0643.js",
+        "plugins/primbon/#U062a#U0641#U0633#U064a#U0631_#U0627#U0644#U0623#U062d#U0644#U0627#U0645.js",
+        "plugins/primbon/#U062a#U0648#U0627#U0641#U0642_#U0627#U0644#U0623#U0633#U0645#U0627#U0621.js",
+        "plugins/primbon/#U062a#U0648#U0642#U0639#U0627#U062a_#U0627#U0644#U0632#U0648#U0627#U062c.js",
+        "plugins/primbon/#U062d#U0638_#U0627#U0644#U0631#U0642#U0645.js",
+        "plugins/primbon/#U0635#U0641#U0627#U062a_#U0627#U0644#U0639#U0645#U0644_#U0648#U0627#U0644#U062a#U062c#U0627#U0631#U0629.js",
+        "plugins/primbon/#U0645#U0639#U0646#U0649_#U0627#U0644#U0627#U0633#U0645.js",
+        "plugins/religi/#U0625#U0633#U0644#U0627#U0645#U064a.js",
+        "plugins/search/#U0628#U0646#U062a#U0631.js",
+        "plugins/search/#U0635#U0648#U0631#U0647.js"
+      ],
+      "callerCount": 14,
+      "buildsQueryString": true
+    },
+    {
+      "host": "www.tiktok.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/@a/video/1",
+        "/@a/video/7000000000000000001",
+        "/@a/video/7300000000000000000",
+        "/@b/video/7000000000000000002",
+        "/@bench/video/7300000000000${String(seq",
+        "/@bench/video/73000000000000${String(i",
+        "/@bench/video/74000000000000${String(i",
+        "/@scout2015/video/6718335390845095173",
+        "/@terboo/video/7300000000000000001",
+        "/@u/video/7300000000000000001",
+        "/@x/video/1"
+      ],
+      "pathCount": 12,
+      "calledFrom": [
+        "plugins/downloader/#U062a#U064a#U0643_#U0635#U0648#U062a.js",
+        "tests/terboo-ai-core-v4.test.mjs",
+        "tests/terboo-ai-matrix.test.mjs",
+        "tests/terboo-ai-runtime.test.mjs",
+        "tests/terboo-integration-scenario.test.mjs",
+        "tests/terboo-scraper-ai-e2e.test.mjs",
+        "tests/terboo-scraper-registry.test.mjs",
+        "tests/terboo-task-resume.test.mjs",
+        "tests/terboo-tool-registry.test.mjs",
+        "tools/terboo-benchmark-compare.mjs",
+        "tools/terboo-benchmark.mjs",
+        "tools/terboo-capabilities.mjs"
+      ],
+      "callerCount": 13,
+      "buildsQueryString": false
+    },
+    {
+      "host": "whatsapp.com",
+      "pathsWithoutQuery": [
+        "/channel/",
+        "/channel/0029VaAbCdEfGh",
+        "/channel/0029Vb5Vczr7j6g3foFrXM2x",
+        "/channel/0029VbB37bgBfxoAmAlsgE0t",
+        "/channel/0029VbBh4ku8aKvPx1m0l822",
+        "/channel/0029VbCV1ck8fewpdNb2TY2k",
+        "/channel/0029VbDhVJmBVJkxkVqLSI0y",
+        "/channel/xxx",
+        "/channel/xxxxx"
+      ],
+      "pathCount": 9,
+      "calledFrom": [
+        "config.example.js",
+        "config.js",
+        "plugins/group/#U0627#U0639#U0644#U0627#U0646.js",
+        "plugins/main/#U062a#U0633#U062a2.js",
+        "plugins/owner/#U0627#U0639#U0644#U0627#U0646.js",
+        "plugins/tools/#U0645#U0639#U0631#U0641_#U0627#U0644#U0642#U0646#U0627#U0629.js",
+        "plugins/utility/#U062a#U0641#U0642#U062f.js",
+        "src/lib/terboo-brand.js",
+        "src/lib/terboo-builder.js",
+        "src/lib/terboo-exif.js",
+        "src/lib/terboo-reconnect.js",
+        "tests/terboo-baileys-migration.test.mjs"
+      ],
+      "callerCount": 12,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.cuki.biz.id",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/ai/gita",
+        "/api/aicode/caribug",
+        "/api/canvas/ustadz",
+        "/api/downloader/ytmp3",
+        "/api/random/lahelu",
+        "/api/search/mangatoon",
+        "/api/search/mcpe",
+        "/api/search/spotify",
+        "/api/search/tiktokfoto",
+        "/api/tools/sendngl"
+      ],
+      "pathCount": 11,
+      "calledFrom": [
+        "plugins/ai/#U063a#U064a#U062a#U0627.js",
+        "plugins/fun/#U0634#U064a#U062e.js",
+        "plugins/random/#U0644#U0627_#U0647#U064a#U0644#U0648.js",
+        "plugins/search/#U0633#U0628#U0648#U062a#U064a#U0641#U0627#U064a.js",
+        "plugins/search/#U0634#U063a#U0644.js",
+        "plugins/search/#U0635#U0648#U0631_#U062a#U064a#U0643.js",
+        "plugins/search/#U0645#U0627#U0646#U062c#U0627.js",
+        "plugins/search/#U0645#U0627#U064a#U0646#U0643#U0631#U0627#U0641#U062a.js",
+        "plugins/search/playch.js",
+        "plugins/tools/#U0628#U062d#U062b_#U062e#U0637#U0623.js",
+        "plugins/tools/#U0633#U0628#U0627#U0645_#U0646#U062c#U0644.js",
+        "src/lib/terboo-apimanager.js"
+      ],
+      "callerCount": 12,
+      "buildsQueryString": true
+    },
+    {
+      "host": "files.catbox.moe",
+      "pathsWithoutQuery": [
+        "/3hthc5.mp3",
+        "/ejy4ky.jpg",
+        "/ev6s83.mp3",
+        "/ios0gb.jfif",
+        "/kvtkjq.jpg",
+        "/mqhy9t.png",
+        "/nwvkbt.png",
+        "/shglrs.mp4",
+        "/z2bj5s.mp3"
+      ],
+      "pathCount": 9,
+      "calledFrom": [
+        "plugins/canvas/#U0645#U0643#U0627#U0644#U0645#U0629.js",
+        "plugins/convert/imagejpg.js",
+        "plugins/fun/#U0628#U0648#U0633#U0629.js",
+        "plugins/fun/#U062a#U0641#U0648.js",
+        "plugins/fun/#U0632#U0648#U0627#U062c.js",
+        "plugins/fun/#U0634#U062e#U0631#U0647.js",
+        "plugins/group/#U0633#U062d#U0628.js",
+        "plugins/religi/#U0645#U0648#U0627#U0642#U064a#U062a_#U0627#U0644#U0635#U0644#U0627#U0629.js",
+        "plugins/tools/#U0627#U062a#U0635#U0627#U0644.js",
+        "plugins/tools/#U0627#U0642#U062a#U0628#U0627#U0633_#U0648#U0627#U062a#U0633#U0627#U0628.js",
+        "src/lib/terboo-sholat-scheduler.js"
+      ],
+      "callerCount": 11,
+      "buildsQueryString": false
+    },
+    {
+      "host": "chat.whatsapp.com",
+      "pathsWithoutQuery": [
+        "/:var",
+        "/xxx",
+        "/xxx*"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/group/#U0627#U0636#U0641.js",
+        "plugins/group/#U0631#U0627#U0628#U0637_#U0627#U0644#U0645#U062c#U0645#U0648#U0639#U0629.js",
+        "plugins/owner/#U0627#U062e#U0631#U062c.js",
+        "plugins/owner/#U0627#U0636#U0641_#U0627#U064a#U062c#U0627#U0631.js",
+        "plugins/owner/#U0627#U0646#U0634#U0627#U0621_#U0645#U062c#U0645#U0648#U0639#U0629.js",
+        "plugins/owner/#U0627#U0646#U0636#U0645#U0627#U0645.js",
+        "plugins/owner/#U062a#U062c#U062f#U064a#U062f_#U0627#U0644#U0625#U064a#U062c#U0627#U0631.js",
+        "plugins/owner/#U062d#U0630#U0641_#U0625#U064a#U062c#U0627#U0631.js",
+        "plugins/owner/#U0647#U0630#U0647_#U0627#U0644#U0645#U062c#U0645#U0648#U0639#U0629_#U0641#U0642#U0637.js",
+        "plugins/utility/#U062a#U0641#U0642#U062f.js",
+        "src/lib/terboo-group-actions.js"
+      ],
+      "callerCount": 11,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.instagram.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/:var/:var/",
+        "/p/C0sXKbKy2yF/",
+        "/reel/Cxyz123/",
+        "/reel/abc/",
+        "/reel/xxx/",
+        "/tarboo455"
+      ],
+      "pathCount": 7,
+      "calledFrom": [
+        "config.example.js",
+        "config.js",
+        "plugins/downloader/#U0627#U0646#U0633#U062a#U0627.js",
+        "plugins/downloader/#U062a#U062d#U0645#U064a#U0644.js",
+        "plugins/downloader/#U0631#U064a#U0644.js",
+        "tests/terboo-brand-lock.test.mjs",
+        "tests/terboo-scraper-ai-e2e.test.mjs",
+        "tests/terboo-scraper-registry.test.mjs",
+        "tests/terboo-scrapers-each.test.mjs",
+        "tools/terboo-scraper-live.mjs"
+      ],
+      "callerCount": 10,
+      "buildsQueryString": false
+    },
+    {
+      "host": "catbox.moe",
+      "pathsWithoutQuery": [
+        "/user/api.php"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/canvas/#U062c#U0648#U0631#U0627.js",
+        "plugins/canvas/imagejpg.js",
+        "plugins/convert/imagejpg.js",
+        "plugins/store/#U0625#U0636#U0627#U0641#U0629_#U0642#U0627#U0626#U0645#U0629.js",
+        "plugins/store/#U0625#U0636#U0627#U0641#U0629_#U0645#U0646#U062a#U062c.js",
+        "plugins/store/#U062a#U0639#U062f#U064a#U0644_#U0645#U062a#U062c#U0631.js",
+        "plugins/store/#U062a#U0639#U062f#U064a#U0644_#U0645#U0646#U062a#U062c.js",
+        "plugins/tools/#U0639#U0632#U0644.js",
+        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js",
+        "src/lib/terboo-uploader.js"
+      ],
+      "callerCount": 10,
+      "buildsQueryString": false
+    },
+    {
+      "host": "github.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/:var/:var/archive/refs/heads/:var.zip",
+        "/Tarboobot2888",
+        "/user/repo"
+      ],
+      "pathCount": 4,
+      "calledFrom": [
+        "config.example.js",
+        "config.js",
+        "plugins/downloader/#U062a#U062d#U0645#U064a#U0644_#U063a#U064a#U062a.js",
+        "plugins/group/#U062a#U0631#U062d#U064a#U0628.js",
+        "plugins/main/#U062a#U0633#U062a2.js",
+        "plugins/tools/#U0644#U0642#U0637#U0629_#U0634#U0627#U0634#U0629.js",
+        "src/handler.js",
+        "src/lib/terboo-serialize.js",
+        "tests/terboo-brand-lock.test.mjs"
+      ],
+      "callerCount": 9,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api-faa.my.id",
+      "pathsWithoutQuery": [
+        "/",
+        "/faa/bratvid",
+        "/faa/nano-banana",
+        "/faa/tofigura",
+        "/faa/toghibli",
+        "/faa/tohijab",
+        "/faa/tojapanese",
+        "/faa/tomekah",
+        "/faa/tomoai"
+      ],
+      "pathCount": 9,
+      "calledFrom": [
+        "plugins/ai/#U062a#U0645#U062b#U0627#U0644.js",
+        "plugins/ai/#U062d#U062c#U0627#U0628.js",
+        "plugins/ai/#U063a#U064a#U0628#U0644#U064a.js",
+        "plugins/ai/#U0645#U062c#U0633#U0645.js",
+        "plugins/ai/#U0645#U0643#U0629.js",
+        "plugins/ai/#U064a#U0627#U0628#U0627#U0646#U064a.js",
+        "plugins/sticker/bratvid2.js",
+        "src/lib/terboo-apimanager.js",
+        "src/scraper/seaart.js"
+      ],
+      "callerCount": 9,
+      "buildsQueryString": true
+    },
+    {
+      "host": "engez.a7a.online",
+      "pathsWithoutQuery": [
+        "/api/v1",
+        "/api/v1/ai/ai/simsimi",
+        "/api/v1/download/all",
+        "/api/v1/reading/sunovels",
+        "/api/v1/tools/checknum",
+        "/api/v1/tools/elevenlab",
+        "/api/v1/tools/img2prompt"
+      ],
+      "pathCount": 7,
+      "calledFrom": [
+        "plugins/ai/#U062a#U0648#U0644#U064a#U062f.js",
+        "plugins/ai/#U0633#U0645#U0633#U0645#U064a.js",
+        "plugins/ai/#U0648#U0635#U0641.js",
+        "plugins/downloader/#U0627#U0646#U0633#U062a#U0627.js",
+        "plugins/downloader/#U062a#U062d#U0645#U064a#U0644.js",
+        "plugins/downloader/#U0631#U0648#U0627#U064a#U0629.js",
+        "plugins/fun/#U0633#U0645#U0633#U0645#U064a2.js",
+        "plugins/tools/#U0627#U0646#U0637#U0642.js",
+        "plugins/tools/#U062a#U0634#U064a#U0643.js"
+      ],
+      "callerCount": 9,
+      "buildsQueryString": true
+    },
+    {
+      "host": "firefly.maiku.my.id",
+      "pathsWithoutQuery": [
+        "/api/crikk",
+        "/api/deepaichat",
+        "/api/pinterestvideo",
+        "/api/stalk-github",
+        "/api/stalk-instagram",
+        "/api/stalk-npm",
+        "/api/ytdown"
+      ],
+      "pathCount": 7,
+      "calledFrom": [
+        "plugins/ai/#U062c#U064a#U0628#U064a#U062a#U064a4.js",
+        "plugins/downloader/#U064a#U0648#U062a_#U0641#U064a#U062f#U064a#U0648.js",
+        "plugins/group/autoai.js",
+        "plugins/search/#U0628#U0646#U062a#U0631#U0641#U064a#U062f.js",
+        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0627#U0646#U0633#U062a#U063a#U0631#U0627#U0645.js",
+        "plugins/stalker/#U062a#U062c#U0633#U0633_#U062c#U064a#U062b#U0628.js",
+        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0646#U0628#U064a#U0625#U0645.js",
+        "src/lib/terboo-auto-ai.js"
+      ],
+      "callerCount": 8,
+      "buildsQueryString": true
+    },
+    {
+      "host": "vt.tiktok.com",
+      "pathsWithoutQuery": [
+        "/ZS1/",
+        "/ZS123/",
+        "/ZSabc123/",
+        "/xxx"
+      ],
+      "pathCount": 4,
+      "calledFrom": [
+        "plugins/downloader/#U062a#U064a#U0643_#U0635#U0648#U062a.js",
+        "plugins/downloader/#U062a#U064a#U0643_#U0641#U064a#U062f#U064a#U0648.js",
+        "tests/terboo-performance.test.mjs",
+        "tests/terboo-scraper-ai-e2e.test.mjs",
+        "tests/terboo-scraper-registry.test.mjs",
+        "tests/terboo-scrapers-each.test.mjs",
+        "tests/terboo-tool-registry.test.mjs",
+        "tools/terboo-tool-registry.mjs"
+      ],
+      "callerCount": 8,
+      "buildsQueryString": false
+    },
+    {
+      "host": "open.spotify.com",
+      "pathsWithoutQuery": [
+        "/track/1",
+        "/track/1XabvPK1VQEH4YqzDovs46",
+        "/track/4cOdK2wGLETKBW3PvgPWqT",
+        "/track/7qiZfU4dY1lWllzX7mPBI3",
+        "/track/:var",
+        "/track/abc",
+        "/track/xxx"
+      ],
+      "pathCount": 7,
+      "calledFrom": [
+        "plugins/downloader/#U0633#U0628#U0648#U062a#U064a#U0641#U0627#U064a_#U062a#U062d#U0645#U064a#U0644.js",
+        "plugins/tools/#U062a#U0639#U0631#U064a#U0641_#U0627#U0644#U0645#U0648#U0633#U064a#U0642#U0649.js",
+        "tests/spotify-provider.test.mjs",
+        "tests/terboo-scraper-ai-e2e.test.mjs",
+        "tests/terboo-scraper-registry.test.mjs",
+        "tests/terboo-scrapers-each.test.mjs",
+        "tests/terboo-tool-registry.test.mjs",
+        "tools/terboo-scraper-live.mjs"
+      ],
+      "callerCount": 8,
+      "buildsQueryString": false
+    },
+    {
+      "host": "virix-api.vercel.app",
+      "pathsWithoutQuery": [
+        "/api/akonami/download",
+        "/api/aljazeera/news",
+        "/api/pin4video/search",
+        "/api/stickercloud/search",
+        "/api/translate/translate",
+        "/api/twibbonize/search",
+        "/api/weather/weather"
+      ],
+      "pathCount": 7,
+      "calledFrom": [
+        "plugins/downloader/#U0644#U0639#U0628#U0629.js",
+        "plugins/info/#U0627#U0644#U062c#U0632#U064a#U0631#U0629.js",
+        "plugins/info/#U0637#U0642#U0633.js",
+        "plugins/search/#U0627#U0637#U0627#U0631.js",
+        "plugins/search/#U0628#U0646#U062a#U0631_#U0641#U064a#U062f.js",
+        "plugins/sticker/#U0645#U0644#U0635#U0642#U0627#U062a3.js",
+        "plugins/tools/#U062a#U0631#U062c#U0645.js",
+        "src/handler.js"
+      ],
+      "callerCount": 8,
+      "buildsQueryString": true
+    },
+    {
+      "host": "x.com",
+      "pathsWithoutQuery": [
+        "/NASA/status/1669040578069331968",
+        "/a",
+        "/u/status/1",
+        "/u/status/1790000000000000000",
+        "/user/status/1",
+        "/user/status/123"
+      ],
+      "pathCount": 6,
+      "calledFrom": [
+        "plugins/downloader/#U062a#U0648#U064a#U062a#U0631.js",
+        "tests/terboo-ai-core.test.mjs",
+        "tests/terboo-scraper-ai-e2e.test.mjs",
+        "tests/terboo-scraper-registry.test.mjs",
+        "tests/terboo-scrapers-each.test.mjs",
+        "tools/terboo-scraper-live.mjs"
+      ],
+      "callerCount": 6,
+      "buildsQueryString": false
+    },
+    {
+      "host": "c.termai.cc",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/upload"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/search/#U0627#U0646#U0645#U064a_#U0627#U064a.js",
+        "plugins/sticker/smeme.js",
+        "plugins/tools/#U062a#U0639#U0631#U064a#U0641_#U0627#U0644#U0645#U0648#U0633#U064a#U0642#U0649.js",
+        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js",
+        "src/lib/terboo-tmpfiles.js",
+        "src/lib/terboo-uploader.js"
+      ],
+      "callerCount": 6,
+      "buildsQueryString": true
+    },
+    {
+      "host": "youtu.be",
+      "pathsWithoutQuery": [
+        "/...",
+        "/a",
+        "/abc",
+        "/dQw4w9WgXcQ",
+        "/x",
+        "/xxxxx",
+        "/zzz"
+      ],
+      "pathCount": 7,
+      "calledFrom": [
+        "plugins/search/#U062a#U0641#U0627#U0635#U064a#U0644.js",
+        "plugins/tools/#U0646#U0633#U062e_#U0641#U064a#U062f#U064a#U0648.js",
+        "tests/terboo-menu-delivery.test.mjs",
+        "tests/terboo-scraper-ai-e2e.test.mjs",
+        "tests/terboo-scraper-registry.test.mjs",
+        "tests/terboo-scrapers-each.test.mjs"
+      ],
+      "callerCount": 6,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.w3.org",
+      "pathsWithoutQuery": [
+        "/1999/xlink",
+        "/2000/svg"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "src/lib/terboo-brat.js",
+        "src/lib/terboo-fake-card.js",
+        "src/lib/terboo-quote.js",
+        "tests/terboo-multimodal.test.mjs",
+        "tests/terboo-typography.test.mjs",
+        "tools/terboo-brand-assets.mjs"
+      ],
+      "callerCount": 6,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.reddit.com",
+      "pathsWithoutQuery": [
+        "/comments/:var.json",
+        "/r/a/comments/b/",
+        "/r/aww/comments/90bu6w/heat_index_was_110_degrees_so_we_offered_him_a/",
+        "/r/pics/comments/abc/t/",
+        "/r/test/comments/abc123/example/"
+      ],
+      "pathCount": 5,
+      "calledFrom": [
+        "src/scraper/reddit.js",
+        "tests/reddit.test.mjs",
+        "tests/terboo-scraper-ai-e2e.test.mjs",
+        "tests/terboo-scraper-registry.test.mjs",
+        "tests/terboo-scrapers-each.test.mjs",
+        "tools/terboo-scraper-live.mjs"
+      ],
+      "callerCount": 6,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.google.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/bot.html",
+        "/search"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/ai/#U0645#U0648#U0646#U064a#U0643#U0627.js",
+        "plugins/downloader/#U062a#U062d#U0645#U064a#U0644_#U0627#U0646#U0645#U064a.js",
+        "plugins/downloader/#U0631#U064a#U0644.js",
+        "plugins/search/#U0623#U0646#U0645#U064a.js",
+        "plugins/tools/#U0631#U064a#U062f.js"
+      ],
+      "callerCount": 5,
+      "buildsQueryString": true
+    },
+    {
+      "host": "raw.githubusercontent.com",
+      "pathsWithoutQuery": [
+        "/Ditzzx-vibecoder/Assets/main/Brat/Gojo.jpeg",
+        "/Ditzzx-vibecoder/Assets/main/Brat/Vermile.jpg",
+        "/Rez4-3yz/Music-rd/master/music/music:var.mp3",
+        "/aisyah-rest/mangkane/main/Mangkanenya/:var.mp3",
+        "/hyuura/Rest-Sound/main/HyuuraKane/:var.mp3",
+        "/uploader762/dat3/main/uploads/9c18e0-1772932032348.jpg",
+        "/uploader762/dat3/main/uploads/d0f081-1772929197100.png",
+        "/user/repo/main/test.js"
+      ],
+      "pathCount": 8,
+      "calledFrom": [
+        "plugins/canvas/#U0645#U062d#U0641#U0638#U0629.js",
+        "plugins/canvas/bratlocal.js",
+        "plugins/media/#U0645#U0648#U0633#U064a#U0642#U0649.js",
+        "plugins/media/#U0645#U0648#U0633#U064a#U0642#U06492.js",
+        "plugins/owner/install.js"
+      ],
+      "callerCount": 5,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.facebook.com",
+      "pathsWithoutQuery": [
+        "/:var",
+        "/externalhit_uatext.php",
+        "/watch"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/downloader/#U0631#U064a#U0644.js",
+        "plugins/downloader/#U0641#U064a#U0633#U0628#U0648#U0643.js",
+        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0641#U064a#U0633#U0628#U0648#U0643.js",
+        "tests/terboo-scraper-ai-e2e.test.mjs",
+        "tests/terboo-scraper-registry.test.mjs"
+      ],
+      "callerCount": 5,
+      "buildsQueryString": true
+    },
+    {
+      "host": "www.mediafire.com",
+      "pathsWithoutQuery": [
+        "/file/7yhc7e5wk2m9m6k/sample.txt/file",
+        "/file/abc/f.zip/file",
+        "/file/abc/file.zip",
+        "/file/x",
+        "/file/xxx"
+      ],
+      "pathCount": 5,
+      "calledFrom": [
+        "plugins/downloader/#U0645#U064a#U062f#U064a#U0627_#U0641#U0627#U064a#U0631.js",
+        "tests/terboo-scraper-ai-e2e.test.mjs",
+        "tests/terboo-scraper-registry.test.mjs",
+        "tests/terboo-scrapers-each.test.mjs",
+        "tools/terboo-scraper-live.mjs"
+      ],
+      "callerCount": 5,
+      "buildsQueryString": false
+    },
+    {
+      "host": "youtube.com",
+      "pathsWithoutQuery": [
+        "/@:var",
+        "/watch"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/downloader/#U064a#U0648#U062a_#U0635#U0648#U062a.js",
+        "plugins/downloader/#U064a#U0648#U062a_#U0641#U064a#U062f#U064a#U0648.js",
+        "plugins/stalker/#U062a#U062c#U0633#U0633_#U064a#U0648#U062a#U064a#U0648#U0628.js",
+        "plugins/tools/#U062a#U0639#U0631#U064a#U0641_#U0627#U0644#U0645#U0648#U0633#U064a#U0642#U0649.js",
+        "plugins/tools/#U0646#U0635_#U0641#U064a#U062f#U064a#U0648.js"
+      ],
+      "callerCount": 5,
+      "buildsQueryString": true
+    },
+    {
+      "host": "translate.googleapis.com",
+      "pathsWithoutQuery": [
+        "/translate_a/single",
+        "/translate_tts"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/ai/#U062a#U062e#U064a#U06442.js",
+        "plugins/search/#U0628#U062f#U064a.js",
+        "plugins/search/#U0628#U0646#U062a#U0631#U064a#U0633#U062a.js",
+        "plugins/tools/#U0635#U0648#U062a.js"
+      ],
+      "callerCount": 4,
+      "buildsQueryString": true
+    },
+    {
+      "host": "johan-vex-apis.vercel.app",
+      "pathsWithoutQuery": [
+        "/api/ai/ai-image",
+        "/api/search/apk",
+        "/api/tools/nanobanan"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/ai/#U062a#U0648#U0644#U064a#U062f2.js",
+        "plugins/ai/#U0646#U0627#U0646#U0648#U0628#U0646#U0627#U0646#U06273.js",
+        "plugins/downloader/#U062a#U062d#U0645#U064a#U0644_#U062a#U0637#U0628#U064a#U0642.js",
+        "plugins/search/#U062a#U0637#U0628#U064a#U0642.js"
+      ],
+      "callerCount": 4,
+      "buildsQueryString": false
+    },
+    {
+      "host": "imgupscaler.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/legacy/status",
+        "/api/legacy/upload"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/ai/#U0631#U0641#U0639_#U062c#U0648#U062f#U0629.js",
+        "plugins/tools/#U062a#U062d#U0633#U064a#U0646_#U062c#U0648#U062f#U0629.js",
+        "plugins/tools/#U0631#U0641#U0639_#U062c#U0648#U062f#U06293.js",
+        "src/scraper/imglarger.js"
+      ],
+      "callerCount": 4,
+      "buildsQueryString": false
+    },
+    {
+      "host": "telegra.ph",
+      "pathsWithoutQuery": [
+        "/",
+        "/file/1ecdb5a0aee62ef17d7fc.jpg",
+        "/file/70e8de9b1879568954f09.jpg",
+        "/upload"
+      ],
+      "pathCount": 4,
+      "calledFrom": [
+        "plugins/convert/imagejpg.js",
+        "plugins/owner/#U0633#U0631#U0642#U0629_#U0627#U0644#U0635#U0648#U0631#U0629.js",
+        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0648#U0627#U062a#U0633#U0627#U0628.js",
+        "plugins/sticker/smeme.js"
+      ],
+      "callerCount": 4,
+      "buildsQueryString": false
+    },
+    {
+      "host": "1024terabox.com",
+      "pathsWithoutQuery": [
+        "/s/1",
+        "/s/1abc",
+        "/s/1k2Qxwebz3yI09kubXBf2xA",
+        "/s/1sample",
+        "/s/xxx"
+      ],
+      "pathCount": 5,
+      "calledFrom": [
+        "plugins/downloader/#U062a#U064a#U0631#U0627#U0628#U0648#U0643#U0633.js",
+        "tests/terboo-scraper-registry.test.mjs",
+        "tests/terboo-scrapers-each.test.mjs",
+        "tools/terboo-scraper-live.mjs"
+      ],
+      "callerCount": 4,
+      "buildsQueryString": false
+    },
+    {
+      "host": "i.imgur.com",
+      "pathsWithoutQuery": [
+        "/TuItj4L.png"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/group/#U0627#U0639#U0644#U0627#U0646.js",
+        "plugins/owner/#U0627#U0639#U0644#U0627#U0646.js",
+        "plugins/user/profile.js",
+        "src/lib/terboo-welcome-card.js"
+      ],
+      "callerCount": 4,
+      "buildsQueryString": false
+    },
+    {
+      "host": "google.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0635#U0646#U0639_#U062a#U0637#U0628#U064a#U0642.js",
+        "plugins/tools/#U0644#U0642#U0637#U0629_#U0634#U0627#U0634#U0629.js",
+        "src/lib/terboo-serialize.js",
+        "src/lib/terboo-utils.js"
+      ],
+      "callerCount": 4,
+      "buildsQueryString": false
+    },
+    {
+      "host": "mmg.whatsapp.net",
+      "pathsWithoutQuery": [
+        "/",
+        "/a",
+        "/d",
+        "/i",
+        "/s",
+        "/v",
+        "/v/t62/:var-:var",
+        "/x"
+      ],
+      "pathCount": 8,
+      "calledFrom": [
+        "plugins/tools/#U0645#U0639#U0631#U0641_#U0627#U0644#U0642#U0646#U0627#U0629.js",
+        "tests/terboo-baileys-migration.test.mjs",
+        "tests/terboo-rich-response.test.mjs",
+        "tools/terboo-wa-capabilities.mjs"
+      ],
+      "callerCount": 4,
+      "buildsQueryString": false
+    },
+    {
+      "host": "imgdrop.web.id",
+      "pathsWithoutQuery": [
+        "/",
+        "/KodpV.webp"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "config.example.js",
+        "config.js",
+        "src/scraper/imgdrop.js"
+      ],
+      "callerCount": 3,
+      "buildsQueryString": false
+    },
+    {
+      "host": "wa.me",
+      "pathsWithoutQuery": [
+        "/${ownerNumber(",
+        "/201225655220",
+        "/628xxx"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "config.js",
+        "plugins/tools/qr.js",
+        "src/lib/terboo-brand.js"
+      ],
+      "callerCount": 3,
+      "buildsQueryString": false
+    },
+    {
+      "host": "pin.it",
+      "pathsWithoutQuery": [
+        "/abc",
+        "/xxx",
+        "/xyz"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/downloader/#U062a#U062d#U0645#U064a#U0644_#U0628#U0646#U062a#U0631.js",
+        "tests/terboo-scraper-registry.test.mjs",
+        "tests/terboo-scrapers-each.test.mjs"
+      ],
+      "callerCount": 3,
+      "buildsQueryString": false
+    },
+    {
+      "host": "v.douyin.com",
+      "pathsWithoutQuery": [
+        "/abc/",
+        "/xxx",
+        "/xxx*"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/downloader/#U062f#U0648#U064a#U064a#U0646.js",
+        "tests/terboo-scraper-registry.test.mjs",
+        "tests/terboo-scrapers-each.test.mjs"
+      ],
+      "callerCount": 3,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.azbry.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/downloader/douyin",
+        "/api/search/ttsearch"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/downloader/#U062f#U0648#U064a#U064a#U0646.js",
+        "src/lib/terboo-apimanager.js",
+        "src/scraper/tiktoksearch.js"
+      ],
+      "callerCount": 3,
+      "buildsQueryString": true
+    },
+    {
+      "host": "www.dailymotion.com",
+      "pathsWithoutQuery": [
+        "/video/x8abcd",
+        "/video/x8j2p5y",
+        "/video/xxx",
+        "/video/xxx*"
+      ],
+      "pathCount": 4,
+      "calledFrom": [
+        "plugins/downloader/#U062f#U064a#U0644#U064a#U0645#U0648#U0634#U0646.js",
+        "tests/terboo-scrapers-each.test.mjs",
+        "tools/terboo-scraper-live.mjs"
+      ],
+      "callerCount": 3,
+      "buildsQueryString": false
+    },
+    {
+      "host": "soundcloud.com",
+      "pathsWithoutQuery": [
+        "/a/t",
+        "/forss/flickermood",
+        "/xxx"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/downloader/#U0633#U0627#U0648#U0646#U062f_#U062a#U062d#U0645#U064a#U0644.js",
+        "tests/terboo-scrapers-each.test.mjs",
+        "tools/terboo-scraper-live.mjs"
+      ],
+      "callerCount": 3,
+      "buildsQueryString": false
+    },
+    {
+      "host": "sfile.mobi",
+      "pathsWithoutQuery": [
+        "/abc",
+        "/sample",
+        "/xxx",
+        "/xxxxx"
+      ],
+      "pathCount": 4,
+      "calledFrom": [
+        "plugins/downloader/#U0633#U0641#U0627#U064a#U0644.js",
+        "tests/terboo-scrapers-each.test.mjs",
+        "tools/terboo-scraper-live.mjs"
+      ],
+      "callerCount": 3,
+      "buildsQueryString": false
+    },
+    {
+      "host": "likee.video",
+      "pathsWithoutQuery": [
+        "/@likee/video/7000000000000000000",
+        "/@u/video/1",
+        "/@xxx"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/downloader/#U0644#U0627#U064a#U0643#U064a.js",
+        "tests/terboo-scrapers-each.test.mjs",
+        "tools/terboo-scraper-live.mjs"
+      ],
+      "callerCount": 3,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.example.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/data"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/owner/#U0637#U0644#U0628.js",
+        "plugins/owner/api.js",
+        "src/lib/terboo-utils.js"
+      ],
+      "callerCount": 3,
+      "buildsQueryString": false
+    },
+    {
+      "host": "uguu.se",
+      "pathsWithoutQuery": [
+        "/",
+        "/upload.php"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js",
+        "src/lib/terboo-uploader.js",
+        "src/scraper/img2img.js"
+      ],
+      "callerCount": 3,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.groq.com",
+      "pathsWithoutQuery": [
+        "/openai/v1/audio/transcriptions"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0646#U0633#U062e_#U0635#U0648#U062a#U064a.js",
+        "src/handler.js",
+        "src/lib/terboo-multimodal.js"
+      ],
+      "callerCount": 3,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.yuulabs.web.id",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/ai/flux-img",
+        "/api/downloader/tiktok"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "src/lib/terboo-apimanager.js",
+        "src/scraper/seaart.js",
+        "src/scraper/tiktok.js"
+      ],
+      "callerCount": 3,
+      "buildsQueryString": true
+    },
+    {
+      "host": "fgsi.dpdns.org",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/ai/image/img2img",
+        "/api/tools/enchantVideo"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "src/lib/terboo-apimanager.js",
+        "src/scraper/hdvid.js",
+        "src/scraper/img2img.js"
+      ],
+      "callerCount": 3,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.overchat.ai",
+      "pathsWithoutQuery": [
+        "/v1/chat/completions"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/claudehaiku.js",
+        "src/scraper/gpt5.js",
+        "src/scraper/qwen3.js"
+      ],
+      "callerCount": 3,
+      "buildsQueryString": false
+    },
+    {
+      "host": "overchat.ai",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/claudehaiku.js",
+        "src/scraper/gpt5.js",
+        "src/scraper/qwen3.js"
+      ],
+      "callerCount": 3,
+      "buildsQueryString": false
+    },
+    {
+      "host": "x",
+      "pathsWithoutQuery": [
+        "/",
+        "/v.mp4"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "tests/terboo-channel-forward.test.mjs",
+        "tests/terboo-http-client.test.mjs",
+        "tests/terboo-scraper-ai-e2e.test.mjs"
+      ],
+      "callerCount": 3,
+      "buildsQueryString": false
+    },
+    {
+      "host": "mmg.example",
+      "pathsWithoutQuery": [
+        "/:var",
+        "/x"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "tests/terboo-menu-delivery.test.mjs",
+        "tests/terboo-transport.test.mjs",
+        "tests/terboo-ui-intents.test.mjs"
+      ],
+      "callerCount": 3,
+      "buildsQueryString": false
+    },
+    {
+      "host": "app.unlimitedai.chat",
+      "pathsWithoutQuery": [
+        "/",
+        "/${options.locale",
+        "/api/chat"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/ai/#U0627#U0644#U062a#U0645#U064a#U0632.js",
+        "src/scraper/unlimitedai.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "image.pollinations.ai",
+      "pathsWithoutQuery": [
+        "/prompt/${encodeURIComponent(fullPrompt",
+        "/prompt/${encodeURIComponent(prompt"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/ai/#U062a#U062e#U064a#U06442.js",
+        "plugins/ai/#U0641#U0646.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.pixhost.to",
+      "pathsWithoutQuery": [
+        "/images"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/#U062d#U062c#U0627#U0628.js",
+        "src/lib/terboo-uploader.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "imgbb.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/json"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/ai/#U0646#U0627#U0646#U0648#U0628#U0646#U0627#U0646#U06273.js",
+        "plugins/ai/#U0648#U0635#U0641.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "notegpt.io",
+      "pathsWithoutQuery": [
+        "/",
+        "/ai-chat",
+        "/api/v2/chat/stream"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/ai/#U0646#U0648#U062a.js",
+        "src/scraper/deepseek.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "t.me",
+      "pathsWithoutQuery": [
+        "/bot"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/convert/#U0645#U0644#U0635#U0642_#U0630#U0643#U064a.js",
+        "plugins/sticker/#U0627#U0641#U062a#U0627#U0631.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "pixeldrain.com",
+      "pathsWithoutQuery": [
+        "/u/:var",
+        "/u/xxxxx"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/downloader/#U0628#U0643#U0633#U0644_#U062f#U0631#U064a#U0646.js",
+        "src/lib/terboo-auto-anime.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "canime.web.id",
+      "pathsWithoutQuery": [
+        "/",
+        "/api.php"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/downloader/#U062a#U062d#U0645#U064a#U0644_#U0627#U0646#U0645#U064a.js",
+        "plugins/search/#U0623#U0646#U0645#U064a.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "flowvideoplayer.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/#U062a#U064a#U0631#U0627#U0628#U0648#U0643#U0633.js",
+        "src/scraper/terabox.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "html.duckduckgo.com",
+      "pathsWithoutQuery": [
+        "/html/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/#U0631#U064a#U0644.js",
+        "plugins/search/#U062c#U0648#U062c#U0644.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": true
+    },
+    {
+      "host": "videy.co",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/upload",
+        "/v"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/downloader/#U0641#U064a#U062f#U064a.js",
+        "src/scraper/videy.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": true
+    },
+    {
+      "host": "instagram.com",
+      "pathsWithoutQuery": [
+        "/:var",
+        "/p/xxx"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/downloader/aio.js",
+        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0627#U0646#U0633#U062a#U063a#U0631#U0627#U0645.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "en.ephoto360.com",
+      "pathsWithoutQuery": [
+        "/1917-style-text-effect-523.html",
+        "/3d-underwater-text-effect-online-682.html",
+        "/advanced-glow-effects-74.html",
+        "/angel-wing-effect-329.html",
+        "/create-3d-gradient-text-effect-online-600.html",
+        "/create-a-blackpink-neon-logo-text-effect-online-710.html",
+        "/create-a-cartoon-style-graffiti-text-effect-online-668.html",
+        "/create-a-cloud-text-effect-in-the-sky-618.html",
+        "/create-a-cover-image-for-the-game-among-us-online-762.html",
+        "/create-a-luxury-gold-text-effect-online-594.html",
+        "/create-a-watercolor-text-effect-online-655.html",
+        "/create-blackpink-logo-online-free-607.html",
+        "/create-colorful-neon-light-text-effects-online-797.html",
+        "/create-digital-glitch-text-effects-online-767.html",
+        "/create-eraser-deleting-text-effect-online-717.html",
+        "/create-galaxy-style-free-name-logo-438.html",
+        "/create-galaxy-wallpaper-mobile-online-528.html",
+        "/create-glossy-silver-3d-text-effect-online-802.html",
+        "/create-glowing-text-effects-online-706.html",
+        "/create-impressive-neon-glitch-text-effects-online-768.html",
+        "/create-multicolored-neon-light-signatures-591.html",
+        "/create-online-3d-comic-style-text-effects-817.html",
+        "/create-pixel-glitch-text-effect-online-769.html",
+        "/create-typography-text-effect-on-pavement-online-774.html",
+        "/create-unique-word-green-light-63.html"
+      ],
+      "pathCount": 50,
+      "calledFrom": [
+        "plugins/ephoto/ephoto.js",
+        "plugins/photo/#U0633#U0644#U0641#U064a#U06313d.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "super-fire.vercel.app",
+      "pathsWithoutQuery": [
+        "/api/gmail",
+        "/api/mybirth"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/fun/#U0623#U062d#U062f#U0627#U062b.js",
+        "plugins/tools/#U062c#U064a#U0645#U064a#U0644.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": true
+    },
+    {
+      "host": "code.rifkyshre.biz.id",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/info/#U0645#U0631#U0627#U0642#U0628#U0629_#U0627#U0644#U0645#U0632#U0631#U0639#U0629.js",
+        "plugins/religi/#U0642#U0631#U0622#U0646#U064a.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "...",
+      "pathsWithoutQuery": [
+        "/",
+        "/test.js"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/owner/install.js",
+        "src/lib/terboo-auto-ai.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.deline.web.id",
+      "pathsWithoutQuery": [
+        "/maker/cewekbrat",
+        "/random/ppcouple"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/random/#U0635#U0648#U0631_#U0632#U0648#U062c#U064a#U0646.js",
+        "plugins/sticker/bratcewek.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": true
+    },
+    {
+      "host": "www.nerdfonts.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/font-downloads"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/search/#U062a#U062d#U0645#U064a#U0644_#U062e#U0637.js",
+        "plugins/search/#U062e#U0637#U0648#U0637.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.dramabox.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/_next/data/:var/in/search.json",
+        "/in/drama/:var/:var",
+        "/in/search",
+        "/search",
+        "/video/:var_:var/:var_Episode-1"
+      ],
+      "pathCount": 6,
+      "calledFrom": [
+        "plugins/search/#U062f#U0631#U0627#U0645#U0627.js",
+        "src/scraper/dramabox.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": true
+    },
+    {
+      "host": "webws.365scores.com",
+      "pathsWithoutQuery": [
+        "/web"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/#U0643#U0631#U0629.js",
+        "plugins/search/asiariyadh.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "twitter.com",
+      "pathsWithoutQuery": [
+        "/:var",
+        "/u/status/2"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/stalker/#U062a#U062c#U0633#U0633_#U062a#U0648#U064a#U062a#U0631.js",
+        "tests/terboo-scraper-registry.test.mjs"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.youtube.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/@:var",
+        "/watch"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/stalker/#U062a#U062c#U0633#U0633_#U064a#U0648#U062a#U064a#U0648#U0628.js",
+        "tools/terboo-scraper-live.mjs"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": true
+    },
+    {
+      "host": "getstickerpack.com",
+      "pathsWithoutQuery": [
+        "/api/v1/stickerdb/search",
+        "/api/v1/stickerdb/stickers/:var",
+        "/stickers/:var"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/sticker/#U0645#U0644#U0635#U0642#U0627#U062a2.js",
+        "plugins/sticker/stickerpack.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "s3.getstickerpack.com",
+      "pathsWithoutQuery": [
+        "/${item.cover_image",
+        "/:var"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/sticker/#U0645#U0644#U0635#U0642#U0627#U062a2.js",
+        "plugins/sticker/stickerpack.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "ngl.link",
+      "pathsWithoutQuery": [
+        "/xxxx"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0627#U0631#U0633#U0627#U0644_#U0646#U062c#U0644.js",
+        "plugins/tools/#U0633#U0628#U0627#U0645_#U0646#U062c#U0644.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "ipwho.is",
+      "pathsWithoutQuery": [
+        "/",
+        "/:var"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/#U0627#U064a#U0628#U064a.js",
+        "plugins/tools/#U0645#U0639#U0631#U0641ip.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "pastebin.com",
+      "pathsWithoutQuery": [
+        "/Gu8RZaqv",
+        "/api/api_post.php",
+        "/raw/"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/tools/#U0628#U0627#U0633#U062a#U0628#U064a#U0646.js",
+        "plugins/tools/#U0646#U0634#U0631_#U0627#U0644#U0646#U0635.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "sfl.gl",
+      "pathsWithoutQuery": [
+        "/xxxx",
+        "/xxxxx"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/#U062a#U062c#U0627#U0648#U0632.js",
+        "plugins/tools/#U0641#U0643_#U0631#U0627#U0628#U0637.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.obscuraworks.org",
+      "pathsWithoutQuery": [
+        "/api/tools/amdata",
+        "/api/v2/tools/nik"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/#U062a#U062d#U0644#U064a#U0644_#U0627#U0644#U0631#U0642#U0645_#U0627#U0644#U0642#U0648#U0645#U064a.js",
+        "plugins/tools/#U0644#U0627#U064a#U062a_#U0645#U0648#U0634#U0646.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.exchangerate-api.com",
+      "pathsWithoutQuery": [
+        "/v4/latest/:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0633#U0639#U0631_#U0627#U0644#U0635#U0631#U0641.js",
+        "plugins/tools/#U0635#U0631#U0641_#U0627#U0644#U0639#U0645#U0644#U0627#U062a.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "open.er-api.com",
+      "pathsWithoutQuery": [
+        "/v6/latest/:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0633#U0639#U0631_#U0627#U0644#U0635#U0631#U0641.js",
+        "plugins/tools/#U0635#U0631#U0641_#U0627#U0644#U0639#U0645#U0644#U0627#U062a.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.frankfurter.app",
+      "pathsWithoutQuery": [
+        "/latest"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0633#U0639#U0631_#U0627#U0644#U0635#U0631#U0641.js",
+        "plugins/tools/#U0635#U0631#U0641_#U0627#U0644#U0639#U0645#U0644#U0627#U062a.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": true
+    },
+    {
+      "host": "litterbox.catbox.moe",
+      "pathsWithoutQuery": [
+        "/resources/internals/api.php"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0639#U0632#U0644.js",
+        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "i.ibb.co.com",
+      "pathsWithoutQuery": [
+        "/QFzm9pSF/1546d15ce5dd2946573b3506df109d00.jpg",
+        "/kt5fyrg/qr.jpg"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/#U0641#U0627#U062a#U0648#U0631#U0629.js",
+        "src/lib/terboo-profile-picture.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "image.thum.io",
+      "pathsWithoutQuery": [
+        "/get/png/noanimate/fullpage/:var",
+        "/get/width/:var/crop/1080/noanimate/:var"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/#U0641#U062d#U0635_#U0645#U0648#U0642#U0639.js",
+        "plugins/tools/#U0644#U0642#U0637#U0629_#U0634#U0627#U0634#U0629.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "tmpfiles.org",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/v1/upload",
+        "/dl/"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js",
+        "src/lib/terboo-uploader.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.emiliabot.my.id",
+      "pathsWithoutQuery": [
+        "/",
+        "/tools/text-to-speech"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tts/#U0627#U064a#U0644#U0648#U0646.js",
+        "src/lib/terboo-apimanager.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": true
+    },
+    {
+      "host": "api.manus.ai",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/lib/manus-api.js",
+        "src/scraper/manus-agent.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "iili.io",
+      "pathsWithoutQuery": [
+        "/BPBFwVR.jpg",
+        "/BPBdFuj.md.jpg",
+        "/BPBqKwg.md.jpg"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "src/lib/terboo-auto-ai.js",
+        "src/lib/terboo-jadibot-manager.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "panel.example.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/lib/terboo-locales/ar.js",
+        "src/lib/terboo-locales/en.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.pinterest.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/pin/99360735500167749/"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "src/lib/terboo-pinterest.js",
+        "tools/terboo-scraper-live.mjs"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.tikwm.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/",
+        "/video/cover/7670900359270845717.webp",
+        "/video/media/play/7670900359270845717.mp4",
+        "/video/media/wmplay/7670900359270845717.mp4",
+        "/video/music/7670900359270845717.mp3"
+      ],
+      "pathCount": 6,
+      "calledFrom": [
+        "src/scraper/aio.js",
+        "tests/tiktoksearch.test.mjs"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "ssyoutube.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/youtube.js",
+        "src/scraper/yt.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "media.ssyoutube.com",
+      "pathsWithoutQuery": [
+        "/get"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/youtube.js",
+        "src/scraper/yt.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": true
+    },
+    {
+      "host": "du.sf-converter.com",
+      "pathsWithoutQuery": [
+        "/convert"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/youtube.js",
+        "src/scraper/yt.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": true
+    },
+    {
+      "host": "video.example.test",
+      "pathsWithoutQuery": [
+        "/clips/pin.mp4",
+        "/video.mp4"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "tests/pindl.test.mjs",
+        "tests/reddit.test.mjs"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": true
+    },
+    {
+      "host": "e.x",
+      "pathsWithoutQuery": [
+        "/",
+        "/a"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "tests/terboo-protobuf.test.mjs",
+        "tests/terboo-transport.test.mjs"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "i.redd.it",
+      "pathsWithoutQuery": [
+        "/a.jpg",
+        "/x.jpg",
+        "/y.jpg"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "tests/terboo-scraper-ai-e2e.test.mjs",
+        "tests/terboo-scraper-registry.test.mjs"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "a",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tests/terboo-scraper-registry.test.mjs",
+        "tests/terboo-ssh.test.mjs"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "xhslink.com",
+      "pathsWithoutQuery": [
+        "/a/abc",
+        "/a/sample"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "tests/terboo-scrapers-each.test.mjs",
+        "tools/terboo-scraper-live.mjs"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "cdn.example.com",
+      "pathsWithoutQuery": [
+        "/out.png",
+        "/v.mp4"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "tests/terboo-task-resume.test.mjs",
+        "tests/terboo-tool-registry.test.mjs"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "gen.pollinations.ai",
+      "pathsWithoutQuery": [
+        "/image/:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/#U062a#U062e#U064a#U06442.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "source.unsplash.com",
+      "pathsWithoutQuery": [
+        "/720x720/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/#U062a#U062e#U064a#U06442.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "api.cloudflare.com",
+      "pathsWithoutQuery": [
+        "/client/v4/accounts/:var/ai/run/@cf/black-forest-labs/flux-1-schnell"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/#U062a#U062e#U064a#U06443.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.jeeves.ai",
+      "pathsWithoutQuery": [
+        "/generate/v4/chat"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/#U062c#U064a#U0641#U0633.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "jeeves.ai",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/#U062c#U064a#U0641#U0633.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "gptanon.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/#U062c#U064a#U0645#U0627.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.aqronix-host.site",
+      "pathsWithoutQuery": [
+        "/api/v1/ai/chat/gemini"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/#U062c#U064a#U0645#U064a#U0646#U064a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "chat.dphn.ai",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/chat"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/ai/#U062f#U0648#U0644#U0641#U064a#U0646.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "ai-song.ai",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/chat-openai"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/ai/#U063a#U0646#U064a#U0644#U064a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "tecuts-chat.hf.space",
+      "pathsWithoutQuery": [
+        "/chat/stream"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/#U0643#U0631#U0648#U0646#U0648#U0633.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "chrunos.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/#U0643#U0631#U0648#U0646#U0648#U0633.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "de3.bot-hosting.net",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/#U0643#U064a#U0644#U0648#U0627.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.genspark.ai",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/agent/ask_proxy"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/ai/#U0643#U064a#U0645#U064a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.muslimai.io",
+      "pathsWithoutQuery": [
+        "/api/chat"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/#U0645#U0633#U0644#U0645.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.monica.im",
+      "pathsWithoutQuery": [
+        "/api/custom_bot/chat"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/#U0645#U0648#U0646#U064a#U0643#U0627.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "monica.im",
+      "pathsWithoutQuery": [
+        "/en/products/ai-chat"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/#U0645#U0648#U0646#U064a#U0643#U0627.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "my.izuka-api.xyz",
+      "pathsWithoutQuery": [
+        "/api/ai/novaai"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/#U0646#U0648#U0641#U0627.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.wikipedia.org",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/#U0648#U064a#U0643#U064a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "android.chat.openai.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/2#U0634#U0627#U062a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "ollama.com",
+      "pathsWithoutQuery": [
+        "/v1/chat/completions"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/deepseek-v4-pro.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.jerexd.my.id",
+      "pathsWithoutQuery": [
+        "/api/ai/fixcode"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/gpt55.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "notrack.ai",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/dispatch",
+        "/chat"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/ai/notrack.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.some-random-api.com",
+      "pathsWithoutQuery": [
+        "/canvas/:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/convert/imagejpg.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "otakudesu.blog",
+      "pathsWithoutQuery": [
+        "/episode/...",
+        "/episode/tykmt-episode-2-sub-indo"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/downloader/#U062a#U062d#U0645#U064a#U0644_#U0627#U0646#U0645#U064a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "pinterest.com",
+      "pathsWithoutQuery": [
+        "/pin/xxx"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/#U062a#U062d#U0645#U064a#U0644_#U0628#U0646#U062a#U0631.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.github.com",
+      "pathsWithoutQuery": [
+        "/repos/:var/:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/#U062a#U062d#U0645#U064a#U0644_#U063a#U064a#U062a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.fxtwitter.com",
+      "pathsWithoutQuery": [
+        "/status/:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/#U062a#U0648#U064a#U062a#U0631.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "savett.cc",
+      "pathsWithoutQuery": [
+        "/",
+        "/en1/download"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/downloader/#U062a#U064a#U0643_#U0641#U064a#U062f#U064a#U0648.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "workers-playground-cool-wood-c008.accoutydusra.workers.dev",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/#U062b#U0631#U064a#U062f#U0632.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.threads.net",
+      "pathsWithoutQuery": [
+        "/@xxx/post/xxx",
+        "/@zuck/post/xxx"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/downloader/#U062b#U0631#U064a#U062f#U0632.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "threadsvid.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/#U062b#U0631#U064a#U062f#U0632.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.xiaohongshu.com",
+      "pathsWithoutQuery": [
+        "/xxx",
+        "/xxx*"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/downloader/#U0631#U064a#U062f_#U0646#U0648#U062a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "search.brave.com",
+      "pathsWithoutQuery": [
+        "/search"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/#U0631#U064a#U0644.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.snackvideo.com",
+      "pathsWithoutQuery": [
+        "/@xxx/video/xxx"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/#U0633#U0646#U0627#U0628_#U0641#U064a#U062f#U064a#U0648.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "shopee.co.id",
+      "pathsWithoutQuery": [
+        "/...",
+        "/universal-link/video/..."
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/downloader/#U0634#U0648#U0628#U064a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "shopeenowatermark.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/#U0634#U0648#U0628#U064a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "allapiproject.zone.id",
+      "pathsWithoutQuery": [
+        "/video-krtl.json"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/#U0641#U064a#U062f#U064a#U0648.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.capcut.com",
+      "pathsWithoutQuery": [
+        "/t/xxx"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/#U0643#U0627#U0628#U0643#U062a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.cocofun.com",
+      "pathsWithoutQuery": [
+        "/share/post/xxx"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/#U0643#U0648#U0643#U0648#U0641#U0646.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "assets.shngm.id",
+      "pathsWithoutQuery": [
+        "/chapter/:var/:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/#U0645#U0627#U0646#U0647#U0648#U0627.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "registry.npmjs.org",
+      "pathsWithoutQuery": [
+        "/${encodeURIComponent(pkgName"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/#U0645#U0643#U062a#U0628#U0629.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "registry.npmjs.com",
+      "pathsWithoutQuery": [
+        "/-/v1/search"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/#U0645#U0643#U062a#U0628#U0629.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "happymod.net",
+      "pathsWithoutQuery": [
+        "/",
+        "/..."
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/downloader/happydl.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "nekos.best",
+      "pathsWithoutQuery": [
+        "/api/v2/slap"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/fun/#U0635#U0641#U0639.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "emojicombos.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/fun/#U0641#U0646.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "imgflip.com",
+      "pathsWithoutQuery": [
+        "/s/meme/Drake-Hotline-Bling.jpg"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/fun/#U0645#U064a#U0645.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "infotourney.com",
+      "pathsWithoutQuery": [
+        "/tournament/mobile-legends"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/info/#U0628#U0637#U0648#U0644#U0627#U062a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "data.bmkg.go.id",
+      "pathsWithoutQuery": [
+        "/DataMKG/TEWS/:var",
+        "/DataMKG/TEWS/autogempa.json"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/info/#U0632#U0644#U0632#U0627#U0644.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.dotgg.gg",
+      "pathsWithoutQuery": [
+        "/bluearchive/characters",
+        "/bluearchive/characters/:var"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/info/#U0634#U062e#U0635#U064a#U0629_#U0628#U0644#U0648_#U0627#U0631#U0634#U064a#U0641.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "images.dotgg.gg",
+      "pathsWithoutQuery": [
+        "/bluearchive/characters/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/info/#U0634#U062e#U0635#U064a#U0629_#U0628#U0644#U0648_#U0627#U0631#U0634#U064a#U0641.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.scorebat.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/video-api/v3/"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/info/#U0645#U0628#U0627#U0631#U064a#U0627#U062a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.rifkyshre.biz.id",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/info/#U0645#U0631#U0627#U0642#U0628#U0629_#U0627#U0644#U0645#U0632#U0631#U0639#U0629.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "islamipedia.id",
+      "pathsWithoutQuery": [
+        "/murottal/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/islamic/#U0642#U0631#U0622#U0646_#U0635#U0648#U062a#U064a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "quran.nu.or.id",
+      "pathsWithoutQuery": [
+        "/:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/islamic/#U0642#U0631#U0622#U0646_#U0646#U0635#U064a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "kyzznekoo.zone.id",
+      "pathsWithoutQuery": [
+        "/api/asupan/paptt"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/nsfw/#U0628#U0627#U0628#U062a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "invite.whatsapp.com",
+      "pathsWithoutQuery": [
+        "/xxx*"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/#U0627#U0646#U0636#U0645#U0627#U0645.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "media.vocaroo.com",
+      "pathsWithoutQuery": [
+        "/mp3/1ofLT2YUJAjQ"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/#U062a#U0630#U0643#U064a#U0631_#U0627#U0644#U0635#U0644#U0627#U0629.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.vercel.com",
+      "pathsWithoutQuery": [
+        "/v13/deployments",
+        "/v9/projects/:var/domains"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/owner/#U0631#U0641#U0639_#U0645#U0648#U0642#U0639.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "internetrakyat.id",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/app/auth/send-otp-register",
+        "/auth/register"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.bonusbelanja.com",
+      "pathsWithoutQuery": [
+        "/api/auth/registration/app"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.alodokter.com",
+      "pathsWithoutQuery": [
+        "/resend-otp"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.dokterin.id",
+      "pathsWithoutQuery": [
+        "/user/v1/users/login"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "cms.bunda.co.id",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/v1/auth/send-otp"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.fastwork.id",
+      "pathsWithoutQuery": [
+        "/auth/v2/signup.sendVerificationCode"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "register.paper.id",
+      "pathsWithoutQuery": [
+        "/api/v1/auth/register/send-otp"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.beautyhaul.com",
+      "pathsWithoutQuery": [
+        "/ajax/account/send_otp"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.rumah123.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/otp/request-otp",
+        "/user/login"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "beta.api.saturdays.com",
+      "pathsWithoutQuery": [
+        "/api/v1/user/otp/send"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "gateway.gritero.com",
+      "pathsWithoutQuery": [
+        "/v1/auth/registration/whatsapp/send-otp"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "api.duniagames.co.id",
+      "pathsWithoutQuery": [
+        "/api/other/api/v1/content/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "bunda.co.id",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/v1/auth/send-otp"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.pinhome.id",
+      "pathsWithoutQuery": [
+        "/api/odyssey/proxy/pinaccount/auth/verification/request-otp"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "account.bliblitiket.com",
+      "pathsWithoutQuery": [
+        "/gateway/gks-unm-go-be/api/v1/otp/generate"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "prod.adiraku.co.id",
+      "pathsWithoutQuery": [
+        "/ms-auth/auth/generate-otp-vdata"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "matahari-backend-prod.matahari.com",
+      "pathsWithoutQuery": [
+        "/api/auth/re-activation"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.sicepatconsumer.com",
+      "pathsWithoutQuery": [
+        "/v3/masterdata/user/otp/request/:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "api.maulagi.id",
+      "pathsWithoutQuery": [
+        "/api/v2/auth/check"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.paper.id",
+      "pathsWithoutQuery": [
+        "/api/v1/auth/login"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.paper.id",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.indodax.com",
+      "pathsWithoutQuery": [
+        "/api/v1/otp/send"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "indodax.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "saturdays.com",
+      "pathsWithoutQuery": [
+        "/api/v1/auth/otp"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.saturdays.com",
+      "pathsWithoutQuery": [
+        "/v2/user/otp/request"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "dokterin.id",
+      "pathsWithoutQuery": [
+        "/",
+        "/login"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.bunda.co.id",
+      "pathsWithoutQuery": [
+        "/",
+        "/id"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/owner/internetrakyat.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "islamic-api-zhirrr.vercel.app",
+      "pathsWithoutQuery": [
+        "/api/asmaulhusna",
+        "/api/niatshalat"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/religi/#U0625#U0633#U0644#U0627#U0645#U064a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "doa-doa-api-ahmadramadhan.fly.dev",
+      "pathsWithoutQuery": [
+        "/api"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/religi/#U0625#U0633#U0644#U0627#U0645#U064a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "artikel-islam.netlify.app",
+      "pathsWithoutQuery": [
+        "/.netlify/functions/api/ms"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/religi/#U0625#U0633#U0644#U0627#U0645#U064a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "www.mp3quran.net",
+      "pathsWithoutQuery": [
+        "/api/v3"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/religi/#U0642#U0631#U0622#U0646#U064a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "i.postimg.cc",
+      "pathsWithoutQuery": [
+        "/bS01zQwK/upload-1767808833485.jpg"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/#U0623#U0646#U0645#U064a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "8vrewc6s4t-dsn.algolia.net",
+      "pathsWithoutQuery": [
+        "/1/indexes"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/#U0623#U0646#U0645#U064a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "rss.cnn.com",
+      "pathsWithoutQuery": [
+        "/rss/edition.rss"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/#U0627#U062e#U0628#U0627#U0631.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "feeds.bbci.co.uk",
+      "pathsWithoutQuery": [
+        "/arabic/rss.xml"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/#U0627#U062e#U0628#U0627#U0631.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "twibbonize.com",
+      "pathsWithoutQuery": [
+        "/:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/#U0627#U0637#U0627#U0631.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "anilist.co",
+      "pathsWithoutQuery": [
+        "/anime/${d.anilist"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/#U0627#U0646#U0645#U064a_#U0627#U064a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "searchthatsong.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/#U0628#U062d#U062b_#U0627#U063a#U0646#U064a#U0629.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.themealdb.com",
+      "pathsWithoutQuery": [
+        "/api/json/v1/1/search.php"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/#U0628#U062f#U064a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "api.unsplash.com",
+      "pathsWithoutQuery": [
+        "/search/photos"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/#U0628#U0646#U062a#U0631#U064a#U0633#U062a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "api.pexels.com",
+      "pathsWithoutQuery": [
+        "/v1/search"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/#U0628#U0646#U062a#U0631#U064a#U0633#U062a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "pixabay.com",
+      "pathsWithoutQuery": [
+        "/api/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/#U0628#U0646#U062a#U0631#U064a#U0633#U062a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "ahmia.fi",
+      "pathsWithoutQuery": [
+        "/search/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/#U062f#U0627#U0631#U0643_#U0648#U064a#U0628.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "m.soundcloud.com",
+      "pathsWithoutQuery": [
+        "/search"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/#U0633#U0627#U0648#U0646#U062f.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "cors.rifkyshre.biz.id",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/#U0637#U0627#U0644#U0628.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api-pddikti.kemdiktisaintek.go.id",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/#U0637#U0627#U0644#U0628.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "pddikti.kemdiktisaintek.go.id",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/#U0637#U0627#U0644#U0628.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.nasa.gov",
+      "pathsWithoutQuery": [
+        "/planetary/apod"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/#U0641#U0636#U0627#U0621.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "movieku.rest",
+      "pathsWithoutQuery": [
+        "/wp-admin/admin-ajax.php"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/#U0641#U0644#U0645.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "berinama.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/wp-json/baby-names/v1/meaning"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/search/#U0645#U0639#U0646#U0649_#U0627#U0633#U0645.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "m.webtoons.com",
+      "pathsWithoutQuery": [
+        "/id/search",
+        "/search",
+        "/undefined/search/result"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/search/#U0648#U064a#U0628#U062a#U0648#U0646.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "ws75.aptoide.com",
+      "pathsWithoutQuery": [
+        "/api/7/apps/search"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/apk.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "an1.com",
+      "pathsWithoutQuery": [
+        "/xxx"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/apk2.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "twitterwebviewer.com",
+      "pathsWithoutQuery": [
+        "/api/tweets/:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/stalker/#U062a#U062c#U0633#U0633_#U062a#U0648#U064a#U062a#U0631.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "tools.xrespond.com",
+      "pathsWithoutQuery": [
+        "/api/tiktok/profile/details"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/stalker/#U062a#U062c#U0633#U0633_#U062a#U064a#U0643#U062a#U0648#U0643.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "slidesigma.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/stalker/#U062a#U062c#U0633#U0633_#U062a#U064a#U0643#U062a#U0648#U0643.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "tiktok.com",
+      "pathsWithoutQuery": [
+        "/@:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/stalker/#U062a#U062c#U0633#U0633_#U062a#U064a#U0643#U062a#U0648#U0643.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "users.roblox.com",
+      "pathsWithoutQuery": [
+        "/v1/users/:var",
+        "/v1/users/search"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0631#U0648#U0628#U0644#U0648#U0643#U0633.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "thumbnails.roblox.com",
+      "pathsWithoutQuery": [
+        "/v1/users/avatar"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0631#U0648#U0628#U0644#U0648#U0643#U0633.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "friends.roblox.com",
+      "pathsWithoutQuery": [
+        "/v1/users/:var/followers/count",
+        "/v1/users/:var/followings/count",
+        "/v1/users/:var/friends/count"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0631#U0648#U0628#U0644#U0648#U0643#U0633.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "groups.roblox.com",
+      "pathsWithoutQuery": [
+        "/v2/users/:var/groups/roles"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0631#U0648#U0628#U0644#U0648#U0643#U0633.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "games.roblox.com",
+      "pathsWithoutQuery": [
+        "/v2/users/:var/games"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0631#U0648#U0628#U0644#U0648#U0643#U0633.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "badges.roblox.com",
+      "pathsWithoutQuery": [
+        "/v1/users/:var/badges"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0631#U0648#U0628#U0644#U0648#U0643#U0633.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "inventory.roblox.com",
+      "pathsWithoutQuery": [
+        "/v1/users/:var/assets/collectibles"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0631#U0648#U0628#U0644#U0648#U0643#U0633.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "presence.roblox.com",
+      "pathsWithoutQuery": [
+        "/v1/presence/users"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0631#U0648#U0628#U0644#U0648#U0643#U0633.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "roblox.com",
+      "pathsWithoutQuery": [
+        "/users/:var/profile"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0631#U0648#U0628#U0644#U0648#U0643#U0633.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "facebook.com",
+      "pathsWithoutQuery": [
+        "/:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0641#U064a#U0633#U0628#U0648#U0643.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "tenor.googleapis.com",
+      "pathsWithoutQuery": [
+        "/v2/featured"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/sticker/emojimix.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "store.line.me",
+      "pathsWithoutQuery": [
+        "/",
+        "/stickershop/product/9801/en"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/sticker/linesticker.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.memegen.link",
+      "pathsWithoutQuery": [
+        "/images/custom/:var/:var.png"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/sticker/smeme.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "api-ayos.onrender.com",
+      "pathsWithoutQuery": [
+        "/code"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0627#U062a#U0635#U0627#U0644.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "files.use.ai",
+      "pathsWithoutQuery": [
+        "/upload"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0627#U0631#U0641#U0639.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "use.ai",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0627#U0631#U0641#U0639.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "qwa.eeq.my.id",
+      "pathsWithoutQuery": [
+        "/api/generate"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0627#U0642#U062a#U0628#U0627#U0633_#U0648#U0627#U062a#U0633#U0627#U0628.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "xl-ku.my.id",
+      "pathsWithoutQuery": [
+        "/end.php"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0627#U0643#U0633#U0644.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "ipapi.co",
+      "pathsWithoutQuery": [
+        "/:var/json/",
+        "/json/"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/#U0627#U064a#U0628#U064a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "staticmap.maptiler.com",
+      "pathsWithoutQuery": [
+        "/map"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0627#U064a#U0628#U064a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "zecora0.serv00.net",
+      "pathsWithoutQuery": [
+        "/fake.php"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0628#U0631#U064a#U062f.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.mail.tm",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0628#U0631#U064a#U062f_#U0645#U0624#U0642#U062a2.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "anabot.my.id",
+      "pathsWithoutQuery": [
+        "/api/tools/izenLOL"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U062a#U062c#U0627#U0648#U0632.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "www.beautyplus.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/core-api/v1/img-enhancer/quota/info",
+        "/core-api/v2/img-enhancer/query-sse/:var",
+        "/core-api/v2/img-enhancer/task",
+        "/id/image-enhancer"
+      ],
+      "pathCount": 5,
+      "calledFrom": [
+        "plugins/tools/#U062a#U062d#U0633#U064a#U0646_#U0627#U0644#U0635#U0648#U0631#U0629_3.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "strategy.pixocial.com",
+      "pathsWithoutQuery": [
+        "/upload/policy"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U062a#U062d#U0633#U064a#U0646_#U0627#U0644#U0635#U0648#U0631#U0629_3.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "deezer.com",
+      "pathsWithoutQuery": [
+        "/track/:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U062a#U0639#U0631#U064a#U0641_#U0627#U0644#U0645#U0648#U0633#U064a#U0642#U0649.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.bing.com",
+      "pathsWithoutQuery": [
+        "/images/search"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0631#U064a#U062f.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "webappcreator.amethystlab.org",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/build-apk"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/#U0635#U0646#U0639_#U062a#U0637#U0628#U064a#U0642.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "router.project-osrm.org",
+      "pathsWithoutQuery": [
+        "/route/v1/driving/:var,:var;:var,:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0637#U0631#U064a#U0642.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.openstreetmap.org",
+      "pathsWithoutQuery": [
+        "/directions"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0637#U0631#U064a#U0642.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "aivocalremover.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/v2/FileUpload",
+        "/api/v2/ProcessFile"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/tools/#U0639#U0632#U0644.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "ip-api.com",
+      "pathsWithoutQuery": [
+        "/json/:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0641#U062d#U06352.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "crt.sh",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0641#U062d#U06352.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "sitecheck.sucuri.net",
+      "pathsWithoutQuery": [
+        "/api/v3/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0641#U062d#U0635_#U0645#U0648#U0642#U0639.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "api.theresav.biz.id",
+      "pathsWithoutQuery": [
+        "/bypass/sfl"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0641#U0643_#U0631#U0627#U0628#U0637.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "carbon.now.sh",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0643#U0631#U0628#U0648#U0646.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "alightcreative.com",
+      "pathsWithoutQuery": [
+        "/am/share/..."
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0644#U0627#U064a#U062a_#U0645#U0648#U0634#U0646.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "qu.ax",
+      "pathsWithoutQuery": [
+        "/upload.php"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "pone.rs",
+      "pathsWithoutQuery": [
+        "/",
+        "/upload.php"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "kappa.lol",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/upload"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.upload.ee",
+      "pathsWithoutQuery": [
+        "/",
+        "/cgi-bin/ubr_upload.pl",
+        "/ubr_link_upload.php"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "leopard.hosting.pecon.us",
+      "pathsWithoutQuery": [
+        "/",
+        "/upload.php"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "8upload.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/upload/mt/"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "top4top.io",
+      "pathsWithoutQuery": [
+        "/",
+        "/index.php"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "0x0.st",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "athars.space",
+      "pathsWithoutQuery": [
+        "/uploads/de11c461.jpg"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0645#U0639#U0631#U0641_#U0627#U0644#U0642#U0646#U0627#U0629.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.hackertarget.com",
+      "pathsWithoutQuery": [
+        "/dnslookup/",
+        "/whois/"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/#U0645#U0639#U0644#U0648#U0645#U0627#U062adns.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "console.groq.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0646#U0633#U062e_#U0635#U0648#U062a#U064a.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.proactor.ai",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0646#U0633#U062e_#U0641#U064a#U062f#U064a#U0648.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "videotranscriber.ai",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0646#U0633#U062e_#U0641#U064a#U062f#U064a#U0648.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "cobalt-api-production-cd7d.up.railway.app",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/#U0646#U0635_#U0641#U064a#U062f#U064a#U0648.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.assemblyai.com",
+      "pathsWithoutQuery": [
+        "/v2/transcript",
+        "/v2/transcript/:var"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/#U0646#U0635_#U0641#U064a#U062f#U064a#U0648.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "d.tmpfile.link",
+      "pathsWithoutQuery": [
+        "/public/2026-06-08/e92ce22a-404f-4a06-9c73-470743475f1f/IMG-20260608-WA0253(4"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/2#U0627#U0642#U062a#U0628#U0627#U0633_#U0648#U0627#U062a#U0633#U0627#U0628.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.alightpro.my.id",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/am.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.scrapingcourse.com",
+      "pathsWithoutQuery": [
+        "/cloudflare-challenge"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/cfbypass.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.qrserver.com",
+      "pathsWithoutQuery": [
+        "/v1/create-qr-code/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/qr.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.whatsapp.com",
+      "pathsWithoutQuery": [
+        "/communities/learning/beingagoodadmin"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/handler.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "marobotdash-wtjdanpz.manus.space",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/lib/manus-api.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.yupra.my.id",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/lib/terboo-apimanager.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.covenant.sbs",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/lib/terboo-apimanager.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "winbu.net",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/lib/terboo-auto-anime.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "latex.codecogs.com",
+      "pathsWithoutQuery": [
+        "/png.image"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/lib/terboo-latex.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "ui-avatars.com",
+      "pathsWithoutQuery": [
+        "/api/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/lib/terboo-level.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "translate.google.com",
+      "pathsWithoutQuery": [
+        "/translate_tts"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/lib/terboo-multimodal.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "integrate.api.nvidia.com",
+      "pathsWithoutQuery": [
+        "/v1/chat/completions"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/lib/terboo-nvidia-ai.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.jasaotp.id",
+      "pathsWithoutQuery": [
+        "/v1"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/lib/terboo-otp-service.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.aladhan.com",
+      "pathsWithoutQuery": [
+        "/v1"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/lib/terboo-sholat-api.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "savefbs.com",
+      "pathsWithoutQuery": [
+        "/all-in-one-video-downloader/",
+        "/api/v1/aio"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "src/scraper/aio.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.chatday.ai",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/chatday.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.dafont.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/search.php"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "src/scraper/dafont.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "vidomon.com",
+      "pathsWithoutQuery": [
+        "/dailymotion-video-downloader/",
+        "/wp-json/aio-dl/video-data/"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "src/scraper/dailymotion.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.deepai.org",
+      "pathsWithoutQuery": [
+        "/api/text2img",
+        "/hacking_is_a_serious_crime"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "src/scraper/deepai-scraper.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "deepai.org",
+      "pathsWithoutQuery": [
+        "/",
+        "/chat",
+        "/machine-learning-model/text2img"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "src/scraper/deepai-scraper.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "snapvideotools.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/snap"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "src/scraper/douyin.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "feelbetterbot.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/feeb.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "gemini.google.com",
+      "pathsWithoutQuery": [
+        "/_/BardChatUi/data/assistant.lamda.BardFrontendService/StreamGenerate",
+        "/_/BardChatUi/data/batchexecute"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "src/scraper/gemini.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "chatgpt.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/gpt52.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "imglarger.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/hd.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "photoai.imglarger.com",
+      "pathsWithoutQuery": [
+        "/api/PhoAi/CheckStatus",
+        "/api/PhoAi/Upload"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "src/scraper/hd.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.unwatermark.ai",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/hdvid2.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "unblurimage.ai",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/hdvid2.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "honor-of-kings.fandom.com",
+      "pathsWithoutQuery": [
+        "/wiki/${encodeURIComponent(name"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/hokinfo.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "cors.yardansh.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/ig.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "fastdl.app",
+      "pathsWithoutQuery": [
+        "/",
+        "/id",
+        "/id/story-saver",
+        "/msec"
+      ],
+      "pathCount": 4,
+      "calledFrom": [
+        "src/scraper/ig.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api-wh.fastdl.app",
+      "pathsWithoutQuery": [
+        "/api/convert",
+        "/api/v1/instagram/story"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "src/scraper/ig.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "imageprompt.org",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/ai/prompts/image",
+        "/image-to-prompt"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "src/scraper/img2prompt.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "get1.imglarger.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/imglarger.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "konachan.net",
+      "pathsWithoutQuery": [
+        "/",
+        "/post"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "src/scraper/konachan.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "kusonime.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/genres/${encodeURIComponent(genres",
+        "/page/:var/"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "src/scraper/kusonime.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "likeedownloader.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/en",
+        "/process"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "src/scraper/likee.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.termai.cc",
+      "pathsWithoutQuery": [
+        "/api/chat/logic-bell"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/logic-bell.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "cek-seberapa-femboy.vercel.app",
+      "pathsWithoutQuery": [
+        "/img/dibwh40.gif",
+        "/img/dibwh60.gif",
+        "/img/dibwh80.gif",
+        "/img/femboyyyy.gif",
+        "/img/normal.gif"
+      ],
+      "pathCount": 5,
+      "calledFrom": [
+        "src/scraper/lufemboy.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "mconverter.eu",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/mconverter.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "rednote.savevideodown.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/download"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "src/scraper/rednote.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "reelsvideo.io",
+      "pathsWithoutQuery": [
+        "/",
+        "/reel/DUU67gXiTwU/"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "src/scraper/reelsvideo.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "api2.pixelcut.app",
+      "pathsWithoutQuery": [
+        "/image/matte/v1"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/removebackground.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.pixa.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/removebackground.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "download0426.sfile.co",
+      "pathsWithoutQuery": [
+        "/downloadfile/2200881/724157/99f1f1d69f8fd931e1447af03be9cec0/spotify-premium_9.1.14.864.apk"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/sfiledl.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "api.shngm.io",
+      "pathsWithoutQuery": [
+        "/v1"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/shinigami.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "explore.shngm.io",
+      "pathsWithoutQuery": [
+        "/v1"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/shinigami.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api-mobi.soundcloud.com",
+      "pathsWithoutQuery": [
+        "/search"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/soundcloud.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "convertico.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/soundclouddl.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "spotify.dlapi.app",
+      "pathsWithoutQuery": [
+        "/api/Gettrack"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/spotify.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "master.dlapi.app",
+      "pathsWithoutQuery": [
+        "/api/v1/convert",
+        "/api/v1/tasks"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "src/scraper/spotify.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "temp-mail.io",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/tempmail.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.internal.temp-mail.io",
+      "pathsWithoutQuery": [
+        "/api/v3/email/:var/messages",
+        "/api/v3/email/new"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "src/scraper/tempmail.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "musicaldown.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/download",
+        "/en"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "src/scraper/tiktok.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "x2twitter.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/ajaxSearch",
+        "/id"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "src/scraper/twitter.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "dl.snapcdn.app",
+      "pathsWithoutQuery": [
+        "/get"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/twitter.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "s1.twcdn.net",
+      "pathsWithoutQuery": [
+        "/api/json/convert"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/twitter.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "unrestrictedaiimagegenerator.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/txt2img.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "upsampler.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/free-image-generator-no-signup"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "src/scraper/txt2img2.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "black-forest-labs-flux-2-klein-4b.hf.space",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/txt2img2.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "aienhancer.ai",
+      "pathsWithoutQuery": [
+        "/",
+        "/ai-image-upscaler",
+        "/api/v1/r/image-enhance/create",
+        "/api/v1/r/image-enhance/result"
+      ],
+      "pathCount": 4,
+      "calledFrom": [
+        "src/scraper/upscaler.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.wallpaperflare.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/search"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "src/scraper/wallpapersearch.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "wink.ai",
+      "pathsWithoutQuery": [
+        "/",
+        "/video-enhancer/upload"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "src/scraper/wink.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "strategy.app.meitudata.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/wink.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "wutheringwaves.fandom.com",
+      "pathsWithoutQuery": [
+        "/wiki/${encodeURIComponent(searchSlug",
+        "/wiki/${encodeURIComponent(slug"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "src/scraper/wwchar.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "rr2---sn-2aqu-hoalr.googlevideo.com",
+      "pathsWithoutQuery": [
+        "/videoplayback"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/youtube.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "rr3---sn-ab5sznly.googlevideo.com",
+      "pathsWithoutQuery": [
+        "/videoplayback"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/yt.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "id.ytmp3.mobi",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/ytdl.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "d.ymcdn.org",
+      "pathsWithoutQuery": [
+        "/api/v1/init"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "src/scraper/ytdl.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.example.test",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tests/manus-agent.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "i.pinimg.com",
+      "pathsWithoutQuery": [
+        "/originals/a/b/c/pin.jpg"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tests/pindl.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "preview.example.test",
+      "pathsWithoutQuery": [
+        "/image.jpg"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tests/reddit.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "image.example.test",
+      "pathsWithoutQuery": [
+        "/photo.jpg"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tests/reddit.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "cdn.example.test",
+      "pathsWithoutQuery": [
+        "/task.mp3",
+        "/track.mp3"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "tests/spotify-provider.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "evil.example",
+      "pathsWithoutQuery": [
+        "/x.png"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tests/terboo-arcade-html.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "vps.example.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tests/terboo-config-template.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.telegram.org",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tests/terboo-config-template.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "schemas.openxmlformats.org",
+      "pathsWithoutQuery": [
+        "/package/2006/content-types",
+        "/wordprocessingml/2006/main"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "tests/terboo-multimodal.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "example.test",
+      "pathsWithoutQuery": [
+        "/profile.jpg"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tests/terboo-natural-ai.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "cdn.example",
+      "pathsWithoutQuery": [
+        "/aio.mp4",
+        "/t.jpg",
+        "/v.mp4"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "tests/terboo-scraper-ai-e2e.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "m.youtube.com",
+      "pathsWithoutQuery": [
+        "/watch"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tests/terboo-scraper-registry.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "c.cdn",
+      "pathsWithoutQuery": [
+        "/x.jpg"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tests/terboo-scraper-registry.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "v.cdn",
+      "pathsWithoutQuery": [
+        "/v.mp4"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tests/terboo-scraper-registry.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "a.cdn",
+      "pathsWithoutQuery": [
+        "/a.mp3"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tests/terboo-scraper-registry.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "b",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tests/terboo-scraper-registry.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "x.cdn",
+      "pathsWithoutQuery": [
+        "/f.mp4"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tests/terboo-scraper-registry.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "cdn",
+      "pathsWithoutQuery": [
+        "/v.mp4"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tests/terboo-scraper-registry.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "cdn.terboo.test",
+      "pathsWithoutQuery": [
+        "/a/song.mp3",
+        "/i/out.png",
+        "/m/1.mp4",
+        "/m/2.jpg",
+        "/v/clip.mp4",
+        "/v/cover.jpg"
+      ],
+      "pathCount": 6,
+      "calledFrom": [
+        "tests/terboo-scrapers-each.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "example.org",
+      "pathsWithoutQuery": [
+        "/1",
+        "/2"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "tests/terboo-scrapers-each.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "unrelated.example",
+      "pathsWithoutQuery": [
+        "/x"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tests/terboo-scrapers-each.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "terboo.example.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tests/terboo-ui-intents.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "a.example",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tests/terboo-ui-intents.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "primary.test",
+      "pathsWithoutQuery": [
+        "/search"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tests/tiktoksearch.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "fallback.test",
+      "pathsWithoutQuery": [
+        "/search",
+        "/video.mp4"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "tests/tiktoksearch.test.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.waifu.pics",
+      "pathsWithoutQuery": [
+        "/sfw/slap"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tools/probe-priority-endpoints.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.maro.my.id",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tools/probe-priority-endpoints.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.zenzxz.my.id",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tools/probe-priority-endpoints.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "apis.snowping.eu.cc",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tools/probe-priority-endpoints.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "ilovepin.net",
+      "pathsWithoutQuery": [
+        "/id"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tools/probe-priority-endpoints.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "redvid.io",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tools/probe-priority-endpoints.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "brat.siputzx.my.id",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tools/probe-priority-endpoints.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "cdn.gimita.id",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tools/probe-priority-endpoints.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.denayrestapi.xyz",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tools/probe-priority-endpoints.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.douyin.com",
+      "pathsWithoutQuery": [
+        "/video/7094857383232818444"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "tools/terboo-scraper-live.mjs"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    }
+  ]
+}
