@@ -37,6 +37,9 @@ import { startDailyPruner } from "./src/lib/terboo-data-pruner.js";
 import { migrateLegacyAssets, preloadAssets } from "./src/lib/terboo-asset-manager.js";
 import { registerFonts } from "./src/lib/terboo-fonts.js";
 import { warmStart } from "./src/lib/terboo-warmup.js";
+// منصة الويب: تُشغَّل بعد تهيئة قاعدة البيانات والإضافات، ومعطَّلة افتراضياً
+// (config.website.enabled=false). فشلها لا يمنع البوت من العمل.
+import { startWebServer, stopWebServer } from "./src/web/index.js";
 import {
   logger,
   c,
@@ -219,6 +222,8 @@ function setupAntiCrash() {
   process.on("SIGINT", async () => {
     console.log("");
     logger.system("system", "تم استلام إشارة التوقف (SIGINT)");
+    // الموقع يُغلق أولاً (يتوقف قبول طلبات جديدة) ولا يؤخّر حفظ بيانات البوت
+    try { await stopWebServer(); } catch (error) { noteFailure("boot", error, { where: "index.js:sigint-web-stop", fallback: "continue-shutdown" }); }
     logger.info("database", "جاري حفظ البيانات...");
     try {
       const db = getDatabase();
@@ -233,9 +238,10 @@ function setupAntiCrash() {
     process.exit(0);
   });
 
-  process.on("SIGTERM", () => {
+  process.on("SIGTERM", async () => {
     console.log("");
     logger.system("system", "تم استلام إشارة الإنهاء (SIGTERM)");
+    try { await stopWebServer(); } catch (error) { noteFailure("boot", error, { where: "index.js:sigterm-web-stop", fallback: "continue-shutdown" }); }
     try { flushMemory(); } catch (error) { noteFailure("boot", error, { where: "index.js:sigterm-flush", fallback: "exit" }); }
     process.exit(0);
   });
@@ -333,6 +339,15 @@ async function main() {
   }
 
   initScheduler(config);
+
+  // منصة الويب (§website): بعد قاعدة البيانات والإضافات والفهارس، وقبل
+  // اتصال واتساب. الخدمات تقرأ من getDatabase() المركزي والسجلّات المحمّلة،
+  // ولا يوجد كاتب ثانٍ على database/main/*.json.
+  // أي فشل هنا لا يرمي: الدالة تعيد {ok:false} والبوت يكمل بلا موقع.
+  const web = await startWebServer();
+  if (!web.ok && web.reason !== "disabled") {
+    logger.warn("web", `الموقع غير مُشغَّل: ${web.reason}`);
+  }
 
   const bootTime = Date.now() - startTime;
   logger.success("boot", `تم تهيئة النظام في ${bootTime}ms`);
