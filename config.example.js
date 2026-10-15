@@ -371,6 +371,89 @@ const config = {
   },
 
   // 🍪 جلسات مواقع (كوكي session_id) — أسرار: البيئة تتغلب، وتُسجَّل للإخفاء عند الإقلاع
+  // ═══════════════════════════════════════════════
+  // 🌐 Bot Terboo Web — منصة الويب الرفيقة (قسم مستقل تماماً)
+  // ───────────────────────────────────────────────
+  // ⚠️ هذا القسم وحده يحدّد الموقع. لا تستعمل info.website ولا socialLinks.website
+  //    لعنوان الموقع: الحقلان الحاليان يشيران إلى قناة واتساب الرسمية ومعناهما مختلف.
+  //
+  // • enabled=false افتراضياً: البوت يعمل كما هو تماماً ولا يُفتح أي منفذ
+  //   حتى يقرّر المالك التفعيل (.موقع تشغيل أو تعديل هذا الملف).
+  // • الخادم يُستضاف داخل عملية البوت نفسها بعد تهيئة قاعدة البيانات والإضافات،
+  //   لأن قاعدة البيانات ملفات JSON بذاكرة داخل العملية وكتابات مؤجلة:
+  //   كاتب ثانٍ من عملية أخرى يفقد تحديثات (راجع docs/web-platform/06_DATA_AND_IDENTITY.md).
+  // • publicBaseUrl هو مصدر الحقيقة الوحيد لكل رابط (زر القائمة · رسائل البوت · الواجهة).
+  //   يُبنى عبر src/web/url-builder.js فقط، ولا يُستنتج من ترويسة Host أبداً.
+  // ═══════════════════════════════════════════════
+  website: {
+    enabled: false, // true ⇒ يُفتح خادم HTTP للموقع داخل عملية البوت
+    host: "127.0.0.1", // 127.0.0.1 مع reverse proxy (موصى به) · 0.0.0.0 للتعرّض المباشر
+    port: 3000,
+
+    // العنوان العام الكامل كما يفتحه الزائر — مصدر الحقيقة لكل رابط.
+    // فارغ ⇒ لا زر ولا رابط في القوائم (لا يُرسل زر مكسور أبداً).
+    publicBaseUrl: "",
+
+    // الدومين وحالة إثباته. لا يُعتمد الدومين لمجرد كتابته هنا:
+    // requireDomainVerification=true ⇒ لا يُبنى publicBaseUrl إلا بعد نجاح تحقق DNS.
+    domain: "",
+    requireDomainVerification: true,
+
+    // proxy  ⇒ TLS ينتهي عند Caddy/Nginx أمام الموقع (الأكثر أماناً والموصى به)
+    // direct ⇒ الموقع نفسه يقدّم HTTPS من شهادة موجودة على القرص (certPath/keyPath)
+    // disabled ⇒ HTTP صريح بلا تشفير (تطوير محلي فقط — يُعلَن للمستخدم كغير آمن)
+    tlsMode: "proxy",
+    tls: {
+      certPath: "", // خارج webroot دائماً، صلاحيات 600 — لا يُعاد في أي API
+      keyPath: "",
+    },
+
+    // خلف proxy: لا تُقرأ X-Forwarded-* إلا إذا trustProxy=true وجاء الطلب من عنوان مُدرج.
+    // بغير ذلك تُتجاهل الترويسات تماماً (منع انتحال العنوان والمخطَّط).
+    trustProxy: false,
+    proxyAllowlist: ["127.0.0.1", "::1"],
+
+    // عنوان IP عام يحدّده المالك للرجوع إليه عند غياب دومين متحقَّق.
+    // لا يُكتشف من ترويسة طلب ولا من خدمة خارجية تلقائياً.
+    publicIp: "",
+
+    session: {
+      cookieName: "terboo_session",
+      // "" ⇒ يُولَّد سر عشوائي ويُحفظ في data/secure/website-session.key (600).
+      // أو ضع WEBSITE_SESSION_SECRET في secrets/البيئة.
+      secret: "",
+      idleMinutes: 60, // خمول يُنهي الجلسة
+      absoluteHours: 24, // عمر أقصى للجلسة بأي حال
+      maxPerUser: 5, // أقدم جلسة تُلغى عند التجاوز
+      sameSite: "Lax",
+      // secure يُحسب من tlsMode/publicBaseUrl — لا من X-Forwarded-Proto
+    },
+
+    limits: {
+      jsonBodyBytes: 256 * 1024, // أقصى حجم طلب JSON
+      uploadBytes: 64 * 1024 * 1024, // أقصى حجم ملف مرفوع (تُطبَّق حدود الوسائط الحقيقية فوقه)
+      uploadsPerHour: 40,
+      aiMessagesPerHour: 60,
+      toolRunsPerHour: 60,
+      tasksPerUser: 5, // مهام متزامنة لكل مستخدم
+      artifactTtlHours: 24, // عمر الملف الناتج قبل الحذف
+      requestsPerMinute: 120, // لكل جلسة/عنوان
+      // تسجيل الدخول: حدود متعددة المستويات ضد الإغراق والتعداد
+      otp: {
+        codeTtlSeconds: 300, // صلاحية الرمز (5 دقائق)
+        maxAttemptsPerChallenge: 5,
+        resendCooldownSeconds: 60,
+        perPhonePerHour: 5,
+        perIpPerHour: 15,
+        globalPerHour: 300,
+      },
+    },
+
+    // تسجيل مستخدم جديد بعد نجاح التحقق. السياسة الافتراضية: لا دور ولا رصيد
+    // ولا ترقية — حساب أساسي بنفس مفتاح الهوية القانونية فقط.
+    allowSignupOnFirstLogin: true,
+  },
+
   webSessions: {
     kimi: process.env.KIMI_SESSION_ID || "",
     monica: process.env.MONICA_SESSION_ID || "",

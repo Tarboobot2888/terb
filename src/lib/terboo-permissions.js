@@ -146,11 +146,13 @@ const result = (decision, reason, extra = {}) => ({ decision, allowed: decision 
 /**
  * قرار صلاحية لإجراء واحد.
  * @param {{principal:Object, action:string, resource?:{vpsId?:string, panelId?:string}, targets?:Array,
- *          confirmed?:boolean, explicit?:boolean}} input
+ *          confirmed?:boolean, explicit?:boolean, policy?:Object}} input
  *   explicit: طلب المالك صريح ومباشر («اطرده بدون تأكيد») — يسمح بتجاوز التأكيد حيث تسمح السياسة فقط
  */
-function decide({ principal, action, resource = {}, targets = null, confirmed = false, explicit = false }) {
-  const policy = ACTIONS[action];
+function decide({ principal, action, resource = {}, targets = null, confirmed = false, explicit = false, policy: override = null }) {
+  // policy محقونة: قناة أخرى (الويب) تعرّف أفعالها بنفس شكل السياسة وتُقيَّم بنفس المحرّك،
+  // فلا يوجد منطق قرار ثانٍ في المشروع. ACTIONS تبقى مصدر أفعال واتساب كما هي.
+  const policy = override && typeof override === "object" ? override : ACTIONS[action];
   if (!policy) return result(DECISION.DENIED, "unknown-action", { action });
   if (policy.provider && !providerAvailable(policy.provider)) return result(DECISION.PROVIDER_NOT_AVAILABLE, policy.provider, { action });
   if (policy.scope === "group" && !principal.inGroup) return result(DECISION.DENIED, "group-only", { action });

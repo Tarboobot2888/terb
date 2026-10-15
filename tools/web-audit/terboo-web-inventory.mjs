@@ -14,6 +14,9 @@ import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
 import { execFileSync } from "node:child_process";
+// قفل الهوية (§5): أوصاف الإضافات تُكتب في التقارير بعد تصحيح أي اسم قديم،
+// بنفس الدالة التي يستعملها البوت على ردود المزوّدات — لا اسم قديم يدخل docs/.
+import { enforceBrand } from "../../src/lib/terboo-brand.js";
 
 const ROOT = process.cwd();
 const OUT = path.join(ROOT, "docs", "web-platform");
@@ -45,7 +48,11 @@ const KIND_BY_EXT = {
 function gitHead() {
   try {
     return execFileSync("git", ["rev-parse", "HEAD"], { cwd: ROOT, encoding: "utf8" }).trim();
-  } catch { return ""; }
+  } catch (error) {
+    // لا بيانات Git في بيئة العمل ⇒ التقرير يُولَّد بلا بصمة commit
+    console.warn(`[inventory] git HEAD unavailable: ${error.message}`);
+    return "";
+  }
 }
 
 // ── 01 — جرد الملفات ─────────────────────────────
@@ -154,8 +161,8 @@ function pluginCatalog() {
         command: cfg?.name ?? null,
         alias: cfg?.alias ?? [],
         category: cfg?.category ?? category,
-        description: cfg?.description ?? null,
-        usage: cfg?.usage ?? null,
+        description: cfg?.description ? enforceBrand(cfg.description) : null,
+        usage: cfg?.usage ? enforceBrand(cfg.usage) : null,
         permissions: {
           isOwner: cfg?.isOwner ?? false,
           isPremium: cfg?.isPremium ?? false,

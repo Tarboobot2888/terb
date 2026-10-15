@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-15T16:49:38.653Z",
-  "gitHead": "bc8edf6d996b15c10d19263da06c00af325265f0",
+  "generatedAt": "2026-10-15T17:04:48.108Z",
+  "gitHead": "fbbb96973ba5d0172a80dc7eed790daacc4c014e",
   "policy": "hosts and paths only — query strings, tokens and credential values are never recorded",
   "totals": {
     "hosts": 378,
-    "secretEnvNames": 62
+    "secretEnvNames": 63
   },
   "secretEnvNames": [
     "ANTHROPIC_API_KEY",
@@ -58,6 +58,7 @@
     "TERBOO_OCR_CACHE",
     "TERBOO_PRIMARY_NUMBER",
     "TERBOO_PRIORITY_SUBBOTS",
+    "TERBOO_PROBE",
     "TERBOO_QUIET_LOAD",
     "TERBOO_RENDER_JOBS",
     "TERBOO_SSH_HOSTS",
@@ -101,18 +102,18 @@
       ],
       "pathCount": 24,
       "calledFrom": [
-        "plugins/ai/#U0631#U0633#U0645_#U0627#U0646#U0645#U064a.js",
-        "plugins/ai/#U0634#U062e#U0635#U064a#U0629.js",
-        "plugins/asupan/#U062a#U064a#U0643_#U0639#U0634#U0648#U0627#U0626#U064a.js",
-        "plugins/downloader/#U0628#U0643#U0633#U0644_#U062f#U0631#U064a#U0646.js",
-        "plugins/downloader/#U0633#U0641#U0627#U064a#U0644.js",
-        "plugins/downloader/#U0641#U064a#U062f#U064a.js",
-        "plugins/fun/#U062d#U064a#U0627#U062a#U064a_#U062a#U0639#U064a#U0633#U0629.js",
-        "plugins/fun/#U0634#U0639#U0631.js",
-        "plugins/random/#U0635#U0648#U0631_#U0627#U0642#U062a#U0628#U0627#U0633#U0627#U062a.js",
-        "plugins/random/#U0645#U064a#U0645.js",
-        "plugins/search/#U0627#U0646#U062f#U0631#U0648#U064a#U062f.js",
-        "plugins/search/#U0627#U0646#U0645#U064a_#U0627#U064a.js"
+        "plugins/ai/رسم_انمي.js",
+        "plugins/ai/شخصية.js",
+        "plugins/asupan/تيك_عشوائي.js",
+        "plugins/downloader/بكسل_درين.js",
+        "plugins/downloader/سفايل.js",
+        "plugins/downloader/فيدي.js",
+        "plugins/fun/حياتي_تعيسة.js",
+        "plugins/fun/شعر.js",
+        "plugins/random/صور_اقتباسات.js",
+        "plugins/random/ميم.js",
+        "plugins/search/apk2.js",
+        "plugins/search/اندرويد.js"
       ],
       "callerCount": 24,
       "buildsQueryString": true
@@ -144,18 +145,18 @@
       ],
       "pathCount": 21,
       "calledFrom": [
-        "plugins/ai/#U0627#U0644#U062d#U0627#U0646.js",
-        "plugins/ai/#U0631#U064a#U0627#U0636#U064a#U0627#U062a.js",
-        "plugins/ai/#U0634#U0639#U0627#U0631.js",
-        "plugins/ai/#U0635#U064a#U0627#U063a#U0629.js",
         "plugins/ai/simi.js",
-        "plugins/canvas/#U062c#U0648#U0631#U0627.js",
-        "plugins/canvas/#U0634#U0627#U062a_#U0648#U0647#U0645#U064a.js",
-        "plugins/canvas/#U0644#U0648#U063a#U0648.js",
-        "plugins/canvas/#U0645#U0643#U0627#U0644#U0645#U0629.js",
+        "plugins/ai/الحان.js",
+        "plugins/ai/رياضيات.js",
+        "plugins/ai/شعار.js",
+        "plugins/ai/صياغة.js",
         "plugins/canvas/imagejpg.js",
-        "plugins/downloader/#U064a#U0648#U062a_#U0635#U0648#U062a.js",
-        "plugins/info/#U0627#U0644#U0639#U0637#U0644.js"
+        "plugins/canvas/جورا.js",
+        "plugins/canvas/شات_وهمي.js",
+        "plugins/canvas/لوغو.js",
+        "plugins/canvas/مكالمة.js",
+        "plugins/downloader/يوت_صوت.js",
+        "plugins/info/العطل.js"
       ],
       "callerCount": 21,
       "buildsQueryString": true
@@ -180,12 +181,12 @@
       ],
       "pathCount": 14,
       "calledFrom": [
-        "plugins/tools/#U062c#U0644#U0628_#U0645#U0641#U062a#U0627#U062d.js",
-        "plugins/tools/#U0631#U064a#U062f.js",
-        "plugins/tools/#U0633#U0643#U0631#U064a#U0646.js",
-        "plugins/tools/#U0639#U0632#U0644.js",
-        "plugins/tools/#U0641#U062d#U0635.js",
         "plugins/tools/cfbypass.js",
+        "plugins/tools/جلب_مفتاح.js",
+        "plugins/tools/ريد.js",
+        "plugins/tools/سكرين.js",
+        "plugins/tools/عزل.js",
+        "plugins/tools/فحص.js",
         "src/lib/terboo-auto-ai.js",
         "src/lib/terboo-message.js",
         "src/lib/terboo-utils.js",
@@ -216,18 +217,18 @@
       ],
       "pathCount": 14,
       "calledFrom": [
-        "plugins/canvas/#U0641#U0631#U064a_#U0648#U0647#U0645#U064a.js",
-        "plugins/canvas/#U0645#U0644_#U0648#U0647#U0645#U064a.js",
-        "plugins/cecan/#U0641#U062a#U064a#U0627#U062a_#U0625#U0646#U062f#U0648#U0646#U064a#U0633#U064a#U0627.js",
-        "plugins/cecan/#U0641#U062a#U064a#U0627#U062a_#U0627#U0644#U0635#U064a#U0646.js",
-        "plugins/cecan/#U0641#U062a#U064a#U0627#U062a_#U0627#U0644#U064a#U0627#U0628#U0627#U0646.js",
-        "plugins/cecan/#U0641#U062a#U064a#U0627#U062a_#U062a#U0627#U064a#U0644#U0627#U0646#U062f.js",
-        "plugins/cecan/#U0641#U062a#U064a#U0627#U062a_#U0641#U064a#U062a#U0646#U0627#U0645.js",
-        "plugins/cecan/#U0641#U062a#U064a#U0627#U062a_#U0643#U0648#U0631#U064a#U0627.js",
-        "plugins/cecan/#U0641#U062a#U064a#U0627#U062a_#U0645#U0635#U0631.js",
-        "plugins/random/#U0623#U0631#U0634#U064a#U0641_#U0623#U0632#U0631#U0642.js",
-        "plugins/random/#U0644#U0648#U0644#U064a.js",
-        "plugins/search/#U0627#U0628#U0644.js"
+        "plugins/canvas/فري_وهمي.js",
+        "plugins/canvas/مل_وهمي.js",
+        "plugins/cecan/فتيات_إندونيسيا.js",
+        "plugins/cecan/فتيات_الصين.js",
+        "plugins/cecan/فتيات_اليابان.js",
+        "plugins/cecan/فتيات_تايلاند.js",
+        "plugins/cecan/فتيات_فيتنام.js",
+        "plugins/cecan/فتيات_كوريا.js",
+        "plugins/cecan/فتيات_مصر.js",
+        "plugins/random/أرشيف_أزرق.js",
+        "plugins/random/لولي.js",
+        "plugins/search/ابل.js"
       ],
       "callerCount": 14,
       "buildsQueryString": true
@@ -249,18 +250,18 @@
       ],
       "pathCount": 11,
       "calledFrom": [
-        "plugins/downloader/#U0643#U0627#U0628#U0643#U062a.js",
-        "plugins/primbon/#U0627#U062d#U062a#U0645#U0627#U0644#U064a#U0629_#U0627#U0644#U0623#U0645#U0631#U0627#U0636.js",
-        "plugins/primbon/#U0628#U0631#U062c#U0643.js",
-        "plugins/primbon/#U062a#U0641#U0633#U064a#U0631_#U0627#U0644#U0623#U062d#U0644#U0627#U0645.js",
-        "plugins/primbon/#U062a#U0648#U0627#U0641#U0642_#U0627#U0644#U0623#U0633#U0645#U0627#U0621.js",
-        "plugins/primbon/#U062a#U0648#U0642#U0639#U0627#U062a_#U0627#U0644#U0632#U0648#U0627#U062c.js",
-        "plugins/primbon/#U062d#U0638_#U0627#U0644#U0631#U0642#U0645.js",
-        "plugins/primbon/#U0635#U0641#U0627#U062a_#U0627#U0644#U0639#U0645#U0644_#U0648#U0627#U0644#U062a#U062c#U0627#U0631#U0629.js",
-        "plugins/primbon/#U0645#U0639#U0646#U0649_#U0627#U0644#U0627#U0633#U0645.js",
-        "plugins/religi/#U0625#U0633#U0644#U0627#U0645#U064a.js",
-        "plugins/search/#U0628#U0646#U062a#U0631.js",
-        "plugins/search/#U0635#U0648#U0631#U0647.js"
+        "plugins/downloader/كابكت.js",
+        "plugins/primbon/احتمالية_الأمراض.js",
+        "plugins/primbon/برجك.js",
+        "plugins/primbon/تفسير_الأحلام.js",
+        "plugins/primbon/توافق_الأسماء.js",
+        "plugins/primbon/توقعات_الزواج.js",
+        "plugins/primbon/حظ_الرقم.js",
+        "plugins/primbon/صفات_العمل_والتجارة.js",
+        "plugins/primbon/معنى_الاسم.js",
+        "plugins/religi/إسلامي.js",
+        "plugins/search/بنتر.js",
+        "plugins/search/صوره.js"
       ],
       "callerCount": 14,
       "buildsQueryString": true
@@ -283,7 +284,7 @@
       ],
       "pathCount": 12,
       "calledFrom": [
-        "plugins/downloader/#U062a#U064a#U0643_#U0635#U0648#U062a.js",
+        "plugins/downloader/تيك_صوت.js",
         "tests/terboo-ai-core-v4.test.mjs",
         "tests/terboo-ai-matrix.test.mjs",
         "tests/terboo-ai-runtime.test.mjs",
@@ -316,11 +317,11 @@
       "calledFrom": [
         "config.example.js",
         "config.js",
-        "plugins/group/#U0627#U0639#U0644#U0627#U0646.js",
-        "plugins/main/#U062a#U0633#U062a2.js",
-        "plugins/owner/#U0627#U0639#U0644#U0627#U0646.js",
-        "plugins/tools/#U0645#U0639#U0631#U0641_#U0627#U0644#U0642#U0646#U0627#U0629.js",
-        "plugins/utility/#U062a#U0641#U0642#U062f.js",
+        "plugins/group/اعلان.js",
+        "plugins/main/تست2.js",
+        "plugins/owner/اعلان.js",
+        "plugins/tools/معرف_القناة.js",
+        "plugins/utility/تفقد.js",
         "src/lib/terboo-brand.js",
         "src/lib/terboo-builder.js",
         "src/lib/terboo-exif.js",
@@ -347,17 +348,17 @@
       ],
       "pathCount": 11,
       "calledFrom": [
-        "plugins/ai/#U063a#U064a#U062a#U0627.js",
-        "plugins/fun/#U0634#U064a#U062e.js",
-        "plugins/random/#U0644#U0627_#U0647#U064a#U0644#U0648.js",
-        "plugins/search/#U0633#U0628#U0648#U062a#U064a#U0641#U0627#U064a.js",
-        "plugins/search/#U0634#U063a#U0644.js",
-        "plugins/search/#U0635#U0648#U0631_#U062a#U064a#U0643.js",
-        "plugins/search/#U0645#U0627#U0646#U062c#U0627.js",
-        "plugins/search/#U0645#U0627#U064a#U0646#U0643#U0631#U0627#U0641#U062a.js",
+        "plugins/ai/غيتا.js",
+        "plugins/fun/شيخ.js",
+        "plugins/random/لا_هيلو.js",
         "plugins/search/playch.js",
-        "plugins/tools/#U0628#U062d#U062b_#U062e#U0637#U0623.js",
-        "plugins/tools/#U0633#U0628#U0627#U0645_#U0646#U062c#U0644.js",
+        "plugins/search/سبوتيفاي.js",
+        "plugins/search/شغل.js",
+        "plugins/search/صور_تيك.js",
+        "plugins/search/مانجا.js",
+        "plugins/search/ماينكرافت.js",
+        "plugins/tools/بحث_خطأ.js",
+        "plugins/tools/سبام_نجل.js",
         "src/lib/terboo-apimanager.js"
       ],
       "callerCount": 12,
@@ -378,16 +379,16 @@
       ],
       "pathCount": 9,
       "calledFrom": [
-        "plugins/canvas/#U0645#U0643#U0627#U0644#U0645#U0629.js",
+        "plugins/canvas/مكالمة.js",
         "plugins/convert/imagejpg.js",
-        "plugins/fun/#U0628#U0648#U0633#U0629.js",
-        "plugins/fun/#U062a#U0641#U0648.js",
-        "plugins/fun/#U0632#U0648#U0627#U062c.js",
-        "plugins/fun/#U0634#U062e#U0631#U0647.js",
-        "plugins/group/#U0633#U062d#U0628.js",
-        "plugins/religi/#U0645#U0648#U0627#U0642#U064a#U062a_#U0627#U0644#U0635#U0644#U0627#U0629.js",
-        "plugins/tools/#U0627#U062a#U0635#U0627#U0644.js",
-        "plugins/tools/#U0627#U0642#U062a#U0628#U0627#U0633_#U0648#U0627#U062a#U0633#U0627#U0628.js",
+        "plugins/fun/بوسة.js",
+        "plugins/fun/تفو.js",
+        "plugins/fun/زواج.js",
+        "plugins/fun/شخره.js",
+        "plugins/group/سحب.js",
+        "plugins/religi/مواقيت_الصلاة.js",
+        "plugins/tools/اتصال.js",
+        "plugins/tools/اقتباس_واتساب.js",
         "src/lib/terboo-sholat-scheduler.js"
       ],
       "callerCount": 11,
@@ -402,16 +403,16 @@
       ],
       "pathCount": 3,
       "calledFrom": [
-        "plugins/group/#U0627#U0636#U0641.js",
-        "plugins/group/#U0631#U0627#U0628#U0637_#U0627#U0644#U0645#U062c#U0645#U0648#U0639#U0629.js",
-        "plugins/owner/#U0627#U062e#U0631#U062c.js",
-        "plugins/owner/#U0627#U0636#U0641_#U0627#U064a#U062c#U0627#U0631.js",
-        "plugins/owner/#U0627#U0646#U0634#U0627#U0621_#U0645#U062c#U0645#U0648#U0639#U0629.js",
-        "plugins/owner/#U0627#U0646#U0636#U0645#U0627#U0645.js",
-        "plugins/owner/#U062a#U062c#U062f#U064a#U062f_#U0627#U0644#U0625#U064a#U062c#U0627#U0631.js",
-        "plugins/owner/#U062d#U0630#U0641_#U0625#U064a#U062c#U0627#U0631.js",
-        "plugins/owner/#U0647#U0630#U0647_#U0627#U0644#U0645#U062c#U0645#U0648#U0639#U0629_#U0641#U0642#U0637.js",
-        "plugins/utility/#U062a#U0641#U0642#U062f.js",
+        "plugins/group/اضف.js",
+        "plugins/group/رابط_المجموعة.js",
+        "plugins/owner/اخرج.js",
+        "plugins/owner/اضف_ايجار.js",
+        "plugins/owner/انشاء_مجموعة.js",
+        "plugins/owner/انضمام.js",
+        "plugins/owner/تجديد_الإيجار.js",
+        "plugins/owner/حذف_إيجار.js",
+        "plugins/owner/هذه_المجموعة_فقط.js",
+        "plugins/utility/تفقد.js",
         "src/lib/terboo-group-actions.js"
       ],
       "callerCount": 11,
@@ -432,9 +433,9 @@
       "calledFrom": [
         "config.example.js",
         "config.js",
-        "plugins/downloader/#U0627#U0646#U0633#U062a#U0627.js",
-        "plugins/downloader/#U062a#U062d#U0645#U064a#U0644.js",
-        "plugins/downloader/#U0631#U064a#U0644.js",
+        "plugins/downloader/انستا.js",
+        "plugins/downloader/تحميل.js",
+        "plugins/downloader/ريل.js",
         "tests/terboo-brand-lock.test.mjs",
         "tests/terboo-scraper-ai-e2e.test.mjs",
         "tests/terboo-scraper-registry.test.mjs",
@@ -451,15 +452,15 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/canvas/#U062c#U0648#U0631#U0627.js",
         "plugins/canvas/imagejpg.js",
+        "plugins/canvas/جورا.js",
         "plugins/convert/imagejpg.js",
-        "plugins/store/#U0625#U0636#U0627#U0641#U0629_#U0642#U0627#U0626#U0645#U0629.js",
-        "plugins/store/#U0625#U0636#U0627#U0641#U0629_#U0645#U0646#U062a#U062c.js",
-        "plugins/store/#U062a#U0639#U062f#U064a#U0644_#U0645#U062a#U062c#U0631.js",
-        "plugins/store/#U062a#U0639#U062f#U064a#U0644_#U0645#U0646#U062a#U062c.js",
-        "plugins/tools/#U0639#U0632#U0644.js",
-        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js",
+        "plugins/store/إضافة_قائمة.js",
+        "plugins/store/إضافة_منتج.js",
+        "plugins/store/تعديل_متجر.js",
+        "plugins/store/تعديل_منتج.js",
+        "plugins/tools/عزل.js",
+        "plugins/tools/لرابط.js",
         "src/lib/terboo-uploader.js"
       ],
       "callerCount": 10,
@@ -477,10 +478,10 @@
       "calledFrom": [
         "config.example.js",
         "config.js",
-        "plugins/downloader/#U062a#U062d#U0645#U064a#U0644_#U063a#U064a#U062a.js",
-        "plugins/group/#U062a#U0631#U062d#U064a#U0628.js",
-        "plugins/main/#U062a#U0633#U062a2.js",
-        "plugins/tools/#U0644#U0642#U0637#U0629_#U0634#U0627#U0634#U0629.js",
+        "plugins/downloader/تحميل_غيت.js",
+        "plugins/group/ترحيب.js",
+        "plugins/main/تست2.js",
+        "plugins/tools/لقطة_شاشة.js",
         "src/handler.js",
         "src/lib/terboo-serialize.js",
         "tests/terboo-brand-lock.test.mjs"
@@ -503,12 +504,12 @@
       ],
       "pathCount": 9,
       "calledFrom": [
-        "plugins/ai/#U062a#U0645#U062b#U0627#U0644.js",
-        "plugins/ai/#U062d#U062c#U0627#U0628.js",
-        "plugins/ai/#U063a#U064a#U0628#U0644#U064a.js",
-        "plugins/ai/#U0645#U062c#U0633#U0645.js",
-        "plugins/ai/#U0645#U0643#U0629.js",
-        "plugins/ai/#U064a#U0627#U0628#U0627#U0646#U064a.js",
+        "plugins/ai/تمثال.js",
+        "plugins/ai/حجاب.js",
+        "plugins/ai/غيبلي.js",
+        "plugins/ai/مجسم.js",
+        "plugins/ai/مكة.js",
+        "plugins/ai/ياباني.js",
         "plugins/sticker/bratvid2.js",
         "src/lib/terboo-apimanager.js",
         "src/scraper/seaart.js"
@@ -529,15 +530,15 @@
       ],
       "pathCount": 7,
       "calledFrom": [
-        "plugins/ai/#U062a#U0648#U0644#U064a#U062f.js",
-        "plugins/ai/#U0633#U0645#U0633#U0645#U064a.js",
-        "plugins/ai/#U0648#U0635#U0641.js",
-        "plugins/downloader/#U0627#U0646#U0633#U062a#U0627.js",
-        "plugins/downloader/#U062a#U062d#U0645#U064a#U0644.js",
-        "plugins/downloader/#U0631#U0648#U0627#U064a#U0629.js",
-        "plugins/fun/#U0633#U0645#U0633#U0645#U064a2.js",
-        "plugins/tools/#U0627#U0646#U0637#U0642.js",
-        "plugins/tools/#U062a#U0634#U064a#U0643.js"
+        "plugins/ai/توليد.js",
+        "plugins/ai/سمسمي.js",
+        "plugins/ai/وصف.js",
+        "plugins/downloader/انستا.js",
+        "plugins/downloader/تحميل.js",
+        "plugins/downloader/رواية.js",
+        "plugins/fun/سمسمي2.js",
+        "plugins/tools/انطق.js",
+        "plugins/tools/تشيك.js"
       ],
       "callerCount": 9,
       "buildsQueryString": true
@@ -555,13 +556,13 @@
       ],
       "pathCount": 7,
       "calledFrom": [
-        "plugins/ai/#U062c#U064a#U0628#U064a#U062a#U064a4.js",
-        "plugins/downloader/#U064a#U0648#U062a_#U0641#U064a#U062f#U064a#U0648.js",
+        "plugins/ai/جيبيتي4.js",
+        "plugins/downloader/يوت_فيديو.js",
         "plugins/group/autoai.js",
-        "plugins/search/#U0628#U0646#U062a#U0631#U0641#U064a#U062f.js",
-        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0627#U0646#U0633#U062a#U063a#U0631#U0627#U0645.js",
-        "plugins/stalker/#U062a#U062c#U0633#U0633_#U062c#U064a#U062b#U0628.js",
-        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0646#U0628#U064a#U0625#U0645.js",
+        "plugins/search/بنترفيد.js",
+        "plugins/stalker/تجسس_انستغرام.js",
+        "plugins/stalker/تجسس_جيثب.js",
+        "plugins/stalker/تجسس_نبيإم.js",
         "src/lib/terboo-auto-ai.js"
       ],
       "callerCount": 8,
@@ -577,8 +578,8 @@
       ],
       "pathCount": 4,
       "calledFrom": [
-        "plugins/downloader/#U062a#U064a#U0643_#U0635#U0648#U062a.js",
-        "plugins/downloader/#U062a#U064a#U0643_#U0641#U064a#U062f#U064a#U0648.js",
+        "plugins/downloader/تيك_صوت.js",
+        "plugins/downloader/تيك_فيديو.js",
         "tests/terboo-performance.test.mjs",
         "tests/terboo-scraper-ai-e2e.test.mjs",
         "tests/terboo-scraper-registry.test.mjs",
@@ -602,8 +603,8 @@
       ],
       "pathCount": 7,
       "calledFrom": [
-        "plugins/downloader/#U0633#U0628#U0648#U062a#U064a#U0641#U0627#U064a_#U062a#U062d#U0645#U064a#U0644.js",
-        "plugins/tools/#U062a#U0639#U0631#U064a#U0641_#U0627#U0644#U0645#U0648#U0633#U064a#U0642#U0649.js",
+        "plugins/downloader/سبوتيفاي_تحميل.js",
+        "plugins/tools/تعريف_الموسيقى.js",
         "tests/spotify-provider.test.mjs",
         "tests/terboo-scraper-ai-e2e.test.mjs",
         "tests/terboo-scraper-registry.test.mjs",
@@ -627,13 +628,13 @@
       ],
       "pathCount": 7,
       "calledFrom": [
-        "plugins/downloader/#U0644#U0639#U0628#U0629.js",
-        "plugins/info/#U0627#U0644#U062c#U0632#U064a#U0631#U0629.js",
-        "plugins/info/#U0637#U0642#U0633.js",
-        "plugins/search/#U0627#U0637#U0627#U0631.js",
-        "plugins/search/#U0628#U0646#U062a#U0631_#U0641#U064a#U062f.js",
-        "plugins/sticker/#U0645#U0644#U0635#U0642#U0627#U062a3.js",
-        "plugins/tools/#U062a#U0631#U062c#U0645.js",
+        "plugins/downloader/لعبة.js",
+        "plugins/info/الجزيرة.js",
+        "plugins/info/طقس.js",
+        "plugins/search/اطار.js",
+        "plugins/search/بنتر_فيد.js",
+        "plugins/sticker/ملصقات3.js",
+        "plugins/tools/ترجم.js",
         "src/handler.js"
       ],
       "callerCount": 8,
@@ -651,7 +652,7 @@
       ],
       "pathCount": 6,
       "calledFrom": [
-        "plugins/downloader/#U062a#U0648#U064a#U062a#U0631.js",
+        "plugins/downloader/تويتر.js",
         "tests/terboo-ai-core.test.mjs",
         "tests/terboo-scraper-ai-e2e.test.mjs",
         "tests/terboo-scraper-registry.test.mjs",
@@ -669,10 +670,10 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/search/#U0627#U0646#U0645#U064a_#U0627#U064a.js",
+        "plugins/search/انمي_اي.js",
         "plugins/sticker/smeme.js",
-        "plugins/tools/#U062a#U0639#U0631#U064a#U0641_#U0627#U0644#U0645#U0648#U0633#U064a#U0642#U0649.js",
-        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js",
+        "plugins/tools/تعريف_الموسيقى.js",
+        "plugins/tools/لرابط.js",
         "src/lib/terboo-tmpfiles.js",
         "src/lib/terboo-uploader.js"
       ],
@@ -692,8 +693,8 @@
       ],
       "pathCount": 7,
       "calledFrom": [
-        "plugins/search/#U062a#U0641#U0627#U0635#U064a#U0644.js",
-        "plugins/tools/#U0646#U0633#U062e_#U0641#U064a#U062f#U064a#U0648.js",
+        "plugins/search/تفاصيل.js",
+        "plugins/tools/نسخ_فيديو.js",
         "tests/terboo-menu-delivery.test.mjs",
         "tests/terboo-scraper-ai-e2e.test.mjs",
         "tests/terboo-scraper-registry.test.mjs",
@@ -750,11 +751,11 @@
       ],
       "pathCount": 3,
       "calledFrom": [
-        "plugins/ai/#U0645#U0648#U0646#U064a#U0643#U0627.js",
-        "plugins/downloader/#U062a#U062d#U0645#U064a#U0644_#U0627#U0646#U0645#U064a.js",
-        "plugins/downloader/#U0631#U064a#U0644.js",
-        "plugins/search/#U0623#U0646#U0645#U064a.js",
-        "plugins/tools/#U0631#U064a#U062f.js"
+        "plugins/ai/مونيكا.js",
+        "plugins/downloader/تحميل_انمي.js",
+        "plugins/downloader/ريل.js",
+        "plugins/search/أنمي.js",
+        "plugins/tools/ريد.js"
       ],
       "callerCount": 5,
       "buildsQueryString": true
@@ -773,10 +774,10 @@
       ],
       "pathCount": 8,
       "calledFrom": [
-        "plugins/canvas/#U0645#U062d#U0641#U0638#U0629.js",
         "plugins/canvas/bratlocal.js",
-        "plugins/media/#U0645#U0648#U0633#U064a#U0642#U0649.js",
-        "plugins/media/#U0645#U0648#U0633#U064a#U0642#U06492.js",
+        "plugins/canvas/محفظة.js",
+        "plugins/media/موسيقى.js",
+        "plugins/media/موسيقى2.js",
         "plugins/owner/install.js"
       ],
       "callerCount": 5,
@@ -791,9 +792,9 @@
       ],
       "pathCount": 3,
       "calledFrom": [
-        "plugins/downloader/#U0631#U064a#U0644.js",
-        "plugins/downloader/#U0641#U064a#U0633#U0628#U0648#U0643.js",
-        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0641#U064a#U0633#U0628#U0648#U0643.js",
+        "plugins/downloader/ريل.js",
+        "plugins/downloader/فيسبوك.js",
+        "plugins/stalker/تجسس_فيسبوك.js",
         "tests/terboo-scraper-ai-e2e.test.mjs",
         "tests/terboo-scraper-registry.test.mjs"
       ],
@@ -811,7 +812,7 @@
       ],
       "pathCount": 5,
       "calledFrom": [
-        "plugins/downloader/#U0645#U064a#U062f#U064a#U0627_#U0641#U0627#U064a#U0631.js",
+        "plugins/downloader/ميديا_فاير.js",
         "tests/terboo-scraper-ai-e2e.test.mjs",
         "tests/terboo-scraper-registry.test.mjs",
         "tests/terboo-scrapers-each.test.mjs",
@@ -828,11 +829,11 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/downloader/#U064a#U0648#U062a_#U0635#U0648#U062a.js",
-        "plugins/downloader/#U064a#U0648#U062a_#U0641#U064a#U062f#U064a#U0648.js",
-        "plugins/stalker/#U062a#U062c#U0633#U0633_#U064a#U0648#U062a#U064a#U0648#U0628.js",
-        "plugins/tools/#U062a#U0639#U0631#U064a#U0641_#U0627#U0644#U0645#U0648#U0633#U064a#U0642#U0649.js",
-        "plugins/tools/#U0646#U0635_#U0641#U064a#U062f#U064a#U0648.js"
+        "plugins/downloader/يوت_صوت.js",
+        "plugins/downloader/يوت_فيديو.js",
+        "plugins/stalker/تجسس_يوتيوب.js",
+        "plugins/tools/تعريف_الموسيقى.js",
+        "plugins/tools/نص_فيديو.js"
       ],
       "callerCount": 5,
       "buildsQueryString": true
@@ -845,10 +846,10 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/ai/#U062a#U062e#U064a#U06442.js",
-        "plugins/search/#U0628#U062f#U064a.js",
-        "plugins/search/#U0628#U0646#U062a#U0631#U064a#U0633#U062a.js",
-        "plugins/tools/#U0635#U0648#U062a.js"
+        "plugins/ai/تخيل2.js",
+        "plugins/search/بدي.js",
+        "plugins/search/بنتريست.js",
+        "plugins/tools/صوت.js"
       ],
       "callerCount": 4,
       "buildsQueryString": true
@@ -862,10 +863,10 @@
       ],
       "pathCount": 3,
       "calledFrom": [
-        "plugins/ai/#U062a#U0648#U0644#U064a#U062f2.js",
-        "plugins/ai/#U0646#U0627#U0646#U0648#U0628#U0646#U0627#U0646#U06273.js",
-        "plugins/downloader/#U062a#U062d#U0645#U064a#U0644_#U062a#U0637#U0628#U064a#U0642.js",
-        "plugins/search/#U062a#U0637#U0628#U064a#U0642.js"
+        "plugins/ai/توليد2.js",
+        "plugins/ai/نانوبنانا3.js",
+        "plugins/downloader/تحميل_تطبيق.js",
+        "plugins/search/تطبيق.js"
       ],
       "callerCount": 4,
       "buildsQueryString": false
@@ -879,9 +880,9 @@
       ],
       "pathCount": 3,
       "calledFrom": [
-        "plugins/ai/#U0631#U0641#U0639_#U062c#U0648#U062f#U0629.js",
-        "plugins/tools/#U062a#U062d#U0633#U064a#U0646_#U062c#U0648#U062f#U0629.js",
-        "plugins/tools/#U0631#U0641#U0639_#U062c#U0648#U062f#U06293.js",
+        "plugins/ai/رفع_جودة.js",
+        "plugins/tools/تحسين_جودة.js",
+        "plugins/tools/رفع_جودة3.js",
         "src/scraper/imglarger.js"
       ],
       "callerCount": 4,
@@ -898,8 +899,8 @@
       "pathCount": 4,
       "calledFrom": [
         "plugins/convert/imagejpg.js",
-        "plugins/owner/#U0633#U0631#U0642#U0629_#U0627#U0644#U0635#U0648#U0631#U0629.js",
-        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0648#U0627#U062a#U0633#U0627#U0628.js",
+        "plugins/owner/سرقة_الصورة.js",
+        "plugins/stalker/تجسس_واتساب.js",
         "plugins/sticker/smeme.js"
       ],
       "callerCount": 4,
@@ -916,7 +917,7 @@
       ],
       "pathCount": 5,
       "calledFrom": [
-        "plugins/downloader/#U062a#U064a#U0631#U0627#U0628#U0648#U0643#U0633.js",
+        "plugins/downloader/تيرابوكس.js",
         "tests/terboo-scraper-registry.test.mjs",
         "tests/terboo-scrapers-each.test.mjs",
         "tools/terboo-scraper-live.mjs"
@@ -931,8 +932,8 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/group/#U0627#U0639#U0644#U0627#U0646.js",
-        "plugins/owner/#U0627#U0639#U0644#U0627#U0646.js",
+        "plugins/group/اعلان.js",
+        "plugins/owner/اعلان.js",
         "plugins/user/profile.js",
         "src/lib/terboo-welcome-card.js"
       ],
@@ -946,8 +947,8 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/tools/#U0635#U0646#U0639_#U062a#U0637#U0628#U064a#U0642.js",
-        "plugins/tools/#U0644#U0642#U0637#U0629_#U0634#U0627#U0634#U0629.js",
+        "plugins/tools/صنع_تطبيق.js",
+        "plugins/tools/لقطة_شاشة.js",
         "src/lib/terboo-serialize.js",
         "src/lib/terboo-utils.js"
       ],
@@ -968,7 +969,7 @@
       ],
       "pathCount": 8,
       "calledFrom": [
-        "plugins/tools/#U0645#U0639#U0631#U0641_#U0627#U0644#U0642#U0646#U0627#U0629.js",
+        "plugins/tools/معرف_القناة.js",
         "tests/terboo-baileys-migration.test.mjs",
         "tests/terboo-rich-response.test.mjs",
         "tools/terboo-wa-capabilities.mjs"
@@ -1016,7 +1017,7 @@
       ],
       "pathCount": 3,
       "calledFrom": [
-        "plugins/downloader/#U062a#U062d#U0645#U064a#U0644_#U0628#U0646#U062a#U0631.js",
+        "plugins/downloader/تحميل_بنتر.js",
         "tests/terboo-scraper-registry.test.mjs",
         "tests/terboo-scrapers-each.test.mjs"
       ],
@@ -1032,7 +1033,7 @@
       ],
       "pathCount": 3,
       "calledFrom": [
-        "plugins/downloader/#U062f#U0648#U064a#U064a#U0646.js",
+        "plugins/downloader/دويين.js",
         "tests/terboo-scraper-registry.test.mjs",
         "tests/terboo-scrapers-each.test.mjs"
       ],
@@ -1048,7 +1049,7 @@
       ],
       "pathCount": 3,
       "calledFrom": [
-        "plugins/downloader/#U062f#U0648#U064a#U064a#U0646.js",
+        "plugins/downloader/دويين.js",
         "src/lib/terboo-apimanager.js",
         "src/scraper/tiktoksearch.js"
       ],
@@ -1065,7 +1066,7 @@
       ],
       "pathCount": 4,
       "calledFrom": [
-        "plugins/downloader/#U062f#U064a#U0644#U064a#U0645#U0648#U0634#U0646.js",
+        "plugins/downloader/ديليموشن.js",
         "tests/terboo-scrapers-each.test.mjs",
         "tools/terboo-scraper-live.mjs"
       ],
@@ -1081,7 +1082,7 @@
       ],
       "pathCount": 3,
       "calledFrom": [
-        "plugins/downloader/#U0633#U0627#U0648#U0646#U062f_#U062a#U062d#U0645#U064a#U0644.js",
+        "plugins/downloader/ساوند_تحميل.js",
         "tests/terboo-scrapers-each.test.mjs",
         "tools/terboo-scraper-live.mjs"
       ],
@@ -1098,7 +1099,7 @@
       ],
       "pathCount": 4,
       "calledFrom": [
-        "plugins/downloader/#U0633#U0641#U0627#U064a#U0644.js",
+        "plugins/downloader/سفايل.js",
         "tests/terboo-scrapers-each.test.mjs",
         "tools/terboo-scraper-live.mjs"
       ],
@@ -1114,7 +1115,7 @@
       ],
       "pathCount": 3,
       "calledFrom": [
-        "plugins/downloader/#U0644#U0627#U064a#U0643#U064a.js",
+        "plugins/downloader/لايكي.js",
         "tests/terboo-scrapers-each.test.mjs",
         "tools/terboo-scraper-live.mjs"
       ],
@@ -1129,8 +1130,8 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/owner/#U0637#U0644#U0628.js",
         "plugins/owner/api.js",
+        "plugins/owner/طلب.js",
         "src/lib/terboo-utils.js"
       ],
       "callerCount": 3,
@@ -1144,7 +1145,7 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js",
+        "plugins/tools/لرابط.js",
         "src/lib/terboo-uploader.js",
         "src/scraper/img2img.js"
       ],
@@ -1158,7 +1159,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/tools/#U0646#U0633#U062e_#U0635#U0648#U062a#U064a.js",
+        "plugins/tools/نسخ_صوتي.js",
         "src/handler.js",
         "src/lib/terboo-multimodal.js"
       ],
@@ -1264,7 +1265,7 @@
       ],
       "pathCount": 3,
       "calledFrom": [
-        "plugins/ai/#U0627#U0644#U062a#U0645#U064a#U0632.js",
+        "plugins/ai/التميز.js",
         "src/scraper/unlimitedai.js"
       ],
       "callerCount": 2,
@@ -1278,8 +1279,8 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/ai/#U062a#U062e#U064a#U06442.js",
-        "plugins/ai/#U0641#U0646.js"
+        "plugins/ai/تخيل2.js",
+        "plugins/ai/فن.js"
       ],
       "callerCount": 2,
       "buildsQueryString": false
@@ -1291,7 +1292,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/ai/#U062d#U062c#U0627#U0628.js",
+        "plugins/ai/حجاب.js",
         "src/lib/terboo-uploader.js"
       ],
       "callerCount": 2,
@@ -1305,8 +1306,8 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/ai/#U0646#U0627#U0646#U0648#U0628#U0646#U0627#U0646#U06273.js",
-        "plugins/ai/#U0648#U0635#U0641.js"
+        "plugins/ai/نانوبنانا3.js",
+        "plugins/ai/وصف.js"
       ],
       "callerCount": 2,
       "buildsQueryString": false
@@ -1320,7 +1321,7 @@
       ],
       "pathCount": 3,
       "calledFrom": [
-        "plugins/ai/#U0646#U0648#U062a.js",
+        "plugins/ai/نوت.js",
         "src/scraper/deepseek.js"
       ],
       "callerCount": 2,
@@ -1333,8 +1334,22 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/convert/#U0645#U0644#U0635#U0642_#U0630#U0643#U064a.js",
-        "plugins/sticker/#U0627#U0641#U062a#U0627#U0631.js"
+        "plugins/convert/ملصق_ذكي.js",
+        "plugins/sticker/افتار.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
+    },
+    {
+      "host": "instagram.com",
+      "pathsWithoutQuery": [
+        "/:var",
+        "/p/xxx"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/downloader/aio.js",
+        "plugins/stalker/تجسس_انستغرام.js"
       ],
       "callerCount": 2,
       "buildsQueryString": false
@@ -1347,7 +1362,7 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/downloader/#U0628#U0643#U0633#U0644_#U062f#U0631#U064a#U0646.js",
+        "plugins/downloader/بكسل_درين.js",
         "src/lib/terboo-auto-anime.js"
       ],
       "callerCount": 2,
@@ -1361,8 +1376,8 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/downloader/#U062a#U062d#U0645#U064a#U0644_#U0627#U0646#U0645#U064a.js",
-        "plugins/search/#U0623#U0646#U0645#U064a.js"
+        "plugins/downloader/تحميل_انمي.js",
+        "plugins/search/أنمي.js"
       ],
       "callerCount": 2,
       "buildsQueryString": false
@@ -1374,7 +1389,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/downloader/#U062a#U064a#U0631#U0627#U0628#U0648#U0643#U0633.js",
+        "plugins/downloader/تيرابوكس.js",
         "src/scraper/terabox.js"
       ],
       "callerCount": 2,
@@ -1387,8 +1402,8 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/downloader/#U0631#U064a#U0644.js",
-        "plugins/search/#U062c#U0648#U062c#U0644.js"
+        "plugins/downloader/ريل.js",
+        "plugins/search/جوجل.js"
       ],
       "callerCount": 2,
       "buildsQueryString": true
@@ -1402,25 +1417,11 @@
       ],
       "pathCount": 3,
       "calledFrom": [
-        "plugins/downloader/#U0641#U064a#U062f#U064a.js",
+        "plugins/downloader/فيدي.js",
         "src/scraper/videy.js"
       ],
       "callerCount": 2,
       "buildsQueryString": true
-    },
-    {
-      "host": "instagram.com",
-      "pathsWithoutQuery": [
-        "/:var",
-        "/p/xxx"
-      ],
-      "pathCount": 2,
-      "calledFrom": [
-        "plugins/downloader/aio.js",
-        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0627#U0646#U0633#U062a#U063a#U0631#U0627#U0645.js"
-      ],
-      "callerCount": 2,
-      "buildsQueryString": false
     },
     {
       "host": "en.ephoto360.com",
@@ -1454,7 +1455,7 @@
       "pathCount": 50,
       "calledFrom": [
         "plugins/ephoto/ephoto.js",
-        "plugins/photo/#U0633#U0644#U0641#U064a#U06313d.js"
+        "plugins/photo/سلفير3d.js"
       ],
       "callerCount": 2,
       "buildsQueryString": false
@@ -1467,8 +1468,8 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/fun/#U0623#U062d#U062f#U0627#U062b.js",
-        "plugins/tools/#U062c#U064a#U0645#U064a#U0644.js"
+        "plugins/fun/أحداث.js",
+        "plugins/tools/جيميل.js"
       ],
       "callerCount": 2,
       "buildsQueryString": true
@@ -1480,8 +1481,8 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/info/#U0645#U0631#U0627#U0642#U0628#U0629_#U0627#U0644#U0645#U0632#U0631#U0639#U0629.js",
-        "plugins/religi/#U0642#U0631#U0622#U0646#U064a.js"
+        "plugins/info/مراقبة_المزرعة.js",
+        "plugins/religi/قرآني.js"
       ],
       "callerCount": 2,
       "buildsQueryString": false
@@ -1508,11 +1509,24 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/random/#U0635#U0648#U0631_#U0632#U0648#U062c#U064a#U0646.js",
+        "plugins/random/صور_زوجين.js",
         "plugins/sticker/bratcewek.js"
       ],
       "callerCount": 2,
       "buildsQueryString": true
+    },
+    {
+      "host": "webws.365scores.com",
+      "pathsWithoutQuery": [
+        "/web"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/asiariyadh.js",
+        "plugins/search/كرة.js"
+      ],
+      "callerCount": 2,
+      "buildsQueryString": false
     },
     {
       "host": "www.nerdfonts.com",
@@ -1522,8 +1536,8 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/search/#U062a#U062d#U0645#U064a#U0644_#U062e#U0637.js",
-        "plugins/search/#U062e#U0637#U0648#U0637.js"
+        "plugins/search/تحميل_خط.js",
+        "plugins/search/خطوط.js"
       ],
       "callerCount": 2,
       "buildsQueryString": false
@@ -1540,24 +1554,11 @@
       ],
       "pathCount": 6,
       "calledFrom": [
-        "plugins/search/#U062f#U0631#U0627#U0645#U0627.js",
+        "plugins/search/دراما.js",
         "src/scraper/dramabox.js"
       ],
       "callerCount": 2,
       "buildsQueryString": true
-    },
-    {
-      "host": "webws.365scores.com",
-      "pathsWithoutQuery": [
-        "/web"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/search/#U0643#U0631#U0629.js",
-        "plugins/search/asiariyadh.js"
-      ],
-      "callerCount": 2,
-      "buildsQueryString": false
     },
     {
       "host": "twitter.com",
@@ -1567,7 +1568,7 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/stalker/#U062a#U062c#U0633#U0633_#U062a#U0648#U064a#U062a#U0631.js",
+        "plugins/stalker/تجسس_تويتر.js",
         "tests/terboo-scraper-registry.test.mjs"
       ],
       "callerCount": 2,
@@ -1582,7 +1583,7 @@
       ],
       "pathCount": 3,
       "calledFrom": [
-        "plugins/stalker/#U062a#U062c#U0633#U0633_#U064a#U0648#U062a#U064a#U0648#U0628.js",
+        "plugins/stalker/تجسس_يوتيوب.js",
         "tools/terboo-scraper-live.mjs"
       ],
       "callerCount": 2,
@@ -1597,8 +1598,8 @@
       ],
       "pathCount": 3,
       "calledFrom": [
-        "plugins/sticker/#U0645#U0644#U0635#U0642#U0627#U062a2.js",
-        "plugins/sticker/stickerpack.js"
+        "plugins/sticker/stickerpack.js",
+        "plugins/sticker/ملصقات2.js"
       ],
       "callerCount": 2,
       "buildsQueryString": false
@@ -1611,8 +1612,8 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/sticker/#U0645#U0644#U0635#U0642#U0627#U062a2.js",
-        "plugins/sticker/stickerpack.js"
+        "plugins/sticker/stickerpack.js",
+        "plugins/sticker/ملصقات2.js"
       ],
       "callerCount": 2,
       "buildsQueryString": false
@@ -1624,8 +1625,8 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/tools/#U0627#U0631#U0633#U0627#U0644_#U0646#U062c#U0644.js",
-        "plugins/tools/#U0633#U0628#U0627#U0645_#U0646#U062c#U0644.js"
+        "plugins/tools/ارسال_نجل.js",
+        "plugins/tools/سبام_نجل.js"
       ],
       "callerCount": 2,
       "buildsQueryString": false
@@ -1638,8 +1639,8 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/tools/#U0627#U064a#U0628#U064a.js",
-        "plugins/tools/#U0645#U0639#U0631#U0641ip.js"
+        "plugins/tools/ايبي.js",
+        "plugins/tools/معرفip.js"
       ],
       "callerCount": 2,
       "buildsQueryString": false
@@ -1653,8 +1654,8 @@
       ],
       "pathCount": 3,
       "calledFrom": [
-        "plugins/tools/#U0628#U0627#U0633#U062a#U0628#U064a#U0646.js",
-        "plugins/tools/#U0646#U0634#U0631_#U0627#U0644#U0646#U0635.js"
+        "plugins/tools/باستبين.js",
+        "plugins/tools/نشر_النص.js"
       ],
       "callerCount": 2,
       "buildsQueryString": false
@@ -1667,8 +1668,8 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/tools/#U062a#U062c#U0627#U0648#U0632.js",
-        "plugins/tools/#U0641#U0643_#U0631#U0627#U0628#U0637.js"
+        "plugins/tools/تجاوز.js",
+        "plugins/tools/فك_رابط.js"
       ],
       "callerCount": 2,
       "buildsQueryString": false
@@ -1681,8 +1682,8 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/tools/#U062a#U062d#U0644#U064a#U0644_#U0627#U0644#U0631#U0642#U0645_#U0627#U0644#U0642#U0648#U0645#U064a.js",
-        "plugins/tools/#U0644#U0627#U064a#U062a_#U0645#U0648#U0634#U0646.js"
+        "plugins/tools/تحليل_الرقم_القومي.js",
+        "plugins/tools/لايت_موشن.js"
       ],
       "callerCount": 2,
       "buildsQueryString": false
@@ -1694,8 +1695,8 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/tools/#U0633#U0639#U0631_#U0627#U0644#U0635#U0631#U0641.js",
-        "plugins/tools/#U0635#U0631#U0641_#U0627#U0644#U0639#U0645#U0644#U0627#U062a.js"
+        "plugins/tools/سعر_الصرف.js",
+        "plugins/tools/صرف_العملات.js"
       ],
       "callerCount": 2,
       "buildsQueryString": false
@@ -1707,8 +1708,8 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/tools/#U0633#U0639#U0631_#U0627#U0644#U0635#U0631#U0641.js",
-        "plugins/tools/#U0635#U0631#U0641_#U0627#U0644#U0639#U0645#U0644#U0627#U062a.js"
+        "plugins/tools/سعر_الصرف.js",
+        "plugins/tools/صرف_العملات.js"
       ],
       "callerCount": 2,
       "buildsQueryString": false
@@ -1720,8 +1721,8 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/tools/#U0633#U0639#U0631_#U0627#U0644#U0635#U0631#U0641.js",
-        "plugins/tools/#U0635#U0631#U0641_#U0627#U0644#U0639#U0645#U0644#U0627#U062a.js"
+        "plugins/tools/سعر_الصرف.js",
+        "plugins/tools/صرف_العملات.js"
       ],
       "callerCount": 2,
       "buildsQueryString": true
@@ -1733,8 +1734,8 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/tools/#U0639#U0632#U0644.js",
-        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js"
+        "plugins/tools/عزل.js",
+        "plugins/tools/لرابط.js"
       ],
       "callerCount": 2,
       "buildsQueryString": false
@@ -1747,7 +1748,7 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/tools/#U0641#U0627#U062a#U0648#U0631#U0629.js",
+        "plugins/tools/فاتورة.js",
         "src/lib/terboo-profile-picture.js"
       ],
       "callerCount": 2,
@@ -1761,8 +1762,8 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/tools/#U0641#U062d#U0635_#U0645#U0648#U0642#U0639.js",
-        "plugins/tools/#U0644#U0642#U0637#U0629_#U0634#U0627#U0634#U0629.js"
+        "plugins/tools/فحص_موقع.js",
+        "plugins/tools/لقطة_شاشة.js"
       ],
       "callerCount": 2,
       "buildsQueryString": false
@@ -1776,7 +1777,7 @@
       ],
       "pathCount": 3,
       "calledFrom": [
-        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js",
+        "plugins/tools/لرابط.js",
         "src/lib/terboo-uploader.js"
       ],
       "callerCount": 2,
@@ -1790,7 +1791,7 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/tts/#U0627#U064a#U0644#U0648#U0646.js",
+        "plugins/tts/ايلون.js",
         "src/lib/terboo-apimanager.js"
       ],
       "callerCount": 2,
@@ -1993,232 +1994,13 @@
       "buildsQueryString": false
     },
     {
-      "host": "gen.pollinations.ai",
-      "pathsWithoutQuery": [
-        "/image/:var"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/ai/#U062a#U062e#U064a#U06442.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
-    },
-    {
-      "host": "source.unsplash.com",
-      "pathsWithoutQuery": [
-        "/720x720/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/ai/#U062a#U062e#U064a#U06442.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
-    },
-    {
-      "host": "api.cloudflare.com",
-      "pathsWithoutQuery": [
-        "/client/v4/accounts/:var/ai/run/@cf/black-forest-labs/flux-1-schnell"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/ai/#U062a#U062e#U064a#U06443.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "api.jeeves.ai",
-      "pathsWithoutQuery": [
-        "/generate/v4/chat"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/ai/#U062c#U064a#U0641#U0633.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "jeeves.ai",
-      "pathsWithoutQuery": [
-        "/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/ai/#U062c#U064a#U0641#U0633.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "gptanon.com",
-      "pathsWithoutQuery": [
-        "/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/ai/#U062c#U064a#U0645#U0627.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "api.aqronix-host.site",
-      "pathsWithoutQuery": [
-        "/api/v1/ai/chat/gemini"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/ai/#U062c#U064a#U0645#U064a#U0646#U064a.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "chat.dphn.ai",
-      "pathsWithoutQuery": [
-        "/",
-        "/api/chat"
-      ],
-      "pathCount": 2,
-      "calledFrom": [
-        "plugins/ai/#U062f#U0648#U0644#U0641#U064a#U0646.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "ai-song.ai",
-      "pathsWithoutQuery": [
-        "/",
-        "/api/chat-openai"
-      ],
-      "pathCount": 2,
-      "calledFrom": [
-        "plugins/ai/#U063a#U0646#U064a#U0644#U064a.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "tecuts-chat.hf.space",
-      "pathsWithoutQuery": [
-        "/chat/stream"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/ai/#U0643#U0631#U0648#U0646#U0648#U0633.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "chrunos.com",
-      "pathsWithoutQuery": [
-        "/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/ai/#U0643#U0631#U0648#U0646#U0648#U0633.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "de3.bot-hosting.net",
-      "pathsWithoutQuery": [
-        "/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/ai/#U0643#U064a#U0644#U0648#U0627.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "www.genspark.ai",
-      "pathsWithoutQuery": [
-        "/",
-        "/api/agent/ask_proxy"
-      ],
-      "pathCount": 2,
-      "calledFrom": [
-        "plugins/ai/#U0643#U064a#U0645#U064a.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "www.muslimai.io",
-      "pathsWithoutQuery": [
-        "/api/chat"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/ai/#U0645#U0633#U0644#U0645.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "api.monica.im",
-      "pathsWithoutQuery": [
-        "/api/custom_bot/chat"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/ai/#U0645#U0648#U0646#U064a#U0643#U0627.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "monica.im",
-      "pathsWithoutQuery": [
-        "/en/products/ai-chat"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/ai/#U0645#U0648#U0646#U064a#U0643#U0627.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "my.izuka-api.xyz",
-      "pathsWithoutQuery": [
-        "/api/ai/novaai"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/ai/#U0646#U0648#U0641#U0627.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "www.wikipedia.org",
-      "pathsWithoutQuery": [
-        "/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/ai/#U0648#U064a#U0643#U064a.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
       "host": "android.chat.openai.com",
       "pathsWithoutQuery": [
         "/"
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/ai/2#U0634#U0627#U062a.js"
+        "plugins/ai/2شات.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -2262,6 +2044,225 @@
       "buildsQueryString": false
     },
     {
+      "host": "gen.pollinations.ai",
+      "pathsWithoutQuery": [
+        "/image/:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/تخيل2.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "source.unsplash.com",
+      "pathsWithoutQuery": [
+        "/720x720/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/تخيل2.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "api.cloudflare.com",
+      "pathsWithoutQuery": [
+        "/client/v4/accounts/:var/ai/run/@cf/black-forest-labs/flux-1-schnell"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/تخيل3.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.jeeves.ai",
+      "pathsWithoutQuery": [
+        "/generate/v4/chat"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/جيفس.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "jeeves.ai",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/جيفس.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "gptanon.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/جيما.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.aqronix-host.site",
+      "pathsWithoutQuery": [
+        "/api/v1/ai/chat/gemini"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/جيميني.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "chat.dphn.ai",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/chat"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/ai/دولفين.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "ai-song.ai",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/chat-openai"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/ai/غنيلي.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "tecuts-chat.hf.space",
+      "pathsWithoutQuery": [
+        "/chat/stream"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/كرونوس.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "chrunos.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/كرونوس.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "de3.bot-hosting.net",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/كيلوا.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.genspark.ai",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/agent/ask_proxy"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/ai/كيمي.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.muslimai.io",
+      "pathsWithoutQuery": [
+        "/api/chat"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/مسلم.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.monica.im",
+      "pathsWithoutQuery": [
+        "/api/custom_bot/chat"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/مونيكا.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "monica.im",
+      "pathsWithoutQuery": [
+        "/en/products/ai-chat"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/مونيكا.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "my.izuka-api.xyz",
+      "pathsWithoutQuery": [
+        "/api/ai/novaai"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/نوفا.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.wikipedia.org",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/ai/ويكي.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
       "host": "api.some-random-api.com",
       "pathsWithoutQuery": [
         "/canvas/:var"
@@ -2272,239 +2273,6 @@
       ],
       "callerCount": 1,
       "buildsQueryString": false
-    },
-    {
-      "host": "otakudesu.blog",
-      "pathsWithoutQuery": [
-        "/episode/...",
-        "/episode/tykmt-episode-2-sub-indo"
-      ],
-      "pathCount": 2,
-      "calledFrom": [
-        "plugins/downloader/#U062a#U062d#U0645#U064a#U0644_#U0627#U0646#U0645#U064a.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "pinterest.com",
-      "pathsWithoutQuery": [
-        "/pin/xxx"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/downloader/#U062a#U062d#U0645#U064a#U0644_#U0628#U0646#U062a#U0631.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "api.github.com",
-      "pathsWithoutQuery": [
-        "/repos/:var/:var"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/downloader/#U062a#U062d#U0645#U064a#U0644_#U063a#U064a#U062a.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "api.fxtwitter.com",
-      "pathsWithoutQuery": [
-        "/status/:var"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/downloader/#U062a#U0648#U064a#U062a#U0631.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "savett.cc",
-      "pathsWithoutQuery": [
-        "/",
-        "/en1/download"
-      ],
-      "pathCount": 2,
-      "calledFrom": [
-        "plugins/downloader/#U062a#U064a#U0643_#U0641#U064a#U062f#U064a#U0648.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "workers-playground-cool-wood-c008.accoutydusra.workers.dev",
-      "pathsWithoutQuery": [
-        "/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/downloader/#U062b#U0631#U064a#U062f#U0632.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "www.threads.net",
-      "pathsWithoutQuery": [
-        "/@xxx/post/xxx",
-        "/@zuck/post/xxx"
-      ],
-      "pathCount": 2,
-      "calledFrom": [
-        "plugins/downloader/#U062b#U0631#U064a#U062f#U0632.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "threadsvid.com",
-      "pathsWithoutQuery": [
-        "/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/downloader/#U062b#U0631#U064a#U062f#U0632.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "www.xiaohongshu.com",
-      "pathsWithoutQuery": [
-        "/xxx",
-        "/xxx*"
-      ],
-      "pathCount": 2,
-      "calledFrom": [
-        "plugins/downloader/#U0631#U064a#U062f_#U0646#U0648#U062a.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "search.brave.com",
-      "pathsWithoutQuery": [
-        "/search"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/downloader/#U0631#U064a#U0644.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "www.snackvideo.com",
-      "pathsWithoutQuery": [
-        "/@xxx/video/xxx"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/downloader/#U0633#U0646#U0627#U0628_#U0641#U064a#U062f#U064a#U0648.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "shopee.co.id",
-      "pathsWithoutQuery": [
-        "/...",
-        "/universal-link/video/..."
-      ],
-      "pathCount": 2,
-      "calledFrom": [
-        "plugins/downloader/#U0634#U0648#U0628#U064a.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "shopeenowatermark.com",
-      "pathsWithoutQuery": [
-        "/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/downloader/#U0634#U0648#U0628#U064a.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "allapiproject.zone.id",
-      "pathsWithoutQuery": [
-        "/video-krtl.json"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/downloader/#U0641#U064a#U062f#U064a#U0648.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "www.capcut.com",
-      "pathsWithoutQuery": [
-        "/t/xxx"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/downloader/#U0643#U0627#U0628#U0643#U062a.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "www.cocofun.com",
-      "pathsWithoutQuery": [
-        "/share/post/xxx"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/downloader/#U0643#U0648#U0643#U0648#U0641#U0646.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "assets.shngm.id",
-      "pathsWithoutQuery": [
-        "/chapter/:var/:var"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/downloader/#U0645#U0627#U0646#U0647#U0648#U0627.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "registry.npmjs.org",
-      "pathsWithoutQuery": [
-        "/${encodeURIComponent(pkgName"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/downloader/#U0645#U0643#U062a#U0628#U0629.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "registry.npmjs.com",
-      "pathsWithoutQuery": [
-        "/-/v1/search"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/downloader/#U0645#U0643#U062a#U0628#U0629.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
     },
     {
       "host": "happymod.net",
@@ -2520,13 +2288,246 @@
       "buildsQueryString": false
     },
     {
+      "host": "otakudesu.blog",
+      "pathsWithoutQuery": [
+        "/episode/...",
+        "/episode/tykmt-episode-2-sub-indo"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/downloader/تحميل_انمي.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "pinterest.com",
+      "pathsWithoutQuery": [
+        "/pin/xxx"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/تحميل_بنتر.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.github.com",
+      "pathsWithoutQuery": [
+        "/repos/:var/:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/تحميل_غيت.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.fxtwitter.com",
+      "pathsWithoutQuery": [
+        "/status/:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/تويتر.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "savett.cc",
+      "pathsWithoutQuery": [
+        "/",
+        "/en1/download"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/downloader/تيك_فيديو.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "workers-playground-cool-wood-c008.accoutydusra.workers.dev",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/ثريدز.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.threads.net",
+      "pathsWithoutQuery": [
+        "/@xxx/post/xxx",
+        "/@zuck/post/xxx"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/downloader/ثريدز.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "threadsvid.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/ثريدز.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.xiaohongshu.com",
+      "pathsWithoutQuery": [
+        "/xxx",
+        "/xxx*"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/downloader/ريد_نوت.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "search.brave.com",
+      "pathsWithoutQuery": [
+        "/search"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/ريل.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.snackvideo.com",
+      "pathsWithoutQuery": [
+        "/@xxx/video/xxx"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/سناب_فيديو.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "shopee.co.id",
+      "pathsWithoutQuery": [
+        "/...",
+        "/universal-link/video/..."
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/downloader/شوبي.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "shopeenowatermark.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/شوبي.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "allapiproject.zone.id",
+      "pathsWithoutQuery": [
+        "/video-krtl.json"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/فيديو.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.capcut.com",
+      "pathsWithoutQuery": [
+        "/t/xxx"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/كابكت.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.cocofun.com",
+      "pathsWithoutQuery": [
+        "/share/post/xxx"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/كوكوفن.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "assets.shngm.id",
+      "pathsWithoutQuery": [
+        "/chapter/:var/:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/مانهوا.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "registry.npmjs.org",
+      "pathsWithoutQuery": [
+        "/${encodeURIComponent(pkgName"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/مكتبة.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "registry.npmjs.com",
+      "pathsWithoutQuery": [
+        "/-/v1/search"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/downloader/مكتبة.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
       "host": "nekos.best",
       "pathsWithoutQuery": [
         "/api/v2/slap"
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/fun/#U0635#U0641#U0639.js"
+        "plugins/fun/صفع.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -2538,7 +2539,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/fun/#U0641#U0646.js"
+        "plugins/fun/فن.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -2550,7 +2551,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/fun/#U0645#U064a#U0645.js"
+        "plugins/fun/ميم.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -2562,7 +2563,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/info/#U0628#U0637#U0648#U0644#U0627#U062a.js"
+        "plugins/info/بطولات.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -2575,7 +2576,7 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/info/#U0632#U0644#U0632#U0627#U0644.js"
+        "plugins/info/زلزال.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -2588,7 +2589,7 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/info/#U0634#U062e#U0635#U064a#U0629_#U0628#U0644#U0648_#U0627#U0631#U0634#U064a#U0641.js"
+        "plugins/info/شخصية_بلو_ارشيف.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -2600,7 +2601,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/info/#U0634#U062e#U0635#U064a#U0629_#U0628#U0644#U0648_#U0627#U0631#U0634#U064a#U0641.js"
+        "plugins/info/شخصية_بلو_ارشيف.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -2613,7 +2614,7 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/info/#U0645#U0628#U0627#U0631#U064a#U0627#U062a.js"
+        "plugins/info/مباريات.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -2625,7 +2626,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/info/#U0645#U0631#U0627#U0642#U0628#U0629_#U0627#U0644#U0645#U0632#U0631#U0639#U0629.js"
+        "plugins/info/مراقبة_المزرعة.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -2637,7 +2638,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/islamic/#U0642#U0631#U0622#U0646_#U0635#U0648#U062a#U064a.js"
+        "plugins/islamic/قرآن_صوتي.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -2649,7 +2650,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/islamic/#U0642#U0631#U0622#U0646_#U0646#U0635#U064a.js"
+        "plugins/islamic/قرآن_نصي.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -2661,44 +2662,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/nsfw/#U0628#U0627#U0628#U062a.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "invite.whatsapp.com",
-      "pathsWithoutQuery": [
-        "/xxx*"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/owner/#U0627#U0646#U0636#U0645#U0627#U0645.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "media.vocaroo.com",
-      "pathsWithoutQuery": [
-        "/mp3/1ofLT2YUJAjQ"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/owner/#U062a#U0630#U0643#U064a#U0631_#U0627#U0644#U0635#U0644#U0627#U0629.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "api.vercel.com",
-      "pathsWithoutQuery": [
-        "/v13/deployments",
-        "/v9/projects/:var/domains"
-      ],
-      "pathCount": 2,
-      "calledFrom": [
-        "plugins/owner/#U0631#U0641#U0639_#U0645#U0648#U0642#U0639.js"
+        "plugins/nsfw/بابت.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -3036,6 +3000,43 @@
       "buildsQueryString": false
     },
     {
+      "host": "invite.whatsapp.com",
+      "pathsWithoutQuery": [
+        "/xxx*"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/انضمام.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "media.vocaroo.com",
+      "pathsWithoutQuery": [
+        "/mp3/1ofLT2YUJAjQ"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/owner/تذكير_الصلاة.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.vercel.com",
+      "pathsWithoutQuery": [
+        "/v13/deployments",
+        "/v9/projects/:var/domains"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/owner/رفع_موقع.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
       "host": "islamic-api-zhirrr.vercel.app",
       "pathsWithoutQuery": [
         "/api/asmaulhusna",
@@ -3043,7 +3044,7 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/religi/#U0625#U0633#U0644#U0627#U0645#U064a.js"
+        "plugins/religi/إسلامي.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -3055,7 +3056,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/religi/#U0625#U0633#U0644#U0627#U0645#U064a.js"
+        "plugins/religi/إسلامي.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -3067,7 +3068,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/religi/#U0625#U0633#U0644#U0627#U0645#U064a.js"
+        "plugins/religi/إسلامي.js"
       ],
       "callerCount": 1,
       "buildsQueryString": true
@@ -3079,253 +3080,10 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/religi/#U0642#U0631#U0622#U0646#U064a.js"
+        "plugins/religi/قرآني.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
-    },
-    {
-      "host": "i.postimg.cc",
-      "pathsWithoutQuery": [
-        "/bS01zQwK/upload-1767808833485.jpg"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/search/#U0623#U0646#U0645#U064a.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "8vrewc6s4t-dsn.algolia.net",
-      "pathsWithoutQuery": [
-        "/1/indexes"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/search/#U0623#U0646#U0645#U064a.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "rss.cnn.com",
-      "pathsWithoutQuery": [
-        "/rss/edition.rss"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/search/#U0627#U062e#U0628#U0627#U0631.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "feeds.bbci.co.uk",
-      "pathsWithoutQuery": [
-        "/arabic/rss.xml"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/search/#U0627#U062e#U0628#U0627#U0631.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "twibbonize.com",
-      "pathsWithoutQuery": [
-        "/:var"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/search/#U0627#U0637#U0627#U0631.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "anilist.co",
-      "pathsWithoutQuery": [
-        "/anime/${d.anilist"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/search/#U0627#U0646#U0645#U064a_#U0627#U064a.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "searchthatsong.com",
-      "pathsWithoutQuery": [
-        "/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/search/#U0628#U062d#U062b_#U0627#U063a#U0646#U064a#U0629.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "www.themealdb.com",
-      "pathsWithoutQuery": [
-        "/api/json/v1/1/search.php"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/search/#U0628#U062f#U064a.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
-    },
-    {
-      "host": "api.unsplash.com",
-      "pathsWithoutQuery": [
-        "/search/photos"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/search/#U0628#U0646#U062a#U0631#U064a#U0633#U062a.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
-    },
-    {
-      "host": "api.pexels.com",
-      "pathsWithoutQuery": [
-        "/v1/search"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/search/#U0628#U0646#U062a#U0631#U064a#U0633#U062a.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
-    },
-    {
-      "host": "pixabay.com",
-      "pathsWithoutQuery": [
-        "/api/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/search/#U0628#U0646#U062a#U0631#U064a#U0633#U062a.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
-    },
-    {
-      "host": "ahmia.fi",
-      "pathsWithoutQuery": [
-        "/search/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/search/#U062f#U0627#U0631#U0643_#U0648#U064a#U0628.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
-    },
-    {
-      "host": "m.soundcloud.com",
-      "pathsWithoutQuery": [
-        "/search"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/search/#U0633#U0627#U0648#U0646#U062f.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
-    },
-    {
-      "host": "cors.rifkyshre.biz.id",
-      "pathsWithoutQuery": [
-        "/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/search/#U0637#U0627#U0644#U0628.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "api-pddikti.kemdiktisaintek.go.id",
-      "pathsWithoutQuery": [
-        "/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/search/#U0637#U0627#U0644#U0628.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "pddikti.kemdiktisaintek.go.id",
-      "pathsWithoutQuery": [
-        "/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/search/#U0637#U0627#U0644#U0628.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "api.nasa.gov",
-      "pathsWithoutQuery": [
-        "/planetary/apod"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/search/#U0641#U0636#U0627#U0621.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
-    },
-    {
-      "host": "movieku.rest",
-      "pathsWithoutQuery": [
-        "/wp-admin/admin-ajax.php"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/search/#U0641#U0644#U0645.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "berinama.com",
-      "pathsWithoutQuery": [
-        "/",
-        "/wp-json/baby-names/v1/meaning"
-      ],
-      "pathCount": 2,
-      "calledFrom": [
-        "plugins/search/#U0645#U0639#U0646#U0649_#U0627#U0633#U0645.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "m.webtoons.com",
-      "pathsWithoutQuery": [
-        "/id/search",
-        "/search",
-        "/undefined/search/result"
-      ],
-      "pathCount": 3,
-      "calledFrom": [
-        "plugins/search/#U0648#U064a#U0628#U062a#U0648#U0646.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
     },
     {
       "host": "ws75.aptoide.com",
@@ -3352,13 +3110,256 @@
       "buildsQueryString": false
     },
     {
+      "host": "i.postimg.cc",
+      "pathsWithoutQuery": [
+        "/bS01zQwK/upload-1767808833485.jpg"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/أنمي.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "8vrewc6s4t-dsn.algolia.net",
+      "pathsWithoutQuery": [
+        "/1/indexes"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/أنمي.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "rss.cnn.com",
+      "pathsWithoutQuery": [
+        "/rss/edition.rss"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/اخبار.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "feeds.bbci.co.uk",
+      "pathsWithoutQuery": [
+        "/arabic/rss.xml"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/اخبار.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "twibbonize.com",
+      "pathsWithoutQuery": [
+        "/:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/اطار.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "anilist.co",
+      "pathsWithoutQuery": [
+        "/anime/${d.anilist"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/انمي_اي.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "searchthatsong.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/بحث_اغنية.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.themealdb.com",
+      "pathsWithoutQuery": [
+        "/api/json/v1/1/search.php"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/بدي.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "api.unsplash.com",
+      "pathsWithoutQuery": [
+        "/search/photos"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/بنتريست.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "api.pexels.com",
+      "pathsWithoutQuery": [
+        "/v1/search"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/بنتريست.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "pixabay.com",
+      "pathsWithoutQuery": [
+        "/api/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/بنتريست.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "ahmia.fi",
+      "pathsWithoutQuery": [
+        "/search/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/دارك_ويب.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "m.soundcloud.com",
+      "pathsWithoutQuery": [
+        "/search"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/ساوند.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "cors.rifkyshre.biz.id",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/طالب.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api-pddikti.kemdiktisaintek.go.id",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/طالب.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "pddikti.kemdiktisaintek.go.id",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/طالب.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.nasa.gov",
+      "pathsWithoutQuery": [
+        "/planetary/apod"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/فضاء.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "movieku.rest",
+      "pathsWithoutQuery": [
+        "/wp-admin/admin-ajax.php"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/search/فلم.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "berinama.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/wp-json/baby-names/v1/meaning"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/search/معنى_اسم.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "m.webtoons.com",
+      "pathsWithoutQuery": [
+        "/id/search",
+        "/search",
+        "/undefined/search/result"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/search/ويبتون.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
       "host": "twitterwebviewer.com",
       "pathsWithoutQuery": [
         "/api/tweets/:var"
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/stalker/#U062a#U062c#U0633#U0633_#U062a#U0648#U064a#U062a#U0631.js"
+        "plugins/stalker/تجسس_تويتر.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -3370,7 +3371,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/stalker/#U062a#U062c#U0633#U0633_#U062a#U064a#U0643#U062a#U0648#U0643.js"
+        "plugins/stalker/تجسس_تيكتوك.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -3382,7 +3383,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/stalker/#U062a#U062c#U0633#U0633_#U062a#U064a#U0643#U062a#U0648#U0643.js"
+        "plugins/stalker/تجسس_تيكتوك.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -3394,7 +3395,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/stalker/#U062a#U062c#U0633#U0633_#U062a#U064a#U0643#U062a#U0648#U0643.js"
+        "plugins/stalker/تجسس_تيكتوك.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -3407,7 +3408,7 @@
       ],
       "pathCount": 2,
       "calledFrom": [
-        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0631#U0648#U0628#U0644#U0648#U0643#U0633.js"
+        "plugins/stalker/تجسس_روبلوكس.js"
       ],
       "callerCount": 1,
       "buildsQueryString": true
@@ -3419,7 +3420,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0631#U0648#U0628#U0644#U0648#U0643#U0633.js"
+        "plugins/stalker/تجسس_روبلوكس.js"
       ],
       "callerCount": 1,
       "buildsQueryString": true
@@ -3433,7 +3434,7 @@
       ],
       "pathCount": 3,
       "calledFrom": [
-        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0631#U0648#U0628#U0644#U0648#U0643#U0633.js"
+        "plugins/stalker/تجسس_روبلوكس.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -3445,7 +3446,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0631#U0648#U0628#U0644#U0648#U0643#U0633.js"
+        "plugins/stalker/تجسس_روبلوكس.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -3457,7 +3458,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0631#U0648#U0628#U0644#U0648#U0643#U0633.js"
+        "plugins/stalker/تجسس_روبلوكس.js"
       ],
       "callerCount": 1,
       "buildsQueryString": true
@@ -3469,7 +3470,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0631#U0648#U0628#U0644#U0648#U0643#U0633.js"
+        "plugins/stalker/تجسس_روبلوكس.js"
       ],
       "callerCount": 1,
       "buildsQueryString": true
@@ -3481,7 +3482,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0631#U0648#U0628#U0644#U0648#U0643#U0633.js"
+        "plugins/stalker/تجسس_روبلوكس.js"
       ],
       "callerCount": 1,
       "buildsQueryString": true
@@ -3493,7 +3494,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0631#U0648#U0628#U0644#U0648#U0643#U0633.js"
+        "plugins/stalker/تجسس_روبلوكس.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -3505,7 +3506,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0631#U0648#U0628#U0644#U0648#U0643#U0633.js"
+        "plugins/stalker/تجسس_روبلوكس.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -3517,7 +3518,7 @@
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/stalker/#U062a#U062c#U0633#U0633_#U0641#U064a#U0633#U0628#U0648#U0643.js"
+        "plugins/stalker/تجسس_فيسبوك.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -3560,498 +3561,13 @@
       "buildsQueryString": true
     },
     {
-      "host": "api-ayos.onrender.com",
-      "pathsWithoutQuery": [
-        "/code"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0627#U062a#U0635#U0627#U0644.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
-    },
-    {
-      "host": "files.use.ai",
-      "pathsWithoutQuery": [
-        "/upload"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0627#U0631#U0641#U0639.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "use.ai",
-      "pathsWithoutQuery": [
-        "/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0627#U0631#U0641#U0639.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "qwa.eeq.my.id",
-      "pathsWithoutQuery": [
-        "/api/generate"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0627#U0642#U062a#U0628#U0627#U0633_#U0648#U0627#U062a#U0633#U0627#U0628.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "xl-ku.my.id",
-      "pathsWithoutQuery": [
-        "/end.php"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0627#U0643#U0633#U0644.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
-    },
-    {
-      "host": "ipapi.co",
-      "pathsWithoutQuery": [
-        "/:var/json/",
-        "/json/"
-      ],
-      "pathCount": 2,
-      "calledFrom": [
-        "plugins/tools/#U0627#U064a#U0628#U064a.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "staticmap.maptiler.com",
-      "pathsWithoutQuery": [
-        "/map"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0627#U064a#U0628#U064a.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
-    },
-    {
-      "host": "zecora0.serv00.net",
-      "pathsWithoutQuery": [
-        "/fake.php"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0628#U0631#U064a#U062f.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "api.mail.tm",
-      "pathsWithoutQuery": [
-        "/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0628#U0631#U064a#U062f_#U0645#U0624#U0642#U062a2.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "anabot.my.id",
-      "pathsWithoutQuery": [
-        "/api/tools/izenLOL"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U062a#U062c#U0627#U0648#U0632.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
-    },
-    {
-      "host": "www.beautyplus.com",
-      "pathsWithoutQuery": [
-        "/",
-        "/core-api/v1/img-enhancer/quota/info",
-        "/core-api/v2/img-enhancer/query-sse/:var",
-        "/core-api/v2/img-enhancer/task",
-        "/id/image-enhancer"
-      ],
-      "pathCount": 5,
-      "calledFrom": [
-        "plugins/tools/#U062a#U062d#U0633#U064a#U0646_#U0627#U0644#U0635#U0648#U0631#U0629_3.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
-    },
-    {
-      "host": "strategy.pixocial.com",
-      "pathsWithoutQuery": [
-        "/upload/policy"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U062a#U062d#U0633#U064a#U0646_#U0627#U0644#U0635#U0648#U0631#U0629_3.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
-    },
-    {
-      "host": "deezer.com",
-      "pathsWithoutQuery": [
-        "/track/:var"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U062a#U0639#U0631#U064a#U0641_#U0627#U0644#U0645#U0648#U0633#U064a#U0642#U0649.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "www.bing.com",
-      "pathsWithoutQuery": [
-        "/images/search"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0631#U064a#U062f.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
-    },
-    {
-      "host": "webappcreator.amethystlab.org",
-      "pathsWithoutQuery": [
-        "/",
-        "/api/build-apk"
-      ],
-      "pathCount": 2,
-      "calledFrom": [
-        "plugins/tools/#U0635#U0646#U0639_#U062a#U0637#U0628#U064a#U0642.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "router.project-osrm.org",
-      "pathsWithoutQuery": [
-        "/route/v1/driving/:var,:var;:var,:var"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0637#U0631#U064a#U0642.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "www.openstreetmap.org",
-      "pathsWithoutQuery": [
-        "/directions"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0637#U0631#U064a#U0642.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
-    },
-    {
-      "host": "aivocalremover.com",
-      "pathsWithoutQuery": [
-        "/",
-        "/api/v2/FileUpload",
-        "/api/v2/ProcessFile"
-      ],
-      "pathCount": 3,
-      "calledFrom": [
-        "plugins/tools/#U0639#U0632#U0644.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "ip-api.com",
-      "pathsWithoutQuery": [
-        "/json/:var"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0641#U062d#U06352.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "crt.sh",
-      "pathsWithoutQuery": [
-        "/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0641#U062d#U06352.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
-    },
-    {
-      "host": "sitecheck.sucuri.net",
-      "pathsWithoutQuery": [
-        "/api/v3/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0641#U062d#U0635_#U0645#U0648#U0642#U0639.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
-    },
-    {
-      "host": "api.theresav.biz.id",
-      "pathsWithoutQuery": [
-        "/bypass/sfl"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0641#U0643_#U0631#U0627#U0628#U0637.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "carbon.now.sh",
-      "pathsWithoutQuery": [
-        "/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0643#U0631#U0628#U0648#U0646.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
-    },
-    {
-      "host": "alightcreative.com",
-      "pathsWithoutQuery": [
-        "/am/share/..."
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0644#U0627#U064a#U062a_#U0645#U0648#U0634#U0646.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "qu.ax",
-      "pathsWithoutQuery": [
-        "/upload.php"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "pone.rs",
-      "pathsWithoutQuery": [
-        "/",
-        "/upload.php"
-      ],
-      "pathCount": 2,
-      "calledFrom": [
-        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "kappa.lol",
-      "pathsWithoutQuery": [
-        "/",
-        "/api/upload"
-      ],
-      "pathCount": 2,
-      "calledFrom": [
-        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "www.upload.ee",
-      "pathsWithoutQuery": [
-        "/",
-        "/cgi-bin/ubr_upload.pl",
-        "/ubr_link_upload.php"
-      ],
-      "pathCount": 3,
-      "calledFrom": [
-        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
-    },
-    {
-      "host": "leopard.hosting.pecon.us",
-      "pathsWithoutQuery": [
-        "/",
-        "/upload.php"
-      ],
-      "pathCount": 2,
-      "calledFrom": [
-        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "8upload.com",
-      "pathsWithoutQuery": [
-        "/",
-        "/upload/mt/"
-      ],
-      "pathCount": 2,
-      "calledFrom": [
-        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "top4top.io",
-      "pathsWithoutQuery": [
-        "/",
-        "/index.php"
-      ],
-      "pathCount": 2,
-      "calledFrom": [
-        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "0x0.st",
-      "pathsWithoutQuery": [
-        "/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0644#U0631#U0627#U0628#U0637.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "athars.space",
-      "pathsWithoutQuery": [
-        "/uploads/de11c461.jpg"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0645#U0639#U0631#U0641_#U0627#U0644#U0642#U0646#U0627#U0629.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "api.hackertarget.com",
-      "pathsWithoutQuery": [
-        "/dnslookup/",
-        "/whois/"
-      ],
-      "pathCount": 2,
-      "calledFrom": [
-        "plugins/tools/#U0645#U0639#U0644#U0648#U0645#U0627#U062adns.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": true
-    },
-    {
-      "host": "console.groq.com",
-      "pathsWithoutQuery": [
-        "/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0646#U0633#U062e_#U0635#U0648#U062a#U064a.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "api.proactor.ai",
-      "pathsWithoutQuery": [
-        "/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0646#U0633#U062e_#U0641#U064a#U062f#U064a#U0648.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "videotranscriber.ai",
-      "pathsWithoutQuery": [
-        "/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0646#U0633#U062e_#U0641#U064a#U062f#U064a#U0648.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "cobalt-api-production-cd7d.up.railway.app",
-      "pathsWithoutQuery": [
-        "/"
-      ],
-      "pathCount": 1,
-      "calledFrom": [
-        "plugins/tools/#U0646#U0635_#U0641#U064a#U062f#U064a#U0648.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
-      "host": "api.assemblyai.com",
-      "pathsWithoutQuery": [
-        "/v2/transcript",
-        "/v2/transcript/:var"
-      ],
-      "pathCount": 2,
-      "calledFrom": [
-        "plugins/tools/#U0646#U0635_#U0641#U064a#U062f#U064a#U0648.js"
-      ],
-      "callerCount": 1,
-      "buildsQueryString": false
-    },
-    {
       "host": "d.tmpfile.link",
       "pathsWithoutQuery": [
         "/public/2026-06-08/e92ce22a-404f-4a06-9c73-470743475f1f/IMG-20260608-WA0253(4"
       ],
       "pathCount": 1,
       "calledFrom": [
-        "plugins/tools/2#U0627#U0642#U062a#U0628#U0627#U0633_#U0648#U0627#U062a#U0633#U0627#U0628.js"
+        "plugins/tools/2اقتباس_واتساب.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false
@@ -4088,6 +3604,491 @@
       "pathCount": 1,
       "calledFrom": [
         "plugins/tools/qr.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api-ayos.onrender.com",
+      "pathsWithoutQuery": [
+        "/code"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/اتصال.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "files.use.ai",
+      "pathsWithoutQuery": [
+        "/upload"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/ارفع.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "use.ai",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/ارفع.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "qwa.eeq.my.id",
+      "pathsWithoutQuery": [
+        "/api/generate"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/اقتباس_واتساب.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "xl-ku.my.id",
+      "pathsWithoutQuery": [
+        "/end.php"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/اكسل.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "ipapi.co",
+      "pathsWithoutQuery": [
+        "/:var/json/",
+        "/json/"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/ايبي.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "staticmap.maptiler.com",
+      "pathsWithoutQuery": [
+        "/map"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/ايبي.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "zecora0.serv00.net",
+      "pathsWithoutQuery": [
+        "/fake.php"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/بريد.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.mail.tm",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/بريد_مؤقت2.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "anabot.my.id",
+      "pathsWithoutQuery": [
+        "/api/tools/izenLOL"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/تجاوز.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "www.beautyplus.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/core-api/v1/img-enhancer/quota/info",
+        "/core-api/v2/img-enhancer/query-sse/:var",
+        "/core-api/v2/img-enhancer/task",
+        "/id/image-enhancer"
+      ],
+      "pathCount": 5,
+      "calledFrom": [
+        "plugins/tools/تحسين_الصورة_3.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "strategy.pixocial.com",
+      "pathsWithoutQuery": [
+        "/upload/policy"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/تحسين_الصورة_3.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "deezer.com",
+      "pathsWithoutQuery": [
+        "/track/:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/تعريف_الموسيقى.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.bing.com",
+      "pathsWithoutQuery": [
+        "/images/search"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/ريد.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "webappcreator.amethystlab.org",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/build-apk"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/صنع_تطبيق.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "router.project-osrm.org",
+      "pathsWithoutQuery": [
+        "/route/v1/driving/:var,:var;:var,:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/طريق.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.openstreetmap.org",
+      "pathsWithoutQuery": [
+        "/directions"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/طريق.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "aivocalremover.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/v2/FileUpload",
+        "/api/v2/ProcessFile"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/tools/عزل.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "ip-api.com",
+      "pathsWithoutQuery": [
+        "/json/:var"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/فحص2.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "crt.sh",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/فحص2.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "sitecheck.sucuri.net",
+      "pathsWithoutQuery": [
+        "/api/v3/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/فحص_موقع.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "api.theresav.biz.id",
+      "pathsWithoutQuery": [
+        "/bypass/sfl"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/فك_رابط.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "carbon.now.sh",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/كربون.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "alightcreative.com",
+      "pathsWithoutQuery": [
+        "/am/share/..."
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/لايت_موشن.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "qu.ax",
+      "pathsWithoutQuery": [
+        "/upload.php"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/لرابط.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "pone.rs",
+      "pathsWithoutQuery": [
+        "/",
+        "/upload.php"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/لرابط.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "kappa.lol",
+      "pathsWithoutQuery": [
+        "/",
+        "/api/upload"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/لرابط.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "www.upload.ee",
+      "pathsWithoutQuery": [
+        "/",
+        "/cgi-bin/ubr_upload.pl",
+        "/ubr_link_upload.php"
+      ],
+      "pathCount": 3,
+      "calledFrom": [
+        "plugins/tools/لرابط.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "leopard.hosting.pecon.us",
+      "pathsWithoutQuery": [
+        "/",
+        "/upload.php"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/لرابط.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "8upload.com",
+      "pathsWithoutQuery": [
+        "/",
+        "/upload/mt/"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/لرابط.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "top4top.io",
+      "pathsWithoutQuery": [
+        "/",
+        "/index.php"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/لرابط.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "0x0.st",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/لرابط.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "athars.space",
+      "pathsWithoutQuery": [
+        "/uploads/de11c461.jpg"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/معرف_القناة.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.hackertarget.com",
+      "pathsWithoutQuery": [
+        "/dnslookup/",
+        "/whois/"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/معلوماتdns.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": true
+    },
+    {
+      "host": "console.groq.com",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/نسخ_صوتي.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.proactor.ai",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/نسخ_فيديو.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "videotranscriber.ai",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/نسخ_فيديو.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "cobalt-api-production-cd7d.up.railway.app",
+      "pathsWithoutQuery": [
+        "/"
+      ],
+      "pathCount": 1,
+      "calledFrom": [
+        "plugins/tools/نص_فيديو.js"
+      ],
+      "callerCount": 1,
+      "buildsQueryString": false
+    },
+    {
+      "host": "api.assemblyai.com",
+      "pathsWithoutQuery": [
+        "/v2/transcript",
+        "/v2/transcript/:var"
+      ],
+      "pathCount": 2,
+      "calledFrom": [
+        "plugins/tools/نص_فيديو.js"
       ],
       "callerCount": 1,
       "buildsQueryString": false

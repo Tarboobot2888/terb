@@ -367,8 +367,8 @@ const LEGACY_EXCEPTIONS = [
     reason: "لقطتا الفحص الجنائي v5 (§1 §119): «قبل» سجل حرفي لأرشيف v4.0، و«بعد» يحوي مرادفات التوافق المخفية — بيانات مقارنة لا استخدام" },
   { file: /^tools\/manifests\/manifest-v[345](?:-prev)?-(?:before|after)\.json$/, pattern: /maro|مارو|tarboo|تاربو/gi,
     reason: "لقطتا Manifest قبل/بعد (§1 §60): «قبل» سجل تاريخي بأسماء الملفات السابقة، و«بعد» يحوي مرادفات التوافق المخفية — بيانات مقارنة لا استخدام" },
-  { file: /^docs\/(?:inventory\/(?:before|after)\/[\w-]+\.json|terboo-api-health-matrix\.(?:json|md)|terboo-plugin-health\.json)$/, pattern: /maro|مارو|tarboo|تاربو/gi,
-    reason: "جرد/مصفوفات مولَّدة (inventory · api-health · plugin-health) تسجّل الملفات والمرادفات والنطاقات الخارجية كما هي فعلاً (منها نطاق طرف ثالث api.maro.my.id)" },
+  { file: /^docs\/(?:inventory\/(?:before|after)\/[\w-]+\.json|web-platform\/[\w-]+\.json|terboo-api-health-matrix\.(?:json|md)|terboo-plugin-health\.json)$/, pattern: /maro|مارو|tarboo|تاربو/gi,
+    reason: "جرد/مصفوفات مولَّدة (inventory · web-platform · api-health · plugin-health) تسجّل الملفات والمرادفات والنطاقات الخارجية كما هي فعلاً (منها نطاق طرف ثالث api.maro.my.id ومرادفات الأوامر المخفية)" },
 ];
 
 const LEGACY_TOKEN = /maro|tarboo|(?<![؀-ۿ])(?:مارو|تاربو|طربوش)/i;

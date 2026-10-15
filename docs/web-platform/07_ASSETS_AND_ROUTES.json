@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-15T16:49:38.899Z",
-  "gitHead": "bc8edf6d996b15c10d19263da06c00af325265f0",
+  "generatedAt": "2026-10-15T17:04:48.307Z",
+  "gitHead": "fbbb96973ba5d0172a80dc7eed790daacc4c014e",
   "totals": {
     "assetFiles": 123,
-    "referencedPaths": 140,
-    "missingReferences": 18
+    "referencedPaths": 141,
+    "missingReferences": 19
   },
   "missingReferences": [
     {
@@ -17,8 +17,8 @@
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "data/autoai/project-manifest.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -29,7 +29,8 @@
         "TERBOO_BEFORE_MANIFEST.json",
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
-        "docs/terboo-asset-manifest.json"
+        "docs/terboo-asset-manifest.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -39,6 +40,7 @@
         "TERBOO_AFTER_MANIFEST.json",
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tools/manifests/manifest-v5-prev-after.json",
         "tools/manifests/manifest-v5-prev-before.json"
       ]
@@ -50,6 +52,7 @@
         "TERBOO_AFTER_MANIFEST.json",
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tools/manifests/manifest-v5-prev-after.json",
         "tools/manifests/manifest-v5-prev-before.json"
       ]
@@ -61,6 +64,7 @@
         "TERBOO_AFTER_MANIFEST.json",
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tools/manifests/manifest-v5-prev-after.json",
         "tools/manifests/manifest-v5-prev-before.json"
       ]
@@ -69,6 +73,7 @@
       "reference": "assets/logo.png",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tests/terboo-ai-core.test.mjs"
       ]
     },
@@ -76,6 +81,7 @@
       "reference": "assets/image/sections/",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tests/terboo-brand-assets.test.mjs"
       ]
     },
@@ -83,6 +89,7 @@
       "reference": "assets/image/shuffle/",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tests/terboo-brand-assets.test.mjs"
       ]
     },
@@ -90,6 +97,7 @@
       "reference": "assets/image/shuffle",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tests/terboo-brand-assets.test.mjs",
         "tools/terboo-brand-assets.mjs"
       ]
@@ -98,6 +106,7 @@
       "reference": "assets/image/shuffle/20032df7383ca92b7861a7081f2abe2d.jpg",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tests/terboo-brand-assets.test.mjs",
         "tools/manifests/manifest-v5-prev-after.json",
         "tools/manifests/manifest-v5-prev-before.json"
@@ -107,6 +116,7 @@
       "reference": "assets/image/shuffle/owner-added.jpg",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tests/terboo-brand-assets.test.mjs"
       ]
     },
@@ -114,6 +124,7 @@
       "reference": "assets/terboo-daftar.png",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tests/terboo-brand-lock.test.mjs"
       ]
     },
@@ -121,6 +132,7 @@
       "reference": "assets/tarboo-extra.png",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tests/terboo-brand-lock.test.mjs"
       ]
     },
@@ -128,6 +140,7 @@
       "reference": "assets/terboo-extra.png",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tests/terboo-brand-lock.test.mjs"
       ]
     },
@@ -135,6 +148,7 @@
       "reference": "assets/image/shuffle/5a3ddf6991d1d7f3cd278ce9b8b9862a.jpg",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tools/manifests/manifest-v5-prev-after.json",
         "tools/manifests/manifest-v5-prev-before.json"
       ]
@@ -143,6 +157,7 @@
       "reference": "assets/image/shuffle/64a7e5d15b5ca33b4949a10ca96d2325.jpg",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tools/manifests/manifest-v5-prev-after.json",
         "tools/manifests/manifest-v5-prev-before.json"
       ]
@@ -151,6 +166,7 @@
       "reference": "assets/image/shuffle/99f7702f5b028e2ed094700c5960c85d.jpg",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tools/manifests/manifest-v5-prev-after.json",
         "tools/manifests/manifest-v5-prev-before.json"
       ]
@@ -159,7 +175,15 @@
       "reference": "assets/fonts/terboo",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/#U0639#U0627#U0645.jpg",
+      "exists": false,
+      "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     }
   ],
@@ -203,7 +227,6 @@
     "assets/image/cards/goodbye-plate.jpg",
     "assets/image/cards/welcome-plate.jpg",
     "assets/image/pp-kosong.jpg",
-    "assets/image/sections/#U0639#U0627#U0645.jpg",
     "assets/image/sections/ai.jpg",
     "assets/image/sections/anime.jpg",
     "assets/image/sections/asupan.jpg",
@@ -246,6 +269,7 @@
     "assets/image/sections/user.jpg",
     "assets/image/sections/utility.jpg",
     "assets/image/sections/vps.jpg",
+    "assets/image/sections/عام.jpg",
     "assets/image/shuffle/terboo-shuffle-01.jpg",
     "assets/image/shuffle/terboo-shuffle-02.jpg",
     "assets/image/shuffle/terboo-shuffle-04.jpg",
@@ -300,7 +324,7 @@
         "config.example.js",
         "config.js",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json"
+        "docs/web-platform/01_FILE_INVENTORY.json"
       ]
     },
     {
@@ -312,8 +336,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -325,8 +350,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -338,8 +364,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -351,8 +378,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -364,8 +392,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -377,8 +406,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -390,8 +420,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -403,8 +434,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -416,8 +448,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -429,14 +462,16 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
       "reference": "assets/fonts/terboo",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tools/terboo-brand-assets.mjs"
       ]
     },
@@ -449,6 +484,8 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tests/terboo-brand-assets.test.mjs"
       ]
     },
@@ -461,6 +498,8 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tests/terboo-brand-assets.test.mjs"
       ]
     },
@@ -473,8 +512,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -486,8 +526,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -499,8 +540,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -512,8 +554,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -526,8 +569,8 @@
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "data/autoai/project-manifest.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -539,8 +582,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -552,8 +596,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -565,8 +610,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -578,8 +624,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -590,7 +637,9 @@
         "TERBOO_BEFORE_MANIFEST.json",
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
-        "docs/terboo-asset-manifest.json"
+        "docs/terboo-asset-manifest.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -601,7 +650,9 @@
         "TERBOO_BEFORE_MANIFEST.json",
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
-        "docs/terboo-asset-manifest.json"
+        "docs/terboo-asset-manifest.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -612,7 +663,9 @@
         "TERBOO_BEFORE_MANIFEST.json",
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
-        "docs/terboo-asset-manifest.json"
+        "docs/terboo-asset-manifest.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -624,8 +677,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -637,8 +691,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -650,8 +705,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -663,8 +719,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -676,8 +733,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -688,7 +746,9 @@
         "TERBOO_BEFORE_MANIFEST.json",
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
-        "docs/terboo-asset-manifest.json"
+        "docs/terboo-asset-manifest.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -700,8 +760,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -712,7 +773,9 @@
         "TERBOO_BEFORE_MANIFEST.json",
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
-        "docs/terboo-asset-manifest.json"
+        "docs/terboo-asset-manifest.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -724,8 +787,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -737,8 +801,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -750,8 +815,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -764,8 +830,8 @@
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
         "docs/v6/files-report.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -774,6 +840,8 @@
       "referencedFrom": [
         "docs/terboo-asset-manifest.json",
         "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tools/terboo-brand-assets.mjs"
       ]
     },
@@ -783,6 +851,8 @@
       "referencedFrom": [
         "docs/terboo-asset-manifest.json",
         "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tools/terboo-brand-assets.mjs"
       ]
     },
@@ -804,7 +874,15 @@
       "reference": "assets/image/sections/",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tests/terboo-brand-assets.test.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/#U0639#U0627#U0645.jpg",
+      "exists": false,
+      "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -816,7 +894,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -828,7 +908,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -840,7 +922,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -852,7 +936,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -864,7 +950,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -876,7 +964,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -888,7 +978,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -899,7 +991,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -911,7 +1005,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -923,7 +1019,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -935,7 +1033,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -947,7 +1047,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -959,7 +1061,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -971,7 +1075,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -983,7 +1089,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -995,7 +1103,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1007,7 +1117,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1019,7 +1131,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1031,7 +1145,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1043,7 +1159,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1055,7 +1173,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1067,7 +1187,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1079,7 +1201,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1091,7 +1215,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1103,7 +1229,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1115,7 +1243,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1127,7 +1257,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1139,7 +1271,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1151,7 +1285,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1163,7 +1299,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1175,7 +1313,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1187,7 +1327,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1199,7 +1341,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1211,7 +1355,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1223,7 +1369,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1235,7 +1383,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1247,7 +1397,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1259,7 +1411,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1271,7 +1425,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1283,7 +1439,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1295,7 +1453,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1307,13 +1467,16 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
       "reference": "assets/image/shuffle",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tests/terboo-brand-assets.test.mjs",
         "tools/terboo-brand-assets.mjs"
       ]
@@ -1322,6 +1485,7 @@
       "reference": "assets/image/shuffle/",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tests/terboo-brand-assets.test.mjs"
       ]
     },
@@ -1329,6 +1493,7 @@
       "reference": "assets/image/shuffle/20032df7383ca92b7861a7081f2abe2d.jpg",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tests/terboo-brand-assets.test.mjs",
         "tools/manifests/manifest-v5-prev-after.json",
         "tools/manifests/manifest-v5-prev-before.json"
@@ -1338,6 +1503,7 @@
       "reference": "assets/image/shuffle/5a3ddf6991d1d7f3cd278ce9b8b9862a.jpg",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tools/manifests/manifest-v5-prev-after.json",
         "tools/manifests/manifest-v5-prev-before.json"
       ]
@@ -1346,6 +1512,7 @@
       "reference": "assets/image/shuffle/64a7e5d15b5ca33b4949a10ca96d2325.jpg",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tools/manifests/manifest-v5-prev-after.json",
         "tools/manifests/manifest-v5-prev-before.json"
       ]
@@ -1354,6 +1521,7 @@
       "reference": "assets/image/shuffle/99f7702f5b028e2ed094700c5960c85d.jpg",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tools/manifests/manifest-v5-prev-after.json",
         "tools/manifests/manifest-v5-prev-before.json"
       ]
@@ -1362,6 +1530,7 @@
       "reference": "assets/image/shuffle/owner-added.jpg",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tests/terboo-brand-assets.test.mjs"
       ]
     },
@@ -1373,7 +1542,9 @@
         "TERBOO_BEFORE_MANIFEST.json",
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
-        "docs/terboo-asset-manifest.json"
+        "docs/terboo-asset-manifest.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1384,7 +1555,9 @@
         "TERBOO_BEFORE_MANIFEST.json",
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
-        "docs/terboo-asset-manifest.json"
+        "docs/terboo-asset-manifest.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1395,7 +1568,8 @@
         "TERBOO_BEFORE_MANIFEST.json",
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
-        "docs/terboo-asset-manifest.json"
+        "docs/terboo-asset-manifest.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1406,7 +1580,9 @@
         "TERBOO_BEFORE_MANIFEST.json",
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
-        "docs/terboo-asset-manifest.json"
+        "docs/terboo-asset-manifest.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1417,7 +1593,9 @@
         "TERBOO_BEFORE_MANIFEST.json",
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
-        "docs/terboo-asset-manifest.json"
+        "docs/terboo-asset-manifest.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1428,7 +1606,9 @@
         "TERBOO_BEFORE_MANIFEST.json",
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
-        "docs/terboo-asset-manifest.json"
+        "docs/terboo-asset-manifest.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1439,7 +1619,9 @@
         "TERBOO_BEFORE_MANIFEST.json",
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
-        "docs/terboo-asset-manifest.json"
+        "docs/terboo-asset-manifest.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1450,7 +1632,9 @@
         "TERBOO_BEFORE_MANIFEST.json",
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
-        "docs/terboo-asset-manifest.json"
+        "docs/terboo-asset-manifest.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1478,7 +1662,7 @@
         "config.example.js",
         "config.js",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json"
+        "docs/web-platform/01_FILE_INVENTORY.json"
       ]
     },
     {
@@ -1506,7 +1690,7 @@
         "config.example.js",
         "config.js",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json"
+        "docs/web-platform/01_FILE_INVENTORY.json"
       ]
     },
     {
@@ -1520,7 +1704,7 @@
         "config.example.js",
         "config.js",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json"
+        "docs/web-platform/01_FILE_INVENTORY.json"
       ]
     },
     {
@@ -1530,6 +1714,7 @@
         "TERBOO_AFTER_MANIFEST.json",
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tools/manifests/manifest-v5-prev-after.json",
         "tools/manifests/manifest-v5-prev-before.json"
       ]
@@ -1545,7 +1730,7 @@
         "config.example.js",
         "config.js",
         "docs/terboo-asset-manifest.json",
-        "tests/terboo-brand-assets.test.mjs"
+        "docs/web-platform/01_FILE_INVENTORY.json"
       ]
     },
     {
@@ -1573,7 +1758,7 @@
         "config.example.js",
         "config.js",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json"
+        "docs/web-platform/01_FILE_INVENTORY.json"
       ]
     },
     {
@@ -1587,7 +1772,7 @@
         "config.example.js",
         "config.js",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json"
+        "docs/web-platform/01_FILE_INVENTORY.json"
       ]
     },
     {
@@ -1615,7 +1800,7 @@
         "config.example.js",
         "config.js",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json"
+        "docs/web-platform/01_FILE_INVENTORY.json"
       ]
     },
     {
@@ -1629,7 +1814,7 @@
         "config.example.js",
         "config.js",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json"
+        "docs/web-platform/01_FILE_INVENTORY.json"
       ]
     },
     {
@@ -1643,7 +1828,7 @@
         "config.example.js",
         "config.js",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json"
+        "docs/web-platform/01_FILE_INVENTORY.json"
       ]
     },
     {
@@ -1657,7 +1842,7 @@
         "config.example.js",
         "config.js",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json"
+        "docs/web-platform/01_FILE_INVENTORY.json"
       ]
     },
     {
@@ -1667,6 +1852,7 @@
         "TERBOO_AFTER_MANIFEST.json",
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tools/manifests/manifest-v5-prev-after.json",
         "tools/manifests/manifest-v5-prev-before.json"
       ]
@@ -1682,7 +1868,7 @@
         "config.example.js",
         "config.js",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json"
+        "docs/web-platform/01_FILE_INVENTORY.json"
       ]
     },
     {
@@ -1696,7 +1882,7 @@
         "config.example.js",
         "config.js",
         "docs/terboo-asset-manifest.json",
-        "plugins/main/#U0627#U0644#U0645#U062a#U0635#U062f#U0631#U064a#U0646.js"
+        "docs/web-platform/01_FILE_INVENTORY.json"
       ]
     },
     {
@@ -1710,7 +1896,7 @@
         "config.example.js",
         "config.js",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json"
+        "docs/web-platform/01_FILE_INVENTORY.json"
       ]
     },
     {
@@ -1749,7 +1935,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1760,7 +1948,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1771,7 +1961,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1782,7 +1974,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1793,7 +1987,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1804,7 +2000,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1815,7 +2013,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1826,7 +2026,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1837,7 +2039,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1848,7 +2052,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "docs/v6/files-report.json"
+        "docs/v6/files-report.json",
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1860,15 +2066,16 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tests/terboo-brand-assets.test.mjs",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tests/terboo-brand-assets.test.mjs"
       ]
     },
     {
       "reference": "assets/logo.png",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tests/terboo-ai-core.test.mjs"
       ]
     },
@@ -1882,8 +2089,8 @@
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
         "docs/v6/files-report.json",
-        "tests/terboo-brand-assets.test.mjs",
-        "tools/manifests/manifest-v5-prev-after.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json"
       ]
     },
     {
@@ -1895,8 +2102,9 @@
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json",
-        "tools/manifests/manifest-v5-prev-before.json"
+        "docs/web-platform/01_FILE_INVENTORY.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
+        "tools/manifests/manifest-v5-prev-after.json"
       ]
     },
     {
@@ -1906,6 +2114,7 @@
         "TERBOO_AFTER_MANIFEST.json",
         "TERBOO_V6_AFTER_MANIFEST.json",
         "TERBOO_V6_BEFORE_MANIFEST.json",
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tools/manifests/manifest-v5-prev-after.json",
         "tools/manifests/manifest-v5-prev-before.json"
       ]
@@ -1914,6 +2123,7 @@
       "reference": "assets/tarboo-extra.png",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tests/terboo-brand-lock.test.mjs"
       ]
     },
@@ -1921,6 +2131,7 @@
       "reference": "assets/terboo-daftar.png",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tests/terboo-brand-lock.test.mjs"
       ]
     },
@@ -1928,6 +2139,7 @@
       "reference": "assets/terboo-extra.png",
       "exists": false,
       "referencedFrom": [
+        "docs/web-platform/07_ASSETS_AND_ROUTES.json",
         "tests/terboo-brand-lock.test.mjs"
       ]
     },
@@ -1942,7 +2154,7 @@
         "config.example.js",
         "config.js",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json"
+        "docs/web-platform/01_FILE_INVENTORY.json"
       ]
     },
     {
@@ -1956,7 +2168,7 @@
         "config.example.js",
         "config.js",
         "docs/terboo-asset-manifest.json",
-        "tools/manifests/manifest-v5-prev-after.json"
+        "docs/web-platform/01_FILE_INVENTORY.json"
       ]
     }
   ]
