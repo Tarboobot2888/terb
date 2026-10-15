@@ -1,0 +1,686 @@
+{
+  "generatedAt": "2026-10-08T18:24:53.162Z",
+  "rule": "every tool call goes through the central permission engine (decide/principalOf); targets are resolved by the bot, never a JID chosen by the model",
+  "actionTools": [
+    {
+      "id": "group.settings.get",
+      "family": "group",
+      "action": "group.settings.get",
+      "scope": "group",
+      "minLevel": "user",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "panel-owner": "allowed",
+        "vps-buyer": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "id": "group.settings.lock",
+      "family": "group",
+      "action": "group.settings.lock",
+      "scope": "group",
+      "minLevel": "group-admin",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "panel-owner": "denied",
+        "vps-buyer": "denied",
+        "user": "denied"
+      }
+    },
+    {
+      "id": "group.settings.unlock",
+      "family": "group",
+      "action": "group.settings.unlock",
+      "scope": "group",
+      "minLevel": "group-admin",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "panel-owner": "denied",
+        "vps-buyer": "denied",
+        "user": "denied"
+      }
+    },
+    {
+      "id": "group.settings.restrict",
+      "family": "group",
+      "action": "group.settings.restrict",
+      "scope": "group",
+      "minLevel": "group-admin",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "panel-owner": "denied",
+        "vps-buyer": "denied",
+        "user": "denied"
+      }
+    },
+    {
+      "id": "group.settings.unrestrict",
+      "family": "group",
+      "action": "group.settings.unrestrict",
+      "scope": "group",
+      "minLevel": "group-admin",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "panel-owner": "denied",
+        "vps-buyer": "denied",
+        "user": "denied"
+      }
+    },
+    {
+      "id": "group.members.kickAll",
+      "family": "group",
+      "action": "group.members.kickAll",
+      "scope": "group",
+      "minLevel": "owner",
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-owner",
+        "panel-owner": "needs-owner",
+        "vps-buyer": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "id": "group.members.kickSelected",
+      "family": "group",
+      "action": "group.members.kickSelected",
+      "scope": "group",
+      "minLevel": "group-admin",
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-confirmation",
+        "panel-owner": "denied",
+        "vps-buyer": "denied",
+        "user": "denied"
+      }
+    },
+    {
+      "id": "group.members.promoteSelected",
+      "family": "group",
+      "action": "group.members.promoteSelected",
+      "scope": "group",
+      "minLevel": "group-admin",
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-confirmation",
+        "panel-owner": "denied",
+        "vps-buyer": "denied",
+        "user": "denied"
+      }
+    },
+    {
+      "id": "group.members.demoteSelected",
+      "family": "group",
+      "action": "group.members.demoteSelected",
+      "scope": "group",
+      "minLevel": "group-admin",
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-confirmation",
+        "panel-owner": "denied",
+        "vps-buyer": "denied",
+        "user": "denied"
+      }
+    },
+    {
+      "id": "group.subject.set",
+      "family": "group",
+      "action": "group.subject.set",
+      "scope": "group",
+      "minLevel": "group-admin",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "panel-owner": "denied",
+        "vps-buyer": "denied",
+        "user": "denied"
+      }
+    },
+    {
+      "id": "group.description.set",
+      "family": "group",
+      "action": "group.description.set",
+      "scope": "group",
+      "minLevel": "group-admin",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "panel-owner": "denied",
+        "vps-buyer": "denied",
+        "user": "denied"
+      }
+    },
+    {
+      "id": "group.invite.get",
+      "family": "group",
+      "action": "group.invite.get",
+      "scope": "group",
+      "minLevel": "group-admin",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "panel-owner": "denied",
+        "vps-buyer": "denied",
+        "user": "denied"
+      }
+    },
+    {
+      "id": "group.invite.revoke",
+      "family": "group",
+      "action": "group.invite.revoke",
+      "scope": "group",
+      "minLevel": "group-admin",
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-confirmation",
+        "panel-owner": "denied",
+        "vps-buyer": "denied",
+        "user": "denied"
+      }
+    },
+    {
+      "id": "contact.block",
+      "family": "group",
+      "action": "contact.block",
+      "scope": "any chat",
+      "minLevel": "owner",
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-owner",
+        "panel-owner": "needs-owner",
+        "vps-buyer": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "id": "contact.unblock",
+      "family": "group",
+      "action": "contact.unblock",
+      "scope": "any chat",
+      "minLevel": "owner",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "needs-owner",
+        "panel-owner": "needs-owner",
+        "vps-buyer": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "id": "message.send_to_contact",
+      "family": "messaging",
+      "action": "message.send_to_contact",
+      "scope": "owner",
+      "minLevel": "owner",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "needs-owner",
+        "panel-owner": "needs-owner",
+        "vps-buyer": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "id": "broadcast.run",
+      "family": "messaging",
+      "action": "broadcast.run",
+      "scope": "owner",
+      "minLevel": "owner",
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-owner",
+        "panel-owner": "needs-owner",
+        "vps-buyer": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "id": "broadcast.plan",
+      "family": "messaging",
+      "action": "childbots.list",
+      "scope": "owner",
+      "minLevel": "owner",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "needs-owner",
+        "panel-owner": "needs-owner",
+        "vps-buyer": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "id": "ssh.diagnose",
+      "family": "ssh",
+      "action": "ssh.diagnose",
+      "scope": "owner",
+      "minLevel": "owner",
+      "decisions": null
+    },
+    {
+      "id": "project.deploy",
+      "family": "ssh",
+      "action": "project.deploy",
+      "scope": "owner",
+      "minLevel": "owner",
+      "decisions": {
+        "owner": "provider-not-available",
+        "group-admin": "provider-not-available",
+        "panel-owner": "provider-not-available",
+        "vps-buyer": "provider-not-available",
+        "user": "provider-not-available"
+      }
+    },
+    {
+      "id": "vps.list",
+      "family": "vps",
+      "action": "public",
+      "kind": "read",
+      "confirm": false,
+      "privateOnly": false,
+      "scope": "own resources (entitlement)",
+      "minLevel": "user",
+      "decisions": null
+    },
+    {
+      "id": "vps.info",
+      "family": "vps",
+      "action": "vps.user.read",
+      "kind": "read",
+      "confirm": false,
+      "privateOnly": false,
+      "scope": "own resources (entitlement)",
+      "minLevel": "vps-buyer",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "resource-not-owned",
+        "panel-owner": "resource-not-owned",
+        "vps-buyer": "allowed",
+        "user": "resource-not-owned"
+      }
+    },
+    {
+      "id": "vps.start",
+      "family": "vps",
+      "action": "vps.user.power",
+      "kind": "action",
+      "confirm": false,
+      "privateOnly": false,
+      "scope": "own resources (entitlement)",
+      "minLevel": "vps-buyer",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "resource-not-owned",
+        "panel-owner": "resource-not-owned",
+        "vps-buyer": "allowed",
+        "user": "resource-not-owned"
+      }
+    },
+    {
+      "id": "vps.stop",
+      "family": "vps",
+      "action": "vps.user.power",
+      "kind": "action",
+      "confirm": true,
+      "privateOnly": false,
+      "scope": "own resources (entitlement)",
+      "minLevel": "vps-buyer",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "resource-not-owned",
+        "panel-owner": "resource-not-owned",
+        "vps-buyer": "allowed",
+        "user": "resource-not-owned"
+      }
+    },
+    {
+      "id": "vps.restart",
+      "family": "vps",
+      "action": "vps.user.power",
+      "kind": "action",
+      "confirm": true,
+      "privateOnly": false,
+      "scope": "own resources (entitlement)",
+      "minLevel": "vps-buyer",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "resource-not-owned",
+        "panel-owner": "resource-not-owned",
+        "vps-buyer": "allowed",
+        "user": "resource-not-owned"
+      }
+    },
+    {
+      "id": "vps.poweroff",
+      "family": "vps",
+      "action": "vps.user.power",
+      "kind": "action",
+      "confirm": true,
+      "privateOnly": false,
+      "scope": "own resources (entitlement)",
+      "minLevel": "vps-buyer",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "resource-not-owned",
+        "panel-owner": "resource-not-owned",
+        "vps-buyer": "allowed",
+        "user": "resource-not-owned"
+      }
+    },
+    {
+      "id": "vps.hostname",
+      "family": "vps",
+      "action": "vps.user.power",
+      "kind": "input",
+      "confirm": true,
+      "privateOnly": false,
+      "scope": "own resources (entitlement)",
+      "minLevel": "vps-buyer",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "resource-not-owned",
+        "panel-owner": "resource-not-owned",
+        "vps-buyer": "allowed",
+        "user": "resource-not-owned"
+      }
+    },
+    {
+      "id": "vps.password",
+      "family": "vps",
+      "action": "vps.user.destructive",
+      "kind": "input",
+      "confirm": true,
+      "privateOnly": true,
+      "scope": "own resources (entitlement)",
+      "minLevel": "vps-buyer",
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "resource-not-owned",
+        "panel-owner": "resource-not-owned",
+        "vps-buyer": "needs-confirmation",
+        "user": "resource-not-owned"
+      }
+    },
+    {
+      "id": "vps.reinstall",
+      "family": "vps",
+      "action": "vps.user.destructive",
+      "kind": "input",
+      "confirm": true,
+      "privateOnly": true,
+      "scope": "own resources (entitlement)",
+      "minLevel": "vps-buyer",
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "resource-not-owned",
+        "panel-owner": "resource-not-owned",
+        "vps-buyer": "needs-confirmation",
+        "user": "resource-not-owned"
+      }
+    },
+    {
+      "id": "vps.services",
+      "family": "vps",
+      "action": "vps.user.read",
+      "kind": "read",
+      "confirm": false,
+      "privateOnly": false,
+      "scope": "own resources (entitlement)",
+      "minLevel": "vps-buyer",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "resource-not-owned",
+        "panel-owner": "resource-not-owned",
+        "vps-buyer": "allowed",
+        "user": "resource-not-owned"
+      }
+    },
+    {
+      "id": "vps.vnc",
+      "family": "vps",
+      "action": "vps.user.read",
+      "kind": "read",
+      "confirm": true,
+      "privateOnly": true,
+      "scope": "own resources (entitlement)",
+      "minLevel": "vps-buyer",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "resource-not-owned",
+        "panel-owner": "resource-not-owned",
+        "vps-buyer": "allowed",
+        "user": "resource-not-owned"
+      }
+    },
+    {
+      "id": "vps.backups",
+      "family": "vps",
+      "action": "vps.user.read",
+      "kind": "read",
+      "confirm": false,
+      "privateOnly": false,
+      "scope": "own resources (entitlement)",
+      "minLevel": "vps-buyer",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "resource-not-owned",
+        "panel-owner": "resource-not-owned",
+        "vps-buyer": "allowed",
+        "user": "resource-not-owned"
+      }
+    },
+    {
+      "id": "vps.restore",
+      "family": "vps",
+      "action": "vps.user.destructive",
+      "kind": "input",
+      "confirm": true,
+      "privateOnly": false,
+      "scope": "own resources (entitlement)",
+      "minLevel": "vps-buyer",
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "resource-not-owned",
+        "panel-owner": "resource-not-owned",
+        "vps-buyer": "needs-confirmation",
+        "user": "resource-not-owned"
+      }
+    },
+    {
+      "id": "vps.plans",
+      "family": "plans",
+      "action": "public",
+      "kind": "read",
+      "confirm": false,
+      "privateOnly": false,
+      "scope": "own resources (entitlement)",
+      "minLevel": "user",
+      "decisions": null
+    },
+    {
+      "id": "panel.list",
+      "family": "panel",
+      "action": "public",
+      "kind": "read",
+      "confirm": false,
+      "privateOnly": false,
+      "scope": "own resources (entitlement)",
+      "minLevel": "user",
+      "decisions": null
+    },
+    {
+      "id": "panel.add",
+      "family": "panel",
+      "action": "public",
+      "kind": "input",
+      "confirm": false,
+      "privateOnly": false,
+      "scope": "own resources (entitlement)",
+      "minLevel": "user",
+      "decisions": null
+    },
+    {
+      "id": "panel.test",
+      "family": "panel",
+      "action": "panel.user.read",
+      "kind": "read",
+      "confirm": false,
+      "privateOnly": false,
+      "scope": "own resources (entitlement)",
+      "minLevel": "panel-owner",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "resource-not-owned",
+        "panel-owner": "allowed",
+        "vps-buyer": "resource-not-owned",
+        "user": "resource-not-owned"
+      }
+    },
+    {
+      "id": "panel.servers",
+      "family": "panel",
+      "action": "panel.user.read",
+      "kind": "read",
+      "confirm": false,
+      "privateOnly": false,
+      "scope": "own resources (entitlement)",
+      "minLevel": "panel-owner",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "resource-not-owned",
+        "panel-owner": "allowed",
+        "vps-buyer": "resource-not-owned",
+        "user": "resource-not-owned"
+      }
+    },
+    {
+      "id": "panel.server.info",
+      "family": "panel",
+      "action": "panel.user.read",
+      "kind": "read",
+      "confirm": false,
+      "privateOnly": false,
+      "scope": "own resources (entitlement)",
+      "minLevel": "panel-owner",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "resource-not-owned",
+        "panel-owner": "allowed",
+        "vps-buyer": "resource-not-owned",
+        "user": "resource-not-owned"
+      }
+    },
+    {
+      "id": "panel.power",
+      "family": "panel",
+      "action": "panel.user.write",
+      "kind": "action",
+      "confirm": true,
+      "privateOnly": false,
+      "scope": "own resources (entitlement)",
+      "minLevel": "panel-owner",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "resource-not-owned",
+        "panel-owner": "allowed",
+        "vps-buyer": "resource-not-owned",
+        "user": "resource-not-owned"
+      }
+    },
+    {
+      "id": "panel.resources",
+      "family": "panel",
+      "action": "panel.user.read",
+      "kind": "read",
+      "confirm": false,
+      "privateOnly": false,
+      "scope": "own resources (entitlement)",
+      "minLevel": "panel-owner",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "resource-not-owned",
+        "panel-owner": "allowed",
+        "vps-buyer": "resource-not-owned",
+        "user": "resource-not-owned"
+      }
+    },
+    {
+      "id": "panel.console",
+      "family": "panel",
+      "action": "panel.user.destructive",
+      "kind": "input",
+      "confirm": true,
+      "privateOnly": false,
+      "scope": "own resources (entitlement)",
+      "minLevel": "panel-owner",
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "resource-not-owned",
+        "panel-owner": "needs-confirmation",
+        "vps-buyer": "resource-not-owned",
+        "user": "resource-not-owned"
+      }
+    },
+    {
+      "id": "panel.files",
+      "family": "panel",
+      "action": "panel.user.read",
+      "kind": "read",
+      "confirm": false,
+      "privateOnly": false,
+      "scope": "own resources (entitlement)",
+      "minLevel": "panel-owner",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "resource-not-owned",
+        "panel-owner": "allowed",
+        "vps-buyer": "resource-not-owned",
+        "user": "resource-not-owned"
+      }
+    },
+    {
+      "id": "panel.backups",
+      "family": "panel",
+      "action": "panel.user.read",
+      "kind": "read",
+      "confirm": false,
+      "privateOnly": false,
+      "scope": "own resources (entitlement)",
+      "minLevel": "panel-owner",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "resource-not-owned",
+        "panel-owner": "allowed",
+        "vps-buyer": "resource-not-owned",
+        "user": "resource-not-owned"
+      }
+    },
+    {
+      "id": "panel.databases",
+      "family": "panel",
+      "action": "panel.user.read",
+      "kind": "read",
+      "confirm": false,
+      "privateOnly": false,
+      "scope": "own resources (entitlement)",
+      "minLevel": "panel-owner",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "resource-not-owned",
+        "panel-owner": "allowed",
+        "vps-buyer": "resource-not-owned",
+        "user": "resource-not-owned"
+      }
+    }
+  ],
+  "readOnlyRegistryTools": {
+    "count": 103,
+    "source": "docs/terboo-tool-registry.json"
+  },
+  "unmappedToPermissionEngine": []
+}

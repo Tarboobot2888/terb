@@ -1,0 +1,122 @@
+{
+  "generatedAt": "2026-10-08T18:24:52.822Z",
+  "transport": "terboo-net-guard panelRequest · SSRF guard (owner-configured domain allowed via allowHosts only) · timeout · size cap · unified PanelError",
+  "clientApi": {
+    "who": "panel resource owner (own key, encrypted)",
+    "sections": {
+      "resources": {
+        "requires": [
+          "(any key)"
+        ]
+      },
+      "console": {
+        "requires": [
+          "control.console"
+        ]
+      },
+      "power": {
+        "requires": [
+          "control.start",
+          "control.stop",
+          "control.restart"
+        ]
+      },
+      "files": {
+        "requires": [
+          "file.read",
+          "file.read-content"
+        ]
+      },
+      "backups": {
+        "requires": [
+          "backup.read"
+        ]
+      },
+      "databases": {
+        "requires": [
+          "database.read"
+        ]
+      },
+      "network": {
+        "requires": [
+          "allocation.read"
+        ]
+      },
+      "startup": {
+        "requires": [
+          "startup.read"
+        ]
+      },
+      "settings": {
+        "requires": [
+          "settings.rename",
+          "settings.reinstall"
+        ]
+      }
+    }
+  },
+  "applicationApi": {
+    "who": "owner only — config.pterodactyl.server1..5 (env TERBOO_PTERO_<N>_DOMAIN/_APIKEY override)",
+    "panels": [
+      {
+        "id": "v1",
+        "configured": false,
+        "host": ""
+      },
+      {
+        "id": "v2",
+        "configured": false,
+        "host": ""
+      },
+      {
+        "id": "v3",
+        "configured": false,
+        "host": ""
+      },
+      {
+        "id": "v4",
+        "configured": false,
+        "host": ""
+      },
+      {
+        "id": "v5",
+        "configured": false,
+        "host": ""
+      }
+    ],
+    "operations": [
+      {
+        "op": "listUsers/listServers/listNodes/listLocations",
+        "verify": "paginated read (≤20 pages)"
+      },
+      {
+        "op": "getUser/getServer",
+        "verify": "direct read"
+      },
+      {
+        "op": "deleteServer/deleteUser",
+        "verify": "read after delete must be not-found, else not-applied"
+      },
+      {
+        "op": "setSuspended",
+        "verify": "re-read suspended flag"
+      },
+      {
+        "op": "legacyClient.deleteVerified",
+        "verify": "same delete-then-read proof for legacy plugins"
+      }
+    ]
+  },
+  "legacyPluginsOnUnifiedLayer": [
+    "plugins/panel/allalisses.js",
+    "plugins/panel/serverinfo.js",
+    "plugins/panel/انشاء_خادم.js",
+    "plugins/panel/حذف_اللوحة.js",
+    "plugins/panel/حذف_خادم.js",
+    "plugins/panel/حذف_مدير_لوحة.js",
+    "plugins/panel/قائمة_المستخدمين.js",
+    "plugins/panel/لوحة_جديده.js",
+    "plugins/panel/مديري_اللوحة.js"
+  ],
+  "legacyPluginsStillOnRawAxios": []
+}

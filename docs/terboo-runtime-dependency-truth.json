@@ -1,0 +1,649 @@
+{
+  "generatedAt": "2026-10-03T18:23:18.290Z",
+  "node": "v22.22.0",
+  "target": {
+    "package": "@whiskeysockets/baileys",
+    "version": "7.0.0-rc14"
+  },
+  "requested": {
+    "package": "@whiskeysockets/baileys",
+    "spec": "7.0.0-rc14"
+  },
+  "declaredPackage": "@whiskeysockets/baileys",
+  "resolved": {
+    "package": "@whiskeysockets/baileys",
+    "version": "7.0.0-rc14",
+    "resolved": "https://registry.npmjs.org/@whiskeysockets/baileys/-/baileys-7.0.0-rc14.tgz",
+    "integrity": "sha512-WK+X8ju8TPGxvWIsP8hrY6JB6FltYuFe+vsqKfjOYX25JObij9qLf2c3ZGdl1Q+vhFwbnT+AZmWAB5pTvzmSiQ=="
+  },
+  "installed": {
+    "name": "@whiskeysockets/baileys",
+    "version": "7.0.0-rc14",
+    "path": "node_modules/@whiskeysockets/baileys",
+    "entry": "node_modules/@whiskeysockets/baileys/lib/index.js",
+    "type": "module"
+  },
+  "aliases": [],
+  "fork": null,
+  "optionalNotInstalled": [],
+  "legacyAliasMaro": {
+    "usedInCode": false,
+    "note": "v4.0 imports @whiskeysockets/baileys directly; no 'maro' alias package is declared, locked or imported."
+  },
+  "lockfileWhatsAppGraph": [
+    {
+      "path": "node_modules/@whiskeysockets/baileys",
+      "version": "7.0.0-rc14",
+      "resolved": "https://registry.npmjs.org/@whiskeysockets/baileys/-/baileys-7.0.0-rc14.tgz",
+      "dev": false,
+      "name": null
+    },
+    {
+      "path": "node_modules/@whiskeysockets/baileys/node_modules/@hapi/boom",
+      "version": "9.1.4",
+      "resolved": "https://registry.npmjs.org/@hapi/boom/-/boom-9.1.4.tgz",
+      "dev": false,
+      "name": null
+    },
+    {
+      "path": "node_modules/@whiskeysockets/baileys/node_modules/@hapi/hoek",
+      "version": "9.3.0",
+      "resolved": "https://registry.npmjs.org/@hapi/hoek/-/hoek-9.3.0.tgz",
+      "dev": false,
+      "name": null
+    },
+    {
+      "path": "node_modules/libsignal",
+      "version": "6.0.0",
+      "resolved": "https://registry.npmjs.org/libsignal/-/libsignal-6.0.0.tgz",
+      "dev": false,
+      "name": null
+    },
+    {
+      "path": "node_modules/protobufjs",
+      "version": "7.6.6",
+      "resolved": "https://registry.npmjs.org/protobufjs/-/protobufjs-7.6.6.tgz",
+      "dev": false,
+      "name": null
+    },
+    {
+      "path": "node_modules/whatsapp-rust-bridge",
+      "version": "0.5.4",
+      "resolved": "https://registry.npmjs.org/whatsapp-rust-bridge/-/whatsapp-rust-bridge-0.5.4.tgz",
+      "dev": false,
+      "name": null
+    }
+  ],
+  "proto": {
+    "source": "node_modules/@whiskeysockets/baileys/WAProto/index.js",
+    "protobufImplementation": "protobufjs/minimal.js",
+    "protobufjsVersion": "7.6.6",
+    "api": {
+      "fromObject": true,
+      "create": true,
+      "encode": true,
+      "decode": true,
+      "toObject": true,
+      "decodeAndHydrate": false,
+      "generatedFromObjectCount": 498,
+      "generatedCreateCount": 498
+    },
+    "conclusion": "rc14 WAProto ships real converting fromObject() and Baileys itself calls it; create() does not convert enum names or base64 bytes. Production code goes through the Terboo proto adapter instead of calling either directly."
+  },
+  "runtimeApi": {
+    "exportCount": 263,
+    "identity": {
+      "jidNormalizedUser": true,
+      "isLidUser": true,
+      "isPnUser": true,
+      "isHostedLidUser": true,
+      "isHostedPnUser": true,
+      "areJidsSameUser": true,
+      "jidDecode": true,
+      "jidEncode": true,
+      "isJidUser": false
+    },
+    "messaging": {
+      "generateWAMessageFromContent": true,
+      "generateWAMessage": true,
+      "prepareWAMessageMedia": true,
+      "normalizeMessageContent": true,
+      "getContentType": true,
+      "downloadContentFromMessage": true,
+      "generateMessageIDV2": true
+    }
+  },
+  "projectImports": {
+    "names": {
+      "DisconnectReason": 2,
+      "S_WHATSAPP_NET": 1,
+      "USyncQuery": 1,
+      "areJidsSameUser": 2,
+      "default": 1,
+      "delay": 1,
+      "downloadContentFromMessage": 6,
+      "downloadMediaMessage": 7,
+      "fetchLatestBaileysVersion": 2,
+      "generateForwardMessageContent": 1,
+      "generateMessageID": 2,
+      "generateMessageIDV2": 1,
+      "generateWAMessage": 14,
+      "generateWAMessageFromContent": 51,
+      "getBinaryNodeChild": 3,
+      "getContentType": 5,
+      "getDevice": 1,
+      "isJidNewsletter": 1,
+      "isJidStatusBroadcast": 1,
+      "jidDecode": 3,
+      "jidNormalizedUser": 8,
+      "makeCacheableSignalKeyStore": 2,
+      "makeWASocket": 1,
+      "normalizeMessageContent": 2,
+      "prepareWAMessageMedia": 20,
+      "proto": 12,
+      "useMultiFileAuthState": 2
+    },
+    "missing": {}
+  },
+  "packages": {
+    "total": 76,
+    "declared": 76,
+    "undeclaredUsed": [],
+    "declaredUnused": [
+      "@adiwajshing/keyed-db",
+      "@bochilteam/scraper-primbon",
+      "@google/generative-ai",
+      "@sptzx/request",
+      "@vitalets/google-translate-api",
+      "@vreden/youtube_scraper",
+      "adm-zip",
+      "bycf",
+      "cli-table3",
+      "dotenv",
+      "eslint",
+      "fetch-cookie",
+      "figlet",
+      "gradient-string",
+      "iqc-canvas",
+      "jsdom",
+      "katex",
+      "nathcf",
+      "nodemon",
+      "openpgp",
+      "p-queue",
+      "skia-canvas",
+      "unfurl.js",
+      "wa-sticker-formatter",
+      "zencf"
+    ],
+    "declaredNotInstalled": [],
+    "table": {
+      "@adiwajshing/keyed-db": {
+        "requested": "^0.2.4",
+        "locked": "0.2.4",
+        "installed": "0.2.4",
+        "usedIn": 0
+      },
+      "@anthropic-ai/sdk": {
+        "requested": "^0.131.0",
+        "locked": "0.131.0",
+        "installed": "0.131.0",
+        "usedIn": 1
+      },
+      "@bochilteam/scraper-primbon": {
+        "requested": "^5.0.0",
+        "locked": "5.0.0",
+        "installed": "5.0.0",
+        "usedIn": 0
+      },
+      "@eslint/js": {
+        "requested": "^10.0.1",
+        "locked": "10.0.1",
+        "installed": "10.0.1",
+        "usedIn": 1
+      },
+      "@ffmpeg-installer/ffmpeg": {
+        "requested": "^1.1.0",
+        "locked": "1.1.0",
+        "installed": "1.1.0",
+        "usedIn": 7
+      },
+      "@google/generative-ai": {
+        "requested": "^0.24.1",
+        "locked": "0.24.1",
+        "installed": "0.24.1",
+        "usedIn": 0
+      },
+      "@hapi/boom": {
+        "requested": "^10.0.1",
+        "locked": "10.0.1",
+        "installed": "10.0.1",
+        "usedIn": 2
+      },
+      "@microlink/mql": {
+        "requested": "^0.16.1",
+        "locked": "0.16.1",
+        "installed": "0.16.1",
+        "usedIn": 1
+      },
+      "@napi-rs/canvas": {
+        "requested": "^0.1.88",
+        "locked": "0.1.100",
+        "installed": "0.1.100",
+        "usedIn": 22
+      },
+      "@sptzx/request": {
+        "requested": "^1.0.0-rc.1",
+        "locked": "1.0.0-rc.1",
+        "installed": "1.0.0-rc.1",
+        "usedIn": 0
+      },
+      "@vitalets/google-translate-api": {
+        "requested": "^9.2.1",
+        "locked": "9.2.1",
+        "installed": "9.2.1",
+        "usedIn": 0
+      },
+      "@vreden/youtube_scraper": {
+        "requested": "^1.2.8",
+        "locked": "1.2.9",
+        "installed": "1.2.9",
+        "usedIn": 0
+      },
+      "@whiskeysockets/baileys": {
+        "requested": "7.0.0-rc14",
+        "locked": "7.0.0-rc14",
+        "installed": "7.0.0-rc14",
+        "usedIn": 79
+      },
+      "acorn": {
+        "requested": "^8.16.0",
+        "locked": "8.18.0",
+        "installed": "8.18.0",
+        "usedIn": 3
+      },
+      "adm-zip": {
+        "requested": "^0.5.17",
+        "locked": "0.5.18",
+        "installed": "0.5.18",
+        "usedIn": 0
+      },
+      "archiver": {
+        "requested": "^7.0.1",
+        "locked": "7.0.1",
+        "installed": "7.0.1",
+        "usedIn": 4
+      },
+      "awesome-phonenumber": {
+        "requested": "^7.7.0",
+        "locked": "7.8.0",
+        "installed": "7.8.0",
+        "usedIn": 3
+      },
+      "axios": {
+        "requested": "^1.13.2",
+        "locked": "1.20.0",
+        "installed": "1.20.0",
+        "usedIn": 317
+      },
+      "axios-cookiejar-support": {
+        "requested": "^6.0.5",
+        "locked": "6.0.5",
+        "installed": "6.0.5",
+        "usedIn": 3
+      },
+      "brat-canvas": {
+        "requested": "^1.0.26",
+        "locked": "1.0.30",
+        "installed": "1.0.30",
+        "usedIn": 1
+      },
+      "btch-downloader": {
+        "requested": "^6.0.25",
+        "locked": "6.4.0",
+        "installed": "6.4.0",
+        "usedIn": 5
+      },
+      "bycf": {
+        "requested": "^1.0.3",
+        "locked": "1.0.5",
+        "installed": "1.0.5",
+        "usedIn": 0
+      },
+      "chalk": {
+        "requested": "^4.1.2",
+        "locked": "4.1.2",
+        "installed": "4.1.2",
+        "usedIn": 1
+      },
+      "cheerio": {
+        "requested": "^1.1.2",
+        "locked": "1.2.0",
+        "installed": "1.2.0",
+        "usedIn": 30
+      },
+      "chokidar": {
+        "requested": "^5.0.0",
+        "locked": "5.0.0",
+        "installed": "5.0.0",
+        "usedIn": 1
+      },
+      "cli-table3": {
+        "requested": "^0.6.5",
+        "locked": "0.6.5",
+        "installed": "0.6.5",
+        "usedIn": 0
+      },
+      "cloudscraper": {
+        "requested": "^4.6.0",
+        "locked": "4.6.0",
+        "installed": "4.6.0",
+        "usedIn": 1
+      },
+      "cron": {
+        "requested": "^4.4.0",
+        "locked": "4.4.0",
+        "installed": "4.4.0",
+        "usedIn": 6
+      },
+      "crypto-js": {
+        "requested": "^4.2.0",
+        "locked": "4.2.0",
+        "installed": "4.2.0",
+        "usedIn": 1
+      },
+      "dotenv": {
+        "requested": "^17.4.2",
+        "locked": "17.4.2",
+        "installed": "17.4.2",
+        "usedIn": 0
+      },
+      "eslint": {
+        "requested": "^10.2.1",
+        "locked": "10.11.0",
+        "installed": "10.11.0",
+        "usedIn": 0
+      },
+      "fetch-cookie": {
+        "requested": "^3.2.0",
+        "locked": "3.2.0",
+        "installed": "3.2.0",
+        "usedIn": 0
+      },
+      "fflate": {
+        "requested": "^0.8.2",
+        "locked": "0.8.3",
+        "installed": "0.8.3",
+        "usedIn": 4
+      },
+      "figlet": {
+        "requested": "^1.10.0",
+        "locked": "1.11.4",
+        "installed": "1.11.4",
+        "usedIn": 0
+      },
+      "file-type": {
+        "requested": "^21.3.0",
+        "locked": "21.3.4",
+        "installed": "21.3.4",
+        "usedIn": 5
+      },
+      "fluent-ffmpeg": {
+        "requested": "^2.1.3",
+        "locked": "2.1.3",
+        "installed": "2.1.3",
+        "usedIn": 7
+      },
+      "form-data": {
+        "requested": "^4.0.5",
+        "locked": "4.0.6",
+        "installed": "4.0.6",
+        "usedIn": 37
+      },
+      "globals": {
+        "requested": "^17.5.0",
+        "locked": "17.12.0",
+        "installed": "17.12.0",
+        "usedIn": 1
+      },
+      "google-tts-api": {
+        "requested": "^2.0.2",
+        "locked": "2.0.2",
+        "installed": "2.0.2",
+        "usedIn": 1
+      },
+      "gradient-string": {
+        "requested": "^2.0.2",
+        "locked": "2.0.2",
+        "installed": "2.0.2",
+        "usedIn": 0
+      },
+      "gsmarena-api": {
+        "requested": "^2.0.5",
+        "locked": "2.0.5",
+        "installed": "2.0.5",
+        "usedIn": 2
+      },
+      "gtts": {
+        "requested": "^0.2.1",
+        "locked": "0.2.1",
+        "installed": "0.2.1",
+        "usedIn": 1
+      },
+      "he": {
+        "requested": "^1.2.0",
+        "locked": "1.2.0",
+        "installed": "1.2.0",
+        "usedIn": 1
+      },
+      "iqc-canvas": {
+        "requested": "^1.0.2",
+        "locked": "1.0.37",
+        "installed": "1.0.37",
+        "usedIn": 0
+      },
+      "jimp": {
+        "requested": "^1.6.0",
+        "locked": "1.6.1",
+        "installed": "1.6.1",
+        "usedIn": 3
+      },
+      "jsdom": {
+        "requested": "^28.1.0",
+        "locked": "28.1.0",
+        "installed": "28.1.0",
+        "usedIn": 0
+      },
+      "katex": {
+        "requested": "^0.16.45",
+        "locked": "0.16.47",
+        "installed": "0.16.47",
+        "usedIn": 0
+      },
+      "lowdb": {
+        "requested": "^7.0.1",
+        "locked": "7.0.1",
+        "installed": "7.0.1",
+        "usedIn": 1
+      },
+      "lru-cache": {
+        "requested": "^11.2.4",
+        "locked": "11.5.2",
+        "installed": "11.5.2",
+        "usedIn": 3
+      },
+      "mime-types": {
+        "requested": "^3.0.2",
+        "locked": "3.0.2",
+        "installed": "3.0.2",
+        "usedIn": 4
+      },
+      "moment-timezone": {
+        "requested": "^0.6.0",
+        "locked": "0.6.4",
+        "installed": "0.6.4",
+        "usedIn": 15
+      },
+      "ms": {
+        "requested": "^2.1.3",
+        "locked": "2.1.3",
+        "installed": "2.1.3",
+        "usedIn": 1
+      },
+      "nathcf": {
+        "requested": "^1.0.1",
+        "locked": "1.0.1",
+        "installed": "1.0.1",
+        "usedIn": 0
+      },
+      "node-cache": {
+        "requested": "^5.1.2",
+        "locked": "5.1.2",
+        "installed": "5.1.2",
+        "usedIn": 2
+      },
+      "node-fetch": {
+        "requested": "^2.7.0",
+        "locked": "2.7.0",
+        "installed": "2.7.0",
+        "usedIn": 10
+      },
+      "node-upload-images": {
+        "requested": "^1.0.1",
+        "locked": "1.0.1",
+        "installed": "1.0.1",
+        "usedIn": 2
+      },
+      "node-webpmux": {
+        "requested": "^3.2.1",
+        "locked": "3.2.1",
+        "installed": "3.2.1",
+        "usedIn": 4
+      },
+      "nodemon": {
+        "requested": "^3.1.11",
+        "locked": "3.1.14",
+        "installed": "3.1.14",
+        "usedIn": 0
+      },
+      "openpgp": {
+        "requested": "^6.3.0",
+        "locked": "6.3.1",
+        "installed": "6.3.1",
+        "usedIn": 0
+      },
+      "p-queue": {
+        "requested": "^9.1.0",
+        "locked": "9.3.3",
+        "installed": "9.3.3",
+        "usedIn": 0
+      },
+      "pino": {
+        "requested": "^9.14.0",
+        "locked": "9.14.0",
+        "installed": "9.14.0",
+        "usedIn": 4
+      },
+      "playwright": {
+        "requested": "^1.62.1",
+        "locked": "1.63.0",
+        "installed": "1.63.0",
+        "usedIn": 3
+      },
+      "qrcode": {
+        "requested": "^1.5.4",
+        "locked": "1.5.4",
+        "installed": "1.5.4",
+        "usedIn": 2
+      },
+      "qs": {
+        "requested": "^6.14.1",
+        "locked": "6.16.0",
+        "installed": "6.16.0",
+        "usedIn": 3
+      },
+      "rate-limiter-flexible": {
+        "requested": "^9.1.1",
+        "locked": "9.1.1",
+        "installed": "9.1.1",
+        "usedIn": 1
+      },
+      "sharp": {
+        "requested": "^0.33.3",
+        "locked": "0.33.5",
+        "installed": "0.33.5",
+        "usedIn": 55
+      },
+      "skia-canvas": {
+        "requested": "^3.0.8",
+        "locked": "3.0.8",
+        "installed": "3.0.8",
+        "usedIn": 0
+      },
+      "ssh2": {
+        "requested": "^1.17.0",
+        "locked": "1.17.0",
+        "installed": "1.17.0",
+        "usedIn": 5
+      },
+      "tesseract.js": {
+        "requested": "^7.0.0",
+        "locked": "7.0.0",
+        "installed": "7.0.0",
+        "usedIn": 3
+      },
+      "tough-cookie": {
+        "requested": "^6.0.0",
+        "locked": "6.0.2",
+        "installed": "6.0.2",
+        "usedIn": 4
+      },
+      "undici": {
+        "requested": "^7.22.0",
+        "locked": "7.29.1",
+        "installed": "7.29.1",
+        "usedIn": 3
+      },
+      "unfurl.js": {
+        "requested": "^6.4.0",
+        "locked": "6.4.0",
+        "installed": "6.4.0",
+        "usedIn": 0
+      },
+      "unpdf": {
+        "requested": "^1.8.1",
+        "locked": "1.8.1",
+        "installed": "1.8.1",
+        "usedIn": 1
+      },
+      "wa-sticker-formatter": {
+        "requested": "^4.4.4",
+        "locked": "4.4.4",
+        "installed": "4.4.4",
+        "usedIn": 0
+      },
+      "yt-search": {
+        "requested": "^2.13.1",
+        "locked": "2.13.1",
+        "installed": "2.13.1",
+        "usedIn": 5
+      },
+      "zencf": {
+        "requested": "^2.0.3",
+        "locked": "2.0.3",
+        "installed": "2.0.3",
+        "usedIn": 0
+      }
+    }
+  },
+  "checks": {
+    "requestedIsTarget": true,
+    "lockResolvesTarget": true,
+    "installedIsTarget": true,
+    "singleWhatsAppLibrary": true,
+    "noAliasOrFork": true,
+    "allImportedNamesExist": true,
+    "protoHasEncodeDecode": true
+  },
+  "verification": "PASS"
+}

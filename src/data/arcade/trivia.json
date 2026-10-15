@@ -1,0 +1,1442 @@
+[
+ {
+  "q": {
+   "ar": "ما أكبر كوكب في المجموعة الشمسية؟",
+   "en": "What is the largest planet in the Solar System?",
+   "es": "¿Cuál es el planeta más grande del sistema solar?"
+  },
+  "options": [
+   {
+    "ar": "المشتري",
+    "en": "Jupiter",
+    "es": "Júpiter"
+   },
+   {
+    "ar": "زحل",
+    "en": "Saturn",
+    "es": "Saturno"
+   },
+   {
+    "ar": "الأرض",
+    "en": "Earth",
+    "es": "Tierra"
+   },
+   {
+    "ar": "نبتون",
+    "en": "Neptune",
+    "es": "Neptuno"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "عملاق غازي له بقعة حمراء",
+   "en": "A gas giant with a red spot",
+   "es": "Un gigante gaseoso con una mancha roja"
+  },
+  "cat": "science"
+ },
+ {
+  "q": {
+   "ar": "ما الرمز الكيميائي للذهب؟",
+   "en": "What is the chemical symbol for gold?",
+   "es": "¿Cuál es el símbolo químico del oro?"
+  },
+  "options": [
+   {
+    "ar": "Au",
+    "en": "Au",
+    "es": "Au"
+   },
+   {
+    "ar": "Ag",
+    "en": "Ag",
+    "es": "Ag"
+   },
+   {
+    "ar": "Gd",
+    "en": "Gd",
+    "es": "Gd"
+   },
+   {
+    "ar": "Go",
+    "en": "Go",
+    "es": "Go"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "من الكلمة اللاتينية aurum",
+   "en": "From the Latin word aurum",
+   "es": "Del latín aurum"
+  },
+  "cat": "science"
+ },
+ {
+  "q": {
+   "ar": "كم عدد عظام جسم الإنسان البالغ؟",
+   "en": "How many bones does an adult human have?",
+   "es": "¿Cuántos huesos tiene un adulto?"
+  },
+  "options": [
+   {
+    "ar": "206",
+    "en": "206",
+    "es": "206"
+   },
+   {
+    "ar": "186",
+    "en": "186",
+    "es": "186"
+   },
+   {
+    "ar": "226",
+    "en": "226",
+    "es": "226"
+   },
+   {
+    "ar": "306",
+    "en": "306",
+    "es": "306"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "أكثر من 200 بقليل",
+   "en": "A little over 200",
+   "es": "Un poco más de 200"
+  },
+  "cat": "science"
+ },
+ {
+  "q": {
+   "ar": "ما الغاز الذي تمتصه النباتات من الجو؟",
+   "en": "Which gas do plants absorb from the air?",
+   "es": "¿Qué gas absorben las plantas del aire?"
+  },
+  "options": [
+   {
+    "ar": "ثاني أكسيد الكربون",
+    "en": "Carbon dioxide",
+    "es": "Dióxido de carbono"
+   },
+   {
+    "ar": "الأكسجين",
+    "en": "Oxygen",
+    "es": "Oxígeno"
+   },
+   {
+    "ar": "النيتروجين",
+    "en": "Nitrogen",
+    "es": "Nitrógeno"
+   },
+   {
+    "ar": "الهيليوم",
+    "en": "Helium",
+    "es": "Helio"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "نخرجه نحن مع الزفير",
+   "en": "We breathe it out",
+   "es": "Lo exhalamos nosotros"
+  },
+  "cat": "science"
+ },
+ {
+  "q": {
+   "ar": "ما أسرع حيوان بري؟",
+   "en": "What is the fastest land animal?",
+   "es": "¿Cuál es el animal terrestre más rápido?"
+  },
+  "options": [
+   {
+    "ar": "الفهد",
+    "en": "Cheetah",
+    "es": "Guepardo"
+   },
+   {
+    "ar": "الأسد",
+    "en": "Lion",
+    "es": "León"
+   },
+   {
+    "ar": "الحصان",
+    "en": "Horse",
+    "es": "Caballo"
+   },
+   {
+    "ar": "الغزال",
+    "en": "Gazelle",
+    "es": "Gacela"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "قط كبير مرقّط",
+   "en": "A big spotted cat",
+   "es": "Un gran felino con manchas"
+  },
+  "cat": "nature"
+ },
+ {
+  "q": {
+   "ar": "كم عدد قارات العالم؟",
+   "en": "How many continents are there?",
+   "es": "¿Cuántos continentes hay?"
+  },
+  "options": [
+   {
+    "ar": "7",
+    "en": "7",
+    "es": "7"
+   },
+   {
+    "ar": "5",
+    "en": "5",
+    "es": "5"
+   },
+   {
+    "ar": "6",
+    "en": "6",
+    "es": "6"
+   },
+   {
+    "ar": "8",
+    "en": "8",
+    "es": "8"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "أكثر من خمسة",
+   "en": "More than five",
+   "es": "Más de cinco"
+  },
+  "cat": "geo"
+ },
+ {
+  "q": {
+   "ar": "ما أطول نهر في العالم؟",
+   "en": "What is the longest river in the world?",
+   "es": "¿Cuál es el río más largo del mundo?"
+  },
+  "options": [
+   {
+    "ar": "النيل",
+    "en": "Nile",
+    "es": "Nilo"
+   },
+   {
+    "ar": "الأمازون",
+    "en": "Amazon",
+    "es": "Amazonas"
+   },
+   {
+    "ar": "المسيسيبي",
+    "en": "Mississippi",
+    "es": "Misisipi"
+   },
+   {
+    "ar": "اليانغتسي",
+    "en": "Yangtze",
+    "es": "Yangtsé"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "يمر بمصر",
+   "en": "It flows through Egypt",
+   "es": "Atraviesa Egipto"
+  },
+  "cat": "geo"
+ },
+ {
+  "q": {
+   "ar": "ما أكبر محيط على الأرض؟",
+   "en": "What is the largest ocean on Earth?",
+   "es": "¿Cuál es el océano más grande de la Tierra?"
+  },
+  "options": [
+   {
+    "ar": "المحيط الهادئ",
+    "en": "Pacific Ocean",
+    "es": "Océano Pacífico"
+   },
+   {
+    "ar": "المحيط الأطلسي",
+    "en": "Atlantic Ocean",
+    "es": "Océano Atlántico"
+   },
+   {
+    "ar": "المحيط الهندي",
+    "en": "Indian Ocean",
+    "es": "Océano Índico"
+   },
+   {
+    "ar": "المحيط المتجمد الشمالي",
+    "en": "Arctic Ocean",
+    "es": "Océano Ártico"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "اسمه يعني الهادئ",
+   "en": "Its name means peaceful",
+   "es": "Su nombre significa tranquilo"
+  },
+  "cat": "geo"
+ },
+ {
+  "q": {
+   "ar": "من رسم لوحة الموناليزا؟",
+   "en": "Who painted the Mona Lisa?",
+   "es": "¿Quién pintó la Mona Lisa?"
+  },
+  "options": [
+   {
+    "ar": "ليوناردو دا فينشي",
+    "en": "Leonardo da Vinci",
+    "es": "Leonardo da Vinci"
+   },
+   {
+    "ar": "بيكاسو",
+    "en": "Picasso",
+    "es": "Picasso"
+   },
+   {
+    "ar": "فان غوخ",
+    "en": "Van Gogh",
+    "es": "Van Gogh"
+   },
+   {
+    "ar": "مايكل أنجلو",
+    "en": "Michelangelo",
+    "es": "Miguel Ángel"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "رسام ومخترع إيطالي",
+   "en": "An Italian painter and inventor",
+   "es": "Pintor e inventor italiano"
+  },
+  "cat": "culture"
+ },
+ {
+  "q": {
+   "ar": "كم عدد لاعبي فريق كرة القدم في الملعب؟",
+   "en": "How many players does a football team field?",
+   "es": "¿Cuántos jugadores tiene un equipo de fútbol en el campo?"
+  },
+  "options": [
+   {
+    "ar": "11",
+    "en": "11",
+    "es": "11"
+   },
+   {
+    "ar": "10",
+    "en": "10",
+    "es": "10"
+   },
+   {
+    "ar": "9",
+    "en": "9",
+    "es": "9"
+   },
+   {
+    "ar": "12",
+    "en": "12",
+    "es": "12"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "بمن فيهم حارس المرمى",
+   "en": "Including the goalkeeper",
+   "es": "Incluido el portero"
+  },
+  "cat": "sport"
+ },
+ {
+  "q": {
+   "ar": "ما عاصمة اليابان؟",
+   "en": "What is the capital of Japan?",
+   "es": "¿Cuál es la capital de Japón?"
+  },
+  "options": [
+   {
+    "ar": "طوكيو",
+    "en": "Tokyo",
+    "es": "Tokio"
+   },
+   {
+    "ar": "أوساكا",
+    "en": "Osaka",
+    "es": "Osaka"
+   },
+   {
+    "ar": "كيوتو",
+    "en": "Kyoto",
+    "es": "Kioto"
+   },
+   {
+    "ar": "هيروشيما",
+    "en": "Hiroshima",
+    "es": "Hiroshima"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "أكبر مدينة في اليابان",
+   "en": "Japan's largest city",
+   "es": "La ciudad más grande de Japón"
+  },
+  "cat": "geo"
+ },
+ {
+  "q": {
+   "ar": "ما ناتج 12 × 12؟",
+   "en": "What is 12 × 12?",
+   "es": "¿Cuánto es 12 × 12?"
+  },
+  "options": [
+   {
+    "ar": "144",
+    "en": "144",
+    "es": "144"
+   },
+   {
+    "ar": "124",
+    "en": "124",
+    "es": "124"
+   },
+   {
+    "ar": "132",
+    "en": "132",
+    "es": "132"
+   },
+   {
+    "ar": "154",
+    "en": "154",
+    "es": "154"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "مربع العدد 12",
+   "en": "The square of 12",
+   "es": "El cuadrado de 12"
+  },
+  "cat": "math"
+ },
+ {
+  "q": {
+   "ar": "ما أصغر عدد أولي؟",
+   "en": "What is the smallest prime number?",
+   "es": "¿Cuál es el número primo más pequeño?"
+  },
+  "options": [
+   {
+    "ar": "2",
+    "en": "2",
+    "es": "2"
+   },
+   {
+    "ar": "1",
+    "en": "1",
+    "es": "1"
+   },
+   {
+    "ar": "3",
+    "en": "3",
+    "es": "3"
+   },
+   {
+    "ar": "0",
+    "en": "0",
+    "es": "0"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "العدد الأولي الزوجي الوحيد",
+   "en": "The only even prime",
+   "es": "El único primo par"
+  },
+  "cat": "math"
+ },
+ {
+  "q": {
+   "ar": "في أي سنة هبط الإنسان على القمر لأول مرة؟",
+   "en": "In which year did humans first land on the Moon?",
+   "es": "¿En qué año llegó el ser humano a la Luna?"
+  },
+  "options": [
+   {
+    "ar": "1969",
+    "en": "1969",
+    "es": "1969"
+   },
+   {
+    "ar": "1959",
+    "en": "1959",
+    "es": "1959"
+   },
+   {
+    "ar": "1972",
+    "en": "1972",
+    "es": "1972"
+   },
+   {
+    "ar": "1981",
+    "en": "1981",
+    "es": "1981"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "في أواخر الستينيات",
+   "en": "In the late sixties",
+   "es": "A finales de los sesenta"
+  },
+  "cat": "history"
+ },
+ {
+  "q": {
+   "ar": "ما أكبر صحراء حارة في العالم؟",
+   "en": "What is the largest hot desert in the world?",
+   "es": "¿Cuál es el desierto cálido más grande del mundo?"
+  },
+  "options": [
+   {
+    "ar": "الصحراء الكبرى",
+    "en": "Sahara",
+    "es": "Sahara"
+   },
+   {
+    "ar": "صحراء جوبي",
+    "en": "Gobi",
+    "es": "Gobi"
+   },
+   {
+    "ar": "صحراء كالاهاري",
+    "en": "Kalahari",
+    "es": "Kalahari"
+   },
+   {
+    "ar": "صحراء أتاكاما",
+    "en": "Atacama",
+    "es": "Atacama"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "في شمال أفريقيا",
+   "en": "In North Africa",
+   "es": "En el norte de África"
+  },
+  "cat": "geo"
+ },
+ {
+  "q": {
+   "ar": "ما العضو الذي يضخ الدم في الجسم؟",
+   "en": "Which organ pumps blood through the body?",
+   "es": "¿Qué órgano bombea la sangre?"
+  },
+  "options": [
+   {
+    "ar": "القلب",
+    "en": "Heart",
+    "es": "Corazón"
+   },
+   {
+    "ar": "الرئة",
+    "en": "Lungs",
+    "es": "Pulmones"
+   },
+   {
+    "ar": "الكبد",
+    "en": "Liver",
+    "es": "Hígado"
+   },
+   {
+    "ar": "الكلية",
+    "en": "Kidney",
+    "es": "Riñón"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "ينبض",
+   "en": "It beats",
+   "es": "Late"
+  },
+  "cat": "science"
+ },
+ {
+  "q": {
+   "ar": "ما أقرب نجم إلى الأرض؟",
+   "en": "What is the closest star to Earth?",
+   "es": "¿Cuál es la estrella más cercana a la Tierra?"
+  },
+  "options": [
+   {
+    "ar": "الشمس",
+    "en": "The Sun",
+    "es": "El Sol"
+   },
+   {
+    "ar": "سيريوس",
+    "en": "Sirius",
+    "es": "Sirio"
+   },
+   {
+    "ar": "ألفا قنطورس",
+    "en": "Alpha Centauri",
+    "es": "Alfa Centauri"
+   },
+   {
+    "ar": "النجم القطبي",
+    "en": "Polaris",
+    "es": "Polaris"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "نراها كل يوم",
+   "en": "We see it every day",
+   "es": "La vemos cada día"
+  },
+  "cat": "science"
+ },
+ {
+  "q": {
+   "ar": "كم عدد ألوان قوس قزح؟",
+   "en": "How many colors are in a rainbow?",
+   "es": "¿Cuántos colores tiene el arcoíris?"
+  },
+  "options": [
+   {
+    "ar": "7",
+    "en": "7",
+    "es": "7"
+   },
+   {
+    "ar": "6",
+    "en": "6",
+    "es": "6"
+   },
+   {
+    "ar": "5",
+    "en": "5",
+    "es": "5"
+   },
+   {
+    "ar": "8",
+    "en": "8",
+    "es": "8"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "عدد أيام الأسبوع",
+   "en": "Same as days in a week",
+   "es": "Igual que los días de la semana"
+  },
+  "cat": "science"
+ },
+ {
+  "q": {
+   "ar": "ما الحيوان المعروف بسفينة الصحراء؟",
+   "en": "Which animal is called the ship of the desert?",
+   "es": "¿Qué animal es llamado el barco del desierto?"
+  },
+  "options": [
+   {
+    "ar": "الجمل",
+    "en": "Camel",
+    "es": "Camello"
+   },
+   {
+    "ar": "الحصان",
+    "en": "Horse",
+    "es": "Caballo"
+   },
+   {
+    "ar": "الفيل",
+    "en": "Elephant",
+    "es": "Elefante"
+   },
+   {
+    "ar": "الحمار",
+    "en": "Donkey",
+    "es": "Burro"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "له سنام",
+   "en": "It has a hump",
+   "es": "Tiene joroba"
+  },
+  "cat": "nature"
+ },
+ {
+  "q": {
+   "ar": "ما عاصمة فرنسا؟",
+   "en": "What is the capital of France?",
+   "es": "¿Cuál es la capital de Francia?"
+  },
+  "options": [
+   {
+    "ar": "باريس",
+    "en": "Paris",
+    "es": "París"
+   },
+   {
+    "ar": "ليون",
+    "en": "Lyon",
+    "es": "Lyon"
+   },
+   {
+    "ar": "مارسيليا",
+    "en": "Marseille",
+    "es": "Marsella"
+   },
+   {
+    "ar": "نيس",
+    "en": "Nice",
+    "es": "Niza"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "مدينة برج إيفل",
+   "en": "City of the Eiffel Tower",
+   "es": "Ciudad de la Torre Eiffel"
+  },
+  "cat": "geo"
+ },
+ {
+  "q": {
+   "ar": "ما الغاز الأكثر وفرة في الغلاف الجوي للأرض؟",
+   "en": "Which gas is most abundant in Earth's atmosphere?",
+   "es": "¿Qué gas abunda más en la atmósfera terrestre?"
+  },
+  "options": [
+   {
+    "ar": "النيتروجين",
+    "en": "Nitrogen",
+    "es": "Nitrógeno"
+   },
+   {
+    "ar": "الأكسجين",
+    "en": "Oxygen",
+    "es": "Oxígeno"
+   },
+   {
+    "ar": "الأرجون",
+    "en": "Argon",
+    "es": "Argón"
+   },
+   {
+    "ar": "ثاني أكسيد الكربون",
+    "en": "Carbon dioxide",
+    "es": "Dióxido de carbono"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "حوالي 78٪",
+   "en": "About 78%",
+   "es": "Cerca del 78 %"
+  },
+  "cat": "science"
+ },
+ {
+  "q": {
+   "ar": "كم دقيقة في الساعة؟",
+   "en": "How many minutes are in an hour?",
+   "es": "¿Cuántos minutos tiene una hora?"
+  },
+  "options": [
+   {
+    "ar": "60",
+    "en": "60",
+    "es": "60"
+   },
+   {
+    "ar": "100",
+    "en": "100",
+    "es": "100"
+   },
+   {
+    "ar": "30",
+    "en": "30",
+    "es": "30"
+   },
+   {
+    "ar": "90",
+    "en": "90",
+    "es": "90"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "مثل عدد الثواني في الدقيقة",
+   "en": "Same as seconds in a minute",
+   "es": "Igual que segundos en un minuto"
+  },
+  "cat": "math"
+ },
+ {
+  "q": {
+   "ar": "ما أطول جبل في العالم فوق مستوى سطح البحر؟",
+   "en": "What is the tallest mountain above sea level?",
+   "es": "¿Cuál es la montaña más alta sobre el nivel del mar?"
+  },
+  "options": [
+   {
+    "ar": "إيفرست",
+    "en": "Everest",
+    "es": "Everest"
+   },
+   {
+    "ar": "كي 2",
+    "en": "K2",
+    "es": "K2"
+   },
+   {
+    "ar": "كليمنجارو",
+    "en": "Kilimanjaro",
+    "es": "Kilimanjaro"
+   },
+   {
+    "ar": "مون بلان",
+    "en": "Mont Blanc",
+    "es": "Mont Blanc"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "في جبال الهيمالايا",
+   "en": "In the Himalayas",
+   "es": "En el Himalaya"
+  },
+  "cat": "geo"
+ },
+ {
+  "q": {
+   "ar": "ما اللغة الأكثر تحدثاً كلغة أم في العالم؟",
+   "en": "Which language has the most native speakers?",
+   "es": "¿Qué idioma tiene más hablantes nativos?"
+  },
+  "options": [
+   {
+    "ar": "الصينية الماندرين",
+    "en": "Mandarin Chinese",
+    "es": "Chino mandarín"
+   },
+   {
+    "ar": "الإنجليزية",
+    "en": "English",
+    "es": "Inglés"
+   },
+   {
+    "ar": "الإسبانية",
+    "en": "Spanish",
+    "es": "Español"
+   },
+   {
+    "ar": "الهندية",
+    "en": "Hindi",
+    "es": "Hindi"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "لغة في شرق آسيا",
+   "en": "An East Asian language",
+   "es": "Un idioma de Asia oriental"
+  },
+  "cat": "culture"
+ },
+ {
+  "q": {
+   "ar": "ما الكوكب المعروف بالكوكب الأحمر؟",
+   "en": "Which planet is known as the Red Planet?",
+   "es": "¿Qué planeta es conocido como el planeta rojo?"
+  },
+  "options": [
+   {
+    "ar": "المريخ",
+    "en": "Mars",
+    "es": "Marte"
+   },
+   {
+    "ar": "الزهرة",
+    "en": "Venus",
+    "es": "Venus"
+   },
+   {
+    "ar": "عطارد",
+    "en": "Mercury",
+    "es": "Mercurio"
+   },
+   {
+    "ar": "المشتري",
+    "en": "Jupiter",
+    "es": "Júpiter"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "الرابع من الشمس",
+   "en": "Fourth from the Sun",
+   "es": "El cuarto desde el Sol"
+  },
+  "cat": "science"
+ },
+ {
+  "q": {
+   "ar": "كم عدد أضلاع المسدس؟",
+   "en": "How many sides does a hexagon have?",
+   "es": "¿Cuántos lados tiene un hexágono?"
+  },
+  "options": [
+   {
+    "ar": "6",
+    "en": "6",
+    "es": "6"
+   },
+   {
+    "ar": "5",
+    "en": "5",
+    "es": "5"
+   },
+   {
+    "ar": "8",
+    "en": "8",
+    "es": "8"
+   },
+   {
+    "ar": "7",
+    "en": "7",
+    "es": "7"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "مثل خلية النحل",
+   "en": "Like a honeycomb cell",
+   "es": "Como una celda de panal"
+  },
+  "cat": "math"
+ },
+ {
+  "q": {
+   "ar": "ما أكبر حيوان على وجه الأرض؟",
+   "en": "What is the largest animal on Earth?",
+   "es": "¿Cuál es el animal más grande de la Tierra?"
+  },
+  "options": [
+   {
+    "ar": "الحوت الأزرق",
+    "en": "Blue whale",
+    "es": "Ballena azul"
+   },
+   {
+    "ar": "الفيل الأفريقي",
+    "en": "African elephant",
+    "es": "Elefante africano"
+   },
+   {
+    "ar": "القرش الحوتي",
+    "en": "Whale shark",
+    "es": "Tiburón ballena"
+   },
+   {
+    "ar": "الزرافة",
+    "en": "Giraffe",
+    "es": "Jirafa"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "يعيش في المحيط",
+   "en": "It lives in the ocean",
+   "es": "Vive en el océano"
+  },
+  "cat": "nature"
+ },
+ {
+  "q": {
+   "ar": "من مؤلف رواية «دون كيخوتي»؟",
+   "en": "Who wrote Don Quixote?",
+   "es": "¿Quién escribió Don Quijote?"
+  },
+  "options": [
+   {
+    "ar": "ثربانتس",
+    "en": "Cervantes",
+    "es": "Cervantes"
+   },
+   {
+    "ar": "شكسبير",
+    "en": "Shakespeare",
+    "es": "Shakespeare"
+   },
+   {
+    "ar": "تولستوي",
+    "en": "Tolstoy",
+    "es": "Tolstói"
+   },
+   {
+    "ar": "دانتي",
+    "en": "Dante",
+    "es": "Dante"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "كاتب إسباني",
+   "en": "A Spanish writer",
+   "es": "Un escritor español"
+  },
+  "cat": "culture"
+ },
+ {
+  "q": {
+   "ar": "ما درجة غليان الماء عند مستوى سطح البحر؟",
+   "en": "At what temperature does water boil at sea level?",
+   "es": "¿A qué temperatura hierve el agua al nivel del mar?"
+  },
+  "options": [
+   {
+    "ar": "100°C",
+    "en": "100°C",
+    "es": "100 °C"
+   },
+   {
+    "ar": "90°C",
+    "en": "90°C",
+    "es": "90 °C"
+   },
+   {
+    "ar": "120°C",
+    "en": "120°C",
+    "es": "120 °C"
+   },
+   {
+    "ar": "80°C",
+    "en": "80°C",
+    "es": "80 °C"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "رقم مكوّن من ثلاث خانات",
+   "en": "A three-digit number",
+   "es": "Un número de tres cifras"
+  },
+  "cat": "science"
+ },
+ {
+  "q": {
+   "ar": "ما عاصمة إسبانيا؟",
+   "en": "What is the capital of Spain?",
+   "es": "¿Cuál es la capital de España?"
+  },
+  "options": [
+   {
+    "ar": "مدريد",
+    "en": "Madrid",
+    "es": "Madrid"
+   },
+   {
+    "ar": "برشلونة",
+    "en": "Barcelona",
+    "es": "Barcelona"
+   },
+   {
+    "ar": "إشبيلية",
+    "en": "Seville",
+    "es": "Sevilla"
+   },
+   {
+    "ar": "فالنسيا",
+    "en": "Valencia",
+    "es": "Valencia"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "في وسط البلاد",
+   "en": "In the center of the country",
+   "es": "En el centro del país"
+  },
+  "cat": "geo"
+ },
+ {
+  "q": {
+   "ar": "كم عدد أيام السنة الكبيسة؟",
+   "en": "How many days are in a leap year?",
+   "es": "¿Cuántos días tiene un año bisiesto?"
+  },
+  "options": [
+   {
+    "ar": "366",
+    "en": "366",
+    "es": "366"
+   },
+   {
+    "ar": "365",
+    "en": "365",
+    "es": "365"
+   },
+   {
+    "ar": "364",
+    "en": "364",
+    "es": "364"
+   },
+   {
+    "ar": "367",
+    "en": "367",
+    "es": "367"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "يوم زائد في فبراير",
+   "en": "One extra day in February",
+   "es": "Un día extra en febrero"
+  },
+  "cat": "math"
+ },
+ {
+  "q": {
+   "ar": "ما الآلة الموسيقية ذات 88 مفتاحاً؟",
+   "en": "Which instrument usually has 88 keys?",
+   "es": "¿Qué instrumento suele tener 88 teclas?"
+  },
+  "options": [
+   {
+    "ar": "البيانو",
+    "en": "Piano",
+    "es": "Piano"
+   },
+   {
+    "ar": "الجيتار",
+    "en": "Guitar",
+    "es": "Guitarra"
+   },
+   {
+    "ar": "الكمان",
+    "en": "Violin",
+    "es": "Violín"
+   },
+   {
+    "ar": "الناي",
+    "en": "Flute",
+    "es": "Flauta"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "مفاتيح بيضاء وسوداء",
+   "en": "Black and white keys",
+   "es": "Teclas blancas y negras"
+  },
+  "cat": "culture"
+ },
+ {
+  "q": {
+   "ar": "ما المعدن السائل في درجة حرارة الغرفة؟",
+   "en": "Which metal is liquid at room temperature?",
+   "es": "¿Qué metal es líquido a temperatura ambiente?"
+  },
+  "options": [
+   {
+    "ar": "الزئبق",
+    "en": "Mercury",
+    "es": "Mercurio"
+   },
+   {
+    "ar": "الحديد",
+    "en": "Iron",
+    "es": "Hierro"
+   },
+   {
+    "ar": "النحاس",
+    "en": "Copper",
+    "es": "Cobre"
+   },
+   {
+    "ar": "الألمنيوم",
+    "en": "Aluminium",
+    "es": "Aluminio"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "يستخدم في موازين الحرارة القديمة",
+   "en": "Used in old thermometers",
+   "es": "Usado en termómetros antiguos"
+  },
+  "cat": "science"
+ },
+ {
+  "q": {
+   "ar": "كم عدد لاعبي فريق كرة السلة في الملعب؟",
+   "en": "How many players per basketball team are on court?",
+   "es": "¿Cuántos jugadores por equipo hay en una cancha de baloncesto?"
+  },
+  "options": [
+   {
+    "ar": "5",
+    "en": "5",
+    "es": "5"
+   },
+   {
+    "ar": "6",
+    "en": "6",
+    "es": "6"
+   },
+   {
+    "ar": "7",
+    "en": "7",
+    "es": "7"
+   },
+   {
+    "ar": "4",
+    "en": "4",
+    "es": "4"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "نصف العشرة",
+   "en": "Half of ten",
+   "es": "La mitad de diez"
+  },
+  "cat": "sport"
+ },
+ {
+  "q": {
+   "ar": "ما أكبر دولة في العالم مساحةً؟",
+   "en": "What is the largest country by area?",
+   "es": "¿Cuál es el país más grande por superficie?"
+  },
+  "options": [
+   {
+    "ar": "روسيا",
+    "en": "Russia",
+    "es": "Rusia"
+   },
+   {
+    "ar": "كندا",
+    "en": "Canada",
+    "es": "Canadá"
+   },
+   {
+    "ar": "الصين",
+    "en": "China",
+    "es": "China"
+   },
+   {
+    "ar": "الولايات المتحدة",
+    "en": "United States",
+    "es": "Estados Unidos"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "تمتد في أوروبا وآسيا",
+   "en": "It spans Europe and Asia",
+   "es": "Se extiende por Europa y Asia"
+  },
+  "cat": "geo"
+ },
+ {
+  "q": {
+   "ar": "ما الطائر الذي لا يطير ويعيش في القطب الجنوبي؟",
+   "en": "Which flightless bird lives in Antarctica?",
+   "es": "¿Qué ave no voladora vive en la Antártida?"
+  },
+  "options": [
+   {
+    "ar": "البطريق",
+    "en": "Penguin",
+    "es": "Pingüino"
+   },
+   {
+    "ar": "النعامة",
+    "en": "Ostrich",
+    "es": "Avestruz"
+   },
+   {
+    "ar": "الكيوي",
+    "en": "Kiwi",
+    "es": "Kiwi"
+   },
+   {
+    "ar": "الإيمو",
+    "en": "Emu",
+    "es": "Emú"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "يرتدي «بدلة رسمية»",
+   "en": "It wears a 'tuxedo'",
+   "es": "Viste de 'esmoquin'"
+  },
+  "cat": "nature"
+ },
+ {
+  "q": {
+   "ar": "ما ناتج 15 + 27؟",
+   "en": "What is 15 + 27?",
+   "es": "¿Cuánto es 15 + 27?"
+  },
+  "options": [
+   {
+    "ar": "42",
+    "en": "42",
+    "es": "42"
+   },
+   {
+    "ar": "32",
+    "en": "32",
+    "es": "32"
+   },
+   {
+    "ar": "43",
+    "en": "43",
+    "es": "43"
+   },
+   {
+    "ar": "41",
+    "en": "41",
+    "es": "41"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "أكثر من 40",
+   "en": "More than 40",
+   "es": "Más de 40"
+  },
+  "cat": "math"
+ },
+ {
+  "q": {
+   "ar": "أي قارة تضم مصر معظم أراضيها؟",
+   "en": "Most of Egypt lies in which continent?",
+   "es": "¿En qué continente está la mayor parte de Egipto?"
+  },
+  "options": [
+   {
+    "ar": "أفريقيا",
+    "en": "Africa",
+    "es": "África"
+   },
+   {
+    "ar": "آسيا",
+    "en": "Asia",
+    "es": "Asia"
+   },
+   {
+    "ar": "أوروبا",
+    "en": "Europe",
+    "es": "Europa"
+   },
+   {
+    "ar": "أستراليا",
+    "en": "Australia",
+    "es": "Australia"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "نفس قارة الصحراء الكبرى",
+   "en": "Same continent as the Sahara",
+   "es": "El mismo continente que el Sahara"
+  },
+  "cat": "geo"
+ },
+ {
+  "q": {
+   "ar": "ما الجهاز الذي اخترعه غراهام بيل؟",
+   "en": "What did Alexander Graham Bell invent?",
+   "es": "¿Qué inventó Alexander Graham Bell?"
+  },
+  "options": [
+   {
+    "ar": "الهاتف",
+    "en": "Telephone",
+    "es": "Teléfono"
+   },
+   {
+    "ar": "المصباح",
+    "en": "Light bulb",
+    "es": "Bombilla"
+   },
+   {
+    "ar": "الراديو",
+    "en": "Radio",
+    "es": "Radio"
+   },
+   {
+    "ar": "التلفاز",
+    "en": "Television",
+    "es": "Televisión"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "للتحدث عن بعد",
+   "en": "For talking at a distance",
+   "es": "Para hablar a distancia"
+  },
+  "cat": "history"
+ },
+ {
+  "q": {
+   "ar": "ما الشكل الهندسي الذي له ثلاثة أضلاع؟",
+   "en": "Which shape has three sides?",
+   "es": "¿Qué figura tiene tres lados?"
+  },
+  "options": [
+   {
+    "ar": "المثلث",
+    "en": "Triangle",
+    "es": "Triángulo"
+   },
+   {
+    "ar": "المربع",
+    "en": "Square",
+    "es": "Cuadrado"
+   },
+   {
+    "ar": "الدائرة",
+    "en": "Circle",
+    "es": "Círculo"
+   },
+   {
+    "ar": "المخمس",
+    "en": "Pentagon",
+    "es": "Pentágono"
+   }
+  ],
+  "answer": 0,
+  "hint": {
+   "ar": "مثل الهرم من الجانب",
+   "en": "Like a pyramid from the side",
+   "es": "Como una pirámide de lado"
+  },
+  "cat": "math"
+ }
+]

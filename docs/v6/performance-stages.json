@@ -1,0 +1,162 @@
+{
+  "generatedAt": "2026-10-08T09:50:52.705Z",
+  "runs": 20,
+  "simulated": {
+    "providerMs": 800,
+    "scraperMs": 1200
+  },
+  "results": [
+    {
+      "scenario": "chat (model)",
+      "runs": 20,
+      "providerCalls": 1,
+      "ttfb": {
+        "p50": 805.2,
+        "p95": 845.1
+      },
+      "provider": {
+        "p50": 801.2,
+        "p95": 801.9
+      },
+      "context": {
+        "p50": 0.5,
+        "p95": 21.9
+      },
+      "memory": {
+        "p50": 0.2,
+        "p95": 5.4
+      },
+      "routing": {
+        "p50": 0.4,
+        "p95": 7.8
+      },
+      "scraper": {
+        "p50": null,
+        "p95": null
+      },
+      "total": {
+        "p50": 805.3,
+        "p95": 845.2
+      },
+      "botOverhead": {
+        "p50": 4.1,
+        "p95": 43.7
+      },
+      "pipeline": "intent:open:chat → context:private → memory:0/0 → capability:commands:8 → strategy:chat → permission:chat → tool:provider → verify:text → response:answered"
+    },
+    {
+      "scenario": "scraper fast path (no model)",
+      "runs": 20,
+      "providerCalls": 0,
+      "ttfb": {
+        "p50": 1202.4,
+        "p95": 1204.2
+      },
+      "provider": {
+        "p50": null,
+        "p95": null
+      },
+      "context": {
+        "p50": 0.6,
+        "p95": 1.3
+      },
+      "memory": {
+        "p50": 0.2,
+        "p95": 0.5
+      },
+      "routing": {
+        "p50": 0.3,
+        "p95": 0.5
+      },
+      "scraper": {
+        "p50": 1201.2,
+        "p95": 1201.6
+      },
+      "total": {
+        "p50": 1202.4,
+        "p95": 1204.2
+      },
+      "botOverhead": {
+        "p50": 2.4,
+        "p95": 4.2
+      },
+      "pipeline": "intent:tool:tiktok → context:private → memory:0/0 → capability:scraper-registry → strategy:tool → permission:public → tool:scraper:tiktok → verify:delivered:1 → response:answered"
+    },
+    {
+      "scenario": "follow-up: audio of last link (no model)",
+      "runs": 20,
+      "providerCalls": 0,
+      "ttfb": {
+        "p50": 1202.3,
+        "p95": 1202.9
+      },
+      "provider": {
+        "p50": null,
+        "p95": null
+      },
+      "context": {
+        "p50": 0.8,
+        "p95": 1
+      },
+      "memory": {
+        "p50": 0.1,
+        "p95": 0.1
+      },
+      "routing": {
+        "p50": 0,
+        "p95": 0
+      },
+      "scraper": {
+        "p50": 1201.2,
+        "p95": 1201.9
+      },
+      "total": {
+        "p50": 1202.3,
+        "p95": 1202.9
+      },
+      "botOverhead": {
+        "p50": 2.3,
+        "p95": 2.9
+      },
+      "pipeline": "intent:tool:ytdl → context:private → memory:2/0 → capability:scraper-registry → strategy:followup-tool:variant:mp3 → permission:public → tool:scraper:tiktok → verify:delivered:1 → response:answered"
+    },
+    {
+      "scenario": "memory: what do you know (no model)",
+      "runs": 20,
+      "providerCalls": 0,
+      "ttfb": {
+        "p50": 0.6,
+        "p95": 1.6
+      },
+      "provider": {
+        "p50": null,
+        "p95": null
+      },
+      "context": {
+        "p50": 0.2,
+        "p95": 0.4
+      },
+      "memory": {
+        "p50": 0.1,
+        "p95": 0.1
+      },
+      "routing": {
+        "p50": 0.2,
+        "p95": 0.8
+      },
+      "scraper": {
+        "p50": null,
+        "p95": null
+      },
+      "total": {
+        "p50": 0.6,
+        "p95": 1.6
+      },
+      "botOverhead": {
+        "p50": 0.6,
+        "p95": 1.6
+      },
+      "pipeline": "intent:memory → context:private → memory:0/0 → capability:memory-engine → strategy:memory → permission:own-memory → tool:memory:show → response:answered"
+    }
+  ]
+}

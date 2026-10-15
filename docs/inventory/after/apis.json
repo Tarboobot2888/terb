@@ -1,0 +1,3739 @@
+[
+  {
+    "host": "api.neoxr.eu",
+    "paths": [
+      "/",
+      "/api/ai-anime",
+      "/api/an1",
+      "/api/an1-get",
+      "/api/asupan",
+      "/api/attp3",
+      "/api/cai",
+      "/api/cai-search",
+      "/api/dcstalk",
+      "/api/emoimg",
+      "/api/emojito",
+      "/api/film",
+      "/api/fml",
+      "/api/invoice-maker",
+      "/api/linesticker",
+      "/api/meme",
+      "/api/pixeldrain",
+      "/api/pixiv-search",
+      "/api/puisi",
+      "/api/quotesimage",
+      "/api/roblox-search",
+      "/api/sfile",
+      "/api/videy",
+      "/api/whatanime"
+    ],
+    "files": [
+      "plugins/ai/رسم_انمي.js",
+      "plugins/ai/شخصية.js",
+      "plugins/asupan/تيك_عشوائي.js",
+      "plugins/downloader/بكسل_درين.js",
+      "plugins/downloader/سفايل.js",
+      "plugins/downloader/فيدي.js",
+      "plugins/fun/حياتي_تعيسة.js",
+      "plugins/fun/شعر.js",
+      "plugins/random/صور_اقتباسات.js",
+      "plugins/random/ميم.js",
+      "plugins/search/apk2.js",
+      "plugins/search/اندرويد.js",
+      "plugins/search/انمي_اي.js",
+      "plugins/search/بيكسيف.js",
+      "plugins/search/فيلم.js",
+      "plugins/stalker/بحث_روبلوكس.js",
+      "plugins/stalker/تجسس_ديسكورد.js",
+      "plugins/sticker/attp2.js",
+      "plugins/sticker/linesticker.js",
+      "plugins/sticker/نص_متحرك.js",
+      "plugins/tools/إيموجي_متحرك.js",
+      "plugins/tools/ايموجي_لصورة.js",
+      "plugins/tools/فاتورة.js",
+      "src/lib/terboo-apimanager.js"
+    ]
+  },
+  {
+    "host": "api.nexray.eu.cc",
+    "paths": [
+      "/ai/dracin-tts",
+      "/ai/mathgpt",
+      "/ai/quillbot",
+      "/ai/simisimi",
+      "/ai/sologo",
+      "/ai/suno",
+      "/canvas/gura",
+      "/canvas/musiccard",
+      "/downloader/v1/ytmp3",
+      "/information/growagarden",
+      "/information/hari-libur",
+      "/maker/balogo",
+      "/maker/fakecall",
+      "/maker/ttp",
+      "/maker/v1/iqc",
+      "/random/anime",
+      "/search/bingimage",
+      "/search/lyrics",
+      "/stalker/freefire",
+      "/stalker/genshin",
+      "/stalker/pinterest"
+    ],
+    "files": [
+      "plugins/ai/simi.js",
+      "plugins/ai/الحان.js",
+      "plugins/ai/رياضيات.js",
+      "plugins/ai/شعار.js",
+      "plugins/ai/صياغة.js",
+      "plugins/canvas/imagejpg.js",
+      "plugins/canvas/جورا.js",
+      "plugins/canvas/شات_وهمي.js",
+      "plugins/canvas/لوغو.js",
+      "plugins/canvas/مكالمة.js",
+      "plugins/downloader/يوت_صوت.js",
+      "plugins/info/العطل.js",
+      "plugins/info/معلومات_المزرعة.js",
+      "plugins/random/لولي.js",
+      "plugins/search/صور.js",
+      "plugins/search/كلمات.js",
+      "plugins/stalker/تجسس_بنترست.js",
+      "plugins/stalker/تجسس_جينشين.js",
+      "plugins/stalker/تجسس_فري_فاير.js",
+      "plugins/sticker/نص_ملصق.js",
+      "plugins/tools/قول.js"
+    ]
+  },
+  {
+    "host": "api.nexray.web.id",
+    "paths": [
+      "/",
+      "/maker/bratanime",
+      "/maker/fakelobyff",
+      "/maker/fakelobyml",
+      "/random/ba",
+      "/random/cecan/china",
+      "/random/cecan/egypt",
+      "/random/cecan/indonesia",
+      "/random/cecan/japan",
+      "/random/cecan/korea",
+      "/random/cecan/thailand",
+      "/random/cecan/vietnam",
+      "/random/loli",
+      "/search/applemusic"
+    ],
+    "files": [
+      "plugins/canvas/فري_وهمي.js",
+      "plugins/canvas/مل_وهمي.js",
+      "plugins/cecan/فتيات_إندونيسيا.js",
+      "plugins/cecan/فتيات_الصين.js",
+      "plugins/cecan/فتيات_اليابان.js",
+      "plugins/cecan/فتيات_تايلاند.js",
+      "plugins/cecan/فتيات_فيتنام.js",
+      "plugins/cecan/فتيات_كوريا.js",
+      "plugins/cecan/فتيات_مصر.js",
+      "plugins/random/أرشيف_أزرق.js",
+      "plugins/random/لولي.js",
+      "plugins/search/ابل.js",
+      "plugins/sticker/انمي_برات.js",
+      "src/lib/terboo-apimanager.js"
+    ]
+  },
+  {
+    "host": "api.siputzx.my.id",
+    "paths": [
+      "/api/d/capcut",
+      "/api/primbon/artinama",
+      "/api/primbon/cek_potensi_penyakit",
+      "/api/primbon/kecocokan_nama_pasangan",
+      "/api/primbon/nomorhoki",
+      "/api/primbon/ramalanjodoh",
+      "/api/primbon/sifat_usaha_bisnis",
+      "/api/primbon/tafsirmimpi",
+      "/api/primbon/zodiak",
+      "/api/s/pinterest",
+      "/api/s/surah"
+    ],
+    "files": [
+      "plugins/downloader/كابكت.js",
+      "plugins/primbon/احتمالية_الأمراض.js",
+      "plugins/primbon/برجك.js",
+      "plugins/primbon/تفسير_الأحلام.js",
+      "plugins/primbon/توافق_الأسماء.js",
+      "plugins/primbon/توقعات_الزواج.js",
+      "plugins/primbon/حظ_الرقم.js",
+      "plugins/primbon/صفات_العمل_والتجارة.js",
+      "plugins/primbon/معنى_الاسم.js",
+      "plugins/religi/إسلامي.js",
+      "plugins/search/بنتر.js",
+      "plugins/search/صوره.js",
+      "plugins/sticker/pinpack.js",
+      "plugins/sticker/ملصقات.js"
+    ]
+  },
+  {
+    "host": "api.cuki.biz.id",
+    "paths": [
+      "/",
+      "/api/ai/gita",
+      "/api/aicode/caribug",
+      "/api/canvas/ustadz",
+      "/api/downloader/ytmp3",
+      "/api/random/lahelu",
+      "/api/search/mangatoon",
+      "/api/search/mcpe",
+      "/api/search/spotify",
+      "/api/search/tiktokfoto",
+      "/api/tools/sendngl"
+    ],
+    "files": [
+      "plugins/ai/غيتا.js",
+      "plugins/fun/شيخ.js",
+      "plugins/random/لا_هيلو.js",
+      "plugins/search/playch.js",
+      "plugins/search/سبوتيفاي.js",
+      "plugins/search/شغل.js",
+      "plugins/search/صور_تيك.js",
+      "plugins/search/مانجا.js",
+      "plugins/search/ماينكرافت.js",
+      "plugins/tools/بحث_خطأ.js",
+      "plugins/tools/سبام_نجل.js",
+      "src/lib/terboo-apimanager.js"
+    ]
+  },
+  {
+    "host": "files.catbox.moe",
+    "paths": [
+      "/3hthc5.mp3",
+      "/ejy4ky.jpg",
+      "/ev6s83.mp3",
+      "/ios0gb.jfif",
+      "/kvtkjq.jpg",
+      "/mqhy9t.png",
+      "/nwvkbt.png",
+      "/shglrs.mp4",
+      "/z2bj5s.mp3"
+    ],
+    "files": [
+      "plugins/canvas/مكالمة.js",
+      "plugins/convert/imagejpg.js",
+      "plugins/fun/بوسة.js",
+      "plugins/fun/تفو.js",
+      "plugins/fun/زواج.js",
+      "plugins/fun/شخره.js",
+      "plugins/group/سحب.js",
+      "plugins/religi/مواقيت_الصلاة.js",
+      "plugins/tools/اتصال.js",
+      "plugins/tools/اقتباس_واتساب.js",
+      "src/lib/terboo-sholat-scheduler.js"
+    ]
+  },
+  {
+    "host": "catbox.moe",
+    "paths": [
+      "/user/api.php"
+    ],
+    "files": [
+      "plugins/canvas/imagejpg.js",
+      "plugins/canvas/جورا.js",
+      "plugins/convert/imagejpg.js",
+      "plugins/store/إضافة_قائمة.js",
+      "plugins/store/إضافة_منتج.js",
+      "plugins/store/تعديل_متجر.js",
+      "plugins/store/تعديل_منتج.js",
+      "plugins/tools/عزل.js",
+      "plugins/tools/لرابط.js",
+      "src/lib/terboo-uploader.js"
+    ]
+  },
+  {
+    "host": "api-faa.my.id",
+    "paths": [
+      "/",
+      "/faa/bratvid",
+      "/faa/nano-banana",
+      "/faa/tofigura",
+      "/faa/toghibli",
+      "/faa/tohijab",
+      "/faa/tojapanese",
+      "/faa/tomekah",
+      "/faa/tomoai"
+    ],
+    "files": [
+      "plugins/ai/تمثال.js",
+      "plugins/ai/حجاب.js",
+      "plugins/ai/غيبلي.js",
+      "plugins/ai/مجسم.js",
+      "plugins/ai/مكة.js",
+      "plugins/ai/ياباني.js",
+      "plugins/sticker/bratvid2.js",
+      "src/lib/terboo-apimanager.js",
+      "src/scraper/seaart.js"
+    ]
+  },
+  {
+    "host": "engez.a7a.online",
+    "paths": [
+      "/api/v1",
+      "/api/v1/ai/ai/simsimi",
+      "/api/v1/download/all",
+      "/api/v1/reading/sunovels",
+      "/api/v1/tools/checknum",
+      "/api/v1/tools/elevenlab",
+      "/api/v1/tools/img2prompt"
+    ],
+    "files": [
+      "plugins/ai/توليد.js",
+      "plugins/ai/سمسمي.js",
+      "plugins/ai/وصف.js",
+      "plugins/downloader/انستا.js",
+      "plugins/downloader/تحميل.js",
+      "plugins/downloader/رواية.js",
+      "plugins/fun/سمسمي2.js",
+      "plugins/tools/انطق.js",
+      "plugins/tools/تشيك.js"
+    ]
+  },
+  {
+    "host": "firefly.maiku.my.id",
+    "paths": [
+      "/api/crikk",
+      "/api/deepaichat",
+      "/api/pinterestvideo",
+      "/api/stalk-github",
+      "/api/stalk-instagram",
+      "/api/stalk-npm",
+      "/api/ytdown"
+    ],
+    "files": [
+      "plugins/ai/جيبيتي4.js",
+      "plugins/downloader/يوت_فيديو.js",
+      "plugins/group/autoai.js",
+      "plugins/search/بنترفيد.js",
+      "plugins/stalker/تجسس_انستغرام.js",
+      "plugins/stalker/تجسس_جيثب.js",
+      "plugins/stalker/تجسس_نبيإم.js",
+      "src/lib/terboo-auto-ai.js"
+    ]
+  },
+  {
+    "host": "virix-api.vercel.app",
+    "paths": [
+      "/api/akonami/download",
+      "/api/aljazeera/news",
+      "/api/pin4video/search",
+      "/api/stickercloud/search",
+      "/api/translate/translate",
+      "/api/twibbonize/search",
+      "/api/weather/weather"
+    ],
+    "files": [
+      "plugins/downloader/لعبة.js",
+      "plugins/info/الجزيرة.js",
+      "plugins/info/طقس.js",
+      "plugins/search/اطار.js",
+      "plugins/search/بنتر_فيد.js",
+      "plugins/sticker/ملصقات3.js",
+      "plugins/tools/ترجم.js",
+      "src/handler.js"
+    ]
+  },
+  {
+    "host": "api.digitalocean.com",
+    "paths": [
+      "/v2/account",
+      "/v2/droplets",
+      "/v2/droplets/$%7BdropletId%7D",
+      "/v2/droplets/$%7BdropletId%7D/actions"
+    ],
+    "files": [
+      "plugins/vps/cekvps.js",
+      "plugins/vps/createvps.js",
+      "plugins/vps/delvps.js",
+      "plugins/vps/listvps.js",
+      "plugins/vps/sisavps.js",
+      "plugins/vps/turnon.js"
+    ]
+  },
+  {
+    "host": "c.termai.cc",
+    "paths": [
+      "/",
+      "/api/upload"
+    ],
+    "files": [
+      "plugins/search/انمي_اي.js",
+      "plugins/sticker/smeme.js",
+      "plugins/tools/تعريف_الموسيقى.js",
+      "plugins/tools/لرابط.js",
+      "src/lib/terboo-tmpfiles.js",
+      "src/lib/terboo-uploader.js"
+    ]
+  },
+  {
+    "host": "telegra.ph",
+    "paths": [
+      "/",
+      "/file/1ecdb5a0aee62ef17d7fc.jpg",
+      "/file/30f92f923fb0484f0e4e0.png",
+      "/file/34f47137df0dc9aa9c15a.png",
+      "/file/46a0c38104f79cdbfe83f.jpg",
+      "/file/6e07b5f30b24baedc7822.png",
+      "/file/70e8de9b1879568954f09.jpg",
+      "/file/860b5df98963a1f14a91c.png",
+      "/upload"
+    ],
+    "files": [
+      "plugins/convert/imagejpg.js",
+      "plugins/owner/سرقة_الصورة.js",
+      "plugins/stalker/تجسس_واتساب.js",
+      "plugins/sticker/smeme.js",
+      "src/lib/terboo-game-ulartangga.js"
+    ]
+  },
+  {
+    "host": "www.google.com",
+    "paths": [
+      "/",
+      "/bot.html",
+      "/search"
+    ],
+    "files": [
+      "plugins/ai/مونيكا.js",
+      "plugins/downloader/تحميل_انمي.js",
+      "plugins/downloader/ريل.js",
+      "plugins/search/أنمي.js",
+      "plugins/tools/ريد.js"
+    ]
+  },
+  {
+    "host": "www.instagram.com",
+    "paths": [
+      "/",
+      "/$%7Bparts[0]%7D/$%7Bparts[1]%7D/",
+      "/p/C0sXKbKy2yF/",
+      "/reel/xxx/",
+      "/tarboo455"
+    ],
+    "files": [
+      "config.js",
+      "plugins/downloader/انستا.js",
+      "plugins/downloader/تحميل.js",
+      "plugins/downloader/ريل.js",
+      "tools/terboo-scraper-live.mjs"
+    ]
+  },
+  {
+    "host": "www.tiktok.com",
+    "paths": [
+      "/",
+      "/@bench/video/7300000000000$%7BString(seq",
+      "/@bench/video/73000000000000$%7BString(i",
+      "/@bench/video/74000000000000$%7BString(i",
+      "/@scout2015/video/6718335390845095173",
+      "/@u/video/7300000000000000001"
+    ],
+    "files": [
+      "plugins/downloader/تيك_صوت.js",
+      "tools/terboo-benchmark-compare.mjs",
+      "tools/terboo-benchmark.mjs",
+      "tools/terboo-capabilities.mjs",
+      "tools/terboo-scraper-live.mjs"
+    ]
+  },
+  {
+    "host": "youtube.com",
+    "paths": [
+      "/@$%7Busername%7D",
+      "/watch"
+    ],
+    "files": [
+      "plugins/downloader/يوت_صوت.js",
+      "plugins/downloader/يوت_فيديو.js",
+      "plugins/stalker/تجسس_يوتيوب.js",
+      "plugins/tools/تعريف_الموسيقى.js",
+      "plugins/tools/نص_فيديو.js"
+    ]
+  },
+  {
+    "host": "google.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/tools/صنع_تطبيق.js",
+      "plugins/tools/لقطة_شاشة.js",
+      "src/lib/terboo-serialize.js",
+      "src/lib/terboo-utils.js"
+    ]
+  },
+  {
+    "host": "i.imgur.com",
+    "paths": [
+      "/TuItj4L.png"
+    ],
+    "files": [
+      "plugins/group/اعلان.js",
+      "plugins/owner/اعلان.js",
+      "plugins/user/profile.js",
+      "src/lib/terboo-welcome-card.js"
+    ]
+  },
+  {
+    "host": "imgupscaler.com",
+    "paths": [
+      "/",
+      "/api/legacy/status",
+      "/api/legacy/upload"
+    ],
+    "files": [
+      "plugins/ai/رفع_جودة.js",
+      "plugins/tools/تحسين_جودة.js",
+      "plugins/tools/رفع_جودة3.js",
+      "src/scraper/imglarger.js"
+    ]
+  },
+  {
+    "host": "johan-vex-apis.vercel.app",
+    "paths": [
+      "/api/ai/ai-image",
+      "/api/search/apk",
+      "/api/tools/nanobanan"
+    ],
+    "files": [
+      "plugins/ai/توليد2.js",
+      "plugins/ai/نانوبنانا3.js",
+      "plugins/downloader/تحميل_تطبيق.js",
+      "plugins/search/تطبيق.js"
+    ]
+  },
+  {
+    "host": "t.me",
+    "paths": [
+      "/$%7Bme.username%7D",
+      "/$%7BtgUser%7D",
+      "/bot"
+    ],
+    "files": [
+      "plugins/convert/ملصق_ذكي.js",
+      "plugins/sticker/افتار.js",
+      "src/telegram/tg-vps-bot.js",
+      "src/telegram/tg-vps-client.js"
+    ]
+  },
+  {
+    "host": "translate.googleapis.com",
+    "paths": [
+      "/translate_a/single",
+      "/translate_tts"
+    ],
+    "files": [
+      "plugins/ai/تخيل2.js",
+      "plugins/search/بدي.js",
+      "plugins/search/بنتريست.js",
+      "plugins/tools/صوت.js"
+    ]
+  },
+  {
+    "host": "${host}",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "tools/check-external-hosts.mjs",
+      "tools/terboo-api-health.mjs",
+      "tools/terboo-scraper-live.mjs"
+    ]
+  },
+  {
+    "host": "api.azbry.com",
+    "paths": [
+      "/",
+      "/api/downloader/douyin",
+      "/api/search/ttsearch"
+    ],
+    "files": [
+      "plugins/downloader/دويين.js",
+      "src/lib/terboo-apimanager.js",
+      "src/scraper/tiktoksearch.js"
+    ]
+  },
+  {
+    "host": "api.groq.com",
+    "paths": [
+      "/openai/v1/audio/transcriptions"
+    ],
+    "files": [
+      "plugins/tools/نسخ_صوتي.js",
+      "src/handler.js",
+      "src/lib/terboo-multimodal.js"
+    ]
+  },
+  {
+    "host": "api.overchat.ai",
+    "paths": [
+      "/v1/chat/completions"
+    ],
+    "files": [
+      "src/scraper/claudehaiku.js",
+      "src/scraper/gpt5.js",
+      "src/scraper/qwen3.js"
+    ]
+  },
+  {
+    "host": "api.yuulabs.web.id",
+    "paths": [
+      "/",
+      "/api/ai/flux-img",
+      "/api/downloader/tiktok"
+    ],
+    "files": [
+      "src/lib/terboo-apimanager.js",
+      "src/scraper/seaart.js",
+      "src/scraper/tiktok.js"
+    ]
+  },
+  {
+    "host": "fgsi.dpdns.org",
+    "paths": [
+      "/",
+      "/api/ai/image/img2img",
+      "/api/tools/enchantVideo"
+    ],
+    "files": [
+      "src/lib/terboo-apimanager.js",
+      "src/scraper/hdvid.js",
+      "src/scraper/img2img.js"
+    ]
+  },
+  {
+    "host": "open.spotify.com",
+    "paths": [
+      "/track/$%7Blinks.spotify.track.id%7D",
+      "/track/4cOdK2wGLETKBW3PvgPWqT",
+      "/track/xxx"
+    ],
+    "files": [
+      "plugins/downloader/سبوتيفاي_تحميل.js",
+      "plugins/tools/تعريف_الموسيقى.js",
+      "tools/terboo-scraper-live.mjs"
+    ]
+  },
+  {
+    "host": "overchat.ai",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/scraper/claudehaiku.js",
+      "src/scraper/gpt5.js",
+      "src/scraper/qwen3.js"
+    ]
+  },
+  {
+    "host": "uguu.se",
+    "paths": [
+      "/",
+      "/upload.php"
+    ],
+    "files": [
+      "plugins/tools/لرابط.js",
+      "src/lib/terboo-uploader.js",
+      "src/scraper/img2img.js"
+    ]
+  },
+  {
+    "host": "vt.tiktok.com",
+    "paths": [
+      "/ZSabc123/",
+      "/xxx"
+    ],
+    "files": [
+      "plugins/downloader/تيك_صوت.js",
+      "plugins/downloader/تيك_فيديو.js",
+      "tools/terboo-tool-registry.mjs"
+    ]
+  },
+  {
+    "host": "www.facebook.com",
+    "paths": [
+      "/$%7Busername%7D",
+      "/externalhit_uatext.php",
+      "/watch"
+    ],
+    "files": [
+      "plugins/downloader/ريل.js",
+      "plugins/downloader/فيسبوك.js",
+      "plugins/stalker/تجسس_فيسبوك.js"
+    ]
+  },
+  {
+    "host": "${domain}",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/owner/رفع_موقع.js",
+      "plugins/tools/فحص2.js"
+    ]
+  },
+  {
+    "host": "1024terabox.com",
+    "paths": [
+      "/s/1k2Qxwebz3yI09kubXBf2xA",
+      "/s/1sample",
+      "/s/xxx"
+    ],
+    "files": [
+      "plugins/downloader/تيرابوكس.js",
+      "tools/terboo-scraper-live.mjs"
+    ]
+  },
+  {
+    "host": "api.deline.web.id",
+    "paths": [
+      "/maker/cewekbrat",
+      "/random/ppcouple"
+    ],
+    "files": [
+      "plugins/random/صور_زوجين.js",
+      "plugins/sticker/bratcewek.js"
+    ]
+  },
+  {
+    "host": "api.emiliabot.my.id",
+    "paths": [
+      "/",
+      "/tools/text-to-speech"
+    ],
+    "files": [
+      "plugins/tts/ايلون.js",
+      "src/lib/terboo-apimanager.js"
+    ]
+  },
+  {
+    "host": "api.exchangerate-api.com",
+    "paths": [
+      "/v4/latest/$%7Bbase%7D"
+    ],
+    "files": [
+      "plugins/tools/سعر_الصرف.js",
+      "plugins/tools/صرف_العملات.js"
+    ]
+  },
+  {
+    "host": "api.frankfurter.app",
+    "paths": [
+      "/latest"
+    ],
+    "files": [
+      "plugins/tools/سعر_الصرف.js",
+      "plugins/tools/صرف_العملات.js"
+    ]
+  },
+  {
+    "host": "api.manus.ai",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/lib/manus-api.js",
+      "src/scraper/manus-agent.js"
+    ]
+  },
+  {
+    "host": "api.obscuraworks.org",
+    "paths": [
+      "/api/tools/amdata",
+      "/api/v2/tools/nik"
+    ],
+    "files": [
+      "plugins/tools/تحليل_الرقم_القومي.js",
+      "plugins/tools/لايت_موشن.js"
+    ]
+  },
+  {
+    "host": "api.pixhost.to",
+    "paths": [
+      "/images"
+    ],
+    "files": [
+      "plugins/ai/حجاب.js",
+      "src/lib/terboo-uploader.js"
+    ]
+  },
+  {
+    "host": "api.telegram.org",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "config.js",
+      "src/telegram/tg-api.js"
+    ]
+  },
+  {
+    "host": "app.unlimitedai.chat",
+    "paths": [
+      "/",
+      "/$%7Boptions.locale",
+      "/api/chat"
+    ],
+    "files": [
+      "plugins/ai/التميز.js",
+      "src/scraper/unlimitedai.js"
+    ]
+  },
+  {
+    "host": "canime.web.id",
+    "paths": [
+      "/",
+      "/api.php"
+    ],
+    "files": [
+      "plugins/downloader/تحميل_انمي.js",
+      "plugins/search/أنمي.js"
+    ]
+  },
+  {
+    "host": "code.rifkyshre.biz.id",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/info/مراقبة_المزرعة.js",
+      "plugins/religi/قرآني.js"
+    ]
+  },
+  {
+    "host": "du.sf-converter.com",
+    "paths": [
+      "/convert"
+    ],
+    "files": [
+      "src/scraper/youtube.js",
+      "src/scraper/yt.js"
+    ]
+  },
+  {
+    "host": "en.ephoto360.com",
+    "paths": [
+      "/1917-style-text-effect-523.html",
+      "/3d-underwater-text-effect-online-682.html",
+      "/advanced-glow-effects-74.html",
+      "/angel-wing-effect-329.html",
+      "/create-3d-gradient-text-effect-online-600.html",
+      "/create-a-blackpink-neon-logo-text-effect-online-710.html",
+      "/create-a-cartoon-style-graffiti-text-effect-online-668.html",
+      "/create-a-cloud-text-effect-in-the-sky-618.html",
+      "/create-a-cover-image-for-the-game-among-us-online-762.html",
+      "/create-a-luxury-gold-text-effect-online-594.html",
+      "/create-a-watercolor-text-effect-online-655.html",
+      "/create-blackpink-logo-online-free-607.html",
+      "/create-colorful-neon-light-text-effects-online-797.html",
+      "/create-digital-glitch-text-effects-online-767.html",
+      "/create-eraser-deleting-text-effect-online-717.html",
+      "/create-galaxy-style-free-name-logo-438.html",
+      "/create-galaxy-wallpaper-mobile-online-528.html",
+      "/create-glossy-silver-3d-text-effect-online-802.html",
+      "/create-glowing-text-effects-online-706.html",
+      "/create-impressive-neon-glitch-text-effects-online-768.html",
+      "/create-multicolored-neon-light-signatures-591.html",
+      "/create-online-3d-comic-style-text-effects-817.html",
+      "/create-pixel-glitch-text-effect-online-769.html",
+      "/create-typography-text-effect-on-pavement-online-774.html",
+      "/create-unique-word-green-light-63.html",
+      "/effect/create-image",
+      "/foggy-rainy-text-effect-75.html",
+      "/free-bear-logo-maker-online-673.html",
+      "/free-bear-logo-photo-online-673.html",
+      "/free-create-a-3d-hologram-text-effect-441.html"
+    ],
+    "files": [
+      "plugins/ephoto/ephoto.js",
+      "plugins/photo/سلفير3d.js"
+    ]
+  },
+  {
+    "host": "flowvideoplayer.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/downloader/تيرابوكس.js",
+      "src/scraper/terabox.js"
+    ]
+  },
+  {
+    "host": "getstickerpack.com",
+    "paths": [
+      "/api/v1/stickerdb/search",
+      "/api/v1/stickerdb/stickers/$%7Bid%7D",
+      "/stickers/$%7Bitem.slug%7D"
+    ],
+    "files": [
+      "plugins/sticker/stickerpack.js",
+      "plugins/sticker/ملصقات2.js"
+    ]
+  },
+  {
+    "host": "html.duckduckgo.com",
+    "paths": [
+      "/html/"
+    ],
+    "files": [
+      "plugins/downloader/ريل.js",
+      "plugins/search/جوجل.js"
+    ]
+  },
+  {
+    "host": "i.ibb.co.com",
+    "paths": [
+      "/QFzm9pSF/1546d15ce5dd2946573b3506df109d00.jpg",
+      "/kt5fyrg/qr.jpg"
+    ],
+    "files": [
+      "plugins/tools/فاتورة.js",
+      "src/lib/terboo-profile-picture.js"
+    ]
+  },
+  {
+    "host": "iili.io",
+    "paths": [
+      "/BPBFwVR.jpg",
+      "/BPBdFuj.md.jpg",
+      "/BPBqKwg.md.jpg"
+    ],
+    "files": [
+      "src/lib/terboo-auto-ai.js",
+      "src/lib/terboo-jadibot-manager.js"
+    ]
+  },
+  {
+    "host": "image.pollinations.ai",
+    "paths": [
+      "/prompt/$%7BencodeURIComponent(fullPrompt",
+      "/prompt/$%7BencodeURIComponent(prompt"
+    ],
+    "files": [
+      "plugins/ai/تخيل2.js",
+      "plugins/ai/فن.js"
+    ]
+  },
+  {
+    "host": "image.thum.io",
+    "paths": [
+      "/get/png/noanimate/fullpage/$%7Burl%7D",
+      "/get/width/$%7Bwidth%7D/crop/1080/noanimate/$%7Burl%7D"
+    ],
+    "files": [
+      "plugins/tools/فحص_موقع.js",
+      "plugins/tools/لقطة_شاشة.js"
+    ]
+  },
+  {
+    "host": "imgbb.com",
+    "paths": [
+      "/",
+      "/json"
+    ],
+    "files": [
+      "plugins/ai/نانوبنانا3.js",
+      "plugins/ai/وصف.js"
+    ]
+  },
+  {
+    "host": "imgdrop.web.id",
+    "paths": [
+      "/",
+      "/KodpV.webp"
+    ],
+    "files": [
+      "config.js",
+      "src/scraper/imgdrop.js"
+    ]
+  },
+  {
+    "host": "instagram.com",
+    "paths": [
+      "/$%7Bd.username%7D",
+      "/p/xxx"
+    ],
+    "files": [
+      "plugins/downloader/aio.js",
+      "plugins/stalker/تجسس_انستغرام.js"
+    ]
+  },
+  {
+    "host": "ipwho.is",
+    "paths": [
+      "/",
+      "/$%7Bip%7D"
+    ],
+    "files": [
+      "plugins/tools/ايبي.js",
+      "plugins/tools/معرفip.js"
+    ]
+  },
+  {
+    "host": "likee.video",
+    "paths": [
+      "/@likee/video/7000000000000000000",
+      "/@xxx"
+    ],
+    "files": [
+      "plugins/downloader/لايكي.js",
+      "tools/terboo-scraper-live.mjs"
+    ]
+  },
+  {
+    "host": "litterbox.catbox.moe",
+    "paths": [
+      "/resources/internals/api.php"
+    ],
+    "files": [
+      "plugins/tools/عزل.js",
+      "plugins/tools/لرابط.js"
+    ]
+  },
+  {
+    "host": "media.ssyoutube.com",
+    "paths": [
+      "/get"
+    ],
+    "files": [
+      "src/scraper/youtube.js",
+      "src/scraper/yt.js"
+    ]
+  },
+  {
+    "host": "mmg.whatsapp.net",
+    "paths": [
+      "/",
+      "/a",
+      "/d",
+      "/i",
+      "/s",
+      "/v",
+      "/x"
+    ],
+    "files": [
+      "plugins/tools/معرف_القناة.js",
+      "tools/terboo-wa-capabilities.mjs"
+    ]
+  },
+  {
+    "host": "ngl.link",
+    "paths": [
+      "/xxxx"
+    ],
+    "files": [
+      "plugins/tools/ارسال_نجل.js",
+      "plugins/tools/سبام_نجل.js"
+    ]
+  },
+  {
+    "host": "notegpt.io",
+    "paths": [
+      "/",
+      "/ai-chat",
+      "/api/v2/chat/stream"
+    ],
+    "files": [
+      "plugins/ai/نوت.js",
+      "src/scraper/deepseek.js"
+    ]
+  },
+  {
+    "host": "open.er-api.com",
+    "paths": [
+      "/v6/latest/$%7Bbase%7D"
+    ],
+    "files": [
+      "plugins/tools/سعر_الصرف.js",
+      "plugins/tools/صرف_العملات.js"
+    ]
+  },
+  {
+    "host": "pastebin.com",
+    "paths": [
+      "/Gu8RZaqv",
+      "/api/api_post.php",
+      "/raw/"
+    ],
+    "files": [
+      "plugins/tools/باستبين.js",
+      "plugins/tools/نشر_النص.js"
+    ]
+  },
+  {
+    "host": "pixeldrain.com",
+    "paths": [
+      "/u/$%7Bid%7D",
+      "/u/xxxxx"
+    ],
+    "files": [
+      "plugins/downloader/بكسل_درين.js",
+      "src/lib/terboo-auto-anime.js"
+    ]
+  },
+  {
+    "host": "s3.getstickerpack.com",
+    "paths": [
+      "/$%7Bitem.cover_image",
+      "/$%7Bitem.url%7D"
+    ],
+    "files": [
+      "plugins/sticker/stickerpack.js",
+      "plugins/sticker/ملصقات2.js"
+    ]
+  },
+  {
+    "host": "sfile.mobi",
+    "paths": [
+      "/sample",
+      "/xxx",
+      "/xxxxx"
+    ],
+    "files": [
+      "plugins/downloader/سفايل.js",
+      "tools/terboo-scraper-live.mjs"
+    ]
+  },
+  {
+    "host": "sfl.gl",
+    "paths": [
+      "/xxxx",
+      "/xxxxx"
+    ],
+    "files": [
+      "plugins/tools/تجاوز.js",
+      "plugins/tools/فك_رابط.js"
+    ]
+  },
+  {
+    "host": "soundcloud.com",
+    "paths": [
+      "/forss/flickermood",
+      "/xxx"
+    ],
+    "files": [
+      "plugins/downloader/ساوند_تحميل.js",
+      "tools/terboo-scraper-live.mjs"
+    ]
+  },
+  {
+    "host": "ssyoutube.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/scraper/youtube.js",
+      "src/scraper/yt.js"
+    ]
+  },
+  {
+    "host": "super-fire.vercel.app",
+    "paths": [
+      "/api/gmail",
+      "/api/mybirth"
+    ],
+    "files": [
+      "plugins/fun/أحداث.js",
+      "plugins/tools/جيميل.js"
+    ]
+  },
+  {
+    "host": "tmpfiles.org",
+    "paths": [
+      "/",
+      "/api/v1/upload",
+      "/dl/"
+    ],
+    "files": [
+      "plugins/tools/لرابط.js",
+      "src/lib/terboo-uploader.js"
+    ]
+  },
+  {
+    "host": "videy.co",
+    "paths": [
+      "/",
+      "/api/upload",
+      "/v"
+    ],
+    "files": [
+      "plugins/downloader/فيدي.js",
+      "src/scraper/videy.js"
+    ]
+  },
+  {
+    "host": "webws.365scores.com",
+    "paths": [
+      "/web"
+    ],
+    "files": [
+      "plugins/search/asiariyadh.js",
+      "plugins/search/كرة.js"
+    ]
+  },
+  {
+    "host": "www.dailymotion.com",
+    "paths": [
+      "/video/x8j2p5y",
+      "/video/xxx",
+      "/video/xxx*"
+    ],
+    "files": [
+      "plugins/downloader/ديليموشن.js",
+      "tools/terboo-scraper-live.mjs"
+    ]
+  },
+  {
+    "host": "www.dramabox.com",
+    "paths": [
+      "/",
+      "/_next/data/$%7Bthis.buildId%7D/in/search.json",
+      "/in/drama/$%7Bv.bookId%7D/$%7Bv.bookNameEn%7D",
+      "/in/search",
+      "/search",
+      "/video/$%7Bv.bookId%7D_$%7Bv.bookNameEn%7D/$%7Bv.chapterId%7D_Episode-1"
+    ],
+    "files": [
+      "plugins/search/دراما.js",
+      "src/scraper/dramabox.js"
+    ]
+  },
+  {
+    "host": "www.mediafire.com",
+    "paths": [
+      "/file/7yhc7e5wk2m9m6k/sample.txt/file",
+      "/file/xxx"
+    ],
+    "files": [
+      "plugins/downloader/ميديا_فاير.js",
+      "tools/terboo-scraper-live.mjs"
+    ]
+  },
+  {
+    "host": "www.nerdfonts.com",
+    "paths": [
+      "/",
+      "/font-downloads"
+    ],
+    "files": [
+      "plugins/search/تحميل_خط.js",
+      "plugins/search/خطوط.js"
+    ]
+  },
+  {
+    "host": "www.pinterest.com",
+    "paths": [
+      "/",
+      "/pin/99360735500167749/"
+    ],
+    "files": [
+      "src/lib/terboo-pinterest.js",
+      "tools/terboo-scraper-live.mjs"
+    ]
+  },
+  {
+    "host": "www.reddit.com",
+    "paths": [
+      "/comments/$%7BpostId%7D.json",
+      "/r/aww/comments/90bu6w/heat_index_was_110_degrees_so_we_offered_him_a/"
+    ],
+    "files": [
+      "src/scraper/reddit.js",
+      "tools/terboo-scraper-live.mjs"
+    ]
+  },
+  {
+    "host": "www.youtube.com",
+    "paths": [
+      "/",
+      "/@$%7Busername%7D",
+      "/watch"
+    ],
+    "files": [
+      "plugins/stalker/تجسس_يوتيوب.js",
+      "tools/terboo-scraper-live.mjs"
+    ]
+  },
+  {
+    "host": "x.com",
+    "paths": [
+      "/NASA/status/1669040578069331968",
+      "/user/status/123"
+    ],
+    "files": [
+      "plugins/downloader/تويتر.js",
+      "tools/terboo-scraper-live.mjs"
+    ]
+  },
+  {
+    "host": "youtu.be",
+    "paths": [
+      "/",
+      "/dQw4w9WgXcQ",
+      "/xxxxx"
+    ],
+    "files": [
+      "plugins/search/تفاصيل.js",
+      "plugins/tools/نسخ_فيديو.js"
+    ]
+  },
+  {
+    "host": "...",
+    "paths": [
+      "/test.js"
+    ],
+    "files": [
+      "plugins/owner/install.js"
+    ]
+  },
+  {
+    "host": "${lang}.wikipedia.org",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/search/ويكيبيديا.js"
+    ]
+  },
+  {
+    "host": "${oss.bucket}.oss-ap-southeast-1.aliyuncs.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/tools/تحسين_الصورة_3.js"
+    ]
+  },
+  {
+    "host": "${text}",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/lib/providers/pterodactyl/pterodactyl-client.js"
+    ]
+  },
+  {
+    "host": "${this.resolverhost}",
+    "paths": [
+      "/rss/search"
+    ],
+    "files": [
+      "src/scraper/google.js"
+    ]
+  },
+  {
+    "host": "${wikilang}.wikipedia.org",
+    "paths": [
+      "/api/rest_v1/page/summary/$%7BencodeURIComponent(pageTitle",
+      "/w/api.php",
+      "/wiki/$%7BencodeURIComponent(pageTitle"
+    ],
+    "files": [
+      "plugins/ai/ويكي.js"
+    ]
+  },
+  {
+    "host": "0x0.st",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/tools/لرابط.js"
+    ]
+  },
+  {
+    "host": "8upload.com",
+    "paths": [
+      "/",
+      "/upload/mt/"
+    ],
+    "files": [
+      "plugins/tools/لرابط.js"
+    ]
+  },
+  {
+    "host": "8upload.com${uploadpath}",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/tools/لرابط.js"
+    ]
+  },
+  {
+    "host": "8vrewc6s4t-dsn.algolia.net",
+    "paths": [
+      "/1/indexes"
+    ],
+    "files": [
+      "plugins/search/أنمي.js"
+    ]
+  },
+  {
+    "host": "account.bliblitiket.com",
+    "paths": [
+      "/gateway/gks-unm-go-be/api/v1/otp/generate"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "ahmia.fi",
+    "paths": [
+      "/search/"
+    ],
+    "files": [
+      "plugins/search/دارك_ويب.js"
+    ]
+  },
+  {
+    "host": "ai-song.ai",
+    "paths": [
+      "/",
+      "/api/chat-openai"
+    ],
+    "files": [
+      "plugins/ai/غنيلي.js"
+    ]
+  },
+  {
+    "host": "aienhancer.ai",
+    "paths": [
+      "/",
+      "/ai-image-upscaler",
+      "/api/v1/r/image-enhance/create",
+      "/api/v1/r/image-enhance/result"
+    ],
+    "files": [
+      "src/scraper/upscaler.js"
+    ]
+  },
+  {
+    "host": "aivocalremover.com",
+    "paths": [
+      "/",
+      "/api/v2/FileUpload",
+      "/api/v2/ProcessFile"
+    ],
+    "files": [
+      "plugins/tools/عزل.js"
+    ]
+  },
+  {
+    "host": "alightcreative.com",
+    "paths": [
+      "/am/share/"
+    ],
+    "files": [
+      "plugins/tools/لايت_موشن.js"
+    ]
+  },
+  {
+    "host": "allapiproject.zone.id",
+    "paths": [
+      "/video-krtl.json"
+    ],
+    "files": [
+      "plugins/downloader/فيديو.js"
+    ]
+  },
+  {
+    "host": "an1.com",
+    "paths": [
+      "/xxx"
+    ],
+    "files": [
+      "plugins/search/apk2.js"
+    ]
+  },
+  {
+    "host": "anabot.my.id",
+    "paths": [
+      "/api/tools/izenLOL"
+    ],
+    "files": [
+      "plugins/tools/تجاوز.js"
+    ]
+  },
+  {
+    "host": "android.chat.openai.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/ai/2شات.js"
+    ]
+  },
+  {
+    "host": "anilist.co",
+    "paths": [
+      "/anime/$%7Bd.anilist"
+    ],
+    "files": [
+      "plugins/search/انمي_اي.js"
+    ]
+  },
+  {
+    "host": "api-ayos.onrender.com",
+    "paths": [
+      "/code"
+    ],
+    "files": [
+      "plugins/tools/اتصال.js"
+    ]
+  },
+  {
+    "host": "api-mobi.soundcloud.com",
+    "paths": [
+      "/search"
+    ],
+    "files": [
+      "src/scraper/soundcloud.js"
+    ]
+  },
+  {
+    "host": "api-pddikti.kemdiktisaintek.go.id",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/search/طالب.js"
+    ]
+  },
+  {
+    "host": "api-wh.fastdl.app",
+    "paths": [
+      "/api/convert",
+      "/api/v1/instagram/story"
+    ],
+    "files": [
+      "src/scraper/ig.js"
+    ]
+  },
+  {
+    "host": "api.aladhan.com",
+    "paths": [
+      "/v1"
+    ],
+    "files": [
+      "src/lib/terboo-sholat-api.js"
+    ]
+  },
+  {
+    "host": "api.aqronix-host.site",
+    "paths": [
+      "/api/v1/ai/chat/gemini"
+    ],
+    "files": [
+      "plugins/ai/جيميني.js"
+    ]
+  },
+  {
+    "host": "api.assemblyai.com",
+    "paths": [
+      "/v2/transcript",
+      "/v2/transcript/$%7BtaskId%7D"
+    ],
+    "files": [
+      "plugins/tools/نص_فيديو.js"
+    ]
+  },
+  {
+    "host": "api.cloudflare.com",
+    "paths": [
+      "/client/v4/accounts/REDACTED_ACCOUNT_ID/ai/run/@cf/black-forest-labs/flux-1-schnell"
+    ],
+    "files": [
+      "plugins/ai/تخيل3.js"
+    ]
+  },
+  {
+    "host": "api.covenant.sbs",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/lib/terboo-apimanager.js"
+    ]
+  },
+  {
+    "host": "api.deepai.org",
+    "paths": [
+      "/api/text2img",
+      "/hacking_is_a_serious_crime"
+    ],
+    "files": [
+      "src/scraper/deepai-scraper.js"
+    ]
+  },
+  {
+    "host": "api.denayrestapi.xyz",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "tools/probe-priority-endpoints.mjs"
+    ]
+  },
+  {
+    "host": "api.dokterin.id",
+    "paths": [
+      "/user/v1/users/login"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "api.dotgg.gg",
+    "paths": [
+      "/bluearchive/characters",
+      "/bluearchive/characters/$%7BfoundUrl%7D"
+    ],
+    "files": [
+      "plugins/info/شخصية_بلو_ارشيف.js"
+    ]
+  },
+  {
+    "host": "api.duniagames.co.id",
+    "paths": [
+      "/api/other/api/v1/content/"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "api.fastwork.id",
+    "paths": [
+      "/auth/v2/signup.sendVerificationCode"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "api.fxtwitter.com",
+    "paths": [
+      "/status/$%7Bid%7D"
+    ],
+    "files": [
+      "plugins/downloader/تويتر.js"
+    ]
+  },
+  {
+    "host": "api.hackertarget.com",
+    "paths": [
+      "/dnslookup/",
+      "/whois/"
+    ],
+    "files": [
+      "plugins/tools/معلوماتdns.js"
+    ]
+  },
+  {
+    "host": "api.indodax.com",
+    "paths": [
+      "/api/v1/otp/send"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "api.internal.temp-mail.io",
+    "paths": [
+      "/api/v3/email/$%7Bemail%7D/messages",
+      "/api/v3/email/new"
+    ],
+    "files": [
+      "src/scraper/tempmail.js"
+    ]
+  },
+  {
+    "host": "api.jasaotp.id",
+    "paths": [
+      "/v1"
+    ],
+    "files": [
+      "src/lib/terboo-otp-service.js"
+    ]
+  },
+  {
+    "host": "api.jeeves.ai",
+    "paths": [
+      "/generate/v4/chat"
+    ],
+    "files": [
+      "plugins/ai/جيفس.js"
+    ]
+  },
+  {
+    "host": "api.jerexd.my.id",
+    "paths": [
+      "/api/ai/fixcode"
+    ],
+    "files": [
+      "plugins/ai/gpt55.js"
+    ]
+  },
+  {
+    "host": "api.linode.com",
+    "paths": [
+      "/v4/account",
+      "/v4/linode/instances",
+      "/v4/linode/instances/$%7BlinodeId%7D",
+      "/v4/linode/instances/$%7BlinodeId%7D/boot",
+      "/v4/linode/instances/$%7BlinodeId%7D/reboot",
+      "/v4/linode/instances/$%7BlinodeId%7D/rebuild",
+      "/v4/linode/instances/$%7BlinodeId%7D/shutdown"
+    ],
+    "files": [
+      "plugins/linode/تفاصيل_لينود.js"
+    ]
+  },
+  {
+    "host": "api.mail.tm",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/tools/بريد_مؤقت2.js"
+    ]
+  },
+  {
+    "host": "api.maro.my.id",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "tools/probe-priority-endpoints.mjs"
+    ]
+  },
+  {
+    "host": "api.maulagi.id",
+    "paths": [
+      "/api/v2/auth/check"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "api.memegen.link",
+    "paths": [
+      "/images/custom/$%7BtopEncoded%7D/$%7BbottomEncoded%7D.png"
+    ],
+    "files": [
+      "plugins/sticker/smeme.js"
+    ]
+  },
+  {
+    "host": "api.monica.im",
+    "paths": [
+      "/api/custom_bot/chat"
+    ],
+    "files": [
+      "plugins/ai/مونيكا.js"
+    ]
+  },
+  {
+    "host": "api.nasa.gov",
+    "paths": [
+      "/planetary/apod"
+    ],
+    "files": [
+      "plugins/search/فضاء.js"
+    ]
+  },
+  {
+    "host": "api.paper.id",
+    "paths": [
+      "/api/v1/auth/login"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "api.pexels.com",
+    "paths": [
+      "/v1/search"
+    ],
+    "files": [
+      "plugins/search/بنتريست.js"
+    ]
+  },
+  {
+    "host": "api.proactor.ai",
+    "paths": [
+      "/v1/tourists/files/transcription"
+    ],
+    "files": [
+      "plugins/tools/نسخ_فيديو.js"
+    ]
+  },
+  {
+    "host": "api.qrserver.com",
+    "paths": [
+      "/v1/create-qr-code/"
+    ],
+    "files": [
+      "plugins/tools/qr.js"
+    ]
+  },
+  {
+    "host": "api.rifkyshre.biz.id",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/info/مراقبة_المزرعة.js"
+    ]
+  },
+  {
+    "host": "api.saturdays.com",
+    "paths": [
+      "/v2/user/otp/request"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "api.shngm.io",
+    "paths": [
+      "/v1"
+    ],
+    "files": [
+      "src/scraper/shinigami.js"
+    ]
+  },
+  {
+    "host": "api.sicepatconsumer.com",
+    "paths": [
+      "/v3/masterdata/user/otp/request/$%7Bp%7D"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "api.some-random-api.com",
+    "paths": [
+      "/canvas/$%7Bendpoint%7D"
+    ],
+    "files": [
+      "plugins/convert/imagejpg.js"
+    ]
+  },
+  {
+    "host": "api.termai.cc",
+    "paths": [
+      "/api/chat/logic-bell"
+    ],
+    "files": [
+      "src/scraper/logic-bell.js"
+    ]
+  },
+  {
+    "host": "api.theresav.biz.id",
+    "paths": [
+      "/bypass/sfl"
+    ],
+    "files": [
+      "plugins/tools/فك_رابط.js"
+    ]
+  },
+  {
+    "host": "api.unsplash.com",
+    "paths": [
+      "/search/photos"
+    ],
+    "files": [
+      "plugins/search/بنتريست.js"
+    ]
+  },
+  {
+    "host": "api.unwatermark.ai",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/scraper/hdvid2.js"
+    ]
+  },
+  {
+    "host": "api.vercel.com",
+    "paths": [
+      "/v13/deployments",
+      "/v9/projects/$%7Bname%7D/domains"
+    ],
+    "files": [
+      "plugins/owner/رفع_موقع.js"
+    ]
+  },
+  {
+    "host": "api.waifu.pics",
+    "paths": [
+      "/sfw/slap"
+    ],
+    "files": [
+      "tools/probe-priority-endpoints.mjs"
+    ]
+  },
+  {
+    "host": "api.yupra.my.id",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/lib/terboo-apimanager.js"
+    ]
+  },
+  {
+    "host": "api.zenzxz.my.id",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "tools/probe-priority-endpoints.mjs"
+    ]
+  },
+  {
+    "host": "api2.pixelcut.app",
+    "paths": [
+      "/image/matte/v1"
+    ],
+    "files": [
+      "src/scraper/removebackground.js"
+    ]
+  },
+  {
+    "host": "apis.snowping.eu.cc",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "tools/probe-priority-endpoints.mjs"
+    ]
+  },
+  {
+    "host": "artikel-islam.netlify.app",
+    "paths": [
+      "/.netlify/functions/api/ms"
+    ],
+    "files": [
+      "plugins/religi/إسلامي.js"
+    ]
+  },
+  {
+    "host": "assets.shngm.id",
+    "paths": [
+      "/chapter/$%7BchapterId%7D/$%7Bimg%7D"
+    ],
+    "files": [
+      "plugins/downloader/مانهوا.js"
+    ]
+  },
+  {
+    "host": "athars.space",
+    "paths": [
+      "/uploads/de11c461.jpg"
+    ],
+    "files": [
+      "plugins/tools/معرف_القناة.js"
+    ]
+  },
+  {
+    "host": "badges.roblox.com",
+    "paths": [
+      "/v1/users/$%7BuserId%7D/badges"
+    ],
+    "files": [
+      "plugins/stalker/تجسس_روبلوكس.js"
+    ]
+  },
+  {
+    "host": "berinama.com",
+    "paths": [
+      "/",
+      "/wp-json/baby-names/v1/meaning"
+    ],
+    "files": [
+      "plugins/search/معنى_اسم.js"
+    ]
+  },
+  {
+    "host": "beta.api.saturdays.com",
+    "paths": [
+      "/api/v1/user/otp/send"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "black-forest-labs-flux-2-klein-4b.hf.space",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/scraper/txt2img2.js"
+    ]
+  },
+  {
+    "host": "brat.siputzx.my.id",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "tools/probe-priority-endpoints.mjs"
+    ]
+  },
+  {
+    "host": "bunda.co.id",
+    "paths": [
+      "/",
+      "/api/v1/auth/send-otp"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "carbon.now.sh",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/tools/كربون.js"
+    ]
+  },
+  {
+    "host": "cdn.gimita.id",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "tools/probe-priority-endpoints.mjs"
+    ]
+  },
+  {
+    "host": "cek-seberapa-femboy.vercel.app",
+    "paths": [
+      "/img/dibwh40.gif",
+      "/img/dibwh60.gif",
+      "/img/dibwh80.gif",
+      "/img/femboyyyy.gif",
+      "/img/normal.gif"
+    ],
+    "files": [
+      "src/scraper/lufemboy.js"
+    ]
+  },
+  {
+    "host": "chat.dphn.ai",
+    "paths": [
+      "/",
+      "/api/chat"
+    ],
+    "files": [
+      "plugins/ai/دولفين.js"
+    ]
+  },
+  {
+    "host": "chatgpt.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/scraper/gpt52.js"
+    ]
+  },
+  {
+    "host": "chrunos.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/ai/كرونوس.js"
+    ]
+  },
+  {
+    "host": "cms.bunda.co.id",
+    "paths": [
+      "/",
+      "/api/v1/auth/send-otp"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "cobalt-api-production-cd7d.up.railway.app",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/tools/نص_فيديو.js"
+    ]
+  },
+  {
+    "host": "console.groq.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/tools/نسخ_صوتي.js"
+    ]
+  },
+  {
+    "host": "convertico.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/scraper/soundclouddl.js"
+    ]
+  },
+  {
+    "host": "cors.rifkyshre.biz.id",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/search/طالب.js"
+    ]
+  },
+  {
+    "host": "cors.yardansh.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/scraper/ig.js"
+    ]
+  },
+  {
+    "host": "crt.sh",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/tools/فحص2.js"
+    ]
+  },
+  {
+    "host": "d.tmpfile.link",
+    "paths": [
+      "/public/2026-06-08/e92ce22a-404f-4a06-9c73-470743475f1f/IMG-20260608-WA0253(4"
+    ],
+    "files": [
+      "plugins/tools/2اقتباس_واتساب.js"
+    ]
+  },
+  {
+    "host": "d.ymcdn.org",
+    "paths": [
+      "/api/v1/init"
+    ],
+    "files": [
+      "src/scraper/ytdl.js"
+    ]
+  },
+  {
+    "host": "data.bmkg.go.id",
+    "paths": [
+      "/DataMKG/TEWS/$%7Bg.Shakemap%7D",
+      "/DataMKG/TEWS/autogempa.json"
+    ],
+    "files": [
+      "plugins/info/زلزال.js"
+    ]
+  },
+  {
+    "host": "de3.bot-hosting.net",
+    "paths": [
+      "/kilwa-grok"
+    ],
+    "files": [
+      "plugins/ai/كيلوا.js"
+    ]
+  },
+  {
+    "host": "deb.nodesource.com",
+    "paths": [
+      "/gpgkey/nodesource-repo.gpg.key",
+      "/node_22.x",
+      "/setup_18.x"
+    ],
+    "files": [
+      "src/lib/terboo-ssh-recipes.js"
+    ]
+  },
+  {
+    "host": "deepai.org",
+    "paths": [
+      "/",
+      "/chat",
+      "/machine-learning-model/text2img"
+    ],
+    "files": [
+      "src/scraper/deepai-scraper.js"
+    ]
+  },
+  {
+    "host": "deezer.com",
+    "paths": [
+      "/track/$%7Blinks.deezer.track.id%7D"
+    ],
+    "files": [
+      "plugins/tools/تعريف_الموسيقى.js"
+    ]
+  },
+  {
+    "host": "dl.snapcdn.app",
+    "paths": [
+      "/get"
+    ],
+    "files": [
+      "src/scraper/twitter.js"
+    ]
+  },
+  {
+    "host": "doa-doa-api-ahmadramadhan.fly.dev",
+    "paths": [
+      "/api"
+    ],
+    "files": [
+      "plugins/religi/إسلامي.js"
+    ]
+  },
+  {
+    "host": "dokterin.id",
+    "paths": [
+      "/",
+      "/login"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "download0426.sfile.co",
+    "paths": [
+      "/downloadfile/2200881/724157/99f1f1d69f8fd931e1447af03be9cec0/spotify-premium_9.1.14.864.apk"
+    ],
+    "files": [
+      "src/scraper/sfiledl.js"
+    ]
+  },
+  {
+    "host": "emojicombos.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/fun/فن.js"
+    ]
+  },
+  {
+    "host": "explore.shngm.io",
+    "paths": [
+      "/v1"
+    ],
+    "files": [
+      "src/scraper/shinigami.js"
+    ]
+  },
+  {
+    "host": "facebook.com",
+    "paths": [
+      "/$%7BcleanUsername%7D"
+    ],
+    "files": [
+      "plugins/stalker/تجسس_فيسبوك.js"
+    ]
+  },
+  {
+    "host": "fastdl.app",
+    "paths": [
+      "/",
+      "/id",
+      "/id/story-saver",
+      "/msec"
+    ],
+    "files": [
+      "src/scraper/ig.js"
+    ]
+  },
+  {
+    "host": "feeds.bbci.co.uk",
+    "paths": [
+      "/arabic/rss.xml"
+    ],
+    "files": [
+      "plugins/search/اخبار.js"
+    ]
+  },
+  {
+    "host": "feelbetterbot.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/scraper/feeb.js"
+    ]
+  },
+  {
+    "host": "files.use.ai",
+    "paths": [
+      "/upload"
+    ],
+    "files": [
+      "plugins/tools/ارفع.js"
+    ]
+  },
+  {
+    "host": "friends.roblox.com",
+    "paths": [
+      "/v1/users/$%7BuserId%7D/followers/count",
+      "/v1/users/$%7BuserId%7D/followings/count",
+      "/v1/users/$%7BuserId%7D/friends/count"
+    ],
+    "files": [
+      "plugins/stalker/تجسس_روبلوكس.js"
+    ]
+  },
+  {
+    "host": "games.roblox.com",
+    "paths": [
+      "/v2/users/$%7BuserId%7D/games"
+    ],
+    "files": [
+      "plugins/stalker/تجسس_روبلوكس.js"
+    ]
+  },
+  {
+    "host": "gateway.gritero.com",
+    "paths": [
+      "/v1/auth/registration/whatsapp/send-otp"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "gemini.google.com",
+    "paths": [
+      "/_/BardChatUi/data/assistant.lamda.BardFrontendService/StreamGenerate",
+      "/_/BardChatUi/data/batchexecute"
+    ],
+    "files": [
+      "src/scraper/gemini.js"
+    ]
+  },
+  {
+    "host": "gen.pollinations.ai",
+    "paths": [
+      "/image/$%7Bencoded%7D"
+    ],
+    "files": [
+      "plugins/ai/تخيل2.js"
+    ]
+  },
+  {
+    "host": "get1.imglarger.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/scraper/imglarger.js"
+    ]
+  },
+  {
+    "host": "gptanon.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/ai/جيما.js"
+    ]
+  },
+  {
+    "host": "groups.roblox.com",
+    "paths": [
+      "/v2/users/$%7BuserId%7D/groups/roles"
+    ],
+    "files": [
+      "plugins/stalker/تجسس_روبلوكس.js"
+    ]
+  },
+  {
+    "host": "happymod.net",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/downloader/happydl.js"
+    ]
+  },
+  {
+    "host": "honor-of-kings.fandom.com",
+    "paths": [
+      "/wiki/$%7BencodeURIComponent(name"
+    ],
+    "files": [
+      "src/scraper/hokinfo.js"
+    ]
+  },
+  {
+    "host": "i.postimg.cc",
+    "paths": [
+      "/bS01zQwK/upload-1767808833485.jpg"
+    ],
+    "files": [
+      "plugins/search/أنمي.js"
+    ]
+  },
+  {
+    "host": "id.ytmp3.mobi",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/scraper/ytdl.js"
+    ]
+  },
+  {
+    "host": "ilovepin.net",
+    "paths": [
+      "/id"
+    ],
+    "files": [
+      "tools/probe-priority-endpoints.mjs"
+    ]
+  },
+  {
+    "host": "imageprompt.org",
+    "paths": [
+      "/",
+      "/api/ai/prompts/image",
+      "/image-to-prompt"
+    ],
+    "files": [
+      "src/scraper/img2prompt.js"
+    ]
+  },
+  {
+    "host": "images.dotgg.gg",
+    "paths": [
+      "/bluearchive/characters/"
+    ],
+    "files": [
+      "plugins/info/شخصية_بلو_ارشيف.js"
+    ]
+  },
+  {
+    "host": "imgflip.com",
+    "paths": [
+      "/s/meme/Drake-Hotline-Bling.jpg"
+    ],
+    "files": [
+      "plugins/fun/ميم.js"
+    ]
+  },
+  {
+    "host": "imglarger.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/scraper/hd.js"
+    ]
+  },
+  {
+    "host": "indodax.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "infotourney.com",
+    "paths": [
+      "/tournament/mobile-legends"
+    ],
+    "files": [
+      "plugins/info/بطولات.js"
+    ]
+  },
+  {
+    "host": "integrate.api.nvidia.com",
+    "paths": [
+      "/v1/chat/completions"
+    ],
+    "files": [
+      "src/lib/terboo-nvidia-ai.js"
+    ]
+  },
+  {
+    "host": "internetrakyat.id",
+    "paths": [
+      "/",
+      "/api/app/auth/send-otp-register",
+      "/auth/register"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "inventory.roblox.com",
+    "paths": [
+      "/v1/users/$%7BuserId%7D/assets/collectibles"
+    ],
+    "files": [
+      "plugins/stalker/تجسس_روبلوكس.js"
+    ]
+  },
+  {
+    "host": "ip-api.com",
+    "paths": [
+      "/json/$%7Bip%7D"
+    ],
+    "files": [
+      "plugins/tools/فحص2.js"
+    ]
+  },
+  {
+    "host": "ipapi.co",
+    "paths": [
+      "/$%7Bip%7D/json/",
+      "/json/"
+    ],
+    "files": [
+      "plugins/tools/ايبي.js"
+    ]
+  },
+  {
+    "host": "islamic-api-zhirrr.vercel.app",
+    "paths": [
+      "/api/asmaulhusna",
+      "/api/niatshalat"
+    ],
+    "files": [
+      "plugins/religi/إسلامي.js"
+    ]
+  },
+  {
+    "host": "islamipedia.id",
+    "paths": [
+      "/murottal/"
+    ],
+    "files": [
+      "plugins/islamic/قرآن_صوتي.js"
+    ]
+  },
+  {
+    "host": "jeeves.ai",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/ai/جيفس.js"
+    ]
+  },
+  {
+    "host": "kappa.lol",
+    "paths": [
+      "/",
+      "/api/upload"
+    ],
+    "files": [
+      "plugins/tools/لرابط.js"
+    ]
+  },
+  {
+    "host": "konachan.net",
+    "paths": [
+      "/post"
+    ],
+    "files": [
+      "src/scraper/konachan.js"
+    ]
+  },
+  {
+    "host": "konachan.net${sourceurl}",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/scraper/konachan.js"
+    ]
+  },
+  {
+    "host": "kusonime.com",
+    "paths": [
+      "/",
+      "/genres/$%7BencodeURIComponent(genres",
+      "/page/$%7Bpage%7D/"
+    ],
+    "files": [
+      "src/scraper/kusonime.js"
+    ]
+  },
+  {
+    "host": "kyzznekoo.zone.id",
+    "paths": [
+      "/api/asupan/paptt"
+    ],
+    "files": [
+      "plugins/nsfw/بابت.js"
+    ]
+  },
+  {
+    "host": "latex.codecogs.com",
+    "paths": [
+      "/png.image"
+    ],
+    "files": [
+      "src/lib/terboo-latex.js"
+    ]
+  },
+  {
+    "host": "leopard.hosting.pecon.us",
+    "paths": [
+      "/",
+      "/upload.php"
+    ],
+    "files": [
+      "plugins/tools/لرابط.js"
+    ]
+  },
+  {
+    "host": "likeedownloader.com",
+    "paths": [
+      "/",
+      "/en",
+      "/process"
+    ],
+    "files": [
+      "src/scraper/likee.js"
+    ]
+  },
+  {
+    "host": "m.soundcloud.com",
+    "paths": [
+      "/search"
+    ],
+    "files": [
+      "plugins/search/ساوند.js"
+    ]
+  },
+  {
+    "host": "m.webtoons.com",
+    "paths": [
+      "/id/search",
+      "/search",
+      "/undefined/search/result"
+    ],
+    "files": [
+      "plugins/search/ويبتون.js"
+    ]
+  },
+  {
+    "host": "marobotdash-wtjdanpz.manus.space",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/lib/manus-api.js"
+    ]
+  },
+  {
+    "host": "master.dlapi.app",
+    "paths": [
+      "/api/v1/convert",
+      "/api/v1/tasks"
+    ],
+    "files": [
+      "src/scraper/spotify.js"
+    ]
+  },
+  {
+    "host": "matahari-backend-prod.matahari.com",
+    "paths": [
+      "/api/auth/re-activation"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "mconverter.eu",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/scraper/mconverter.js"
+    ]
+  },
+  {
+    "host": "media.vocaroo.com",
+    "paths": [
+      "/mp3/1ofLT2YUJAjQ"
+    ],
+    "files": [
+      "plugins/owner/تذكير_الصلاة.js"
+    ]
+  },
+  {
+    "host": "monica.im",
+    "paths": [
+      "/en/products/ai-chat"
+    ],
+    "files": [
+      "plugins/ai/مونيكا.js"
+    ]
+  },
+  {
+    "host": "movieku.rest",
+    "paths": [
+      "/wp-admin/admin-ajax.php"
+    ],
+    "files": [
+      "plugins/search/فلم.js"
+    ]
+  },
+  {
+    "host": "musicaldown.com",
+    "paths": [
+      "/",
+      "/download",
+      "/en"
+    ],
+    "files": [
+      "src/scraper/tiktok.js"
+    ]
+  },
+  {
+    "host": "my.izuka-api.xyz",
+    "paths": [
+      "/api/ai/novaai"
+    ],
+    "files": [
+      "plugins/ai/نوفا.js"
+    ]
+  },
+  {
+    "host": "nekos.best",
+    "paths": [
+      "/api/v2/slap"
+    ],
+    "files": [
+      "plugins/fun/صفع.js"
+    ]
+  },
+  {
+    "host": "notrack.ai",
+    "paths": [
+      "/",
+      "/api/dispatch",
+      "/chat"
+    ],
+    "files": [
+      "plugins/ai/notrack.js"
+    ]
+  },
+  {
+    "host": "ollama.com",
+    "paths": [
+      "/v1/chat/completions"
+    ],
+    "files": [
+      "plugins/ai/deepseek-v4-pro.js"
+    ]
+  },
+  {
+    "host": "otakudesu.blog",
+    "paths": [
+      "/episode/",
+      "/episode/tykmt-episode-2-sub-indo"
+    ],
+    "files": [
+      "plugins/downloader/تحميل_انمي.js"
+    ]
+  },
+  {
+    "host": "pddikti.kemdiktisaintek.go.id",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/search/طالب.js"
+    ]
+  },
+  {
+    "host": "photoai.imglarger.com",
+    "paths": [
+      "/api/PhoAi/CheckStatus",
+      "/api/PhoAi/Upload"
+    ],
+    "files": [
+      "src/scraper/hd.js"
+    ]
+  },
+  {
+    "host": "pin.it",
+    "paths": [
+      "/xxx"
+    ],
+    "files": [
+      "plugins/downloader/تحميل_بنتر.js"
+    ]
+  },
+  {
+    "host": "pinterest.com",
+    "paths": [
+      "/pin/xxx"
+    ],
+    "files": [
+      "plugins/downloader/تحميل_بنتر.js"
+    ]
+  },
+  {
+    "host": "pixabay.com",
+    "paths": [
+      "/api/"
+    ],
+    "files": [
+      "plugins/search/بنتريست.js"
+    ]
+  },
+  {
+    "host": "pone.rs",
+    "paths": [
+      "/",
+      "/upload.php"
+    ],
+    "files": [
+      "plugins/tools/لرابط.js"
+    ]
+  },
+  {
+    "host": "presence.roblox.com",
+    "paths": [
+      "/v1/presence/users"
+    ],
+    "files": [
+      "plugins/stalker/تجسس_روبلوكس.js"
+    ]
+  },
+  {
+    "host": "prod.adiraku.co.id",
+    "paths": [
+      "/ms-auth/auth/generate-otp-vdata"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "qu.ax",
+    "paths": [
+      "/upload.php"
+    ],
+    "files": [
+      "plugins/tools/لرابط.js"
+    ]
+  },
+  {
+    "host": "quran.nu.or.id",
+    "paths": [
+      "/$%7Bslug%7D"
+    ],
+    "files": [
+      "plugins/islamic/قرآن_نصي.js"
+    ]
+  },
+  {
+    "host": "qwa.eeq.my.id",
+    "paths": [
+      "/api/generate"
+    ],
+    "files": [
+      "plugins/tools/اقتباس_واتساب.js"
+    ]
+  },
+  {
+    "host": "rednote.savevideodown.com",
+    "paths": [
+      "/",
+      "/api/download"
+    ],
+    "files": [
+      "src/scraper/rednote.js"
+    ]
+  },
+  {
+    "host": "redvid.io",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "tools/probe-priority-endpoints.mjs"
+    ]
+  },
+  {
+    "host": "reelsvideo.io",
+    "paths": [
+      "/",
+      "/reel/DUU67gXiTwU/"
+    ],
+    "files": [
+      "src/scraper/reelsvideo.js"
+    ]
+  },
+  {
+    "host": "register.paper.id",
+    "paths": [
+      "/api/v1/auth/register/send-otp"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "registry.npmjs.org",
+    "paths": [
+      "/$%7BencodeURIComponent(pkgName"
+    ],
+    "files": [
+      "plugins/downloader/مكتبة.js"
+    ]
+  },
+  {
+    "host": "roblox.com",
+    "paths": [
+      "/users/$%7Bres.id%7D/profile"
+    ],
+    "files": [
+      "plugins/stalker/تجسس_روبلوكس.js"
+    ]
+  },
+  {
+    "host": "router.project-osrm.org",
+    "paths": [
+      "/route/v1/driving/$%7Blng1%7D,$%7Blat1%7D;$%7Blng2%7D,$%7Blat2%7D"
+    ],
+    "files": [
+      "plugins/tools/طريق.js"
+    ]
+  },
+  {
+    "host": "rr2---sn-2aqu-hoalr.googlevideo.com",
+    "paths": [
+      "/videoplayback"
+    ],
+    "files": [
+      "src/scraper/youtube.js"
+    ]
+  },
+  {
+    "host": "rr3---sn-ab5sznly.googlevideo.com",
+    "paths": [
+      "/videoplayback"
+    ],
+    "files": [
+      "src/scraper/yt.js"
+    ]
+  },
+  {
+    "host": "rss.cnn.com",
+    "paths": [
+      "/rss/edition.rss"
+    ],
+    "files": [
+      "plugins/search/اخبار.js"
+    ]
+  },
+  {
+    "host": "s1.twcdn.net",
+    "paths": [
+      "/api/json/convert"
+    ],
+    "files": [
+      "src/scraper/twitter.js"
+    ]
+  },
+  {
+    "host": "saturdays.com",
+    "paths": [
+      "/api/v1/auth/otp"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "savefbs.com",
+    "paths": [
+      "/all-in-one-video-downloader/",
+      "/api/v1/aio"
+    ],
+    "files": [
+      "src/scraper/aio.js"
+    ]
+  },
+  {
+    "host": "savett.cc",
+    "paths": [
+      "/",
+      "/en1/download"
+    ],
+    "files": [
+      "plugins/downloader/تيك_فيديو.js"
+    ]
+  },
+  {
+    "host": "search.brave.com",
+    "paths": [
+      "/search"
+    ],
+    "files": [
+      "plugins/downloader/ريل.js"
+    ]
+  },
+  {
+    "host": "searchthatsong.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/search/بحث_اغنية.js"
+    ]
+  },
+  {
+    "host": "server201.littlecreekhosting.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "config.js"
+    ]
+  },
+  {
+    "host": "shopee.co.id",
+    "paths": [
+      "/",
+      "/universal-link/video/"
+    ],
+    "files": [
+      "plugins/downloader/شوبي.js"
+    ]
+  },
+  {
+    "host": "shopeenowatermark.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/downloader/شوبي.js"
+    ]
+  },
+  {
+    "host": "sitecheck.sucuri.net",
+    "paths": [
+      "/api/v3/"
+    ],
+    "files": [
+      "plugins/tools/فحص_موقع.js"
+    ]
+  },
+  {
+    "host": "slidesigma.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/stalker/تجسس_تيكتوك.js"
+    ]
+  },
+  {
+    "host": "snapvideotools.com",
+    "paths": [
+      "/",
+      "/api/snap"
+    ],
+    "files": [
+      "src/scraper/douyin.js"
+    ]
+  },
+  {
+    "host": "source.unsplash.com",
+    "paths": [
+      "/720x720/"
+    ],
+    "files": [
+      "plugins/ai/تخيل2.js"
+    ]
+  },
+  {
+    "host": "spotify.dlapi.app",
+    "paths": [
+      "/api/Gettrack"
+    ],
+    "files": [
+      "src/scraper/spotify.js"
+    ]
+  },
+  {
+    "host": "staticmap.maptiler.com",
+    "paths": [
+      "/map"
+    ],
+    "files": [
+      "plugins/tools/ايبي.js"
+    ]
+  },
+  {
+    "host": "store.line.me",
+    "paths": [
+      "/",
+      "/stickershop/product/9801/en"
+    ],
+    "files": [
+      "plugins/sticker/linesticker.js"
+    ]
+  },
+  {
+    "host": "strategy.app.meitudata.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/scraper/wink.js"
+    ]
+  },
+  {
+    "host": "strategy.pixocial.com",
+    "paths": [
+      "/upload/policy"
+    ],
+    "files": [
+      "plugins/tools/تحسين_الصورة_3.js"
+    ]
+  },
+  {
+    "host": "tecuts-chat.hf.space",
+    "paths": [
+      "/chat/stream"
+    ],
+    "files": [
+      "plugins/ai/كرونوس.js"
+    ]
+  },
+  {
+    "host": "temp-mail.io",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/scraper/tempmail.js"
+    ]
+  },
+  {
+    "host": "tenor.googleapis.com",
+    "paths": [
+      "/v2/featured"
+    ],
+    "files": [
+      "plugins/sticker/emojimix.js"
+    ]
+  },
+  {
+    "host": "threadsvid.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/downloader/ثريدز.js"
+    ]
+  },
+  {
+    "host": "thumbnails.roblox.com",
+    "paths": [
+      "/v1/users/avatar"
+    ],
+    "files": [
+      "plugins/stalker/تجسس_روبلوكس.js"
+    ]
+  },
+  {
+    "host": "tiktok.com",
+    "paths": [
+      "/@$%7BcleanUsername%7D"
+    ],
+    "files": [
+      "plugins/stalker/تجسس_تيكتوك.js"
+    ]
+  },
+  {
+    "host": "tools.xrespond.com",
+    "paths": [
+      "/api/tiktok/profile/details"
+    ],
+    "files": [
+      "plugins/stalker/تجسس_تيكتوك.js"
+    ]
+  },
+  {
+    "host": "top4top.io",
+    "paths": [
+      "/",
+      "/index.php"
+    ],
+    "files": [
+      "plugins/tools/لرابط.js"
+    ]
+  },
+  {
+    "host": "translate.google.com",
+    "paths": [
+      "/translate_tts"
+    ],
+    "files": [
+      "src/lib/terboo-multimodal.js"
+    ]
+  },
+  {
+    "host": "twibbonize.com",
+    "paths": [
+      "/$%7Bc.url%7D"
+    ],
+    "files": [
+      "plugins/search/اطار.js"
+    ]
+  },
+  {
+    "host": "twitter.com",
+    "paths": [
+      "/$%7Br.username%7D"
+    ],
+    "files": [
+      "plugins/stalker/تجسس_تويتر.js"
+    ]
+  },
+  {
+    "host": "twitterwebviewer.com",
+    "paths": [
+      "/api/tweets/$%7Busername%7D"
+    ],
+    "files": [
+      "plugins/stalker/تجسس_تويتر.js"
+    ]
+  },
+  {
+    "host": "ui-avatars.com",
+    "paths": [
+      "/api/"
+    ],
+    "files": [
+      "src/lib/terboo-level.js"
+    ]
+  },
+  {
+    "host": "unblurimage.ai",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/scraper/hdvid2.js"
+    ]
+  },
+  {
+    "host": "unrestrictedaiimagegenerator.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/scraper/txt2img.js"
+    ]
+  },
+  {
+    "host": "upsampler.com",
+    "paths": [
+      "/",
+      "/free-image-generator-no-signup"
+    ],
+    "files": [
+      "src/scraper/txt2img2.js"
+    ]
+  },
+  {
+    "host": "use.ai",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/tools/ارفع.js"
+    ]
+  },
+  {
+    "host": "users.roblox.com",
+    "paths": [
+      "/v1/users/$%7BuserId%7D",
+      "/v1/users/search"
+    ],
+    "files": [
+      "plugins/stalker/تجسس_روبلوكس.js"
+    ]
+  },
+  {
+    "host": "v.douyin.com",
+    "paths": [
+      "/xxx",
+      "/xxx*"
+    ],
+    "files": [
+      "plugins/downloader/دويين.js"
+    ]
+  },
+  {
+    "host": "videotranscriber.ai",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/tools/نسخ_فيديو.js"
+    ]
+  },
+  {
+    "host": "vidomon.com",
+    "paths": [
+      "/dailymotion-video-downloader/",
+      "/wp-json/aio-dl/video-data/"
+    ],
+    "files": [
+      "src/scraper/dailymotion.js"
+    ]
+  },
+  {
+    "host": "webappcreator.amethystlab.org",
+    "paths": [
+      "/",
+      "/api/build-apk"
+    ],
+    "files": [
+      "plugins/tools/صنع_تطبيق.js"
+    ]
+  },
+  {
+    "host": "webappcreator.amethystlab.org${response.data.downloadurl}",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/tools/صنع_تطبيق.js"
+    ]
+  },
+  {
+    "host": "winbu.net",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/lib/terboo-auto-anime.js"
+    ]
+  },
+  {
+    "host": "wink.ai",
+    "paths": [
+      "/",
+      "/video-enhancer/upload"
+    ],
+    "files": [
+      "src/scraper/wink.js"
+    ]
+  },
+  {
+    "host": "workers-playground-cool-wood-c008.accoutydusra.workers.dev",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/downloader/ثريدز.js"
+    ]
+  },
+  {
+    "host": "ws75.aptoide.com",
+    "paths": [
+      "/api/7/apps/search"
+    ],
+    "files": [
+      "plugins/search/apk.js"
+    ]
+  },
+  {
+    "host": "wutheringwaves.fandom.com",
+    "paths": [
+      "/wiki/$%7BencodeURIComponent(searchSlug",
+      "/wiki/$%7BencodeURIComponent(slug"
+    ],
+    "files": [
+      "src/scraper/wwchar.js"
+    ]
+  },
+  {
+    "host": "www.alightpro.my.id",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/tools/am.js"
+    ]
+  },
+  {
+    "host": "www.alodokter.com",
+    "paths": [
+      "/resend-otp"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "www.beautyhaul.com",
+    "paths": [
+      "/ajax/account/send_otp"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "www.beautyplus.com",
+    "paths": [
+      "/",
+      "/core-api/v1/img-enhancer/quota/info",
+      "/core-api/v2/img-enhancer/query-sse/$%7BtaskId%7D",
+      "/core-api/v2/img-enhancer/task",
+      "/id/image-enhancer"
+    ],
+    "files": [
+      "plugins/tools/تحسين_الصورة_3.js"
+    ]
+  },
+  {
+    "host": "www.bing.com",
+    "paths": [
+      "/images/search"
+    ],
+    "files": [
+      "plugins/tools/ريد.js"
+    ]
+  },
+  {
+    "host": "www.bonusbelanja.com",
+    "paths": [
+      "/api/auth/registration/app"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "www.bunda.co.id",
+    "paths": [
+      "/",
+      "/id"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "www.capcut.com",
+    "paths": [
+      "/t/xxx"
+    ],
+    "files": [
+      "plugins/downloader/كابكت.js"
+    ]
+  },
+  {
+    "host": "www.chatday.ai",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/scraper/chatday.js"
+    ]
+  },
+  {
+    "host": "www.cocofun.com",
+    "paths": [
+      "/share/post/xxx"
+    ],
+    "files": [
+      "plugins/downloader/كوكوفن.js"
+    ]
+  },
+  {
+    "host": "www.dafont.com",
+    "paths": [
+      "/",
+      "/search.php"
+    ],
+    "files": [
+      "src/scraper/dafont.js"
+    ]
+  },
+  {
+    "host": "www.douyin.com",
+    "paths": [
+      "/video/7094857383232818444"
+    ],
+    "files": [
+      "tools/terboo-scraper-live.mjs"
+    ]
+  },
+  {
+    "host": "www.genspark.ai",
+    "paths": [
+      "/",
+      "/api/agent/ask_proxy"
+    ],
+    "files": [
+      "plugins/ai/كيمي.js"
+    ]
+  },
+  {
+    "host": "www.mp3quran.net",
+    "paths": [
+      "/api/v3"
+    ],
+    "files": [
+      "plugins/religi/قرآني.js"
+    ]
+  },
+  {
+    "host": "www.muslimai.io",
+    "paths": [
+      "/api/chat"
+    ],
+    "files": [
+      "plugins/ai/مسلم.js"
+    ]
+  },
+  {
+    "host": "www.openstreetmap.org",
+    "paths": [
+      "/directions"
+    ],
+    "files": [
+      "plugins/tools/طريق.js"
+    ]
+  },
+  {
+    "host": "www.paper.id",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "www.pinhome.id",
+    "paths": [
+      "/api/odyssey/proxy/pinaccount/auth/verification/request-otp"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "www.pixa.com",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/scraper/removebackground.js"
+    ]
+  },
+  {
+    "host": "www.rumah123.com",
+    "paths": [
+      "/",
+      "/api/otp/request-otp",
+      "/user/login"
+    ],
+    "files": [
+      "plugins/owner/internetrakyat.js"
+    ]
+  },
+  {
+    "host": "www.scorebat.com",
+    "paths": [
+      "/",
+      "/video-api/v3/"
+    ],
+    "files": [
+      "plugins/info/مباريات.js"
+    ]
+  },
+  {
+    "host": "www.scrapingcourse.com",
+    "paths": [
+      "/cloudflare-challenge"
+    ],
+    "files": [
+      "plugins/tools/cfbypass.js"
+    ]
+  },
+  {
+    "host": "www.snackvideo.com",
+    "paths": [
+      "/@xxx/video/xxx"
+    ],
+    "files": [
+      "plugins/downloader/سناب_فيديو.js"
+    ]
+  },
+  {
+    "host": "www.themealdb.com",
+    "paths": [
+      "/api/json/v1/1/search.php"
+    ],
+    "files": [
+      "plugins/search/بدي.js"
+    ]
+  },
+  {
+    "host": "www.threads.net",
+    "paths": [
+      "/@xxx/post/xxx",
+      "/@zuck/post/xxx"
+    ],
+    "files": [
+      "plugins/downloader/ثريدز.js"
+    ]
+  },
+  {
+    "host": "www.tikwm.com",
+    "paths": [
+      "/",
+      "/api/"
+    ],
+    "files": [
+      "src/scraper/aio.js"
+    ]
+  },
+  {
+    "host": "www.upload.ee",
+    "paths": [
+      "/",
+      "/cgi-bin/ubr_upload.pl",
+      "/ubr_link_upload.php"
+    ],
+    "files": [
+      "plugins/tools/لرابط.js"
+    ]
+  },
+  {
+    "host": "www.wallpaperflare.com",
+    "paths": [
+      "/search"
+    ],
+    "files": [
+      "src/scraper/wallpapersearch.js"
+    ]
+  },
+  {
+    "host": "www.wallpaperflare.com${page}",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/scraper/wallpapersearch.js"
+    ]
+  },
+  {
+    "host": "www.wikipedia.org",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "plugins/ai/ويكي.js"
+    ]
+  },
+  {
+    "host": "www.xiaohongshu.com",
+    "paths": [
+      "/xxx",
+      "/xxx*"
+    ],
+    "files": [
+      "plugins/downloader/ريد_نوت.js"
+    ]
+  },
+  {
+    "host": "x",
+    "paths": [
+      "/"
+    ],
+    "files": [
+      "src/lib/providers/pterodactyl/pterodactyl-admin.js"
+    ]
+  },
+  {
+    "host": "x2twitter.com",
+    "paths": [
+      "/",
+      "/api/ajaxSearch",
+      "/id"
+    ],
+    "files": [
+      "src/scraper/twitter.js"
+    ]
+  },
+  {
+    "host": "xhslink.com",
+    "paths": [
+      "/a/sample"
+    ],
+    "files": [
+      "tools/terboo-scraper-live.mjs"
+    ]
+  },
+  {
+    "host": "xl-ku.my.id",
+    "paths": [
+      "/end.php"
+    ],
+    "files": [
+      "plugins/tools/اكسل.js"
+    ]
+  },
+  {
+    "host": "zecora0.serv00.net",
+    "paths": [
+      "/fake.php"
+    ],
+    "files": [
+      "plugins/tools/بريد.js"
+    ]
+  }
+]

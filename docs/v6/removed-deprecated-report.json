@@ -1,0 +1,286 @@
+{
+  "generatedAt": "2026-10-08T18:24:52.906Z",
+  "baseline": "36c488d",
+  "removedCommands": [],
+  "addedCommands": [
+    "ssh",
+    "اعلان_مجموعة",
+    "تثبيت_رسالة",
+    "جرأة",
+    "خاطرة",
+    "ساوند_رابط",
+    "فحص_عراف",
+    "فن_ذكي",
+    "مكالمة_وهمية",
+    "موسيقى02",
+    "ميم_دريك"
+  ],
+  "aliasesMovedToOwnCommand": [
+    {
+      "alias": "ai",
+      "wasAliasOf": [
+        "اسأل",
+        "التميز",
+        "جيبيتي4"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "apk",
+      "wasAliasOf": [
+        "تطبيق"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "deep",
+      "wasAliasOf": [
+        "ديب_برو4"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "kiss",
+      "wasAliasOf": [
+        "بوسة"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "ping2",
+      "wasAliasOf": [
+        "بينغ2"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "pinpack",
+      "wasAliasOf": [
+        "ملصقات"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "simi",
+      "wasAliasOf": [
+        "سمسمي"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "slap",
+      "wasAliasOf": [
+        "صفع"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "اخبار",
+      "wasAliasOf": [
+        "الجزيرة"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "انستا",
+      "wasAliasOf": [
+        "ريل"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "بنتر",
+      "wasAliasOf": [
+        "بنتر_فيد"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "تحدي",
+      "wasAliasOf": [],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "تحميل",
+      "wasAliasOf": [
+        "aio"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "تحميل_تطبيق",
+      "wasAliasOf": [
+        "تطبيق"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "تطبيق",
+      "wasAliasOf": [
+        "صنع_تطبيق"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "توليد",
+      "wasAliasOf": [
+        "صورة"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "جرأة",
+      "wasAliasOf": [],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "شات",
+      "wasAliasOf": [
+        "ai",
+        "اسأل"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "شاتai",
+      "wasAliasOf": [
+        "جيبيتي4"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "شكل_مسج",
+      "wasAliasOf": [
+        "تعيين_نوع_الرد"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "صرف_العملات",
+      "wasAliasOf": [
+        "سعر_الصرف"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "صوت",
+      "wasAliasOf": [
+        "انطق"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "صوره",
+      "wasAliasOf": [
+        "صورة"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "غزل",
+      "wasAliasOf": [
+        "تحرش"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "فحص",
+      "wasAliasOf": [
+        "فحص_موقع"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "فن",
+      "wasAliasOf": [],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "مانجا",
+      "wasAliasOf": [
+        "مانهوا"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "مباريات",
+      "wasAliasOf": [
+        "كرة"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "موسيقى",
+      "wasAliasOf": [
+        "عزل"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "نص_متحرك",
+      "wasAliasOf": [
+        "attp2"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    },
+    {
+      "alias": "يومي",
+      "wasAliasOf": [
+        "مكافأة_يوميه"
+      ],
+      "nowCommand": true,
+      "note": "collision resolved: the same name was both an alias of one plugin and the command of another; the command now wins"
+    }
+  ],
+  "aliasesLost": [],
+  "deprecatedPlugins": [
+    {
+      "file": "plugins/canvas/avatarjpg.js",
+      "reason": "نسخة مكررة من plugins/canvas/مكالمة.js (نفس بطاقة المكالمة الوهمية) وكانت محجوبة باسم «مكالمة» لأمر المالك؛ الوظيفة متاحة بـ .مكالمة_وهمية"
+    },
+    {
+      "file": "plugins/search/asiariyadh.js",
+      "reason": "نسخة مكررة من plugins/search/كرة.js (نفس الوصف «مباريات كرة القدم») وكانت محجوبة بنفس الاسم؛ الأمر .كرة يعمل من كرة.js"
+    }
+  ],
+  "blockedByExternalProvider": [
+    {
+      "file": "plugins/info/مباريات.js",
+      "reason": "www.scorebat.com: timeout"
+    },
+    {
+      "file": "plugins/search/فلم.js",
+      "reason": "movieku.rest: timeout"
+    }
+  ]
+}

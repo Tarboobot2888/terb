@@ -1,0 +1,235 @@
+{
+  "generatedAt": "2026-10-08T18:24:52.844Z",
+  "queue": "src/lib/terboo-task-queue.js — persist · notBefore (delayed, no slot) · cancel/pause/resume/retry · restoreInterrupted on boot",
+  "taskTypes": [
+    {
+      "type": "tool:<scraper id>",
+      "enqueuedIn": "src/lib/terboo-ai-core.js",
+      "resumableAfterRestart": true
+    },
+    {
+      "type": "video.understand",
+      "enqueuedIn": "src/lib/terboo-ai-media.js",
+      "resumableAfterRestart": false
+    },
+    {
+      "type": "document.analyze",
+      "enqueuedIn": "src/lib/terboo-ai-media.js",
+      "resumableAfterRestart": false
+    },
+    {
+      "type": "broadcast",
+      "enqueuedIn": "src/lib/terboo-broadcast.js",
+      "resumableAfterRestart": true
+    },
+    {
+      "type": "group.schedule",
+      "enqueuedIn": "src/lib/terboo-group-actions.js",
+      "resumableAfterRestart": true
+    },
+    {
+      "type": "group.bulk",
+      "enqueuedIn": "src/lib/terboo-group-actions.js",
+      "resumableAfterRestart": true
+    },
+    {
+      "type": "project.deploy",
+      "enqueuedIn": "src/lib/terboo-remote-workspace.js",
+      "resumableAfterRestart": true
+    },
+    {
+      "type": "vps.<power|rebuild…> (VPS_WATCHED)",
+      "enqueuedIn": "src/lib/terboo-task-runners.js",
+      "resumableAfterRestart": true
+    },
+    {
+      "type": "vps.provision",
+      "enqueuedIn": "src/lib/terboo-task-runners.js",
+      "resumableAfterRestart": true
+    }
+  ],
+  "registeredRunners": [
+    "broadcast",
+    "group.schedule",
+    "group.bulk",
+    "project.deploy",
+    "vps.<power|rebuild…> (VPS_WATCHED)",
+    "vps.provision",
+    "tool:<scraper id>"
+  ],
+  "dynamicRunners": [
+    "VPS power/rebuild watchers (VPS_WATCHED)",
+    "tool:<scraper id> for every replayable scraper"
+  ],
+  "resumeRule": "a task resumes after restart only when a runner is registered for its type; otherwise it is marked interrupted (never fake-resumed). A resumed record is cancelled with note resumed-as:<id>.",
+  "timersAndCron": [
+    {
+      "file": "plugins/fun/إزعاج.js",
+      "setInterval": 1,
+      "cron": 0,
+      "enqueueTask": 0
+    },
+    {
+      "file": "plugins/fun/قطوتي.js",
+      "setInterval": 1,
+      "cron": 0,
+      "enqueueTask": 0
+    },
+    {
+      "file": "plugins/group/giveaways.js",
+      "setInterval": 0,
+      "cron": 1,
+      "enqueueTask": 0
+    },
+    {
+      "file": "plugins/group/هدية.js",
+      "setInterval": 0,
+      "cron": 1,
+      "enqueueTask": 0
+    },
+    {
+      "file": "src/connection.js",
+      "setInterval": 2,
+      "cron": 0,
+      "enqueueTask": 0
+    },
+    {
+      "file": "src/handler.js",
+      "setInterval": 1,
+      "cron": 0,
+      "enqueueTask": 0
+    },
+    {
+      "file": "src/lib/terboo-ai-core.js",
+      "setInterval": 0,
+      "cron": 0,
+      "enqueueTask": 1
+    },
+    {
+      "file": "src/lib/terboo-ai-media.js",
+      "setInterval": 0,
+      "cron": 0,
+      "enqueueTask": 3
+    },
+    {
+      "file": "src/lib/terboo-auto-anime.js",
+      "setInterval": 1,
+      "cron": 0,
+      "enqueueTask": 0
+    },
+    {
+      "file": "src/lib/terboo-auto-backup.js",
+      "setInterval": 0,
+      "cron": 2,
+      "enqueueTask": 0
+    },
+    {
+      "file": "src/lib/terboo-backup.js",
+      "setInterval": 1,
+      "cron": 0,
+      "enqueueTask": 0
+    },
+    {
+      "file": "src/lib/terboo-broadcast.js",
+      "setInterval": 0,
+      "cron": 0,
+      "enqueueTask": 1
+    },
+    {
+      "file": "src/lib/terboo-data-pruner.js",
+      "setInterval": 1,
+      "cron": 0,
+      "enqueueTask": 0
+    },
+    {
+      "file": "src/lib/terboo-database.js",
+      "setInterval": 1,
+      "cron": 0,
+      "enqueueTask": 0
+    },
+    {
+      "file": "src/lib/terboo-game-data.js",
+      "setInterval": 1,
+      "cron": 0,
+      "enqueueTask": 0
+    },
+    {
+      "file": "src/lib/terboo-group-actions.js",
+      "setInterval": 0,
+      "cron": 0,
+      "enqueueTask": 2
+    },
+    {
+      "file": "src/lib/terboo-jadibot-manager.js",
+      "setInterval": 2,
+      "cron": 0,
+      "enqueueTask": 0
+    },
+    {
+      "file": "src/lib/terboo-memory-monitor.js",
+      "setInterval": 1,
+      "cron": 0,
+      "enqueueTask": 0
+    },
+    {
+      "file": "src/lib/terboo-notif-scheduler.js",
+      "setInterval": 0,
+      "cron": 1,
+      "enqueueTask": 0
+    },
+    {
+      "file": "src/lib/terboo-profile-picture.js",
+      "setInterval": 1,
+      "cron": 0,
+      "enqueueTask": 0
+    },
+    {
+      "file": "src/lib/terboo-remote-workspace.js",
+      "setInterval": 0,
+      "cron": 0,
+      "enqueueTask": 1
+    },
+    {
+      "file": "src/lib/terboo-scheduler.js",
+      "setInterval": 0,
+      "cron": 1,
+      "enqueueTask": 0
+    },
+    {
+      "file": "src/lib/terboo-sholat-scheduler.js",
+      "setInterval": 0,
+      "cron": 1,
+      "enqueueTask": 0
+    },
+    {
+      "file": "src/lib/terboo-task-queue.js",
+      "setInterval": 0,
+      "cron": 0,
+      "enqueueTask": 5
+    },
+    {
+      "file": "src/lib/terboo-task-runners.js",
+      "setInterval": 0,
+      "cron": 0,
+      "enqueueTask": 1
+    },
+    {
+      "file": "src/lib/terboo-temp-cleaner.js",
+      "setInterval": 1,
+      "cron": 0,
+      "enqueueTask": 0
+    },
+    {
+      "file": "tools/terboo-forensic-snapshot.mjs",
+      "setInterval": 0,
+      "cron": 2,
+      "enqueueTask": 0
+    },
+    {
+      "file": "tools/terboo-manifest.mjs",
+      "setInterval": 0,
+      "cron": 2,
+      "enqueueTask": 0
+    }
+  ]
+}

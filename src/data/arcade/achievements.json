@@ -1,0 +1,14 @@
+[
+  { "id": "first_game", "icon": "🎮", "rule": { "type": "played", "gte": 1 }, "name": { "ar": "أول لعبة", "en": "First Game", "es": "Primera partida" } },
+  { "id": "first_win", "icon": "🏅", "rule": { "type": "won", "gte": 1 }, "name": { "ar": "أول فوز", "en": "First Win", "es": "Primera victoria" } },
+  { "id": "ten_wins", "icon": "🥇", "rule": { "type": "won", "gte": 10 }, "name": { "ar": "عشرة انتصارات", "en": "Ten Wins", "es": "Diez victorias" } },
+  { "id": "fifty_games", "icon": "🕹️", "rule": { "type": "played", "gte": 50 }, "name": { "ar": "لاعب متمرّس", "en": "Seasoned Player", "es": "Jugador veterano" } },
+  { "id": "streak_3", "icon": "🔥", "rule": { "type": "streak", "gte": 3 }, "name": { "ar": "سلسلة ٣", "en": "Streak of 3", "es": "Racha de 3" } },
+  { "id": "streak_7", "icon": "⚡", "rule": { "type": "streak", "gte": 7 }, "name": { "ar": "سلسلة ٧", "en": "Streak of 7", "es": "Racha de 7" } },
+  { "id": "explorer", "icon": "🧭", "rule": { "type": "distinctGames", "gte": 5 }, "name": { "ar": "مستكشف الأركيد", "en": "Arcade Explorer", "es": "Explorador arcade" } },
+  { "id": "collector", "icon": "🏛️", "rule": { "type": "distinctGames", "gte": 15 }, "name": { "ar": "جامع الألعاب", "en": "Game Collector", "es": "Coleccionista" } },
+  { "id": "xo_master", "icon": "❌", "rule": { "type": "gameWins", "game": "xo", "gte": 5 }, "name": { "ar": "سيد إكس أو", "en": "XO Master", "es": "Maestro del tres en raya" } },
+  { "id": "ai_slayer", "icon": "🤖", "rule": { "type": "aiWins", "difficulty": "EXPERT", "gte": 1 }, "name": { "ar": "قاهر الخبير", "en": "Expert Slayer", "es": "Vencedor experto" } },
+  { "id": "brainiac", "icon": "🧠", "rule": { "type": "categoryWins", "category": "quiz", "gte": 10 }, "name": { "ar": "عبقري الأسئلة", "en": "Quiz Brainiac", "es": "Cerebrito" } },
+  { "id": "wordsmith", "icon": "🔤", "rule": { "type": "categoryWins", "category": "word", "gte": 10 }, "name": { "ar": "صانع الكلمات", "en": "Wordsmith", "es": "Maestro de palabras" } }
+]

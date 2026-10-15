@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-10-15T11:57:49.148Z",
+  "node": "v22.22.0",
+  "results": [
+    {
+      "size": 100,
+      "createMs": 19,
+      "actionsMs": 55,
+      "perActionMs": 0.55,
+      "sweepMs": 8,
+      "heapStartMb": 33,
+      "heapPeakMb": 42
+    },
+    {
+      "size": 500,
+      "createMs": 38,
+      "actionsMs": 130,
+      "perActionMs": 0.26,
+      "sweepMs": 25,
+      "heapStartMb": 44,
+      "heapPeakMb": 47
+    },
+    {
+      "size": 1000,
+      "createMs": 52,
+      "actionsMs": 231,
+      "perActionMs": 0.23,
+      "sweepMs": 36,
+      "heapStartMb": 38,
+      "heapPeakMb": 52
+    }
+  ]
+}

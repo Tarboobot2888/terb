@@ -1,0 +1,671 @@
+{
+ "wordle_ar": [
+  "مدرسة",
+  "سيارة",
+  "طائرة",
+  "مكتبة",
+  "حديقة",
+  "ساعات",
+  "تفاحة",
+  "شمسية",
+  "مدينة",
+  "جزيرة",
+  "صحراء",
+  "بحيرة",
+  "نافذة",
+  "طاولة",
+  "ملعقة",
+  "رسالة",
+  "قصيدة",
+  "حكاية",
+  "رياضة",
+  "سباحة",
+  "ملابس",
+  "فستان",
+  "بستان",
+  "عصفور",
+  "غزالة",
+  "دلفين",
+  "تمساح",
+  "فراشة",
+  "زرافة",
+  "بطريق",
+  "سنجاب",
+  "جاموس",
+  "ثلاجة",
+  "غسالة",
+  "مروحة",
+  "مصباح",
+  "مفتاح",
+  "حقيبة",
+  "قلادة",
+  "صابون",
+  "فرشاة",
+  "معجون",
+  "بيضاء",
+  "خضراء",
+  "زرقاء",
+  "صفراء",
+  "حمراء",
+  "سوداء",
+  "رمانة",
+  "ليمون",
+  "طماطم",
+  "زيتون",
+  "بسكوت",
+  "فطيرة",
+  "شوربة",
+  "سفينة",
+  "دراجة",
+  "حافلة",
+  "صاروخ",
+  "مجرات",
+  "عاصفة",
+  "زلزال",
+  "بركان",
+  "غابات",
+  "صداقة",
+  "سعادة",
+  "شجاعة",
+  "امانة",
+  "نظافة",
+  "تجربة",
+  "بطولة",
+  "جائزة",
+  "لوحات",
+  "الوان",
+  "اغنية",
+  "كمنجة",
+  "سينما",
+  "حاسوب",
+  "تطبيق",
+  "رسائل",
+  "مهندس",
+  "طبيبة",
+  "معلمة",
+  "طالبة",
+  "نجارة"
+ ],
+ "animals": [
+  {
+   "ar": "أسد",
+   "en": "lion",
+   "es": "león"
+  },
+  {
+   "ar": "نمر",
+   "en": "tiger",
+   "es": "tigre"
+  },
+  {
+   "ar": "فيل",
+   "en": "elephant",
+   "es": "elefante"
+  },
+  {
+   "ar": "زرافة",
+   "en": "giraffe",
+   "es": "jirafa"
+  },
+  {
+   "ar": "حصان",
+   "en": "horse",
+   "es": "caballo"
+  },
+  {
+   "ar": "جمل",
+   "en": "camel",
+   "es": "camello"
+  },
+  {
+   "ar": "قرد",
+   "en": "monkey",
+   "es": "mono"
+  },
+  {
+   "ar": "دب",
+   "en": "bear",
+   "es": "oso"
+  },
+  {
+   "ar": "ذئب",
+   "en": "wolf",
+   "es": "lobo"
+  },
+  {
+   "ar": "ثعلب",
+   "en": "fox",
+   "es": "zorro"
+  },
+  {
+   "ar": "أرنب",
+   "en": "rabbit",
+   "es": "conejo"
+  },
+  {
+   "ar": "قطة",
+   "en": "cat",
+   "es": "gato"
+  },
+  {
+   "ar": "كلب",
+   "en": "dog",
+   "es": "perro"
+  },
+  {
+   "ar": "فأر",
+   "en": "mouse",
+   "es": "ratón"
+  },
+  {
+   "ar": "بقرة",
+   "en": "cow",
+   "es": "vaca"
+  },
+  {
+   "ar": "خروف",
+   "en": "sheep",
+   "es": "oveja"
+  },
+  {
+   "ar": "ماعز",
+   "en": "goat",
+   "es": "cabra"
+  },
+  {
+   "ar": "دجاجة",
+   "en": "chicken",
+   "es": "gallina"
+  },
+  {
+   "ar": "بطة",
+   "en": "duck",
+   "es": "pato"
+  },
+  {
+   "ar": "نسر",
+   "en": "eagle",
+   "es": "águila"
+  },
+  {
+   "ar": "صقر",
+   "en": "falcon",
+   "es": "halcón"
+  },
+  {
+   "ar": "بومة",
+   "en": "owl",
+   "es": "búho"
+  },
+  {
+   "ar": "حمامة",
+   "en": "dove",
+   "es": "paloma"
+  },
+  {
+   "ar": "ببغاء",
+   "en": "parrot",
+   "es": "loro"
+  },
+  {
+   "ar": "دلفين",
+   "en": "dolphin",
+   "es": "delfín"
+  },
+  {
+   "ar": "حوت",
+   "en": "whale",
+   "es": "ballena"
+  },
+  {
+   "ar": "قرش",
+   "en": "shark",
+   "es": "tiburón"
+  },
+  {
+   "ar": "أخطبوط",
+   "en": "octopus",
+   "es": "pulpo"
+  },
+  {
+   "ar": "سلحفاة",
+   "en": "turtle",
+   "es": "tortuga"
+  },
+  {
+   "ar": "تمساح",
+   "en": "crocodile",
+   "es": "cocodrilo"
+  },
+  {
+   "ar": "ثعبان",
+   "en": "snake",
+   "es": "serpiente"
+  },
+  {
+   "ar": "ضفدع",
+   "en": "frog",
+   "es": "rana"
+  },
+  {
+   "ar": "نملة",
+   "en": "ant",
+   "es": "hormiga"
+  },
+  {
+   "ar": "نحلة",
+   "en": "bee",
+   "es": "abeja"
+  },
+  {
+   "ar": "فراشة",
+   "en": "butterfly",
+   "es": "mariposa"
+  },
+  {
+   "ar": "عنكبوت",
+   "en": "spider",
+   "es": "araña"
+  },
+  {
+   "ar": "غزال",
+   "en": "gazelle",
+   "es": "gacela"
+  },
+  {
+   "ar": "كنغر",
+   "en": "kangaroo",
+   "es": "canguro"
+  },
+  {
+   "ar": "باندا",
+   "en": "panda",
+   "es": "panda"
+  },
+  {
+   "ar": "بطريق",
+   "en": "penguin",
+   "es": "pingüino"
+  },
+  {
+   "ar": "زيبرا",
+   "en": "zebra",
+   "es": "cebra"
+  },
+  {
+   "ar": "فهد",
+   "en": "cheetah",
+   "es": "guepardo"
+  },
+  {
+   "ar": "خفاش",
+   "en": "bat",
+   "es": "murciélago"
+  },
+  {
+   "ar": "سنجاب",
+   "en": "squirrel",
+   "es": "ardilla"
+  },
+  {
+   "ar": "قنفذ",
+   "en": "hedgehog",
+   "es": "erizo"
+  },
+  {
+   "ar": "ديك",
+   "en": "rooster",
+   "es": "gallo"
+  },
+  {
+   "ar": "حمار",
+   "en": "donkey",
+   "es": "burro"
+  },
+  {
+   "ar": "غوريلا",
+   "en": "gorilla",
+   "es": "gorila"
+  },
+  {
+   "ar": "كوالا",
+   "en": "koala",
+   "es": "koala"
+  },
+  {
+   "ar": "وشق",
+   "en": "lynx",
+   "es": "lince"
+  }
+ ],
+ "fruits": [
+  {
+   "ar": "تفاح",
+   "en": "apple",
+   "es": "manzana"
+  },
+  {
+   "ar": "موز",
+   "en": "banana",
+   "es": "plátano"
+  },
+  {
+   "ar": "برتقال",
+   "en": "orange",
+   "es": "naranja"
+  },
+  {
+   "ar": "عنب",
+   "en": "grape",
+   "es": "uva"
+  },
+  {
+   "ar": "فراولة",
+   "en": "strawberry",
+   "es": "fresa"
+  },
+  {
+   "ar": "بطيخ",
+   "en": "watermelon",
+   "es": "sandía"
+  },
+  {
+   "ar": "مانجو",
+   "en": "mango",
+   "es": "mango"
+  },
+  {
+   "ar": "أناناس",
+   "en": "pineapple",
+   "es": "piña"
+  },
+  {
+   "ar": "كمثرى",
+   "en": "pear",
+   "es": "pera"
+  },
+  {
+   "ar": "خوخ",
+   "en": "peach",
+   "es": "melocotón"
+  },
+  {
+   "ar": "مشمش",
+   "en": "apricot",
+   "es": "albaricoque"
+  },
+  {
+   "ar": "كرز",
+   "en": "cherry",
+   "es": "cereza"
+  },
+  {
+   "ar": "ليمون",
+   "en": "lemon",
+   "es": "limón"
+  },
+  {
+   "ar": "رمان",
+   "en": "pomegranate",
+   "es": "granada"
+  },
+  {
+   "ar": "تين",
+   "en": "fig",
+   "es": "higo"
+  },
+  {
+   "ar": "تمر",
+   "en": "date",
+   "es": "dátil"
+  },
+  {
+   "ar": "جوافة",
+   "en": "guava",
+   "es": "guayaba"
+  },
+  {
+   "ar": "كيوي",
+   "en": "kiwi",
+   "es": "kiwi"
+  },
+  {
+   "ar": "توت",
+   "en": "berry",
+   "es": "mora"
+  },
+  {
+   "ar": "بابايا",
+   "en": "papaya",
+   "es": "papaya"
+  },
+  {
+   "ar": "جزر",
+   "en": "carrot",
+   "es": "zanahoria"
+  },
+  {
+   "ar": "طماطم",
+   "en": "tomato",
+   "es": "tomate"
+  },
+  {
+   "ar": "خيار",
+   "en": "cucumber",
+   "es": "pepino"
+  },
+  {
+   "ar": "بصل",
+   "en": "onion",
+   "es": "cebolla"
+  },
+  {
+   "ar": "ثوم",
+   "en": "garlic",
+   "es": "ajo"
+  },
+  {
+   "ar": "بطاطس",
+   "en": "potato",
+   "es": "patata"
+  },
+  {
+   "ar": "فلفل",
+   "en": "pepper",
+   "es": "pimiento"
+  },
+  {
+   "ar": "خس",
+   "en": "lettuce",
+   "es": "lechuga"
+  },
+  {
+   "ar": "بازلاء",
+   "en": "pea",
+   "es": "guisante"
+  },
+  {
+   "ar": "ذرة",
+   "en": "corn",
+   "es": "maíz"
+  },
+  {
+   "ar": "زيتون",
+   "en": "olive",
+   "es": "aceituna"
+  },
+  {
+   "ar": "قرع",
+   "en": "pumpkin",
+   "es": "calabaza"
+  },
+  {
+   "ar": "باذنجان",
+   "en": "eggplant",
+   "es": "berenjena"
+  },
+  {
+   "ar": "كوسة",
+   "en": "zucchini",
+   "es": "calabacín"
+  },
+  {
+   "ar": "فجل",
+   "en": "radish",
+   "es": "rábano"
+  },
+  {
+   "ar": "سبانخ",
+   "en": "spinach",
+   "es": "espinaca"
+  },
+  {
+   "ar": "ملفوف",
+   "en": "cabbage",
+   "es": "repollo"
+  },
+  {
+   "ar": "بروكلي",
+   "en": "broccoli",
+   "es": "brócoli"
+  },
+  {
+   "ar": "أفوكادو",
+   "en": "avocado",
+   "es": "aguacate"
+  },
+  {
+   "ar": "نارنج",
+   "en": "lime",
+   "es": "lima"
+  }
+ ],
+ "hangman": {
+  "ar": [
+   "مدرسة",
+   "سيارة",
+   "طائرة",
+   "مكتبة",
+   "حديقة",
+   "حاسوب",
+   "قهوة",
+   "برتقال",
+   "شمس",
+   "قمر",
+   "نجمة",
+   "كرة",
+   "بحر",
+   "جبل",
+   "صحراء",
+   "مدينة",
+   "قطار",
+   "سفينة",
+   "فراشة",
+   "زرافة",
+   "تمساح",
+   "دلفين",
+   "مفتاح",
+   "مصباح",
+   "رسالة",
+   "قصيدة",
+   "حكاية",
+   "رياضة",
+   "سباحة",
+   "موسيقى",
+   "صداقة",
+   "سعادة",
+   "شجاعة",
+   "بركان",
+   "عاصفة",
+   "زلزال",
+   "نافذة",
+   "طاولة",
+   "ثلاجة",
+   "معلمة"
+  ],
+  "en": [
+   "school",
+   "planet",
+   "garden",
+   "library",
+   "computer",
+   "coffee",
+   "orange",
+   "rocket",
+   "island",
+   "desert",
+   "window",
+   "dolphin",
+   "giraffe",
+   "butterfly",
+   "mountain",
+   "river",
+   "castle",
+   "dragon",
+   "pirate",
+   "wizard",
+   "guitar",
+   "camera",
+   "pencil",
+   "rainbow",
+   "thunder",
+   "volcano",
+   "jungle",
+   "penguin",
+   "football",
+   "balloon",
+   "diamond",
+   "treasure",
+   "journey",
+   "kingdom",
+   "lantern",
+   "marble",
+   "puzzle",
+   "shadow",
+   "silver",
+   "victory"
+  ],
+  "es": [
+   "escuela",
+   "planeta",
+   "jardin",
+   "biblioteca",
+   "computadora",
+   "cafe",
+   "naranja",
+   "cohete",
+   "isla",
+   "desierto",
+   "ventana",
+   "delfin",
+   "jirafa",
+   "mariposa",
+   "montana",
+   "rio",
+   "castillo",
+   "dragon",
+   "pirata",
+   "mago",
+   "guitarra",
+   "camara",
+   "lapiz",
+   "arcoiris",
+   "trueno",
+   "volcan",
+   "selva",
+   "pinguino",
+   "futbol",
+   "globo",
+   "diamante",
+   "tesoro",
+   "viaje",
+   "reino",
+   "linterna",
+   "canica",
+   "rompecabezas",
+   "sombra",
+   "plata",
+   "victoria"
+  ]
+ }
+}

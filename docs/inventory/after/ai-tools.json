@@ -1,0 +1,1460 @@
+{
+  "tools": [
+    {
+      "id": "aio",
+      "source": "scraper",
+      "category": "Downloaders",
+      "kind": "download",
+      "inputKind": "url",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "tiktok",
+      "source": "scraper",
+      "category": "Downloaders",
+      "kind": "download",
+      "inputKind": "url",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "douyin",
+      "source": "scraper",
+      "category": "Downloaders",
+      "kind": "download",
+      "inputKind": "url",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "ig",
+      "source": "scraper",
+      "category": "Downloaders",
+      "kind": "download",
+      "inputKind": "url",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "reelsvideo",
+      "source": "scraper",
+      "category": "Downloaders",
+      "kind": "download",
+      "inputKind": "url",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "twitter",
+      "source": "scraper",
+      "category": "Downloaders",
+      "kind": "download",
+      "inputKind": "url",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "reddit",
+      "source": "scraper",
+      "category": "Downloaders",
+      "kind": "download",
+      "inputKind": "url",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "youtube",
+      "source": "scraper",
+      "category": "Downloaders",
+      "kind": "download",
+      "inputKind": "url",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "yt",
+      "source": "scraper",
+      "category": "Downloaders",
+      "kind": "download",
+      "inputKind": "url",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "ytdl",
+      "source": "scraper",
+      "category": "Downloaders",
+      "kind": "download",
+      "inputKind": "url|query",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "spotify",
+      "source": "scraper",
+      "category": "Audio",
+      "kind": "download",
+      "inputKind": "url",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "soundclouddl",
+      "source": "scraper",
+      "category": "Audio",
+      "kind": "download",
+      "inputKind": "url",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "mediafire",
+      "source": "scraper",
+      "category": "Downloaders",
+      "kind": "download",
+      "inputKind": "url",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "terabox",
+      "source": "scraper",
+      "category": "Downloaders",
+      "kind": "download",
+      "inputKind": "url",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "sfiledl",
+      "source": "scraper",
+      "category": "Downloaders",
+      "kind": "download",
+      "inputKind": "url",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "dailymotion",
+      "source": "scraper",
+      "category": "Downloaders",
+      "kind": "download",
+      "inputKind": "url",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "likee",
+      "source": "scraper",
+      "category": "Downloaders",
+      "kind": "download",
+      "inputKind": "url",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "rednote",
+      "source": "scraper",
+      "category": "Downloaders",
+      "kind": "download",
+      "inputKind": "url",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "pindl",
+      "source": "scraper",
+      "category": "Downloaders",
+      "kind": "download",
+      "inputKind": "url",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "google",
+      "source": "scraper",
+      "category": "Search",
+      "kind": "search",
+      "inputKind": "query",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "tiktoksearch",
+      "source": "scraper",
+      "category": "Search",
+      "kind": "search",
+      "inputKind": "query",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "soundcloud",
+      "source": "scraper",
+      "category": "Audio",
+      "kind": "search",
+      "inputKind": "query",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "wallpapersearch",
+      "source": "scraper",
+      "category": "Image",
+      "kind": "search",
+      "inputKind": "query",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "konachan",
+      "source": "scraper",
+      "category": "Anime-Games",
+      "kind": "search",
+      "inputKind": "query",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "kusonime",
+      "source": "scraper",
+      "category": "Anime-Games",
+      "kind": "search",
+      "inputKind": "query",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "dramabox",
+      "source": "scraper",
+      "category": "Search",
+      "kind": "search",
+      "inputKind": "query",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "shinigami",
+      "source": "scraper",
+      "category": "Anime-Games",
+      "kind": "search",
+      "inputKind": "query",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "dafont",
+      "source": "scraper",
+      "category": "Search",
+      "kind": "search",
+      "inputKind": "query",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "gsmarena",
+      "source": "scraper",
+      "category": "Search",
+      "kind": "info",
+      "inputKind": "query",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "hokinfo",
+      "source": "scraper",
+      "category": "Anime-Games",
+      "kind": "info",
+      "inputKind": "name",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "wwchar",
+      "source": "scraper",
+      "category": "Anime-Games",
+      "kind": "info",
+      "inputKind": "name",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "txt2img2",
+      "source": "scraper",
+      "category": "Image",
+      "kind": "image-generate",
+      "inputKind": "prompt",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "seaart",
+      "source": "scraper",
+      "category": "Image",
+      "kind": "image-generate",
+      "inputKind": "prompt",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "deepai-scraper",
+      "source": "scraper",
+      "category": "Image",
+      "kind": "image-generate",
+      "inputKind": "prompt",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "txt2img",
+      "source": "scraper",
+      "category": "Image",
+      "kind": "image-generate",
+      "inputKind": "prompt",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "img2img",
+      "source": "scraper",
+      "category": "Image",
+      "kind": "image-edit",
+      "inputKind": "image+prompt",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "removebackground",
+      "source": "scraper",
+      "category": "Image",
+      "kind": "image-edit",
+      "inputKind": "image",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "img2prompt",
+      "source": "scraper",
+      "category": "Image",
+      "kind": "image-edit",
+      "inputKind": "image",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "hd",
+      "source": "scraper",
+      "category": "Image",
+      "kind": "image-enhance",
+      "inputKind": "image",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "upscaler",
+      "source": "scraper",
+      "category": "Image",
+      "kind": "image-enhance",
+      "inputKind": "image",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "imglarger",
+      "source": "scraper",
+      "category": "Image",
+      "kind": "image-enhance",
+      "inputKind": "image",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "wink",
+      "source": "scraper",
+      "category": "Video",
+      "kind": "video-enhance",
+      "inputKind": "video",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "hdvid",
+      "source": "scraper",
+      "category": "Video",
+      "kind": "video-enhance",
+      "inputKind": "video",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "hdvid2",
+      "source": "scraper",
+      "category": "Video",
+      "kind": "video-enhance",
+      "inputKind": "video",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "imgdrop",
+      "source": "scraper",
+      "category": "Utility",
+      "kind": "upload",
+      "inputKind": "image",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "videy",
+      "source": "scraper",
+      "category": "Utility",
+      "kind": "upload",
+      "inputKind": "video",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "mconverter",
+      "source": "scraper",
+      "category": "Utility",
+      "kind": "convert",
+      "inputKind": "file",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "tempmail",
+      "source": "scraper",
+      "category": "Utility",
+      "kind": "utility",
+      "inputKind": "none",
+      "permission": "public",
+      "modelVisible": true
+    },
+    {
+      "id": "topmedia",
+      "source": "scraper",
+      "category": "Audio",
+      "kind": "tts",
+      "inputKind": "prompt",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "lufemboy",
+      "source": "scraper",
+      "category": "Anime-Games",
+      "kind": "fun",
+      "inputKind": "name",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "gemini",
+      "source": "scraper",
+      "category": "AI",
+      "kind": "chat",
+      "inputKind": "prompt",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "geminiVision",
+      "source": "scraper",
+      "category": "AI",
+      "kind": "chat",
+      "inputKind": "prompt",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "gpt5",
+      "source": "scraper",
+      "category": "AI",
+      "kind": "chat",
+      "inputKind": "prompt",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "gpt52",
+      "source": "scraper",
+      "category": "AI",
+      "kind": "chat",
+      "inputKind": "prompt",
+      "permission": "owner",
+      "modelVisible": false
+    },
+    {
+      "id": "deepseek",
+      "source": "scraper",
+      "category": "AI",
+      "kind": "chat",
+      "inputKind": "prompt",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "claudehaiku",
+      "source": "scraper",
+      "category": "AI",
+      "kind": "chat",
+      "inputKind": "prompt",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "qwen3",
+      "source": "scraper",
+      "category": "AI",
+      "kind": "chat",
+      "inputKind": "prompt",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "multiAI",
+      "source": "scraper",
+      "category": "AI",
+      "kind": "chat",
+      "inputKind": "prompt",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "logic-bell",
+      "source": "scraper",
+      "category": "AI",
+      "kind": "chat",
+      "inputKind": "prompt",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "chatday",
+      "source": "scraper",
+      "category": "AI",
+      "kind": "chat",
+      "inputKind": "prompt",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "unlimitedai",
+      "source": "scraper",
+      "category": "AI",
+      "kind": "chat",
+      "inputKind": "prompt",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "feeb",
+      "source": "scraper",
+      "category": "AI",
+      "kind": "chat",
+      "inputKind": "prompt",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "manus-agent",
+      "source": "scraper",
+      "category": "AI",
+      "kind": "agent",
+      "inputKind": "prompt",
+      "permission": "owner",
+      "modelVisible": false
+    },
+    {
+      "id": "image.describe",
+      "source": "local",
+      "category": "Image",
+      "kind": "image",
+      "inputKind": "image",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "image.ocr",
+      "source": "local",
+      "category": "Image",
+      "kind": "image",
+      "inputKind": "image",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "image.edit",
+      "source": "scraper",
+      "category": "Image",
+      "kind": "image-edit",
+      "inputKind": "image+prompt",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "image.generate",
+      "source": "scraper",
+      "category": "Image",
+      "kind": "image-generate",
+      "inputKind": "prompt",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "image.upscale",
+      "source": "scraper",
+      "category": "Image",
+      "kind": "image-enhance",
+      "inputKind": "image",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "image.remove_background",
+      "source": "scraper",
+      "category": "Image",
+      "kind": "image-edit",
+      "inputKind": "image",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "audio.transcribe",
+      "source": "local",
+      "category": "Audio",
+      "kind": "audio",
+      "inputKind": "audio",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "audio.tts",
+      "source": "local",
+      "category": "Audio",
+      "kind": "audio",
+      "inputKind": "text",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "video.inspect",
+      "source": "local",
+      "category": "Video",
+      "kind": "video",
+      "inputKind": "video",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "video.transcribe",
+      "source": "local",
+      "category": "Video",
+      "kind": "video",
+      "inputKind": "video",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "video.keyframes",
+      "source": "local",
+      "category": "Video",
+      "kind": "video",
+      "inputKind": "video",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "document.extract",
+      "source": "local",
+      "category": "Documents",
+      "kind": "document",
+      "inputKind": "file",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "document.summarize",
+      "source": "local",
+      "category": "Documents",
+      "kind": "document",
+      "inputKind": "file",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "file.inspect",
+      "source": "local",
+      "category": "Utility",
+      "kind": "file",
+      "inputKind": "file",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "group.members",
+      "source": "local",
+      "category": "Utility",
+      "kind": "group",
+      "inputKind": "",
+      "permission": "public",
+      "modelVisible": false
+    },
+    {
+      "id": "vps.list",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "vps",
+      "inputKind": "none",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "vps.info",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "vps",
+      "inputKind": "vps",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "vps.start",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "vps",
+      "inputKind": "vps",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "vps.stop",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "vps",
+      "inputKind": "vps",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "vps.restart",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "vps",
+      "inputKind": "vps",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "vps.poweroff",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "vps",
+      "inputKind": "vps",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "vps.hostname",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "vps",
+      "inputKind": "vps",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "vps.password",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "vps",
+      "inputKind": "vps",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "vps.reinstall",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "vps",
+      "inputKind": "vps",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "vps.services",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "vps",
+      "inputKind": "vps",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "vps.vnc",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "vps",
+      "inputKind": "vps",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "vps.backups",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "vps",
+      "inputKind": "vps",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "vps.restore",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "vps",
+      "inputKind": "vps",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "vps.plans",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "plans",
+      "inputKind": "none",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "panel.list",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "panel",
+      "inputKind": "none",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "panel.add",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "panel",
+      "inputKind": "none",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "panel.test",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "panel",
+      "inputKind": "panel",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "panel.servers",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "panel",
+      "inputKind": "panel",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "panel.server.info",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "panel",
+      "inputKind": "panel+server",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "panel.power",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "panel",
+      "inputKind": "panel+server",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "panel.resources",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "panel",
+      "inputKind": "panel+server",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "panel.console",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "panel",
+      "inputKind": "panel+server",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "panel.files",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "panel",
+      "inputKind": "panel+server",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "panel.backups",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "panel",
+      "inputKind": "panel+server",
+      "permission": "resource-owner",
+      "modelVisible": false
+    },
+    {
+      "id": "panel.databases",
+      "source": "cloud",
+      "category": "Utility",
+      "kind": "panel",
+      "inputKind": "panel+server",
+      "permission": "resource-owner",
+      "modelVisible": false
+    }
+  ],
+  "scraperFiles": [
+    "src/scraper/aio.js",
+    "src/scraper/chatday.js",
+    "src/scraper/claudehaiku.js",
+    "src/scraper/dafont.js",
+    "src/scraper/dailymotion.js",
+    "src/scraper/deepai-scraper.js",
+    "src/scraper/deepseek.js",
+    "src/scraper/douyin.js",
+    "src/scraper/dramabox.js",
+    "src/scraper/feeb.js",
+    "src/scraper/gemini.js",
+    "src/scraper/geminiVision.js",
+    "src/scraper/google.js",
+    "src/scraper/gpt5.js",
+    "src/scraper/gpt52.js",
+    "src/scraper/gsmarena.js",
+    "src/scraper/hd.js",
+    "src/scraper/hdvid.js",
+    "src/scraper/hdvid2.js",
+    "src/scraper/hokinfo.js",
+    "src/scraper/ig.js",
+    "src/scraper/img2img.js",
+    "src/scraper/img2prompt.js",
+    "src/scraper/imgdrop.js",
+    "src/scraper/imglarger.js",
+    "src/scraper/konachan.js",
+    "src/scraper/kusonime.js",
+    "src/scraper/likee.js",
+    "src/scraper/logic-bell.js",
+    "src/scraper/lufemboy.js",
+    "src/scraper/manus-agent.js",
+    "src/scraper/mconverter.js",
+    "src/scraper/mediafire.js",
+    "src/scraper/multiAI.js",
+    "src/scraper/pindl.js",
+    "src/scraper/qwen3.js",
+    "src/scraper/reddit.js",
+    "src/scraper/rednote.js",
+    "src/scraper/reelsvideo.js",
+    "src/scraper/removebackground.js",
+    "src/scraper/seaart.js",
+    "src/scraper/sfiledl.js",
+    "src/scraper/shinigami.js",
+    "src/scraper/soundcloud.js",
+    "src/scraper/soundclouddl.js",
+    "src/scraper/spotify.js",
+    "src/scraper/tempmail.js",
+    "src/scraper/terabox.js",
+    "src/scraper/tiktok.js",
+    "src/scraper/tiktoksearch.js",
+    "src/scraper/topmedia.js",
+    "src/scraper/twitter.js",
+    "src/scraper/txt2img.js",
+    "src/scraper/txt2img2.js",
+    "src/scraper/unlimitedai.js",
+    "src/scraper/upscaler.js",
+    "src/scraper/videy.js",
+    "src/scraper/wallpapersearch.js",
+    "src/scraper/wink.js",
+    "src/scraper/wwchar.js",
+    "src/scraper/youtube.js",
+    "src/scraper/yt.js",
+    "src/scraper/ytdl.js"
+  ],
+  "registeredScrapers": [
+    {
+      "id": "aio",
+      "kind": "download",
+      "input": "url",
+      "plugins": [
+        "plugins/downloader/aio.js"
+      ]
+    },
+    {
+      "id": "tiktok",
+      "kind": "download",
+      "input": "url",
+      "plugins": [
+        "plugins/downloader/تيك_صوت.js",
+        "plugins/downloader/تيكتوك.js"
+      ]
+    },
+    {
+      "id": "douyin",
+      "kind": "download",
+      "input": "url",
+      "plugins": []
+    },
+    {
+      "id": "ig",
+      "kind": "download",
+      "input": "url",
+      "plugins": []
+    },
+    {
+      "id": "reelsvideo",
+      "kind": "download",
+      "input": "url",
+      "plugins": []
+    },
+    {
+      "id": "twitter",
+      "kind": "download",
+      "input": "url",
+      "plugins": []
+    },
+    {
+      "id": "reddit",
+      "kind": "download",
+      "input": "url",
+      "plugins": []
+    },
+    {
+      "id": "youtube",
+      "kind": "download",
+      "input": "url",
+      "plugins": []
+    },
+    {
+      "id": "yt",
+      "kind": "download",
+      "input": "url",
+      "plugins": []
+    },
+    {
+      "id": "ytdl",
+      "kind": "download",
+      "input": "url|query",
+      "plugins": [
+        "plugins/downloader/يوت_صوت.js",
+        "plugins/downloader/يوت_فيديو.js",
+        "plugins/search/playch.js",
+        "plugins/search/شغل.js"
+      ]
+    },
+    {
+      "id": "spotify",
+      "kind": "download",
+      "input": "url",
+      "plugins": [
+        "plugins/downloader/سبوتيفاي_تحميل.js"
+      ]
+    },
+    {
+      "id": "soundclouddl",
+      "kind": "download",
+      "input": "url",
+      "plugins": [
+        "plugins/downloader/ساوند_تحميل.js",
+        "plugins/search/ساوند_تحميل.js"
+      ]
+    },
+    {
+      "id": "mediafire",
+      "kind": "download",
+      "input": "url",
+      "plugins": [
+        "plugins/downloader/ميديا_فاير.js"
+      ]
+    },
+    {
+      "id": "terabox",
+      "kind": "download",
+      "input": "url",
+      "plugins": []
+    },
+    {
+      "id": "sfiledl",
+      "kind": "download",
+      "input": "url",
+      "plugins": []
+    },
+    {
+      "id": "dailymotion",
+      "kind": "download",
+      "input": "url",
+      "plugins": [
+        "plugins/downloader/ديليموشن.js"
+      ]
+    },
+    {
+      "id": "likee",
+      "kind": "download",
+      "input": "url",
+      "plugins": [
+        "plugins/downloader/لايكي.js"
+      ]
+    },
+    {
+      "id": "rednote",
+      "kind": "download",
+      "input": "url",
+      "plugins": [
+        "plugins/downloader/ريد_نوت.js"
+      ]
+    },
+    {
+      "id": "pindl",
+      "kind": "download",
+      "input": "url",
+      "plugins": []
+    },
+    {
+      "id": "google",
+      "kind": "search",
+      "input": "query",
+      "plugins": []
+    },
+    {
+      "id": "tiktoksearch",
+      "kind": "search",
+      "input": "query",
+      "plugins": [
+        "plugins/downloader/تيكتوك.js",
+        "plugins/search/تيك_البوم.js"
+      ]
+    },
+    {
+      "id": "soundcloud",
+      "kind": "search",
+      "input": "query",
+      "plugins": [
+        "plugins/search/ساوند_تحميل.js"
+      ]
+    },
+    {
+      "id": "wallpapersearch",
+      "kind": "search",
+      "input": "query",
+      "plugins": []
+    },
+    {
+      "id": "konachan",
+      "kind": "search",
+      "input": "query",
+      "plugins": []
+    },
+    {
+      "id": "kusonime",
+      "kind": "search",
+      "input": "query",
+      "plugins": []
+    },
+    {
+      "id": "dramabox",
+      "kind": "search",
+      "input": "query",
+      "plugins": []
+    },
+    {
+      "id": "shinigami",
+      "kind": "search",
+      "input": "query",
+      "plugins": [
+        "plugins/downloader/مانهوا.js"
+      ]
+    },
+    {
+      "id": "dafont",
+      "kind": "search",
+      "input": "query",
+      "plugins": [
+        "plugins/tools/دافونت.js"
+      ]
+    },
+    {
+      "id": "gsmarena",
+      "kind": "info",
+      "input": "query",
+      "plugins": []
+    },
+    {
+      "id": "hokinfo",
+      "kind": "info",
+      "input": "name",
+      "plugins": []
+    },
+    {
+      "id": "wwchar",
+      "kind": "info",
+      "input": "name",
+      "plugins": []
+    },
+    {
+      "id": "txt2img2",
+      "kind": "image-generate",
+      "input": "prompt",
+      "plugins": [
+        "plugins/ai/تخيل.js"
+      ]
+    },
+    {
+      "id": "seaart",
+      "kind": "image-generate",
+      "input": "prompt",
+      "plugins": [
+        "plugins/ai/3d.js",
+        "plugins/ai/تشميع.js",
+        "plugins/ai/جزيرة.js",
+        "plugins/ai/كيوت.js",
+        "plugins/ai/لاسود.js",
+        "plugins/ai/لانعكاس.js",
+        "plugins/ai/لانمي.js",
+        "plugins/ai/لكرتوني.js",
+        "plugins/ai/لمانغا.js",
+        "plugins/ai/مجسم3.js",
+        "plugins/ai/نانوبنانا.js",
+        "plugins/ai/نانوبنانا2.js"
+      ]
+    },
+    {
+      "id": "deepai-scraper",
+      "kind": "image-generate",
+      "input": "prompt",
+      "plugins": [
+        "plugins/ai/deepai.js"
+      ]
+    },
+    {
+      "id": "txt2img",
+      "kind": "image-generate",
+      "input": "prompt",
+      "plugins": []
+    },
+    {
+      "id": "img2img",
+      "kind": "image-edit",
+      "input": "image+prompt",
+      "plugins": []
+    },
+    {
+      "id": "removebackground",
+      "kind": "image-edit",
+      "input": "image",
+      "plugins": [
+        "plugins/tools/إزالة_الخلفية.js"
+      ]
+    },
+    {
+      "id": "img2prompt",
+      "kind": "image-edit",
+      "input": "image",
+      "plugins": [
+        "plugins/tools/صورة_لنص.js"
+      ]
+    },
+    {
+      "id": "hd",
+      "kind": "image-enhance",
+      "input": "image",
+      "plugins": [
+        "plugins/tools/تحسين_الصورة_2.js"
+      ]
+    },
+    {
+      "id": "upscaler",
+      "kind": "image-enhance",
+      "input": "image",
+      "plugins": []
+    },
+    {
+      "id": "imglarger",
+      "kind": "image-enhance",
+      "input": "image",
+      "plugins": []
+    },
+    {
+      "id": "wink",
+      "kind": "video-enhance",
+      "input": "video",
+      "plugins": [
+        "plugins/tools/رفع_جودة2.js"
+      ]
+    },
+    {
+      "id": "hdvid",
+      "kind": "video-enhance",
+      "input": "video",
+      "plugins": []
+    },
+    {
+      "id": "hdvid2",
+      "kind": "video-enhance",
+      "input": "video",
+      "plugins": []
+    },
+    {
+      "id": "imgdrop",
+      "kind": "upload",
+      "input": "image",
+      "plugins": [
+        "plugins/tools/لرابط.js"
+      ]
+    },
+    {
+      "id": "videy",
+      "kind": "upload",
+      "input": "video",
+      "plugins": []
+    },
+    {
+      "id": "mconverter",
+      "kind": "convert",
+      "input": "file",
+      "plugins": [
+        "plugins/tools/محول.js"
+      ]
+    },
+    {
+      "id": "tempmail",
+      "kind": "utility",
+      "input": "none",
+      "plugins": [
+        "plugins/tools/بريد_مؤقت.js"
+      ]
+    },
+    {
+      "id": "topmedia",
+      "kind": "tts",
+      "input": "prompt",
+      "plugins": []
+    },
+    {
+      "id": "lufemboy",
+      "kind": "fun",
+      "input": "name",
+      "plugins": [
+        "plugins/cek/تحقق_المخنث.js"
+      ]
+    },
+    {
+      "id": "gemini",
+      "kind": "chat",
+      "input": "prompt",
+      "plugins": [
+        "plugins/ai/ai.js"
+      ]
+    },
+    {
+      "id": "geminiVision",
+      "kind": "chat",
+      "input": "prompt",
+      "plugins": []
+    },
+    {
+      "id": "gpt5",
+      "kind": "chat",
+      "input": "prompt",
+      "plugins": [
+        "plugins/ai/جيبيتي5.js"
+      ]
+    },
+    {
+      "id": "gpt52",
+      "kind": "chat",
+      "input": "prompt",
+      "plugins": []
+    },
+    {
+      "id": "deepseek",
+      "kind": "chat",
+      "input": "prompt",
+      "plugins": [
+        "plugins/ai/ديب_سيك.js"
+      ]
+    },
+    {
+      "id": "claudehaiku",
+      "kind": "chat",
+      "input": "prompt",
+      "plugins": [
+        "plugins/ai/كلود.js"
+      ]
+    },
+    {
+      "id": "qwen3",
+      "kind": "chat",
+      "input": "prompt",
+      "plugins": [
+        "plugins/ai/كوين.js"
+      ]
+    },
+    {
+      "id": "multiAI",
+      "kind": "chat",
+      "input": "prompt",
+      "plugins": [
+        "plugins/ai/سنوai.js"
+      ]
+    },
+    {
+      "id": "logic-bell",
+      "kind": "chat",
+      "input": "prompt",
+      "plugins": []
+    },
+    {
+      "id": "chatday",
+      "kind": "chat",
+      "input": "prompt",
+      "plugins": [
+        "plugins/ai/شاتai.js"
+      ]
+    },
+    {
+      "id": "unlimitedai",
+      "kind": "chat",
+      "input": "prompt",
+      "plugins": [
+        "plugins/ai/تيربو.js",
+        "plugins/ai/واجوري.js"
+      ]
+    },
+    {
+      "id": "feeb",
+      "kind": "chat",
+      "input": "prompt",
+      "plugins": [
+        "plugins/ai/فضفضة.js"
+      ]
+    },
+    {
+      "id": "manus-agent",
+      "kind": "agent",
+      "input": "prompt",
+      "plugins": []
+    }
+  ]
+}
