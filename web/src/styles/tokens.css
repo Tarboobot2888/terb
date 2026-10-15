@@ -1,0 +1,141 @@
+/* ═══════════════════════════════════════════════
+   Bot Terboo Web — رموز التصميم (Cyber Sentinel / Neon Shinobi)
+   ───────────────────────────────────────────────
+   الأساس أسود بركاني وغرافيت، والإضاءة بنفسجية كهربائية، وcyan إشارة
+   ثانوية، وmagenta باعتدال. الذهبي للبريميوم/المالك فقط، والأخضر للنجاح،
+   والأحمر للتحذير والحظر. لا يتوهّج كل مكوّن: التوهّج للتأكيد وحده.
+   الخطوط محلية من assets/fonts/terboo — بلا أي طلب لخدمة خطوط خارجية.
+   ═══════════════════════════════════════════════ */
+
+@font-face {
+  font-family: "Terboo Sans";
+  src: url("/brand/fonts/PlusJakartaSans-Regular.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Terboo Sans";
+  src: url("/brand/fonts/PlusJakartaSans-SemiBold.ttf") format("truetype");
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Terboo Sans";
+  src: url("/brand/fonts/PlusJakartaSans-Bold.ttf") format("truetype");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Terboo Sans";
+  src: url("/brand/fonts/PlusJakartaSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Terboo Arabic";
+  src: url("/brand/fonts/Cairo-Regular.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Terboo Arabic";
+  src: url("/brand/fonts/Cairo-SemiBold.ttf") format("truetype");
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Terboo Arabic";
+  src: url("/brand/fonts/Cairo-Bold.ttf") format("truetype");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Terboo Mono";
+  src: url("/brand/fonts/JetBrainsMono-Regular.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Terboo Display";
+  src: url("/brand/fonts/Anton-Regular.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+
+:root {
+  /* ── الأساس ── */
+  --obsidian: #07060c;
+  --obsidian-2: #0b0a13;
+  --graphite: #13121d;
+  --graphite-2: #1b1a28;
+  --graphite-3: #242334;
+  --hairline: #2e2d41;
+
+  /* ── الإضاءة الأساسية: بنفسجي كهربائي ── */
+  --violet: #7c3aed;
+  --violet-bright: #9f67ff;
+  --violet-dim: #4c1d95;
+
+  /* ── إشارة ثانوية ── */
+  --cyan: #22d3ee;
+  --cyan-dim: #0e7490;
+
+  /* ── باعتدال شديد: للتأكيد النادر فقط ── */
+  --magenta: #e879f9;
+
+  /* ── دلالات ── */
+  --gold: #f5b942;      /* بريميوم · مالك · فائز فقط */
+  --success: #34d399;
+  --warning: #fbbf24;
+  --danger: #f87171;
+
+  /* ── النص ── */
+  --ink: #f4f3f8;
+  --ink-2: #c9c7d6;
+  --ink-3: #9794ab;
+  --ink-4: #6e6b82;
+
+  /* ── الأسطح ── */
+  --surface: color-mix(in srgb, var(--graphite) 92%, var(--violet) 8%);
+  --surface-raised: color-mix(in srgb, var(--graphite-2) 90%, var(--violet) 10%);
+  --glass: color-mix(in srgb, var(--graphite) 72%, transparent);
+
+  /* ── الحركة: مدد قصيرة ومنحنيات واحدة ── */
+  --t-fast: 120ms;
+  --t-base: 220ms;
+  --t-slow: 420ms;
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ── الشكل ── */
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 18px;
+  --r-xl: 26px;
+  --r-pill: 999px;
+
+  /* ── الظل والتوهّج (محدود الاستعمال) ── */
+  --shadow-1: 0 1px 2px rgb(0 0 0 / 0.4);
+  --shadow-2: 0 8px 24px -8px rgb(0 0 0 / 0.6);
+  --shadow-3: 0 24px 60px -20px rgb(0 0 0 / 0.7);
+  --glow-violet: 0 0 0 1px color-mix(in srgb, var(--violet) 40%, transparent),
+                 0 8px 32px -12px color-mix(in srgb, var(--violet) 55%, transparent);
+  --glow-cyan: 0 0 0 1px color-mix(in srgb, var(--cyan) 35%, transparent),
+               0 8px 28px -14px color-mix(in srgb, var(--cyan) 45%, transparent);
+
+  /* ── المقاييس ── */
+  --gutter: 16px;
+  --sidebar: 268px;
+  --sidebar-collapsed: 72px;
+  --topbar: 64px;
+
+  --font-sans: "Terboo Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-arabic: "Terboo Arabic", "Terboo Sans", system-ui, sans-serif;
+  --font-mono: "Terboo Mono", ui-monospace, "SFMono-Regular", monospace;
+  --font-display: "Terboo Display", var(--font-sans);
+}
+
+/* اللغة العربية: خط عربي أولاً */
+html[lang="ar"] { --font-sans: "Terboo Arabic", "Terboo Sans", system-ui, sans-serif; }
+
+/* احترام تقليل الحركة: لا حركة إطلاقاً، والمحتوى يظهر مباشرة */
+@media (prefers-reduced-motion: reduce) {
+  :root { --t-fast: 1ms; --t-base: 1ms; --t-slow: 1ms; }
+  *, *::before, *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
+  }
+}

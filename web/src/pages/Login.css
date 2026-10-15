@@ -1,0 +1,9 @@
+.auth { min-height: 100dvh; display: grid; place-items: center; padding: 28px var(--gutter); }
+.auth__panel { width: min(100%, 440px); display: grid; gap: 20px; padding: 26px; animation: rise var(--t-base) var(--ease-out) both; }
+.auth__head { display: flex; align-items: center; gap: 13px; }
+.auth__title { font-size: 1.35rem; }
+.auth__phone { display: grid; grid-template-columns: minmax(118px, 42%) 1fr; gap: 8px; }
+.auth__dial { min-width: 0; }
+.auth__code { font-size: 1.5rem; letter-spacing: 0.4em; text-align: center; font-family: var(--font-mono); }
+.auth__foot { text-align: center; border-top: 1px solid var(--hairline); padding-top: 14px; }
+@media (max-width: 420px) { .auth__phone { grid-template-columns: 1fr; } }

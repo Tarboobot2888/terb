@@ -18,7 +18,12 @@
     "benchmark:compare": "node tools/terboo-benchmark-compare.mjs",
     "brand:assets": "node tools/terboo-brand-assets.mjs",
     "audit:strict": "node tools/terboo-audit.mjs --strict",
-    "ui:matrix": "node tools/terboo-command-ui-matrix.mjs"
+    "ui:matrix": "node tools/terboo-command-ui-matrix.mjs",
+    "web:install": "npm --prefix web ci",
+    "web:build": "npm --prefix web run build",
+    "web:dev": "npm --prefix web run dev",
+    "web:typecheck": "npm --prefix web run typecheck",
+    "test:web": "node tools/terboo-run-tests.mjs --only web-"
   },
   "keywords": [
     "whatsapp",

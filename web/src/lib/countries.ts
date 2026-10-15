@@ -1,0 +1,36 @@
+// قائمة دول مختصرة لاختيار كود الاتصال. الصيغة النهائية E.164 والتحقق على الخادم
+// (normalizePhone في terboo-identity.js) — هذه القائمة للعرض فقط.
+export type Country = { code: string; dial: string; flag: string; ar: string; en: string };
+
+export const COUNTRIES: Country[] = [
+  { code: "EG", dial: "+20", flag: "🇪🇬", ar: "مصر", en: "Egypt" },
+  { code: "SA", dial: "+966", flag: "🇸🇦", ar: "السعودية", en: "Saudi Arabia" },
+  { code: "AE", dial: "+971", flag: "🇦🇪", ar: "الإمارات", en: "UAE" },
+  { code: "MA", dial: "+212", flag: "🇲🇦", ar: "المغرب", en: "Morocco" },
+  { code: "DZ", dial: "+213", flag: "🇩🇿", ar: "الجزائر", en: "Algeria" },
+  { code: "TN", dial: "+216", flag: "🇹🇳", ar: "تونس", en: "Tunisia" },
+  { code: "LY", dial: "+218", flag: "🇱🇾", ar: "ليبيا", en: "Libya" },
+  { code: "SD", dial: "+249", flag: "🇸🇩", ar: "السودان", en: "Sudan" },
+  { code: "IQ", dial: "+964", flag: "🇮🇶", ar: "العراق", en: "Iraq" },
+  { code: "JO", dial: "+962", flag: "🇯🇴", ar: "الأردن", en: "Jordan" },
+  { code: "PS", dial: "+970", flag: "🇵🇸", ar: "فلسطين", en: "Palestine" },
+  { code: "LB", dial: "+961", flag: "🇱🇧", ar: "لبنان", en: "Lebanon" },
+  { code: "SY", dial: "+963", flag: "🇸🇾", ar: "سوريا", en: "Syria" },
+  { code: "YE", dial: "+967", flag: "🇾🇪", ar: "اليمن", en: "Yemen" },
+  { code: "KW", dial: "+965", flag: "🇰🇼", ar: "الكويت", en: "Kuwait" },
+  { code: "QA", dial: "+974", flag: "🇶🇦", ar: "قطر", en: "Qatar" },
+  { code: "BH", dial: "+973", flag: "🇧🇭", ar: "البحرين", en: "Bahrain" },
+  { code: "OM", dial: "+968", flag: "🇴🇲", ar: "عمان", en: "Oman" },
+  { code: "TR", dial: "+90", flag: "🇹🇷", ar: "تركيا", en: "Türkiye" },
+  { code: "ID", dial: "+62", flag: "🇮🇩", ar: "إندونيسيا", en: "Indonesia" },
+  { code: "MY", dial: "+60", flag: "🇲🇾", ar: "ماليزيا", en: "Malaysia" },
+  { code: "PK", dial: "+92", flag: "🇵🇰", ar: "باكستان", en: "Pakistan" },
+  { code: "IN", dial: "+91", flag: "🇮🇳", ar: "الهند", en: "India" },
+  { code: "GB", dial: "+44", flag: "🇬🇧", ar: "بريطانيا", en: "United Kingdom" },
+  { code: "US", dial: "+1", flag: "🇺🇸", ar: "أمريكا", en: "United States" },
+  { code: "DE", dial: "+49", flag: "🇩🇪", ar: "ألمانيا", en: "Germany" },
+  { code: "FR", dial: "+33", flag: "🇫🇷", ar: "فرنسا", en: "France" },
+  { code: "ES", dial: "+34", flag: "🇪🇸", ar: "إسبانيا", en: "Spain" },
+  { code: "BR", dial: "+55", flag: "🇧🇷", ar: "البرازيل", en: "Brazil" },
+  { code: "NG", dial: "+234", flag: "🇳🇬", ar: "نيجيريا", en: "Nigeria" },
+];

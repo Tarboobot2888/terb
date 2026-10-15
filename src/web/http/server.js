@@ -257,6 +257,38 @@ function resolveStatic(root, pathname) {
  * ينشئ خادم الموقع.
  * @param {{router:Object, staticRoot?:string, onReady?:Function}} input
  */
+/**
+ * أصول الهوية تُقدَّم من assets/ كما هي، بلا نسخ ولا إعادة تسمية:
+ *   /brand/<name>          ⇒ assets/image/<name>
+ *   /brand/sections/<name> ⇒ assets/image/sections/<name>
+ *   /brand/fonts/<name>    ⇒ assets/fonts/terboo/<name>
+ * المجلدات المسموحة فقط، وبنفس حماية اجتياز المسار والامتدادات المعروفة.
+ * لا شيء خارج هذه الثلاثة يُقدَّم (لا database ولا session ولا config ولا tmp).
+ */
+const BRAND_ROOTS = Object.freeze({
+  "sections/": path.join("assets", "image", "sections"),
+  "shuffle/": path.join("assets", "image", "shuffle"),
+  "ui/": path.join("assets", "image", "ui"),
+  "cards/": path.join("assets", "image", "cards"),
+  "fonts/": path.join("assets", "fonts", "terboo"),
+  "": path.join("assets", "image"),
+});
+
+/** يحلّ مسار /brand/... إلى ملف داخل assets/ أو null */
+function resolveBrandAsset(pathname) {
+  const rest = pathname.slice("/brand/".length);
+  if (!rest || rest.includes("\0")) return null;
+  for (const [prefix, root] of Object.entries(BRAND_ROOTS)) {
+    if (prefix && !rest.startsWith(prefix)) continue;
+    const name = prefix ? rest.slice(prefix.length) : rest;
+    // اسم ملف واحد بلا أي مسار: يُقصى الاجتياز قبل أي عمل على نظام الملفات
+    if (!name || name.includes("/") || name.includes("\\") || name.startsWith(".")) continue;
+    const asset = resolveStatic(path.join(process.cwd(), root), `/${name}`);
+    if (asset) return asset;
+  }
+  return null;
+}
+
 function createWebServer({ router, staticRoot = "" }) {
   const site = websiteConfig();
   const origins = allowedOrigins(site);
@@ -386,8 +418,23 @@ function createWebServer({ router, staticRoot = "" }) {
         return;
       }
 
-      // ⑦ ملفات الواجهة
+      // ⑦ أصول الهوية من assets/ (قراءة فقط، مجلدات مسموحة فقط)
       if (ctx.method !== "GET" && ctx.method !== "HEAD") throw apiError("METHOD_NOT_ALLOWED");
+      if (pathname.startsWith("/brand/")) {
+        const brandAsset = resolveBrandAsset(pathname);
+        if (!brandAsset) throw apiError("NOT_FOUND");
+        res.writeHead(200, {
+          "Content-Type": brandAsset.type,
+          "Content-Length": String(brandAsset.size),
+          // الأصول الأصلية ثابتة: تخزين طويل بلا بصمة في الاسم ⇒ must-revalidate
+          "Cache-Control": "public, max-age=86400, must-revalidate",
+        });
+        if (ctx.method === "HEAD") { res.end(); return; }
+        fs.createReadStream(brandAsset.file).on("error", () => res.end()).pipe(res);
+        return;
+      }
+
+      // ⑧ ملفات الواجهة
       const asset = resolveStatic(staticRoot, pathname);
       if (asset) {
         const etag = `W/"${asset.size.toString(16)}-${Math.floor(asset.mtime).toString(16)}"`;
@@ -408,7 +455,11 @@ function createWebServer({ router, staticRoot = "" }) {
         return;
       }
 
-      // ⑧ تطبيق صفحة واحدة: أي مسار غير معروف ⇒ index.html (لا مسارات /api)
+      // ⑨ تطبيق صفحة واحدة: مسار تطبيق ⇒ index.html.
+      // مسار يحمل امتداد ملف ولم يطابق أصلاً حقيقياً ⇒ 404 لا هيكل التطبيق:
+      // الرد بـ200 على «/.env» أو «/database/main/users.json» لا يسرّب شيئاً
+      // (الأصول محصورة في جذرين) لكنه يوحي بوجود الملف ويخفي الحقيقة.
+      if (/\.[a-z0-9]{1,8}$/i.test(pathname)) throw apiError("NOT_FOUND");
       const shell = resolveStatic(staticRoot, "/index.html");
       if (shell) {
         res.writeHead(200, { "Content-Type": shell.type, "Cache-Control": "no-cache" });
@@ -459,4 +510,4 @@ function createWebServer({ router, staticRoot = "" }) {
   return http.createServer(listener);
 }
 
-export { allowedOrigins, clientIp, createRouter, createWebServer, parseJson, readBody, resolveStatic, securityHeaders };
+export { BRAND_ROOTS, allowedOrigins, clientIp, createRouter, createWebServer, parseJson, readBody, resolveBrandAsset, resolveStatic, securityHeaders };

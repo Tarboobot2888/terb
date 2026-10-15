@@ -19,7 +19,8 @@ process.on("uncaughtException", (e) => { console.error("❌ فشل الاختب�
 process.on("unhandledRejection", (e) => { console.error("❌ فشل الاختبار:", e?.stack || e); process.exit(1); });
 
 const ROOT = process.cwd();
-const SKIP = new Set(["node_modules", ".git", "data", "session", "tmp", "temp", "backup", "database", "downloads"]);
+// dist: مخرجات بناء الواجهة (كود مُصغَّر، منه كود React نفسه) — ليست مصدراً
+const SKIP = new Set(["node_modules", ".git", "data", "session", "tmp", "temp", "backup", "database", "downloads", "dist"]);
 const SILENT = [
   ["empty catch", /catch\s*(?:\(\s*\w*\s*\))?\s*\{\s*\}/g],
   ["comment-only catch", /catch\s*(?:\(\s*\w*\s*\))?\s*\{(\s*(?:\/\*[\s\S]*?\*\/|\/\/[^\n]*\n)\s*)+\}/g],

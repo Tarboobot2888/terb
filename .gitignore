@@ -29,3 +29,9 @@ database/lid-cache.json
 # الإعداد الحيّ: يُنشأ من config.example.js ويحمل أرقام المالك ومفاتيح المزوّدات
 # والتوكنات. لا يُرفع أبداً — القالب وحده هو المتتبَّع.
 config.js
+
+# منصة الويب: مخرجات البناء واعتمادياتها ومخزنها وملفاتها المرفوعة
+web/dist/
+web/node_modules/
+data/web/
+data/web-uploads/
