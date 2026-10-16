@@ -123,7 +123,12 @@ const phoneKey = (digits) => hmac(String(digits || ""), "subbot-target").slice(0
  * لا يخلط بين «جاهزية الرمز» و«فتح الاتصال»: ready فقط بعد اتصال socket حقيقي.
  */
 async function reconcile(rec) {
-  if (TERMINAL.has(rec.state) && rec.state !== STATES.READY) return rec;
+  // expired تعني «انتهت نافذة عرض الرمز»، لا «أُوقف الاقتران»: المقبس الفرعي
+  // يبقى حيّاً ولم يُوقفه أحد، فقد يُكمل المستخدم الربط بعد اختفاء الرمز.
+  // قفلُ الحالة هنا كان يُظهر «منتهٍ» لبوت فرعي يعمل فعلاً. أمّا cancelled
+  // وfailed فقد أُوقف فيهما الاقتران صراحةً، وready مستقرّة.
+  const reopenable = rec.state === STATES.EXPIRED;
+  if (TERMINAL.has(rec.state) && rec.state !== STATES.READY && !reopenable) return rec;
   const manager = await getManager();
   const live = manager.getJadibotStatus(`${rec.targetId}@s.whatsapp.net`);
   const now = Date.now();
@@ -139,7 +144,7 @@ async function reconcile(rec) {
     return rec;
   }
   // لا جلسة حيّة بعد: الرمز ما زال صالحاً؟
-  if (!TERMINAL.has(rec.state)) {
+  if (!TERMINAL.has(rec.state) || reopenable) {
     if (now > rec.codeExpiresAt) {
       wipeCode(rec);
       rec.state = STATES.EXPIRED;

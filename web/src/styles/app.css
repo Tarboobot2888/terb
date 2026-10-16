@@ -175,6 +175,13 @@
   width: min(84vw, var(--sidebar));
   animation: rise var(--t-base) var(--ease-out) both;
 }
+/* قائمة الدرج هي نفسها .sidebar، لكنها تملأ الدرج ولا تلتصق بالتدفّق */
+.sidebar--drawer {
+  width: 100%; position: static; height: 100dvh;
+  /* فوق الصفحة لا بجانبها: خلفية معتمة حتى لا يظهر المحتوى خلف القائمة */
+  background: var(--obsidian-2);
+  box-shadow: var(--shadow-3);
+}
 
 /* ════ تنبيهات ════ */
 .toasts { position: fixed; inset-block-end: 18px; inset-inline: var(--gutter); z-index: 60; display: grid; gap: 8px; justify-items: center; pointer-events: none; }
@@ -191,7 +198,9 @@
 
 /* ════ الجوال ════ */
 @media (max-width: 900px) {
-  .sidebar { display: none; }
+  /* الشريط الملتصق يُخفى على الجوال، أمّا قائمة الدرج فهي كلّ ما يظهر عند فتحه.
+     لولا هذا الاستثناء لورثت القائمة display:none فيُرسم الدرج فارغاً. */
+  .sidebar:not(.sidebar--drawer) { display: none; }
   .page { padding-bottom: 88px; }
 }
 

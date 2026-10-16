@@ -117,6 +117,21 @@ r = await prov.getProvision({ principal: A, sessionId: "sessA", requestId: r.req
 assert.equal(r.state, "expired");
 assert.equal(r.code, undefined);
 
+// ── 6أ. ربط يكتمل بعد انتهاء نافذة العرض ⇒ ready، لا «منتهٍ» دائم ──
+// expired تعني انتهاء نافذة عرض الرمز فقط؛ المقبس الفرعي لم يُوقفه أحد،
+// فإن أكمل المستخدم الربط بعدها وجب أن يظهر البوت الفرعي متصلاً.
+const lateId = r.requestId;
+liveStatus = { connectionReady: true, channelFollow: "followed" };
+active = true;
+r = await prov.getProvision({ principal: A, sessionId: "sessA", requestId: lateId });
+assert.equal(r.state, "ready", "ربط اكتمل بعد انتهاء النافذة ما زال يُعرض منتهياً");
+assert.equal(r.channelFollow, "followed");
+assert.equal(r.code, undefined, "الرمز يبقى ممحوّاً");
+// والإلغاء بعد ذلك لا يُوقف جلسة حيّة
+const before = stopCalls;
+await prov.cancelProvision({ principal: A, sessionId: "sessA", requestId: lateId });
+assert.equal(stopCalls, before, "لا تُوقف جلسة متصلة عند إلغاء طلب منتهٍ");
+
 // ── 7. الإلغاء ⇒ cancelled، الرمز مُمحى، وتُنظَّف الجلسة إن لم تتصل ──
 fresh();
 r = await prov.startProvision({ principal: A, sessionId: "sessA", ip: "1.1.1.1" });

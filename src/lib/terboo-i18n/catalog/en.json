@@ -15293,5 +15293,6 @@
   "This game needs another player.": "This game needs another player.",
   "This game only runs in a WhatsApp group.": "This game only runs in a WhatsApp group.",
   "Your account could not be identified as the host.": "Your account could not be identified as the host.",
-  "This game could not be started right now.": "This game could not be started right now."
+  "This game could not be started right now.": "This game could not be started right now.",
+  "تعذّر التعرّف على رقم هاتفك. أرسل الأمر من محادثة خاصة مع البوت.": "Could not identify your phone number. Send the command from a private chat with the bot."
 }

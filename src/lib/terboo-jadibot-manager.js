@@ -329,6 +329,13 @@ async function startJadibot(sock, m, userJid, usePairing = true, isRetry = false
   }
 
   const id = userJid.replace(/@.+/g, "");
+  // الرمز يُطلب للرقم نفسه: requestPairingCode(id). الفحص أعلاه يقبل أي جزء
+  // محلّي ما دام النطاق s.whatsapp.net، ومعرّف LID محوَّل أو جزء غير رقمي
+  // يمرّ منه فيصدر رمزٌ لرقم لا وجود له: يظهر للمستخدم رمز سليم الشكل لكن
+  // واتساب لا يُكمل الربط أبداً وبلا سبب ظاهر. نرفض صراحة بدل رمز ميّت.
+  if (!/^[1-9][0-9]{6,17}$/.test(id)) {
+    throw new Error("❌ تعذّر التعرّف على رقم هاتفك. أرسل الأمر من محادثة خاصة مع البوت.");
+  }
   const mainBotNumber = (sock.user?.id || "").replace(/[^0-9]/g, "");
 
   if (mainBotNumber && id.replace(/[^0-9]/g, "") === mainBotNumber) {
@@ -387,7 +394,12 @@ async function startJadibot(sock, m, userJid, usePairing = true, isRetry = false
       creds: state.creds,
       keys: makeCacheableSignalKeyStore(state.keys, pinoLogger),
     },
-    browser: ["Mac OS", "safari", "140.4.1"],
+    // نفس توقيع المقبس الرئيسي الذي يقترن بنجاح. مهم جداً للاقتران بالرمز:
+    // Baileys يرسل getCompanionPlatformId(browser) داخل طلب link_code، وجدوله
+    // حسّاس لحالة الأحرف — "safari" بحرف صغير لا يطابق "Safari" فيسقط إلى
+    // OTHER_WEB_CLIENT (9)، فيصدر الرمز لكن واتساب لا يُكمل الربط.
+    // "Chrome" ⇒ 1، وهو ما يستعمله المقبس الرئيسي فعلاً.
+    browser: ["Ubuntu", "Chrome", "20.0.0"],
     syncFullHistory: false,
     generateHighQualityLinkPreview: false,
     markOnlineOnConnect: true,

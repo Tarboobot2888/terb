@@ -169,4 +169,42 @@ for (const module of ["downloads", "search", "subbots", "games"]) {
   assert.ok(routesIndex.includes(`./${module}.js`), `مسار الخادم غير مسجَّل: ${module}`);
 }
 
+// ── 8. درج الجوال يظهر فعلاً ────────────────────────────────
+// كان العطل: قائمة الدرج هي نفسها nav.sidebar، واستعلام الجوال يضع
+// `.sidebar { display: none }`، فيُرسم صندوق الدرج ومحتواه مخفيّ.
+// هذا العقد يمنع عودة العطل من جهتيه: الصنف في الهيكل، والاستثناء في الأنماط.
+const DRAWER_CLASS = "sidebar--drawer";
+const drawerNav = shell.match(/<nav className="([^"]*)"[^>]*>\{nav\}<\/nav>/);
+assert.ok(drawerNav, "قائمة الدرج غير موجودة في Shell.tsx");
+const drawerClasses = drawerNav[1].split(/\s+/).filter(Boolean);
+assert.ok(drawerClasses.includes("sidebar"), "قائمة الدرج يجب أن تبقى .sidebar");
+assert.ok(drawerClasses.includes(DRAWER_CLASS), `قائمة الدرج يجب أن تحمل .${DRAWER_CLASS}`);
+
+const css = read("web/src/styles/app.css").replace(/\/\*[\s\S]*?\*\//g, "");
+// كل قاعدة تُخفي داخل استعلام جوال يجب ألّا تُطابق قائمة الدرج
+const mobileBlocks = [...css.matchAll(/@media\s*\(max-width:\s*(\d+)px\)\s*\{([\s\S]*?)\n\}/g)];
+assert.ok(mobileBlocks.length >= 1, "لا يوجد استعلام جوال في أنماط الموقع");
+let guarded = 0;
+for (const [, width, body] of mobileBlocks) {
+  for (const [, selectors] of body.matchAll(/([^{}]+)\{([^{}]*display\s*:\s*none[^{}]*)\}/g)) {
+    for (const selector of selectors.split(",").map((part) => part.trim()).filter(Boolean)) {
+      // آخر مُركَّب في المحدِّد هو ما يُخفى فعلاً
+      const target = selector.split(/\s+/).pop();
+      if (!/(^|\.)sidebar(?![\w-])/.test(target)) continue;
+      assert.ok(
+        target.includes(`:not(.${DRAWER_CLASS})`) || target.includes(`.${DRAWER_CLASS}`),
+        `قاعدة إخفاء عند ${width}px تُخفي قائمة الدرج أيضاً: ${selector}`,
+      );
+      guarded += 1;
+    }
+  }
+}
+assert.equal(guarded, 1, `عدد قواعد إخفاء الشريط الجانبي على الجوال غير متوقَّع: ${guarded}`);
+// والصنف معرَّف فعلاً بأنماطه (لا صنف ميّت)
+assert.ok(new RegExp(`\\.${DRAWER_CLASS}\\s*\\{`).test(css), `.${DRAWER_CLASS} بلا تعريف في الأنماط`);
+// الدرج فوق التنقّل السفلي والخلفية
+const zIndex = (name) => Number((css.match(new RegExp(`\\.${name}\\s*\\{[^}]*z-index:\\s*(\\d+)`)) || [])[1]);
+assert.ok(zIndex("drawer") > zIndex("drawer-backdrop"), "الدرج تحت خلفيته");
+assert.ok(zIndex("drawer") > zIndex("bottomnav"), "الدرج تحت التنقّل السفلي");
+
 console.log(`✅ web-ui-contract: ${sectionRoutes.length} أقسام مرئية · ${renderers.size} عارض لعبة مطابق للمحرّك (${engineGames.size} لعبة) · ${used.size} مفتاح ترجمة مغطّى · لا حقن HTML · روابط خارجية محصّنة`);

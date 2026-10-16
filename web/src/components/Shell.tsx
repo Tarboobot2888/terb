@@ -82,7 +82,7 @@ export function Shell({ route, onRoute, children }: { route: Route; onRoute: (ro
         <>
           <div className="drawer-backdrop" onClick={() => setDrawer(false)} />
           <div className="drawer" ref={drawerRef} role="dialog" aria-modal="true" aria-label={t("common.menu")}>
-            <nav className="sidebar" style={{ width: "100%", position: "static", height: "100dvh" }}>{nav}</nav>
+            <nav className="sidebar sidebar--drawer">{nav}</nav>
           </div>
         </>
       ) : null}
