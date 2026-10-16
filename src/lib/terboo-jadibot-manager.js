@@ -35,7 +35,7 @@ function getRetryDelay(attempt) {
   return Math.floor(delay + delay * 0.25 * (Math.random() * 2 - 1));
 }
 
-setInterval(() => {
+const cleanupTimer = setInterval(() => {
   for (const [id, session] of jadibotSessions) {
     if (!isSocketAlive(session.sock)) {
       logger.info("Jadibot", `🧹 تنظيف الجلسة غير النشطة: ${id}`);
@@ -49,6 +49,9 @@ setInterval(() => {
     }
   }
 }, 600000);
+// مؤقّت التنظيف لا يُبقي العملية حيّة بنفسه: البوت له حلقته الخاصة، وبغير
+// unref يبقى أي سكربت/اختبار يستورد هذا الملف معلّقاً عشر دقائق بلا سبب.
+cleanupTimer.unref?.();
 
 function getJadibotAuthPath(jid) {
   const id = jid.replace(/@.+/g, "");
@@ -889,6 +892,7 @@ function getJadibotStatus(jid) {
 
 export {
   JADIBOT_AUTH_FOLDER,
+  MAX_JADIBOT_COUNT,
   jadibotSessions,
   getJadibotAuthPath,
   isJadibotActive,
