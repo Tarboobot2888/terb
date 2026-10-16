@@ -7,6 +7,8 @@ import { register as catalog } from "./catalog.js";
 import { register as ai } from "./ai.js";
 import { register as media } from "./media.js";
 import { register as tools } from "./tools.js";
+import { register as downloads } from "./downloads.js";
+import { register as search } from "./search.js";
 import { register as games } from "./games.js";
 import { register as groups } from "./groups.js";
 import { register as subbots } from "./subbots.js";
@@ -24,6 +26,8 @@ function buildRouter(runtime = { listening: false }) {
   ai(router);
   media(router);
   tools(router);
+  downloads(router);
+  search(router);
   games(router);
   groups(router);
   subbots(router);

@@ -147,6 +147,8 @@ function shapeResult(outcome) {
     category: outcome.category || "",
     source: outcome.source || "",
     kind: outcome.kind || "data",
+    // عنوان النتيجة كما صرّح به الـscraper نفسه (لا يُختلق)
+    title: typeof outcome.data?.title === "string" ? outcome.data.title.slice(0, 200) : "",
     // نص النتيجة محتوى غير موثوق: تعرضه الواجهة كنص لا كـHTML
     text: typeof outcome.text === "string" ? outcome.text.slice(0, 20_000) : "",
     items: items.map((item) => ({
@@ -155,9 +157,17 @@ function shapeResult(outcome) {
       url: typeof item.url === "string" ? item.url.slice(0, 2000) : "",
       external: true,
       title: typeof item.title === "string" ? item.title.slice(0, 200) : "",
+      // مقتطف/مدّة/فنان كما جاء من السجل (حقل extra المطبّع) — نص لا HTML
+      note: typeof item.extra === "string" ? item.extra.slice(0, 200) : "",
+      // صورة مصغّرة مُعلَنة من السجل لا مُستنتَجة
+      thumbnail: Boolean(item.thumb),
       mimetype: item.mimetype || "",
       sizeBytes: Number(item.size || item.sizeBytes || 0) || null,
       durationSeconds: Number(item.duration || 0) || null,
+      // بايتات حقيقية بلا رابط: تُحفظ كأثر مملوك حين يُطلب ذلك (persistBuffers)
+      bytesOnly: Buffer.isBuffer(item.buffer) && !item.url,
+      artifactId: "",
+      downloadPath: "",
     })),
     error: outcome.error ? String(outcome.error).slice(0, 200) : "",
     latencyMs: outcome.latencyMs || 0,
@@ -168,10 +178,44 @@ function shapeResult(outcome) {
 }
 
 /**
- * يشغّل أداة من الموقع.
- * @param {{principal:Object, toolId:string, input?:Object, lang?:string, signal?:AbortSignal}} request
+ * بايتات حقيقية بلا رابط ⇒ تُحفظ أثراً مملوكاً ليُنزَّل من endpoint محمي
+ * (`GET /api/v1/artifacts/:id`) بدل كشف مسار قرص أو رابط قابل للتخمين.
+ * الفهارس متوازية مع shapeResult لأن كليهما يقصّ أول 40 عنصراً بالترتيب.
  */
-async function run({ principal, toolId, input = {}, lang = "ar", signal = null }) {
+async function attachArtifacts(principal, outcome, shaped, toolId) {
+  const raw = Array.isArray(outcome.items) ? outcome.items.slice(0, 40) : [];
+  const { storeOutput } = await import("./upload-service.js");
+  for (let index = 0; index < raw.length; index += 1) {
+    const item = raw[index];
+    const target = shaped.items[index];
+    if (!target || !Buffer.isBuffer(item?.buffer) || item.url) continue;
+    try {
+      const stored = storeOutput({
+        principal,
+        buffer: item.buffer,
+        mime: item.mimetype || "",
+        ext: "",
+        name: shaped.title || toolId,
+        toolId,
+      });
+      if (stored?.id) {
+        target.artifactId = stored.id;
+        target.downloadPath = stored.downloadPath || "";
+        target.mimetype = stored.mime || target.mimetype;
+        target.sizeBytes = stored.bytes || target.sizeBytes;
+      }
+    } catch (error) {
+      // تعذّر الحفظ لا يُحوّل النتيجة إلى نجاح مزيّف: يبقى العنصر بلا أثر
+      noteFailure("web-tool", error, { where: "src/web/services/tool-service.js:attachArtifacts", stage: toolId });
+    }
+  }
+}
+
+/**
+ * يشغّل أداة من الموقع.
+ * @param {{principal:Object, toolId:string, input?:Object, lang?:string, signal?:AbortSignal, persistBuffers?:boolean}} request
+ */
+async function run({ principal, toolId, input = {}, lang = "ar", signal = null, persistBuffers = false }) {
   const tool = getTool(String(toolId || ""));
   if (!tool) throw apiError("NOT_FOUND");
   if (NEEDS_WHATSAPP.has(tool.id)) {
@@ -204,7 +248,9 @@ async function run({ principal, toolId, input = {}, lang = "ar", signal = null }
   });
 
   if (signal?.aborted) throw apiError("CANCELLED");
-  return shapeResult(outcome);
+  const shaped = shapeResult(outcome);
+  if (persistBuffers && shaped.ok) await attachArtifacts(principal, outcome, shaped, tool.id);
+  return shaped;
 }
 
-export { URL_FIELDS, actionFor, guardUrls, hostOf, run, sanitizeInput, shapeResult };
+export { URL_FIELDS, actionFor, attachArtifacts, guardUrls, hostOf, run, sanitizeInput, shapeResult };

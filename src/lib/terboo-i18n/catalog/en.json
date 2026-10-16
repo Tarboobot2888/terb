@@ -15234,5 +15234,7 @@
   "Your account has no confirmed phone number to install as a sub-bot.": "Your account has no confirmed phone number to install as a sub-bot.",
   "A sub-bot is already active for your number. Stop it from WhatsApp before installing again.": "A sub-bot is already active for your number. Stop it from WhatsApp before installing again.",
   "Could not obtain a pairing code. Try again shortly.": "Could not obtain a pairing code. Try again shortly.",
-  "Sub-bot installation could not start. Try again shortly.": "Sub-bot installation could not start. Try again shortly."
+  "Sub-bot installation could not start. Try again shortly.": "Sub-bot installation could not start. Try again shortly.",
+  "No downloader supports that link.": "No downloader supports that link.",
+  "No search source is configured.": "No search source is configured."
 }

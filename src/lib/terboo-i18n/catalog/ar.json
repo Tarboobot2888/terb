@@ -1477,5 +1477,7 @@
   "Your account has no confirmed phone number to install as a sub-bot.": "حسابك لا يملك رقم هاتف مؤكَّداً لتنصيبه كبوت فرعي.",
   "A sub-bot is already active for your number. Stop it from WhatsApp before installing again.": "يوجد بوت فرعي نشط بالفعل لرقمك. أوقفه من واتساب قبل التنصيب من جديد.",
   "Could not obtain a pairing code. Try again shortly.": "تعذّر الحصول على رمز الاقتران. حاول بعد قليل.",
-  "Sub-bot installation could not start. Try again shortly.": "تعذّر بدء تنصيب البوت الفرعي. حاول بعد قليل."
+  "Sub-bot installation could not start. Try again shortly.": "تعذّر بدء تنصيب البوت الفرعي. حاول بعد قليل.",
+  "No downloader supports that link.": "لا توجد أداة تنزيل تدعم هذا الرابط.",
+  "No search source is configured.": "لا يوجد مصدر بحث مُعدّ."
 }
