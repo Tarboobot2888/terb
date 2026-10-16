@@ -1,0 +1,253 @@
+capability	type	origin	source_files	status	source_path	notes	requires
+gateway.health	protocol-method	openclaw	1	bridged	src/cli/gateway-cli/health-route.ts	health RPC used by Terboo owner menu and web health	none
+gateway.agent.run	protocol-method	openclaw	1	bridged	packages/gateway-protocol/src/schema/agent.ts	agent run; message+idempotencyKey required, params object closed	none
+gateway.protocol.v4	protocol	openclaw	1	bridged	packages/gateway-client/README.md	client advertises min=max=4 exactly	none
+gateway-client	package	openclaw	1	installed	packages/gateway-client/package.json	@openclaw/gateway-client@2026.10.1 pinned; engines node>=22.19.0	none
+gateway-protocol	package	openclaw	1	installed	packages/gateway-protocol/package.json	@openclaw/gateway-protocol@2026.10.1 pinned	none
+a2a	extension	openclaw	36	not-enabled	extensions/a2a	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+acpx	extension	openclaw	86	not-enabled	extensions/acpx	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+active-memory	extension	openclaw	32	not-enabled	extensions/active-memory	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+admin-http-rpc	extension	openclaw	11	not-enabled	extensions/admin-http-rpc	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+agentsapi	extension	openclaw	51	not-enabled	extensions/agentsapi	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+alibaba	extension	openclaw	9	not-enabled	extensions/alibaba	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+amazon-bedrock	extension	openclaw	34	not-enabled	extensions/amazon-bedrock	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+amazon-bedrock-mantle	extension	openclaw	14	not-enabled	extensions/amazon-bedrock-mantle	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+anthropic	extension	openclaw	100	not-enabled	extensions/anthropic	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+anthropic-vertex	extension	openclaw	24	not-enabled	extensions/anthropic-vertex	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+apple-fm	extension	openclaw	16	not-enabled	extensions/apple-fm	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+arcee	extension	openclaw	13	not-enabled	extensions/arcee	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+azure-speech	extension	openclaw	14	not-enabled	extensions/azure-speech	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+baseten	extension	openclaw	17	not-enabled	extensions/baseten	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+beam	extension	openclaw	18	not-enabled	extensions/beam	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+bonjour	extension	openclaw	14	not-enabled	extensions/bonjour	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+brave	extension	openclaw	14	not-enabled	extensions/brave	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+browser	extension	openclaw	665	not-enabled	extensions/browser	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+buzz	extension	openclaw	86	not-enabled	extensions/buzz	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+byteplus	extension	openclaw	14	not-enabled	extensions/byteplus	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+canvas	extension	openclaw	49	not-enabled	extensions/canvas	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+cerebras	extension	openclaw	12	not-enabled	extensions/cerebras	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+chutes	extension	openclaw	17	not-enabled	extensions/chutes	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+clawrouter	extension	openclaw	15	not-enabled	extensions/clawrouter	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+clickclack	extension	openclaw	96	not-enabled	extensions/clickclack	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+cloudflare	extension	openclaw	14	not-enabled	extensions/cloudflare	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+cloudflare-ai-gateway	extension	openclaw	15	not-enabled	extensions/cloudflare-ai-gateway	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+code-mode-quickjs	extension	openclaw	14	not-enabled	extensions/code-mode-quickjs	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+codex	extension	openclaw	1020	not-enabled	extensions/codex	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+cohere	extension	openclaw	13	not-enabled	extensions/cohere	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+comfy	extension	openclaw	20	not-enabled	extensions/comfy	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+copilot	extension	openclaw	74	not-enabled	extensions/copilot	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+copilot-proxy	extension	openclaw	8	not-enabled	extensions/copilot-proxy	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+crabbox	extension	openclaw	96	not-enabled	extensions/crabbox	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+cua-computer	extension	openclaw	39	not-enabled	extensions/cua-computer	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+deepgram	extension	openclaw	18	not-enabled	extensions/deepgram	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+deepinfra	extension	openclaw	44	not-enabled	extensions/deepinfra	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+deepseek	extension	openclaw	19	not-enabled	extensions/deepseek	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+device-pair	extension	openclaw	14	not-enabled	extensions/device-pair	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+diagnostics-otel	extension	openclaw	40	not-enabled	extensions/diagnostics-otel	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+diagnostics-prometheus	extension	openclaw	26	not-enabled	extensions/diagnostics-prometheus	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+diffs	extension	openclaw	38	not-enabled	extensions/diffs	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+diffs-language-pack	extension	openclaw	9	not-enabled	extensions/diffs-language-pack	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+discord	extension	openclaw	728	not-enabled	extensions/discord	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+document-extract	extension	openclaw	13	not-enabled	extensions/document-extract	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+duckduckgo	extension	openclaw	14	not-enabled	extensions/duckduckgo	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+elevenlabs	extension	openclaw	25	not-enabled	extensions/elevenlabs	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+exa	extension	openclaw	12	not-enabled	extensions/exa	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+facetime	extension	openclaw	92	not-enabled	extensions/facetime	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+fal	extension	openclaw	19	not-enabled	extensions/fal	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+featherless	extension	openclaw	12	not-enabled	extensions/featherless	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+feishu	extension	openclaw	293	not-enabled	extensions/feishu	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+file-transfer	extension	openclaw	98	not-enabled	extensions/file-transfer	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+firecrawl	extension	openclaw	23	not-enabled	extensions/firecrawl	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+fireworks	extension	openclaw	16	not-enabled	extensions/fireworks	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+fish-audio-speech	extension	openclaw	10	not-enabled	extensions/fish-audio-speech	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+geolocation	extension	openclaw	16	not-enabled	extensions/geolocation	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+github	extension	openclaw	24	not-enabled	extensions/github	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+github-copilot	extension	openclaw	47	not-enabled	extensions/github-copilot	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+gmi	extension	openclaw	8	not-enabled	extensions/gmi	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+google	extension	openclaw	102	not-enabled	extensions/google	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+google-meet	extension	openclaw	87	not-enabled	extensions/google-meet	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+googlechat	extension	openclaw	96	not-enabled	extensions/googlechat	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+gradium	extension	openclaw	14	not-enabled	extensions/gradium	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+groq	extension	openclaw	11	not-enabled	extensions/groq	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+huggingface	extension	openclaw	14	not-enabled	extensions/huggingface	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+image-generation-core	extension	openclaw	3	not-enabled	extensions/image-generation-core	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+imap	extension	openclaw	17	not-enabled	extensions/imap	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+imessage	extension	openclaw	201	not-enabled	extensions/imessage	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+inworld	extension	openclaw	14	not-enabled	extensions/inworld	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+irc	extension	openclaw	63	not-enabled	extensions/irc	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+kie	extension	openclaw	8	not-enabled	extensions/kie	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+kilocode	extension	openclaw	16	not-enabled	extensions/kilocode	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+kimi-coding	extension	openclaw	18	not-enabled	extensions/kimi-coding	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+line	extension	openclaw	145	not-enabled	extensions/line	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+linux-node	extension	openclaw	16	not-enabled	extensions/linux-node	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+litellm	extension	openclaw	15	not-enabled	extensions/litellm	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+llama-cpp	extension	openclaw	56	not-enabled	extensions/llama-cpp	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+llm-task	extension	openclaw	13	not-enabled	extensions/llm-task	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+lmstudio	extension	openclaw	38	not-enabled	extensions/lmstudio	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+lobster	extension	openclaw	12	not-enabled	extensions/lobster	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+logbook	extension	openclaw	32	not-enabled	extensions/logbook	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+longcat	extension	openclaw	15	not-enabled	extensions/longcat	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+matrix	extension	openclaw	416	not-enabled	extensions/matrix	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+mattermost	extension	openclaw	147	not-enabled	extensions/mattermost	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+memory-core	extension	openclaw	406	not-enabled	extensions/memory-core	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+memory-lancedb	extension	openclaw	44	not-enabled	extensions/memory-lancedb	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+memory-wiki	extension	openclaw	109	not-enabled	extensions/memory-wiki	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+meta	extension	openclaw	14	not-enabled	extensions/meta	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+microsoft	extension	openclaw	14	not-enabled	extensions/microsoft	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+microsoft-foundry	extension	openclaw	17	not-enabled	extensions/microsoft-foundry	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+migrate-claude	extension	openclaw	16	not-enabled	extensions/migrate-claude	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+migrate-hermes	extension	openclaw	38	not-enabled	extensions/migrate-hermes	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+minimax	extension	openclaw	47	not-enabled	extensions/minimax	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+mistral	extension	openclaw	24	not-enabled	extensions/mistral	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+moonshot	extension	openclaw	26	not-enabled	extensions/moonshot	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+msteams	extension	openclaw	267	not-enabled	extensions/msteams	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+mxc	extension	openclaw	37	not-enabled	extensions/mxc	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+nextcloud-talk	extension	openclaw	77	not-enabled	extensions/nextcloud-talk	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+nostr	extension	openclaw	60	not-enabled	extensions/nostr	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+novita	extension	openclaw	10	not-enabled	extensions/novita	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+nvidia	extension	openclaw	14	not-enabled	extensions/nvidia	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+oc-path	extension	openclaw	71	not-enabled	extensions/oc-path	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+ollama	extension	openclaw	90	not-enabled	extensions/ollama	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+onepassword	extension	openclaw	32	not-enabled	extensions/onepassword	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+onnx	extension	openclaw	27	not-enabled	extensions/onnx	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+openai	extension	openclaw	198	not-enabled	extensions/openai	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+opencode	extension	openclaw	26	not-enabled	extensions/opencode	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+opencode-go	extension	openclaw	19	not-enabled	extensions/opencode-go	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+openrouter	extension	openclaw	49	not-enabled	extensions/openrouter	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+openshell	extension	openclaw	27	not-enabled	extensions/openshell	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+parallel	extension	openclaw	19	not-enabled	extensions/parallel	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+perplexity	extension	openclaw	13	not-enabled	extensions/perplexity	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+pixverse	extension	openclaw	12	not-enabled	extensions/pixverse	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+policy	extension	openclaw	85	not-enabled	extensions/policy	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+qa-channel	extension	openclaw	38	not-enabled	extensions/qa-channel	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+qa-lab	extension	openclaw	801	not-enabled	extensions/qa-lab	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+qianfan	extension	openclaw	11	not-enabled	extensions/qianfan	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+qwen	extension	openclaw	24	not-enabled	extensions/qwen	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+radius	extension	openclaw	13	not-enabled	extensions/radius	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+raft	extension	openclaw	19	not-enabled	extensions/raft	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+reef	extension	openclaw	107	not-enabled	extensions/reef	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+runway	extension	openclaw	9	not-enabled	extensions/runway	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+searxng	extension	openclaw	14	not-enabled	extensions/searxng	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+senseaudio	extension	openclaw	9	not-enabled	extensions/senseaudio	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+session-share	extension	openclaw	11	not-enabled	extensions/session-share	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+sglang	extension	openclaw	11	not-enabled	extensions/sglang	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+signal	extension	openclaw	139	not-enabled	extensions/signal	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+slack	extension	openclaw	420	not-enabled	extensions/slack	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+slack-huddles	extension	openclaw	22	not-enabled	extensions/slack-huddles	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+sms	extension	openclaw	47	not-enabled	extensions/sms	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+stepfun	extension	openclaw	11	not-enabled	extensions/stepfun	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+synology-chat	extension	openclaw	44	not-enabled	extensions/synology-chat	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+synthetic	extension	openclaw	14	not-enabled	extensions/synthetic	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+talk-voice	extension	openclaw	7	not-enabled	extensions/talk-voice	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+tavily	extension	openclaw	20	not-enabled	extensions/tavily	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+team-reports	extension	openclaw	72	not-enabled	extensions/team-reports	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+teams-meetings	extension	openclaw	26	not-enabled	extensions/teams-meetings	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+telegram	extension	openclaw	507	not-enabled	extensions/telegram	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+tencent	extension	openclaw	18	not-enabled	extensions/tencent	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+test-support	extension	openclaw	7	not-enabled	extensions/test-support	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+tlon	extension	openclaw	89	not-enabled	extensions/tlon	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+together	extension	openclaw	15	not-enabled	extensions/together	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+tokenjuice	extension	openclaw	10	not-enabled	extensions/tokenjuice	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+tts-local-cli	extension	openclaw	11	not-enabled	extensions/tts-local-cli	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+twitch	extension	openclaw	52	not-enabled	extensions/twitch	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+typesafe	extension	openclaw	24	not-enabled	extensions/typesafe	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+vault	extension	openclaw	12	not-enabled	extensions/vault	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+venice	extension	openclaw	18	not-enabled	extensions/venice	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+vercel-ai-gateway	extension	openclaw	15	not-enabled	extensions/vercel-ai-gateway	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+visitor-access	extension	openclaw	22	not-enabled	extensions/visitor-access	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+vllm	extension	openclaw	17	not-enabled	extensions/vllm	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+voice-call	extension	openclaw	176	not-enabled	extensions/voice-call	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+volcengine	extension	openclaw	16	not-enabled	extensions/volcengine	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+voyage	extension	openclaw	10	not-enabled	extensions/voyage	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+vydra	extension	openclaw	20	not-enabled	extensions/vydra	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+web-readability	extension	openclaw	8	not-enabled	extensions/web-readability	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+whatsapp	extension	openclaw	289	not-enabled	extensions/whatsapp	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+workboard	extension	openclaw	212	not-enabled	extensions/workboard	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+x	extension	openclaw	67	not-enabled	extensions/x	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+xai	extension	openclaw	116	not-enabled	extensions/xai	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+xiaomi	extension	openclaw	17	not-enabled	extensions/xiaomi	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+zai	extension	openclaw	22	not-enabled	extensions/zai	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+zalo	extension	openclaw	76	not-enabled	extensions/zalo	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+zalouser	extension	openclaw	96	not-enabled	extensions/zalouser	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+zoom-meetings	extension	openclaw	23	not-enabled	extensions/zoom-meetings	runs inside the OpenClaw service; not imported into Terboo	deploy OpenClaw gateway
+1password	skill	openclaw	3	not-enabled	skills/1password	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+apple-notes	skill	openclaw	1	not-enabled	skills/apple-notes	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+apple-reminders	skill	openclaw	1	not-enabled	skills/apple-reminders	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+bear-notes	skill	openclaw	1	not-enabled	skills/bear-notes	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+blogwatcher	skill	openclaw	1	not-enabled	skills/blogwatcher	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+blucli	skill	openclaw	1	not-enabled	skills/blucli	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+camsnap	skill	openclaw	1	not-enabled	skills/camsnap	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+clawhub	skill	openclaw	1	not-enabled	skills/clawhub	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+coding-agent	skill	openclaw	1	not-enabled	skills/coding-agent	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+control-ui	skill	openclaw	3	not-enabled	skills/control-ui	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+diagram-maker	skill	openclaw	3	not-enabled	skills/diagram-maker	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+eightctl	skill	openclaw	1	not-enabled	skills/eightctl	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+gemini	skill	openclaw	1	not-enabled	skills/gemini	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+gh-issues	skill	openclaw	1	not-enabled	skills/gh-issues	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+gifgrep	skill	openclaw	1	not-enabled	skills/gifgrep	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+github	skill	openclaw	1	not-enabled	skills/github	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+gog	skill	openclaw	1	not-enabled	skills/gog	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+goplaces	skill	openclaw	1	not-enabled	skills/goplaces	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+healthcheck	skill	openclaw	1	not-enabled	skills/healthcheck	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+himalaya	skill	openclaw	3	not-enabled	skills/himalaya	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+mcporter	skill	openclaw	1	not-enabled	skills/mcporter	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+meme-maker	skill	openclaw	3	not-enabled	skills/meme-maker	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+model-usage	skill	openclaw	4	not-enabled	skills/model-usage	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+nano-pdf	skill	openclaw	1	not-enabled	skills/nano-pdf	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+node-connect	skill	openclaw	1	not-enabled	skills/node-connect	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+node-inspect-debugger	skill	openclaw	1	not-enabled	skills/node-inspect-debugger	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+notion	skill	openclaw	1	not-enabled	skills/notion	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+obsidian	skill	openclaw	1	not-enabled	skills/obsidian	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+openai-whisper	skill	openclaw	1	not-enabled	skills/openai-whisper	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+openai-whisper-api	skill	openclaw	2	not-enabled	skills/openai-whisper-api	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+openhue	skill	openclaw	1	not-enabled	skills/openhue	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+oracle	skill	openclaw	1	not-enabled	skills/oracle	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+ordercli	skill	openclaw	1	not-enabled	skills/ordercli	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+peekaboo	skill	openclaw	1	not-enabled	skills/peekaboo	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+python-debugpy	skill	openclaw	1	not-enabled	skills/python-debugpy	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+sag	skill	openclaw	1	not-enabled	skills/sag	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+sherpa-onnx-tts	skill	openclaw	2	not-enabled	skills/sherpa-onnx-tts	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+skill-creator	skill	openclaw	6	not-enabled	skills/skill-creator	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+songsee	skill	openclaw	1	not-enabled	skills/songsee	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+sonoscli	skill	openclaw	1	not-enabled	skills/sonoscli	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+spike	skill	openclaw	1	not-enabled	skills/spike	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+spotify-player	skill	openclaw	1	not-enabled	skills/spotify-player	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+summarize	skill	openclaw	1	not-enabled	skills/summarize	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+things-mac	skill	openclaw	1	not-enabled	skills/things-mac	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+tmux	skill	openclaw	3	not-enabled	skills/tmux	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+trello	skill	openclaw	1	not-enabled	skills/trello	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+visualize	skill	openclaw	1	not-enabled	skills/visualize	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+weather	skill	openclaw	1	not-enabled	skills/weather	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+xurl	skill	openclaw	1	not-enabled	skills/xurl	agent-side skill; available once a gateway is deployed	deploy OpenClaw gateway
+acp-core	package	openclaw	22	not-enabled	packages/acp-core	internal OpenClaw workspace package	deploy OpenClaw gateway
+agent-core	package	openclaw	63	not-enabled	packages/agent-core	internal OpenClaw workspace package	deploy OpenClaw gateway
+ai	package	openclaw	372	not-enabled	packages/ai	internal OpenClaw workspace package	deploy OpenClaw gateway
+gateway-client	package	openclaw	69	installed	packages/gateway-client	pinned and used by the bridge	
+gateway-protocol	package	openclaw	287	installed	packages/gateway-protocol	pinned and used by the bridge	
+llm-core	package	openclaw	20	not-enabled	packages/llm-core	internal OpenClaw workspace package	deploy OpenClaw gateway
+markdown-core	package	openclaw	43	not-enabled	packages/markdown-core	internal OpenClaw workspace package	deploy OpenClaw gateway
+media-core	package	openclaw	23	not-enabled	packages/media-core	internal OpenClaw workspace package	deploy OpenClaw gateway
+media-generation-core	package	openclaw	8	not-enabled	packages/media-generation-core	internal OpenClaw workspace package	deploy OpenClaw gateway
+media-understanding-common	package	openclaw	14	not-enabled	packages/media-understanding-common	internal OpenClaw workspace package	deploy OpenClaw gateway
+memory-host-sdk	package	openclaw	136	not-enabled	packages/memory-host-sdk	internal OpenClaw workspace package	deploy OpenClaw gateway
+mermaid-renderer	package	openclaw	11	not-enabled	packages/mermaid-renderer	internal OpenClaw workspace package	deploy OpenClaw gateway
+model-catalog-core	package	openclaw	23	not-enabled	packages/model-catalog-core	internal OpenClaw workspace package	deploy OpenClaw gateway
+net-policy	package	openclaw	12	not-enabled	packages/net-policy	internal OpenClaw workspace package	deploy OpenClaw gateway
+normalization-core	package	openclaw	58	not-enabled	packages/normalization-core	internal OpenClaw workspace package	deploy OpenClaw gateway
+plugin-package-contract	package	openclaw	5	not-enabled	packages/plugin-package-contract	internal OpenClaw workspace package	deploy OpenClaw gateway
+plugin-sdk	package	openclaw	60	not-enabled	packages/plugin-sdk	internal OpenClaw workspace package	deploy OpenClaw gateway
+retry	package	openclaw	3	not-enabled	packages/retry	internal OpenClaw workspace package	deploy OpenClaw gateway
+sdk	package	openclaw	30	not-enabled	packages/sdk	internal OpenClaw workspace package	deploy OpenClaw gateway
+session-url-contract	package	openclaw	14	not-enabled	packages/session-url-contract	internal OpenClaw workspace package	deploy OpenClaw gateway
+terminal-core	package	openclaw	36	not-enabled	packages/terminal-core	internal OpenClaw workspace package	deploy OpenClaw gateway
+tool-call-repair	package	openclaw	13	not-enabled	packages/tool-call-repair	internal OpenClaw workspace package	deploy OpenClaw gateway
+workboard-contract	package	openclaw	4	not-enabled	packages/workboard-contract	internal OpenClaw workspace package	deploy OpenClaw gateway
+worker-runtime	package	openclaw	24	not-enabled	packages/worker-runtime	internal OpenClaw workspace package	deploy OpenClaw gateway
+openclaw-gateway-client	rust-crate	openclaw	5	not-built	crates/openclaw-gateway-client	belongs to the OpenClaw node host	rust toolchain in the OpenClaw service image
+openclaw-node-host	rust-crate	openclaw	17	not-built	crates/openclaw-node-host	belongs to the OpenClaw node host	rust toolchain in the OpenClaw service image
+openclaw.bridge.config	terboo-module	terboo	1	implemented	src/web/openclaw/config.js	env-first, default off, ws/wss private-network only	OPENCLAW_GATEWAY_URL
+openclaw.bridge.client	terboo-module	terboo	1	implemented	src/web/openclaw/gateway-client.js	single shared connection, honest health, secret masking	OPENCLAW_GATEWAY_TOKEN
+openclaw.bridge.sessions	terboo-module	terboo	1	implemented	src/web/openclaw/session-map.js	HMAC session keys; no phone number, channel-isolated	
+openclaw.bridge.toolpolicy	terboo-module	terboo	1	implemented	src/web/openclaw/tool-policy.js	default-deny; owner/whatsapp/exec tools refused	config.openclaw.exposeTerbooTools
+openclaw.ai.adapter	terboo-module	terboo	1	implemented	src/web/services/openclaw-ai-service.js	routes AI to OpenClaw when enabled; honest fallback to Terboo kernel	
+terboo.tools.exposed	terboo-policy	terboo	0	default-deny	src/web/openclaw/tool-policy.js	0 of 78 Terboo tools exposed to OpenClaw by default	owner opt-in per tool
