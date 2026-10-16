@@ -1,0 +1,1966 @@
+{
+  "generatedAt": "2026-10-15T17:58:11.509Z",
+  "tempDatabase": "/tmp/terboo-probe-db-qRNUmG",
+  "steps": {
+    "database": {
+      "ok": true,
+      "path": "/tmp/terboo-probe-db-qRNUmG",
+      "note": "isolated temp dir, production stores untouched"
+    },
+    "plugins": {
+      "ok": true,
+      "loadedCount": 898,
+      "registeredCommandKeys": 1058,
+      "registeredAliasKeys": 1251,
+      "distinctPluginObjects": 896,
+      "distinctFiles": 896,
+      "categories": {
+        "ai": 73,
+        "anime": 1,
+        "asupan": 3,
+        "canvas": 20,
+        "cecan": 7,
+        "cek": 45,
+        "clan": 9,
+        "convert": 3,
+        "downloader": 37,
+        "ephoto": 2,
+        "fun": 45,
+        "game": 55,
+        "group": 103,
+        "info": 10,
+        "islamic": 2,
+        "main": 21,
+        "media": 2,
+        "nsfw": 1,
+        "owner": 159,
+        "photo": 1,
+        "primbon": 8,
+        "pushkontak": 1,
+        "random": 6,
+        "religi": 4,
+        "rpg": 68,
+        "search": 46,
+        "stalker": 14,
+        "sticker": 29,
+        "store": 15,
+        "tools": 87,
+        "tts": 2,
+        "user": 18,
+        "utility": 1
+      },
+      "categoryCount": 33,
+      "loadMs": 1942,
+      "failureCount": 0,
+      "failures": []
+    },
+    "tools": {
+      "ok": true,
+      "total": 78,
+      "bySource": {
+        "scraper": 67,
+        "local": 11
+      },
+      "byCategory": {
+        "Downloaders": 17,
+        "Audio": 6,
+        "Search": 5,
+        "Image": 17,
+        "Anime-Games": 6,
+        "Video": 6,
+        "Utility": 6,
+        "AI": 13,
+        "Documents": 2
+      },
+      "ids": [
+        {
+          "id": "aio",
+          "category": "Downloaders",
+          "source": "scraper",
+          "permission": "public",
+          "output": "media",
+          "timeoutMs": 45000
+        },
+        {
+          "id": "tiktok",
+          "category": "Downloaders",
+          "source": "scraper",
+          "permission": "public",
+          "output": "video",
+          "timeoutMs": 40000
+        },
+        {
+          "id": "douyin",
+          "category": "Downloaders",
+          "source": "scraper",
+          "permission": "public",
+          "output": "video",
+          "timeoutMs": 40000
+        },
+        {
+          "id": "ig",
+          "category": "Downloaders",
+          "source": "scraper",
+          "permission": "public",
+          "output": "media",
+          "timeoutMs": 40000
+        },
+        {
+          "id": "reelsvideo",
+          "category": "Downloaders",
+          "source": "scraper",
+          "permission": "public",
+          "output": "media",
+          "timeoutMs": 40000
+        },
+        {
+          "id": "twitter",
+          "category": "Downloaders",
+          "source": "scraper",
+          "permission": "public",
+          "output": "media",
+          "timeoutMs": 40000
+        },
+        {
+          "id": "reddit",
+          "category": "Downloaders",
+          "source": "scraper",
+          "permission": "public",
+          "output": "media",
+          "timeoutMs": 30000
+        },
+        {
+          "id": "youtube",
+          "category": "Downloaders",
+          "source": "scraper",
+          "permission": "public",
+          "output": "media",
+          "timeoutMs": 60000
+        },
+        {
+          "id": "yt",
+          "category": "Downloaders",
+          "source": "scraper",
+          "permission": "public",
+          "output": "media",
+          "timeoutMs": 60000
+        },
+        {
+          "id": "ytdl",
+          "category": "Downloaders",
+          "source": "scraper",
+          "permission": "public",
+          "output": "audio",
+          "timeoutMs": 90000
+        },
+        {
+          "id": "spotify",
+          "category": "Audio",
+          "source": "scraper",
+          "permission": "public",
+          "output": "audio",
+          "timeoutMs": 60000
+        },
+        {
+          "id": "soundclouddl",
+          "category": "Audio",
+          "source": "scraper",
+          "permission": "public",
+          "output": "audio",
+          "timeoutMs": 45000
+        },
+        {
+          "id": "mediafire",
+          "category": "Downloaders",
+          "source": "scraper",
+          "permission": "public",
+          "output": "file",
+          "timeoutMs": 40000
+        },
+        {
+          "id": "terabox",
+          "category": "Downloaders",
+          "source": "scraper",
+          "permission": "public",
+          "output": "file",
+          "timeoutMs": 45000
+        },
+        {
+          "id": "sfiledl",
+          "category": "Downloaders",
+          "source": "scraper",
+          "permission": "public",
+          "output": "file",
+          "timeoutMs": 40000
+        },
+        {
+          "id": "dailymotion",
+          "category": "Downloaders",
+          "source": "scraper",
+          "permission": "public",
+          "output": "video",
+          "timeoutMs": 45000
+        },
+        {
+          "id": "likee",
+          "category": "Downloaders",
+          "source": "scraper",
+          "permission": "public",
+          "output": "video",
+          "timeoutMs": 40000
+        },
+        {
+          "id": "rednote",
+          "category": "Downloaders",
+          "source": "scraper",
+          "permission": "public",
+          "output": "media",
+          "timeoutMs": 40000
+        },
+        {
+          "id": "pindl",
+          "category": "Downloaders",
+          "source": "scraper",
+          "permission": "public",
+          "output": "media",
+          "timeoutMs": 30000
+        },
+        {
+          "id": "google",
+          "category": "Search",
+          "source": "scraper",
+          "permission": "public",
+          "output": "list",
+          "timeoutMs": 20000
+        },
+        {
+          "id": "tiktoksearch",
+          "category": "Search",
+          "source": "scraper",
+          "permission": "public",
+          "output": "list",
+          "timeoutMs": 25000
+        },
+        {
+          "id": "soundcloud",
+          "category": "Audio",
+          "source": "scraper",
+          "permission": "public",
+          "output": "list",
+          "timeoutMs": 20000
+        },
+        {
+          "id": "wallpapersearch",
+          "category": "Image",
+          "source": "scraper",
+          "permission": "public",
+          "output": "list",
+          "timeoutMs": 20000
+        },
+        {
+          "id": "konachan",
+          "category": "Anime-Games",
+          "source": "scraper",
+          "permission": "public",
+          "output": "list",
+          "timeoutMs": 20000
+        },
+        {
+          "id": "kusonime",
+          "category": "Anime-Games",
+          "source": "scraper",
+          "permission": "public",
+          "output": "list",
+          "timeoutMs": 20000
+        },
+        {
+          "id": "dramabox",
+          "category": "Search",
+          "source": "scraper",
+          "permission": "public",
+          "output": "list",
+          "timeoutMs": 20000
+        },
+        {
+          "id": "shinigami",
+          "category": "Anime-Games",
+          "source": "scraper",
+          "permission": "public",
+          "output": "list",
+          "timeoutMs": 20000
+        },
+        {
+          "id": "dafont",
+          "category": "Search",
+          "source": "scraper",
+          "permission": "public",
+          "output": "list",
+          "timeoutMs": 20000
+        },
+        {
+          "id": "gsmarena",
+          "category": "Search",
+          "source": "scraper",
+          "permission": "public",
+          "output": "list",
+          "timeoutMs": 20000
+        },
+        {
+          "id": "hokinfo",
+          "category": "Anime-Games",
+          "source": "scraper",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 20000
+        },
+        {
+          "id": "wwchar",
+          "category": "Anime-Games",
+          "source": "scraper",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 20000
+        },
+        {
+          "id": "txt2img2",
+          "category": "Image",
+          "source": "scraper",
+          "permission": "public",
+          "output": "image",
+          "timeoutMs": 90000
+        },
+        {
+          "id": "seaart",
+          "category": "Image",
+          "source": "scraper",
+          "permission": "public",
+          "output": "image",
+          "timeoutMs": 90000
+        },
+        {
+          "id": "deepai-scraper",
+          "category": "Image",
+          "source": "scraper",
+          "permission": "public",
+          "output": "image",
+          "timeoutMs": 60000
+        },
+        {
+          "id": "txt2img",
+          "category": "Image",
+          "source": "scraper",
+          "permission": "public",
+          "output": "image",
+          "timeoutMs": 90000
+        },
+        {
+          "id": "img2img",
+          "category": "Image",
+          "source": "scraper",
+          "permission": "public",
+          "output": "image",
+          "timeoutMs": 120000
+        },
+        {
+          "id": "removebackground",
+          "category": "Image",
+          "source": "scraper",
+          "permission": "public",
+          "output": "image",
+          "timeoutMs": 60000
+        },
+        {
+          "id": "img2prompt",
+          "category": "Image",
+          "source": "scraper",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 45000
+        },
+        {
+          "id": "hd",
+          "category": "Image",
+          "source": "scraper",
+          "permission": "public",
+          "output": "image",
+          "timeoutMs": 120000
+        },
+        {
+          "id": "upscaler",
+          "category": "Image",
+          "source": "scraper",
+          "permission": "public",
+          "output": "image",
+          "timeoutMs": 90000
+        },
+        {
+          "id": "imglarger",
+          "category": "Image",
+          "source": "scraper",
+          "permission": "public",
+          "output": "image",
+          "timeoutMs": 120000
+        },
+        {
+          "id": "wink",
+          "category": "Video",
+          "source": "scraper",
+          "permission": "public",
+          "output": "video",
+          "timeoutMs": 180000
+        },
+        {
+          "id": "hdvid",
+          "category": "Video",
+          "source": "scraper",
+          "permission": "public",
+          "output": "video",
+          "timeoutMs": 180000
+        },
+        {
+          "id": "hdvid2",
+          "category": "Video",
+          "source": "scraper",
+          "permission": "public",
+          "output": "video",
+          "timeoutMs": 180000
+        },
+        {
+          "id": "imgdrop",
+          "category": "Utility",
+          "source": "scraper",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 30000
+        },
+        {
+          "id": "videy",
+          "category": "Utility",
+          "source": "scraper",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 90000
+        },
+        {
+          "id": "mconverter",
+          "category": "Utility",
+          "source": "scraper",
+          "permission": "public",
+          "output": "file",
+          "timeoutMs": 90000
+        },
+        {
+          "id": "tempmail",
+          "category": "Utility",
+          "source": "scraper",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 20000
+        },
+        {
+          "id": "topmedia",
+          "category": "Audio",
+          "source": "scraper",
+          "permission": "public",
+          "output": "audio",
+          "timeoutMs": 45000
+        },
+        {
+          "id": "lufemboy",
+          "category": "Anime-Games",
+          "source": "scraper",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 5000
+        },
+        {
+          "id": "gemini",
+          "category": "AI",
+          "source": "scraper",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 45000
+        },
+        {
+          "id": "geminiVision",
+          "category": "AI",
+          "source": "scraper",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 45000
+        },
+        {
+          "id": "gpt5",
+          "category": "AI",
+          "source": "scraper",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 45000
+        },
+        {
+          "id": "gpt52",
+          "category": "AI",
+          "source": "scraper",
+          "permission": "owner",
+          "output": "text",
+          "timeoutMs": 60000
+        },
+        {
+          "id": "deepseek",
+          "category": "AI",
+          "source": "scraper",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 60000
+        },
+        {
+          "id": "claudehaiku",
+          "category": "AI",
+          "source": "scraper",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 45000
+        },
+        {
+          "id": "qwen3",
+          "category": "AI",
+          "source": "scraper",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 45000
+        },
+        {
+          "id": "multiAI",
+          "category": "AI",
+          "source": "scraper",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 45000
+        },
+        {
+          "id": "logic-bell",
+          "category": "AI",
+          "source": "scraper",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 45000
+        },
+        {
+          "id": "chatday",
+          "category": "AI",
+          "source": "scraper",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 45000
+        },
+        {
+          "id": "unlimitedai",
+          "category": "AI",
+          "source": "scraper",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 45000
+        },
+        {
+          "id": "feeb",
+          "category": "AI",
+          "source": "scraper",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 45000
+        },
+        {
+          "id": "manus-agent",
+          "category": "AI",
+          "source": "scraper",
+          "permission": "owner",
+          "output": "text",
+          "timeoutMs": 120000
+        },
+        {
+          "id": "image.describe",
+          "category": "Image",
+          "source": "local",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 45000
+        },
+        {
+          "id": "image.ocr",
+          "category": "Image",
+          "source": "local",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 90000
+        },
+        {
+          "id": "image.edit",
+          "category": "Image",
+          "source": "scraper",
+          "permission": "public",
+          "output": "image",
+          "timeoutMs": 120000
+        },
+        {
+          "id": "image.generate",
+          "category": "Image",
+          "source": "scraper",
+          "permission": "public",
+          "output": "image",
+          "timeoutMs": 90000
+        },
+        {
+          "id": "image.upscale",
+          "category": "Image",
+          "source": "scraper",
+          "permission": "public",
+          "output": "image",
+          "timeoutMs": 120000
+        },
+        {
+          "id": "image.remove_background",
+          "category": "Image",
+          "source": "scraper",
+          "permission": "public",
+          "output": "image",
+          "timeoutMs": 60000
+        },
+        {
+          "id": "audio.transcribe",
+          "category": "Audio",
+          "source": "local",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 120000
+        },
+        {
+          "id": "audio.tts",
+          "category": "Audio",
+          "source": "local",
+          "permission": "public",
+          "output": "audio",
+          "timeoutMs": 60000
+        },
+        {
+          "id": "video.inspect",
+          "category": "Video",
+          "source": "local",
+          "permission": "public",
+          "output": "data",
+          "timeoutMs": 30000
+        },
+        {
+          "id": "video.transcribe",
+          "category": "Video",
+          "source": "local",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 180000
+        },
+        {
+          "id": "video.keyframes",
+          "category": "Video",
+          "source": "local",
+          "permission": "public",
+          "output": "list",
+          "timeoutMs": 90000
+        },
+        {
+          "id": "document.extract",
+          "category": "Documents",
+          "source": "local",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 180000
+        },
+        {
+          "id": "document.summarize",
+          "category": "Documents",
+          "source": "local",
+          "permission": "public",
+          "output": "text",
+          "timeoutMs": 240000
+        },
+        {
+          "id": "file.inspect",
+          "category": "Utility",
+          "source": "local",
+          "permission": "public",
+          "output": "data",
+          "timeoutMs": 10000
+        },
+        {
+          "id": "group.members",
+          "category": "Utility",
+          "source": "local",
+          "permission": "public",
+          "output": "data",
+          "timeoutMs": 15000
+        }
+      ]
+    },
+    "scrapers": {
+      "ok": true,
+      "catalogEntries": 63,
+      "physicalFiles": 63,
+      "physicalWithoutCatalogEntry": [],
+      "catalogWithoutMatchingFile": [],
+      "entries": [
+        {
+          "id": "aio",
+          "kind": "download",
+          "input": "url",
+          "output": "media",
+          "permission": "public",
+          "timeoutMs": 45000,
+          "platforms": [
+            "instagram",
+            "youtube",
+            "tiktok",
+            "facebook",
+            "pinterest",
+            "capcut",
+            "twitter",
+            "threads",
+            "reddit"
+          ],
+          "fallbacks": []
+        },
+        {
+          "id": "tiktok",
+          "kind": "download",
+          "input": "url",
+          "output": "video",
+          "permission": "public",
+          "timeoutMs": 40000,
+          "platforms": [
+            "tiktok"
+          ],
+          "fallbacks": [
+            "aio"
+          ]
+        },
+        {
+          "id": "douyin",
+          "kind": "download",
+          "input": "url",
+          "output": "video",
+          "permission": "public",
+          "timeoutMs": 40000,
+          "platforms": [
+            "douyin"
+          ],
+          "fallbacks": []
+        },
+        {
+          "id": "ig",
+          "kind": "download",
+          "input": "url",
+          "output": "media",
+          "permission": "public",
+          "timeoutMs": 40000,
+          "platforms": [
+            "instagram"
+          ],
+          "fallbacks": [
+            "aio"
+          ]
+        },
+        {
+          "id": "reelsvideo",
+          "kind": "download",
+          "input": "url",
+          "output": "media",
+          "permission": "public",
+          "timeoutMs": 40000,
+          "platforms": [
+            "instagram"
+          ],
+          "fallbacks": [
+            "aio"
+          ]
+        },
+        {
+          "id": "twitter",
+          "kind": "download",
+          "input": "url",
+          "output": "media",
+          "permission": "public",
+          "timeoutMs": 40000,
+          "platforms": [
+            "twitter"
+          ],
+          "fallbacks": [
+            "aio"
+          ]
+        },
+        {
+          "id": "reddit",
+          "kind": "download",
+          "input": "url",
+          "output": "media",
+          "permission": "public",
+          "timeoutMs": 30000,
+          "platforms": [
+            "reddit"
+          ],
+          "fallbacks": [
+            "aio"
+          ]
+        },
+        {
+          "id": "youtube",
+          "kind": "download",
+          "input": "url",
+          "output": "media",
+          "permission": "public",
+          "timeoutMs": 60000,
+          "platforms": [
+            "youtube"
+          ],
+          "fallbacks": [
+            "ytdl"
+          ]
+        },
+        {
+          "id": "yt",
+          "kind": "download",
+          "input": "url",
+          "output": "media",
+          "permission": "public",
+          "timeoutMs": 60000,
+          "platforms": [
+            "youtube"
+          ],
+          "fallbacks": [
+            "ytdl"
+          ]
+        },
+        {
+          "id": "ytdl",
+          "kind": "download",
+          "input": "url|query",
+          "output": "audio",
+          "permission": "public",
+          "timeoutMs": 90000,
+          "platforms": [
+            "youtube"
+          ],
+          "fallbacks": [
+            "youtube"
+          ]
+        },
+        {
+          "id": "spotify",
+          "kind": "download",
+          "input": "url",
+          "output": "audio",
+          "permission": "public",
+          "timeoutMs": 60000,
+          "platforms": [
+            "spotify"
+          ],
+          "fallbacks": []
+        },
+        {
+          "id": "soundclouddl",
+          "kind": "download",
+          "input": "url",
+          "output": "audio",
+          "permission": "public",
+          "timeoutMs": 45000,
+          "platforms": [
+            "soundcloud"
+          ],
+          "fallbacks": []
+        },
+        {
+          "id": "mediafire",
+          "kind": "download",
+          "input": "url",
+          "output": "file",
+          "permission": "public",
+          "timeoutMs": 40000,
+          "platforms": [
+            "mediafire"
+          ],
+          "fallbacks": []
+        },
+        {
+          "id": "terabox",
+          "kind": "download",
+          "input": "url",
+          "output": "file",
+          "permission": "public",
+          "timeoutMs": 45000,
+          "platforms": [
+            "terabox"
+          ],
+          "fallbacks": []
+        },
+        {
+          "id": "sfiledl",
+          "kind": "download",
+          "input": "url",
+          "output": "file",
+          "permission": "public",
+          "timeoutMs": 40000,
+          "platforms": [
+            "sfile"
+          ],
+          "fallbacks": []
+        },
+        {
+          "id": "dailymotion",
+          "kind": "download",
+          "input": "url",
+          "output": "video",
+          "permission": "public",
+          "timeoutMs": 45000,
+          "platforms": [
+            "dailymotion"
+          ],
+          "fallbacks": []
+        },
+        {
+          "id": "likee",
+          "kind": "download",
+          "input": "url",
+          "output": "video",
+          "permission": "public",
+          "timeoutMs": 40000,
+          "platforms": [
+            "likee"
+          ],
+          "fallbacks": []
+        },
+        {
+          "id": "rednote",
+          "kind": "download",
+          "input": "url",
+          "output": "media",
+          "permission": "public",
+          "timeoutMs": 40000,
+          "platforms": [
+            "rednote"
+          ],
+          "fallbacks": []
+        },
+        {
+          "id": "pindl",
+          "kind": "download",
+          "input": "url",
+          "output": "media",
+          "permission": "public",
+          "timeoutMs": 30000,
+          "platforms": [
+            "pinterest"
+          ],
+          "fallbacks": [
+            "aio"
+          ]
+        },
+        {
+          "id": "google",
+          "kind": "search",
+          "input": "query",
+          "output": "list",
+          "permission": "public",
+          "timeoutMs": 20000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "tiktoksearch",
+          "kind": "search",
+          "input": "query",
+          "output": "list",
+          "permission": "public",
+          "timeoutMs": 25000,
+          "platforms": [
+            "tiktok"
+          ],
+          "fallbacks": []
+        },
+        {
+          "id": "soundcloud",
+          "kind": "search",
+          "input": "query",
+          "output": "list",
+          "permission": "public",
+          "timeoutMs": 20000,
+          "platforms": [
+            "soundcloud"
+          ],
+          "fallbacks": []
+        },
+        {
+          "id": "wallpapersearch",
+          "kind": "search",
+          "input": "query",
+          "output": "list",
+          "permission": "public",
+          "timeoutMs": 20000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "konachan",
+          "kind": "search",
+          "input": "query",
+          "output": "list",
+          "permission": "public",
+          "timeoutMs": 20000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "kusonime",
+          "kind": "search",
+          "input": "query",
+          "output": "list",
+          "permission": "public",
+          "timeoutMs": 20000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "dramabox",
+          "kind": "search",
+          "input": "query",
+          "output": "list",
+          "permission": "public",
+          "timeoutMs": 20000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "shinigami",
+          "kind": "search",
+          "input": "query",
+          "output": "list",
+          "permission": "public",
+          "timeoutMs": 20000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "dafont",
+          "kind": "search",
+          "input": "query",
+          "output": "list",
+          "permission": "public",
+          "timeoutMs": 20000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "gsmarena",
+          "kind": "info",
+          "input": "query",
+          "output": "list",
+          "permission": "public",
+          "timeoutMs": 20000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "hokinfo",
+          "kind": "info",
+          "input": "name",
+          "output": "text",
+          "permission": "public",
+          "timeoutMs": 20000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "wwchar",
+          "kind": "info",
+          "input": "name",
+          "output": "text",
+          "permission": "public",
+          "timeoutMs": 20000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "txt2img2",
+          "kind": "image-generate",
+          "input": "prompt",
+          "output": "image",
+          "permission": "public",
+          "timeoutMs": 90000,
+          "platforms": [],
+          "fallbacks": [
+            "seaart"
+          ]
+        },
+        {
+          "id": "seaart",
+          "kind": "image-generate",
+          "input": "prompt",
+          "output": "image",
+          "permission": "public",
+          "timeoutMs": 90000,
+          "platforms": [],
+          "fallbacks": [
+            "deepai-scraper"
+          ]
+        },
+        {
+          "id": "deepai-scraper",
+          "kind": "image-generate",
+          "input": "prompt",
+          "output": "image",
+          "permission": "public",
+          "timeoutMs": 60000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "txt2img",
+          "kind": "image-generate",
+          "input": "prompt",
+          "output": "image",
+          "permission": "public",
+          "timeoutMs": 90000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "img2img",
+          "kind": "image-edit",
+          "input": "image+prompt",
+          "output": "image",
+          "permission": "public",
+          "timeoutMs": 120000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "removebackground",
+          "kind": "image-edit",
+          "input": "image",
+          "output": "image",
+          "permission": "public",
+          "timeoutMs": 60000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "img2prompt",
+          "kind": "image-edit",
+          "input": "image",
+          "output": "text",
+          "permission": "public",
+          "timeoutMs": 45000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "hd",
+          "kind": "image-enhance",
+          "input": "image",
+          "output": "image",
+          "permission": "public",
+          "timeoutMs": 120000,
+          "platforms": [],
+          "fallbacks": [
+            "upscaler"
+          ]
+        },
+        {
+          "id": "upscaler",
+          "kind": "image-enhance",
+          "input": "image",
+          "output": "image",
+          "permission": "public",
+          "timeoutMs": 90000,
+          "platforms": [],
+          "fallbacks": [
+            "imglarger"
+          ]
+        },
+        {
+          "id": "imglarger",
+          "kind": "image-enhance",
+          "input": "image",
+          "output": "image",
+          "permission": "public",
+          "timeoutMs": 120000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "wink",
+          "kind": "video-enhance",
+          "input": "video",
+          "output": "video",
+          "permission": "public",
+          "timeoutMs": 180000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "hdvid",
+          "kind": "video-enhance",
+          "input": "video",
+          "output": "video",
+          "permission": "public",
+          "timeoutMs": 180000,
+          "platforms": [],
+          "fallbacks": [
+            "hdvid2"
+          ]
+        },
+        {
+          "id": "hdvid2",
+          "kind": "video-enhance",
+          "input": "video",
+          "output": "video",
+          "permission": "public",
+          "timeoutMs": 180000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "imgdrop",
+          "kind": "upload",
+          "input": "image",
+          "output": "text",
+          "permission": "public",
+          "timeoutMs": 30000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "videy",
+          "kind": "upload",
+          "input": "video",
+          "output": "text",
+          "permission": "public",
+          "timeoutMs": 90000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "mconverter",
+          "kind": "convert",
+          "input": "file",
+          "output": "file",
+          "permission": "public",
+          "timeoutMs": 90000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "tempmail",
+          "kind": "utility",
+          "input": "none",
+          "output": "text",
+          "permission": "public",
+          "timeoutMs": 20000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "topmedia",
+          "kind": "tts",
+          "input": "prompt",
+          "output": "audio",
+          "permission": "public",
+          "timeoutMs": 45000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "lufemboy",
+          "kind": "fun",
+          "input": "name",
+          "output": "text",
+          "permission": "public",
+          "timeoutMs": 5000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "gemini",
+          "kind": "chat",
+          "input": "prompt",
+          "output": "text",
+          "permission": "public",
+          "timeoutMs": 45000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "geminiVision",
+          "kind": "chat",
+          "input": "prompt",
+          "output": "text",
+          "permission": "public",
+          "timeoutMs": 45000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "gpt5",
+          "kind": "chat",
+          "input": "prompt",
+          "output": "text",
+          "permission": "public",
+          "timeoutMs": 45000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "gpt52",
+          "kind": "chat",
+          "input": "prompt",
+          "output": "text",
+          "permission": "owner",
+          "timeoutMs": 60000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "deepseek",
+          "kind": "chat",
+          "input": "prompt",
+          "output": "text",
+          "permission": "public",
+          "timeoutMs": 60000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "claudehaiku",
+          "kind": "chat",
+          "input": "prompt",
+          "output": "text",
+          "permission": "public",
+          "timeoutMs": 45000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "qwen3",
+          "kind": "chat",
+          "input": "prompt",
+          "output": "text",
+          "permission": "public",
+          "timeoutMs": 45000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "multiAI",
+          "kind": "chat",
+          "input": "prompt",
+          "output": "text",
+          "permission": "public",
+          "timeoutMs": 45000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "logic-bell",
+          "kind": "chat",
+          "input": "prompt",
+          "output": "text",
+          "permission": "public",
+          "timeoutMs": 45000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "chatday",
+          "kind": "chat",
+          "input": "prompt",
+          "output": "text",
+          "permission": "public",
+          "timeoutMs": 45000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "unlimitedai",
+          "kind": "chat",
+          "input": "prompt",
+          "output": "text",
+          "permission": "public",
+          "timeoutMs": 45000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "feeb",
+          "kind": "chat",
+          "input": "prompt",
+          "output": "text",
+          "permission": "public",
+          "timeoutMs": 45000,
+          "platforms": [],
+          "fallbacks": []
+        },
+        {
+          "id": "manus-agent",
+          "kind": "agent",
+          "input": "prompt",
+          "output": "text",
+          "permission": "owner",
+          "timeoutMs": 120000,
+          "platforms": [],
+          "fallbacks": []
+        }
+      ]
+    },
+    "intents": {
+      "ok": true,
+      "source": "src/lib/terboo-intent-gate.js",
+      "intents": [
+        "CHAT",
+        "QUESTION",
+        "COMMAND",
+        "TOOL",
+        "SEARCH",
+        "SCRAPER",
+        "VISION",
+        "AUDIO",
+        "VIDEO",
+        "DOCUMENT",
+        "IMAGE",
+        "CREATIVE",
+        "MEMORY",
+        "AGENT",
+        "OWNER",
+        "PROJECT",
+        "AUTOMATION",
+        "TASK_CONTROL",
+        "CLARIFICATION",
+        "REFUSAL"
+      ]
+    },
+    "aiProviders": {
+      "ok": true,
+      "configured": [
+        "GPTVision",
+        "GeminiAPI",
+        "GPT",
+        "DeepSeek"
+      ],
+      "visionCapable": [
+        "GPTVision"
+      ],
+      "caps": {
+        "Claude": {
+          "vision": true,
+          "longContext": true,
+          "code": true
+        },
+        "GPTVision": {
+          "vision": true
+        },
+        "GeminiAPI": {
+          "vision": false
+        },
+        "GPT": {
+          "vision": false
+        },
+        "DeepSeek": {
+          "vision": false,
+          "code": true
+        },
+        "NVIDIA": {
+          "vision": false
+        }
+      },
+      "note": "names only — no key values, no live provider call was made"
+    },
+    "permissions": {
+      "ok": true,
+      "actions": [
+        {
+          "action": "group.members.list",
+          "min": "user",
+          "scope": "group",
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "allowed",
+            "user": "allowed"
+          }
+        },
+        {
+          "action": "group.admins.list",
+          "min": "user",
+          "scope": "group",
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "allowed",
+            "user": "allowed"
+          }
+        },
+        {
+          "action": "group.member.presence",
+          "min": "user",
+          "scope": "group",
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "allowed",
+            "user": "allowed"
+          }
+        },
+        {
+          "action": "group.settings.get",
+          "min": "user",
+          "scope": "group",
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "allowed",
+            "user": "allowed"
+          }
+        },
+        {
+          "action": "group.member.add",
+          "min": "group-admin",
+          "scope": "group",
+          "botAdmin": true,
+          "target": true,
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "allowed",
+            "user": "denied"
+          }
+        },
+        {
+          "action": "group.member.readd",
+          "min": "group-admin",
+          "scope": "group",
+          "botAdmin": true,
+          "target": true,
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "allowed",
+            "user": "denied"
+          }
+        },
+        {
+          "action": "group.member.kick",
+          "min": "group-admin",
+          "scope": "group",
+          "botAdmin": true,
+          "target": true,
+          "destructive": true,
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "allowed",
+            "user": "denied"
+          }
+        },
+        {
+          "action": "group.member.promote",
+          "min": "group-admin",
+          "scope": "group",
+          "botAdmin": true,
+          "target": true,
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "allowed",
+            "user": "denied"
+          }
+        },
+        {
+          "action": "group.member.demote",
+          "min": "group-admin",
+          "scope": "group",
+          "botAdmin": true,
+          "target": true,
+          "destructive": true,
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "allowed",
+            "user": "denied"
+          }
+        },
+        {
+          "action": "group.member.warn",
+          "min": "group-admin",
+          "scope": "group",
+          "target": true,
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "allowed",
+            "user": "denied"
+          }
+        },
+        {
+          "action": "group.member.mute",
+          "min": "group-admin",
+          "scope": "group",
+          "target": true,
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "allowed",
+            "user": "denied"
+          }
+        },
+        {
+          "action": "group.member.unmute",
+          "min": "group-admin",
+          "scope": "group",
+          "target": true,
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "allowed",
+            "user": "denied"
+          }
+        },
+        {
+          "action": "group.members.kickAll",
+          "min": "owner",
+          "scope": "group",
+          "botAdmin": true,
+          "destructive": true,
+          "confirm": true,
+          "bulk": true,
+          "decisions": {
+            "owner": "needs-confirmation",
+            "group-admin": "needs-owner",
+            "user": "needs-owner"
+          }
+        },
+        {
+          "action": "group.members.kickSelected",
+          "min": "group-admin",
+          "scope": "group",
+          "botAdmin": true,
+          "target": true,
+          "destructive": true,
+          "confirm": true,
+          "bulk": true,
+          "decisions": {
+            "owner": "needs-confirmation",
+            "group-admin": "needs-confirmation",
+            "user": "denied"
+          }
+        },
+        {
+          "action": "group.members.promoteSelected",
+          "min": "group-admin",
+          "scope": "group",
+          "botAdmin": true,
+          "target": true,
+          "confirm": true,
+          "bulk": true,
+          "decisions": {
+            "owner": "needs-confirmation",
+            "group-admin": "needs-confirmation",
+            "user": "denied"
+          }
+        },
+        {
+          "action": "group.members.demoteSelected",
+          "min": "group-admin",
+          "scope": "group",
+          "botAdmin": true,
+          "target": true,
+          "destructive": true,
+          "confirm": true,
+          "bulk": true,
+          "decisions": {
+            "owner": "needs-confirmation",
+            "group-admin": "needs-confirmation",
+            "user": "denied"
+          }
+        },
+        {
+          "action": "group.settings.lock",
+          "min": "group-admin",
+          "scope": "group",
+          "botAdmin": true,
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "allowed",
+            "user": "denied"
+          }
+        },
+        {
+          "action": "group.settings.schedule",
+          "min": "group-admin",
+          "scope": "group",
+          "botAdmin": true,
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "allowed",
+            "user": "denied"
+          }
+        },
+        {
+          "action": "group.settings.unlock",
+          "min": "group-admin",
+          "scope": "group",
+          "botAdmin": true,
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "allowed",
+            "user": "denied"
+          }
+        },
+        {
+          "action": "group.settings.restrict",
+          "min": "group-admin",
+          "scope": "group",
+          "botAdmin": true,
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "allowed",
+            "user": "denied"
+          }
+        },
+        {
+          "action": "group.settings.unrestrict",
+          "min": "group-admin",
+          "scope": "group",
+          "botAdmin": true,
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "allowed",
+            "user": "denied"
+          }
+        },
+        {
+          "action": "group.subject.set",
+          "min": "group-admin",
+          "scope": "group",
+          "botAdmin": true,
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "allowed",
+            "user": "denied"
+          }
+        },
+        {
+          "action": "group.description.set",
+          "min": "group-admin",
+          "scope": "group",
+          "botAdmin": true,
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "allowed",
+            "user": "denied"
+          }
+        },
+        {
+          "action": "group.invite.get",
+          "min": "group-admin",
+          "scope": "group",
+          "botAdmin": true,
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "allowed",
+            "user": "denied"
+          }
+        },
+        {
+          "action": "group.invite.revoke",
+          "min": "group-admin",
+          "scope": "group",
+          "botAdmin": true,
+          "destructive": true,
+          "confirm": true,
+          "ownerBypass": true,
+          "decisions": {
+            "owner": "needs-confirmation",
+            "group-admin": "needs-confirmation",
+            "user": "denied"
+          }
+        },
+        {
+          "action": "contact.block",
+          "min": "owner",
+          "scope": "global",
+          "target": true,
+          "destructive": true,
+          "confirm": true,
+          "ownerBypass": true,
+          "decisions": {
+            "owner": "needs-confirmation",
+            "group-admin": "needs-owner",
+            "user": "needs-owner"
+          }
+        },
+        {
+          "action": "contact.unblock",
+          "min": "owner",
+          "scope": "global",
+          "target": true,
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "needs-owner",
+            "user": "needs-owner"
+          }
+        },
+        {
+          "action": "message.send_to_contact",
+          "min": "owner",
+          "scope": "global",
+          "target": true,
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "needs-owner",
+            "user": "needs-owner"
+          }
+        },
+        {
+          "action": "broadcast.run",
+          "min": "owner",
+          "scope": "global",
+          "bulk": true,
+          "confirm": true,
+          "decisions": {
+            "owner": "needs-confirmation",
+            "group-admin": "needs-owner",
+            "user": "needs-owner"
+          }
+        },
+        {
+          "action": "childbots.list",
+          "min": "owner",
+          "scope": "global",
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "needs-owner",
+            "user": "needs-owner"
+          }
+        },
+        {
+          "action": "task.cancel",
+          "min": "user",
+          "scope": "global",
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "allowed",
+            "user": "allowed"
+          }
+        },
+        {
+          "action": "ssh.read",
+          "min": "owner",
+          "scope": "global",
+          "provider": "ssh",
+          "decisions": {
+            "owner": "provider-not-available",
+            "group-admin": "provider-not-available",
+            "user": "provider-not-available"
+          }
+        },
+        {
+          "action": "ssh.exec",
+          "min": "owner",
+          "scope": "global",
+          "provider": "ssh",
+          "decisions": {
+            "owner": "provider-not-available",
+            "group-admin": "provider-not-available",
+            "user": "provider-not-available"
+          }
+        },
+        {
+          "action": "ssh.write",
+          "min": "owner",
+          "scope": "global",
+          "provider": "ssh",
+          "destructive": true,
+          "confirm": true,
+          "ownerBypass": true,
+          "decisions": {
+            "owner": "provider-not-available",
+            "group-admin": "provider-not-available",
+            "user": "provider-not-available"
+          }
+        },
+        {
+          "action": "project.read",
+          "min": "owner",
+          "scope": "global",
+          "decisions": {
+            "owner": "allowed",
+            "group-admin": "needs-owner",
+            "user": "needs-owner"
+          }
+        },
+        {
+          "action": "project.write",
+          "min": "owner",
+          "scope": "global",
+          "destructive": true,
+          "confirm": true,
+          "ownerBypass": true,
+          "decisions": {
+            "owner": "needs-confirmation",
+            "group-admin": "needs-owner",
+            "user": "needs-owner"
+          }
+        },
+        {
+          "action": "project.deploy",
+          "min": "owner",
+          "scope": "global",
+          "provider": "ssh",
+          "destructive": true,
+          "confirm": true,
+          "ownerBypass": true,
+          "decisions": {
+            "owner": "provider-not-available",
+            "group-admin": "provider-not-available",
+            "user": "provider-not-available"
+          }
+        }
+      ]
+    },
+    "mediaLimits": {
+      "ok": true,
+      "media": {
+        "image": {
+          "maxBytes": 16777216,
+          "maxPixels": 40000000,
+          "maxSide": 2048
+        },
+        "audio": {
+          "maxBytes": 26214400,
+          "maxSeconds": 900
+        },
+        "video": {
+          "maxBytes": 67108864,
+          "maxSeconds": 600,
+          "quickSeconds": 90,
+          "quickFrames": 4,
+          "deepFrames": 12
+        },
+        "document": {
+          "maxBytes": 104857600
+        },
+        "ffmpegTimeoutMs": 120000,
+        "ocrTimeoutMs": 90000,
+        "ttsMaxChars": 1200
+      },
+      "documents": {
+        "maxFileBytes": 104857600,
+        "maxExtractedChars": 400000,
+        "maxPdfPages": 300,
+        "maxArchiveEntries": 2000,
+        "maxArchiveUncompressed": 209715200,
+        "maxCompressionRatio": 200,
+        "chunkChars": 1800,
+        "chunkOverlap": 150,
+        "maxOcrPages": 12,
+        "ocrScale": 2,
+        "ocrLanguages": "ara+eng+spa"
+      },
+      "sttProviders": [
+        "0"
+      ]
+    }
+  }
+}

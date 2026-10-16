@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-10-08T18:48:15.640Z",
+  "pluginFiles": 911,
+  "registeredPlugins": 909,
+  "notRegistered": [
+    {
+      "path": "plugins/canvas/avatarjpg.js",
+      "reason": "disabled"
+    },
+    {
+      "path": "plugins/search/asiariyadh.js",
+      "reason": "disabled"
+    }
+  ],
+  "storeCommands": 1225,
+  "storeAliases": 1331,
+  "declaredNames": 1214,
+  "declaredAliases": 1325,
+  "nameCollisions": 0,
+  "aliasCollisions": 0,
+  "aliasShadowsName": 0,
+  "externalHosts": 350,
+  "processFiles": 53,
+  "shellTrueFiles": [],
+  "ssh2Files": [
+    "src/lib/terboo-ssh.js"
+  ],
+  "evalFiles": [
+    "plugins/owner/eval.js",
+    "src/connection.js",
+    "tools/terboo-plugin-health.mjs"
+  ],
+  "directInteractivePlugins": [
+    "plugins/group/منع_البوتات.js",
+    "plugins/owner/حفظ.js"
+  ],
+  "emptyCatchFiles": [],
+  "backgroundFiles": 28,
+  "dbWriteFiles": 309,
+  "configTopKeys": 198,
+  "tools": 103,
+  "scraperFiles": 63,
+  "registeredScrapers": 63
+}

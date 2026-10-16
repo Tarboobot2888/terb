@@ -1,0 +1,530 @@
+{
+ "generatedAt": "2026-10-08T09:54:56.011244Z",
+ "runner": "node tools/terboo-run-tests.mjs",
+ "passed": 104,
+ "total": 104,
+ "live": "3 live tests run separately (npm run test:live) — need real provider keys/network",
+ "summary": "104/104 اختبار محلي نجح · 3 اختبار live خارج هذا التشغيل (npm run test:live)",
+ "tests": [
+  {
+   "test": "terboo-import-graph.test.mjs",
+   "ok": true,
+   "seconds": 1.3
+  },
+  {
+   "test": "terboo-syntax.test.mjs",
+   "ok": true,
+   "seconds": 9.5
+  },
+  {
+   "test": "agent-control.test.mjs",
+   "ok": true,
+   "seconds": 0.1
+  },
+  {
+   "test": "agent-health-memory.test.mjs",
+   "ok": true,
+   "seconds": 0.2
+  },
+  {
+   "test": "agent-plugin.test.mjs",
+   "ok": true,
+   "seconds": 11.5
+  },
+  {
+   "test": "ai-studio-behavioral.test.mjs",
+   "ok": true,
+   "seconds": 0.6
+  },
+  {
+   "test": "ai-studio-foundation.test.mjs",
+   "ok": true,
+   "seconds": 0.4
+  },
+  {
+   "test": "ai-studio-image-policy.test.mjs",
+   "ok": true,
+   "seconds": 0.1
+  },
+  {
+   "test": "ai-workspace-router.test.mjs",
+   "ok": true,
+   "seconds": 0.4
+  },
+  {
+   "test": "autoai-always-reply.test.mjs",
+   "ok": true,
+   "seconds": 0.8
+  },
+  {
+   "test": "autoai-arabic-personas.test.mjs",
+   "ok": true,
+   "seconds": 0.5
+  },
+  {
+   "test": "autoai-behavioral.test.mjs",
+   "ok": true,
+   "seconds": 1.1
+  },
+  {
+   "test": "bot-loop-guard.test.mjs",
+   "ok": true,
+   "seconds": 0.6
+  },
+  {
+   "test": "environment-key-guard.test.mjs",
+   "ok": true,
+   "seconds": 0.5
+  },
+  {
+   "test": "handler-speaker-priority.integration.test.mjs",
+   "ok": true,
+   "seconds": 1.1
+  },
+  {
+   "test": "import-repair.test.mjs",
+   "ok": true,
+   "seconds": 0.5
+  },
+  {
+   "test": "manus-agent.test.mjs",
+   "ok": true,
+   "seconds": 0.3
+  },
+  {
+   "test": "mode-config-guard.test.mjs",
+   "ok": true,
+   "seconds": 0.4
+  },
+  {
+   "test": "owner-bypass.test.mjs",
+   "ok": true,
+   "seconds": 0.4
+  },
+  {
+   "test": "pindl.test.mjs",
+   "ok": true,
+   "seconds": 0.3
+  },
+  {
+   "test": "plugin-diagnostics.test.mjs",
+   "ok": true,
+   "seconds": 0.1
+  },
+  {
+   "test": "plugin-move.test.mjs",
+   "ok": true,
+   "seconds": 0.2
+  },
+  {
+   "test": "provider-health.test.mjs",
+   "ok": true,
+   "seconds": 0.0
+  },
+  {
+   "test": "raw-code-plugin.test.mjs",
+   "ok": true,
+   "seconds": 0.3
+  },
+  {
+   "test": "reddit.test.mjs",
+   "ok": true,
+   "seconds": 0.2
+  },
+  {
+   "test": "reply-variant-selector.test.mjs",
+   "ok": true,
+   "seconds": 0.4
+  },
+  {
+   "test": "spotify-provider.test.mjs",
+   "ok": true,
+   "seconds": 3.2
+  },
+  {
+   "test": "task-queue.test.mjs",
+   "ok": true,
+   "seconds": 0.1
+  },
+  {
+   "test": "terboo-agent-limits.test.mjs",
+   "ok": true,
+   "seconds": 2.6
+  },
+  {
+   "test": "terboo-ai-agent-actions.test.mjs",
+   "ok": true,
+   "seconds": 12.9
+  },
+  {
+   "test": "terboo-ai-agent.test.mjs",
+   "ok": true,
+   "seconds": 5.1
+  },
+  {
+   "test": "terboo-ai-assistant.test.mjs",
+   "ok": true,
+   "seconds": 2.9
+  },
+  {
+   "test": "terboo-ai-conversation.test.mjs",
+   "ok": true,
+   "seconds": 3.0
+  },
+  {
+   "test": "terboo-ai-core-v4.test.mjs",
+   "ok": true,
+   "seconds": 17.3
+  },
+  {
+   "test": "terboo-ai-core.test.mjs",
+   "ok": true,
+   "seconds": 2.9
+  },
+  {
+   "test": "terboo-ai-dispatch.integration.test.mjs",
+   "ok": true,
+   "seconds": 2.6
+  },
+  {
+   "test": "terboo-ai-matrix.test.mjs",
+   "ok": true,
+   "seconds": 2.8
+  },
+  {
+   "test": "terboo-ai-memory.test.mjs",
+   "ok": true,
+   "seconds": 0.5
+  },
+  {
+   "test": "terboo-ai-output.test.mjs",
+   "ok": true,
+   "seconds": 0.0
+  },
+  {
+   "test": "terboo-ai-quality.test.mjs",
+   "ok": true,
+   "seconds": 3.4
+  },
+  {
+   "test": "terboo-ai-recovery.test.mjs",
+   "ok": true,
+   "seconds": 3.9
+  },
+  {
+   "test": "terboo-ai-runtime.test.mjs",
+   "ok": true,
+   "seconds": 3.4
+  },
+  {
+   "test": "terboo-baileys-migration.test.mjs",
+   "ok": true,
+   "seconds": 0.8
+  },
+  {
+   "test": "terboo-brand-assets.test.mjs",
+   "ok": true,
+   "seconds": 0.5
+  },
+  {
+   "test": "terboo-brand-lock.test.mjs",
+   "ok": true,
+   "seconds": 0.4
+  },
+  {
+   "test": "terboo-brat.test.mjs",
+   "ok": true,
+   "seconds": 0.1
+  },
+  {
+   "test": "terboo-bulk-executor.test.mjs",
+   "ok": true,
+   "seconds": 0.4
+  },
+  {
+   "test": "terboo-channel-forward.test.mjs",
+   "ok": true,
+   "seconds": 0.6
+  },
+  {
+   "test": "terboo-claude-adapter.test.mjs",
+   "ok": true,
+   "seconds": 0.7
+  },
+  {
+   "test": "terboo-cloud-admin.test.mjs",
+   "ok": true,
+   "seconds": 2.9
+  },
+  {
+   "test": "terboo-code-card.test.mjs",
+   "ok": true,
+   "seconds": 3.4
+  },
+  {
+   "test": "terboo-code-review.approval.test.mjs",
+   "ok": true,
+   "seconds": 0.5
+  },
+  {
+   "test": "terboo-code-review.e2e.test.mjs",
+   "ok": true,
+   "seconds": 0.5
+  },
+  {
+   "test": "terboo-code-review.test.mjs",
+   "ok": true,
+   "seconds": 0.5
+  },
+  {
+   "test": "terboo-command-router.test.mjs",
+   "ok": true,
+   "seconds": 2.7
+  },
+  {
+   "test": "terboo-dead-buttons.test.mjs",
+   "ok": true,
+   "seconds": 2.4
+  },
+  {
+   "test": "terboo-design.test.mjs",
+   "ok": true,
+   "seconds": 7.6
+  },
+  {
+   "test": "terboo-fake-card.test.mjs",
+   "ok": true,
+   "seconds": 0.1
+  },
+  {
+   "test": "terboo-group-actions.test.mjs",
+   "ok": true,
+   "seconds": 4.0
+  },
+  {
+   "test": "terboo-group-ai-reports.test.mjs",
+   "ok": true,
+   "seconds": 5.8
+  },
+  {
+   "test": "terboo-group-directory.test.mjs",
+   "ok": true,
+   "seconds": 0.7
+  },
+  {
+   "test": "terboo-http-client.test.mjs",
+   "ok": true,
+   "seconds": 2.7
+  },
+  {
+   "test": "terboo-i18n-runtime.test.mjs",
+   "ok": true,
+   "seconds": 2.7
+  },
+  {
+   "test": "terboo-identity.test.mjs",
+   "ok": true,
+   "seconds": 0.6
+  },
+  {
+   "test": "terboo-integration-scenario.test.mjs",
+   "ok": true,
+   "seconds": 3.5
+  },
+  {
+   "test": "terboo-integrity.test.mjs",
+   "ok": true,
+   "seconds": 2.5
+  },
+  {
+   "test": "terboo-interactive-compat.test.mjs",
+   "ok": true,
+   "seconds": 5.3
+  },
+  {
+   "test": "terboo-interactive.test.mjs",
+   "ok": true,
+   "seconds": 2.3
+  },
+  {
+   "test": "terboo-l10n-runtime.test.mjs",
+   "ok": true,
+   "seconds": 4.2
+  },
+  {
+   "test": "terboo-languages.test.mjs",
+   "ok": true,
+   "seconds": 2.6
+  },
+  {
+   "test": "terboo-link-guard.test.mjs",
+   "ok": true,
+   "seconds": 0.0
+  },
+  {
+   "test": "terboo-localization.test.mjs",
+   "ok": true,
+   "seconds": 0.1
+  },
+  {
+   "test": "terboo-memory-matrix.test.mjs",
+   "ok": true,
+   "seconds": 0.5
+  },
+  {
+   "test": "terboo-menu-delivery.test.mjs",
+   "ok": true,
+   "seconds": 3.1
+  },
+  {
+   "test": "terboo-menus.test.mjs",
+   "ok": true,
+   "seconds": 2.9
+  },
+  {
+   "test": "terboo-messaging.test.mjs",
+   "ok": true,
+   "seconds": 3.0
+  },
+  {
+   "test": "terboo-multimodal.test.mjs",
+   "ok": true,
+   "seconds": 6.5
+  },
+  {
+   "test": "terboo-natural-ai.test.mjs",
+   "ok": true,
+   "seconds": 0.7
+  },
+  {
+   "test": "terboo-no-silent-catch.test.mjs",
+   "ok": true,
+   "seconds": 0.7
+  },
+  {
+   "test": "terboo-nvidia-ai.test.mjs",
+   "ok": true,
+   "seconds": 0.2
+  },
+  {
+   "test": "terboo-onboarding.test.mjs",
+   "ok": true,
+   "seconds": 0.6
+  },
+  {
+   "test": "terboo-performance.test.mjs",
+   "ok": true,
+   "seconds": 4.3
+  },
+  {
+   "test": "terboo-permissions.test.mjs",
+   "ok": true,
+   "seconds": 2.2
+  },
+  {
+   "test": "terboo-plugin-workbench.test.mjs",
+   "ok": true,
+   "seconds": 0.2
+  },
+  {
+   "test": "terboo-protobuf.test.mjs",
+   "ok": true,
+   "seconds": 0.7
+  },
+  {
+   "test": "terboo-provider-router.test.mjs",
+   "ok": true,
+   "seconds": 5.6
+  },
+  {
+   "test": "terboo-pterodactyl.test.mjs",
+   "ok": true,
+   "seconds": 0.5
+  },
+  {
+   "test": "terboo-quote.test.mjs",
+   "ok": true,
+   "seconds": 0.1
+  },
+  {
+   "test": "terboo-reminders.test.mjs",
+   "ok": true,
+   "seconds": 2.6
+  },
+  {
+   "test": "terboo-rich-response.test.mjs",
+   "ok": true,
+   "seconds": 1.1
+  },
+  {
+   "test": "terboo-scraper-ai-e2e.test.mjs",
+   "ok": true,
+   "seconds": 2.7
+  },
+  {
+   "test": "terboo-scraper-registry.test.mjs",
+   "ok": true,
+   "seconds": 0.8
+  },
+  {
+   "test": "terboo-scrapers-each.test.mjs",
+   "ok": true,
+   "seconds": 9.8
+  },
+  {
+   "test": "terboo-secrets-vault.test.mjs",
+   "ok": true,
+   "seconds": 0.4
+  },
+  {
+   "test": "terboo-smart-buttons.test.mjs",
+   "ok": true,
+   "seconds": 2.8
+  },
+  {
+   "test": "terboo-ssh-agent.test.mjs",
+   "ok": true,
+   "seconds": 5.4
+  },
+  {
+   "test": "terboo-ssh.test.mjs",
+   "ok": true,
+   "seconds": 2.3
+  },
+  {
+   "test": "terboo-task-resume.test.mjs",
+   "ok": true,
+   "seconds": 0.4
+  },
+  {
+   "test": "terboo-text-style.test.mjs",
+   "ok": true,
+   "seconds": 0.3
+  },
+  {
+   "test": "terboo-tool-registry.test.mjs",
+   "ok": true,
+   "seconds": 0.7
+  },
+  {
+   "test": "terboo-transport.test.mjs",
+   "ok": true,
+   "seconds": 2.7
+  },
+  {
+   "test": "terboo-typography.test.mjs",
+   "ok": true,
+   "seconds": 0.5
+  },
+  {
+   "test": "terboo-virtualizor.test.mjs",
+   "ok": true,
+   "seconds": 0.8
+  },
+  {
+   "test": "tiktoksearch.test.mjs",
+   "ok": true,
+   "seconds": 0.2
+  }
+ ]
+}

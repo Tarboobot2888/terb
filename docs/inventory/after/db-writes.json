@@ -1,0 +1,2165 @@
+[
+  {
+    "file": "plugins/ai/تخيل3.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/ai/تشويش.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 2
+  },
+  {
+    "file": "plugins/ai/جيفس.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/canvas/bratlocal.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 3
+  },
+  {
+    "file": "plugins/cek/تحقق_المخنث.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/clan/إنشاء_عشيرة.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/clan/انضمام_عشيرة.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/clan/دعوة_عشيرة.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/clan/طرد_عشيرة.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/clan/مغادرة_عشيرة.js",
+    "setUser": 3,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/convert/تأثير_صوتي.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/convert/ملصق_ذكي.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/downloader/تحميل_بنتر.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/downloader/تيرابوكس.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/downloader/تيك_صوت.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/downloader/رواية.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/downloader/مكتبة.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/fun/اعتراف.js",
+    "setUser": 7,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/fun/تفاعل.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 3
+  },
+  {
+    "file": "plugins/fun/حالتي.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/fun/رفض.js",
+    "setUser": 2,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/fun/زواج.js",
+    "setUser": 2,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/fun/زوجي.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/fun/طلاق.js",
+    "setUser": 2,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/fun/قبول.js",
+    "setUser": 2,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/fun/متحرش.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 3
+  },
+  {
+    "file": "plugins/fun/ميم.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/game/fish.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/game/اكس_او.js",
+    "setUser": 2,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/game/ثعبان_وسلم.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/game/ماينكرافت.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/game/مستذئب.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/autoai.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/group/giveaways.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 8,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/mutegc.js",
+    "setUser": 0,
+    "setGroup": 1,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/mutemember.js",
+    "setUser": 0,
+    "setGroup": 1,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/إحصاء_الرسائل.js",
+    "setUser": 0,
+    "setGroup": 1,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/اربيجي.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/اشعار_الاغلاق.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/اشعار_الترقية.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/اشعار_الخفض.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/اشعار_الصلاة.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/اشعار_الفتح.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/اشعار_تغيير_الوسم.js",
+    "setUser": 0,
+    "setGroup": 4,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/اشعارات.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/اضافة_رابط.js",
+    "setUser": 0,
+    "setGroup": 1,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/اضافة_كلمة.js",
+    "setUser": 0,
+    "setGroup": 1,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/اعادة_توجيه.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/الردود.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 2
+  },
+  {
+    "file": "plugins/group/العاب.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/انذار.js",
+    "setUser": 0,
+    "setGroup": 3,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/بطء.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/تحميل_تلقائي.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/تحويل_تلقائي.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/ترحيب.js",
+    "setUser": 0,
+    "setGroup": 4,
+    "setSetting": 0,
+    "writeFile": 3
+  },
+  {
+    "file": "plugins/group/ترحيب_المالك.js",
+    "setUser": 0,
+    "setGroup": 10,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/تعارف.js",
+    "setUser": 0,
+    "setGroup": 1,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/تعيين_الترحيب.js",
+    "setUser": 0,
+    "setGroup": 1,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/تعيين_الوداع.js",
+    "setUser": 0,
+    "setGroup": 1,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/تفعيل_الخاص.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/تفعيل_العام.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/جدول_المجموعة.js",
+    "setUser": 0,
+    "setGroup": 3,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/حذف_رابط.js",
+    "setUser": 0,
+    "setGroup": 1,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/حذف_كلمة.js",
+    "setUser": 0,
+    "setGroup": 1,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/حظر_المجموعة.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/ضبط_التعارف.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/فك_الكتم.js",
+    "setUser": 0,
+    "setGroup": 1,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/قوانين_المجموعة.js",
+    "setUser": 0,
+    "setGroup": 1,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/كتم.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/مسح_الانذارات.js",
+    "setUser": 0,
+    "setGroup": 1,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/مسح_الترحيب.js",
+    "setUser": 0,
+    "setGroup": 1,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/مسح_التعارف.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/مسح_القوانين.js",
+    "setUser": 0,
+    "setGroup": 1,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/مسح_الوداع.js",
+    "setUser": 0,
+    "setGroup": 1,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/ملصق_تلقائي.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/منشن.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/group/منع_الاحتيال.js",
+    "setUser": 0,
+    "setGroup": 6,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/منع_الازعاج.js",
+    "setUser": 0,
+    "setGroup": 4,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/منع_البوتات.js",
+    "setUser": 0,
+    "setGroup": 5,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/منع_الحالة.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/منع_الحذف.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/منع_الخطف.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/منع_القمار.js",
+    "setUser": 0,
+    "setGroup": 6,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/منع_الكلمات.js",
+    "setUser": 0,
+    "setGroup": 6,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/منع_المستندات.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/منع_الملصقات.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/منع_الوسائط.js",
+    "setUser": 0,
+    "setGroup": 2,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/منع_مخصص.js",
+    "setUser": 0,
+    "setGroup": 5,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/نسخ.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 3
+  },
+  {
+    "file": "plugins/group/هدية.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 7,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/group/وداع.js",
+    "setUser": 0,
+    "setGroup": 4,
+    "setSetting": 0,
+    "writeFile": 3
+  },
+  {
+    "file": "plugins/group/وضع_البوت.js",
+    "setUser": 0,
+    "setGroup": 1,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/install.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/owner/notiflimit.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/إعادة_تعيين_الحد_الافتراضي.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/إعادة_تعيين_القواعد.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/إلغاء_الحظر.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/إيقاف_الجدولة.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/اضف_بريميوم.js",
+    "setUser": 3,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/اضف_بريميوم_للجميع.js",
+    "setUser": 2,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/اضف_خبرة.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/اضف_طاقة.js",
+    "setUser": 2,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/اضف_كوينز.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/اضف_مالك.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/owner/اضف_مستوى.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/التشابه.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/انضمام_تلقائي.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/اوامر_صوتية.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/بدء_الجدولة.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/بريفكس.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/owner/بطاقة_الكود.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/بلوقن.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 2
+  },
+  {
+    "file": "plugins/owner/بوت_رئيسي.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/owner/بوت_مود.js",
+    "setUser": 0,
+    "setGroup": 1,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/بوست.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 2
+  },
+  {
+    "file": "plugins/owner/بوست2.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 2
+  },
+  {
+    "file": "plugins/owner/بوست_جماعي.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/owner/تأخير_النشر_الخاص.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/تخصيص_الدفع.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/تذكير_الصلاة.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 6,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/ترحيب_الكل.js",
+    "setUser": 0,
+    "setGroup": 1,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/تعطيل_البلوقن.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/owner/تعيين_القواعد.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/تعيين_نوع_الترحيب.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/تعيين_نوع_الرد.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/تعيين_نوع_المالك.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/تغيير_اسم_البوت.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/owner/تغيير_اسم_المطور.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/owner/تغيير_السكرابر.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/owner/تغيير_الكود.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/owner/تفاعل_تلقائي.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/تفعيل_البلوقن.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/owner/تفعيل_صوت_القائمة.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/حذف_بريميوم_الكل.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/حزمة_الصور_الكبيرة.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/owner/حظر.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/خاص_فقط.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 3,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/خصم_طاقة.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/خصم_مستوى.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/خلط_الصور.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/owner/رفع_قناة.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/owner/شكل_المنيو.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/شكل_مسج.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/صلاحية.js",
+    "setUser": 4,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/عام.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/غائب.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/قراءة_الحالات.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/قراءة_الرسائل.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/قراءة_ستوريات.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/قوانين_البوت.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/كتابة_تلقائية.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/مجموعات_فقط.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 3,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/ملاحظات.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/owner/منع_المكالمات.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/نشر.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 2
+  },
+  {
+    "file": "plugins/owner/نشر_عام.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 3,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/نظام_التسجيل.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/نظام_الطاقة.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/هذه_المجموعة_فقط.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/وداع_الكل.js",
+    "setUser": 0,
+    "setGroup": 1,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/وضع_الادمن.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 12,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/owner/وضع_المطور.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/panel/gcseller.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/panel/seller.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/panel/إدارة_البائعين.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/panel/ضبط_الانتظار.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/pushkontak/دفع_جهات_الاتصال.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/rpg/ارتباط.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/rpg/بنك.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/rpg/تحويل.js",
+    "setUser": 5,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/rpg/ساحة_القتال.js",
+    "setUser": 2,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/rpg/شراء_عملات.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/rpg/مبارزة.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/search/playch.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/sticker/bratvid.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/sticker/smemevid.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 2
+  },
+  {
+    "file": "plugins/sticker/swm.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/sticker/افتار.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/sticker/لملصق.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 2
+  },
+  {
+    "file": "plugins/store/market.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/store/إضافة_قائمة.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/store/إضافة_مخزون.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 4,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/store/إضافة_منتج.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/store/تعديل_متجر.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/store/تعديل_مخزون.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/store/تعديل_منتج.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/store/تم.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 3,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/store/حذف_قائمة.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/store/حذف_مخزون.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/store/حذف_منتج.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/store/شراء.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/tools/إزالة_الخلفية.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/tools/بريد_مؤقت.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/tools/تحسين_الصورة_2.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/tools/تحسين_الفيديو.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/tools/تحسين_جودة.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/tools/صنع_تطبيق.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/tools/صورة_لنص.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/tools/ضغط.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/tools/عزل.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 2
+  },
+  {
+    "file": "plugins/tools/قراءة_الصورة.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/tools/لصوت.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/tools/لفيديو.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/tools/لملاحظة_صوتية.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/tools/محول.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/tools/نسخ_صوتي.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/tts/ايلون.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "plugins/user/buyenergi.js",
+    "setUser": 2,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/user/buyfitur.js",
+    "setUser": 2,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/user/daftar.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/user/energi.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/user/exp.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/user/koin.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/user/profile.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/user/setbirthday.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/user/unreg.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/user/لغة.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "plugins/user/مستوى.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "src/connection.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/handler.js",
+    "setUser": 2,
+    "setGroup": 4,
+    "setSetting": 5,
+    "writeFile": 1
+  },
+  {
+    "file": "src/lib/providers/pterodactyl/pterodactyl-store.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "src/lib/providers/virtualizor/virtualizor-entitlements.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/lib/providers/virtualizor/virtualizor-provisioner.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/lib/terboo-agent-audit.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/lib/terboo-agent-control.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/lib/terboo-agent-registry.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/lib/terboo-ai-memory.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/lib/terboo-ai-studio.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/lib/terboo-ai-tools.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 3
+  },
+  {
+    "file": "src/lib/terboo-asset-manager.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/lib/terboo-auto-ai.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/lib/terboo-auto-anime.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 2
+  },
+  {
+    "file": "src/lib/terboo-auto-backup.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/lib/terboo-auto-jpm.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "src/lib/terboo-backup.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 2
+  },
+  {
+    "file": "src/lib/terboo-code-review.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 2
+  },
+  {
+    "file": "src/lib/terboo-database.js",
+    "setUser": 12,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 7
+  },
+  {
+    "file": "src/lib/terboo-exif.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 2
+  },
+  {
+    "file": "src/lib/terboo-fisch.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "src/lib/terboo-fonts.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/lib/terboo-jadibot-database.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/lib/terboo-level.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "src/lib/terboo-lid.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/lib/terboo-link-guard.js",
+    "setUser": 0,
+    "setGroup": 3,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "src/lib/terboo-localization.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "src/lib/terboo-middleware.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "src/lib/terboo-minecraft.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "src/lib/terboo-multimodal.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 8
+  },
+  {
+    "file": "src/lib/terboo-natural-ai.js",
+    "setUser": 0,
+    "setGroup": 1,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "src/lib/terboo-notif-scheduler.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "src/lib/terboo-onboarding.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "src/lib/terboo-panel-jeda.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "src/lib/terboo-performance.js",
+    "setUser": 1,
+    "setGroup": 1,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "src/lib/terboo-plugin-diagnostics.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 3
+  },
+  {
+    "file": "src/lib/terboo-plugin-move.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 3
+  },
+  {
+    "file": "src/lib/terboo-plugin-workbench.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 3
+  },
+  {
+    "file": "src/lib/terboo-premium-db.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 6
+  },
+  {
+    "file": "src/lib/terboo-profile.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "src/lib/terboo-roles-cpanel.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 3
+  },
+  {
+    "file": "src/lib/terboo-roles-digitalocean.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 3
+  },
+  {
+    "file": "src/lib/terboo-roles-linode.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 3
+  },
+  {
+    "file": "src/lib/terboo-scheduler.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 2,
+    "writeFile": 0
+  },
+  {
+    "file": "src/lib/terboo-scraper-registry.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/lib/terboo-serialize.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 2
+  },
+  {
+    "file": "src/lib/terboo-socket.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 3
+  },
+  {
+    "file": "src/lib/terboo-ssh.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 2
+  },
+  {
+    "file": "src/lib/terboo-sticker-command.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/lib/terboo-task-queue.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/lib/terboo-uploader.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/lib/terboo-utils.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 2
+  },
+  {
+    "file": "src/lib/terboo-vault.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/lib/terboo-web-services.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  },
+  {
+    "file": "src/scraper/gpt52.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/scraper/hdvid.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/scraper/hdvid2.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/scraper/wink.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/scraper/ytdl.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "src/telegram/tg-ui.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "tools/audit-external-apis.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "tools/check-external-hosts.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "tools/classify-external-apis.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "tools/probe-priority-endpoints.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "tools/terboo-api-health.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 2
+  },
+  {
+    "file": "tools/terboo-audit.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "tools/terboo-benchmark-compare.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 2
+  },
+  {
+    "file": "tools/terboo-benchmark.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 2
+  },
+  {
+    "file": "tools/terboo-brand-assets.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 2
+  },
+  {
+    "file": "tools/terboo-button-audit.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "tools/terboo-capabilities.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 2
+  },
+  {
+    "file": "tools/terboo-command-ui-matrix.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "tools/terboo-config-example.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "tools/terboo-dependency-truth.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "tools/terboo-design-migrate.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 2
+  },
+  {
+    "file": "tools/terboo-forensic-snapshot.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "tools/terboo-forensic-v6.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 2
+  },
+  {
+    "file": "tools/terboo-group-matrix.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "tools/terboo-i18n-extract.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "tools/terboo-manifest.mjs",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "tools/terboo-permission-matrix.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "tools/terboo-plugin-health.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "tools/terboo-scraper-live.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 2
+  },
+  {
+    "file": "tools/terboo-tool-registry.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "tools/terboo-ui-closeout.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "tools/terboo-v6-matrices.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "tools/terboo-virtualizor-smoke.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "tools/terboo-vps-matrix.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "tools/terboo-wa-capabilities.mjs",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 1
+  },
+  {
+    "file": "index.js",
+    "setUser": 0,
+    "setGroup": 0,
+    "setSetting": 1,
+    "writeFile": 0
+  },
+  {
+    "file": "config.js",
+    "setUser": 1,
+    "setGroup": 0,
+    "setSetting": 0,
+    "writeFile": 0
+  }
+]

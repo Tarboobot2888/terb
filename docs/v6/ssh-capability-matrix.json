@@ -1,0 +1,252 @@
+{
+  "generatedAt": "2026-10-08T18:24:52.814Z",
+  "transport": "ssh2 Client · argv only (each arg single-quoted) · host key pinned before auth (SHA256) · credentials sealed in vault, store mode 600",
+  "levels": {
+    "read": "runs directly for the owner",
+    "write": "central confirmation (ssh.write), paths must stay inside the workspace",
+    "denied": "always refused with an explicit reason"
+  },
+  "policySamples": [
+    {
+      "command": "uptime",
+      "level": "read",
+      "allowed": true,
+      "reason": "read"
+    },
+    {
+      "command": "df -h",
+      "level": "read",
+      "allowed": true,
+      "reason": "read"
+    },
+    {
+      "command": "free -m",
+      "level": "read",
+      "allowed": true,
+      "reason": "read"
+    },
+    {
+      "command": "ps aux",
+      "level": "read",
+      "allowed": true,
+      "reason": "read"
+    },
+    {
+      "command": "cat /etc/os-release",
+      "level": "read",
+      "allowed": true,
+      "reason": "read"
+    },
+    {
+      "command": "tail -n 50 /home/terboo/apps/demo/app.log",
+      "level": "read",
+      "allowed": true,
+      "reason": "read"
+    },
+    {
+      "command": "ls -la /home/terboo/apps/demo",
+      "level": "read",
+      "allowed": true,
+      "reason": "read"
+    },
+    {
+      "command": "npm install",
+      "level": "write",
+      "allowed": true,
+      "reason": "write:npm:install"
+    },
+    {
+      "command": "npm run build",
+      "level": "write",
+      "allowed": true,
+      "reason": "write:npm:run"
+    },
+    {
+      "command": "node index.js",
+      "level": "write",
+      "allowed": true,
+      "reason": "write:node:index.js"
+    },
+    {
+      "command": "python3 -m pip install -r requirements.txt",
+      "level": "write",
+      "allowed": true,
+      "reason": "write:python3:pip"
+    },
+    {
+      "command": "mkdir -p /home/terboo/apps/demo/data",
+      "level": "write",
+      "allowed": true,
+      "reason": "write:mkdir"
+    },
+    {
+      "command": "rm -rf /home/terboo/apps/demo/dist",
+      "level": "write",
+      "allowed": true,
+      "reason": "write:rm"
+    },
+    {
+      "command": "rm -rf /",
+      "level": "denied",
+      "allowed": false,
+      "reason": "outside-workspace"
+    },
+    {
+      "command": "rm -rf /etc",
+      "level": "denied",
+      "allowed": false,
+      "reason": "outside-workspace"
+    },
+    {
+      "command": "cat /etc/shadow",
+      "level": "denied",
+      "allowed": false,
+      "reason": "secret-path"
+    },
+    {
+      "command": "cat ~/.ssh/id_rsa",
+      "level": "denied",
+      "allowed": false,
+      "reason": "secret-path"
+    },
+    {
+      "command": "bash -c id",
+      "level": "denied",
+      "allowed": false,
+      "reason": "denied-binary:bash"
+    },
+    {
+      "command": "sh",
+      "level": "denied",
+      "allowed": false,
+      "reason": "denied-binary:sh"
+    },
+    {
+      "command": "sudo reboot",
+      "level": "denied",
+      "allowed": false,
+      "reason": "denied-binary:sudo"
+    },
+    {
+      "command": "shutdown -h now",
+      "level": "denied",
+      "allowed": false,
+      "reason": "denied-binary:shutdown"
+    },
+    {
+      "command": "mkfs.ext4 /dev/sda1",
+      "level": "denied",
+      "allowed": false,
+      "reason": "denied-binary:mkfs.ext4"
+    },
+    {
+      "command": "dd if=/dev/zero of=/dev/sda",
+      "level": "denied",
+      "allowed": false,
+      "reason": "denied-binary:dd"
+    },
+    {
+      "command": "ls | grep x",
+      "level": "denied",
+      "allowed": false,
+      "reason": "shell-syntax"
+    },
+    {
+      "command": "curl https://example.com",
+      "level": "read",
+      "allowed": true,
+      "reason": "read"
+    },
+    {
+      "command": "chmod -R 777 /",
+      "level": "denied",
+      "allowed": false,
+      "reason": "outside-workspace"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "ptero-theme-uninstall",
+      "title": "uninstall",
+      "steps": 1,
+      "pty": true,
+      "level": "write (owner + confirm)",
+      "source": "fixed script — not AI-generated"
+    },
+    {
+      "id": "ptero-theme-enigma",
+      "title": "enigma",
+      "steps": 3,
+      "pty": true,
+      "level": "write (owner + confirm)",
+      "source": "fixed script — not AI-generated"
+    },
+    {
+      "id": "ptero-theme-billing",
+      "title": "billing",
+      "steps": 3,
+      "pty": true,
+      "level": "write (owner + confirm)",
+      "source": "fixed script — not AI-generated"
+    },
+    {
+      "id": "ptero-theme-stellar",
+      "title": "stellar",
+      "steps": 3,
+      "pty": true,
+      "level": "write (owner + confirm)",
+      "source": "fixed script — not AI-generated"
+    },
+    {
+      "id": "ptero-theme-nebula",
+      "title": "nebula",
+      "steps": 3,
+      "pty": true,
+      "level": "write (owner + confirm)",
+      "source": "fixed script — not AI-generated"
+    }
+  ],
+  "aiTools": [
+    {
+      "id": "ssh.diagnose",
+      "purpose": "read-only health of a registered server: input.host (its id) and input.check one of status|disk|memory|load|processes",
+      "who": "owner only (principalOf)",
+      "confirm": false
+    },
+    {
+      "id": "project.deploy",
+      "purpose": "deploy the zip attached to this message to input.host (asks confirmation; build, run, observe)",
+      "who": "owner only (principalOf)",
+      "confirm": true
+    }
+  ],
+  "diagnoseChecks": [
+    "status",
+    "disk",
+    "memory",
+    "load",
+    "processes"
+  ],
+  "deployPipeline": {
+    "taskType": "project.deploy",
+    "stages": [
+      "ingest",
+      "inspect (zip-slip · size · secret files)",
+      "upload (SFTP inside workspace)",
+      "build",
+      "run",
+      "observe",
+      "propose fix (AI reads logs)",
+      "apply fix (confirm)",
+      "retest"
+    ],
+    "limits": {
+      "zipBytes": 52428800,
+      "files": 2000,
+      "unpackedBytes": 157286400,
+      "logLines": 40
+    }
+  },
+  "ownerCommand": ".ssh add | list | pin | remove | run | diag | deploy",
+  "passwordsInChat": "refused for legacy panel plugins; message scrubbed from bot history"
+}

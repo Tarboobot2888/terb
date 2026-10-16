@@ -1,0 +1,618 @@
+{
+  "generatedAt": "2026-10-15T07:14:13.966Z",
+  "actions": 23,
+  "notUnderstood": [],
+  "protections": [
+    "bot-itself",
+    "requester-self",
+    "group-creator",
+    "bot-owner-protected",
+    "admin-protected (kickAll only, unless owner says including admins)"
+  ],
+  "rows": [
+    {
+      "action": "group.member.add",
+      "modelTool": null,
+      "minLevel": "group-admin",
+      "confirm": false,
+      "bulk": false,
+      "ownerBypass": false,
+      "botMustBeAdmin": true,
+      "destructive": false,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      },
+      "executes": "plugin اضف via dispatchCommand",
+      "verify": "fresh groupMetadata: member present",
+      "examples": [
+        {
+          "text": "ضيف أحمد",
+          "parsedAs": "add"
+        },
+        {
+          "text": "add Ahmed",
+          "parsedAs": "add"
+        }
+      ]
+    },
+    {
+      "action": "group.member.readd",
+      "modelTool": null,
+      "minLevel": "group-admin",
+      "confirm": false,
+      "bulk": false,
+      "ownerBypass": false,
+      "botMustBeAdmin": true,
+      "destructive": false,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      },
+      "executes": "plugin اضف (last removed)",
+      "verify": "fresh groupMetadata: member present",
+      "examples": [
+        {
+          "text": "رجعه",
+          "parsedAs": "readd"
+        }
+      ]
+    },
+    {
+      "action": "group.member.kick",
+      "modelTool": null,
+      "minLevel": "group-admin",
+      "confirm": false,
+      "bulk": false,
+      "ownerBypass": false,
+      "botMustBeAdmin": true,
+      "destructive": true,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      },
+      "executes": "plugin طرد via dispatchCommand",
+      "verify": "fresh groupMetadata: member absent",
+      "examples": [
+        {
+          "text": "اطرد أحمد",
+          "parsedAs": "kick"
+        },
+        {
+          "text": "kick Ahmed",
+          "parsedAs": "kick"
+        }
+      ]
+    },
+    {
+      "action": "group.member.promote",
+      "modelTool": null,
+      "minLevel": "group-admin",
+      "confirm": false,
+      "bulk": false,
+      "ownerBypass": false,
+      "botMustBeAdmin": true,
+      "destructive": false,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      },
+      "executes": "plugin ترقية",
+      "verify": "fresh groupMetadata: admin",
+      "examples": [
+        {
+          "text": "خلي أحمد أدمن",
+          "parsedAs": "promote"
+        },
+        {
+          "text": "promote Ahmed",
+          "parsedAs": "promote"
+        }
+      ]
+    },
+    {
+      "action": "group.member.demote",
+      "modelTool": null,
+      "minLevel": "group-admin",
+      "confirm": false,
+      "bulk": false,
+      "ownerBypass": false,
+      "botMustBeAdmin": true,
+      "destructive": true,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      },
+      "executes": "plugin خفض",
+      "verify": "fresh groupMetadata: not admin",
+      "examples": [
+        {
+          "text": "شيل الادمن من أحمد",
+          "parsedAs": "demote"
+        }
+      ]
+    },
+    {
+      "action": "group.member.warn",
+      "modelTool": null,
+      "minLevel": "group-admin",
+      "confirm": false,
+      "bulk": false,
+      "ownerBypass": false,
+      "botMustBeAdmin": false,
+      "destructive": false,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      },
+      "executes": "plugin انذار",
+      "verify": "plugin result",
+      "examples": [
+        {
+          "text": "انذر أحمد",
+          "parsedAs": "warn"
+        }
+      ]
+    },
+    {
+      "action": "group.members.kickAll",
+      "modelTool": "group.members.kickAll",
+      "minLevel": "owner",
+      "confirm": true,
+      "bulk": true,
+      "ownerBypass": false,
+      "botMustBeAdmin": true,
+      "destructive": true,
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      },
+      "executes": "bulk executor task (groupParticipantsUpdate remove, batches of 5)",
+      "verify": "fresh groupMetadata after every batch",
+      "examples": [
+        {
+          "text": "اطرد الكل",
+          "parsedAs": "bulk"
+        },
+        {
+          "text": "اطرد كل الأعضاء إلا أحمد",
+          "parsedAs": "bulk"
+        },
+        {
+          "text": "kick everyone except Ahmed",
+          "parsedAs": "bulk"
+        },
+        {
+          "text": "expulsa a todos menos Ahmed",
+          "parsedAs": "bulk"
+        }
+      ]
+    },
+    {
+      "action": "group.members.kickSelected",
+      "modelTool": "group.members.kickSelected",
+      "minLevel": "group-admin",
+      "confirm": true,
+      "bulk": true,
+      "ownerBypass": false,
+      "botMustBeAdmin": true,
+      "destructive": true,
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-confirmation",
+        "user": "denied"
+      },
+      "executes": "bulk executor task",
+      "verify": "fresh groupMetadata after every batch",
+      "examples": [
+        {
+          "text": "اطرد سارة وكريم",
+          "parsedAs": "kick"
+        },
+        {
+          "text": "اطرد @a @b",
+          "parsedAs": "kick"
+        }
+      ]
+    },
+    {
+      "action": "group.members.promoteSelected",
+      "modelTool": "group.members.promoteSelected",
+      "minLevel": "group-admin",
+      "confirm": true,
+      "bulk": true,
+      "ownerBypass": false,
+      "botMustBeAdmin": true,
+      "destructive": false,
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-confirmation",
+        "user": "denied"
+      },
+      "executes": "bulk executor task",
+      "verify": "fresh groupMetadata after every batch",
+      "examples": [
+        {
+          "text": "رقي سارة وكريم",
+          "parsedAs": "promote"
+        }
+      ]
+    },
+    {
+      "action": "group.members.demoteSelected",
+      "modelTool": "group.members.demoteSelected",
+      "minLevel": "group-admin",
+      "confirm": true,
+      "bulk": true,
+      "ownerBypass": false,
+      "botMustBeAdmin": true,
+      "destructive": true,
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-confirmation",
+        "user": "denied"
+      },
+      "executes": "bulk executor task",
+      "verify": "fresh groupMetadata after every batch",
+      "examples": [
+        {
+          "text": "شيل الادمن من @a @b",
+          "parsedAs": "demote"
+        }
+      ]
+    },
+    {
+      "action": "group.settings.get",
+      "modelTool": "group.settings.get",
+      "minLevel": "user",
+      "confirm": false,
+      "bulk": false,
+      "ownerBypass": false,
+      "botMustBeAdmin": false,
+      "destructive": false,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      },
+      "executes": "groupMetadata {fresh:true}",
+      "verify": "read-only",
+      "examples": [
+        {
+          "text": "الجروب مقفول؟",
+          "parsedAs": "settings.get"
+        },
+        {
+          "text": "is the group locked?",
+          "parsedAs": "settings.get"
+        }
+      ]
+    },
+    {
+      "action": "group.settings.lock",
+      "modelTool": "group.settings.lock",
+      "minLevel": "group-admin",
+      "confirm": false,
+      "bulk": false,
+      "ownerBypass": false,
+      "botMustBeAdmin": true,
+      "destructive": false,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      },
+      "executes": "groupSettingUpdate announcement",
+      "verify": "fresh groupMetadata.announce === true",
+      "examples": [
+        {
+          "text": "اقفل الجروب",
+          "parsedAs": "setting"
+        },
+        {
+          "text": "lock the group",
+          "parsedAs": "setting"
+        },
+        {
+          "text": "cierra el grupo",
+          "parsedAs": "setting"
+        }
+      ]
+    },
+    {
+      "action": "group.settings.unlock",
+      "modelTool": "group.settings.unlock",
+      "minLevel": "group-admin",
+      "confirm": false,
+      "bulk": false,
+      "ownerBypass": false,
+      "botMustBeAdmin": true,
+      "destructive": false,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      },
+      "executes": "groupSettingUpdate not_announcement",
+      "verify": "fresh groupMetadata.announce === false",
+      "examples": [
+        {
+          "text": "افتح الجروب",
+          "parsedAs": "setting"
+        },
+        {
+          "text": "open the group",
+          "parsedAs": "setting"
+        }
+      ]
+    },
+    {
+      "action": "group.settings.schedule",
+      "modelTool": null,
+      "minLevel": "group-admin",
+      "confirm": false,
+      "bulk": false,
+      "ownerBypass": false,
+      "botMustBeAdmin": true,
+      "destructive": false,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      },
+      "executes": "task queue delayed task (notBefore), persisted, auto-resumed after restart",
+      "verify": "same as lock/unlock at due time + late notice",
+      "examples": [
+        {
+          "text": "اقفل الجروب ساعة",
+          "parsedAs": "setting"
+        },
+        {
+          "text": "افتح الجروب بعد 30 دقيقة",
+          "parsedAs": "setting"
+        },
+        {
+          "text": "lock the group for 1 hour",
+          "parsedAs": "setting"
+        }
+      ]
+    },
+    {
+      "action": "group.settings.restrict",
+      "modelTool": "group.settings.restrict",
+      "minLevel": "group-admin",
+      "confirm": false,
+      "bulk": false,
+      "ownerBypass": false,
+      "botMustBeAdmin": true,
+      "destructive": false,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      },
+      "executes": "groupSettingUpdate locked",
+      "verify": "fresh groupMetadata.restrict === true",
+      "examples": [
+        {
+          "text": "اقفل تعديل بيانات الجروب",
+          "parsedAs": "setting"
+        }
+      ]
+    },
+    {
+      "action": "group.settings.unrestrict",
+      "modelTool": "group.settings.unrestrict",
+      "minLevel": "group-admin",
+      "confirm": false,
+      "bulk": false,
+      "ownerBypass": false,
+      "botMustBeAdmin": true,
+      "destructive": false,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      },
+      "executes": "groupSettingUpdate unlocked",
+      "verify": "fresh groupMetadata.restrict === false",
+      "examples": [
+        {
+          "text": "افتح تعديل بيانات الجروب",
+          "parsedAs": "setting"
+        }
+      ]
+    },
+    {
+      "action": "group.subject.set",
+      "modelTool": "group.subject.set",
+      "minLevel": "group-admin",
+      "confirm": false,
+      "bulk": false,
+      "ownerBypass": false,
+      "botMustBeAdmin": true,
+      "destructive": false,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      },
+      "executes": "groupUpdateSubject",
+      "verify": "fresh groupMetadata.subject === value",
+      "examples": [
+        {
+          "text": "غير اسم الجروب لـ «أصحاب»",
+          "parsedAs": "subject"
+        },
+        {
+          "text": "rename the group to Friends",
+          "parsedAs": "subject"
+        }
+      ]
+    },
+    {
+      "action": "group.description.set",
+      "modelTool": "group.description.set",
+      "minLevel": "group-admin",
+      "confirm": false,
+      "bulk": false,
+      "ownerBypass": false,
+      "botMustBeAdmin": true,
+      "destructive": false,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      },
+      "executes": "groupUpdateDescription",
+      "verify": "fresh groupMetadata.desc === value",
+      "examples": [
+        {
+          "text": "غير وصف الجروب لـ …",
+          "parsedAs": "description"
+        },
+        {
+          "text": "امسح وصف الجروب",
+          "parsedAs": "description"
+        }
+      ]
+    },
+    {
+      "action": "group.invite.get",
+      "modelTool": "group.invite.get",
+      "minLevel": "group-admin",
+      "confirm": false,
+      "bulk": false,
+      "ownerBypass": false,
+      "botMustBeAdmin": true,
+      "destructive": false,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      },
+      "executes": "groupInviteCode",
+      "verify": "code returned",
+      "examples": [
+        {
+          "text": "هات لينك الجروب",
+          "parsedAs": "invite.get"
+        },
+        {
+          "text": "group link",
+          "parsedAs": "invite.get"
+        }
+      ]
+    },
+    {
+      "action": "group.invite.revoke",
+      "modelTool": "group.invite.revoke",
+      "minLevel": "group-admin",
+      "confirm": true,
+      "bulk": false,
+      "ownerBypass": true,
+      "botMustBeAdmin": true,
+      "destructive": true,
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-confirmation",
+        "user": "denied"
+      },
+      "executes": "groupRevokeInvite",
+      "verify": "new code !== old code",
+      "examples": [
+        {
+          "text": "غير اللينك",
+          "parsedAs": "invite.revoke"
+        },
+        {
+          "text": "reset the group link",
+          "parsedAs": "invite.revoke"
+        }
+      ]
+    },
+    {
+      "action": "group.member.mute",
+      "modelTool": null,
+      "minLevel": "group-admin",
+      "confirm": false,
+      "bulk": false,
+      "ownerBypass": false,
+      "botMustBeAdmin": false,
+      "destructive": false,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      },
+      "executes": "plugin كتم (command path)",
+      "verify": "plugin result",
+      "examples": []
+    },
+    {
+      "action": "contact.block",
+      "modelTool": "contact.block",
+      "minLevel": "owner",
+      "confirm": true,
+      "bulk": false,
+      "ownerBypass": true,
+      "botMustBeAdmin": false,
+      "destructive": true,
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      },
+      "executes": "updateBlockStatus block",
+      "verify": "fetchBlocklist contains target",
+      "examples": [
+        {
+          "text": "احظر أحمد",
+          "parsedAs": "block"
+        },
+        {
+          "text": "احظره",
+          "parsedAs": "block"
+        },
+        {
+          "text": "block Ahmed",
+          "parsedAs": "block"
+        }
+      ]
+    },
+    {
+      "action": "contact.unblock",
+      "modelTool": "contact.unblock",
+      "minLevel": "owner",
+      "confirm": false,
+      "bulk": false,
+      "ownerBypass": false,
+      "botMustBeAdmin": false,
+      "destructive": false,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      },
+      "executes": "updateBlockStatus unblock",
+      "verify": "fetchBlocklist excludes target",
+      "examples": [
+        {
+          "text": "فك الحظر عن أحمد",
+          "parsedAs": "block"
+        },
+        {
+          "text": "unblock Ahmed",
+          "parsedAs": "block"
+        }
+      ]
+    }
+  ]
+}

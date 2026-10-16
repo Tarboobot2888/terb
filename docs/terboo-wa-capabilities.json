@@ -1,0 +1,1108 @@
+{
+  "generatedAt": "2026-10-02T17:03:26.279Z",
+  "runtime": {
+    "package": "@whiskeysockets/baileys",
+    "version": "7.0.0-rc14",
+    "protoSource": "node_modules/@whiskeysockets/baileys/WAProto/WAProto.proto"
+  },
+  "method": "Detected = runtime WAProto class + fields parsed from the shipped WAProto.proto. Tested = central builder sample → validateMessage (fromObject type check + create/encode/decode, the rc14 transport path) and simulated presses through the real interactive parser. Device rendering cannot be observed without a WhatsApp session, so web/mobile are reported as unverified-in-sandbox.",
+  "deliveryRule": "The first payload of any menu is chosen from policy before sending (primary only). ACK ≥ 2 means delivered, not rendered; a recipient that cannot render a legacy buttonsMessage sends no error ACK, so legacy payloads are opt-in (config.ui.legacyButtons or setting legacyButtons) and plugin-sent legacy payloads are converted to Native Flow with identical IDs.",
+  "summary": {
+    "capabilities": 27,
+    "detected": 27,
+    "tested": 27,
+    "verified": 27,
+    "primary": [
+      "text",
+      "native_flow.single_select",
+      "native_flow.quick_reply",
+      "native_flow.cta_url",
+      "native_flow.cta_copy",
+      "native_flow.cta_call",
+      "interactive.header_image",
+      "carousel",
+      "album",
+      "poll",
+      "event",
+      "media.image",
+      "media.video",
+      "media.audio",
+      "media.document",
+      "media.sticker",
+      "media.location",
+      "media.contact",
+      "media.reaction"
+    ],
+    "optIn": [
+      "legacy.buttonsMessage",
+      "legacy.listMessage",
+      "legacy.templateMessage"
+    ]
+  },
+  "capabilities": [
+    {
+      "name": "text",
+      "source": "WAProto Message.ExtendedTextMessage",
+      "payload": "extendedTextMessage|conversation",
+      "requiredFields": [
+        "text"
+      ],
+      "responseType": null,
+      "parser": null,
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "unverified-in-sandbox",
+      "mobileSupport": "unverified-in-sandbox",
+      "policy": "primary",
+      "runtimeTest": {
+        "builder": true,
+        "validate": true,
+        "bytes": 14,
+        "error": null
+      },
+      "protoFields": [
+        "text",
+        "matchedText",
+        "description",
+        "title",
+        "textArgb",
+        "backgroundArgb",
+        "font",
+        "previewType",
+        "jpegThumbnail",
+        "contextInfo",
+        "doNotPlayInline",
+        "thumbnailDirectPath",
+        "thumbnailSha256",
+        "thumbnailEncSha256",
+        "mediaKey",
+        "mediaKeyTimestamp",
+        "thumbnailHeight",
+        "thumbnailWidth",
+        "inviteLinkGroupType",
+        "inviteLinkParentGroupSubjectV2",
+        "inviteLinkParentGroupThumbnailV2",
+        "inviteLinkGroupTypeV2",
+        "viewOnce",
+        "videoHeight",
+        "videoWidth",
+        "faviconMMSMetadata",
+        "linkPreviewMetadata",
+        "paymentLinkMetadata",
+        "endCardTiles",
+        "videoContentUrl",
+        "musicMetadata",
+        "paymentExtendedMetadata"
+      ],
+      "fallback": null,
+      "knownLimitations": [
+        "WhatsApp text has no font-family or syntax highlighting; formatting is *bold* _italic_ ~strike~ ```mono``` > quote."
+      ],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "native_flow.single_select",
+      "source": "WAProto Message.InteractiveMessage.NativeFlowMessage",
+      "payload": "interactiveMessage.nativeFlowMessage.buttons[name=single_select]",
+      "requiredFields": [
+        "body.text",
+        "buttons[].name",
+        "buttons[].buttonParamsJson.sections[].rows[].id"
+      ],
+      "responseType": "interactiveResponseMessage.nativeFlowResponseMessage.paramsJson{id}",
+      "parser": "src/lib/terboo-interactive.js (via response.* entries)",
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "unverified-in-sandbox",
+      "mobileSupport": "unverified-in-sandbox",
+      "policy": "primary",
+      "runtimeTest": {
+        "builder": true,
+        "validate": true,
+        "bytes": 214,
+        "error": null
+      },
+      "protoFields": [
+        "buttons",
+        "messageParamsJson",
+        "messageVersion"
+      ],
+      "fallback": "text",
+      "knownLimitations": [
+        "Button vocabulary (single_select…) is a string in WAProto, not an enum: the proto proves transport, not rendering."
+      ],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "native_flow.quick_reply",
+      "source": "WAProto Message.InteractiveMessage.NativeFlowMessage",
+      "payload": "interactiveMessage.nativeFlowMessage.buttons[name=quick_reply]",
+      "requiredFields": [
+        "buttons[].buttonParamsJson.display_text",
+        "buttons[].buttonParamsJson.id"
+      ],
+      "responseType": "interactiveResponseMessage.nativeFlowResponseMessage.paramsJson{id}",
+      "parser": "src/lib/terboo-interactive.js (via response.* entries)",
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "unverified-in-sandbox",
+      "mobileSupport": "unverified-in-sandbox",
+      "policy": "primary",
+      "runtimeTest": {
+        "builder": true,
+        "validate": true,
+        "bytes": 161,
+        "error": null
+      },
+      "protoFields": [
+        "buttons",
+        "messageParamsJson",
+        "messageVersion"
+      ],
+      "fallback": "text",
+      "knownLimitations": [],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "native_flow.cta_url",
+      "source": "WAProto Message.InteractiveMessage.NativeFlowMessage",
+      "payload": "interactiveMessage.nativeFlowMessage.buttons[name=cta_url]",
+      "requiredFields": [
+        "display_text",
+        "url"
+      ],
+      "responseType": null,
+      "parser": null,
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "unverified-in-sandbox",
+      "mobileSupport": "unverified-in-sandbox",
+      "policy": "primary",
+      "runtimeTest": {
+        "builder": true,
+        "validate": true,
+        "bytes": 211,
+        "error": null
+      },
+      "protoFields": [
+        "buttons",
+        "messageParamsJson",
+        "messageVersion"
+      ],
+      "fallback": "text-with-link",
+      "knownLimitations": [
+        "Opens a link client-side; no response message reaches the bot."
+      ],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "native_flow.cta_copy",
+      "source": "WAProto Message.InteractiveMessage.NativeFlowMessage",
+      "payload": "interactiveMessage.nativeFlowMessage.buttons[name=cta_copy]",
+      "requiredFields": [
+        "display_text",
+        "copy_code"
+      ],
+      "responseType": null,
+      "parser": null,
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "unverified-in-sandbox",
+      "mobileSupport": "unverified-in-sandbox",
+      "policy": "primary",
+      "runtimeTest": {
+        "builder": true,
+        "validate": true,
+        "bytes": 195,
+        "error": null
+      },
+      "protoFields": [
+        "buttons",
+        "messageParamsJson",
+        "messageVersion"
+      ],
+      "fallback": "text-with-code",
+      "knownLimitations": [
+        "Copies client-side; no response message reaches the bot."
+      ],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "native_flow.cta_call",
+      "source": "WAProto Message.InteractiveMessage.NativeFlowMessage",
+      "payload": "interactiveMessage.nativeFlowMessage.buttons[name=cta_call]",
+      "requiredFields": [
+        "display_text",
+        "phone_number"
+      ],
+      "responseType": null,
+      "parser": null,
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "unverified-in-sandbox",
+      "mobileSupport": "unverified-in-sandbox",
+      "policy": "primary",
+      "runtimeTest": {
+        "builder": true,
+        "validate": true,
+        "bytes": 176,
+        "error": null
+      },
+      "protoFields": [
+        "buttons",
+        "messageParamsJson",
+        "messageVersion"
+      ],
+      "fallback": "text-with-number",
+      "knownLimitations": [
+        "Dials client-side; no response message reaches the bot."
+      ],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "interactive.header_image",
+      "source": "WAProto Message.InteractiveMessage.Header",
+      "payload": "interactiveMessage.header.imageMessage",
+      "requiredFields": [
+        "hasMediaAttachment=true",
+        "imageMessage (uploaded)"
+      ],
+      "responseType": null,
+      "parser": null,
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "unverified-in-sandbox",
+      "mobileSupport": "unverified-in-sandbox",
+      "policy": "primary",
+      "runtimeTest": {
+        "builder": true,
+        "validate": true,
+        "bytes": 250,
+        "error": null
+      },
+      "protoFields": [
+        "title",
+        "subtitle",
+        "hasMediaAttachment",
+        "documentMessage",
+        "imageMessage",
+        "jpegThumbnail",
+        "videoMessage",
+        "locationMessage",
+        "productMessage"
+      ],
+      "fallback": "native_flow without header",
+      "knownLimitations": [
+        "Needs a media upload (waUploadToServer); cached per asset for an hour."
+      ],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "carousel",
+      "source": "WAProto Message.InteractiveMessage.CarouselMessage",
+      "payload": "interactiveMessage.carouselMessage.cards[]",
+      "requiredFields": [
+        "cards[].header.hasMediaAttachment",
+        "cards[].body.text"
+      ],
+      "responseType": "interactiveResponseMessage (per-card buttons)",
+      "parser": "src/lib/terboo-interactive.js (via response.* entries)",
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "unverified-in-sandbox",
+      "mobileSupport": "unverified-in-sandbox",
+      "policy": "primary",
+      "runtimeTest": {
+        "builder": true,
+        "validate": true,
+        "bytes": 274,
+        "error": null
+      },
+      "protoFields": [
+        "cards",
+        "messageVersion",
+        "carouselCardType"
+      ],
+      "fallback": "album or text list",
+      "knownLimitations": [
+        "Each card needs its own uploaded media."
+      ],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "legacy.buttonsMessage",
+      "source": "WAProto Message.ButtonsMessage",
+      "payload": "buttonsMessage",
+      "requiredFields": [
+        "contentText",
+        "buttons[]"
+      ],
+      "responseType": "buttonsResponseMessage.selectedButtonId",
+      "parser": "src/lib/terboo-interactive.js (via response.* entries)",
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "unverified-in-sandbox",
+      "mobileSupport": "unverified-in-sandbox",
+      "policy": "opt-in",
+      "runtimeTest": {
+        "builder": true,
+        "validate": true,
+        "bytes": 30,
+        "error": null,
+        "convertsToNativeFlow": true
+      },
+      "protoFields": [
+        "contentText",
+        "footerText",
+        "contextInfo",
+        "buttons",
+        "headerType",
+        "text",
+        "documentMessage",
+        "imageMessage",
+        "videoMessage",
+        "locationMessage"
+      ],
+      "fallback": "native_flow",
+      "knownLimitations": [
+        "Accepted by the server (ack ≥ 2) but recipient clients may not render it; a render failure produces no error ack.",
+        "This was the first layer of the v4.0 main menu (variant 1) and the reason it failed while Settings/More (native flow) worked."
+      ],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "legacy.listMessage",
+      "source": "WAProto Message.ListMessage",
+      "payload": "listMessage",
+      "requiredFields": [
+        "sections[]"
+      ],
+      "responseType": "listResponseMessage.singleSelectReply.selectedRowId",
+      "parser": "src/lib/terboo-interactive.js (via response.* entries)",
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "unverified-in-sandbox",
+      "mobileSupport": "unverified-in-sandbox",
+      "policy": "opt-in",
+      "runtimeTest": {
+        "builder": true,
+        "validate": true,
+        "bytes": 40,
+        "error": null,
+        "convertsToNativeFlow": true
+      },
+      "protoFields": [
+        "title",
+        "description",
+        "buttonText",
+        "listType",
+        "sections",
+        "productListInfo",
+        "footerText",
+        "contextInfo"
+      ],
+      "fallback": "native_flow.single_select",
+      "knownLimitations": [
+        "Legacy list; same rendering caveat as buttonsMessage."
+      ],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "legacy.templateMessage",
+      "source": "WAProto Message.TemplateMessage",
+      "payload": "templateMessage",
+      "requiredFields": [
+        "hydratedTemplate"
+      ],
+      "responseType": "templateButtonReplyMessage.selectedId",
+      "parser": "src/lib/terboo-interactive.js (via response.* entries)",
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "unverified-in-sandbox",
+      "mobileSupport": "unverified-in-sandbox",
+      "policy": "opt-in",
+      "runtimeTest": {
+        "builder": true,
+        "validate": true,
+        "bytes": 30,
+        "error": null,
+        "convertsToNativeFlow": true
+      },
+      "protoFields": [
+        "contextInfo",
+        "hydratedTemplate",
+        "templateId",
+        "fourRowTemplate",
+        "hydratedFourRowTemplate",
+        "interactiveMessageTemplate"
+      ],
+      "fallback": "native_flow",
+      "knownLimitations": [
+        "Deprecated template buttons."
+      ],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "response.buttons",
+      "source": "WAProto Message.ButtonsResponseMessage",
+      "payload": "buttonsResponseMessage",
+      "requiredFields": [
+        "selectedButtonId"
+      ],
+      "responseType": null,
+      "parser": {
+        "ok": true,
+        "cases": {
+          "response.buttons": true
+        }
+      },
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "n/a",
+      "mobileSupport": "n/a",
+      "policy": "receive-only",
+      "runtimeTest": null,
+      "protoFields": [
+        "selectedButtonId",
+        "contextInfo",
+        "type",
+        "selectedDisplayText"
+      ],
+      "fallback": null,
+      "knownLimitations": [],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "response.list",
+      "source": "WAProto Message.ListResponseMessage",
+      "payload": "listResponseMessage",
+      "requiredFields": [
+        "singleSelectReply.selectedRowId"
+      ],
+      "responseType": null,
+      "parser": {
+        "ok": true,
+        "cases": {
+          "response.list": true
+        }
+      },
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "n/a",
+      "mobileSupport": "n/a",
+      "policy": "receive-only",
+      "runtimeTest": null,
+      "protoFields": [
+        "title",
+        "listType",
+        "singleSelectReply",
+        "contextInfo",
+        "description"
+      ],
+      "fallback": null,
+      "knownLimitations": [],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "response.template",
+      "source": "WAProto Message.TemplateButtonReplyMessage",
+      "payload": "templateButtonReplyMessage",
+      "requiredFields": [
+        "selectedId"
+      ],
+      "responseType": null,
+      "parser": {
+        "ok": true,
+        "cases": {
+          "response.template": true
+        }
+      },
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "n/a",
+      "mobileSupport": "n/a",
+      "policy": "receive-only",
+      "runtimeTest": null,
+      "protoFields": [
+        "selectedId",
+        "selectedDisplayText",
+        "contextInfo",
+        "selectedIndex",
+        "selectedCarouselCardIndex"
+      ],
+      "fallback": null,
+      "knownLimitations": [],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "response.native_flow",
+      "source": "WAProto Message.InteractiveResponseMessage.NativeFlowResponseMessage",
+      "payload": "interactiveResponseMessage.nativeFlowResponseMessage",
+      "requiredFields": [
+        "paramsJson"
+      ],
+      "responseType": null,
+      "parser": {
+        "ok": true,
+        "cases": {
+          "response.native_flow": true,
+          "response.native_flow.nested": true
+        }
+      },
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "n/a",
+      "mobileSupport": "n/a",
+      "policy": "receive-only",
+      "runtimeTest": null,
+      "protoFields": [
+        "name",
+        "paramsJson",
+        "version"
+      ],
+      "fallback": null,
+      "knownLimitations": [
+        "paramsJson is JSON whose id may be nested (id · selectedId · selectedRowId · response_json)."
+      ],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "album",
+      "source": "WAProto Message.AlbumMessage",
+      "payload": "albumMessage + messageAssociation(MEDIA_ALBUM)",
+      "requiredFields": [
+        "expectedImageCount|expectedVideoCount"
+      ],
+      "responseType": null,
+      "parser": null,
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "unverified-in-sandbox",
+      "mobileSupport": "unverified-in-sandbox",
+      "policy": "primary",
+      "runtimeTest": {
+        "builder": true,
+        "validate": true,
+        "bytes": 5,
+        "error": null
+      },
+      "protoFields": [
+        "expectedImageCount",
+        "expectedVideoCount",
+        "contextInfo"
+      ],
+      "fallback": "media one by one",
+      "knownLimitations": [],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "poll",
+      "source": "WAProto Message.PollCreationMessage",
+      "payload": "pollCreationMessage (sendMessage {poll})",
+      "requiredFields": [
+        "name",
+        "options"
+      ],
+      "responseType": "pollUpdateMessage (encrypted vote)",
+      "parser": "src/lib/terboo-interactive.js (via response.* entries)",
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "unverified-in-sandbox",
+      "mobileSupport": "unverified-in-sandbox",
+      "policy": "primary",
+      "runtimeTest": {
+        "builder": true,
+        "validate": true,
+        "bytes": 19,
+        "error": null
+      },
+      "protoFields": [
+        "encKey",
+        "name",
+        "options",
+        "selectableOptionsCount",
+        "contextInfo",
+        "pollContentType",
+        "pollType",
+        "correctAnswer"
+      ],
+      "fallback": "text",
+      "knownLimitations": [],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "event",
+      "source": "WAProto Message.EventMessage",
+      "payload": "eventMessage + meta(event_type=creation)",
+      "requiredFields": [
+        "name",
+        "startTime"
+      ],
+      "responseType": null,
+      "parser": null,
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "unverified-in-sandbox",
+      "mobileSupport": "unverified-in-sandbox",
+      "policy": "primary",
+      "runtimeTest": {
+        "builder": true,
+        "validate": true,
+        "bytes": 17,
+        "error": null
+      },
+      "protoFields": [
+        "contextInfo",
+        "isCanceled",
+        "name",
+        "description",
+        "location",
+        "joinLink",
+        "startTime",
+        "endTime",
+        "extraGuestsAllowed",
+        "isScheduleCall",
+        "hasReminder",
+        "reminderOffsetSec"
+      ],
+      "fallback": "text",
+      "knownLimitations": [],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "rich_response",
+      "source": "WAProto AIRichResponseMessage",
+      "payload": "Terboo Rich Response Engine (code/table/latex as cards)",
+      "requiredFields": [
+        "submessages"
+      ],
+      "responseType": null,
+      "parser": null,
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "unverified-in-sandbox",
+      "mobileSupport": "unverified-in-sandbox",
+      "policy": "fallback-only",
+      "runtimeTest": {
+        "builder": true,
+        "validate": true,
+        "bytes": 137,
+        "error": null
+      },
+      "protoFields": [
+        "messageType",
+        "submessages",
+        "unifiedResponse",
+        "contextInfo"
+      ],
+      "fallback": "text with ``` code block",
+      "knownLimitations": [
+        "Rendered natively only by some clients; Terboo never imitates Meta AI branding or verification."
+      ],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "media.image",
+      "source": "WAProto Message.ImageMessage",
+      "payload": "sendMessage({ image })",
+      "requiredFields": [
+        "image"
+      ],
+      "responseType": null,
+      "parser": null,
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "unverified-in-sandbox",
+      "mobileSupport": "unverified-in-sandbox",
+      "policy": "primary",
+      "runtimeTest": {
+        "builder": true,
+        "validate": true,
+        "bytes": 88,
+        "error": null
+      },
+      "protoFields": [
+        "url",
+        "mimetype",
+        "caption",
+        "fileSha256",
+        "fileLength",
+        "height",
+        "width",
+        "mediaKey",
+        "fileEncSha256",
+        "interactiveAnnotations",
+        "directPath",
+        "mediaKeyTimestamp",
+        "jpegThumbnail",
+        "contextInfo",
+        "firstScanSidecar",
+        "firstScanLength",
+        "experimentGroupId",
+        "scansSidecar",
+        "scanLengths",
+        "midQualityFileSha256",
+        "midQualityFileEncSha256",
+        "viewOnce",
+        "thumbnailDirectPath",
+        "thumbnailSha256",
+        "thumbnailEncSha256",
+        "staticUrl",
+        "annotations",
+        "imageSourceType",
+        "accessibilityLabel",
+        "mediaKeyDomain",
+        "qrUrl"
+      ],
+      "fallback": "text",
+      "knownLimitations": [],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "media.video",
+      "source": "WAProto Message.VideoMessage",
+      "payload": "sendMessage({ video })",
+      "requiredFields": [
+        "video"
+      ],
+      "responseType": null,
+      "parser": null,
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "unverified-in-sandbox",
+      "mobileSupport": "unverified-in-sandbox",
+      "policy": "primary",
+      "runtimeTest": {
+        "builder": true,
+        "validate": true,
+        "bytes": 84,
+        "error": null
+      },
+      "protoFields": [
+        "url",
+        "mimetype",
+        "fileSha256",
+        "fileLength",
+        "seconds",
+        "mediaKey",
+        "caption",
+        "gifPlayback",
+        "height",
+        "width",
+        "fileEncSha256",
+        "interactiveAnnotations",
+        "directPath",
+        "mediaKeyTimestamp",
+        "jpegThumbnail",
+        "contextInfo",
+        "streamingSidecar",
+        "gifAttribution",
+        "viewOnce",
+        "thumbnailDirectPath",
+        "thumbnailSha256",
+        "thumbnailEncSha256",
+        "staticUrl",
+        "annotations",
+        "accessibilityLabel",
+        "processedVideos",
+        "externalShareFullVideoDurationInSeconds",
+        "motionPhotoPresentationOffsetMs",
+        "metadataUrl",
+        "videoSourceType",
+        "mediaKeyDomain"
+      ],
+      "fallback": "text",
+      "knownLimitations": [],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "media.audio",
+      "source": "WAProto Message.AudioMessage",
+      "payload": "sendMessage({ audio })",
+      "requiredFields": [
+        "audio"
+      ],
+      "responseType": null,
+      "parser": null,
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "unverified-in-sandbox",
+      "mobileSupport": "unverified-in-sandbox",
+      "policy": "primary",
+      "runtimeTest": {
+        "builder": true,
+        "validate": true,
+        "bytes": 99,
+        "error": null
+      },
+      "protoFields": [
+        "url",
+        "mimetype",
+        "fileSha256",
+        "fileLength",
+        "seconds",
+        "ptt",
+        "mediaKey",
+        "fileEncSha256",
+        "directPath",
+        "mediaKeyTimestamp",
+        "contextInfo",
+        "streamingSidecar",
+        "waveform",
+        "backgroundArgb",
+        "viewOnce",
+        "accessibilityLabel",
+        "mediaKeyDomain"
+      ],
+      "fallback": "text",
+      "knownLimitations": [],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "media.document",
+      "source": "WAProto Message.DocumentMessage",
+      "payload": "sendMessage({ document })",
+      "requiredFields": [
+        "document"
+      ],
+      "responseType": null,
+      "parser": null,
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "unverified-in-sandbox",
+      "mobileSupport": "unverified-in-sandbox",
+      "policy": "primary",
+      "runtimeTest": {
+        "builder": true,
+        "validate": true,
+        "bytes": 100,
+        "error": null
+      },
+      "protoFields": [
+        "url",
+        "mimetype",
+        "title",
+        "fileSha256",
+        "fileLength",
+        "pageCount",
+        "mediaKey",
+        "fileName",
+        "fileEncSha256",
+        "directPath",
+        "mediaKeyTimestamp",
+        "contactVcard",
+        "thumbnailDirectPath",
+        "thumbnailSha256",
+        "thumbnailEncSha256",
+        "jpegThumbnail",
+        "contextInfo",
+        "thumbnailHeight",
+        "thumbnailWidth",
+        "caption",
+        "accessibilityLabel",
+        "mediaKeyDomain"
+      ],
+      "fallback": "text",
+      "knownLimitations": [],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "media.sticker",
+      "source": "WAProto Message.StickerMessage",
+      "payload": "sendMessage({ sticker })",
+      "requiredFields": [
+        "sticker"
+      ],
+      "responseType": null,
+      "parser": null,
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "unverified-in-sandbox",
+      "mobileSupport": "unverified-in-sandbox",
+      "policy": "primary",
+      "runtimeTest": {
+        "builder": true,
+        "validate": true,
+        "bytes": 84,
+        "error": null
+      },
+      "protoFields": [
+        "url",
+        "fileSha256",
+        "fileEncSha256",
+        "mediaKey",
+        "mimetype",
+        "height",
+        "width",
+        "directPath",
+        "fileLength",
+        "mediaKeyTimestamp",
+        "firstFrameLength",
+        "firstFrameSidecar",
+        "isAnimated",
+        "pngThumbnail",
+        "contextInfo",
+        "stickerSentTs",
+        "isAvatar",
+        "isAiSticker",
+        "isLottie",
+        "accessibilityLabel",
+        "mediaKeyDomain"
+      ],
+      "fallback": "text",
+      "knownLimitations": [],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "media.location",
+      "source": "WAProto Message.LocationMessage",
+      "payload": "sendMessage({ location })",
+      "requiredFields": [
+        "location"
+      ],
+      "responseType": null,
+      "parser": null,
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "unverified-in-sandbox",
+      "mobileSupport": "unverified-in-sandbox",
+      "policy": "primary",
+      "runtimeTest": {
+        "builder": true,
+        "validate": true,
+        "bytes": 27,
+        "error": null
+      },
+      "protoFields": [
+        "degreesLatitude",
+        "degreesLongitude",
+        "name",
+        "address",
+        "url",
+        "isLive",
+        "accuracyInMeters",
+        "speedInMps",
+        "degreesClockwiseFromMagneticNorth",
+        "comment",
+        "jpegThumbnail",
+        "contextInfo"
+      ],
+      "fallback": "text",
+      "knownLimitations": [],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "media.contact",
+      "source": "WAProto Message.ContactMessage",
+      "payload": "sendMessage({ contact })",
+      "requiredFields": [
+        "contact"
+      ],
+      "responseType": null,
+      "parser": null,
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "unverified-in-sandbox",
+      "mobileSupport": "unverified-in-sandbox",
+      "policy": "primary",
+      "runtimeTest": {
+        "builder": true,
+        "validate": true,
+        "bytes": 56,
+        "error": null
+      },
+      "protoFields": [
+        "displayName",
+        "vcard",
+        "contextInfo"
+      ],
+      "fallback": "text",
+      "knownLimitations": [],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    },
+    {
+      "name": "media.reaction",
+      "source": "WAProto Message.ReactionMessage",
+      "payload": "sendMessage({ reaction })",
+      "requiredFields": [
+        "reaction"
+      ],
+      "responseType": null,
+      "parser": null,
+      "privateSupport": true,
+      "groupSupport": true,
+      "webSupport": "unverified-in-sandbox",
+      "mobileSupport": "unverified-in-sandbox",
+      "policy": "primary",
+      "runtimeTest": {
+        "builder": true,
+        "validate": true,
+        "bytes": 44,
+        "error": null
+      },
+      "protoFields": [
+        "key",
+        "text",
+        "groupingKey",
+        "senderTimestampMs"
+      ],
+      "fallback": null,
+      "knownLimitations": [],
+      "detected": true,
+      "tested": true,
+      "verified": true
+    }
+  ]
+}

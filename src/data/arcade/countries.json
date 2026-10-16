@@ -1,0 +1,752 @@
+[
+ {
+  "code": "EG",
+  "flag": "🇪🇬",
+  "name": {
+   "ar": "مصر",
+   "en": "Egypt",
+   "es": "Egipto"
+  },
+  "capital": {
+   "ar": "القاهرة",
+   "en": "Cairo",
+   "es": "El Cairo"
+  },
+  "continent": "africa"
+ },
+ {
+  "code": "SA",
+  "flag": "🇸🇦",
+  "name": {
+   "ar": "السعودية",
+   "en": "Saudi Arabia",
+   "es": "Arabia Saudita"
+  },
+  "capital": {
+   "ar": "الرياض",
+   "en": "Riyadh",
+   "es": "Riad"
+  },
+  "continent": "asia"
+ },
+ {
+  "code": "AE",
+  "flag": "🇦🇪",
+  "name": {
+   "ar": "الإمارات",
+   "en": "United Arab Emirates",
+   "es": "Emiratos Árabes Unidos"
+  },
+  "capital": {
+   "ar": "أبوظبي",
+   "en": "Abu Dhabi",
+   "es": "Abu Dabi"
+  },
+  "continent": "asia"
+ },
+ {
+  "code": "MA",
+  "flag": "🇲🇦",
+  "name": {
+   "ar": "المغرب",
+   "en": "Morocco",
+   "es": "Marruecos"
+  },
+  "capital": {
+   "ar": "الرباط",
+   "en": "Rabat",
+   "es": "Rabat"
+  },
+  "continent": "africa"
+ },
+ {
+  "code": "DZ",
+  "flag": "🇩🇿",
+  "name": {
+   "ar": "الجزائر",
+   "en": "Algeria",
+   "es": "Argelia"
+  },
+  "capital": {
+   "ar": "الجزائر",
+   "en": "Algiers",
+   "es": "Argel"
+  },
+  "continent": "africa"
+ },
+ {
+  "code": "TN",
+  "flag": "🇹🇳",
+  "name": {
+   "ar": "تونس",
+   "en": "Tunisia",
+   "es": "Túnez"
+  },
+  "capital": {
+   "ar": "تونس",
+   "en": "Tunis",
+   "es": "Túnez"
+  },
+  "continent": "africa"
+ },
+ {
+  "code": "JO",
+  "flag": "🇯🇴",
+  "name": {
+   "ar": "الأردن",
+   "en": "Jordan",
+   "es": "Jordania"
+  },
+  "capital": {
+   "ar": "عمّان",
+   "en": "Amman",
+   "es": "Amán"
+  },
+  "continent": "asia"
+ },
+ {
+  "code": "IQ",
+  "flag": "🇮🇶",
+  "name": {
+   "ar": "العراق",
+   "en": "Iraq",
+   "es": "Irak"
+  },
+  "capital": {
+   "ar": "بغداد",
+   "en": "Baghdad",
+   "es": "Bagdad"
+  },
+  "continent": "asia"
+ },
+ {
+  "code": "KW",
+  "flag": "🇰🇼",
+  "name": {
+   "ar": "الكويت",
+   "en": "Kuwait",
+   "es": "Kuwait"
+  },
+  "capital": {
+   "ar": "مدينة الكويت",
+   "en": "Kuwait City",
+   "es": "Ciudad de Kuwait"
+  },
+  "continent": "asia"
+ },
+ {
+  "code": "QA",
+  "flag": "🇶🇦",
+  "name": {
+   "ar": "قطر",
+   "en": "Qatar",
+   "es": "Catar"
+  },
+  "capital": {
+   "ar": "الدوحة",
+   "en": "Doha",
+   "es": "Doha"
+  },
+  "continent": "asia"
+ },
+ {
+  "code": "OM",
+  "flag": "🇴🇲",
+  "name": {
+   "ar": "عُمان",
+   "en": "Oman",
+   "es": "Omán"
+  },
+  "capital": {
+   "ar": "مسقط",
+   "en": "Muscat",
+   "es": "Mascate"
+  },
+  "continent": "asia"
+ },
+ {
+  "code": "LB",
+  "flag": "🇱🇧",
+  "name": {
+   "ar": "لبنان",
+   "en": "Lebanon",
+   "es": "Líbano"
+  },
+  "capital": {
+   "ar": "بيروت",
+   "en": "Beirut",
+   "es": "Beirut"
+  },
+  "continent": "asia"
+ },
+ {
+  "code": "SD",
+  "flag": "🇸🇩",
+  "name": {
+   "ar": "السودان",
+   "en": "Sudan",
+   "es": "Sudán"
+  },
+  "capital": {
+   "ar": "الخرطوم",
+   "en": "Khartoum",
+   "es": "Jartum"
+  },
+  "continent": "africa"
+ },
+ {
+  "code": "LY",
+  "flag": "🇱🇾",
+  "name": {
+   "ar": "ليبيا",
+   "en": "Libya",
+   "es": "Libia"
+  },
+  "capital": {
+   "ar": "طرابلس",
+   "en": "Tripoli",
+   "es": "Trípoli"
+  },
+  "continent": "africa"
+ },
+ {
+  "code": "TR",
+  "flag": "🇹🇷",
+  "name": {
+   "ar": "تركيا",
+   "en": "Turkey",
+   "es": "Turquía"
+  },
+  "capital": {
+   "ar": "أنقرة",
+   "en": "Ankara",
+   "es": "Ankara"
+  },
+  "continent": "asia"
+ },
+ {
+  "code": "FR",
+  "flag": "🇫🇷",
+  "name": {
+   "ar": "فرنسا",
+   "en": "France",
+   "es": "Francia"
+  },
+  "capital": {
+   "ar": "باريس",
+   "en": "Paris",
+   "es": "París"
+  },
+  "continent": "europe"
+ },
+ {
+  "code": "ES",
+  "flag": "🇪🇸",
+  "name": {
+   "ar": "إسبانيا",
+   "en": "Spain",
+   "es": "España"
+  },
+  "capital": {
+   "ar": "مدريد",
+   "en": "Madrid",
+   "es": "Madrid"
+  },
+  "continent": "europe"
+ },
+ {
+  "code": "IT",
+  "flag": "🇮🇹",
+  "name": {
+   "ar": "إيطاليا",
+   "en": "Italy",
+   "es": "Italia"
+  },
+  "capital": {
+   "ar": "روما",
+   "en": "Rome",
+   "es": "Roma"
+  },
+  "continent": "europe"
+ },
+ {
+  "code": "DE",
+  "flag": "🇩🇪",
+  "name": {
+   "ar": "ألمانيا",
+   "en": "Germany",
+   "es": "Alemania"
+  },
+  "capital": {
+   "ar": "برلين",
+   "en": "Berlin",
+   "es": "Berlín"
+  },
+  "continent": "europe"
+ },
+ {
+  "code": "GB",
+  "flag": "🇬🇧",
+  "name": {
+   "ar": "المملكة المتحدة",
+   "en": "United Kingdom",
+   "es": "Reino Unido"
+  },
+  "capital": {
+   "ar": "لندن",
+   "en": "London",
+   "es": "Londres"
+  },
+  "continent": "europe"
+ },
+ {
+  "code": "PT",
+  "flag": "🇵🇹",
+  "name": {
+   "ar": "البرتغال",
+   "en": "Portugal",
+   "es": "Portugal"
+  },
+  "capital": {
+   "ar": "لشبونة",
+   "en": "Lisbon",
+   "es": "Lisboa"
+  },
+  "continent": "europe"
+ },
+ {
+  "code": "NL",
+  "flag": "🇳🇱",
+  "name": {
+   "ar": "هولندا",
+   "en": "Netherlands",
+   "es": "Países Bajos"
+  },
+  "capital": {
+   "ar": "أمستردام",
+   "en": "Amsterdam",
+   "es": "Ámsterdam"
+  },
+  "continent": "europe"
+ },
+ {
+  "code": "GR",
+  "flag": "🇬🇷",
+  "name": {
+   "ar": "اليونان",
+   "en": "Greece",
+   "es": "Grecia"
+  },
+  "capital": {
+   "ar": "أثينا",
+   "en": "Athens",
+   "es": "Atenas"
+  },
+  "continent": "europe"
+ },
+ {
+  "code": "SE",
+  "flag": "🇸🇪",
+  "name": {
+   "ar": "السويد",
+   "en": "Sweden",
+   "es": "Suecia"
+  },
+  "capital": {
+   "ar": "ستوكهولم",
+   "en": "Stockholm",
+   "es": "Estocolmo"
+  },
+  "continent": "europe"
+ },
+ {
+  "code": "NO",
+  "flag": "🇳🇴",
+  "name": {
+   "ar": "النرويج",
+   "en": "Norway",
+   "es": "Noruega"
+  },
+  "capital": {
+   "ar": "أوسلو",
+   "en": "Oslo",
+   "es": "Oslo"
+  },
+  "continent": "europe"
+ },
+ {
+  "code": "RU",
+  "flag": "🇷🇺",
+  "name": {
+   "ar": "روسيا",
+   "en": "Russia",
+   "es": "Rusia"
+  },
+  "capital": {
+   "ar": "موسكو",
+   "en": "Moscow",
+   "es": "Moscú"
+  },
+  "continent": "europe"
+ },
+ {
+  "code": "US",
+  "flag": "🇺🇸",
+  "name": {
+   "ar": "الولايات المتحدة",
+   "en": "United States",
+   "es": "Estados Unidos"
+  },
+  "capital": {
+   "ar": "واشنطن",
+   "en": "Washington, D.C.",
+   "es": "Washington D. C."
+  },
+  "continent": "america"
+ },
+ {
+  "code": "CA",
+  "flag": "🇨🇦",
+  "name": {
+   "ar": "كندا",
+   "en": "Canada",
+   "es": "Canadá"
+  },
+  "capital": {
+   "ar": "أوتاوا",
+   "en": "Ottawa",
+   "es": "Ottawa"
+  },
+  "continent": "america"
+ },
+ {
+  "code": "MX",
+  "flag": "🇲🇽",
+  "name": {
+   "ar": "المكسيك",
+   "en": "Mexico",
+   "es": "México"
+  },
+  "capital": {
+   "ar": "مكسيكو سيتي",
+   "en": "Mexico City",
+   "es": "Ciudad de México"
+  },
+  "continent": "america"
+ },
+ {
+  "code": "BR",
+  "flag": "🇧🇷",
+  "name": {
+   "ar": "البرازيل",
+   "en": "Brazil",
+   "es": "Brasil"
+  },
+  "capital": {
+   "ar": "برازيليا",
+   "en": "Brasília",
+   "es": "Brasilia"
+  },
+  "continent": "america"
+ },
+ {
+  "code": "AR",
+  "flag": "🇦🇷",
+  "name": {
+   "ar": "الأرجنتين",
+   "en": "Argentina",
+   "es": "Argentina"
+  },
+  "capital": {
+   "ar": "بوينس آيرس",
+   "en": "Buenos Aires",
+   "es": "Buenos Aires"
+  },
+  "continent": "america"
+ },
+ {
+  "code": "CL",
+  "flag": "🇨🇱",
+  "name": {
+   "ar": "تشيلي",
+   "en": "Chile",
+   "es": "Chile"
+  },
+  "capital": {
+   "ar": "سانتياغو",
+   "en": "Santiago",
+   "es": "Santiago"
+  },
+  "continent": "america"
+ },
+ {
+  "code": "CO",
+  "flag": "🇨🇴",
+  "name": {
+   "ar": "كولومبيا",
+   "en": "Colombia",
+   "es": "Colombia"
+  },
+  "capital": {
+   "ar": "بوغوتا",
+   "en": "Bogotá",
+   "es": "Bogotá"
+  },
+  "continent": "america"
+ },
+ {
+  "code": "PE",
+  "flag": "🇵🇪",
+  "name": {
+   "ar": "بيرو",
+   "en": "Peru",
+   "es": "Perú"
+  },
+  "capital": {
+   "ar": "ليما",
+   "en": "Lima",
+   "es": "Lima"
+  },
+  "continent": "america"
+ },
+ {
+  "code": "CU",
+  "flag": "🇨🇺",
+  "name": {
+   "ar": "كوبا",
+   "en": "Cuba",
+   "es": "Cuba"
+  },
+  "capital": {
+   "ar": "هافانا",
+   "en": "Havana",
+   "es": "La Habana"
+  },
+  "continent": "america"
+ },
+ {
+  "code": "JP",
+  "flag": "🇯🇵",
+  "name": {
+   "ar": "اليابان",
+   "en": "Japan",
+   "es": "Japón"
+  },
+  "capital": {
+   "ar": "طوكيو",
+   "en": "Tokyo",
+   "es": "Tokio"
+  },
+  "continent": "asia"
+ },
+ {
+  "code": "CN",
+  "flag": "🇨🇳",
+  "name": {
+   "ar": "الصين",
+   "en": "China",
+   "es": "China"
+  },
+  "capital": {
+   "ar": "بكين",
+   "en": "Beijing",
+   "es": "Pekín"
+  },
+  "continent": "asia"
+ },
+ {
+  "code": "KR",
+  "flag": "🇰🇷",
+  "name": {
+   "ar": "كوريا الجنوبية",
+   "en": "South Korea",
+   "es": "Corea del Sur"
+  },
+  "capital": {
+   "ar": "سول",
+   "en": "Seoul",
+   "es": "Seúl"
+  },
+  "continent": "asia"
+ },
+ {
+  "code": "IN",
+  "flag": "🇮🇳",
+  "name": {
+   "ar": "الهند",
+   "en": "India",
+   "es": "India"
+  },
+  "capital": {
+   "ar": "نيودلهي",
+   "en": "New Delhi",
+   "es": "Nueva Delhi"
+  },
+  "continent": "asia"
+ },
+ {
+  "code": "PK",
+  "flag": "🇵🇰",
+  "name": {
+   "ar": "باكستان",
+   "en": "Pakistan",
+   "es": "Pakistán"
+  },
+  "capital": {
+   "ar": "إسلام آباد",
+   "en": "Islamabad",
+   "es": "Islamabad"
+  },
+  "continent": "asia"
+ },
+ {
+  "code": "ID",
+  "flag": "🇮🇩",
+  "name": {
+   "ar": "إندونيسيا",
+   "en": "Indonesia",
+   "es": "Indonesia"
+  },
+  "capital": {
+   "ar": "جاكرتا",
+   "en": "Jakarta",
+   "es": "Yakarta"
+  },
+  "continent": "asia"
+ },
+ {
+  "code": "TH",
+  "flag": "🇹🇭",
+  "name": {
+   "ar": "تايلاند",
+   "en": "Thailand",
+   "es": "Tailandia"
+  },
+  "capital": {
+   "ar": "بانكوك",
+   "en": "Bangkok",
+   "es": "Bangkok"
+  },
+  "continent": "asia"
+ },
+ {
+  "code": "NG",
+  "flag": "🇳🇬",
+  "name": {
+   "ar": "نيجيريا",
+   "en": "Nigeria",
+   "es": "Nigeria"
+  },
+  "capital": {
+   "ar": "أبوجا",
+   "en": "Abuja",
+   "es": "Abuya"
+  },
+  "continent": "africa"
+ },
+ {
+  "code": "KE",
+  "flag": "🇰🇪",
+  "name": {
+   "ar": "كينيا",
+   "en": "Kenya",
+   "es": "Kenia"
+  },
+  "capital": {
+   "ar": "نيروبي",
+   "en": "Nairobi",
+   "es": "Nairobi"
+  },
+  "continent": "africa"
+ },
+ {
+  "code": "ZA",
+  "flag": "🇿🇦",
+  "name": {
+   "ar": "جنوب أفريقيا",
+   "en": "South Africa",
+   "es": "Sudáfrica"
+  },
+  "capital": {
+   "ar": "بريتوريا",
+   "en": "Pretoria",
+   "es": "Pretoria"
+  },
+  "continent": "africa"
+ },
+ {
+  "code": "ET",
+  "flag": "🇪🇹",
+  "name": {
+   "ar": "إثيوبيا",
+   "en": "Ethiopia",
+   "es": "Etiopía"
+  },
+  "capital": {
+   "ar": "أديس أبابا",
+   "en": "Addis Ababa",
+   "es": "Adís Abeba"
+  },
+  "continent": "africa"
+ },
+ {
+  "code": "SN",
+  "flag": "🇸🇳",
+  "name": {
+   "ar": "السنغال",
+   "en": "Senegal",
+   "es": "Senegal"
+  },
+  "capital": {
+   "ar": "داكار",
+   "en": "Dakar",
+   "es": "Dakar"
+  },
+  "continent": "africa"
+ },
+ {
+  "code": "AU",
+  "flag": "🇦🇺",
+  "name": {
+   "ar": "أستراليا",
+   "en": "Australia",
+   "es": "Australia"
+  },
+  "capital": {
+   "ar": "كانبرا",
+   "en": "Canberra",
+   "es": "Canberra"
+  },
+  "continent": "oceania"
+ },
+ {
+  "code": "NZ",
+  "flag": "🇳🇿",
+  "name": {
+   "ar": "نيوزيلندا",
+   "en": "New Zealand",
+   "es": "Nueva Zelanda"
+  },
+  "capital": {
+   "ar": "ويلينغتون",
+   "en": "Wellington",
+   "es": "Wellington"
+  },
+  "continent": "oceania"
+ },
+ {
+  "code": "FJ",
+  "flag": "🇫🇯",
+  "name": {
+   "ar": "فيجي",
+   "en": "Fiji",
+   "es": "Fiyi"
+  },
+  "capital": {
+   "ar": "سوفا",
+   "en": "Suva",
+   "es": "Suva"
+  },
+  "continent": "oceania"
+ }
+]

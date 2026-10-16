@@ -1,0 +1,254 @@
+{
+ "aio": [
+  "حمل الفيديو ده https://fb.watch/abc123/",
+  "download this https://www.threads.net/@user/post/abc123"
+ ],
+ "tiktok": [
+  "حمل الفيديو ده https://vt.tiktok.com/ZSabc123/",
+  "download this TikTok https://www.tiktok.com/@user/video/7300000000000000000"
+ ],
+ "douyin": [
+  "نزل الفيديو https://v.douyin.com/abc123/",
+  "download https://v.douyin.com/abc123/"
+ ],
+ "ig": [
+  "نزل الريل ده https://www.instagram.com/reel/Cxyz123/",
+  "download this reel https://www.instagram.com/reel/Cxyz123/"
+ ],
+ "reelsvideo": [
+  "نزل الريل بالأداة البديلة https://www.instagram.com/reel/Cxyz123/",
+  "use the alternative Instagram downloader"
+ ],
+ "twitter": [
+  "حمل التغريدة https://x.com/user/status/1790000000000000000",
+  "download https://twitter.com/user/status/1790000000000000000"
+ ],
+ "reddit": [
+  "نزل البوست https://www.reddit.com/r/pics/comments/abc123/title/",
+  "download https://www.reddit.com/r/pics/comments/abc123/title/"
+ ],
+ "youtube": [
+  "حمل الفيديو ده https://youtu.be/dQw4w9WgXcQ",
+  "download this video https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+ ],
+ "yt": [
+  "حمل فيديو يوتيوب بالأداة الثانية",
+  "use the secondary YouTube downloader"
+ ],
+ "ytdl": [
+  "هات الصوت https://youtu.be/dQw4w9WgXcQ",
+  "play Shape of You"
+ ],
+ "spotify": [
+  "حمل الأغنية https://open.spotify.com/track/7qiZfU4dY1lWllzX7mPBI3",
+  "download https://open.spotify.com/track/7qiZfU4dY1lWllzX7mPBI3"
+ ],
+ "soundclouddl": [
+  "حمل https://soundcloud.com/artist/track",
+  "download https://soundcloud.com/artist/track"
+ ],
+ "mediafire": [
+  "نزل الملف https://www.mediafire.com/file/abc123/file.zip/file",
+  "download https://www.mediafire.com/file/abc123/file.zip/file"
+ ],
+ "terabox": [
+  "نزل الملف https://1024terabox.com/s/1abcDEF",
+  "download https://1024terabox.com/s/1abcDEF"
+ ],
+ "sfiledl": [
+  "نزل الملف https://sfile.mobi/abc123",
+  "download https://sfile.mobi/abc123"
+ ],
+ "dailymotion": [
+  "حمل الفيديو https://www.dailymotion.com/video/x8abcd",
+  "download https://www.dailymotion.com/video/x8abcd"
+ ],
+ "likee": [
+  "حمل الفيديو https://likee.video/@user/video/123",
+  "download https://likee.video/@user/video/123"
+ ],
+ "rednote": [
+  "حمل البوست http://xhslink.com/a/abc123",
+  "download http://xhslink.com/a/abc123"
+ ],
+ "pindl": [
+  "نزل الصورة https://pin.it/abc123",
+  "download this pin https://pin.it/abc123"
+ ],
+ "google": [
+  "ابحث عن سعر الذهب اليوم",
+  "search for the weather in Cairo"
+ ],
+ "tiktoksearch": [
+  "ابحث في تيك توك عن وصفات سريعة",
+  "search tiktok for quick recipes"
+ ],
+ "soundcloud": [
+  "ابحث عن الأغنية دي Shape of You",
+  "search for the song Shape of You"
+ ],
+ "wallpapersearch": [
+  "ابحث عن خلفيات فضاء",
+  "search for space wallpapers"
+ ],
+ "konachan": [
+  "رسومات konachan بوسم sky",
+  "konachan artwork tagged sky"
+ ],
+ "kusonime": [
+  "ابحث عن انمي ون بيس",
+  "search for the anime One Piece"
+ ],
+ "dramabox": [
+  "دراما قصيرة اسمها الزوجة الهاربة على دراما بوكس",
+  "a DramaBox short series called The Runaway Wife"
+ ],
+ "shinigami": [
+  "ابحث عن مانهوا Solo Leveling",
+  "search for the manhwa Solo Leveling"
+ ],
+ "dafont": [
+  "هات Font Arial",
+  "download font Pacifico"
+ ],
+ "gsmarena": [
+  "جيب معلومات الجهاز Galaxy S24",
+  "specs of Pixel 8"
+ ],
+ "hokinfo": [
+  "معلومات البطل Lam في Honor of Kings",
+  "Honor of Kings hero Lam"
+ ],
+ "wwchar": [
+  "معلومات شخصية Jinhsi في Wuthering Waves",
+  "Wuthering Waves character Jinhsi"
+ ],
+ "txt2img2": [
+  "عايز صورة لقطة في الفضاء",
+  "I want a picture of a cat in space"
+ ],
+ "seaart": [
+  "صورة غروب واقعية بموديل Flux من SeaArt",
+  "a realistic sunset with the SeaArt Flux model"
+ ],
+ "deepai-scraper": [
+  "صورة بأسلوب DeepAI لمدينة مستقبلية",
+  "a futuristic city in DeepAI style"
+ ],
+ "txt2img": [
+  "صورة انمي لفتاة تحت المطر",
+  "an anime girl in the rain"
+ ],
+ "img2img": [
+  "عدل الصورة دي وخليها كرتون",
+  "edit this image and make it a cartoon"
+ ],
+ "removebackground": [
+  "شيل الخلفية من الصورة",
+  "remove the background"
+ ],
+ "img2prompt": [
+  "حلل الصورة",
+  "what is in this image"
+ ],
+ "hd": [
+  "حسن جودة الصورة دي",
+  "enhance this photo"
+ ],
+ "upscaler": [
+  "كبّر دقة الصورة بالمكبّر",
+  "increase the resolution with the second image tool"
+ ],
+ "imglarger": [
+  "كبّر الصورة بـ ImgLarger",
+  "upscale with ImgLarger"
+ ],
+ "wink": [
+  "حسن الفيديو ده",
+  "enhance the video"
+ ],
+ "hdvid": [
+  "اعمل الفيديو HD بالأداة الأولى",
+  "make this video HD"
+ ],
+ "hdvid2": [
+  "اعمل الفيديو HD بالأداة البديلة",
+  "alternative video HD enhancer"
+ ],
+ "imgdrop": [
+  "ارفع الصورة واعمل لها رابط",
+  "upload this image"
+ ],
+ "videy": [
+  "ارفع الفيديو ده واعمل له رابط",
+  "upload this video and give me a link"
+ ],
+ "mconverter": [
+  "حول الملف ده لـ PDF",
+  "convert this file to PDF"
+ ],
+ "tempmail": [
+  "اعمل لي بريد مؤقت",
+  "create a temporary email"
+ ],
+ "topmedia": [
+  "حول النص ده لصوت",
+  "turn this text into speech"
+ ],
+ "lufemboy": [
+  "لعبة فحص الاسم لأحمد",
+  "name check game for Ahmed"
+ ],
+ "gemini": [
+  "اسأل Gemini عن الثقوب السوداء",
+  "ask Gemini about black holes"
+ ],
+ "geminiVision": [
+  "اسأل Gemini عن اللي في الصورة",
+  "ask Gemini what is in the picture"
+ ],
+ "gpt5": [
+  "اسأل GPT-5 عن الفرق بين let و const",
+  "ask GPT-5 about closures"
+ ],
+ "gpt52": [
+  "جرّب عميل ChatGPT الخاص بالمالك",
+  "owner ChatGPT client diagnostics"
+ ],
+ "deepseek": [
+  "اسأل DeepSeek يحل مسألة رياضيات",
+  "ask DeepSeek to solve a math problem"
+ ],
+ "claudehaiku": [
+  "اسأل Claude Haiku عن فكرة مشروع",
+  "ask Claude Haiku for a project idea"
+ ],
+ "qwen3": [
+  "اسأل Qwen عن ترجمة جملة",
+  "ask Qwen to translate a sentence"
+ ],
+ "multiAI": [
+  "قارن رد Gemini و Claude على سؤال",
+  "compare Gemini and Claude answers"
+ ],
+ "logic-bell": [
+  "اسأل Logic Bell سؤال منطق",
+  "ask Logic Bell a logic puzzle"
+ ],
+ "chatday": [
+  "اسأل ChatDay عن وصفة",
+  "ask ChatDay for a recipe"
+ ],
+ "unlimitedai": [
+  "دردشة بشخصية تيربو",
+  "chat with the Terboo persona"
+ ],
+ "feeb": [
+  "محتاج حد أتكلم معاه وأنا متضايق",
+  "I need someone to talk to"
+ ],
+ "manus-agent": [
+  "خلي Manus يعمل بحث عن السوق",
+  "let Manus research the market"
+ ]
+}

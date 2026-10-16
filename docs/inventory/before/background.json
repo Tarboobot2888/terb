@@ -1,0 +1,152 @@
+[
+  {
+    "file": "plugins/fun/إزعاج.js",
+    "setInterval": 1,
+    "cron": 0,
+    "enqueueTask": 0
+  },
+  {
+    "file": "plugins/fun/قطوتي.js",
+    "setInterval": 1,
+    "cron": 0,
+    "enqueueTask": 0
+  },
+  {
+    "file": "plugins/group/giveaways.js",
+    "setInterval": 0,
+    "cron": 1,
+    "enqueueTask": 0
+  },
+  {
+    "file": "plugins/group/هدية.js",
+    "setInterval": 0,
+    "cron": 1,
+    "enqueueTask": 0
+  },
+  {
+    "file": "src/connection.js",
+    "setInterval": 2,
+    "cron": 0,
+    "enqueueTask": 0
+  },
+  {
+    "file": "src/handler.js",
+    "setInterval": 1,
+    "cron": 0,
+    "enqueueTask": 0
+  },
+  {
+    "file": "src/lib/terboo-ai-core.js",
+    "setInterval": 0,
+    "cron": 0,
+    "enqueueTask": 1
+  },
+  {
+    "file": "src/lib/terboo-ai-media.js",
+    "setInterval": 0,
+    "cron": 0,
+    "enqueueTask": 3
+  },
+  {
+    "file": "src/lib/terboo-auto-anime.js",
+    "setInterval": 1,
+    "cron": 0,
+    "enqueueTask": 0
+  },
+  {
+    "file": "src/lib/terboo-auto-backup.js",
+    "setInterval": 0,
+    "cron": 2,
+    "enqueueTask": 0
+  },
+  {
+    "file": "src/lib/terboo-backup.js",
+    "setInterval": 1,
+    "cron": 0,
+    "enqueueTask": 0
+  },
+  {
+    "file": "src/lib/terboo-data-pruner.js",
+    "setInterval": 1,
+    "cron": 0,
+    "enqueueTask": 0
+  },
+  {
+    "file": "src/lib/terboo-database.js",
+    "setInterval": 1,
+    "cron": 0,
+    "enqueueTask": 0
+  },
+  {
+    "file": "src/lib/terboo-game-data.js",
+    "setInterval": 1,
+    "cron": 0,
+    "enqueueTask": 0
+  },
+  {
+    "file": "src/lib/terboo-jadibot-manager.js",
+    "setInterval": 2,
+    "cron": 0,
+    "enqueueTask": 0
+  },
+  {
+    "file": "src/lib/terboo-memory-monitor.js",
+    "setInterval": 1,
+    "cron": 0,
+    "enqueueTask": 0
+  },
+  {
+    "file": "src/lib/terboo-notif-scheduler.js",
+    "setInterval": 0,
+    "cron": 1,
+    "enqueueTask": 0
+  },
+  {
+    "file": "src/lib/terboo-profile-picture.js",
+    "setInterval": 1,
+    "cron": 0,
+    "enqueueTask": 0
+  },
+  {
+    "file": "src/lib/terboo-scheduler.js",
+    "setInterval": 0,
+    "cron": 1,
+    "enqueueTask": 0
+  },
+  {
+    "file": "src/lib/terboo-sholat-scheduler.js",
+    "setInterval": 0,
+    "cron": 1,
+    "enqueueTask": 0
+  },
+  {
+    "file": "src/lib/terboo-task-queue.js",
+    "setInterval": 0,
+    "cron": 0,
+    "enqueueTask": 5
+  },
+  {
+    "file": "src/lib/terboo-task-runners.js",
+    "setInterval": 0,
+    "cron": 0,
+    "enqueueTask": 1
+  },
+  {
+    "file": "src/lib/terboo-temp-cleaner.js",
+    "setInterval": 1,
+    "cron": 0,
+    "enqueueTask": 0
+  },
+  {
+    "file": "tools/terboo-forensic-snapshot.mjs",
+    "setInterval": 0,
+    "cron": 2,
+    "enqueueTask": 0
+  },
+  {
+    "file": "tools/terboo-manifest.mjs",
+    "setInterval": 0,
+    "cron": 2,
+    "enqueueTask": 0
+  }
+]

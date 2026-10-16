@@ -1,0 +1,50 @@
+/* شاشة الافتتاح: هالة بنفسجية وخط طاقة محسوب — بلا حركة لا نهائية */
+.splash {
+  position: fixed; inset: 0; z-index: 90;
+  display: grid; place-items: center;
+  background: var(--obsidian);
+  animation: fade 160ms var(--ease) both;
+}
+.splash--out { animation: splashOut 400ms var(--ease) forwards; }
+@keyframes splashOut { to { opacity: 0; visibility: hidden; } }
+
+.splash__halo {
+  position: absolute; width: min(72vmin, 520px); aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--violet) 36%, transparent), transparent 66%);
+  filter: blur(26px);
+  animation: haloIn 900ms var(--ease-out) both;
+}
+@keyframes haloIn { from { opacity: 0; transform: scale(0.82); } to { opacity: 1; transform: scale(1); } }
+
+.splash__body { position: relative; display: grid; justify-items: center; gap: 10px; text-align: center; padding: 0 var(--gutter); }
+
+.splash__mark {
+  width: 96px; height: auto; border-radius: 16px;
+  animation: rise 520ms var(--ease-out) both;
+}
+
+/* خط الطاقة: ضربة واحدة أفقية تُرسم ثم تثبت */
+.splash__slash {
+  width: min(62vw, 300px); height: 2px;
+  background: linear-gradient(90deg, transparent, var(--cyan), var(--violet-bright), transparent);
+  transform-origin: center;
+  animation: slashIn 420ms 220ms var(--ease-out) both;
+}
+
+.splash__name {
+  font-family: var(--font-display);
+  font-size: clamp(1.55rem, 1rem + 4.2vw, 2.6rem);
+  letter-spacing: 0.14em;
+  animation: rise 520ms 120ms var(--ease-out) both;
+}
+.splash__tag { color: var(--ink-3); font-size: 0.9rem; animation: rise 520ms 220ms var(--ease-out) both; }
+
+/* جسيمات خفيفة جداً: ثلاث نقاط لا سحابة ثقيلة */
+.splash__body::before, .splash__body::after {
+  content: ""; position: absolute; width: 4px; height: 4px; border-radius: 50%;
+  background: var(--cyan); opacity: 0.6;
+  animation: pulseSoft 2.2s var(--ease) infinite;
+}
+.splash__body::before { inset-inline-start: -14px; top: 18%; }
+.splash__body::after { inset-inline-end: -10px; bottom: 22%; background: var(--violet-bright); animation-delay: 600ms; }

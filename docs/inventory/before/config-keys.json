@@ -1,0 +1,1416 @@
+{
+  "APIkey": [
+    "tools/terboo-config-example.mjs",
+    "tools/terboo-manifest.mjs"
+  ],
+  "APIkey.anthropic": [
+    "src/lib/terboo-ai-providers.js",
+    "tools/terboo-capabilities.mjs"
+  ],
+  "APIkey.covenant": [
+    "plugins/search/شورت.js"
+  ],
+  "APIkey.cuki": [
+    "plugins/ai/غيتا.js",
+    "plugins/random/لا_هيلو.js",
+    "plugins/search/playch.js",
+    "plugins/search/شغل.js",
+    "plugins/search/صور_تيك.js",
+    "plugins/search/مانجا.js",
+    "plugins/search/ماينكرافت.js",
+    "plugins/tools/بحث_خطأ.js"
+  ],
+  "APIkey.fgsi": [
+    "src/scraper/hdvid.js",
+    "src/scraper/img2img.js"
+  ],
+  "APIkey.firefly": [
+    "plugins/ai/جيبيتي4.js",
+    "plugins/downloader/يوت_فيديو.js",
+    "plugins/group/autoai.js",
+    "plugins/stalker/تجسس_انستغرام.js",
+    "plugins/stalker/تجسس_جيثب.js",
+    "plugins/stalker/تجسس_نبيإم.js",
+    "src/lib/terboo-auto-ai.js"
+  ],
+  "APIkey.groq": [
+    "plugins/tools/نسخ_صوتي.js",
+    "src/handler.js",
+    "src/lib/terboo-multimodal.js"
+  ],
+  "APIkey.linode": [
+    "plugins/linode/تفاصيل_لينود.js"
+  ],
+  "APIkey.logicBell": [
+    "src/scraper/logic-bell.js"
+  ],
+  "APIkey.neoxr": [
+    "plugins/ai/رسم_انمي.js",
+    "plugins/ai/شخصية.js",
+    "plugins/asupan/تيك_عشوائي.js",
+    "plugins/downloader/بكسل_درين.js",
+    "plugins/downloader/سفايل.js",
+    "plugins/downloader/فيدي.js",
+    "plugins/fun/حياتي_تعيسة.js",
+    "plugins/fun/شعر.js",
+    "plugins/random/صور_اقتباسات.js",
+    "plugins/random/ميم.js",
+    "plugins/search/apk2.js",
+    "plugins/search/اندرويد.js",
+    "plugins/search/انمي_اي.js",
+    "plugins/search/بيكسيف.js",
+    "plugins/search/فيلم.js",
+    "plugins/stalker/بحث_روبلوكس.js",
+    "plugins/stalker/تجسس_ديسكورد.js",
+    "plugins/sticker/attp2.js",
+    "plugins/sticker/linesticker.js",
+    "plugins/sticker/نص_متحرك.js",
+    "plugins/tools/إيموجي_متحرك.js",
+    "plugins/tools/ايموجي_لصورة.js",
+    "plugins/tools/تعريف_الموسيقى.js",
+    "plugins/tools/فاتورة.js"
+  ],
+  "APIkey.obscura": [
+    "plugins/tools/تحليل_الرقم_القومي.js",
+    "plugins/tools/لايت_موشن.js",
+    "src/scraper/seaart.js"
+  ],
+  "ai.concurrency": [
+    "src/lib/terboo-concurrency.js",
+    "src/lib/terboo-warmup.js"
+  ],
+  "alias": [
+    "case/terboo.js",
+    "plugins/main/بحث.js",
+    "plugins/owner/بحث_بلوقن.js",
+    "plugins/owner/تعطيل_البلوقن.js",
+    "plugins/owner/تفعيل_البلوقن.js",
+    "plugins/owner/كشف_الكود.js",
+    "src/handler.js",
+    "src/lib/terboo-plugins.js"
+  ],
+  "alias.slice": [
+    "case/terboo.js"
+  ],
+  "assemblyai.apiKey": [
+    "plugins/tools/نص_فيديو.js"
+  ],
+  "assets": [
+    "index.js",
+    "plugins/ai/توليد.js",
+    "plugins/downloader/تيك_فيديو.js",
+    "plugins/downloader/ريل.js",
+    "plugins/downloader/سبوتيفاي_تحميل.js",
+    "plugins/downloader/فيديو.js",
+    "plugins/game/مستذئب.js",
+    "plugins/group/ترحيب.js",
+    "plugins/group/وداع.js",
+    "plugins/main/الأوامر.js",
+    "plugins/main/اوامر.js",
+    "plugins/owner/ganti-asset.js",
+    "plugins/owner/حزمة_الصور_الكبيرة.js",
+    "plugins/search/asiariyadh.js",
+    "plugins/search/أنمي.js",
+    "plugins/search/تطبيق.js",
+    "plugins/search/كرة.js",
+    "plugins/tools/كتابة_يدوية.js",
+    "plugins/user/profile.js",
+    "src/handler.js",
+    "src/lib/terboo-asset-manager.js",
+    "src/lib/terboo-games.js",
+    "src/lib/terboo-sholat-scheduler.js",
+    "src/lib/terboo-uploader.js",
+    "tools/terboo-brand-assets.mjs"
+  ],
+  "assets.terboo": [
+    "plugins/group/اعلان.js",
+    "plugins/main/المتصدرين.js",
+    "plugins/main/تست2.js",
+    "plugins/owner/اعلان.js",
+    "src/lib/terboo-sholat-scheduler.js"
+  ],
+  "assets.terboo2": [
+    "plugins/group/اعلان.js",
+    "plugins/owner/اعلان.js"
+  ],
+  "autoaiPersonas": [
+    "src/lib/terboo-ai-core.js"
+  ],
+  "background": [
+    "plugins/tools/كربون.js"
+  ],
+  "backup.enabled": [
+    "src/lib/terboo-backup.js"
+  ],
+  "backup.intervalHours": [
+    "src/lib/terboo-backup.js"
+  ],
+  "backup.retainDays": [
+    "src/lib/terboo-backup.js"
+  ],
+  "bannedUsers": [
+    "config.js",
+    "index.js",
+    "plugins/owner/إلغاء_الحظر.js",
+    "plugins/owner/حظر.js",
+    "plugins/owner/فحص_الحظر.js",
+    "plugins/owner/قائمة_المحظورين.js"
+  ],
+  "bannedUsers.length": [
+    "plugins/owner/قائمة_المحظورين.js"
+  ],
+  "bot.developer": [
+    "index.js",
+    "plugins/owner/تغيير_اسم_المطور.js",
+    "plugins/sticker/pinpack.js",
+    "plugins/sticker/stickerpack.js",
+    "plugins/sticker/ملصقات.js",
+    "plugins/sticker/ملصقات2.js",
+    "src/connection.js",
+    "src/handler.js",
+    "src/lib/terboo-auto-ai.js",
+    "src/lib/terboo-brand.js",
+    "src/lib/terboo-serialize.js"
+  ],
+  "bot.name": [
+    "case/terboo.js",
+    "index.js",
+    "plugins/ai/توليد.js",
+    "plugins/downloader/سبوتيفاي_تحميل.js",
+    "plugins/fun/مصارحة.js",
+    "plugins/game/fish.js",
+    "plugins/game/ثعبان_وسلم.js",
+    "plugins/game/ماينكرافت.js",
+    "plugins/game/مستذئب.js",
+    "plugins/group/autoai.js",
+    "plugins/group/giveaways.js",
+    "plugins/group/اخفاء_2.js",
+    "plugins/group/اعلان.js",
+    "plugins/group/بدء_الحضور.js",
+    "plugins/group/ترحيب.js",
+    "plugins/group/تعارف.js",
+    "plugins/group/تفقد_الحضور.js",
+    "plugins/group/مخفي.js",
+    "plugins/group/هدية.js",
+    "plugins/group/وداع.js",
+    "plugins/info/بطولات.js",
+    "plugins/info/شخصية_بلو_ارشيف.js",
+    "plugins/info/مميزات_الشريك.js",
+    "plugins/main/بحث.js",
+    "plugins/main/بوت.js",
+    "plugins/main/بينغ.js",
+    "plugins/main/بينغ2.js",
+    "plugins/main/تبرع.js",
+    "plugins/main/تست2.js",
+    "plugins/owner/اخرج.js",
+    "plugins/owner/اضف_ايجار.js",
+    "plugins/owner/اعلان.js",
+    "plugins/owner/الدفع.js",
+    "plugins/owner/تست.js",
+    "plugins/owner/تعيين_نوع_المالك.js",
+    "plugins/owner/تغيير_اسم_البوت.js",
+    "plugins/owner/رفع_قناة.js",
+    "plugins/owner/سكربتي.js",
+    "plugins/owner/نشر.js",
+    "plugins/owner/نشر_خاص.js",
+    "plugins/owner/نظام_التسجيل.js",
+    "plugins/pushkontak/دفع_جهات_الاتصال.js",
+    "plugins/religi/مواقيت_الصلاة.js",
+    "plugins/search/playch.js",
+    "plugins/sticker/ملصق_مميز.js",
+    "plugins/store/تم.js",
+    "plugins/store/قائمة_المنتجات.js",
+    "plugins/tools/تحسين_الصورة_2.js",
+    "plugins/tools/فاتورة.js",
+    "plugins/tools/فيديو_دائري.js",
+    "plugins/tools/محول.js",
+    "plugins/tools/معرف_القناة.js",
+    "plugins/user/listdaftar.js",
+    "plugins/user/unreg.js",
+    "src/connection.js",
+    "src/handler.js",
+    "src/lib/terboo-auto-ai.js",
+    "src/lib/terboo-auto-backup.js",
+    "src/lib/terboo-brand.js",
+    "src/lib/terboo-context.js",
+    "src/lib/terboo-formatter.js",
+    "src/lib/terboo-level.js",
+    "src/lib/terboo-serialize.js",
+    "src/lib/terboo-sholat-scheduler.js",
+    "src/lib/terboo-socket.js",
+    "src/lib/terboo-store-backup.js",
+    "src/lib/terboo-text-style.js",
+    "src/scraper/logic-bell.js"
+  ],
+  "bot.number": [
+    "config.js"
+  ],
+  "bot.primaryNumber": [
+    "config.js",
+    "src/lib/terboo-bot-loop-guard.js",
+    "src/lib/terboo-brand.js"
+  ],
+  "bot.prioritySubBotNumbers": [
+    "src/lib/terboo-bot-loop-guard.js"
+  ],
+  "bot.support": [
+    "src/connection.js"
+  ],
+  "bot.timezone": [
+    "plugins/group/ترحيب.js",
+    "plugins/group/وداع.js"
+  ],
+  "bot.version": [
+    "index.js",
+    "plugins/main/بينغ.js",
+    "plugins/owner/نشر.js",
+    "src/lib/terboo-brand.js",
+    "src/lib/terboo-formatter.js",
+    "src/lib/terboo-serialize.js"
+  ],
+  "botNumber": [
+    "plugins/downloader/سبوتيفاي_تحميل.js"
+  ],
+  "burstWindowMs": [
+    "src/lib/terboo-concurrency.js"
+  ],
+  "call.voipModule": [
+    "plugins/owner/مكالمة.js"
+  ],
+  "category": [
+    "plugins/main/إجمالي_الميزات.js",
+    "plugins/main/بحث.js",
+    "plugins/owner/جدولة.js",
+    "src/handler.js",
+    "src/lib/terboo-onboarding.js",
+    "src/lib/terboo-plugins.js"
+  ],
+  "category.toLowerCase": [
+    "src/handler.js"
+  ],
+  "categoryEmojis": [
+    "src/lib/terboo-formatter.js"
+  ],
+  "code": [
+    "plugins/tools/كربون.js"
+  ],
+  "command.caseSensitive": [
+    "src/lib/terboo-serialize.js"
+  ],
+  "command.prefix": [
+    "plugins/game/ثعبان_وسلم.js",
+    "plugins/game/مستذئب.js",
+    "plugins/group/ترحيب.js",
+    "plugins/group/وداع.js",
+    "plugins/main/الأوامر.js",
+    "plugins/main/فئة.js",
+    "plugins/main/مزايا-البريميوم.js",
+    "plugins/main/مزايا-المالك.js",
+    "plugins/owner/بريفكس.js",
+    "plugins/user/daftar.js",
+    "plugins/user/profile.js",
+    "src/connection.js",
+    "src/handler.js",
+    "src/lib/terboo-ai-core.js",
+    "src/lib/terboo-cloud-ui.js",
+    "src/lib/terboo-command-dispatch.js",
+    "src/lib/terboo-formatter.js",
+    "src/lib/terboo-menus.js",
+    "src/lib/terboo-serialize.js"
+  ],
+  "config.mode": [
+    "src/lib/terboo-middleware.js"
+  ],
+  "cooldown": [
+    "plugins/main/بحث.js",
+    "src/handler.js",
+    "src/lib/terboo-plugins.js"
+  ],
+  "customText": [
+    "plugins/owner/جدولة.js"
+  ],
+  "database.memoryPath": [
+    "index.js"
+  ],
+  "database.path": [
+    "index.js"
+  ],
+  "dedupeTtlMs": [
+    "src/lib/terboo-concurrency.js"
+  ],
+  "description": [
+    "plugins/main/بحث.js",
+    "plugins/main/فئة.js",
+    "src/lib/terboo-menus.js",
+    "src/lib/terboo-plugins.js"
+  ],
+  "dev.debugLog": [
+    "index.js",
+    "src/connection.js",
+    "src/handler.js"
+  ],
+  "dev.enabled": [
+    "index.js"
+  ],
+  "dev.watchPlugins": [
+    "index.js"
+  ],
+  "dev.watchSrc": [
+    "index.js"
+  ],
+  "digitalocean": [
+    "plugins/panel/لوحة_التحكم.js",
+    "plugins/vps/cekvps.js",
+    "plugins/vps/createvps.js",
+    "plugins/vps/delvps.js",
+    "plugins/vps/listvps.js",
+    "plugins/vps/sisavps.js",
+    "plugins/vps/turnon.js"
+  ],
+  "digitalocean.token": [
+    "plugins/vps/cekvps.js",
+    "plugins/vps/delvps.js",
+    "plugins/vps/listvps.js",
+    "plugins/vps/sisavps.js",
+    "plugins/vps/turnon.js",
+    "tools/terboo-config-example.mjs"
+  ],
+  "donasi": [
+    "plugins/main/تبرع.js"
+  ],
+  "emoji": [
+    "plugins/fun/تفاعل.js"
+  ],
+  "energi": [
+    "plugins/main/بحث.js",
+    "src/handler.js"
+  ],
+  "energi.default": [
+    "plugins/user/energi.js",
+    "src/handler.js",
+    "src/lib/terboo-database.js",
+    "src/lib/terboo-scheduler.js"
+  ],
+  "energi.enabled": [
+    "plugins/user/energi.js",
+    "src/handler.js"
+  ],
+  "energi.owner": [
+    "plugins/owner/اضف_طاقة.js",
+    "src/handler.js",
+    "src/lib/terboo-database.js"
+  ],
+  "energi.premium": [
+    "plugins/owner/اضف_بريميوم.js",
+    "plugins/owner/اضف_طاقة.js",
+    "plugins/user/energi.js",
+    "src/handler.js",
+    "src/lib/terboo-database.js"
+  ],
+  "energi.toString": [
+    "src/handler.js"
+  ],
+  "errorTemplate": [
+    "src/lib/terboo-error.js"
+  ],
+  "example": [
+    "plugins/main/بحث.js",
+    "src/lib/terboo-plugins.js"
+  ],
+  "example.js": [
+    "tools/terboo-config-example.mjs"
+  ],
+  "features.antiCall": [
+    "plugins/owner/منع_المكالمات.js",
+    "src/connection.js"
+  ],
+  "features.antiSpam": [
+    "src/handler.js"
+  ],
+  "features.autoRead": [
+    "plugins/owner/قراءة_الرسائل.js",
+    "src/handler.js"
+  ],
+  "features.autoTyping": [
+    "case/terboo.js",
+    "plugins/owner/كتابة_تلقائية.js",
+    "src/handler.js"
+  ],
+  "features.blockIfCall": [
+    "src/connection.js"
+  ],
+  "features.dailyLimitReset": [
+    "src/lib/terboo-scheduler.js"
+  ],
+  "features.logMessage": [
+    "src/handler.js"
+  ],
+  "features.smartTriggers": [
+    "src/handler.js"
+  ],
+  "font": [
+    "plugins/tools/كربون.js"
+  ],
+  "fontSize": [
+    "plugins/tools/كربون.js"
+  ],
+  "geminiApiKey": [
+    "tools/terboo-config-example.mjs"
+  ],
+  "getOwnerName": [
+    "config.js"
+  ],
+  "goodbye.defaultEnabled": [
+    "src/handler.js"
+  ],
+  "groupProtection": [
+    "plugins/group/منع_البوتات.js",
+    "plugins/group/منع_الكلمات.js",
+    "plugins/group/منع_المستندات.js",
+    "plugins/group/منع_الملصقات.js",
+    "plugins/group/منع_الوسائط.js",
+    "src/lib/terboo-group-protection.js"
+  ],
+  "headers": [
+    "src/scraper/chatday.js"
+  ],
+  "height": [
+    "plugins/tools/كربون.js"
+  ],
+  "info.grupwa": [
+    "src/lib/terboo-brand.js"
+  ],
+  "info.website": [
+    "plugins/game/fish.js",
+    "plugins/game/ثعبان_وسلم.js",
+    "plugins/game/ماينكرافت.js",
+    "plugins/game/مستذئب.js",
+    "plugins/group/ترحيب.js",
+    "plugins/panel/لوحة_التحكم.js",
+    "src/lib/terboo-brand.js",
+    "src/lib/terboo-context.js",
+    "src/lib/terboo-games.js",
+    "src/lib/terboo-serialize.js"
+  ],
+  "integrations.pterodactyl": [
+    "src/lib/providers/pterodactyl/pterodactyl-client.js",
+    "src/lib/providers/pterodactyl/pterodactyl-service.js",
+    "src/lib/terboo-net-guard.js"
+  ],
+  "isBanned": [
+    "config.js",
+    "plugins/owner/فحص_الحظر.js"
+  ],
+  "isBotAdmin": [
+    "src/lib/terboo-ai-assistant.js",
+    "src/lib/terboo-ai-core.js"
+  ],
+  "isEnabled": [
+    "plugins/main/إجمالي_الميزات.js",
+    "plugins/main/بحث.js",
+    "plugins/main/مزايا-البريميوم.js",
+    "plugins/main/مزايا-المالك.js",
+    "plugins/owner/تعطيل_البلوقن.js",
+    "plugins/owner/تفعيل_البلوقن.js",
+    "src/handler.js",
+    "src/lib/terboo-plugins.js"
+  ],
+  "isGroup": [
+    "src/handler.js"
+  ],
+  "isOwner": [
+    "config.js",
+    "plugins/cek/تحقق_المالك.js",
+    "plugins/cek/تحقق_المميز.js",
+    "plugins/game/ثعبان_وسلم.js",
+    "plugins/game/مستذئب.js",
+    "plugins/main/بحث.js",
+    "plugins/main/مزايا-المالك.js",
+    "plugins/owner/eval.js",
+    "plugins/owner/إعادة_تعيين_قاعدة_البيانات.js",
+    "plugins/owner/اضف_شريك.js",
+    "plugins/owner/اضف_طاقة.js",
+    "plugins/owner/حظر.js",
+    "plugins/owner/حفظ_قاعدة_البيانات.js",
+    "plugins/owner/فحص_الحظر.js",
+    "plugins/owner/قالب_بلوقن.js",
+    "plugins/user/energi.js",
+    "plugins/user/koin.js",
+    "plugins/user/profile.js",
+    "src/lib/terboo-ai-agent.js",
+    "src/lib/terboo-database.js",
+    "src/lib/terboo-jadibot-manager.js",
+    "src/lib/terboo-middleware.js",
+    "src/lib/terboo-plugins.js"
+  ],
+  "isPartner": [
+    "config.js",
+    "plugins/cek/تحقق_المالك.js"
+  ],
+  "isPremium": [
+    "config.js",
+    "plugins/cek/تحقق_المالك.js",
+    "plugins/cek/تحقق_المميز.js",
+    "plugins/main/بحث.js",
+    "plugins/main/مزايا-البريميوم.js",
+    "plugins/owner/اضف_طاقة.js",
+    "plugins/rpg/ساعوي.js",
+    "plugins/rpg/يومي.js",
+    "plugins/user/buyfitur.js",
+    "plugins/user/profile.js",
+    "src/lib/terboo-database.js",
+    "src/lib/terboo-plugins.js"
+  ],
+  "isPrivate": [
+    "src/handler.js"
+  ],
+  "isSelf": [
+    "config.js"
+  ],
+  "jasaotp.apiKey": [
+    "src/lib/terboo-otp-service.js"
+  ],
+  "jasaotp.markup": [
+    "src/lib/terboo-otp-service.js"
+  ],
+  "jasaotp.timeout": [
+    "src/lib/terboo-otp-service.js"
+  ],
+  "js": [
+    "case/terboo.js",
+    "index.js",
+    "plugins/ai/gpt55.js",
+    "plugins/ai/توليد.js",
+    "plugins/ai/جيبيتي4.js",
+    "plugins/ai/دولفين.js",
+    "plugins/ai/رسم_انمي.js",
+    "plugins/ai/رياضيات.js",
+    "plugins/ai/شخصية.js",
+    "plugins/ai/غنيلي.js",
+    "plugins/ai/غيتا.js",
+    "plugins/ai/مانوس.js",
+    "plugins/ai/مونيكا.js",
+    "plugins/ai/نوت.js",
+    "plugins/anime/انمي_تلقائي.js",
+    "plugins/asupan/تيك_عشوائي.js",
+    "plugins/canvas/bratlocal.js",
+    "plugins/cecan/فتيات_إندونيسيا.js",
+    "plugins/cecan/فتيات_الصين.js",
+    "plugins/cecan/فتيات_اليابان.js",
+    "plugins/cecan/فتيات_تايلاند.js",
+    "plugins/cecan/فتيات_فيتنام.js",
+    "plugins/cecan/فتيات_كوريا.js",
+    "plugins/cecan/فتيات_مصر.js",
+    "plugins/cek/تحقق_الشريك.js",
+    "plugins/cek/تحقق_المالك.js",
+    "plugins/cek/تحقق_المميز.js",
+    "plugins/downloader/happydl.js",
+    "plugins/downloader/بكسل_درين.js",
+    "plugins/downloader/تحميل_تطبيق.js",
+    "plugins/downloader/تحميل_غيت.js",
+    "plugins/downloader/تويتر.js",
+    "plugins/downloader/تيك_فيديو.js",
+    "plugins/downloader/ريل.js",
+    "plugins/downloader/سبوتيفاي_تحميل.js",
+    "plugins/downloader/سفايل.js",
+    "plugins/downloader/فيدي.js",
+    "plugins/downloader/فيديو.js",
+    "plugins/downloader/يوت_فيديو.js",
+    "plugins/ephoto/ephoto.js",
+    "plugins/fun/حياتي_تعيسة.js",
+    "plugins/fun/زواج.js",
+    "plugins/fun/شعر.js",
+    "plugins/fun/شواذ.js",
+    "plugins/fun/شيخ.js",
+    "plugins/fun/فن.js",
+    "plugins/fun/مصارحة.js",
+    "plugins/fun/ميم.js",
+    "plugins/game/fish.js",
+    "plugins/game/ثعبان_وسلم.js",
+    "plugins/game/حجرة_ورقة_مقص.js",
+    "plugins/game/ماينكرافت.js",
+    "plugins/game/مستذئب.js",
+    "plugins/group/autoai.js",
+    "plugins/group/giveaways.js",
+    "plugins/group/إحصاء.js",
+    "plugins/group/إعادة_توجيه.js",
+    "plugins/group/اخفاء_2.js",
+    "plugins/group/اشعار_تغيير_الوسم.js",
+    "plugins/group/اعلان.js",
+    "plugins/group/بدء_الحضور.js",
+    "plugins/group/تحويل_تلقائي.js",
+    "plugins/group/ترحيب.js",
+    "plugins/group/تعارف.js",
+    "plugins/group/تفعيل_الخاص.js",
+    "plugins/group/تفعيل_العام.js",
+    "plugins/group/تفقد_الحضور.js",
+    "plugins/group/حضور.js",
+    "plugins/group/رابط_المجموعة.js",
+    "plugins/group/طلبات.js",
+    "plugins/group/قوانين.js",
+    "plugins/group/مخفي.js",
+    "plugins/group/ملصق_تلقائي.js",
+    "plugins/group/منع_البوتات.js",
+    "plugins/group/منع_الكلمات.js",
+    "plugins/group/منع_المستندات.js",
+    "plugins/group/منع_الملصقات.js",
+    "plugins/group/منع_الوسائط.js",
+    "plugins/group/هدية.js",
+    "plugins/group/وداع.js",
+    "plugins/info/بطولات.js",
+    "plugins/info/شخصية_بلو_ارشيف.js",
+    "plugins/info/مميزات_الشريك.js",
+    "plugins/islamic/قرآن_صوتي.js",
+    "plugins/islamic/قرآن_نصي.js",
+    "plugins/linode/تفاصيل_لينود.js",
+    "plugins/main/إجمالي_الميزات.js",
+    "plugins/main/الأوامر.js",
+    "plugins/main/القوانين.js",
+    "plugins/main/المتصدرين.js",
+    "plugins/main/المطور.js",
+    "plugins/main/النظام.js",
+    "plugins/main/اوامر.js",
+    "plugins/main/بحث.js",
+    "plugins/main/بوت.js",
+    "plugins/main/بينغ.js",
+    "plugins/main/بينغ2.js",
+    "plugins/main/تبرع.js",
+    "plugins/main/تست2.js",
+    "plugins/main/فئة.js",
+    "plugins/main/مزايا-البريميوم.js",
+    "plugins/main/مزايا-المالك.js",
+    "plugins/media/موسيقى.js",
+    "plugins/owner/eval.js",
+    "plugins/owner/ganti-asset.js",
+    "plugins/owner/internetrakyat.js",
+    "plugins/owner/ptvch.js",
+    "plugins/owner/إعادة_تعيين_الحد_الافتراضي.js",
+    "plugins/owner/إعادة_تعيين_قاعدة_البيانات.js",
+    "plugins/owner/إلغاء_الحظر.js",
+    "plugins/owner/اخرج.js",
+    "plugins/owner/اخطاء.js",
+    "plugins/owner/اضف_ايجار.js",
+    "plugins/owner/اضف_بريميوم.js",
+    "plugins/owner/اضف_بريميوم_للجميع.js",
+    "plugins/owner/اضف_شريك.js",
+    "plugins/owner/اضف_طاقة.js",
+    "plugins/owner/اضف_طاقة_للجميع.js",
+    "plugins/owner/اضف_مالك.js",
+    "plugins/owner/اعلان.js",
+    "plugins/owner/الدفع.js",
+    "plugins/owner/الغاء_البلوك.js",
+    "plugins/owner/انشاء_مجموعة.js",
+    "plugins/owner/انضمام.js",
+    "plugins/owner/انضمام_تلقائي.js",
+    "plugins/owner/بريفكس.js",
+    "plugins/owner/بوت_رئيسي.js",
+    "plugins/owner/بوت_مود.js",
+    "plugins/owner/بوست.js",
+    "plugins/owner/بوست2.js",
+    "plugins/owner/بوست2_جماعي.js",
+    "plugins/owner/بوست_جماعي.js",
+    "plugins/owner/تحكم.js",
+    "plugins/owner/تذكير_الصلاة.js",
+    "plugins/owner/تست.js",
+    "plugins/owner/تعيين_نوع_الترحيب.js",
+    "plugins/owner/تعيين_نوع_الرد.js",
+    "plugins/owner/تعيين_نوع_المالك.js",
+    "plugins/owner/تغيير_اسم_البوت.js",
+    "plugins/owner/تغيير_اسم_المطور.js",
+    "plugins/owner/حذف_بريميوم_الكل.js",
+    "plugins/owner/حزمة_الصور_الكبيرة.js",
+    "plugins/owner/حظر.js",
+    "plugins/owner/حظر_رقم.js",
+    "plugins/owner/حفظ_قاعدة_البيانات.js",
+    "plugins/owner/خلط_الصور.js",
+    "plugins/owner/رفع_قناة.js",
+    "plugins/owner/رفع_موقع.js",
+    "plugins/owner/سرقة_الصورة.js",
+    "plugins/owner/سكربتي.js",
+    "plugins/owner/شكل_المنيو.js",
+    "plugins/owner/طلب.js",
+    "plugins/owner/عام.js",
+    "plugins/owner/فحص_الحظر.js",
+    "plugins/owner/قائمة_المحظورين.js",
+    "plugins/owner/قالب_بلوقن.js",
+    "plugins/owner/قراءة_الرسائل.js",
+    "plugins/owner/قوانين_البوت.js",
+    "plugins/owner/كتابة_تلقائية.js",
+    "plugins/owner/مكالمة.js",
+    "plugins/owner/منع_المكالمات.js",
+    "plugins/owner/نسخ_احتياطي.js",
+    "plugins/owner/نشر.js",
+    "plugins/owner/نشر_خاص.js",
+    "plugins/owner/نشر_عام.js",
+    "plugins/owner/نظام_التسجيل.js",
+    "plugins/owner/نظام_الطاقة.js",
+    "plugins/owner/وضع_المطور.js",
+    "plugins/panel/allalisses.js",
+    "plugins/panel/gcseller.js",
+    "plugins/panel/seller.js",
+    "plugins/panel/serverinfo.js",
+    "plugins/panel/إدارة_البائعين.js",
+    "plugins/panel/انشاء_خادم.js",
+    "plugins/panel/حذف_اللوحة.js",
+    "plugins/panel/حذف_خادم.js",
+    "plugins/panel/حذف_مدير_لوحة.js",
+    "plugins/panel/قائمة_المستخدمين.js",
+    "plugins/panel/لوحة_التحكم.js",
+    "plugins/panel/لوحة_جديده.js",
+    "plugins/panel/مديري_اللوحة.js",
+    "plugins/pushkontak/دفع_جهات_الاتصال.js",
+    "plugins/random/أرشيف_أزرق.js",
+    "plugins/random/صور_اقتباسات.js",
+    "plugins/random/صور_زوجين.js",
+    "plugins/random/لا_هيلو.js",
+    "plugins/random/ميم.js",
+    "plugins/religi/إسلامي.js",
+    "plugins/religi/مواقيت_الصلاة.js",
+    "plugins/rpg/ساعوي.js",
+    "plugins/rpg/يومي.js",
+    "plugins/search/apk2.js",
+    "plugins/search/asiariyadh.js",
+    "plugins/search/playch.js",
+    "plugins/search/أنمي.js",
+    "plugins/search/اخبار.js",
+    "plugins/search/اندرويد.js",
+    "plugins/search/انمي_اي.js",
+    "plugins/search/بنترفيد.js",
+    "plugins/search/بيكسيف.js",
+    "plugins/search/تطبيق.js",
+    "plugins/search/دراما.js",
+    "plugins/search/سبوتيفاي.js",
+    "plugins/search/شغل.js",
+    "plugins/search/شورت.js",
+    "plugins/search/صور_تيك.js",
+    "plugins/search/فيلم.js",
+    "plugins/search/كرة.js",
+    "plugins/search/مانجا.js",
+    "plugins/search/ماينكرافت.js",
+    "plugins/search/معنى_اسم.js",
+    "plugins/search/ويبتون.js",
+    "plugins/stalker/بحث_روبلوكس.js",
+    "plugins/stalker/تجسس_انستغرام.js",
+    "plugins/stalker/تجسس_تويتر.js",
+    "plugins/stalker/تجسس_تيكتوك.js",
+    "plugins/stalker/تجسس_جيثب.js",
+    "plugins/stalker/تجسس_ديسكورد.js",
+    "plugins/stalker/تجسس_روبلوكس.js",
+    "plugins/stalker/تجسس_فيسبوك.js",
+    "plugins/stalker/تجسس_نبيإم.js",
+    "plugins/stalker/تجسس_واتساب.js",
+    "plugins/stalker/تجسس_يوتيوب.js",
+    "plugins/sticker/2انمي_برات.js",
+    "plugins/sticker/attp2.js",
+    "plugins/sticker/bratbahlil.js",
+    "plugins/sticker/bratcewek.js",
+    "plugins/sticker/bratgreen.js",
+    "plugins/sticker/brathd.js",
+    "plugins/sticker/bratpatrick.js",
+    "plugins/sticker/bratsquidward.js",
+    "plugins/sticker/bratvid.js",
+    "plugins/sticker/bratvid2.js",
+    "plugins/sticker/bratwhite.js",
+    "plugins/sticker/emojimix.js",
+    "plugins/sticker/linesticker.js",
+    "plugins/sticker/pinpack.js",
+    "plugins/sticker/qc.js",
+    "plugins/sticker/smeme.js",
+    "plugins/sticker/smemevid.js",
+    "plugins/sticker/stickerpack.js",
+    "plugins/sticker/انمي_برات.js",
+    "plugins/sticker/برات.js",
+    "plugins/sticker/لملصق.js",
+    "plugins/sticker/ملصق_مميز.js",
+    "plugins/sticker/ملصقات.js",
+    "plugins/sticker/ملصقات2.js",
+    "plugins/sticker/نص_متحرك.js",
+    "plugins/sticker/نص_ملصق.js",
+    "plugins/store/تم.js",
+    "plugins/store/شراء.js",
+    "plugins/store/قائمة_المتجر.js",
+    "plugins/store/قائمة_المنتجات.js",
+    "plugins/tools/2اقتباس_واتساب.js",
+    "plugins/tools/am.js",
+    "plugins/tools/إيموجي_متحرك.js",
+    "plugins/tools/ارفع.js",
+    "plugins/tools/اقتباس.js",
+    "plugins/tools/ايموجي_لصورة.js",
+    "plugins/tools/بحث_خطأ.js",
+    "plugins/tools/بريد_مؤقت2.js",
+    "plugins/tools/تحسين_الصورة_2.js",
+    "plugins/tools/تحسين_جودة.js",
+    "plugins/tools/تحليل_الرقم_القومي.js",
+    "plugins/tools/تحويل_esm.js",
+    "plugins/tools/تحويلcjs.js",
+    "plugins/tools/تعريف_الموسيقى.js",
+    "plugins/tools/سبام_نجل.js",
+    "plugins/tools/صيد_يوزرات.js",
+    "plugins/tools/فاتورة.js",
+    "plugins/tools/فحص_موقع.js",
+    "plugins/tools/فيديو_دائري.js",
+    "plugins/tools/قراءة_الصورة.js",
+    "plugins/tools/كتابة_يدوية.js",
+    "plugins/tools/لايت_موشن.js",
+    "plugins/tools/لقطة_شاشة.js",
+    "plugins/tools/محول.js",
+    "plugins/tools/مرة_واحدة.js",
+    "plugins/tools/معرف_القناة.js",
+    "plugins/tools/معرفip.js",
+    "plugins/tools/معلوماتdns.js",
+    "plugins/tools/نسخ_صوتي.js",
+    "plugins/tools/نص_فيديو.js",
+    "plugins/user/birthday.js",
+    "plugins/user/birthdaylist.js",
+    "plugins/user/buyfitur.js",
+    "plugins/user/daftar.js",
+    "plugins/user/energi.js",
+    "plugins/user/koin.js",
+    "plugins/user/listdaftar.js",
+    "plugins/user/profile.js",
+    "plugins/user/setbirthday.js",
+    "plugins/user/unreg.js",
+    "plugins/vps/cekvps.js",
+    "plugins/vps/createvps.js",
+    "plugins/vps/delvps.js",
+    "plugins/vps/listvps.js",
+    "plugins/vps/sisavps.js",
+    "plugins/vps/turnon.js",
+    "src/connection.js",
+    "src/handler.js",
+    "src/lib/providers/pterodactyl/pterodactyl-client.js",
+    "src/lib/providers/pterodactyl/pterodactyl-service.js",
+    "src/lib/providers/virtualizor/index.js",
+    "src/lib/providers/virtualizor/virtualizor-client.js",
+    "src/lib/providers/virtualizor/virtualizor-config.js",
+    "src/lib/providers/virtualizor/virtualizor-owner-service.js",
+    "src/lib/providers/virtualizor/virtualizor-user-service.js",
+    "src/lib/terboo-agent-registry.js",
+    "src/lib/terboo-agent-tools.js",
+    "src/lib/terboo-ai-core.js",
+    "src/lib/terboo-ai-owner.js",
+    "src/lib/terboo-ai-providers.js",
+    "src/lib/terboo-ai-studio.js",
+    "src/lib/terboo-ai-talk-control.js",
+    "src/lib/terboo-ai-tools.js",
+    "src/lib/terboo-apimanager.js",
+    "src/lib/terboo-asset-manager.js",
+    "src/lib/terboo-auto-ai.js",
+    "src/lib/terboo-auto-backup.js",
+    "src/lib/terboo-auto-jpm.js",
+    "src/lib/terboo-backup.js",
+    "src/lib/terboo-bot-loop-guard.js",
+    "src/lib/terboo-brand.js",
+    "src/lib/terboo-cloud-ui.js",
+    "src/lib/terboo-code-review.js",
+    "src/lib/terboo-command-dispatch.js",
+    "src/lib/terboo-context.js",
+    "src/lib/terboo-database.js",
+    "src/lib/terboo-error.js",
+    "src/lib/terboo-formatter.js",
+    "src/lib/terboo-games.js",
+    "src/lib/terboo-group-protection.js",
+    "src/lib/terboo-jadibot-manager.js",
+    "src/lib/terboo-level.js",
+    "src/lib/terboo-menus.js",
+    "src/lib/terboo-middleware.js",
+    "src/lib/terboo-multimodal.js",
+    "src/lib/terboo-onboarding.js",
+    "src/lib/terboo-otp-service.js",
+    "src/lib/terboo-premium-db.js",
+    "src/lib/terboo-rich-response.js",
+    "src/lib/terboo-scheduler.js",
+    "src/lib/terboo-secrets-boot.js",
+    "src/lib/terboo-secrets.js",
+    "src/lib/terboo-serialize.js",
+    "src/lib/terboo-sholat-scheduler.js",
+    "src/lib/terboo-socket.js",
+    "src/lib/terboo-store-backup.js",
+    "src/lib/terboo-task-runners.js",
+    "src/lib/terboo-text-style.js",
+    "src/lib/terboo-uploader.js",
+    "src/lib/terboo-vault.js",
+    "src/lib/terboo-vps-plans.js",
+    "src/lib/terboo-wa-capabilities.js",
+    "src/lib/terboo-wa-compat.js",
+    "src/scraper/hdvid.js",
+    "src/scraper/img2img.js",
+    "src/scraper/logic-bell.js",
+    "src/scraper/seaart.js",
+    "tools/terboo-audit.mjs",
+    "tools/terboo-brand-assets.mjs",
+    "tools/terboo-config-example.mjs",
+    "tools/terboo-forensic-snapshot.mjs",
+    "tools/terboo-i18n-extract.mjs",
+    "tools/terboo-manifest.mjs",
+    "tools/terboo-static-audit.mjs",
+    "tools/terboo-virtualizor-smoke.mjs"
+  ],
+  "language": [
+    "plugins/tools/كربون.js"
+  ],
+  "limits.default": [
+    "plugins/main/مزايا-البريميوم.js",
+    "plugins/owner/إعادة_تعيين_الحد_الافتراضي.js"
+  ],
+  "limits.premium": [
+    "plugins/main/مزايا-البريميوم.js",
+    "plugins/owner/اضف_بريميوم_للجميع.js"
+  ],
+  "lineNumbers": [
+    "plugins/tools/كربون.js"
+  ],
+  "matchAll": [
+    "tools/terboo-brand-assets.mjs"
+  ],
+  "maxActiveGlobal": [
+    "src/lib/terboo-concurrency.js"
+  ],
+  "maxWaitingPerLane": [
+    "src/lib/terboo-concurrency.js"
+  ],
+  "messages.adminOnly": [
+    "src/lib/terboo-middleware.js"
+  ],
+  "messages.banned": [
+    "src/handler.js"
+  ],
+  "messages.botAdminOnly": [
+    "src/lib/terboo-middleware.js"
+  ],
+  "messages.energiExceeded": [
+    "src/handler.js"
+  ],
+  "messages.error": [
+    "plugins/main/القوانين.js"
+  ],
+  "messages.groupOnly": [
+    "plugins/fun/شواذ.js",
+    "src/lib/terboo-middleware.js"
+  ],
+  "messages.limitDeducted": [
+    "src/handler.js"
+  ],
+  "messages.ownerOnly": [
+    "plugins/group/ترحيب.js",
+    "plugins/group/وداع.js",
+    "src/lib/terboo-middleware.js"
+  ],
+  "messages.premiumOnly": [
+    "src/lib/terboo-middleware.js"
+  ],
+  "messages.privateOnly": [
+    "src/lib/terboo-middleware.js"
+  ],
+  "messages.rejectCall": [
+    "src/connection.js"
+  ],
+  "mode": [
+    "index.js",
+    "plugins/owner/عام.js",
+    "plugins/owner/وضع_المطور.js",
+    "src/lib/terboo-formatter.js",
+    "src/lib/terboo-middleware.js"
+  ],
+  "name": [
+    "plugins/main/بحث.js",
+    "plugins/main/مزايا-البريميوم.js",
+    "plugins/main/مزايا-المالك.js",
+    "plugins/owner/بحث_بلوقن.js",
+    "plugins/owner/تعطيل_البلوقن.js",
+    "plugins/owner/تفعيل_البلوقن.js",
+    "plugins/owner/كشف_الكود.js",
+    "src/handler.js",
+    "src/lib/terboo-ai-agent.js",
+    "src/lib/terboo-menus.js",
+    "src/lib/terboo-plugins.js",
+    "src/lib/terboo-scraper-registry.js"
+  ],
+  "name.toLowerCase": [
+    "src/handler.js"
+  ],
+  "owner.name": [
+    "config.js",
+    "plugins/info/مميزات_الشريك.js",
+    "plugins/main/بينغ.js",
+    "plugins/main/تبرع.js",
+    "plugins/owner/الدفع.js",
+    "plugins/owner/تست.js",
+    "plugins/sticker/ملصق_مميز.js",
+    "plugins/tools/فيديو_دائري.js",
+    "src/lib/terboo-brand.js",
+    "src/lib/terboo-formatter.js",
+    "src/scraper/logic-bell.js"
+  ],
+  "owner.number": [
+    "config.js",
+    "plugins/ai/مانوس.js",
+    "plugins/main/تبرع.js",
+    "plugins/main/مزايا-البريميوم.js",
+    "plugins/owner/اضف_مالك.js",
+    "plugins/owner/عام.js",
+    "plugins/owner/نسخ_احتياطي.js",
+    "plugins/owner/نشر.js",
+    "plugins/owner/وضع_المطور.js",
+    "plugins/store/شراء.js",
+    "plugins/user/energi.js",
+    "src/lib/terboo-ai-owner.js",
+    "src/lib/terboo-ai-talk-control.js",
+    "src/lib/terboo-auto-backup.js",
+    "src/lib/terboo-brand.js",
+    "src/lib/terboo-middleware.js",
+    "src/lib/terboo-premium-db.js",
+    "src/lib/terboo-serialize.js",
+    "src/lib/terboo-store-backup.js",
+    "tools/terboo-config-example.mjs"
+  ],
+  "partnerUsers": [
+    "config.js"
+  ],
+  "payment": [
+    "plugins/owner/الدفع.js"
+  ],
+  "payment.currency": [
+    "src/lib/terboo-auto-ai.js"
+  ],
+  "premiumUsers": [
+    "config.js",
+    "index.js"
+  ],
+  "pterodactyl": [
+    "plugins/owner/اضف_مالك.js",
+    "plugins/panel/allalisses.js",
+    "plugins/panel/seller.js",
+    "plugins/panel/serverinfo.js",
+    "plugins/panel/إدارة_البائعين.js",
+    "plugins/panel/انشاء_خادم.js",
+    "plugins/panel/حذف_اللوحة.js",
+    "plugins/panel/حذف_خادم.js",
+    "plugins/panel/حذف_مدير_لوحة.js",
+    "plugins/panel/قائمة_المستخدمين.js",
+    "plugins/panel/لوحة_التحكم.js",
+    "plugins/panel/لوحة_جديده.js",
+    "plugins/panel/مديري_اللوحة.js",
+    "tools/terboo-config-example.mjs"
+  ],
+  "pterodactyl.ownerPanels": [
+    "plugins/owner/اضف_مالك.js",
+    "plugins/panel/gcseller.js",
+    "plugins/panel/seller.js",
+    "plugins/panel/إدارة_البائعين.js"
+  ],
+  "pterodactyl.sellers": [
+    "plugins/owner/اضف_مالك.js",
+    "plugins/panel/seller.js",
+    "plugins/panel/إدارة_البائعين.js"
+  ],
+  "registration.enabled": [
+    "plugins/owner/نظام_التسجيل.js",
+    "plugins/user/daftar.js",
+    "src/lib/terboo-onboarding.js"
+  ],
+  "registration.enforceForNewUsers": [
+    "src/lib/terboo-onboarding.js"
+  ],
+  "registration.rewards": [
+    "plugins/user/daftar.js"
+  ],
+  "repeat": [
+    "plugins/owner/جدولة.js"
+  ],
+  "saluran": [
+    "src/lib/terboo-rich-response.js"
+  ],
+  "saluran.autoFollow": [
+    "index.js"
+  ],
+  "saluran.forwardAll": [
+    "src/lib/terboo-rich-response.js",
+    "src/lib/terboo-wa-compat.js"
+  ],
+  "saluran.id": [
+    "case/terboo.js",
+    "index.js",
+    "plugins/downloader/سبوتيفاي_تحميل.js",
+    "plugins/fun/مصارحة.js",
+    "plugins/game/fish.js",
+    "plugins/game/ثعبان_وسلم.js",
+    "plugins/game/ماينكرافت.js",
+    "plugins/game/مستذئب.js",
+    "plugins/group/giveaways.js",
+    "plugins/group/اعلان.js",
+    "plugins/group/بدء_الحضور.js",
+    "plugins/group/تفقد_الحضور.js",
+    "plugins/group/هدية.js",
+    "plugins/info/بطولات.js",
+    "plugins/info/شخصية_بلو_ارشيف.js",
+    "plugins/main/بحث.js",
+    "plugins/main/بوت.js",
+    "plugins/main/تبرع.js",
+    "plugins/owner/ptvch.js",
+    "plugins/owner/اخرج.js",
+    "plugins/owner/تست.js",
+    "plugins/owner/رفع_قناة.js",
+    "plugins/owner/سكربتي.js",
+    "plugins/owner/نشر.js",
+    "plugins/owner/نشر_خاص.js",
+    "plugins/owner/نظام_التسجيل.js",
+    "plugins/religi/مواقيت_الصلاة.js",
+    "plugins/search/playch.js",
+    "plugins/store/تم.js",
+    "plugins/store/قائمة_المنتجات.js",
+    "plugins/tools/فاتورة.js",
+    "plugins/tools/فيديو_دائري.js",
+    "plugins/tools/محول.js",
+    "plugins/user/listdaftar.js",
+    "plugins/user/unreg.js",
+    "src/connection.js",
+    "src/handler.js",
+    "src/lib/terboo-brand.js",
+    "src/lib/terboo-context.js",
+    "src/lib/terboo-level.js",
+    "src/lib/terboo-rich-response.js",
+    "src/lib/terboo-serialize.js",
+    "src/lib/terboo-sholat-scheduler.js",
+    "src/lib/terboo-wa-compat.js"
+  ],
+  "saluran.id_": [
+    "plugins/owner/انشاء_قناة.js"
+  ],
+  "saluran.link": [
+    "plugins/main/تست2.js",
+    "plugins/owner/اعلان.js",
+    "src/lib/terboo-brand.js",
+    "src/lib/terboo-context.js"
+  ],
+  "saluran.name": [
+    "case/terboo.js",
+    "index.js",
+    "plugins/downloader/سبوتيفاي_تحميل.js",
+    "plugins/fun/مصارحة.js",
+    "plugins/game/fish.js",
+    "plugins/game/ثعبان_وسلم.js",
+    "plugins/game/ماينكرافت.js",
+    "plugins/game/مستذئب.js",
+    "plugins/group/giveaways.js",
+    "plugins/group/بدء_الحضور.js",
+    "plugins/group/تفقد_الحضور.js",
+    "plugins/group/هدية.js",
+    "plugins/info/بطولات.js",
+    "plugins/info/شخصية_بلو_ارشيف.js",
+    "plugins/main/بحث.js",
+    "plugins/main/بوت.js",
+    "plugins/main/تبرع.js",
+    "plugins/owner/اخرج.js",
+    "plugins/owner/تست.js",
+    "plugins/owner/رفع_قناة.js",
+    "plugins/owner/سكربتي.js",
+    "plugins/owner/نشر.js",
+    "plugins/owner/نشر_خاص.js",
+    "plugins/owner/نظام_التسجيل.js",
+    "plugins/religi/مواقيت_الصلاة.js",
+    "plugins/search/playch.js",
+    "plugins/store/تم.js",
+    "plugins/store/قائمة_المنتجات.js",
+    "plugins/tools/فاتورة.js",
+    "plugins/tools/فيديو_دائري.js",
+    "plugins/tools/محول.js",
+    "plugins/user/listdaftar.js",
+    "plugins/user/unreg.js",
+    "src/connection.js",
+    "src/handler.js",
+    "src/lib/terboo-brand.js",
+    "src/lib/terboo-context.js",
+    "src/lib/terboo-level.js",
+    "src/lib/terboo-serialize.js",
+    "src/lib/terboo-sholat-scheduler.js"
+  ],
+  "scheduler.resetHour": [
+    "src/lib/terboo-scheduler.js"
+  ],
+  "scheduler.resetMinute": [
+    "src/lib/terboo-scheduler.js"
+  ],
+  "security.masterKey": [
+    "src/lib/terboo-vault.js",
+    "tools/terboo-config-example.mjs"
+  ],
+  "session.folderName": [
+    "src/connection.js"
+  ],
+  "session.maxReconnectAttempts": [
+    "src/connection.js"
+  ],
+  "session.pairingNumber": [
+    "config.js",
+    "src/connection.js",
+    "src/lib/terboo-brand.js",
+    "tools/terboo-config-example.mjs"
+  ],
+  "session.printQRInTerminal": [
+    "src/connection.js"
+  ],
+  "session.reconnectInterval": [
+    "src/connection.js"
+  ],
+  "session.usePairingCode": [
+    "src/connection.js"
+  ],
+  "sessions": [
+    "src/lib/terboo-natural-ai.js"
+  ],
+  "setBotNumber": [
+    "config.js"
+  ],
+  "skipRegistration": [
+    "src/handler.js",
+    "src/lib/terboo-onboarding.js"
+  ],
+  "socialLinks": [
+    "src/lib/terboo-brand.js"
+  ],
+  "socialLinks.gmail": [
+    "tools/terboo-config-example.mjs"
+  ],
+  "socialLinks.website": [
+    "src/handler.js"
+  ],
+  "socialLinks.whatsapp": [
+    "src/lib/terboo-brand.js"
+  ],
+  "sticker": [
+    "plugins/sticker/smemevid.js"
+  ],
+  "sticker.author": [
+    "plugins/canvas/bratlocal.js",
+    "plugins/group/ملصق_تلقائي.js",
+    "plugins/sticker/2انمي_برات.js",
+    "plugins/sticker/attp2.js",
+    "plugins/sticker/bratbahlil.js",
+    "plugins/sticker/bratcewek.js",
+    "plugins/sticker/bratgreen.js",
+    "plugins/sticker/brathd.js",
+    "plugins/sticker/bratpatrick.js",
+    "plugins/sticker/bratsquidward.js",
+    "plugins/sticker/bratvid.js",
+    "plugins/sticker/bratvid2.js",
+    "plugins/sticker/bratwhite.js",
+    "plugins/sticker/emojimix.js",
+    "plugins/sticker/pinpack.js",
+    "plugins/sticker/qc.js",
+    "plugins/sticker/smeme.js",
+    "plugins/sticker/stickerpack.js",
+    "plugins/sticker/انمي_برات.js",
+    "plugins/sticker/برات.js",
+    "plugins/sticker/ملصق_مميز.js",
+    "plugins/sticker/ملصقات.js",
+    "plugins/sticker/نص_متحرك.js",
+    "plugins/sticker/نص_ملصق.js",
+    "src/lib/terboo-brand.js"
+  ],
+  "sticker.packname": [
+    "plugins/canvas/bratlocal.js",
+    "plugins/group/ملصق_تلقائي.js",
+    "plugins/sticker/2انمي_برات.js",
+    "plugins/sticker/attp2.js",
+    "plugins/sticker/bratbahlil.js",
+    "plugins/sticker/bratcewek.js",
+    "plugins/sticker/bratgreen.js",
+    "plugins/sticker/brathd.js",
+    "plugins/sticker/bratpatrick.js",
+    "plugins/sticker/bratsquidward.js",
+    "plugins/sticker/bratvid.js",
+    "plugins/sticker/bratvid2.js",
+    "plugins/sticker/bratwhite.js",
+    "plugins/sticker/emojimix.js",
+    "plugins/sticker/qc.js",
+    "plugins/sticker/smeme.js",
+    "plugins/sticker/stickerpack.js",
+    "plugins/sticker/انمي_برات.js",
+    "plugins/sticker/برات.js",
+    "plugins/sticker/ملصق_مميز.js",
+    "plugins/sticker/نص_متحرك.js",
+    "plugins/sticker/نص_ملصق.js",
+    "src/lib/terboo-brand.js"
+  ],
+  "store.payment": [
+    "plugins/store/شراء.js"
+  ],
+  "store.qris": [
+    "plugins/store/شراء.js"
+  ],
+  "target": [
+    "plugins/owner/جدولة.js"
+  ],
+  "theme": [
+    "plugins/tools/كربون.js"
+  ],
+  "timeout": [
+    "src/scraper/chatday.js"
+  ],
+  "timezone": [
+    "plugins/group/ترحيب.js",
+    "plugins/group/وداع.js"
+  ],
+  "title": [
+    "plugins/owner/جدولة.js"
+  ],
+  "ui": [
+    "src/lib/terboo-command-ui.js",
+    "src/lib/terboo-menu-delivery.js",
+    "src/lib/terboo-wa-capabilities.js",
+    "tools/terboo-command-ui-matrix.mjs"
+  ],
+  "ui.allmenuVariant": [
+    "plugins/main/الأوامر.js"
+  ],
+  "ui.legacyButtons": [
+    "src/lib/terboo-menu-delivery.js",
+    "src/lib/terboo-wa-capabilities.js",
+    "tools/terboo-wa-capabilities.mjs"
+  ],
+  "ui.menuVariant": [
+    "plugins/owner/شكل_المنيو.js"
+  ],
+  "ui.replyVariant": [
+    "plugins/owner/تعيين_نوع_الرد.js"
+  ],
+  "url": [
+    "plugins/tools/am.js"
+  ],
+  "usage": [
+    "plugins/main/بحث.js",
+    "src/lib/terboo-plugins.js"
+  ],
+  "vercel.token": [
+    "plugins/owner/رفع_موقع.js"
+  ],
+  "virtualizor.admin": [
+    "tools/terboo-config-example.mjs"
+  ],
+  "virtualizor.enduser": [
+    "tools/terboo-config-example.mjs",
+    "tools/terboo-virtualizor-smoke.mjs"
+  ],
+  "virtualizor.ownerContact": [
+    "src/lib/terboo-vps-plans.js"
+  ],
+  "virtualizor.plans": [
+    "src/lib/terboo-vps-plans.js"
+  ],
+  "virtualizor.security": [
+    "tools/terboo-config-example.mjs"
+  ],
+  "waitFor": [
+    "plugins/tools/كربون.js"
+  ],
+  "waitTimeoutMs": [
+    "src/lib/terboo-concurrency.js"
+  ],
+  "welcome.defaultEnabled": [
+    "src/handler.js"
+  ],
+  "width": [
+    "plugins/tools/كربون.js"
+  ]
+}

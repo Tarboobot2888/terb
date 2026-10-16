@@ -1,0 +1,111 @@
+{
+  "generatedAt": "2026-10-04T07:27:42.036Z",
+  "pluginFiles": 909,
+  "registeredPlugins": 898,
+  "notRegistered": [
+    {
+      "path": "plugins/ai/فن.js",
+      "reason": "shadowed-by-collision"
+    },
+    {
+      "path": "plugins/canvas/avatarjpg.js",
+      "reason": "shadowed-by-collision"
+    },
+    {
+      "path": "plugins/canvas/مكالمة.js",
+      "reason": "shadowed-by-collision"
+    },
+    {
+      "path": "plugins/downloader/ساوند_تحميل.js",
+      "reason": "shadowed-by-collision"
+    },
+    {
+      "path": "plugins/fun/تأمل.js",
+      "reason": "shadowed-by-collision"
+    },
+    {
+      "path": "plugins/fun/تحدي.js",
+      "reason": "shadowed-by-collision"
+    },
+    {
+      "path": "plugins/fun/ميم.js",
+      "reason": "shadowed-by-collision"
+    },
+    {
+      "path": "plugins/game/فحص.js",
+      "reason": "shadowed-by-collision"
+    },
+    {
+      "path": "plugins/group/اعلان.js",
+      "reason": "shadowed-by-collision"
+    },
+    {
+      "path": "plugins/group/تثبيت.js",
+      "reason": "shadowed-by-collision"
+    },
+    {
+      "path": "plugins/search/asiariyadh.js",
+      "reason": "shadowed-by-collision"
+    }
+  ],
+  "storeCommands": 1213,
+  "storeAliases": 1347,
+  "declaredNames": 1213,
+  "declaredAliases": 1347,
+  "nameCollisions": 13,
+  "aliasCollisions": 61,
+  "aliasShadowsName": 28,
+  "externalHosts": 350,
+  "processFiles": 49,
+  "shellTrueFiles": [],
+  "ssh2Files": [
+    "plugins/panel/root.js",
+    "plugins/panel/تثبيت_قالب_إنيغما.js",
+    "plugins/panel/تثبيت_قالب_الفوترة.js",
+    "plugins/panel/تثبيت_قالب_ستيلار.js",
+    "plugins/panel/تثبيت_قالب_نيبولا.js"
+  ],
+  "evalFiles": [
+    "plugins/owner/eval.js",
+    "src/connection.js"
+  ],
+  "directInteractivePlugins": [
+    "plugins/ai/توليد.js",
+    "plugins/ai/فن.js",
+    "plugins/downloader/تحميل.js",
+    "plugins/downloader/رواية.js",
+    "plugins/downloader/ريل.js",
+    "plugins/group/شات.js",
+    "plugins/group/كتم.js",
+    "plugins/group/منشن.js",
+    "plugins/group/منع_البوتات.js",
+    "plugins/main/ping2.js",
+    "plugins/main/بينغ.js",
+    "plugins/owner/بلوقن.js",
+    "plugins/owner/حفظ.js",
+    "plugins/owner/صلاحية.js",
+    "plugins/owner/نشر.js",
+    "plugins/panel/انشاء_خادم.js",
+    "plugins/photo/سلفير3d.js",
+    "plugins/pushkontak/دفع_جهات_الاتصال.js",
+    "plugins/random/لولي.js",
+    "plugins/search/أنمي.js",
+    "plugins/search/اطار.js",
+    "plugins/search/بنتر_فيد.js",
+    "plugins/search/تطبيق.js",
+    "plugins/search/دارك_ويب.js",
+    "plugins/search/سبوتيفاي.js",
+    "plugins/search/صوره.js",
+    "plugins/search/يوتيوب.js",
+    "plugins/tools/صرف_العملات.js",
+    "plugins/tools/صنع_تطبيق.js",
+    "plugins/user/profile.js"
+  ],
+  "emptyCatchFiles": [],
+  "backgroundFiles": 25,
+  "dbWriteFiles": 297,
+  "configTopKeys": 182,
+  "tools": 103,
+  "scraperFiles": 63,
+  "registeredScrapers": 63
+}

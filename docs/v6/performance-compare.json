@@ -1,0 +1,73 @@
+{
+  "generatedAt": "2026-10-08T09:49:10.519Z",
+  "runs": 3,
+  "providerMs": 800,
+  "before": {
+    "single chat message": {
+      "runs": 3,
+      "ttfrMs": 830,
+      "totalMs": 830,
+      "modelCalls": 1,
+      "replies": 1,
+      "wastedReplies": 0
+    },
+    "two quick messages (300 ms apart)": {
+      "runs": 3,
+      "ttfrMs": 1310,
+      "totalMs": 1611,
+      "modelCalls": 2,
+      "replies": 1,
+      "wastedReplies": 0
+    },
+    "cancel while thinking": {
+      "runs": 3,
+      "ttfrMs": 1,
+      "totalMs": 804,
+      "modelCalls": 1,
+      "replies": 1,
+      "wastedReplies": 0
+    },
+    "TikTok link (deterministic tool)": {
+      "runs": 3,
+      "ttfrMs": 2,
+      "totalMs": 1203,
+      "modelCalls": 0,
+      "replies": 2,
+      "wastedReplies": 0
+    }
+  },
+  "after": {
+    "single chat message": {
+      "runs": 3,
+      "ttfrMs": 851,
+      "totalMs": 851,
+      "modelCalls": 1,
+      "replies": 1,
+      "wastedReplies": 0
+    },
+    "two quick messages (300 ms apart)": {
+      "runs": 3,
+      "ttfrMs": 1315,
+      "totalMs": 1617,
+      "modelCalls": 2,
+      "replies": 1,
+      "wastedReplies": 0
+    },
+    "cancel while thinking": {
+      "runs": 3,
+      "ttfrMs": 1,
+      "totalMs": 804,
+      "modelCalls": 1,
+      "replies": 1,
+      "wastedReplies": 0
+    },
+    "TikTok link (deterministic tool)": {
+      "runs": 3,
+      "ttfrMs": 3,
+      "totalMs": 1204,
+      "modelCalls": 0,
+      "replies": 2,
+      "wastedReplies": 0
+    }
+  }
+}

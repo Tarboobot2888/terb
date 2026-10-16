@@ -1,0 +1,1306 @@
+{
+  "generatedAt": "2026-10-15T17:58:39.357Z",
+  "gitHead": "64bc0105b17f0660c6ed255ada3a42ec9b9b7b33",
+  "scope": "live source only — historical manifests and this generator's own output are excluded",
+  "totals": {
+    "assetFiles": 123,
+    "referencedPaths": 134,
+    "missingReferences": 12
+  },
+  "missingReferences": [
+    {
+      "reference": "assets/fonts/terboo/FONTS.md",
+      "exists": false,
+      "referencedFrom": [
+        "data/autoai/project-manifest.json",
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/image/shuffle/terboo-shuffle-03.jpg",
+      "exists": false,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/logo.png",
+      "exists": false,
+      "referencedFrom": [
+        "tests/terboo-ai-core.test.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/",
+      "exists": false,
+      "referencedFrom": [
+        "tests/terboo-brand-assets.test.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/shuffle/",
+      "exists": false,
+      "referencedFrom": [
+        "tests/terboo-brand-assets.test.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/shuffle",
+      "exists": false,
+      "referencedFrom": [
+        "tests/terboo-brand-assets.test.mjs",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/shuffle/20032df7383ca92b7861a7081f2abe2d.jpg",
+      "exists": false,
+      "referencedFrom": [
+        "tests/terboo-brand-assets.test.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/shuffle/owner-added.jpg",
+      "exists": false,
+      "referencedFrom": [
+        "tests/terboo-brand-assets.test.mjs"
+      ]
+    },
+    {
+      "reference": "assets/terboo-daftar.png",
+      "exists": false,
+      "referencedFrom": [
+        "tests/terboo-brand-lock.test.mjs"
+      ]
+    },
+    {
+      "reference": "assets/tarboo-extra.png",
+      "exists": false,
+      "referencedFrom": [
+        "tests/terboo-brand-lock.test.mjs"
+      ]
+    },
+    {
+      "reference": "assets/terboo-extra.png",
+      "exists": false,
+      "referencedFrom": [
+        "tests/terboo-brand-lock.test.mjs"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo",
+      "exists": false,
+      "referencedFrom": [
+        "tools/terboo-brand-assets.mjs"
+      ]
+    }
+  ],
+  "assets": [
+    "assets/audio/terboo-mp3.mp3",
+    "assets/fonts/Epep.ttf",
+    "assets/fonts/Levelup.ttf",
+    "assets/fonts/Zahraaa.ttf",
+    "assets/fonts/arialnarrow.ttf",
+    "assets/fonts/kalender/Inter-Bold.woff2",
+    "assets/fonts/kalender/Inter-ExtraBold.woff2",
+    "assets/fonts/kalender/Inter-Medium.woff2",
+    "assets/fonts/kalender/Inter-Regular.woff2",
+    "assets/fonts/kalender/Inter-SemiBold.woff2",
+    "assets/fonts/kalender/Manrope-Bold.ttf",
+    "assets/fonts/kalender/Manrope-ExtraBold.ttf",
+    "assets/fonts/terboo/Anton-OFL.txt",
+    "assets/fonts/terboo/Anton-Regular.ttf",
+    "assets/fonts/terboo/Cairo-Bold.ttf",
+    "assets/fonts/terboo/Cairo-Medium.ttf",
+    "assets/fonts/terboo/Cairo-Regular.ttf",
+    "assets/fonts/terboo/Cairo-SemiBold.ttf",
+    "assets/fonts/terboo/Inter-Bold.ttf",
+    "assets/fonts/terboo/Inter-Medium.ttf",
+    "assets/fonts/terboo/Inter-Regular.ttf",
+    "assets/fonts/terboo/Inter-SemiBold.ttf",
+    "assets/fonts/terboo/JetBrainsMono-Bold.ttf",
+    "assets/fonts/terboo/JetBrainsMono-OFL.txt",
+    "assets/fonts/terboo/JetBrainsMono-Regular.ttf",
+    "assets/fonts/terboo/NotoSansArabic-Bold.ttf",
+    "assets/fonts/terboo/NotoSansArabic-Medium.ttf",
+    "assets/fonts/terboo/NotoSansArabic-Regular.ttf",
+    "assets/fonts/terboo/NotoSansArabic-SemiBold.ttf",
+    "assets/fonts/terboo/PlusJakartaSans-Bold.ttf",
+    "assets/fonts/terboo/PlusJakartaSans-ExtraBold.ttf",
+    "assets/fonts/terboo/PlusJakartaSans-Medium.ttf",
+    "assets/fonts/terboo/PlusJakartaSans-OFL.txt",
+    "assets/fonts/terboo/PlusJakartaSans-Regular.ttf",
+    "assets/fonts/terboo/PlusJakartaSans-SemiBold.ttf",
+    "assets/image/-rpg.jpg",
+    "assets/image/cards/goodbye-plate.jpg",
+    "assets/image/cards/welcome-plate.jpg",
+    "assets/image/pp-kosong.jpg",
+    "assets/image/sections/ai.jpg",
+    "assets/image/sections/anime.jpg",
+    "assets/image/sections/asupan.jpg",
+    "assets/image/sections/canvas.jpg",
+    "assets/image/sections/cecan.jpg",
+    "assets/image/sections/cek.jpg",
+    "assets/image/sections/clan.jpg",
+    "assets/image/sections/cloud.jpg",
+    "assets/image/sections/convert.jpg",
+    "assets/image/sections/date.jpg",
+    "assets/image/sections/default.jpg",
+    "assets/image/sections/downloader.jpg",
+    "assets/image/sections/ephoto.jpg",
+    "assets/image/sections/fun.jpg",
+    "assets/image/sections/game.jpg",
+    "assets/image/sections/group.jpg",
+    "assets/image/sections/info.jpg",
+    "assets/image/sections/islamic.jpg",
+    "assets/image/sections/kerja.jpg",
+    "assets/image/sections/linode.jpg",
+    "assets/image/sections/main.jpg",
+    "assets/image/sections/media.jpg",
+    "assets/image/sections/nsfw.jpg",
+    "assets/image/sections/owner.jpg",
+    "assets/image/sections/panel.jpg",
+    "assets/image/sections/photo.jpg",
+    "assets/image/sections/primbon.jpg",
+    "assets/image/sections/pushkontak.jpg",
+    "assets/image/sections/random.jpg",
+    "assets/image/sections/religi.jpg",
+    "assets/image/sections/rpg.jpg",
+    "assets/image/sections/search.jpg",
+    "assets/image/sections/sekolah.jpg",
+    "assets/image/sections/stalker.jpg",
+    "assets/image/sections/sticker.jpg",
+    "assets/image/sections/store.jpg",
+    "assets/image/sections/tools.jpg",
+    "assets/image/sections/tts.jpg",
+    "assets/image/sections/turnamen.jpg",
+    "assets/image/sections/user.jpg",
+    "assets/image/sections/utility.jpg",
+    "assets/image/sections/vps.jpg",
+    "assets/image/sections/عام.jpg",
+    "assets/image/shuffle/terboo-shuffle-01.jpg",
+    "assets/image/shuffle/terboo-shuffle-02.jpg",
+    "assets/image/shuffle/terboo-shuffle-04.jpg",
+    "assets/image/shuffle/terboo-shuffle-05.jpg",
+    "assets/image/shuffle/terboo-shuffle-06.jpg",
+    "assets/image/shuffle/terboo-shuffle-07.jpg",
+    "assets/image/shuffle/terboo-shuffle-08.jpg",
+    "assets/image/terboo-banner.jpg",
+    "assets/image/terboo-daftar.png",
+    "assets/image/terboo-demote.png",
+    "assets/image/terboo-fishit.jpg",
+    "assets/image/terboo-games.jpg",
+    "assets/image/terboo-kertas.jpg",
+    "assets/image/terboo-landscape.jpg",
+    "assets/image/terboo-levelup.jpg",
+    "assets/image/terboo-minecraft.jpg",
+    "assets/image/terboo-promote.png",
+    "assets/image/terboo-rpg.jpg",
+    "assets/image/terboo-rules.jpg",
+    "assets/image/terboo-store.png",
+    "assets/image/terboo-v8.jpg",
+    "assets/image/terboo-winner.jpg",
+    "assets/image/terboo.png",
+    "assets/image/terboo2.jpg",
+    "assets/image/terboo3.jpg",
+    "assets/image/test.webp",
+    "assets/image/ui/ai.jpg",
+    "assets/image/ui/general.jpg",
+    "assets/image/ui/language.jpg",
+    "assets/image/ui/panel.jpg",
+    "assets/image/ui/plans-economy.jpg",
+    "assets/image/ui/plans-standard.jpg",
+    "assets/image/ui/plans.jpg",
+    "assets/image/ui/registration.jpg",
+    "assets/image/ui/usage.jpg",
+    "assets/image/ui/vps.jpg",
+    "assets/kertas/magernulis1.jpg",
+    "assets/meme/Drake-Hotline-Bling.jpg",
+    "assets/meme/fonts/arial.ttf",
+    "assets/terboo-font.ttf",
+    "assets/video/terboo-mp4.mp4"
+  ],
+  "references": [
+    {
+      "reference": "assets/audio/terboo-mp3.mp3",
+      "exists": true,
+      "referencedFrom": [
+        "config.example.js",
+        "config.js",
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/arialnarrow.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/Epep.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/kalender/Inter-Bold.woff2",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/kalender/Inter-ExtraBold.woff2",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/kalender/Inter-Medium.woff2",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/kalender/Inter-Regular.woff2",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/kalender/Inter-SemiBold.woff2",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/kalender/Manrope-Bold.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/kalender/Manrope-ExtraBold.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/Levelup.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo",
+      "exists": false,
+      "referencedFrom": [
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/Anton-OFL.txt",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "tests/terboo-brand-assets.test.mjs"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/Anton-Regular.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "tests/terboo-brand-assets.test.mjs"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/Cairo-Bold.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/Cairo-Medium.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/Cairo-Regular.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/Cairo-SemiBold.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/FONTS.md",
+      "exists": false,
+      "referencedFrom": [
+        "data/autoai/project-manifest.json",
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/Inter-Bold.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/Inter-Medium.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/Inter-Regular.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/Inter-SemiBold.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/JetBrainsMono-Bold.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/JetBrainsMono-OFL.txt",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/JetBrainsMono-Regular.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/NotoSansArabic-Bold.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/NotoSansArabic-Medium.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/NotoSansArabic-Regular.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/NotoSansArabic-SemiBold.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/PlusJakartaSans-Bold.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/PlusJakartaSans-ExtraBold.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/PlusJakartaSans-Medium.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/PlusJakartaSans-OFL.txt",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/PlusJakartaSans-Regular.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/terboo/PlusJakartaSans-SemiBold.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/fonts/Zahraaa.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/image/-rpg.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/cards/goodbye-plate.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/cards/welcome-plate.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/pp-kosong.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "config.example.js",
+        "config.js",
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/",
+      "exists": false,
+      "referencedFrom": [
+        "tests/terboo-brand-assets.test.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/ai.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/anime.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/asupan.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/canvas.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/cecan.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/cek.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/clan.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/cloud.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/convert.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/date.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/default.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/downloader.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/ephoto.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/fun.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/game.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/group.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/info.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/islamic.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/kerja.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/linode.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/main.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/media.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/nsfw.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/owner.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/panel.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/photo.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/primbon.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/pushkontak.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/random.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/religi.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/rpg.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/search.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/sekolah.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/stalker.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/sticker.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/store.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/tools.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/tts.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/turnamen.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/user.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/utility.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/sections/vps.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/shuffle",
+      "exists": false,
+      "referencedFrom": [
+        "tests/terboo-brand-assets.test.mjs",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/shuffle/",
+      "exists": false,
+      "referencedFrom": [
+        "tests/terboo-brand-assets.test.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/shuffle/20032df7383ca92b7861a7081f2abe2d.jpg",
+      "exists": false,
+      "referencedFrom": [
+        "tests/terboo-brand-assets.test.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/shuffle/owner-added.jpg",
+      "exists": false,
+      "referencedFrom": [
+        "tests/terboo-brand-assets.test.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/shuffle/terboo-shuffle-01.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/image/shuffle/terboo-shuffle-02.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/image/shuffle/terboo-shuffle-03.jpg",
+      "exists": false,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/image/shuffle/terboo-shuffle-04.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/image/shuffle/terboo-shuffle-05.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/image/shuffle/terboo-shuffle-06.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/image/shuffle/terboo-shuffle-07.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/image/shuffle/terboo-shuffle-08.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/image/terboo-banner.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "config.example.js",
+        "config.js",
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json",
+        "tests/terboo-brand-assets.test.mjs",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/terboo-daftar.png",
+      "exists": true,
+      "referencedFrom": [
+        "config.example.js",
+        "config.js",
+        "docs/terboo-asset-manifest.json",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/terboo-demote.png",
+      "exists": true,
+      "referencedFrom": [
+        "config.example.js",
+        "config.js",
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/terboo-fishit.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "config.example.js",
+        "config.js",
+        "docs/terboo-asset-manifest.json",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/terboo-games.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "config.example.js",
+        "config.js",
+        "docs/terboo-asset-manifest.json",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/terboo-kertas.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "config.example.js",
+        "config.js",
+        "docs/terboo-asset-manifest.json",
+        "tests/terboo-brand-assets.test.mjs",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/terboo-landscape.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "config.example.js",
+        "config.js",
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/terboo-levelup.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "config.example.js",
+        "config.js",
+        "docs/terboo-asset-manifest.json",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/terboo-minecraft.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "config.example.js",
+        "config.js",
+        "docs/terboo-asset-manifest.json",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/terboo-promote.png",
+      "exists": true,
+      "referencedFrom": [
+        "config.example.js",
+        "config.js",
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/terboo-rpg.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "config.example.js",
+        "config.js",
+        "docs/terboo-asset-manifest.json",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/terboo-rules.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "config.example.js",
+        "config.js",
+        "docs/terboo-asset-manifest.json",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/terboo-store.png",
+      "exists": true,
+      "referencedFrom": [
+        "config.example.js",
+        "config.js",
+        "docs/terboo-asset-manifest.json",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/terboo-v8.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "config.example.js",
+        "config.js",
+        "docs/terboo-asset-manifest.json",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/terboo-winner.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "config.example.js",
+        "config.js",
+        "docs/terboo-asset-manifest.json",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/terboo.png",
+      "exists": true,
+      "referencedFrom": [
+        "config.example.js",
+        "config.js",
+        "docs/terboo-asset-manifest.json",
+        "plugins/main/المتصدرين.js",
+        "tools/terboo-brand-assets.mjs",
+        "tools/terboo-scraper-live.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/terboo2.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "config.example.js",
+        "config.js",
+        "docs/terboo-asset-manifest.json",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/terboo3.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "config.example.js",
+        "config.js",
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/test.webp",
+      "exists": true,
+      "referencedFrom": [
+        "config.example.js",
+        "config.js",
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json",
+        "tools/terboo-brand-assets.mjs"
+      ]
+    },
+    {
+      "reference": "assets/image/ui/ai.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/ui/general.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/ui/language.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/ui/panel.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/ui/plans-economy.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/ui/plans-standard.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/ui/plans.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/ui/registration.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/ui/usage.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/image/ui/vps.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json"
+      ]
+    },
+    {
+      "reference": "assets/kertas/magernulis1.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "tests/terboo-brand-assets.test.mjs"
+      ]
+    },
+    {
+      "reference": "assets/logo.png",
+      "exists": false,
+      "referencedFrom": [
+        "tests/terboo-ai-core.test.mjs"
+      ]
+    },
+    {
+      "reference": "assets/meme/Drake-Hotline-Bling.jpg",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json",
+        "docs/v6/files-report.json",
+        "tests/terboo-brand-assets.test.mjs"
+      ]
+    },
+    {
+      "reference": "assets/meme/fonts/arial.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/tarboo-extra.png",
+      "exists": false,
+      "referencedFrom": [
+        "tests/terboo-brand-lock.test.mjs"
+      ]
+    },
+    {
+      "reference": "assets/terboo-daftar.png",
+      "exists": false,
+      "referencedFrom": [
+        "tests/terboo-brand-lock.test.mjs"
+      ]
+    },
+    {
+      "reference": "assets/terboo-extra.png",
+      "exists": false,
+      "referencedFrom": [
+        "tests/terboo-brand-lock.test.mjs"
+      ]
+    },
+    {
+      "reference": "assets/terboo-font.ttf",
+      "exists": true,
+      "referencedFrom": [
+        "config.example.js",
+        "config.js",
+        "docs/terboo-asset-manifest.json"
+      ]
+    },
+    {
+      "reference": "assets/video/terboo-mp4.mp4",
+      "exists": true,
+      "referencedFrom": [
+        "config.example.js",
+        "config.js",
+        "docs/terboo-asset-manifest.json",
+        "tools/terboo-scraper-live.mjs"
+      ]
+    }
+  ]
+}

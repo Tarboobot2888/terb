@@ -1,0 +1,1766 @@
+{
+  "summary": {
+    "at": "2026-09-24T11:41:48.170Z",
+    "node": "v22.22.2",
+    "total": 63,
+    "PASS": 1,
+    "SKIPPED_EXTERNAL": 62,
+    "FAIL": 0,
+    "capMs": 30000
+  },
+  "results": [
+    {
+      "id": "aio",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — System Error: Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "www.tikwm.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "savefbs.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "d.ymcdn.org",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "aio",
+          "via": "adapter",
+          "ok": false,
+          "error": "System Error: Request failed with status code 403",
+          "latencyMs": 759
+        }
+      ],
+      "ms": 1109,
+      "ran": true
+    },
+    {
+      "id": "tiktok",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403 | circuit-open)",
+      "hosts": [
+        {
+          "host": "api.yuulabs.web.id",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "musicaldown.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "tiktok",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 825
+        },
+        {
+          "id": "aio",
+          "via": "adapter",
+          "ok": false,
+          "skipped": "circuit-open"
+        }
+      ],
+      "ms": 1064,
+      "ran": true
+    },
+    {
+      "id": "douyin",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "snapvideotools.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "douyin",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 572
+        }
+      ],
+      "ms": 858,
+      "ran": true
+    },
+    {
+      "id": "ig",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403 | Request failed with status code)",
+      "hosts": [
+        {
+          "host": "cors.yardansh.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "fastdl.app",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "api-wh.fastdl.app",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "savefbs.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "ig",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 545
+        },
+        {
+          "id": "aio",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 296
+        }
+      ],
+      "ms": 1117,
+      "ran": true
+    },
+    {
+      "id": "reelsvideo",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403 | Request failed with status code)",
+      "hosts": [
+        {
+          "host": "reelsvideo.io",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "cors.yardansh.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "savefbs.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "reelsvideo",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 539
+        },
+        {
+          "id": "aio",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 262
+        }
+      ],
+      "ms": 1116,
+      "ran": true
+    },
+    {
+      "id": "twitter",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403 | Savefbs returned no data)",
+      "hosts": [
+        {
+          "host": "x2twitter.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "dl.snapcdn.app",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "s1.twcdn.net",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "savefbs.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "twitter",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 602
+        },
+        {
+          "id": "aio",
+          "via": "adapter",
+          "ok": false,
+          "error": "Savefbs returned no data",
+          "latencyMs": 158
+        }
+      ],
+      "ms": 1028,
+      "ran": true
+    },
+    {
+      "id": "reddit",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — تعذر الوصول إلى Reddit (HTTP 403). | Savefbs returned no data)",
+      "hosts": [
+        {
+          "host": "www.reddit.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "savefbs.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "reddit",
+          "via": "adapter",
+          "ok": false,
+          "error": "تعذر الوصول إلى Reddit (HTTP 403).",
+          "latencyMs": 551
+        },
+        {
+          "id": "aio",
+          "via": "adapter",
+          "ok": false,
+          "error": "Savefbs returned no data",
+          "latencyMs": 189
+        }
+      ],
+      "ms": 1004,
+      "ran": true
+    },
+    {
+      "id": "youtube",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service rejected the request — no_usable_output | scraper_reported_failure)",
+      "hosts": [
+        {
+          "host": "ssyoutube.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "media.ssyoutube.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "du.sf-converter.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "rr2---sn-2aqu-hoalr.googlevideo.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "d.ymcdn.org",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "youtube",
+          "via": "adapter",
+          "ok": false,
+          "error": "no_usable_output",
+          "latencyMs": 574
+        },
+        {
+          "id": "ytdl",
+          "via": "adapter",
+          "ok": false,
+          "error": "scraper_reported_failure",
+          "latencyMs": 275
+        }
+      ],
+      "ms": 1203,
+      "ran": true
+    },
+    {
+      "id": "yt",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service rejected the request — no_usable_output | scraper_reported_failure)",
+      "hosts": [
+        {
+          "host": "ssyoutube.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "media.ssyoutube.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "du.sf-converter.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "rr3---sn-ab5sznly.googlevideo.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "d.ymcdn.org",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "yt",
+          "via": "adapter",
+          "ok": false,
+          "error": "no_usable_output",
+          "latencyMs": 268
+        },
+        {
+          "id": "ytdl",
+          "via": "adapter",
+          "ok": false,
+          "error": "scraper_reported_failure",
+          "latencyMs": 213
+        }
+      ],
+      "ms": 581,
+      "ran": true
+    },
+    {
+      "id": "ytdl",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service rejected the request — scraper_reported_failure | no_usable_output)",
+      "hosts": [
+        {
+          "host": "id.ytmp3.mobi",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "d.ymcdn.org",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "ssyoutube.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "ytdl",
+          "via": "adapter",
+          "ok": false,
+          "error": "scraper_reported_failure",
+          "latencyMs": 102
+        },
+        {
+          "id": "youtube",
+          "via": "adapter",
+          "ok": false,
+          "error": "no_usable_output",
+          "latencyMs": 210
+        }
+      ],
+      "ms": 415,
+      "ran": true
+    },
+    {
+      "id": "spotify",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (مزود Spotify يحتاج متغير البيئة SPOTIFY_DL_API_TOKEN.)",
+      "hosts": [
+        {
+          "host": "spotify.dlapi.app",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "master.dlapi.app",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "spotify",
+          "via": "adapter",
+          "ok": false,
+          "error": "مزود Spotify يحتاج متغير البيئة SPOTIFY_DL_API_TOKEN.",
+          "latencyMs": 4
+        }
+      ],
+      "ms": 253,
+      "ran": true
+    },
+    {
+      "id": "soundclouddl",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "convertico.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "soundclouddl",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 250
+        }
+      ],
+      "ms": 526,
+      "ran": true
+    },
+    {
+      "id": "mediafire",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "www.mediafire.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "mediafire",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 276
+        }
+      ],
+      "ms": 482,
+      "ran": true
+    },
+    {
+      "id": "terabox",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "flowvideoplayer.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "terabox",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 259
+        }
+      ],
+      "ms": 495,
+      "ran": true
+    },
+    {
+      "id": "sfiledl",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "download0426.sfile.co",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "sfile.mobi",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "sfiledl",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 233
+        }
+      ],
+      "ms": 486,
+      "ran": true
+    },
+    {
+      "id": "dailymotion",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "vidomon.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "dailymotion",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 252
+        }
+      ],
+      "ms": 500,
+      "ran": true
+    },
+    {
+      "id": "likee",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "likeedownloader.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "likee",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 278
+        }
+      ],
+      "ms": 496,
+      "ran": true
+    },
+    {
+      "id": "rednote",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "rednote.savevideodown.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "rednote",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 107
+        }
+      ],
+      "ms": 334,
+      "ran": true
+    },
+    {
+      "id": "pindl",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (empty_result)",
+      "hosts": [
+        {
+          "host": "www.pinterest.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "pindl",
+          "via": "adapter",
+          "ok": false,
+          "error": "empty_result",
+          "latencyMs": 304
+        }
+      ],
+      "ms": 408,
+      "ran": true
+    },
+    {
+      "id": "google",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "news.google.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "google",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 225
+        }
+      ],
+      "ms": 539,
+      "ran": true
+    },
+    {
+      "id": "tiktoksearch",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "api.azbry.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "tiktoksearch",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 251
+        }
+      ],
+      "ms": 538,
+      "ran": true
+    },
+    {
+      "id": "soundcloud",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (SOUNDCLOUD_CLIENT_ID غير مضبوط)",
+      "hosts": [
+        {
+          "host": "api-mobi.soundcloud.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "soundcloud",
+          "via": "adapter",
+          "ok": false,
+          "error": "SOUNDCLOUD_CLIENT_ID غير مضبوط",
+          "latencyMs": 1
+        }
+      ],
+      "ms": 249,
+      "ran": true
+    },
+    {
+      "id": "wallpapersearch",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "www.wallpaperflare.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "wallpapersearch",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 202
+        }
+      ],
+      "ms": 427,
+      "ran": true
+    },
+    {
+      "id": "konachan",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "konachan.net",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "konachan",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 208
+        }
+      ],
+      "ms": 431,
+      "ran": true
+    },
+    {
+      "id": "kusonime",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "kusonime.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "kusonime",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 231
+        }
+      ],
+      "ms": 1507,
+      "ran": true
+    },
+    {
+      "id": "dramabox",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "www.dramabox.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "dramabox",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 229
+        }
+      ],
+      "ms": 1488,
+      "ran": true
+    },
+    {
+      "id": "shinigami",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — HTTP 403)",
+      "hosts": [
+        {
+          "host": "api.shngm.io",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "explore.shngm.io",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "shinigami",
+          "via": "adapter",
+          "ok": false,
+          "error": "HTTP 403",
+          "latencyMs": 73
+        }
+      ],
+      "ms": 308,
+      "ran": true
+    },
+    {
+      "id": "dafont",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "www.dafont.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "dafont",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 279
+        }
+      ],
+      "ms": 1421,
+      "ran": true
+    },
+    {
+      "id": "gsmarena",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "www.gsmarena.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "gsmarena",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 1234
+        }
+      ],
+      "ms": 1534,
+      "ran": true
+    },
+    {
+      "id": "hokinfo",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service rejected the request — Gagal mengambil halaman karakter)",
+      "hosts": [
+        {
+          "host": "honor-of-kings.fandom.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "hokinfo",
+          "via": "adapter",
+          "ok": false,
+          "error": "Gagal mengambil halaman karakter",
+          "latencyMs": 1162
+        }
+      ],
+      "ms": 1461,
+      "ran": true
+    },
+    {
+      "id": "wwchar",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (الشخصية غير موجودة)",
+      "hosts": [
+        {
+          "host": "wutheringwaves.fandom.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "wwchar",
+          "via": "adapter",
+          "ok": false,
+          "error": "الشخصية غير موجودة",
+          "latencyMs": 1155
+        }
+      ],
+      "ms": 1403,
+      "ran": true
+    },
+    {
+      "id": "txt2img2",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403 | Request failed with status code)",
+      "hosts": [
+        {
+          "host": "upsampler.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "black-forest-labs-flux-2-klein-4b.hf.space",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "api.yuulabs.web.id",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "txt2img2",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 1293
+        },
+        {
+          "id": "seaart",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 211
+        }
+      ],
+      "ms": 1733,
+      "ran": true
+    },
+    {
+      "id": "seaart",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403 | Request failed with status code)",
+      "hosts": [
+        {
+          "host": "api-faa.my.id",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "api.yuulabs.web.id",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "api.deepai.org",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "seaart",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 1383
+        },
+        {
+          "id": "deepai-scraper",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 120
+        }
+      ],
+      "ms": 1740,
+      "ran": true
+    },
+    {
+      "id": "deepai-scraper",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "api.deepai.org",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "deepai.org",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "deepai-scraper",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 184
+        }
+      ],
+      "ms": 417,
+      "ran": true
+    },
+    {
+      "id": "txt2img",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "unrestrictedaiimagegenerator.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "txt2img",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 261
+        }
+      ],
+      "ms": 492,
+      "ran": true
+    },
+    {
+      "id": "img2img",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "fgsi.dpdns.org",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "uguu.se",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "img2img",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 285
+        }
+      ],
+      "ms": 394,
+      "ran": true
+    },
+    {
+      "id": "removebackground",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (network unavailable — pixa HTTP 403 text/plain: Host not in allowlist: api2.pixelcut.app. )",
+      "hosts": [
+        {
+          "host": "api2.pixelcut.app",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "www.pixa.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "removebackground",
+          "via": "adapter",
+          "ok": false,
+          "error": "pixa HTTP 403 text/plain: Host not in allowlist: api2.pixelcut.app. Add this host to your network egress settings to allow access.",
+          "latencyMs": 201
+        }
+      ],
+      "ms": 449,
+      "ran": true
+    },
+    {
+      "id": "img2prompt",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "imageprompt.org",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "img2prompt",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 242
+        }
+      ],
+      "ms": 381,
+      "ran": true
+    },
+    {
+      "id": "hd",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403 | Request failed with status code)",
+      "hosts": [
+        {
+          "host": "imglarger.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "photoai.imglarger.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "aienhancer.ai",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "hd",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 275
+        },
+        {
+          "id": "upscaler",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 253
+        }
+      ],
+      "ms": 817,
+      "ran": true
+    },
+    {
+      "id": "upscaler",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403 | Request failed with status code)",
+      "hosts": [
+        {
+          "host": "aienhancer.ai",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "get1.imglarger.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "upscaler",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 207
+        },
+        {
+          "id": "imglarger",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 212
+        }
+      ],
+      "ms": 636,
+      "ran": true
+    },
+    {
+      "id": "imglarger",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "get1.imglarger.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "imgupscaler.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "imglarger",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 123
+        }
+      ],
+      "ms": 344,
+      "ran": true
+    },
+    {
+      "id": "wink",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (network unavailable — فشل get_maat_sign: \"request blocked: no rule or allowlist entry allo)",
+      "hosts": [
+        {
+          "host": "wink.ai",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "strategy.app.meitudata.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "wink",
+          "via": "adapter",
+          "ok": false,
+          "error": "فشل get_maat_sign: \"request blocked: no rule or allowlist entry allows host \\\"wink.ai\\\"\"",
+          "latencyMs": 344
+        }
+      ],
+      "ms": 592,
+      "ran": true
+    },
+    {
+      "id": "hdvid",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (network unavailable — Request failed with status code 403 | Gagal ambil upload url: \"reque)",
+      "hosts": [
+        {
+          "host": "fgsi.dpdns.org",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "api.unwatermark.ai",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "hdvid",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 185
+        },
+        {
+          "id": "hdvid2",
+          "via": "adapter",
+          "ok": false,
+          "error": "Gagal ambil upload url: \"request blocked: no rule or allowlist entry allows host \\\"api.unwatermark.ai\\\"\"",
+          "latencyMs": 108
+        }
+      ],
+      "ms": 516,
+      "ran": true
+    },
+    {
+      "id": "hdvid2",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (network unavailable — Gagal ambil upload url: \"request blocked: no rule or allowlist entry)",
+      "hosts": [
+        {
+          "host": "api.unwatermark.ai",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "unblurimage.ai",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "hdvid2",
+          "via": "adapter",
+          "ok": false,
+          "error": "Gagal ambil upload url: \"request blocked: no rule or allowlist entry allows host \\\"api.unwatermark.ai\\\"\"",
+          "latencyMs": 262
+        }
+      ],
+      "ms": 531,
+      "ran": true
+    },
+    {
+      "id": "imgdrop",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service rejected the request — scraper_reported_failure)",
+      "hosts": [
+        {
+          "host": "imgdrop.web.id",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "imgdrop",
+          "via": "adapter",
+          "ok": false,
+          "error": "scraper_reported_failure",
+          "latencyMs": 156
+        }
+      ],
+      "ms": 369,
+      "ran": true
+    },
+    {
+      "id": "videy",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "videy.co",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "videy",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 226
+        }
+      ],
+      "ms": 454,
+      "ran": true
+    },
+    {
+      "id": "mconverter",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "mconverter.eu",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "mconverter",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 481
+        }
+      ],
+      "ms": 574,
+      "ran": true
+    },
+    {
+      "id": "tempmail",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "temp-mail.io",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "api.internal.temp-mail.io",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "tempmail",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 101
+        }
+      ],
+      "ms": 333,
+      "ran": true
+    },
+    {
+      "id": "topmedia",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (Unexpected token 'H', \"Host not i\"... is not valid JSON)",
+      "hosts": [
+        {
+          "host": "api.topmediai.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "topmedia",
+          "via": "adapter",
+          "ok": false,
+          "error": "Unexpected token 'H', \"Host not i\"... is not valid JSON",
+          "latencyMs": 107
+        }
+      ],
+      "ms": 248,
+      "ran": true
+    },
+    {
+      "id": "lufemboy",
+      "status": "PASS",
+      "reason": "1 media (image)",
+      "hosts": [
+        {
+          "host": "cek-seberapa-femboy.vercel.app",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "lufemboy",
+          "via": "adapter",
+          "ok": true,
+          "latencyMs": 1
+        }
+      ],
+      "ms": 226,
+      "ran": true
+    },
+    {
+      "id": "gemini",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (network unavailable — request blocked: no rule or allowlist entry allows host \"gemini.goog)",
+      "hosts": [
+        {
+          "host": "gemini.google.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "gemini",
+          "via": "adapter",
+          "ok": false,
+          "error": "request blocked: no rule or allowlist entry allows host \"gemini.google.com\"",
+          "latencyMs": 96
+        }
+      ],
+      "ms": 271,
+      "ran": true
+    },
+    {
+      "id": "geminiVision",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (no_usable_output)",
+      "hosts": [
+        {
+          "host": "gemini.google.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "geminiVision",
+          "via": "adapter",
+          "ok": false,
+          "error": "no_usable_output",
+          "latencyMs": 271
+        }
+      ],
+      "ms": 271,
+      "ran": true
+    },
+    {
+      "id": "gpt5",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (network unavailable — Host not in allowlist: api.overchat.ai. Add this host to your networ)",
+      "hosts": [
+        {
+          "host": "api.overchat.ai",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "overchat.ai",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "gpt5",
+          "via": "adapter",
+          "ok": false,
+          "error": "Host not in allowlist: api.overchat.ai. Add this host to your network egress settings to allow access.",
+          "latencyMs": 235
+        }
+      ],
+      "ms": 513,
+      "ran": true
+    },
+    {
+      "id": "gpt52",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (Unexpected token 'H', \"Host not i\"... is not valid JSON)",
+      "hosts": [
+        {
+          "host": "chatgpt.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "gpt52",
+          "via": "adapter",
+          "ok": false,
+          "error": "Unexpected token 'H', \"Host not i\"... is not valid JSON",
+          "latencyMs": 85
+        }
+      ],
+      "ms": 297,
+      "ran": true
+    },
+    {
+      "id": "deepseek",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service rejected the request — scraper_reported_failure)",
+      "hosts": [
+        {
+          "host": "notegpt.io",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "deepseek",
+          "via": "adapter",
+          "ok": false,
+          "error": "scraper_reported_failure",
+          "latencyMs": 237
+        }
+      ],
+      "ms": 473,
+      "ran": true
+    },
+    {
+      "id": "claudehaiku",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (network unavailable — Host not in allowlist: api.overchat.ai. Add this host to your networ)",
+      "hosts": [
+        {
+          "host": "api.overchat.ai",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "overchat.ai",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "claudehaiku",
+          "via": "adapter",
+          "ok": false,
+          "error": "Host not in allowlist: api.overchat.ai. Add this host to your network egress settings to allow access.",
+          "latencyMs": 93
+        }
+      ],
+      "ms": 364,
+      "ran": true
+    },
+    {
+      "id": "qwen3",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (network unavailable — Host not in allowlist: api.overchat.ai. Add this host to your networ)",
+      "hosts": [
+        {
+          "host": "api.overchat.ai",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        },
+        {
+          "host": "overchat.ai",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "qwen3",
+          "via": "adapter",
+          "ok": false,
+          "error": "Host not in allowlist: api.overchat.ai. Add this host to your network egress settings to allow access.",
+          "latencyMs": 63
+        }
+      ],
+      "ms": 345,
+      "ran": true
+    },
+    {
+      "id": "multiAI",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (network unavailable — request blocked: no rule or allowlist entry allows host \"gemini.goog)",
+      "hosts": [
+        {
+          "host": "gemini.google.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "multiAI",
+          "via": "adapter",
+          "ok": false,
+          "error": "request blocked: no rule or allowlist entry allows host \"gemini.google.com\"",
+          "latencyMs": 110
+        }
+      ],
+      "ms": 110,
+      "ran": true
+    },
+    {
+      "id": "logic-bell",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (auth/config required — API key logicBell belum diisi.)",
+      "hosts": [
+        {
+          "host": "api.termai.cc",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "logic-bell",
+          "via": "adapter",
+          "ok": false,
+          "error": "API key logicBell belum diisi.",
+          "latencyMs": 2
+        }
+      ],
+      "ms": 236,
+      "ran": true
+    },
+    {
+      "id": "chatday",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (service HTTP error — Request failed with status code 403)",
+      "hosts": [
+        {
+          "host": "www.chatday.ai",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "chatday",
+          "via": "adapter",
+          "ok": false,
+          "error": "Request failed with status code 403",
+          "latencyMs": 287
+        }
+      ],
+      "ms": 532,
+      "ran": true
+    },
+    {
+      "id": "unlimitedai",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (network unavailable — Host not in allowlist: app.unlimitedai.chat. Add this host to your n)",
+      "hosts": [
+        {
+          "host": "app.unlimitedai.chat",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "unlimitedai",
+          "via": "adapter",
+          "ok": false,
+          "error": "Host not in allowlist: app.unlimitedai.chat. Add this host to your network egress settings to allow access.",
+          "latencyMs": 109
+        }
+      ],
+      "ms": 303,
+      "ran": true
+    },
+    {
+      "id": "feeb",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (network unavailable — Host not in allowlist: feelbetterbot.com. Add this host to your netw)",
+      "hosts": [
+        {
+          "host": "feelbetterbot.com",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "feeb",
+          "via": "adapter",
+          "ok": false,
+          "error": "Host not in allowlist: feelbetterbot.com. Add this host to your network egress settings to allow access.",
+          "latencyMs": 101
+        }
+      ],
+      "ms": 321,
+      "ran": true
+    },
+    {
+      "id": "manus-agent",
+      "status": "SKIPPED_EXTERNAL",
+      "reason": "service hosts blocked by this environment's egress policy (auth/config required — manus_not_configured)",
+      "hosts": [
+        {
+          "host": "api.manus.ai",
+          "state": "blocked",
+          "detail": "egress policy: host not allow-listed"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "manus-agent",
+          "via": "adapter",
+          "ok": false,
+          "error": "manus_not_configured",
+          "latencyMs": 1
+        }
+      ],
+      "ms": 272,
+      "ran": true
+    }
+  ]
+}

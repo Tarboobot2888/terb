@@ -1,0 +1,976 @@
+{
+  "generatedAt": "2026-10-15T17:58:54.352Z",
+  "note": "web actions are evaluated by decide() in src/lib/terboo-permissions.js with an injected policy — one engine, no second decision path",
+  "web": [
+    {
+      "action": "web.me.read",
+      "source": "web",
+      "min": "user",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "web.me.preferences.write",
+      "source": "web",
+      "min": "user",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "web.me.memory.read",
+      "source": "web",
+      "min": "user",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "web.me.memory.forget",
+      "source": "web",
+      "min": "user",
+      "scope": "global",
+      "destructive": true,
+      "confirm": true,
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-confirmation",
+        "user": "needs-confirmation"
+      }
+    },
+    {
+      "action": "web.sessions.read",
+      "source": "web",
+      "min": "user",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "web.sessions.revoke",
+      "source": "web",
+      "min": "user",
+      "scope": "global",
+      "destructive": true,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "web.catalog.read",
+      "source": "web",
+      "min": "user",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "web.ai.converse",
+      "source": "web",
+      "min": "user",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "web.ai.conversation.read",
+      "source": "web",
+      "min": "user",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "web.ai.conversation.write",
+      "source": "web",
+      "min": "user",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "web.ai.conversation.delete",
+      "source": "web",
+      "min": "user",
+      "scope": "global",
+      "destructive": true,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "web.media.upload",
+      "source": "web",
+      "min": "user",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "web.tool.run",
+      "source": "web",
+      "min": "user",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "web.tool.run.premium",
+      "source": "web",
+      "min": "user",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "web.tool.run.owner",
+      "source": "web",
+      "min": "owner",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "action": "web.artifact.read",
+      "source": "web",
+      "min": "user",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "web.task.read",
+      "source": "web",
+      "min": "user",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "web.task.cancel",
+      "source": "web",
+      "min": "user",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "web.game.read",
+      "source": "web",
+      "min": "user",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "web.game.play",
+      "source": "web",
+      "min": "user",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "web.subbot.read",
+      "source": "web",
+      "min": "user",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "web.subbot.provision",
+      "source": "web",
+      "min": "user",
+      "scope": "global",
+      "confirm": true,
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-confirmation",
+        "user": "needs-confirmation"
+      }
+    },
+    {
+      "action": "web.owner.overview",
+      "source": "web",
+      "min": "owner",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "action": "web.owner.users.read",
+      "source": "web",
+      "min": "owner",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "action": "web.owner.users.ban",
+      "source": "web",
+      "min": "owner",
+      "scope": "global",
+      "target": true,
+      "destructive": true,
+      "confirm": true,
+      "ownerBypass": true,
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "action": "web.owner.users.unban",
+      "source": "web",
+      "min": "owner",
+      "scope": "global",
+      "target": true,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "action": "web.owner.users.premium",
+      "source": "web",
+      "min": "owner",
+      "scope": "global",
+      "target": true,
+      "confirm": true,
+      "ownerBypass": true,
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "action": "web.owner.jobs.read",
+      "source": "web",
+      "min": "owner",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "action": "web.owner.providers.read",
+      "source": "web",
+      "min": "owner",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "action": "web.owner.audit.read",
+      "source": "web",
+      "min": "owner",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "action": "web.owner.website.read",
+      "source": "web",
+      "min": "owner",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "action": "web.owner.website.write",
+      "source": "web",
+      "min": "owner",
+      "scope": "global",
+      "destructive": true,
+      "confirm": true,
+      "ownerBypass": true,
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "action": "web.owner.domain.verify",
+      "source": "web",
+      "min": "owner",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "action": "group.members.list",
+      "source": "core:terboo-permissions.js",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "group.admins.list",
+      "source": "core:terboo-permissions.js",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "group.settings.get",
+      "source": "core:terboo-permissions.js",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "group.member.kick",
+      "source": "core:terboo-permissions.js",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.member.promote",
+      "source": "core:terboo-permissions.js",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.member.demote",
+      "source": "core:terboo-permissions.js",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.members.kickSelected",
+      "source": "core:terboo-permissions.js",
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-confirmation",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.members.promoteSelected",
+      "source": "core:terboo-permissions.js",
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-confirmation",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.members.demoteSelected",
+      "source": "core:terboo-permissions.js",
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-confirmation",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.settings.lock",
+      "source": "core:terboo-permissions.js",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.settings.unlock",
+      "source": "core:terboo-permissions.js",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.subject.set",
+      "source": "core:terboo-permissions.js",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.description.set",
+      "source": "core:terboo-permissions.js",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.invite.get",
+      "source": "core:terboo-permissions.js",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.invite.revoke",
+      "source": "core:terboo-permissions.js",
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-confirmation",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "childbots.list",
+      "source": "core:terboo-permissions.js",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "action": "task.cancel",
+      "source": "core:terboo-permissions.js",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    }
+  ],
+  "core": [
+    {
+      "action": "group.members.list",
+      "min": "user",
+      "scope": "group",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "group.admins.list",
+      "min": "user",
+      "scope": "group",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "group.member.presence",
+      "min": "user",
+      "scope": "group",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "group.settings.get",
+      "min": "user",
+      "scope": "group",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "group.member.add",
+      "min": "group-admin",
+      "scope": "group",
+      "botAdmin": true,
+      "target": true,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.member.readd",
+      "min": "group-admin",
+      "scope": "group",
+      "botAdmin": true,
+      "target": true,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.member.kick",
+      "min": "group-admin",
+      "scope": "group",
+      "botAdmin": true,
+      "target": true,
+      "destructive": true,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.member.promote",
+      "min": "group-admin",
+      "scope": "group",
+      "botAdmin": true,
+      "target": true,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.member.demote",
+      "min": "group-admin",
+      "scope": "group",
+      "botAdmin": true,
+      "target": true,
+      "destructive": true,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.member.warn",
+      "min": "group-admin",
+      "scope": "group",
+      "target": true,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.member.mute",
+      "min": "group-admin",
+      "scope": "group",
+      "target": true,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.member.unmute",
+      "min": "group-admin",
+      "scope": "group",
+      "target": true,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.members.kickAll",
+      "min": "owner",
+      "scope": "group",
+      "botAdmin": true,
+      "destructive": true,
+      "confirm": true,
+      "bulk": true,
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "action": "group.members.kickSelected",
+      "min": "group-admin",
+      "scope": "group",
+      "botAdmin": true,
+      "target": true,
+      "destructive": true,
+      "confirm": true,
+      "bulk": true,
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-confirmation",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.members.promoteSelected",
+      "min": "group-admin",
+      "scope": "group",
+      "botAdmin": true,
+      "target": true,
+      "confirm": true,
+      "bulk": true,
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-confirmation",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.members.demoteSelected",
+      "min": "group-admin",
+      "scope": "group",
+      "botAdmin": true,
+      "target": true,
+      "destructive": true,
+      "confirm": true,
+      "bulk": true,
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-confirmation",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.settings.lock",
+      "min": "group-admin",
+      "scope": "group",
+      "botAdmin": true,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.settings.schedule",
+      "min": "group-admin",
+      "scope": "group",
+      "botAdmin": true,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.settings.unlock",
+      "min": "group-admin",
+      "scope": "group",
+      "botAdmin": true,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.settings.restrict",
+      "min": "group-admin",
+      "scope": "group",
+      "botAdmin": true,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.settings.unrestrict",
+      "min": "group-admin",
+      "scope": "group",
+      "botAdmin": true,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.subject.set",
+      "min": "group-admin",
+      "scope": "group",
+      "botAdmin": true,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.description.set",
+      "min": "group-admin",
+      "scope": "group",
+      "botAdmin": true,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.invite.get",
+      "min": "group-admin",
+      "scope": "group",
+      "botAdmin": true,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "group.invite.revoke",
+      "min": "group-admin",
+      "scope": "group",
+      "botAdmin": true,
+      "destructive": true,
+      "confirm": true,
+      "ownerBypass": true,
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-confirmation",
+        "user": "denied"
+      }
+    },
+    {
+      "action": "contact.block",
+      "min": "owner",
+      "scope": "global",
+      "target": true,
+      "destructive": true,
+      "confirm": true,
+      "ownerBypass": true,
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "action": "contact.unblock",
+      "min": "owner",
+      "scope": "global",
+      "target": true,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "action": "message.send_to_contact",
+      "min": "owner",
+      "scope": "global",
+      "target": true,
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "action": "broadcast.run",
+      "min": "owner",
+      "scope": "global",
+      "bulk": true,
+      "confirm": true,
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "action": "childbots.list",
+      "min": "owner",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "action": "task.cancel",
+      "min": "user",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "allowed",
+        "user": "allowed"
+      }
+    },
+    {
+      "action": "ssh.read",
+      "min": "owner",
+      "scope": "global",
+      "provider": "ssh",
+      "decisions": {
+        "owner": "provider-not-available",
+        "group-admin": "provider-not-available",
+        "user": "provider-not-available"
+      }
+    },
+    {
+      "action": "ssh.exec",
+      "min": "owner",
+      "scope": "global",
+      "provider": "ssh",
+      "decisions": {
+        "owner": "provider-not-available",
+        "group-admin": "provider-not-available",
+        "user": "provider-not-available"
+      }
+    },
+    {
+      "action": "ssh.write",
+      "min": "owner",
+      "scope": "global",
+      "provider": "ssh",
+      "destructive": true,
+      "confirm": true,
+      "ownerBypass": true,
+      "decisions": {
+        "owner": "provider-not-available",
+        "group-admin": "provider-not-available",
+        "user": "provider-not-available"
+      }
+    },
+    {
+      "action": "project.read",
+      "min": "owner",
+      "scope": "global",
+      "decisions": {
+        "owner": "allowed",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "action": "project.write",
+      "min": "owner",
+      "scope": "global",
+      "destructive": true,
+      "confirm": true,
+      "ownerBypass": true,
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-owner",
+        "user": "needs-owner"
+      }
+    },
+    {
+      "action": "project.deploy",
+      "min": "owner",
+      "scope": "global",
+      "provider": "ssh",
+      "destructive": true,
+      "confirm": true,
+      "ownerBypass": true,
+      "decisions": {
+        "owner": "provider-not-available",
+        "group-admin": "provider-not-available",
+        "user": "provider-not-available"
+      }
+    }
+  ]
+}
