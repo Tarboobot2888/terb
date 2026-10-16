@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-10-15T17:04:47.800Z",
-  "gitHead": "fbbb96973ba5d0172a80dc7eed790daacc4c014e",
+  "generatedAt": "2026-10-15T17:58:38.903Z",
+  "gitHead": "64bc0105b17f0660c6ed255ada3a42ec9b9b7b33",
   "root": ".",
   "totals": {
-    "files": 1676,
-    "bytes": 63763829
+    "files": 1761,
+    "bytes": 64557734
   },
   "files": [
     {
       "path": ".gitignore",
       "kind": "other",
       "ext": "",
-      "bytes": 965
+      "bytes": 1145
     },
     {
       "path": "assets/audio/terboo-mp3.mp3",
@@ -827,6 +827,66 @@
       "sha256": "ca3d163bab055381"
     },
     {
+      "path": "data/secure/website-session.key",
+      "kind": "other",
+      "ext": ".key",
+      "bytes": 64
+    },
+    {
+      "path": "data/web-uploads/245b89d78032a4274d7fb914a368ae9f/u_2CSksxTM4ggjv4TZIRyI6w.png",
+      "kind": "image",
+      "ext": ".png",
+      "bytes": 67
+    },
+    {
+      "path": "data/web-uploads/245b89d78032a4274d7fb914a368ae9f/u_2EXoX6FsHu44-KFuzdPxlQ.png",
+      "kind": "image",
+      "ext": ".png",
+      "bytes": 67
+    },
+    {
+      "path": "data/web-uploads/245b89d78032a4274d7fb914a368ae9f/u_67kfyrjmHAPIAQilFb0Csg.png",
+      "kind": "image",
+      "ext": ".png",
+      "bytes": 67
+    },
+    {
+      "path": "data/web-uploads/245b89d78032a4274d7fb914a368ae9f/u_burdXQ72DPhJ2xXN5f146Q.png",
+      "kind": "image",
+      "ext": ".png",
+      "bytes": 67
+    },
+    {
+      "path": "data/web-uploads/245b89d78032a4274d7fb914a368ae9f/u_LTYJNXLpmSD8i045wOuxTA.png",
+      "kind": "image",
+      "ext": ".png",
+      "bytes": 67
+    },
+    {
+      "path": "data/web-uploads/245b89d78032a4274d7fb914a368ae9f/u_NxNohFEIgsZ0aC3fG9Td3w.png",
+      "kind": "image",
+      "ext": ".png",
+      "bytes": 67
+    },
+    {
+      "path": "data/web-uploads/245b89d78032a4274d7fb914a368ae9f/u_wdv_5nwI5Et9nyhCzibz3w.png",
+      "kind": "image",
+      "ext": ".png",
+      "bytes": 67
+    },
+    {
+      "path": "data/web-uploads/245b89d78032a4274d7fb914a368ae9f/u_zrYzEQaZy-opYN04KI4bhg.png",
+      "kind": "image",
+      "ext": ".png",
+      "bytes": 67
+    },
+    {
+      "path": "data/web-uploads/b9f8527f51093ceea9482592768970db/u_eij9LAYd6KObRfetijKrew.png",
+      "kind": "image",
+      "ext": ".png",
+      "bytes": 67
+    },
+    {
       "path": "data/welcomeImages.json",
       "kind": "data",
       "ext": ".json",
@@ -1079,6 +1139,13 @@
       "sha256": "ca3d163bab055381"
     },
     {
+      "path": "database/lid-cache.json",
+      "kind": "data",
+      "ext": ".json",
+      "bytes": 166,
+      "sha256": "ffa591b095e58b00"
+    },
+    {
       "path": "database/linode/ceo_ln1.json",
       "kind": "data",
       "ext": ".json",
@@ -1279,6 +1346,13 @@
       "ext": ".json",
       "bytes": 3,
       "sha256": "ca3d163bab055381"
+    },
+    {
+      "path": "database/tasks.json",
+      "kind": "data",
+      "ext": ".json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c"
     },
     {
       "path": "database/trusted-bots.json",
@@ -1620,43 +1694,43 @@
       "path": "docs/web-platform/01_FILE_INVENTORY.json",
       "kind": "data",
       "ext": ".json",
-      "bytes": 266109,
-      "sha256": "1ca1cb8839a0f66d"
+      "bytes": 280689,
+      "sha256": "39f4a652558258ba"
     },
     {
       "path": "docs/web-platform/02_IMPORT_CALL_GRAPH.json",
       "kind": "data",
       "ext": ".json",
-      "bytes": 546560,
-      "sha256": "036db55caeb0beb8"
+      "bytes": 565996,
+      "sha256": "cee5bc733fcf321d"
     },
     {
       "path": "docs/web-platform/03_PLUGIN_CATALOG.json",
       "kind": "data",
       "ext": ".json",
-      "bytes": 1007191,
-      "sha256": "cba7827b0a35648f"
+      "bytes": 1008404,
+      "sha256": "cc34409260538ade"
     },
     {
       "path": "docs/web-platform/04_API_CATALOG.json",
       "kind": "data",
       "ext": ".json",
-      "bytes": 124992,
-      "sha256": "a39a681896f6f1b9"
+      "bytes": 126308,
+      "sha256": "c67299b3189c91b7"
     },
     {
       "path": "docs/web-platform/07_ASSETS_AND_ROUTES.json",
       "kind": "data",
       "ext": ".json",
       "bytes": 72265,
-      "sha256": "e5552d5b8457ff27"
+      "sha256": "0730cd8702867228"
     },
     {
       "path": "docs/web-platform/09_RUNTIME_PROBE.json",
       "kind": "data",
       "ext": ".json",
       "bytes": 49059,
-      "sha256": "250ecbdb1fc144d1"
+      "sha256": "28da011d851e4c45"
     },
     {
       "path": "docs/web-platform/09_TEST_BASELINE.json",
@@ -1676,8 +1750,8 @@
       "path": "index.js",
       "kind": "source",
       "ext": ".js",
-      "bytes": 15802,
-      "sha256": "0561d6e0eacfe461"
+      "bytes": 17135,
+      "sha256": "2294a1ac1fecb3be"
     },
     {
       "path": "package-lock.json",
@@ -1690,8 +1764,8 @@
       "path": "package.json",
       "kind": "data",
       "ext": ".json",
-      "bytes": 3927,
-      "sha256": "fa275d0e1bf26935"
+      "bytes": 4177,
+      "sha256": "c3bdefea546f6a63"
     },
     {
       "path": "plugins/ai/2شات.js",
@@ -4658,8 +4732,8 @@
       "path": "plugins/main/اوامر.js",
       "kind": "source",
       "ext": ".js",
-      "bytes": 11041,
-      "sha256": "16c705bee4b3ac5a"
+      "bytes": 11761,
+      "sha256": "4c78397c587d3731"
     },
     {
       "path": "plugins/main/ايقاف_البوت_الفرعي.js",
@@ -5780,6 +5854,13 @@
       "ext": ".js",
       "bytes": 1940,
       "sha256": "ccd00308560948f6"
+    },
+    {
+      "path": "plugins/owner/موقع.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 11608,
+      "sha256": "b10f543fd42e7733"
     },
     {
       "path": "plugins/owner/نسخ_احتياطي.js",
@@ -8795,8 +8876,8 @@
       "path": "src/lib/terboo-brand.js",
       "kind": "source",
       "ext": ".js",
-      "bytes": 8514,
-      "sha256": "4982d8952d04d6fb"
+      "bytes": 9454,
+      "sha256": "ccdd260b3b6242c4"
     },
     {
       "path": "src/lib/terboo-brat.js",
@@ -9138,15 +9219,15 @@
       "path": "src/lib/terboo-i18n/catalog/ar.json",
       "kind": "data",
       "ext": ".json",
-      "bytes": 103901,
-      "sha256": "be778f7ccaa3a894"
+      "bytes": 110620,
+      "sha256": "9742dd7dc92f4e9e"
     },
     {
       "path": "src/lib/terboo-i18n/catalog/en.json",
       "kind": "data",
       "ext": ".json",
-      "bytes": 1215618,
-      "sha256": "dc997ea4dbf8119e"
+      "bytes": 1226069,
+      "sha256": "0b01d24651a530e7"
     },
     {
       "path": "src/lib/terboo-i18n/runtime.js",
@@ -10318,6 +10399,153 @@
       "sha256": "bce93959d880f91d"
     },
     {
+      "path": "src/web/http/routes/ai.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 4571,
+      "sha256": "be9009044a839889"
+    },
+    {
+      "path": "src/web/http/routes/auth.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 4887,
+      "sha256": "c8576508ebb04fa2"
+    },
+    {
+      "path": "src/web/http/routes/catalog.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 2701,
+      "sha256": "f0efd51f2b74efac"
+    },
+    {
+      "path": "src/web/http/routes/games.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 2229,
+      "sha256": "4d218e9f3579e49c"
+    },
+    {
+      "path": "src/web/http/routes/groups.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 2829,
+      "sha256": "f10a3ad9fd810f20"
+    },
+    {
+      "path": "src/web/http/routes/health.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 2741,
+      "sha256": "2b95453d46b2e5af"
+    },
+    {
+      "path": "src/web/http/routes/index.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 1084,
+      "sha256": "3ac7a772a7f77c97"
+    },
+    {
+      "path": "src/web/http/routes/me.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 5653,
+      "sha256": "c703e5d545384edb"
+    },
+    {
+      "path": "src/web/http/routes/media.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 3162,
+      "sha256": "4de62d2d8bdd1327"
+    },
+    {
+      "path": "src/web/http/routes/owner.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 8674,
+      "sha256": "302174bb1b871fee"
+    },
+    {
+      "path": "src/web/http/routes/subbots.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 699,
+      "sha256": "51572e69f1310a1b"
+    },
+    {
+      "path": "src/web/http/routes/tools.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 4213,
+      "sha256": "2cd0a4eeb7007b57"
+    },
+    {
+      "path": "src/web/http/server.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 24055,
+      "sha256": "d1630af3fab86cbc"
+    },
+    {
+      "path": "src/web/index.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 7280,
+      "sha256": "b6e608eeae7976f3"
+    },
+    {
+      "path": "src/web/services/ai-service.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 8583,
+      "sha256": "852e72527dd9dc27"
+    },
+    {
+      "path": "src/web/services/audit-service.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 3049,
+      "sha256": "c094cb763fe45919"
+    },
+    {
+      "path": "src/web/services/catalog-service.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 9294,
+      "sha256": "d116b1921301bb33"
+    },
+    {
+      "path": "src/web/services/conversation-store.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 6519,
+      "sha256": "8ffed4b6000cf387"
+    },
+    {
+      "path": "src/web/services/domain-service.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 8717,
+      "sha256": "c2e2b7cbf04c1041"
+    },
+    {
+      "path": "src/web/services/game-service.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 6848,
+      "sha256": "d5ac77d06d24df13"
+    },
+    {
+      "path": "src/web/services/group-service.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 10102,
+      "sha256": "e6c02f6de130f98c"
+    },
+    {
       "path": "src/web/services/identity-service.js",
       "kind": "source",
       "ext": ".js",
@@ -10325,11 +10553,74 @@
       "sha256": "142109f6fff7b916"
     },
     {
+      "path": "src/web/services/otp-service.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 10669,
+      "sha256": "b308b4f6543f172f"
+    },
+    {
       "path": "src/web/services/permission-service.js",
       "kind": "source",
       "ext": ".js",
       "bytes": 9680,
       "sha256": "72434b46a4ea5669"
+    },
+    {
+      "path": "src/web/services/rate-limit-service.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 5113,
+      "sha256": "b9fb88955b9f08a4"
+    },
+    {
+      "path": "src/web/services/secret-store.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 3285,
+      "sha256": "7a8633403e022b3d"
+    },
+    {
+      "path": "src/web/services/session-service.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 8236,
+      "sha256": "c0b904b4571fd2b9"
+    },
+    {
+      "path": "src/web/services/subbot-service.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 3389,
+      "sha256": "a84d051cebdd9c8e"
+    },
+    {
+      "path": "src/web/services/task-service.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 5250,
+      "sha256": "1fe23304f52ebd2a"
+    },
+    {
+      "path": "src/web/services/tool-service.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 9865,
+      "sha256": "e577ff74ee0c51ed"
+    },
+    {
+      "path": "src/web/services/upload-service.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 11380,
+      "sha256": "c3d84f7d93cd2ad5"
+    },
+    {
+      "path": "src/web/services/user-service.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 7160,
+      "sha256": "73345bd973306d15"
     },
     {
       "path": "src/web/store/web-store.js",
@@ -11014,8 +11305,8 @@
       "path": "tests/terboo-no-silent-catch.test.mjs",
       "kind": "source",
       "ext": ".mjs",
-      "bytes": 7437,
-      "sha256": "22b169d63638a758"
+      "bytes": 7572,
+      "sha256": "8bda61637a699f6e"
     },
     {
       "path": "tests/terboo-nvidia-ai.test.mjs",
@@ -11207,6 +11498,34 @@
       "sha256": "9a2404137d7ebefc"
     },
     {
+      "path": "tests/web-api-integration.test.mjs",
+      "kind": "source",
+      "ext": ".mjs",
+      "bytes": 18935,
+      "sha256": "aa9aff0428816211"
+    },
+    {
+      "path": "tests/web-auth-otp.test.mjs",
+      "kind": "source",
+      "ext": ".mjs",
+      "bytes": 6699,
+      "sha256": "541c418a8f037257"
+    },
+    {
+      "path": "tests/web-domain-cta.test.mjs",
+      "kind": "source",
+      "ext": ".mjs",
+      "bytes": 7764,
+      "sha256": "b977f97cd199661c"
+    },
+    {
+      "path": "tests/web-static-and-assets.test.mjs",
+      "kind": "source",
+      "ext": ".mjs",
+      "bytes": 8450,
+      "sha256": "ca8fba1da1b9c4f1"
+    },
+    {
       "path": "tools/audit-baseline.json",
       "kind": "data",
       "ext": ".json",
@@ -11388,8 +11707,8 @@
       "path": "tools/terboo-audit.mjs",
       "kind": "source",
       "ext": ".mjs",
-      "bytes": 30920,
-      "sha256": "bf127ab67f1f87a1"
+      "bytes": 31010,
+      "sha256": "0e2064518e360c56"
     },
     {
       "path": "tools/terboo-benchmark-compare.mjs",
@@ -11493,8 +11812,8 @@
       "path": "tools/terboo-i18n-extract.mjs",
       "kind": "source",
       "ext": ".mjs",
-      "bytes": 28410,
-      "sha256": "22ae90d62f2b0ed3"
+      "bytes": 29000,
+      "sha256": "f9129e137c6365d0"
     },
     {
       "path": "tools/terboo-inventory.mjs",
@@ -11591,8 +11910,8 @@
       "path": "tools/web-audit/terboo-web-inventory.mjs",
       "kind": "source",
       "ext": ".mjs",
-      "bytes": 18190,
-      "sha256": "3ef693558c560bac"
+      "bytes": 18767,
+      "sha256": "bc444cd4ccebe592"
     },
     {
       "path": "tools/web-audit/terboo-web-runtime-probe.mjs",
@@ -11600,6 +11919,263 @@
       "ext": ".mjs",
       "bytes": 8804,
       "sha256": "ba4e82acd01f2086"
+    },
+    {
+      "path": "web/dist/assets/index-CfCYFNR7.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 86416,
+      "sha256": "3095774399417a03"
+    },
+    {
+      "path": "web/dist/assets/index-sZnBd3_2.css",
+      "kind": "other",
+      "ext": ".css",
+      "bytes": 22065
+    },
+    {
+      "path": "web/dist/assets/react-TMushWyA.js",
+      "kind": "source",
+      "ext": ".js",
+      "bytes": 141164,
+      "sha256": "457959c7b7daacb3"
+    },
+    {
+      "path": "web/dist/index.html",
+      "kind": "other",
+      "ext": ".html",
+      "bytes": 1007
+    },
+    {
+      "path": "web/index.html",
+      "kind": "other",
+      "ext": ".html",
+      "bytes": 833
+    },
+    {
+      "path": "web/package-lock.json",
+      "kind": "data",
+      "ext": ".json",
+      "bytes": 59566,
+      "sha256": "8309d1c41ab22a12"
+    },
+    {
+      "path": "web/package.json",
+      "kind": "data",
+      "ext": ".json",
+      "bytes": 585,
+      "sha256": "202bd163b9d75748"
+    },
+    {
+      "path": "web/src/App.tsx",
+      "kind": "source",
+      "ext": ".tsx",
+      "bytes": 3451,
+      "sha256": "722d7ee9a5848cee"
+    },
+    {
+      "path": "web/src/components/Shell.tsx",
+      "kind": "source",
+      "ext": ".tsx",
+      "bytes": 6367,
+      "sha256": "3587ce07019e26b5"
+    },
+    {
+      "path": "web/src/components/Splash.css",
+      "kind": "other",
+      "ext": ".css",
+      "bytes": 2161
+    },
+    {
+      "path": "web/src/components/Splash.tsx",
+      "kind": "source",
+      "ext": ".tsx",
+      "bytes": 1725,
+      "sha256": "022f9df9df4a84dd"
+    },
+    {
+      "path": "web/src/components/ui.tsx",
+      "kind": "source",
+      "ext": ".tsx",
+      "bytes": 5318,
+      "sha256": "8a9d42f63a8abcee"
+    },
+    {
+      "path": "web/src/lib/api.ts",
+      "kind": "source",
+      "ext": ".ts",
+      "bytes": 4500,
+      "sha256": "91275d640e046519"
+    },
+    {
+      "path": "web/src/lib/countries.ts",
+      "kind": "source",
+      "ext": ".ts",
+      "bytes": 2902,
+      "sha256": "dfb9f715b4778d12"
+    },
+    {
+      "path": "web/src/lib/hooks.ts",
+      "kind": "source",
+      "ext": ".ts",
+      "bytes": 4229,
+      "sha256": "e96c6d410a01df45"
+    },
+    {
+      "path": "web/src/lib/i18n.ts",
+      "kind": "source",
+      "ext": ".ts",
+      "bytes": 16423,
+      "sha256": "2a5c6ba3b129fcd1"
+    },
+    {
+      "path": "web/src/lib/store.tsx",
+      "kind": "source",
+      "ext": ".tsx",
+      "bytes": 4621,
+      "sha256": "5d7c1a7ae1eb6378"
+    },
+    {
+      "path": "web/src/lib/types.ts",
+      "kind": "source",
+      "ext": ".ts",
+      "bytes": 4951,
+      "sha256": "74b9c51131fe8097"
+    },
+    {
+      "path": "web/src/main.tsx",
+      "kind": "source",
+      "ext": ".tsx",
+      "bytes": 481,
+      "sha256": "130a657c7bfcc9d8"
+    },
+    {
+      "path": "web/src/pages/Account.tsx",
+      "kind": "source",
+      "ext": ".tsx",
+      "bytes": 6862,
+      "sha256": "6b6c58c63aa77f21"
+    },
+    {
+      "path": "web/src/pages/AIWorkspace.tsx",
+      "kind": "source",
+      "ext": ".tsx",
+      "bytes": 9969,
+      "sha256": "592cfea4ffcf3a88"
+    },
+    {
+      "path": "web/src/pages/Commands.tsx",
+      "kind": "source",
+      "ext": ".tsx",
+      "bytes": 4396,
+      "sha256": "519113f6b595660d"
+    },
+    {
+      "path": "web/src/pages/Dashboard.tsx",
+      "kind": "source",
+      "ext": ".tsx",
+      "bytes": 8015,
+      "sha256": "81c79f6e34fe0117"
+    },
+    {
+      "path": "web/src/pages/Games.tsx",
+      "kind": "source",
+      "ext": ".tsx",
+      "bytes": 5720,
+      "sha256": "43b3ac804ad15002"
+    },
+    {
+      "path": "web/src/pages/Groups.tsx",
+      "kind": "source",
+      "ext": ".tsx",
+      "bytes": 6596,
+      "sha256": "05ccd3a73fc2b340"
+    },
+    {
+      "path": "web/src/pages/Landing.css",
+      "kind": "other",
+      "ext": ".css",
+      "bytes": 1798
+    },
+    {
+      "path": "web/src/pages/Landing.tsx",
+      "kind": "source",
+      "ext": ".tsx",
+      "bytes": 7173,
+      "sha256": "3cc3327a71ab8f6e"
+    },
+    {
+      "path": "web/src/pages/Login.css",
+      "kind": "other",
+      "ext": ".css",
+      "bytes": 727
+    },
+    {
+      "path": "web/src/pages/Login.tsx",
+      "kind": "source",
+      "ext": ".tsx",
+      "bytes": 7794,
+      "sha256": "ddb22bc704880658"
+    },
+    {
+      "path": "web/src/pages/Media.tsx",
+      "kind": "source",
+      "ext": ".tsx",
+      "bytes": 8309,
+      "sha256": "606c7fb22e339e47"
+    },
+    {
+      "path": "web/src/pages/Owner.tsx",
+      "kind": "source",
+      "ext": ".tsx",
+      "bytes": 14197,
+      "sha256": "f9207b02bf1062a8"
+    },
+    {
+      "path": "web/src/pages/SubBots.tsx",
+      "kind": "source",
+      "ext": ".tsx",
+      "bytes": 1744,
+      "sha256": "dd9d30e9f8f7db03"
+    },
+    {
+      "path": "web/src/pages/Tools.tsx",
+      "kind": "source",
+      "ext": ".tsx",
+      "bytes": 10299,
+      "sha256": "f644a879910dd0f9"
+    },
+    {
+      "path": "web/src/styles/app.css",
+      "kind": "other",
+      "ext": ".css",
+      "bytes": 15790
+    },
+    {
+      "path": "web/src/styles/base.css",
+      "kind": "other",
+      "ext": ".css",
+      "bytes": 3461
+    },
+    {
+      "path": "web/src/styles/tokens.css",
+      "kind": "other",
+      "ext": ".css",
+      "bytes": 5521
+    },
+    {
+      "path": "web/tsconfig.json",
+      "kind": "data",
+      "ext": ".json",
+      "bytes": 625,
+      "sha256": "f5bb807308f1728e"
+    },
+    {
+      "path": "web/vite.config.ts",
+      "kind": "source",
+      "ext": ".ts",
+      "bytes": 1086,
+      "sha256": "f3309c4691d318a9"
     }
   ]
 }

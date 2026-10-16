@@ -7,14 +7,14 @@
     "ai": "the model proposes responseMode (text|buttons|confirm); resolveResponseMode decides; no button for a command the viewer cannot run"
   },
   "summary": {
-    "commands": 894,
+    "commands": 895,
     "quickReply": 283,
     "select": 54,
     "confirm": 22,
     "afterTarget": 75,
-    "none": 460,
+    "none": 461,
     "destructive": 27,
-    "freeForm": 396,
+    "freeForm": 397,
     "needsTarget": 116,
     "needsMedia": 92,
     "declared": 0
@@ -23318,6 +23318,47 @@
       "target": false,
       "destructive": false,
       "freeForm": false,
+      "expectedResponse": "text-or-card"
+    },
+    {
+      "command": "موقع",
+      "category": "owner",
+      "aliases": [
+        "website",
+        "web",
+        "sitio"
+      ],
+      "usage": ".موقع [حالة|رابط|دومين <نطاق>|تحقق|شهادة|تشغيل|ايقاف]",
+      "buttonType": "none",
+      "ui": {
+        "eligible": false,
+        "mode": "none",
+        "actionKind": "input",
+        "requiresText": true,
+        "requiresLink": false,
+        "requiresCode": false,
+        "requiresTarget": false,
+        "requiresMedia": false,
+        "requiresReply": false,
+        "destructive": false,
+        "freeForm": true,
+        "options": [],
+        "selectOptions": [],
+        "ownerOnly": true,
+        "adminOnly": false,
+        "premiumOnly": false,
+        "groupOnly": false,
+        "privateOnly": false,
+        "interactiveSafe": false,
+        "supportsQuickReply": false,
+        "supportsSelect": false,
+        "supportsConfirm": false,
+        "source": "derived"
+      },
+      "permission": "owner",
+      "target": false,
+      "destructive": false,
+      "freeForm": true,
       "expectedResponse": "text-or-card"
     },
     {

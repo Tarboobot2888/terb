@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-15T16:51:38.287Z",
-  "tempDatabase": "/tmp/terboo-probe-db-vI5y5V",
+  "generatedAt": "2026-10-15T17:58:11.509Z",
+  "tempDatabase": "/tmp/terboo-probe-db-qRNUmG",
   "steps": {
     "database": {
       "ok": true,
-      "path": "/tmp/terboo-probe-db-vI5y5V",
+      "path": "/tmp/terboo-probe-db-qRNUmG",
       "note": "isolated temp dir, production stores untouched"
     },
     "plugins": {
       "ok": true,
-      "loadedCount": 897,
-      "registeredCommandKeys": 1057,
-      "registeredAliasKeys": 1248,
-      "distinctPluginObjects": 895,
-      "distinctFiles": 895,
+      "loadedCount": 898,
+      "registeredCommandKeys": 1058,
+      "registeredAliasKeys": 1251,
+      "distinctPluginObjects": 896,
+      "distinctFiles": 896,
       "categories": {
         "ai": 73,
         "anime": 1,
@@ -33,7 +33,7 @@
         "main": 21,
         "media": 2,
         "nsfw": 1,
-        "owner": 158,
+        "owner": 159,
         "photo": 1,
         "primbon": 8,
         "pushkontak": 1,
@@ -50,7 +50,7 @@
         "utility": 1
       },
       "categoryCount": 33,
-      "loadMs": 1987,
+      "loadMs": 1942,
       "failureCount": 0,
       "failures": []
     },

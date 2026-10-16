@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-15T17:04:48.407Z",
-  "gitHead": "fbbb96973ba5d0172a80dc7eed790daacc4c014e",
+  "generatedAt": "2026-10-15T17:58:39.461Z",
+  "gitHead": "64bc0105b17f0660c6ed255ada3a42ec9b9b7b33",
   "note": "plugins/ are loaded dynamically by path — a missing static import is not proof of dead code",
   "totals": {
-    "modules": 1347,
-    "neverStaticallyImported": 1063
+    "modules": 1384,
+    "neverStaticallyImported": 1067
   },
   "entryPoints": [
     "index.js"
@@ -2187,6 +2187,10 @@
       "dynamicallyLoaded": true
     },
     {
+      "file": "plugins/owner/موقع.js",
+      "dynamicallyLoaded": true
+    },
+    {
       "file": "plugins/owner/نسخ_احتياطي.js",
       "dynamicallyLoaded": true
     },
@@ -3647,18 +3651,6 @@
       "dynamicallyLoaded": false
     },
     {
-      "file": "src/web/services/identity-service.js",
-      "dynamicallyLoaded": false
-    },
-    {
-      "file": "src/web/services/permission-service.js",
-      "dynamicallyLoaded": false
-    },
-    {
-      "file": "src/web/url-builder.js",
-      "dynamicallyLoaded": false
-    },
-    {
       "file": "tests/agent-control.test.mjs",
       "dynamicallyLoaded": true
     },
@@ -4131,6 +4123,22 @@
       "dynamicallyLoaded": true
     },
     {
+      "file": "tests/web-api-integration.test.mjs",
+      "dynamicallyLoaded": true
+    },
+    {
+      "file": "tests/web-auth-otp.test.mjs",
+      "dynamicallyLoaded": true
+    },
+    {
+      "file": "tests/web-domain-cta.test.mjs",
+      "dynamicallyLoaded": true
+    },
+    {
+      "file": "tests/web-static-and-assets.test.mjs",
+      "dynamicallyLoaded": true
+    },
+    {
       "file": "tools/audit-external-apis.mjs",
       "dynamicallyLoaded": true
     },
@@ -4261,6 +4269,14 @@
     {
       "file": "tools/web-audit/terboo-web-runtime-probe.mjs",
       "dynamicallyLoaded": true
+    },
+    {
+      "file": "web/dist/assets/index-CfCYFNR7.js",
+      "dynamicallyLoaded": false
+    },
+    {
+      "file": "web/dist/assets/react-TMushWyA.js",
+      "dynamicallyLoaded": false
     }
   ],
   "modules": {
@@ -4317,7 +4333,7 @@
       "exportsDefault": true
     },
     "index.js": {
-      "staticImports": 24,
+      "staticImports": 25,
       "dynamicImports": 4,
       "localTargets": [
         "config.js",
@@ -4342,7 +4358,8 @@
         "src/lib/terboo-scheduler.js",
         "src/lib/terboo-sholat-scheduler.js",
         "src/lib/terboo-temp-cleaner.js",
-        "src/lib/terboo-warmup.js"
+        "src/lib/terboo-warmup.js",
+        "src/web/index.js"
       ],
       "externalTargets": [
         "chokidar",
@@ -9224,13 +9241,14 @@
       "exportsDefault": false
     },
     "plugins/main/اوامر.js": {
-      "staticImports": 12,
+      "staticImports": 13,
       "dynamicImports": 0,
       "localTargets": [
         "config.js",
         "src/lib/terboo-asset-manager.js",
         "src/lib/terboo-brand.js",
         "src/lib/terboo-formatter.js",
+        "src/lib/terboo-interactive-builder.js",
         "src/lib/terboo-localization.js",
         "src/lib/terboo-menu-delivery.js",
         "src/lib/terboo-menu-send.js",
@@ -11236,6 +11254,22 @@
         "config.js",
         "src/lib/terboo-context.js",
         "src/lib/terboo-database.js"
+      ],
+      "externalTargets": [],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "plugins/owner/موقع.js": {
+      "staticImports": 3,
+      "dynamicImports": 4,
+      "localTargets": [
+        "src/lib/terboo-brand.js",
+        "src/lib/terboo-database.js",
+        "src/lib/terboo-localization.js",
+        "src/lib/terboo-ui-theme.js",
+        "src/web/config.js",
+        "src/web/index.js",
+        "src/web/services/domain-service.js"
       ],
       "externalTargets": [],
       "exportsNamed": true,
@@ -16376,10 +16410,11 @@
       "exportsDefault": false
     },
     "src/lib/terboo-brand.js": {
-      "staticImports": 1,
+      "staticImports": 2,
       "dynamicImports": 0,
       "localTargets": [
-        "config.js"
+        "config.js",
+        "src/web/url-builder.js"
       ],
       "externalTargets": [],
       "exportsNamed": true,
@@ -19049,6 +19084,343 @@
       "exportsNamed": true,
       "exportsDefault": false
     },
+    "src/web/http/routes/ai.js": {
+      "staticImports": 6,
+      "dynamicImports": 0,
+      "localTargets": [
+        "src/web/errors.js",
+        "src/web/services/ai-service.js",
+        "src/web/services/audit-service.js",
+        "src/web/services/conversation-store.js",
+        "src/web/services/permission-service.js",
+        "src/web/services/upload-service.js"
+      ],
+      "externalTargets": [],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/http/routes/auth.js": {
+      "staticImports": 8,
+      "dynamicImports": 1,
+      "localTargets": [
+        "src/web/errors.js",
+        "src/web/services/audit-service.js",
+        "src/web/services/identity-service.js",
+        "src/web/services/otp-service.js",
+        "src/web/services/permission-service.js",
+        "src/web/services/rate-limit-service.js",
+        "src/web/services/session-service.js",
+        "src/web/services/user-service.js"
+      ],
+      "externalTargets": [],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/http/routes/catalog.js": {
+      "staticImports": 6,
+      "dynamicImports": 0,
+      "localTargets": [
+        "src/lib/terboo-failure-log.js",
+        "src/web/services/catalog-service.js",
+        "src/web/services/game-service.js",
+        "src/web/services/permission-service.js"
+      ],
+      "externalTargets": [
+        "node:fs",
+        "node:path"
+      ],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/http/routes/games.js": {
+      "staticImports": 2,
+      "dynamicImports": 0,
+      "localTargets": [
+        "src/web/services/game-service.js",
+        "src/web/services/permission-service.js"
+      ],
+      "externalTargets": [],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/http/routes/groups.js": {
+      "staticImports": 4,
+      "dynamicImports": 0,
+      "localTargets": [
+        "src/web/errors.js",
+        "src/web/services/audit-service.js",
+        "src/web/services/group-service.js",
+        "src/web/services/permission-service.js"
+      ],
+      "externalTargets": [],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/http/routes/health.js": {
+      "staticImports": 4,
+      "dynamicImports": 1,
+      "localTargets": [
+        "src/connection.js",
+        "src/lib/terboo-task-queue.js",
+        "src/web/services/ai-service.js",
+        "src/web/store/web-store.js",
+        "src/web/url-builder.js"
+      ],
+      "externalTargets": [],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/http/routes/index.js": {
+      "staticImports": 12,
+      "dynamicImports": 0,
+      "localTargets": [
+        "src/web/http/routes/ai.js",
+        "src/web/http/routes/auth.js",
+        "src/web/http/routes/catalog.js",
+        "src/web/http/routes/games.js",
+        "src/web/http/routes/groups.js",
+        "src/web/http/routes/health.js",
+        "src/web/http/routes/me.js",
+        "src/web/http/routes/media.js",
+        "src/web/http/routes/owner.js",
+        "src/web/http/routes/subbots.js",
+        "src/web/http/routes/tools.js",
+        "src/web/http/server.js"
+      ],
+      "externalTargets": [],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/http/routes/me.js": {
+      "staticImports": 6,
+      "dynamicImports": 4,
+      "localTargets": [
+        "src/lib/terboo-ai-memory.js",
+        "src/web/config.js",
+        "src/web/errors.js",
+        "src/web/services/audit-service.js",
+        "src/web/services/permission-service.js",
+        "src/web/services/rate-limit-service.js",
+        "src/web/services/task-service.js",
+        "src/web/services/upload-service.js",
+        "src/web/services/user-service.js"
+      ],
+      "externalTargets": [],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/http/routes/media.js": {
+      "staticImports": 6,
+      "dynamicImports": 0,
+      "localTargets": [
+        "src/web/config.js",
+        "src/web/errors.js",
+        "src/web/services/audit-service.js",
+        "src/web/services/permission-service.js",
+        "src/web/services/upload-service.js"
+      ],
+      "externalTargets": [
+        "node:fs"
+      ],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/http/routes/owner.js": {
+      "staticImports": 9,
+      "dynamicImports": 11,
+      "localTargets": [
+        "config.js",
+        "src/connection.js",
+        "src/lib/terboo-database.js",
+        "src/lib/terboo-plugins.js",
+        "src/lib/terboo-task-queue.js",
+        "src/lib/terboo-tool-registry.js",
+        "src/web/errors.js",
+        "src/web/services/ai-service.js",
+        "src/web/services/audit-service.js",
+        "src/web/services/domain-service.js",
+        "src/web/services/identity-service.js",
+        "src/web/services/otp-service.js",
+        "src/web/services/permission-service.js",
+        "src/web/services/session-service.js",
+        "src/web/services/user-service.js",
+        "src/web/store/web-store.js",
+        "src/web/url-builder.js"
+      ],
+      "externalTargets": [],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/http/routes/subbots.js": {
+      "staticImports": 2,
+      "dynamicImports": 0,
+      "localTargets": [
+        "src/web/services/permission-service.js",
+        "src/web/services/subbot-service.js"
+      ],
+      "externalTargets": [],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/http/routes/tools.js": {
+      "staticImports": 7,
+      "dynamicImports": 0,
+      "localTargets": [
+        "src/lib/terboo-tool-registry.js",
+        "src/web/errors.js",
+        "src/web/services/audit-service.js",
+        "src/web/services/permission-service.js",
+        "src/web/services/task-service.js",
+        "src/web/services/tool-service.js",
+        "src/web/services/upload-service.js"
+      ],
+      "externalTargets": [],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/http/server.js": {
+      "staticImports": 10,
+      "dynamicImports": 2,
+      "localTargets": [
+        "src/lib/terboo-failure-log.js",
+        "src/web/config.js",
+        "src/web/errors.js",
+        "src/web/services/identity-service.js",
+        "src/web/services/permission-service.js",
+        "src/web/services/rate-limit-service.js",
+        "src/web/services/session-service.js"
+      ],
+      "externalTargets": [
+        "node:crypto",
+        "node:fs",
+        "node:http",
+        "node:https",
+        "node:path"
+      ],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/index.js": {
+      "staticImports": 9,
+      "dynamicImports": 0,
+      "localTargets": [
+        "src/lib/terboo-failure-log.js",
+        "src/lib/terboo-logger.js",
+        "src/web/config.js",
+        "src/web/http/routes/index.js",
+        "src/web/http/server.js",
+        "src/web/services/upload-service.js",
+        "src/web/store/web-store.js",
+        "src/web/url-builder.js"
+      ],
+      "externalTargets": [
+        "node:path"
+      ],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/services/ai-service.js": {
+      "staticImports": 7,
+      "dynamicImports": 0,
+      "localTargets": [
+        "src/lib/terboo-ai-providers.js",
+        "src/lib/terboo-ai-router.js",
+        "src/lib/terboo-brand.js",
+        "src/lib/terboo-intent-gate.js",
+        "src/web/errors.js",
+        "src/web/services/conversation-store.js",
+        "src/web/services/rate-limit-service.js"
+      ],
+      "externalTargets": [],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/services/audit-service.js": {
+      "staticImports": 3,
+      "dynamicImports": 0,
+      "localTargets": [
+        "src/lib/terboo-secrets.js",
+        "src/web/services/identity-service.js",
+        "src/web/store/web-store.js"
+      ],
+      "externalTargets": [],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/services/catalog-service.js": {
+      "staticImports": 3,
+      "dynamicImports": 1,
+      "localTargets": [
+        "src/lib/terboo-arcade/index.js",
+        "src/lib/terboo-plugins.js",
+        "src/lib/terboo-scraper-registry.js",
+        "src/lib/terboo-tool-registry.js"
+      ],
+      "externalTargets": [],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/services/conversation-store.js": {
+      "staticImports": 4,
+      "dynamicImports": 0,
+      "localTargets": [
+        "src/lib/terboo-ai-memory.js",
+        "src/web/errors.js",
+        "src/web/store/web-store.js"
+      ],
+      "externalTargets": [
+        "node:crypto"
+      ],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/services/domain-service.js": {
+      "staticImports": 9,
+      "dynamicImports": 0,
+      "localTargets": [
+        "src/lib/terboo-failure-log.js",
+        "src/web/config.js",
+        "src/web/errors.js",
+        "src/web/store/web-store.js",
+        "src/web/url-builder.js"
+      ],
+      "externalTargets": [
+        "node:crypto",
+        "node:dns/promises",
+        "node:fs"
+      ],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/services/game-service.js": {
+      "staticImports": 2,
+      "dynamicImports": 2,
+      "localTargets": [
+        "src/lib/terboo-arcade/engine.js",
+        "src/lib/terboo-arcade/index.js",
+        "src/web/errors.js",
+        "src/web/services/identity-service.js"
+      ],
+      "externalTargets": [],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/services/group-service.js": {
+      "staticImports": 3,
+      "dynamicImports": 6,
+      "localTargets": [
+        "src/connection.js",
+        "src/lib/terboo-group-actions.js",
+        "src/lib/terboo-group-directory.js",
+        "src/lib/terboo-identity.js",
+        "src/web/errors.js",
+        "src/web/services/identity-service.js",
+        "src/web/services/permission-service.js"
+      ],
+      "externalTargets": [],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
     "src/web/services/identity-service.js": {
       "staticImports": 2,
       "dynamicImports": 0,
@@ -19060,6 +19432,24 @@
       "exportsNamed": true,
       "exportsDefault": false
     },
+    "src/web/services/otp-service.js": {
+      "staticImports": 7,
+      "dynamicImports": 1,
+      "localTargets": [
+        "src/connection.js",
+        "src/lib/terboo-failure-log.js",
+        "src/lib/terboo-transport.js",
+        "src/web/config.js",
+        "src/web/errors.js",
+        "src/web/services/rate-limit-service.js",
+        "src/web/services/secret-store.js"
+      ],
+      "externalTargets": [
+        "node:crypto"
+      ],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
     "src/web/services/permission-service.js": {
       "staticImports": 3,
       "dynamicImports": 0,
@@ -19067,6 +19457,126 @@
         "config.js",
         "src/lib/terboo-permissions.js",
         "src/web/errors.js"
+      ],
+      "externalTargets": [],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/services/rate-limit-service.js": {
+      "staticImports": 3,
+      "dynamicImports": 0,
+      "localTargets": [
+        "src/web/config.js",
+        "src/web/errors.js"
+      ],
+      "externalTargets": [
+        "rate-limiter-flexible"
+      ],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/services/secret-store.js": {
+      "staticImports": 6,
+      "dynamicImports": 0,
+      "localTargets": [
+        "src/lib/terboo-failure-log.js",
+        "src/lib/terboo-secrets.js",
+        "src/web/config.js"
+      ],
+      "externalTargets": [
+        "node:crypto",
+        "node:fs",
+        "node:path"
+      ],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/services/session-service.js": {
+      "staticImports": 5,
+      "dynamicImports": 0,
+      "localTargets": [
+        "src/web/config.js",
+        "src/web/errors.js",
+        "src/web/services/secret-store.js",
+        "src/web/store/web-store.js"
+      ],
+      "externalTargets": [
+        "node:crypto"
+      ],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/services/subbot-service.js": {
+      "staticImports": 2,
+      "dynamicImports": 2,
+      "localTargets": [
+        "src/lib/terboo-identity.js",
+        "src/lib/terboo-jadibot-manager.js",
+        "src/web/errors.js",
+        "src/web/services/identity-service.js"
+      ],
+      "externalTargets": [],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/services/task-service.js": {
+      "staticImports": 3,
+      "dynamicImports": 0,
+      "localTargets": [
+        "src/lib/terboo-task-queue.js",
+        "src/web/config.js",
+        "src/web/errors.js"
+      ],
+      "externalTargets": [],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/services/tool-service.js": {
+      "staticImports": 6,
+      "dynamicImports": 0,
+      "localTargets": [
+        "src/lib/terboo-failure-log.js",
+        "src/lib/terboo-net-guard.js",
+        "src/lib/terboo-tool-registry.js",
+        "src/web/errors.js",
+        "src/web/services/permission-service.js",
+        "src/web/services/rate-limit-service.js"
+      ],
+      "externalTargets": [],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/services/upload-service.js": {
+      "staticImports": 11,
+      "dynamicImports": 0,
+      "localTargets": [
+        "src/lib/terboo-failure-log.js",
+        "src/lib/terboo-multimodal.js",
+        "src/web/config.js",
+        "src/web/errors.js",
+        "src/web/services/rate-limit-service.js",
+        "src/web/services/secret-store.js",
+        "src/web/store/web-store.js"
+      ],
+      "externalTargets": [
+        "file-type",
+        "node:crypto",
+        "node:fs",
+        "node:path"
+      ],
+      "exportsNamed": true,
+      "exportsDefault": false
+    },
+    "src/web/services/user-service.js": {
+      "staticImports": 6,
+      "dynamicImports": 0,
+      "localTargets": [
+        "config.js",
+        "src/lib/terboo-database.js",
+        "src/lib/terboo-localization.js",
+        "src/web/config.js",
+        "src/web/services/identity-service.js",
+        "src/web/services/secret-store.js"
       ],
       "externalTargets": [],
       "exportsNamed": true,
@@ -21154,6 +21664,82 @@
       "exportsNamed": false,
       "exportsDefault": false
     },
+    "tests/web-api-integration.test.mjs": {
+      "staticImports": 4,
+      "dynamicImports": 8,
+      "localTargets": [
+        "config.js",
+        "src/lib/terboo-database.js",
+        "src/lib/terboo-plugins.js",
+        "src/web/http/routes/index.js",
+        "src/web/http/server.js",
+        "src/web/services/otp-service.js",
+        "src/web/store/web-store.js"
+      ],
+      "externalTargets": [
+        "node:assert/strict",
+        "node:fs",
+        "node:os",
+        "node:path"
+      ],
+      "exportsNamed": false,
+      "exportsDefault": false
+    },
+    "tests/web-auth-otp.test.mjs": {
+      "staticImports": 1,
+      "dynamicImports": 3,
+      "localTargets": [
+        "src/web/services/identity-service.js",
+        "src/web/services/otp-service.js",
+        "src/web/services/rate-limit-service.js"
+      ],
+      "externalTargets": [
+        "node:assert/strict"
+      ],
+      "exportsNamed": false,
+      "exportsDefault": false
+    },
+    "tests/web-domain-cta.test.mjs": {
+      "staticImports": 4,
+      "dynamicImports": 7,
+      "localTargets": [
+        "config.js",
+        "src/lib/terboo-brand.js",
+        "src/lib/terboo-interactive-builder.js",
+        "src/lib/terboo-localization.js",
+        "src/web/services/domain-service.js",
+        "src/web/store/web-store.js",
+        "src/web/url-builder.js"
+      ],
+      "externalTargets": [
+        "node:assert/strict",
+        "node:fs",
+        "node:os",
+        "node:path"
+      ],
+      "exportsNamed": false,
+      "exportsDefault": false
+    },
+    "tests/web-static-and-assets.test.mjs": {
+      "staticImports": 5,
+      "dynamicImports": 5,
+      "localTargets": [
+        "config.js",
+        "src/lib/terboo-database.js",
+        "src/web/http/routes/index.js",
+        "src/web/http/server.js",
+        "src/web/store/web-store.js"
+      ],
+      "externalTargets": [
+        "node:assert/strict",
+        "node:fs",
+        "node:net",
+        "node:os",
+        "node:path"
+      ],
+      "exportsNamed": false,
+      "exportsDefault": true
+    },
     "tools/audit-external-apis.mjs": {
       "staticImports": 2,
       "dynamicImports": 0,
@@ -21647,6 +22233,22 @@
         "node:path"
       ],
       "exportsNamed": false,
+      "exportsDefault": false
+    },
+    "web/dist/assets/index-CfCYFNR7.js": {
+      "staticImports": 0,
+      "dynamicImports": 0,
+      "localTargets": [],
+      "externalTargets": [],
+      "exportsNamed": false,
+      "exportsDefault": false
+    },
+    "web/dist/assets/react-TMushWyA.js": {
+      "staticImports": 0,
+      "dynamicImports": 0,
+      "localTargets": [],
+      "externalTargets": [],
+      "exportsNamed": true,
       "exportsDefault": false
     }
   }

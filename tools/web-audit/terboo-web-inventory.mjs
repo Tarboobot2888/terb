@@ -279,12 +279,17 @@ function assetManifest(files) {
     .map((f) => path.relative(ROOT, f))
     .filter((r) => r.startsWith("assets" + path.sep));
   const present = new Set(assetFiles);
-  // كل مرجع نصّي لمسار assets/ داخل المصدر
+  // كل مرجع نصّي لمسار assets/ داخل المصدر.
+  // تُستبعد: الأصول نفسها · مخرجات هذا المولّد (قراءة ناتجه السابق تُنتج
+  // مراجع وهمية) · لقطات المانيفست التاريخية (سجل «قبل/بعد» لا استخدام حيّ).
+  const HISTORICAL = /^(?:TERBOO_(?:V6_)?(?:BEFORE|AFTER)_MANIFEST\.json|tools[\\/]manifests[\\/])/;
   const refs = new Map();
   for (const full of files) {
     if (![".js", ".mjs", ".json"].includes(path.extname(full).toLowerCase())) continue;
     const rel = path.relative(ROOT, full);
     if (rel.startsWith("assets" + path.sep)) continue;
+    if (rel.startsWith(path.join("docs", "web-platform"))) continue;
+    if (HISTORICAL.test(rel)) continue;
     const src = fs.readFileSync(full, "utf8");
     for (const m of src.matchAll(/["'`]((?:\.\/|\.\.\/)*assets\/[A-Za-z0-9._/#-]+)["'`]/g)) {
       const target = m[1].replace(/^(?:\.\.\/|\.\/)+/, "");
@@ -300,6 +305,7 @@ function assetManifest(files) {
   return {
     generatedAt: new Date().toISOString(),
     gitHead: gitHead(),
+    scope: "live source only — historical manifests and this generator's own output are excluded",
     totals: {
       assetFiles: assetFiles.length,
       referencedPaths: referenced.length,

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-15T17:04:47.991Z",
-  "gitHead": "fbbb96973ba5d0172a80dc7eed790daacc4c014e",
+  "generatedAt": "2026-10-15T17:58:39.108Z",
+  "gitHead": "64bc0105b17f0660c6ed255ada3a42ec9b9b7b33",
   "method": "static source analysis — no plugin was imported or executed",
   "totals": {
-    "files": 897,
-    "registered": 897,
+    "files": 898,
+    "registered": 898,
     "skippedByLoader": 0,
     "notRegisterable": 0,
     "withDirectSend": 222,
@@ -17447,7 +17447,7 @@
         "usesHttp": false,
         "usesTransport": true,
         "directSend": true,
-        "interactive": true,
+        "interactive": false,
         "needsMedia": true,
         "spawns": false,
         "evals": false
@@ -24171,6 +24171,48 @@
         "usesScraper": false,
         "usesHttp": false,
         "usesTransport": false,
+        "directSend": false,
+        "interactive": false,
+        "needsMedia": false,
+        "spawns": false,
+        "evals": false
+      },
+      "webFeasibility": "whatsapp-only:handler-requires-serialized-message-and-live-socket",
+      "dependencies": []
+    },
+    {
+      "file": "plugins/owner/موقع.js",
+      "folderCategory": "owner",
+      "registered": true,
+      "skippedByLoader": false,
+      "exportShape": "named",
+      "command": "موقع",
+      "alias": [
+        "website",
+        "web",
+        "sitio"
+      ],
+      "category": "owner",
+      "description": "حالة منصة Bot Terboo Web وإعداد الدومين والشهادة والرابط",
+      "usage": ".موقع [حالة|رابط|دومين <نطاق>|تحقق|شهادة|تشغيل|ايقاف]",
+      "permissions": {
+        "isOwner": true,
+        "isPremium": false,
+        "isGroup": false,
+        "isPrivate": false,
+        "isAdmin": false,
+        "isBotAdmin": false
+      },
+      "cost": {
+        "cooldown": 3,
+        "energi": 0,
+        "limit": 1
+      },
+      "enabled": true,
+      "signals": {
+        "usesScraper": false,
+        "usesHttp": false,
+        "usesTransport": true,
         "directSend": false,
         "interactive": false,
         "needsMedia": false,

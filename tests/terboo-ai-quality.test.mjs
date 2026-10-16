@@ -252,6 +252,10 @@ async function say(opts) {
     "src/lib/terboo-ai-core.js", "src/lib/terboo-ai-providers.js", "src/lib/terboo-ai-router.js",
     "src/lib/terboo-auto-ai.js", // يمرّر مزوّدي الشخصية إلى composeReply في النواة
     "plugins/owner/تحكم.js", // أسماء المزوّدين فقط للعرض
+    // محوّل قناة الويب: يستعمل ask() و chooseProviderRoute المشتركين نفسهما
+    // (تعتيم الأسرار · بوابة الرؤية · التوجيه · fallback · enforceBrand) ولا
+    // يستدعي أي مزوّد مباشرة ولا يتجاوز النواة — ليس دماغاً ثانياً.
+    "src/web/services/ai-service.js",
   ]);
   for (const file of importers) assert.ok(allowed.has(file), `مسار ذكاء مستقل خارج النواة: ${file}`);
   const autoSource = fs.readFileSync("src/lib/terboo-auto-ai.js", "utf8");
