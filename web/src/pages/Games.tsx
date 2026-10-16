@@ -20,10 +20,12 @@ export function Games() {
   const [busy, setBusy] = useState(false);
   const [starting, setStarting] = useState("");
 
-  const start = useCallback(async (gameId: string) => {
+  // الخصم الآلي يُطلب فقط لمن يدعمه: الألعاب الفردية ترفضه بـai-unsupported.
+  // الواجهة تعرض التمييز أصلاً في نصّ الزر، فالطلب يتبعه بدل إرسال true دائماً.
+  const start = useCallback(async (gameId: string, supportsAI: boolean) => {
     setStarting(gameId);
     try {
-      const out = await api.post<{ session: GameView }>(`/games/${encodeURIComponent(gameId)}/session`, { vsAI: true });
+      const out = await api.post<{ session: GameView }>(`/games/${encodeURIComponent(gameId)}/session`, { vsAI: supportsAI });
       setView(out.session);
     } catch (cause) {
       notify(errorText(cause), "error");
@@ -150,7 +152,7 @@ export function Games() {
               <strong>{t("games.over")}</strong>
               <GameResult result={view.result} />
               <div className="row" style={{ gap: 8 }}>
-                <button className="btn btn--primary btn--sm" type="button" onClick={() => void start(view.gameId)}>
+                <button className="btn btn--primary btn--sm" type="button" onClick={() => void start(view.gameId, Boolean(view.players.some((p) => p.isAI)))}>
                   {t("games.again")}
                 </button>
                 <button className="btn btn--ghost btn--sm" type="button" onClick={() => void leave()}>
@@ -178,7 +180,7 @@ export function Games() {
                 game={game}
                 lang={lang}
                 busy={starting === game.id}
-                onPlay={() => void start(game.id)}
+                onPlay={() => void start(game.id, game.supportsAI)}
               />
             ))}
           </div>

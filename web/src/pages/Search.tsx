@@ -11,6 +11,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { api } from "../lib/api";
 import { useApp } from "../lib/store";
+import { copyText } from "../lib/clipboard";
 import { useFetch } from "../lib/hooks";
 import { Empty, ErrorBox, Loading } from "../components/ui";
 import type { SearchResponse, SearchSource } from "../lib/types";
@@ -55,12 +56,9 @@ export function Search({ onSendToDownloads }: { onSendToDownloads?: (url: string
   }, [query, source, busy, notify, errorText]);
 
   const copy = useCallback(async (text: string) => {
-    try {
-      await navigator.clipboard.writeText(text);
-      notify(t("common.copied"), "success");
-    } catch {
-      notify(t("common.copyFailed"), "error");
-    }
+    const outcome = await copyText(text);
+    if (outcome === "failed") notify(t("common.copyFailed"), "error");
+    else notify(t("common.copied"), "success");
   }, [notify, t]);
 
   return (

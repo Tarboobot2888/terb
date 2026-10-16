@@ -14,6 +14,7 @@ import { api, ApiError } from "../lib/api";
 import { useApp } from "../lib/store";
 import { useFetch } from "../lib/hooks";
 import { Confirm, Empty, ErrorBox, Loading, formatWhen } from "../components/ui";
+import { copyText } from "../lib/clipboard";
 import type { PairingRequest, SubBotsResponse } from "../lib/types";
 
 const TERMINAL = new Set(["ready", "failed", "expired", "cancelled"]);
@@ -178,26 +179,11 @@ function PairingPanel({ request, onCancel }: { request: PairingRequest; onCancel
   const copy = useCallback(async () => {
     const text = request.copyCode || request.code || "";
     if (!text) return;
-    try {
-      await navigator.clipboard.writeText(text);
-      notify(t("common.copied"), "success");
-      return;
-    } catch {
-      // الحافظة محجوبة (سياق غير آمن/رفض الإذن): نحدّد الرمز ليُنسَخ يدوياً
-    }
-    try {
-      const node = codeRef.current;
-      if (node && window.getSelection) {
-        const range = document.createRange();
-        range.selectNodeContents(node);
-        const selection = window.getSelection();
-        selection?.removeAllRanges();
-        selection?.addRange(range);
-      }
-    } catch {
-      // لا شيء يتعطّل: الرمز معروض ويمكن نسخه يدوياً
-    }
-    notify(t("common.copyFailed"), "error");
+    // الحافظة البرمجية غير متاحة على http:// — المساعد يرجع إلى بديل يعمل
+    const outcome = await copyText(text, codeRef.current);
+    if (outcome === "clipboard" || outcome === "fallback") notify(t("common.copied"), "success");
+    else if (outcome === "selected") notify(t("common.copySelected"));
+    else notify(t("common.copyFailed"), "error");
   }, [request.copyCode, request.code, notify, t]);
 
   const stateText: Record<string, string> = {

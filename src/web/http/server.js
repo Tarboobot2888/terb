@@ -329,7 +329,12 @@ function createWebServer({ router, staticRoot = "" }) {
       },
     };
 
-    req.on("close", () => {
+    // الإلغاء عند انقطاع العميل فعلاً.
+    // لا يصحّ الاستماع على req: حدث "close" عليه يقع فور اكتمال قراءة جسم الطلب،
+    // فكان كل POST بجسم (بحث · رسالة ذكاء) يُلغى قبل أن يبدأ عمله أصلاً ويعود
+    // "The request was cancelled". حدث "close" على الرد يقع بعد انتهائه
+    // (writableEnded ⇒ لا إلغاء) أو عند موت الاتصال قبل اكتماله (⇒ إلغاء).
+    res.on("close", () => {
       if (!res.writableEnded) ctx.controller.abort("client-closed");
     });
     // طلب أُوقفت قراءته (تجاوز الحد) يُتلَف بعد تسليم الرد، لا قبله

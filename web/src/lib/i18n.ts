@@ -259,6 +259,7 @@ const ar: Dict = {
   "subbots.target": "الرقم الهدف",
   "subbots.flow": "تدفق التنصيب",
   "common.copyFailed": "تعذّر النسخ — اختر الرمز وانسخه يدوياً.",
+  "common.copySelected": "حُدِّد الرمز — اضغط مطوّلاً وانسخ.",
   "common.profileMenu": "قائمة الحساب",
 };
 
@@ -507,6 +508,7 @@ const en: Dict = {
   "subbots.target": "Target number",
   "subbots.flow": "Install flow",
   "common.copyFailed": "Could not copy — select the code and copy it manually.",
+  "common.copySelected": "The code is selected — long-press and copy.",
   "common.profileMenu": "Account menu",
 };
 

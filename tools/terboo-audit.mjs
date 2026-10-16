@@ -99,7 +99,7 @@ const BRANDING_EXCEPTIONS = [
     reason: "أسماء تصدير deprecated من الإصدار السابق حتى لا تنكسر البلوقنات الخارجية المكتوبة له (§2) — لا تظهر للمستخدم" },
   { file: /^tests\/terboo-brand-lock\.test\.mjs$/, line: /.*/,
     reason: "اختبار قفل الهوية يُدخل الأشكال الممنوعة عمداً ليتحقق من تصحيحها وإخفائها" },
-  { file: /^(src\/lib\/terboo-jadibot-manager\.js|src\/web\/services\/subbot-(provision|service)\.js|src\/web\/http\/routes\/subbots\.js|plugins\/owner\/موقع\.js|tests\/(web-(api-integration|subbot-provision)|owner-website-panel)\.test\.mjs)$/,
+  { file: /^(src\/lib\/terboo-jadibot-manager\.js|src\/web\/services\/subbot-(provision|service)\.js|src\/web\/http\/routes\/subbots\.js|plugins\/owner\/موقع\.js|tests\/(web-(api-integration|subbot-provision|games-session)|owner-website-panel)\.test\.mjs|docs\/v6\/test-report\.json)$/,
     line: /TARBOOV6/,
     reason: "وسم تدفق تنصيب البوت الفرعي TARBOOV6 الذي حدّده المالك صراحةً — تسمية تجربة تنصيب لا هوية بوت معروضة ولا رمز اقتران" },
 ];
@@ -344,7 +344,7 @@ const LEGACY_EXCEPTIONS = [
     reason: "مرادفات أوامر سابقة (maro/tarboo) تبقى للاستدعاء فقط ولا تُعرض (visibleAliases) — §2 يمنع حذف مرادفات التوافق" },
   { file: /^(src\/lib\/terboo-ai-core\.js|tests\/terboo-group-ai-reports\.test\.mjs)$/, pattern: /· tarboo ·|"tarboo hi"/g,
     reason: "صيغ النداء المنطوقة التي طلب المالك أن يرد عليها البوت (tarboo · tarbo) — نداء للبوت لا اسم هوية معروض" },
-  { file: /^(src\/lib\/terboo-jadibot-manager\.js|src\/web\/services\/subbot-(provision|service)\.js|src\/web\/http\/routes\/subbots\.js|plugins\/owner\/موقع\.js|tests\/(web-(api-integration|subbot-provision)|owner-website-panel)\.test\.mjs)$/,
+  { file: /^(src\/lib\/terboo-jadibot-manager\.js|src\/web\/services\/subbot-(provision|service)\.js|src\/web\/http\/routes\/subbots\.js|plugins\/owner\/موقع\.js|tests\/(web-(api-integration|subbot-provision|games-session)|owner-website-panel)\.test\.mjs|docs\/v6\/test-report\.json)$/,
     pattern: /TARBOOV6/g,
     reason: "وسم تدفق تنصيب البوت الفرعي TARBOOV6 الذي حدّده المالك صراحةً — تسمية تجربة تنصيب (badge/campaign) لا هوية بوت معروضة ولا رمز اقتران" },
   { file: /^plugins\/group\/autoai\.js$/, pattern: /tarboomode|maromode/g,

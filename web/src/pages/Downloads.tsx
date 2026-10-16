@@ -11,6 +11,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { api } from "../lib/api";
 import { useApp } from "../lib/store";
+import { copyText } from "../lib/clipboard";
 import { useFetch } from "../lib/hooks";
 import { Empty, ErrorBox, Loading, formatBytes, formatWhen } from "../components/ui";
 import type { DownloadJob, DownloadOutcome, DownloadPlatform, DownloadTarget, ResultItem, TaskRow } from "../lib/types";
@@ -292,12 +293,9 @@ function ResultCard({ outcome }: { outcome: DownloadOutcome }) {
   const usable = items.filter((item) => item.url || item.downloadPath);
 
   const copy = useCallback(async (text: string) => {
-    try {
-      await navigator.clipboard.writeText(text);
-      notify(t("common.copied"), "success");
-    } catch {
-      notify(t("common.copyFailed"), "error");
-    }
+    const outcome = await copyText(text);
+    if (outcome === "failed") notify(t("common.copyFailed"), "error");
+    else notify(t("common.copied"), "success");
   }, [notify, t]);
 
   return (

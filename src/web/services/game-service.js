@@ -11,8 +11,18 @@
 //   • معرّفات اللاعبين (jid) تُقنَّع قبل أن تغادر الخادم.
 // ═══════════════════════════════════════════════
 
+import { noteFailure } from "../../lib/terboo-failure-log.js";
 import { apiError } from "../errors.js";
 import { maskPhone } from "./identity-service.js";
+
+/** سبب رفض المحرّك ⇒ رسالة مفهومة (بدل «مدخل غير صالح») */
+const REFUSAL_MESSAGE = Object.freeze({
+  "already-in-room": "You are already in a game. Leave it first.",
+  "ai-unsupported": "This game has no computer opponent.",
+  "needs-opponent": "This game needs another player.",
+  "group-unsupported": "This game only runs in a WhatsApp group.",
+  "no-host": "Your account could not be identified as the host.",
+});
 
 let engine = null;
 let registry = null;
@@ -70,6 +80,22 @@ function maskView(view, principal) {
 /** ينشئ جلسة لعب في نطاق الويب */
 async function createSession({ principal, gameId, vsAI = true, difficulty = "normal", lang = "ar" }) {
   const { engine: e } = await arcade();
+
+  // نطاق الويب غرفة واحدة لكل شخص: من يبدأ لعبة جديدة وهو ما زال في غرفة سابقة
+  // (غادر الصفحة بلا ضغط «مغادرة») كان يُرفَض بـalready-in-room بلا مخرج من الواجهة.
+  // البدء الجديد يحلّ محلّ القديم: نغادر غرف هذا الشخص في نطاقه ثم ننشئ.
+  for (const room of e.activeRoomsOf(principal.sender, webChat(principal))) {
+    try {
+      e.leaveRoom(room.roomId, { jid: principal.sender });
+    } catch (error) {
+      noteFailure("web-game", error, {
+        where: "src/web/services/game-service.js:createSession",
+        stage: "leave-previous-room",
+        fallback: "create-anyway",
+      });
+    }
+  }
+
   const outcome = e.createRoom({
     gameId: String(gameId || ""),
     chat: webChat(principal),
@@ -83,7 +109,11 @@ async function createSession({ principal, gameId, vsAI = true, difficulty = "nor
     const code = String(outcome.code || "refused");
     if (code === "unknown-game") throw apiError("NOT_FOUND");
     if (code === "private-unsupported") throw apiError("NOT_AVAILABLE_IN_WEB", { details: { reason: "game-is-group-only" } });
-    throw apiError("INVALID_INPUT", { details: { reason: code } });
+    // رفض المحرّك يُعاد بسببه الحقيقي بدل رسالة «مدخل غير صالح» التي لا تفيد أحداً
+    throw apiError("INVALID_INPUT", {
+      message: REFUSAL_MESSAGE[code] || "This game could not be started right now.",
+      details: { reason: code },
+    });
   }
   const roomId = outcome.roomId || outcome.room?.roomId || "";
   return maskView(e.getView(roomId, { viewerJid: principal.sender, lang }), principal);

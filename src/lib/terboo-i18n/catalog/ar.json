@@ -1479,5 +1479,11 @@
   "Could not obtain a pairing code. Try again shortly.": "تعذّر الحصول على رمز الاقتران. حاول بعد قليل.",
   "Sub-bot installation could not start. Try again shortly.": "تعذّر بدء تنصيب البوت الفرعي. حاول بعد قليل.",
   "No downloader supports that link.": "لا توجد أداة تنزيل تدعم هذا الرابط.",
-  "No search source is configured.": "لا يوجد مصدر بحث مُعدّ."
+  "No search source is configured.": "لا يوجد مصدر بحث مُعدّ.",
+  "You are already in a game. Leave it first.": "أنت في لعبة بالفعل. غادرها أولاً.",
+  "This game has no computer opponent.": "هذه اللعبة بلا خصم آلي.",
+  "This game needs another player.": "هذه اللعبة تحتاج لاعباً آخر.",
+  "This game only runs in a WhatsApp group.": "هذه اللعبة تعمل في مجموعة واتساب فقط.",
+  "Your account could not be identified as the host.": "تعذّر التعرّف على حسابك كمضيف.",
+  "This game could not be started right now.": "تعذّر بدء هذه اللعبة الآن."
 }

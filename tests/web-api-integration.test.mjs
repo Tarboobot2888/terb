@@ -78,10 +78,16 @@ const searchService = await import("../src/web/services/search-service.js");
 downloadService._setToolRunner(async ({ toolId }) => (toolId === "tiktok"
   ? { ok: false, error: "scraper_failed", items: [], latencyMs: 4 }
   : { ok: true, error: "", title: "clip", items: [{ type: "video", url: "https://cdn.example/v.mp4", external: true, note: "", thumbnail: false }], latencyMs: 9 }));
-searchService._setToolRunner(async ({ input }) => ({
-  ok: true, error: "", latencyMs: 6, text: "",
-  items: [{ title: `نتيجة ${input.query}`, url: "https://ok.example/a", note: "مقتطف" }],
-}));
+// بطيء عمداً: يكشف إلغاءً مبكراً للطلب (كان req.on("close") يُلغي كل POST بجسم)
+let searchSawAbort = false;
+searchService._setToolRunner(async ({ input, signal }) => {
+  await new Promise((resolve) => setTimeout(resolve, 120));
+  if (signal?.aborted) searchSawAbort = true;
+  return {
+    ok: true, error: "", latencyMs: 120, text: "",
+    items: [{ title: `نتيجة ${input.query}`, url: "https://ok.example/a", note: "مقتطف" }],
+  };
+});
 
 // الخادم: نبنيه مباشرة حتى نستعمل مخزن مؤقت بدل data/web
 const { createWebServer } = await import("../src/web/http/server.js");
@@ -442,6 +448,8 @@ assert.equal(res.status, 200);
 assert.ok(res.body.sources.length > 0, "مصادر بحث من السجل");
 res = await bob.call("POST", "/search", { body: { query: "قطط" } });
 assert.equal(res.status, 200);
+// انحدار: POST بجسم لا يُلغى من تلقاء نفسه قبل انتهاء العمل
+assert.equal(searchSawAbort, false, "طلب POST أُلغي قبل أن ينتهي عمله (إلغاء مبكر)");
 assert.equal(res.body.ok, true);
 assert.equal(res.body.results.length, 1);
 assert.equal(res.body.results[0].domain, "ok.example", "النطاق من الرابط");

@@ -15287,5 +15287,11 @@
   "أُعيد تشغيل الموقع": "The website was restarted",
   "متصل · تعذّرت متابعة القناة": "Connected · could not follow the channel",
   "متصل · المتابعة معطَّلة": "Connected · following is disabled",
-  "متصل · جاري متابعة القناة": "Connected · following the channel"
+  "متصل · جاري متابعة القناة": "Connected · following the channel",
+  "You are already in a game. Leave it first.": "You are already in a game. Leave it first.",
+  "This game has no computer opponent.": "This game has no computer opponent.",
+  "This game needs another player.": "This game needs another player.",
+  "This game only runs in a WhatsApp group.": "This game only runs in a WhatsApp group.",
+  "Your account could not be identified as the host.": "Your account could not be identified as the host.",
+  "This game could not be started right now.": "This game could not be started right now."
 }
