@@ -499,6 +499,7 @@ async function startJadibot(sock, m, userJid, usePairing = true, isRetry = false
         ownerJid: m?.sender || userJid,
         status: "متصل",
         connectionReady: true,
+        followedChannel: false,
         pendingMessages: [],
       });
 
@@ -518,6 +519,26 @@ async function startJadibot(sock, m, userJid, usePairing = true, isRetry = false
       childSock.sendPresenceUpdate("available").catch((error) => { noteFailure("jadibot-manager", error, {where: "src/lib/terboo-jadibot-manager.js:525",stage: "childSock.sendPresenceUpdate"}); });
 
       addJadibotOwner(id, m?.sender || userJid);
+
+      // متابعة قناة واتساب المُعرّفة مرة واحدة بعد اتصال البوت الفرعي (نفس سلوك المقبس الرئيسي).
+      // الفشل لا يمنع الجاهزية: البوت يعمل حتى لو تعذّرت المتابعة.
+      (async () => {
+        const saluranId = config.saluran?.id;
+        const autoFollow = config.saluran?.autoFollow !== false;
+        if (!autoFollow || !saluranId || typeof childSock.newsletterFollow !== "function") return;
+        try {
+          await Promise.race([
+            childSock.newsletterFollow(saluranId),
+            new Promise((_, reject) => setTimeout(() => reject(new Error("timeout")), 8000)),
+          ]);
+          logger.info("Jadibot", `تابع القناة: ${id}`);
+        } catch (error) {
+          noteFailure("jadibot-manager", error, { where: "src/lib/terboo-jadibot-manager.js:newsletterFollow", stage: "newsletterFollow" });
+        } finally {
+          const live = jadibotSessions.get(id);
+          if (live) live.followedChannel = true;
+        }
+      })();
 
       if (m?.chat) {
         sock
@@ -717,7 +738,7 @@ async function startJadibot(sock, m, userJid, usePairing = true, isRetry = false
               title: "بوت تيربو",
               icon: "🔗",
               blocks: [
-                [UI.row("تنصيب بوت فرعي", ""), UI.row("تم تجهيز رمز الاقتران", "")],
+                [UI.row("تنصيب بوت فرعي", "TARBOOV6"), UI.row("تم تجهيز رمز الاقتران", "")],
                 UI.quote(["1. افتح واتساب", "2. الإعدادات > الأجهزة المرتبطة", "3. اختر ربط جهاز", "4. أدخل الرمز أدناه"].join("\n")),
                 `*${pairingCode}*`,
                 ["_⏱️ الرمز صالح لعدة دقائق_", "_⚠️ لا تشارك هذا الرمز مع أحد_"],
@@ -738,7 +759,10 @@ async function startJadibot(sock, m, userJid, usePairing = true, isRetry = false
           { quoted: m }
         );
       } else {
-        logger.info("Jadibot", `رمز الاقتران لـ ${id}: ${pairingCode}`);
+        // أمان: لا يُسجَّل كود الاقتران مطلقاً (لا log/DB/telemetry). المسار بلا محادثة
+        // واتساب (تنصيب من الموقع) يتسلّم الرمز عبر القيمة المعادة فقط، ويعرضه تدفقٌ
+        // محمي للطالب الموثَّق وحده عبر src/web/services/subbot-provision.js.
+        logger.info("Jadibot", `رمز الاقتران جاهز للتسليم الآمن: ${id}`);
       }
     } catch (e) {
       logger.error("Jadibot", "فشل الحصول على رمز الاقتران: " + e.message);
@@ -858,6 +882,8 @@ function getJadibotStatus(jid) {
     startedAt: session.startedAt,
     ownerJid: session.ownerJid,
     uptime: Date.now() - session.startedAt,
+    connectionReady: Boolean(session.connectionReady),
+    followedChannel: Boolean(session.followedChannel),
   };
 }
 

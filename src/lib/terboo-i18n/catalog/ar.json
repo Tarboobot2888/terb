@@ -1473,5 +1473,9 @@
   "The file type is not supported.": "نوع الملف غير مدعوم.",
   "Executable files are not accepted.": "الملفات التنفيذية غير مقبولة.",
   "The file extension does not match its real content.": "امتداد الملف لا يطابق محتواه الحقيقي.",
-  "Bot Terboo Web — delivery test. If you see this, sign-in codes will reach you here.": "اختبار تسليم Bot Terboo Web. لو وصلتك هذه الرسالة فرمز الدخول سيصلك هنا."
+  "Bot Terboo Web — delivery test. If you see this, sign-in codes will reach you here.": "اختبار تسليم Bot Terboo Web. لو وصلتك هذه الرسالة فرمز الدخول سيصلك هنا.",
+  "Your account has no confirmed phone number to install as a sub-bot.": "حسابك لا يملك رقم هاتف مؤكَّداً لتنصيبه كبوت فرعي.",
+  "A sub-bot is already active for your number. Stop it from WhatsApp before installing again.": "يوجد بوت فرعي نشط بالفعل لرقمك. أوقفه من واتساب قبل التنصيب من جديد.",
+  "Could not obtain a pairing code. Try again shortly.": "تعذّر الحصول على رمز الاقتران. حاول بعد قليل.",
+  "Sub-bot installation could not start. Try again shortly.": "تعذّر بدء تنصيب البوت الفرعي. حاول بعد قليل."
 }

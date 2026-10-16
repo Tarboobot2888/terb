@@ -15230,5 +15230,9 @@
   "اتصال واتساب غير متاح الآن — تأكد أن البوت متصل.": "WhatsApp connection is unavailable right now — make sure the bot is connected.",
   "هذا الرقم غير موجود على واتساب (onWhatsApp أكّد غيابه).": "This number is not on WhatsApp (onWhatsApp confirmed its absence).",
   "فشل الإرسال فعلياً — راجع سجل [transport] / [web-otp].": "Sending actually failed — check the [transport] / [web-otp] log.",
-  "التسليم لا يعمل": "Delivery is not working"
+  "التسليم لا يعمل": "Delivery is not working",
+  "Your account has no confirmed phone number to install as a sub-bot.": "Your account has no confirmed phone number to install as a sub-bot.",
+  "A sub-bot is already active for your number. Stop it from WhatsApp before installing again.": "A sub-bot is already active for your number. Stop it from WhatsApp before installing again.",
+  "Could not obtain a pairing code. Try again shortly.": "Could not obtain a pairing code. Try again shortly.",
+  "Sub-bot installation could not start. Try again shortly.": "Sub-bot installation could not start. Try again shortly."
 }

@@ -58,6 +58,20 @@ otp.setSocketProvider(() => ({
   },
 }));
 
+// تنصيب البوت الفرعي: نحقن نواة وهمية ومقبساً وهمياً (بلا Baileys حقيقي)
+const provision = await import("../src/web/services/subbot-provision.js");
+provision.setSocketProvider(() => ({ user: { id: "100000@s.whatsapp.net" } }));
+let provLive = null;
+provision.setManagerProvider(() => ({
+  isJadibotActive: () => false,
+  getJadibotStatus: () => provLive,
+  startJadibot: async (sock, m, userJid, usePairing) => {
+    if (!usePairing || m.chat !== null) throw new Error("web adapter must request pairing without a chat");
+    return { sock: {}, pairingCode: "WXYZ-7788" };
+  },
+  stopJadibot: async () => true,
+}));
+
 // الخادم: نبنيه مباشرة حتى نستعمل مخزن مؤقت بدل data/web
 const { createWebServer } = await import("../src/web/http/server.js");
 const { buildRouter } = await import("../src/web/http/routes/index.js");
@@ -329,13 +343,37 @@ assert.equal(res.status, 200);
 res = await alice.call("GET", "/me");
 assert.equal(res.status, 401, "الجلسة بعد الخروج غير صالحة");
 
-// ═══ ⑰ البوتات الفرعية: لا اقتران من الويب ═══
+// ═══ ⑰ البوتات الفرعية: تنصيب آمن من الويب (نفس نواة المدير) ═══
 res = await bob.call("GET", "/subbots");
 assert.equal(res.status, 200);
-assert.equal(res.body.pairing.availableInWeb, false);
+assert.equal(res.body.pairing.availableInWeb, true);
+assert.equal(res.body.pairing.label, "TARBOOV6");
+// بلا تأكيد صريح ⇒ 409
 res = await bob.call("POST", "/subbots/pair", { body: {} });
-assert.equal(res.status, 501);
-assert.equal(res.body.error.code, "NOT_AVAILABLE_IN_WEB");
+assert.equal(res.status, 409, "التنصيب يحتاج تأكيداً صريحاً");
+assert.equal(res.body.error.code, "NEEDS_CONFIRMATION");
+// مع تأكيد ⇒ 201 code-ready، الرمز الحقيقي للطالب، الوسم TARBOOV6
+res = await bob.call("POST", "/subbots/pair", { body: { confirm: true } });
+assert.equal(res.status, 201);
+assert.equal(res.body.state, "code-ready");
+assert.equal(res.body.label, "TARBOOV6");
+assert.equal(res.body.code, "WXYZ-7788", "الرمز الحقيقي يصل الطالب الموثَّق");
+assert.equal(res.body.copyCode, "WXYZ7788");
+const pairRequestId = res.body.requestId;
+// الاستعلام يُعيد الحالة للمالك ما دام الرمز طازجاً
+res = await bob.call("GET", `/subbots/pair/${pairRequestId}`);
+assert.equal(res.status, 200);
+assert.equal(res.body.code, "WXYZ-7788");
+// معرّف مجهول ⇒ 404 (لا كشف وجود طلب)
+res = await bob.call("GET", "/subbots/pair/deadbeefdeadbeefdead");
+assert.equal(res.status, 404);
+// فتح الاتصال ⇒ connected والرمز يُمحى من الرد
+provLive = { connectionReady: true, followedChannel: false };
+res = await bob.call("GET", `/subbots/pair/${pairRequestId}`);
+assert.equal(res.status, 200);
+assert.equal(res.body.state, "connected");
+assert.equal(res.body.code, undefined, "لا رمز بعد فتح الاتصال");
+provLive = null;
 
 // ═══ ⑱ الحظر يسري على جلسة قائمة ═══
 const { getDatabase } = await import("../src/lib/terboo-database.js");

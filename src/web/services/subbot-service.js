@@ -1,18 +1,12 @@
 // ═══════════════════════════════════════════════
-// 🤖 Terboo Web — البوتات الفرعية (قراءة فقط من الموقع)
+// 🤖 Terboo Web — البوتات الفرعية (عرض الحالة)
 // ───────────────────────────────────────────────
 // يستعمل terboo-jadibot-manager.js الحقيقي ولا ينشئ مديراً ثانياً.
-//
-// قرار أمني صريح: الموقع **لا** يبدأ اقتراناً ولا ينشئ جلسة فرعية.
-//   الاقتران يُنتج رمز QR أو رمز اقتران يمنح تحكّماً كاملاً بحساب واتساب،
-//   وبثّه عبر HTTP يجعل سرقة الجلسة ممكنة بجلسة موقع مخترقة وحدها.
-//   startJadibot(sock, m, …) يحتاج أصلاً رسالة ومقبساً حيَّين ليسلّم الرمز
-//   في محادثة المالك — وهذا هو المسار الآمن ويبقى على واتساب.
-// فالموقع يعرض ما يملكه المستخدم فقط: الحالة ووقت التشغيل، بلا QR ولا
-// رمز اقتران ولا مسار ملف اعتماد ولا أي جزء منه.
+// هذا الملف للعرض فقط؛ تنصيب بوت فرعي من الموقع في subbot-provision.js
+// بتدفق محمي يسلّم الرمز للطالب الموثَّق وحده (لا QR ولا مسار اعتماد هنا).
+// القائمة تعرض ما يملكه المستخدم فقط: الحالة ووقت التشغيل، بلا أي سرّ.
 // ═══════════════════════════════════════════════
 
-import { apiError } from "../errors.js";
 import { maskPhone } from "./identity-service.js";
 
 /** جلسات هذا المستخدم فقط، بحسب ownerJid الموثوق في المدير */
@@ -41,20 +35,13 @@ async function mySubBots(principal) {
   }
   return {
     subBots: rows,
-    // الحقيقة المعروضة في الواجهة بدل زر لا يعمل
+    // التنصيب متاح من الموقع عبر تدفق محمي (POST /subbots/pair)
     pairing: {
-      availableInWeb: false,
-      reason: "pairing-codes-and-qr-grant-full-account-control-and-stay-on-whatsapp",
+      availableInWeb: true,
+      label: "TARBOOV6",
+      targetsOwnNumberOnly: true,
     },
   };
 }
 
-/** أي محاولة اقتران من الموقع تُرفض صريحاً */
-function pairingNotAvailable() {
-  throw apiError("NOT_AVAILABLE_IN_WEB", {
-    message: "Pairing a sub-bot is done in your WhatsApp chat with Bot Terboo, where the code is delivered privately.",
-    details: { reason: "pairing-stays-on-whatsapp" },
-  });
-}
-
-export { mySubBots, pairingNotAvailable };
+export { mySubBots };

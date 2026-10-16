@@ -238,6 +238,18 @@
       }
     },
     {
+      "action": "web.subbot.provision",
+      "source": "web",
+      "min": "user",
+      "scope": "global",
+      "confirm": true,
+      "decisions": {
+        "owner": "needs-confirmation",
+        "group-admin": "needs-confirmation",
+        "user": "needs-confirmation"
+      }
+    },
+    {
       "action": "web.owner.overview",
       "source": "web",
       "min": "owner",

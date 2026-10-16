@@ -55,6 +55,8 @@ const WEB_ACTIONS = Object.freeze({
 
   // ── البوتات الفرعية (ملكية صاحب الحساب) ──
   "web.subbot.read": { min: LEVEL.USER, scope: "global" },
+  // تنصيب بوت فرعي من الموقع: يصبح الحساب اتصال واتساب مستقلاً ⇒ تأكيد صريح
+  "web.subbot.provision": { min: LEVEL.USER, scope: "global", confirm: true },
 
   // ── لوحة المالك ──
   "web.owner.overview": { min: LEVEL.OWNER, scope: "global" },
