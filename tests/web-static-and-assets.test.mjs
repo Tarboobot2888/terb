@@ -35,8 +35,10 @@ const base = `http://127.0.0.1:${PORT}`;
 assert.ok(resolveBrandAsset("/brand/terboo.png"), "شعار الهوية يُقدَّم");
 assert.ok(resolveBrandAsset("/brand/sections/ai.jpg"), "صورة تصنيف تُقدَّم");
 assert.ok(resolveBrandAsset("/brand/fonts/Cairo-Regular.ttf"), "خط عربي محلي يُقدَّم");
-// الفجوة الحقيقية في الأصول: 03 غير موجود ولا يُختلق
-assert.equal(resolveBrandAsset("/brand/shuffle/terboo-shuffle-03.jpg"), null, "ملف أصل غائب لا يُقدَّم");
+// ملف غير موجود لا يُقدَّم ولا يُختلق. الاسم مختار كي لا يوجد أبداً:
+// مجموعة shuffle الحقيقية هي 01..08، فلا يصير هذا الاختبار هشّاً حين
+// تُستكمل أصول ناقصة فعلاً (كان يستعمل 03 وقد وُلِّد لاحقاً).
+assert.equal(resolveBrandAsset("/brand/shuffle/terboo-shuffle-99.jpg"), null, "ملف أصل غائب لا يُقدَّم");
 for (const outside of ["/brand/../../config.js", "/brand/sections/../../../config.js", "/brand/.env", "/brand/", "/brand/x/y.png"]) {
   assert.equal(resolveBrandAsset(outside), null, `مسار خارج الجذور المسموحة: ${outside}`);
 }

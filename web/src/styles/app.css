@@ -308,3 +308,232 @@
 
 /* ════ شاشة الإقلاع (فحص الجلسة) ════ */
 .boot { min-height: 100dvh; display: grid; place-items: center; }
+
+/* ═══════════════════════════════════════════════
+   الأقسام الخمسة: عناصر مشتركة · الألعاب · التنزيلات · البحث · البوتات الفرعية
+   كل المسافات منطقية (inline-start/end) فتعمل RTL وLTR بلا تفريع.
+   تقليل الحركة مُحترم عالمياً في tokens.css (المدد تصبح 1ms).
+   ═══════════════════════════════════════════════ */
+
+/* ════ مشترك ════ */
+.h2 { font-size: 1.05rem; font-weight: 700; color: var(--ink); margin: 0; }
+
+.chip--ok { background: color-mix(in srgb, var(--success) 13%, transparent); border-color: color-mix(in srgb, var(--success) 32%, transparent); color: var(--success); }
+.chip--bad { background: color-mix(in srgb, var(--danger) 13%, transparent); border-color: color-mix(in srgb, var(--danger) 32%, transparent); color: var(--danger); }
+.chip--panel { background: var(--graphite); }
+.chip__label { color: var(--ink-4); font-size: 0.72rem; }
+.chip--live { border-color: color-mix(in srgb, var(--cyan) 34%, transparent); color: var(--cyan); }
+.chip--turn { box-shadow: 0 0 0 2px color-mix(in srgb, var(--violet) 32%, transparent); }
+
+.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.list__row {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  flex-wrap: wrap;
+  padding: 11px 13px; border-radius: var(--r-md);
+  background: var(--surface); border: 1px solid var(--hairline);
+}
+
+.field__hint--warn { color: var(--warning); }
+
+/* قائمة الحساب في الشريط العلوي (ليست قسماً) */
+.topbar__profile { position: relative; }
+.topbar__avatar { gap: 7px; }
+.menu {
+  position: absolute; inset-inline-end: 0; top: calc(100% + 7px); z-index: 40;
+  min-width: 196px; padding: 6px;
+  display: grid; gap: 2px;
+  background: var(--surface-raised); border: 1px solid var(--hairline);
+  border-radius: var(--r-md); box-shadow: var(--shadow-3);
+}
+.menu__item {
+  all: unset; cursor: pointer;
+  padding: 9px 11px; border-radius: var(--r-sm);
+  font: inherit; color: var(--ink-2); text-align: start;
+}
+.menu__item:hover, .menu__item:focus-visible { background: var(--graphite-3); color: var(--ink); }
+.menu__item:focus-visible { outline: 2px solid var(--violet-bright); outline-offset: -2px; }
+.menu__item--danger { color: var(--danger); }
+
+/* ════ الألعاب: بطاقات ════ */
+.grid--games { grid-template-columns: repeat(auto-fill, minmax(196px, 1fr)); }
+
+.gamecard { gap: 10px; }
+.gamecard__art {
+  position: relative; display: grid; place-items: center;
+  aspect-ratio: 16 / 9; border-radius: var(--r-md);
+  background:
+    radial-gradient(120% 120% at 18% 12%, color-mix(in srgb, var(--violet) 36%, transparent), transparent 62%),
+    radial-gradient(120% 120% at 86% 88%, color-mix(in srgb, var(--cyan) 26%, transparent), transparent 58%),
+    var(--graphite);
+  border: 1px solid var(--hairline);
+  overflow: hidden;
+}
+.gamecard__art::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(115deg, transparent 42%, color-mix(in srgb, var(--ink) 9%, transparent) 50%, transparent 58%);
+}
+.gamecard__icon { font-size: clamp(1.9rem, 7vw, 2.6rem); line-height: 1; filter: drop-shadow(0 6px 14px rgb(0 0 0 / 0.5)); }
+.gamecard--puzzle .gamecard__art { background: radial-gradient(120% 120% at 20% 10%, color-mix(in srgb, var(--cyan) 32%, transparent), transparent 60%), var(--graphite); }
+.gamecard--word .gamecard__art { background: radial-gradient(120% 120% at 20% 10%, color-mix(in srgb, var(--magenta) 24%, transparent), transparent 60%), var(--graphite); }
+.gamecard--quiz .gamecard__art { background: radial-gradient(120% 120% at 20% 10%, color-mix(in srgb, var(--gold) 22%, transparent), transparent 60%), var(--graphite); }
+
+/* ════ الألعاب: مسرح اللعب ════ */
+.game__title { display: flex; align-items: center; gap: 9px; margin: 0; }
+.game__stage { gap: 13px; }
+.game__status { margin: 0; color: var(--ink-2); font-size: 0.9rem; }
+.game__over { padding-top: 4px; border-top: 1px solid var(--hairline); }
+
+/* ════ الألعاب: اللوحات المرسومة ════ */
+.gboard {
+  --gcols: 3;
+  margin-inline: auto; width: 100%;
+  perspective: 900px;
+}
+.gboard--grid, .gboard--track {
+  display: grid;
+  grid-template-columns: repeat(var(--gcols), minmax(0, 1fr));
+  gap: clamp(3px, 1.1vw, 7px);
+  max-width: min(100%, 560px);
+  padding: clamp(6px, 2vw, 12px);
+  border-radius: var(--r-lg);
+  background:
+    radial-gradient(130% 110% at 50% -10%, color-mix(in srgb, var(--violet) 15%, transparent), transparent 62%),
+    var(--graphite);
+  border: 1px solid var(--hairline);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--ink) 7%, transparent), var(--shadow-2);
+  transform-style: preserve-3d;
+}
+
+.gcell {
+  position: relative;
+  display: grid; place-items: center;
+  aspect-ratio: 1 / 1; min-width: 0;
+  border-radius: var(--r-sm);
+  background: linear-gradient(180deg, var(--graphite-3), var(--graphite-2));
+  border: 1px solid var(--hairline);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--ink) 8%, transparent), 0 2px 0 color-mix(in srgb, #000 55%, transparent);
+  color: var(--ink);
+  font-size: clamp(0.8rem, 4.4vw, 1.5rem);
+  line-height: 1;
+  transition: transform var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease), background var(--t-fast) var(--ease);
+}
+.gcell__face { pointer-events: none; }
+
+/* خلية قابلة للنقر: زر حقيقي يرتفع عند التمرير/التركيز */
+button.gcell { all: unset; cursor: pointer; }
+button.gcell {
+  display: grid; place-items: center;
+  aspect-ratio: 1 / 1; min-width: 0;
+  border-radius: var(--r-sm);
+  background: linear-gradient(180deg, var(--graphite-3), var(--graphite-2));
+  border: 1px solid var(--hairline);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--ink) 8%, transparent), 0 2px 0 color-mix(in srgb, #000 55%, transparent);
+  color: var(--ink);
+  font-size: clamp(0.8rem, 4.4vw, 1.5rem);
+  line-height: 1;
+  /* هدف لمس مريح على الهاتف */
+  min-height: 38px;
+  transition: transform var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease);
+}
+.gcell.is-playable:hover { transform: translateY(-2px); box-shadow: var(--glow-violet), 0 6px 0 color-mix(in srgb, #000 55%, transparent); }
+.gcell.is-playable:focus-visible { outline: 2px solid var(--violet-bright); outline-offset: 2px; }
+.gcell.is-playable:active { transform: translateY(0); }
+
+/* أصناف الخلايا من المحرّك */
+.gcell--empty { color: var(--ink-4); background: linear-gradient(180deg, var(--graphite-2), var(--graphite)); }
+.gcell--x { color: var(--violet-bright); }
+.gcell--o { color: var(--cyan); }
+.gcell--color { background: var(--cell-color, var(--graphite-3)); color: #07060c; font-weight: 700; }
+
+/* إبراز الخط الفائز وآخر حركة */
+.gcell.is-hl {
+  border-color: color-mix(in srgb, var(--gold) 55%, transparent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--gold) 45%, transparent), 0 8px 24px -10px color-mix(in srgb, var(--gold) 55%, transparent);
+}
+.gcell.is-pop { animation: gpop var(--t-base) var(--ease-out); }
+@keyframes gpop {
+  from { transform: scale(0.84); }
+  to { transform: scale(1); }
+}
+
+/* لوحة سطرية: نصّ منسَّق لا JSON */
+.gboard--lines {
+  display: grid; gap: 3px;
+  padding: clamp(10px, 2.4vw, 15px);
+  border-radius: var(--r-lg);
+  background: var(--graphite); border: 1px solid var(--hairline);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--ink) 6%, transparent);
+  font-family: var(--font-mono);
+  font-size: clamp(0.76rem, 3.2vw, 0.95rem);
+  overflow-x: auto;
+}
+.gline { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; color: var(--ink-2); }
+.gline strong { color: var(--ink); }
+.gline s { color: var(--ink-4); }
+.gline--empty { min-height: 1.2em; }
+
+/* مسار السلّم والثعبان */
+.gcell--track { font-size: clamp(0.5rem, 2.1vw, 0.72rem); align-content: center; gap: 1px; }
+.gcell__num { color: var(--ink-4); font-family: var(--font-mono); }
+.gcell__jump { font-size: 0.9em; }
+.gcell--track.is-ladder { border-color: color-mix(in srgb, var(--success) 45%, transparent); color: var(--success); }
+.gcell--track.is-snake { border-color: color-mix(in srgb, var(--danger) 45%, transparent); color: var(--danger); }
+.gcell--track.is-occupied { box-shadow: var(--glow-cyan); }
+.gcell__tokens { font-size: 1.1em; }
+
+/* ════ التنزيلات ════ */
+.dl__composer { gap: 13px; }
+.dl__inputrow { gap: 8px; flex-wrap: wrap; }
+.dl__inputrow .input { flex: 1 1 200px; min-width: 0; }
+.dl__text { white-space: pre-wrap; overflow-wrap: anywhere; }
+
+.dl__items { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.dl__item {
+  display: grid; gap: 8px;
+  padding: 12px; border-radius: var(--r-md);
+  background: var(--graphite); border: 1px solid var(--hairline);
+}
+.dl__itemhead { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.dl__itemtitle { color: var(--ink); overflow-wrap: anywhere; }
+.dl__meta { color: var(--ink-3); }
+
+/* ════ البحث ════ */
+.sr__bar { gap: 8px; flex-wrap: wrap; }
+.sr__bar .input { flex: 1 1 220px; min-width: 0; }
+
+.sr__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.sr__hit { display: grid; gap: 6px; }
+.sr__title {
+  color: var(--violet-bright); font-weight: 600; text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.sr__title:hover, .sr__title:focus-visible { text-decoration: underline; }
+.sr__domain { color: var(--cyan); font-size: 0.78rem; overflow-wrap: anywhere; }
+.sr__snippet { margin: 0; color: var(--ink-2); font-size: 0.9rem; overflow-wrap: anywhere; }
+
+/* ════ البوتات الفرعية ════ */
+.sb__install { gap: 11px; }
+.sb__pairing { gap: 11px; }
+.sb__code {
+  gap: 9px; padding: 13px; border-radius: var(--r-md);
+  background:
+    radial-gradient(120% 120% at 50% 0%, color-mix(in srgb, var(--violet) 16%, transparent), transparent 64%),
+    var(--graphite);
+  border: 1px solid color-mix(in srgb, var(--violet) 32%, transparent);
+}
+.sb__codevalue {
+  font-family: var(--font-mono);
+  font-size: clamp(1.3rem, 7vw, 2rem);
+  font-weight: 700; letter-spacing: 0.14em;
+  color: var(--ink);
+  /* قابل للتحديد يدوياً حين تُحجب الحافظة */
+  user-select: all;
+  overflow-wrap: anywhere;
+}
+
+/* ════ شاشات ضيقة: 320px بلا تجاوز أفقي ════ */
+@media (max-width: 560px) {
+  .gboard--grid, .gboard--track { padding: 6px; gap: 3px; }
+  .list__row { padding: 10px 11px; }
+  .menu { min-width: 172px; }
+}

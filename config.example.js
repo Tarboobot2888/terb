@@ -454,6 +454,34 @@ const config = {
     allowSignupOnFirstLogin: true,
   },
 
+  // ═══════════════════════════════════════════════
+  // 🦾 محرّك OpenClaw (خدمة مستقلة عبر Gateway)
+  // ───────────────────────────────────────────────
+  // OpenClaw يعمل **عملية/حاوية منفصلة** بـNode مدعوم (>=24.16 أو >=26.1)،
+  // ويتصل به Terboo عبر بروتوكول Gateway الرسمي (WebSocket إصدار 4) بحزمة
+  // @openclaw/gateway-client المثبّتة. لا نسخة ثانية من Baileys ولا اتصال
+  // واتساب ثانٍ لنفس الحساب من داخل OpenClaw.
+  //
+  // التفعيل يحتاج ثلاثة أشياء مجتمعة، وإلا بقي معطَّلاً وأعلن ذلك بصدق:
+  //   enabled: true  +  url صالح على شبكة خاصة  +  مفتاح موجود.
+  // متغيّرات البيئة تتغلّب: OPENCLAW_ENABLED · OPENCLAW_GATEWAY_URL ·
+  // OPENCLAW_GATEWAY_TOKEN · OPENCLAW_AGENT_ID.
+  // ═══════════════════════════════════════════════
+  openclaw: {
+    enabled: false, // لا يُفعَّل إلا بعد نشر Gateway فعلي واختباره
+    // loopback أو شبكة خاصة فقط. منفذ Gateway لا يُنشر على الإنترنت العام.
+    url: "", // مثال: ws://127.0.0.1:7777
+    // اسم متغيّر البيئة الذي يحمل مفتاح الخدمة (الأفضل) — أو ضع المفتاح في token.
+    tokenEnv: "OPENCLAW_GATEWAY_TOKEN",
+    token: "", // بديل عن البيئة؛ لا يُعاد في أي API ولا يُسجَّل
+    agentId: "", // الوكيل المختار في OpenClaw (فارغ ⇒ افتراضي الـGateway)
+    requestTimeoutMs: 60000,
+    scopes: [], // نطاقات محدودة للعميل (فارغ ⇒ افتراضي الـGateway)
+    // منع افتراضي: أدوات Terboo التي يُسمح لـOpenClaw نداؤها، بالمعرّف.
+    // أداة المالك أو التي تحتاج سياق واتساب تُرفَض حتى لو أُدرجت هنا.
+    exposeTerbooTools: [],
+  },
+
   webSessions: {
     kimi: process.env.KIMI_SESSION_ID || "",
     monica: process.env.MONICA_SESSION_ID || "",

@@ -18,7 +18,7 @@ import { CATALOG, isOpen } from "../../lib/terboo-scraper-registry.js";
 import { NetGuardError, checkUrl } from "../../lib/terboo-net-guard.js";
 import { apiError } from "../errors.js";
 import { run as runTool } from "./tool-service.js";
-import { myTasks, startTask } from "./task-service.js";
+import { myTask, myTasks, startTask } from "./task-service.js";
 
 /**
  * مُشغّل الأدوات الحقيقي (tool-service.run). قابل للحقن في الاختبارات وحدها
@@ -186,24 +186,77 @@ async function fetchWithChain({ principal, target, scraperId = "", lang = "ar", 
   };
 }
 
-/** مهمة تنزيل خلفية على الطابور الحقيقي؛ التتابع عبر /me/tasks/:id */
+/**
+ * نواتج المهام المكتملة: taskId ⇒ {canonical, outcome}.
+ * الطابور يحفظ ملخّصاً نصّياً فقط (snapshot بلا كائنات خام)، فتبقى النتيجة
+ * الكاملة هنا في الذاكرة مع مالكها، بسقف وعمر محدودين، وتُقرأ بعد التحقق
+ * من ملكية المهمة نفسها. لا تُكتب على القرص ولا تخرج لغير مالكها.
+ */
+const outcomes = new Map();
+const OUTCOME_TTL_MS = 30 * 60_000;
+const OUTCOME_CAP = 200;
+
+function rememberOutcome(taskId, canonical, outcome) {
+  if (!taskId) return;
+  outcomes.set(String(taskId), { canonical, outcome, at: Date.now() });
+  // تنظيف: الأقدم أولاً حين يُتجاوز السقف، ومحو ما انتهى عمره
+  const now = Date.now();
+  for (const [key, row] of outcomes) {
+    if (now - row.at > OUTCOME_TTL_MS) outcomes.delete(key);
+  }
+  while (outcomes.size > OUTCOME_CAP) {
+    const oldest = outcomes.keys().next().value;
+    if (oldest === undefined) break;
+    outcomes.delete(oldest);
+  }
+}
+
+/** مهمة تنزيل خلفية على الطابور الحقيقي؛ التتابع عبر /downloads/jobs/:taskId */
 function startDownloadJob({ principal, target, scraperId = "", lang = "ar" }) {
   const label = `${target.platform || target.host}`;
+  // الحامل يربط النتيجة بمعرّف المهمة حتى لو انتهى التنفيذ قبل عودة startTask
+  const holder = { id: "", outcome: null };
   const task = startTask({
     principal,
     type: `web.download:${target.platform || "link"}`,
     title: label,
     tool: scraperId || target.scrapers[0] || "",
     timeoutMs: 120_000,
-    run: async ({ signal } = {}) => fetchWithChain({ principal, target, scraperId, lang, signal }),
+    run: async ({ signal } = {}) => {
+      const out = await fetchWithChain({ principal, target, scraperId, lang, signal });
+      if (holder.id) rememberOutcome(holder.id, principal.canonical, out);
+      else holder.outcome = out;
+      return out;
+    },
   });
+  holder.id = task.id;
+  if (holder.outcome) {
+    rememberOutcome(task.id, principal.canonical, holder.outcome);
+    holder.outcome = null;
+  }
   return {
     taskId: task.id,
     status: task.status,
     platform: target.platform,
     // يُبنى من أجزاء: مسار API ثابت وليس نصاً معروضاً للمستخدم
-    poll: ["/api/v1/me/tasks", task.id].join("/"),
+    poll: ["/api/v1/downloads/jobs", task.id].join("/"),
   };
+}
+
+/**
+ * حالة مهمة تنزيل + نتيجتها الكاملة.
+ * الملكية تُفحص عبر myTask (يرمي 404 لغير المالك) ثم تُطابَق على سجل النتيجة.
+ */
+function jobOutcome(principal, taskId) {
+  const task = myTask(principal, taskId);
+  const row = outcomes.get(String(taskId));
+  const owned = row && row.canonical === principal.canonical;
+  return { task, outcome: owned ? row.outcome : null };
+}
+
+/** للاختبارات: تصفير سجل النواتج */
+function _resetOutcomes() {
+  outcomes.clear();
 }
 
 /** تاريخ تنزيلات هذا المستخدم من الطابور نفسه (بلا سجل ثانٍ) */
@@ -215,9 +268,11 @@ function downloadHistory(principal, { limit = 20 } = {}) {
 
 export {
   HOST_PLATFORM,
+  _resetOutcomes,
   _setToolRunner,
   downloadHistory,
   fetchWithChain,
+  jobOutcome,
   platformCatalog,
   platformOfHost,
   resolveTarget,

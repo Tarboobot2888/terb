@@ -300,9 +300,14 @@ function getTask(id) {
 }
 
 /** الواجهة القديمة: الحالة الحيّة فقط (null بعد التنظيف) */
+/**
+ * حالة مهمة واحدة — نفس صورة snapshot() التي تعيدها listTasks.
+ * كانت تعيد حقولاً مختصرة بلا `scope` ولا `title` ولا `summary`، فكان أي فحص
+ * ملكية بالنطاق (task-service.myTask) يفشل دائماً ويعيد 404 لصاحب المهمة نفسه.
+ */
 function getTaskStatus(id) {
   const task = tasks.get(id);
-  return task ? { id: task.id, type: task.type, owner: task.owner, status: task.status, error: task.error || null, createdAt: task.createdAt, startedAt: task.startedAt || null, finishedAt: task.finishedAt || null, progress: task.progress, priority: task.priority } : null;
+  return task ? snapshot(task) : null;
 }
 
 /** مهام شخص في نطاق (حيّة + محفوظة)، الأحدث أولاً */

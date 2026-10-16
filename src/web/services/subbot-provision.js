@@ -21,6 +21,7 @@
 // ═══════════════════════════════════════════════
 
 import crypto from "node:crypto";
+import { noteFailure } from "../../lib/terboo-failure-log.js";
 import { apiError } from "../errors.js";
 import { consume } from "./rate-limit-service.js";
 import { identityFromCanonical, maskPhone } from "./identity-service.js";
@@ -292,7 +293,15 @@ async function cancelProvision({ principal, sessionId, requestId }) {
       if (!manager.isJadibotActive(`${rec.targetId}@s.whatsapp.net`)) {
         await manager.stopJadibot(`${rec.targetId}@s.whatsapp.net`, true);
       }
-    } catch { /* الإلغاء لا يفشل بسبب تنظيف جلسة غير موجودة */ }
+    } catch (error) {
+      // الإلغاء لا يفشل بسبب تعذّر التنظيف: الطلب يُلغى على أي حال، لكن تعذّر
+      // إيقاف جلسة اقتران معلّقة أمر يستحق التسجيل (قد يترك جلسة شاردة).
+      noteFailure("web-subbot", error, {
+        where: "src/web/services/subbot-provision.js:cancelProvision",
+        stage: "stopJadibot",
+        fallback: "request-cancelled-anyway",
+      });
+    }
   }
   rec.state = STATES.CANCELLED;
   rec.updatedAt = Date.now();

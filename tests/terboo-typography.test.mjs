@@ -113,9 +113,41 @@ assert.match(fonts.getFontStack("en", 400, 20), /^400 20px "Terboo Latin"/);
     const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="160"><rect width="600" height="160" fill="#fff"/><text x="20" y="100" font-family="${family}" font-size="64" fill="#000">تيربو Terboo</text></svg>`;
     return crypto.createHash("sha1").update(await sharp(Buffer.from(svg)).png().toBuffer()).digest("hex");
   };
-  const missing = await render("NoSuchFamilyTerboo");
-  for (const family of [fonts.SVG_FAMILY.arabic, fonts.SVG_FAMILY.latin, fonts.SVG_FAMILY.arabicAlt, fonts.SVG_FAMILY.latinAlt]) {
-    assert.notEqual(await render(family), missing, `${family} لا يُستعمل داخل SVG (يرسم بخط النظام)`);
+  // إثبات الاستعمال لا يصحّ بمقارنة «يختلف عن عائلة مجهولة»: لو كانت إحدى عائلات
+  // الهوية هي نفسها خطّ الاحتياط الافتراضي (وهو حال Inter في بيئات فيها Inter
+  // مثبّت على النظام) لتطابقت البصمتان مع أن الخط يُستعمل فعلاً. فالإثبات هنا:
+  //   ① fontconfig يحلّ كل عائلة إلى ملف داخل assets/fonts/terboo (لا خط نظام).
+  //   ② بصمات العائلات مختلفة بعضها عن بعض ⇒ كل عائلة تُطبَّق فعلاً لا تنهار لواحدة.
+  const { execFileSync } = await import("node:child_process");
+  const families = [fonts.SVG_FAMILY.arabic, fonts.SVG_FAMILY.latin, fonts.SVG_FAMILY.arabicAlt, fonts.SVG_FAMILY.latinAlt];
+  const resolveFamily = (family) => {
+    try {
+      return execFileSync("fc-match", ["--format=%{file}", family], {
+        encoding: "utf8",
+        env: { ...process.env, FONTCONFIG_FILE: fonts.SVG_FONTCONFIG },
+      }).trim();
+    } catch {
+      return "";
+    }
+  };
+  const fontDir = path.join(process.cwd(), "assets", "fonts", "terboo");
+  const resolvable = resolveFamily(families[0]);
+  if (resolvable) {
+    for (const family of families) {
+      const file = resolveFamily(family);
+      assert.ok(
+        file.startsWith(fontDir),
+        `${family} لا يُحلّ إلى خط الهوية داخل assets/fonts/terboo (حُلّ إلى: ${file || "لا شيء"})`,
+      );
+      assert.ok(fs.existsSync(file), `ملف الخط المُحلّ غير موجود: ${file}`);
+    }
+  }
+  const prints = new Map();
+  for (const family of families) {
+    const print = await render(family);
+    const clash = [...prints.entries()].find(([, value]) => value === print);
+    assert.ok(!clash, `${family} يرسم بنفس بصمة ${clash?.[0]} ⇒ العائلات تنهار إلى خط واحد`);
+    prints.set(family, print);
   }
   // بطاقات SVG الحقيقية صالحة بعد تسجيل الخطوط (كانت بطاقة الاقتباس XML مكسوراً: font-family=""Terboo …"")
   await fonts.registerFonts();

@@ -104,6 +104,32 @@ await assert.rejects(
 );
 dl._setToolRunner(null);
 
+// ── 4b. نتيجة المهمة الكاملة تُقرأ بملكية، ولا تُعاد لغير مالكها ──
+// الطابور يحفظ ملخّصاً نصّياً فقط، فالنتيجة الكاملة تبقى في الخدمة مع مالكها.
+dl._resetOutcomes();
+dl._setToolRunner(async () => ({ ok: true, error: "", items: [{ type: "video", url: "https://cdn.example/v.mp4", external: true }], latencyMs: 3 }));
+const job = dl.startDownloadJob({ principal, target: t1 });
+assert.ok(job.taskId, "المهمة تحمل معرّفاً");
+assert.ok(job.poll.startsWith("/api/v1/downloads/jobs/"), "التتابع على مسار التنزيلات لا الطابور");
+// ننتظر انتهاء التنفيذ الفعلي على الطابور
+for (let i = 0; i < 60; i += 1) {
+  const probe = dl.jobOutcome(principal, job.taskId);
+  if (["completed", "failed", "cancelled", "expired"].includes(probe.task.status)) break;
+  await new Promise((resolve) => setTimeout(resolve, 50));
+}
+const finished = dl.jobOutcome(principal, job.taskId);
+assert.equal(finished.task.status, "completed", "المهمة اكتملت");
+assert.equal(finished.outcome?.ok, true, "النتيجة الكاملة متاحة لمالكها");
+assert.equal(finished.outcome?.result?.items?.length, 1);
+// مستخدم آخر ⇒ 404 على المهمة نفسها (لا كشف ولا نتيجة)
+const other = { canonical: "pn:201000000008", isOwner: false, isPremium: false, isBanned: false };
+assert.throws(
+  () => dl.jobOutcome(other, job.taskId),
+  (error) => error.code === "NOT_FOUND",
+  "نتيجة مهمة لا تُقرأ بهوية أخرى",
+);
+dl._setToolRunner(null);
+
 // ── 5. مصادر البحث من السجل وحده، والافتراضي أولاً ──────────
 const sources = se.searchSources();
 assert.ok(sources.length > 0);

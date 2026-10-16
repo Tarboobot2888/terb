@@ -65,11 +65,16 @@ function plain(value, max) {
 
 /** اسم النطاق المعروض — من الرابط نفسه لا من نصّ النتيجة */
 function domainOf(url) {
+  let host = "";
   try {
-    return new URL(String(url)).hostname.replace(/^www\./i, "");
+    host = new URL(String(url)).hostname.replace(/^www\./i, "");
   } catch {
-    return "";
+    // الروابط تُفلتَر قبل هذا الموضع (http/https فقط)، فالوصول إلى هنا يعني
+    // رابطاً شاذّاً من مصدر خارجي: يُعرض بلا نطاق. لا سجل: بيانات طرف ثالث
+    // مشوّهة ليست إخفاقاً في Terboo، وتسجيلها لكل نتيجة ضجيج بلا فائدة.
+    host = "";
   }
+  return host;
 }
 
 /**

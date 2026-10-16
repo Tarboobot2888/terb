@@ -1,4 +1,6 @@
 // الجذر: splash ⇒ landing/login ⇒ التطبيق. التوجيه بالـhash (بلا راوتر خارجي).
+// الأقسام المرئية خمسة: الذكاء · الألعاب · التنزيلات · البحث · البوتات الفرعية.
+// الحساب ولوحة المالك يُفتحان من قائمة الحساب في الشريط العلوي لا كقسمين.
 import { useCallback, useEffect, useState } from "react";
 import { Splash } from "./components/Splash";
 import { Shell } from "./components/Shell";
@@ -6,23 +8,21 @@ import type { Route } from "./components/Shell";
 import { Toasts } from "./components/ui";
 import { Landing } from "./pages/Landing";
 import { Login } from "./pages/Login";
-import { Dashboard } from "./pages/Dashboard";
 import { AIWorkspace } from "./pages/AIWorkspace";
-import { Tools } from "./pages/Tools";
-import { Media } from "./pages/Media";
 import { Games } from "./pages/Games";
-import { Groups } from "./pages/Groups";
+import { Downloads } from "./pages/Downloads";
+import { Search } from "./pages/Search";
 import { SubBots } from "./pages/SubBots";
-import { Commands } from "./pages/Commands";
 import { Account } from "./pages/Account";
 import { Owner } from "./pages/Owner";
 import { useApp } from "./lib/store";
 
-const ROUTES: Route[] = ["dashboard", "ai", "tools", "media", "games", "groups", "subbots", "commands", "account", "owner"];
+const ROUTES: Route[] = ["ai", "games", "downloads", "search", "subbots", "account", "owner"];
+const DEFAULT_ROUTE: Route = "ai";
 
 const routeFromHash = (): Route => {
   const value = window.location.hash.replace(/^#\/?/, "");
-  return (ROUTES as string[]).includes(value) ? (value as Route) : "dashboard";
+  return (ROUTES as string[]).includes(value) ? (value as Route) : DEFAULT_ROUTE;
 };
 
 export function App() {
@@ -37,6 +37,8 @@ export function App() {
   });
   const [wantsLogin, setWantsLogin] = useState(false);
   const [route, setRoute] = useState<Route>(routeFromHash);
+  /** رابط يُرسل من البحث إلى التنزيلات بنقرة صريحة من المستخدم */
+  const [handoffUrl, setHandoffUrl] = useState("");
 
   useEffect(() => {
     const onHash = () => setRoute(routeFromHash());
@@ -48,6 +50,11 @@ export function App() {
     window.location.hash = `#/${next}`;
     setRoute(next);
   }, []);
+
+  const sendToDownloads = useCallback((url: string) => {
+    setHandoffUrl(url);
+    go("downloads");
+  }, [go]);
 
   const finishSplash = useCallback(() => {
     try {
@@ -84,14 +91,11 @@ export function App() {
   return (
     <>
       <Shell route={route} onRoute={go}>
-        {route === "dashboard" ? <Dashboard onRoute={go} /> : null}
         {route === "ai" ? <AIWorkspace /> : null}
-        {route === "tools" ? <Tools /> : null}
-        {route === "media" ? <Media /> : null}
         {route === "games" ? <Games /> : null}
-        {route === "groups" ? <Groups /> : null}
+        {route === "downloads" ? <Downloads initialUrl={handoffUrl} /> : null}
+        {route === "search" ? <Search onSendToDownloads={sendToDownloads} /> : null}
         {route === "subbots" ? <SubBots /> : null}
-        {route === "commands" ? <Commands /> : null}
         {route === "account" ? <Account /> : null}
         {route === "owner" ? <Owner /> : null}
       </Shell>

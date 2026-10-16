@@ -1,7 +1,7 @@
 // مركز التنزيلات: كتالوج منصات حقيقي · فحص رابط · مهمة خلفية · تاريخ.
 // التشغيل يمرّ على tool-service (صلاحيات · SSRF · حدود · مهلة) والطابور الحقيقي.
 import { requirePermission } from "../../services/permission-service.js";
-import { downloadHistory, platformCatalog, resolveTarget, startDownloadJob } from "../../services/download-service.js";
+import { downloadHistory, jobOutcome, platformCatalog, resolveTarget, startDownloadJob } from "../../services/download-service.js";
 import { audit } from "../../services/audit-service.js";
 
 function register(router) {
@@ -33,6 +33,15 @@ function register(router) {
       outcome: "queued", requestId: ctx.requestId, details: { taskId: job.taskId, scraperId },
     });
     ctx.json(202, job);
+  });
+
+  /**
+   * حالة مهمة + نتيجتها الكاملة. الطابور يحفظ ملخّصاً نصّياً فقط، فالنتيجة
+   * الكاملة تُقرأ من خدمة التنزيل بعد التحقق من ملكية المهمة (404 لغير المالك).
+   */
+  router.get("/downloads/jobs/:taskId", (ctx) => {
+    requirePermission({ principal: ctx.principal, action: "web.task.read" });
+    ctx.json(200, jobOutcome(ctx.principal, ctx.params.taskId));
   });
 
   /** تاريخ تنزيلات هذا المستخدم (من الطابور نفسه، لا سجل ثانٍ) */
