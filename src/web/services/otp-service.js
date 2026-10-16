@@ -101,25 +101,69 @@ function codeMessage(code, lang = "ar") {
  * يرسل الرمز فعلاً عبر مقبس البوت.
  * @returns {Promise<{ok:boolean, reason?:string}>}
  */
+/**
+ * يحدّد المعرّف الذي **تؤكّده واتساب فعلاً** للرقم، لا المعرّف المشتقّ فقط.
+ * sock.onWhatsApp(number) يعيد [{ jid, exists }] — والـjid هو العنوان
+ * القابل للتسليم الرسمي. الإرسال إليه (لا إلى identity.sendable المشتقّ)
+ * يصلح أكثر حالة «أرسله البوت لكن لم يصل»: اختلاف الصيغة/الـLID يجعل
+ * sendMessage ينجح بينما الرسالة تذهب إلى معرّف لا يستقبلها.
+ * @returns {Promise<{ jid:string, confirmed:boolean }|{ absent:true }|null>}
+ */
+async function resolveWhatsAppTarget(sock, identity) {
+  if (typeof sock.onWhatsApp !== "function") return { jid: identity.sendable, confirmed: false };
+  try {
+    // نجرّب الرقم المجرّد والصيغة الكاملة؛ واتساب يقبل أياً منهما ويعيد الـjid الرسمي
+    const found = await sock.onWhatsApp(identity.digits) || await sock.onWhatsApp(identity.sendable);
+    const list = Array.isArray(found) ? found : found ? [found] : [];
+    const hit = list.find((entry) => entry && entry.exists !== false && entry.jid);
+    if (hit?.jid) return { jid: String(hit.jid), confirmed: true };
+    // نتيجة صريحة بأن الرقم غير موجود على واتساب
+    if (list.length && list.every((entry) => entry && entry.exists === false)) return { absent: true };
+    // قائمة فارغة من onWhatsApp = الرقم غير مسجّل على واتساب
+    if (Array.isArray(found) && found.length === 0) return { absent: true };
+  } catch (error) {
+    // تعذّر الفحص (شبكة) ⇒ نحاول بالمعرّف المشتقّ بدل إسقاط الطلب كلياً
+    noteFailure("web-otp", error, { where: "src/web/services/otp-service.js:resolveWhatsAppTarget", stage: "onWhatsApp", fallback: "derived-jid" });
+  }
+  return { jid: identity.sendable, confirmed: false };
+}
+
 async function deliverCode(identity, code, lang) {
   const sock = await currentSocket();
   if (!sock) return { ok: false, reason: "bot-offline" };
 
-  // الرقم موجود على واتساب فعلاً؟ تحقّق رسمي قبل الإرسال.
-  // تعذُّر الفحص لا يُسقط المحاولة (قد تمنعه حالة الشبكة)، لكن غياباً مؤكداً يُوقفها.
-  try {
-    if (typeof sock.onWhatsApp === "function") {
-      const found = await sock.onWhatsApp(identity.sendable);
-      const hit = Array.isArray(found) ? found[0] : found;
-      if (hit && hit.exists === false) return { ok: false, reason: "not-on-whatsapp" };
-    }
-  } catch (error) {
-    noteFailure("web-otp", error, { where: "src/web/services/otp-service.js:deliverCode", stage: "onWhatsApp", fallback: "attempt-send" });
-  }
+  const target = await resolveWhatsAppTarget(sock, identity);
+  if (target?.absent) return { ok: false, reason: "not-on-whatsapp" };
+  const to = target?.jid || identity.sendable;
 
-  const outcome = await transportSend(sock, identity.sendable, { text: codeMessage(code, lang) });
+  // نرسل إلى المعرّف الذي أكّدته واتساب (أو المشتقّ عند تعذّر الفحص)
+  const outcome = await transportSend(sock, to, { text: codeMessage(code, lang) });
   if (!outcome?.ok) return { ok: false, reason: "delivery-failed" };
   return { ok: true };
+}
+
+/**
+ * تشخيص تسليم الدخول للمالك — يرسل **رسالة اختبار** (لا رمزاً) إلى رقم
+ * ويعيد ما حدث فعلاً، بلا طباعة أي رمز. يكشف السبب حين «لا يصل الرمز».
+ * @returns {Promise<{ ok:boolean, reason:string, maskedTarget:string, confirmed:boolean }>}
+ */
+async function diagnoseDelivery(identity, lang = "ar") {
+  const sock = await currentSocket();
+  if (!sock) return { ok: false, reason: "bot-offline", maskedTarget: "", confirmed: false };
+  const target = await resolveWhatsAppTarget(sock, identity);
+  if (target?.absent) return { ok: false, reason: "not-on-whatsapp", maskedTarget: "", confirmed: false };
+  const to = target?.jid || identity.sendable;
+  const masked = `…${String(to).replace(/\D/g, "").slice(-4)}`;
+  const text = lang === "en"
+    ? "Bot Terboo Web — delivery test. If you see this, sign-in codes will reach you here."
+    : "اختبار تسليم Bot Terboo Web. لو وصلتك هذه الرسالة فرمز الدخول سيصلك هنا.";
+  try {
+    const outcome = await transportSend(sock, to, { text });
+    return { ok: Boolean(outcome?.ok), reason: outcome?.ok ? "sent" : (outcome?.error || "delivery-failed"), maskedTarget: masked, confirmed: Boolean(target?.confirmed) };
+  } catch (error) {
+    noteFailure("web-otp", error, { where: "src/web/services/otp-service.js:diagnoseDelivery", stage: "send" });
+    return { ok: false, reason: "delivery-failed", maskedTarget: masked, confirmed: Boolean(target?.confirmed) };
+  }
 }
 
 /**
@@ -241,4 +285,4 @@ function _resetChallenges() {
   sweeper = null;
 }
 
-export { _resetChallenges, codeMessage, generateCode, otpStats, phoneKey, requestCode, setSocketProvider, verifyCode };
+export { _resetChallenges, codeMessage, diagnoseDelivery, generateCode, otpStats, phoneKey, requestCode, resolveWhatsAppTarget, setSocketProvider, verifyCode };

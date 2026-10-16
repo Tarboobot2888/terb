@@ -1472,5 +1472,6 @@
   "The uploaded file is empty.": "الملف المرفوع فارغ.",
   "The file type is not supported.": "نوع الملف غير مدعوم.",
   "Executable files are not accepted.": "الملفات التنفيذية غير مقبولة.",
-  "The file extension does not match its real content.": "امتداد الملف لا يطابق محتواه الحقيقي."
+  "The file extension does not match its real content.": "امتداد الملف لا يطابق محتواه الحقيقي.",
+  "Bot Terboo Web — delivery test. If you see this, sign-in codes will reach you here.": "اختبار تسليم Bot Terboo Web. لو وصلتك هذه الرسالة فرمز الدخول سيصلك هنا."
 }

@@ -15,7 +15,7 @@
     "none": 461,
     "destructive": 27,
     "freeForm": 397,
-    "needsTarget": 116,
+    "needsTarget": 117,
     "needsMedia": 92,
     "declared": 0
   },
@@ -23328,7 +23328,7 @@
         "web",
         "sitio"
       ],
-      "usage": ".موقع [حالة|رابط|دومين <نطاق>|تحقق|شهادة|تشغيل|ايقاف]",
+      "usage": ".موقع [حالة|رابط|دومين <نطاق>|تحقق|شهادة|تشغيل|ايقاف|فحص <رقم>]",
       "buttonType": "none",
       "ui": {
         "eligible": false,
@@ -23337,7 +23337,7 @@
         "requiresText": true,
         "requiresLink": false,
         "requiresCode": false,
-        "requiresTarget": false,
+        "requiresTarget": true,
         "requiresMedia": false,
         "requiresReply": false,
         "destructive": false,
@@ -23356,10 +23356,10 @@
         "source": "derived"
       },
       "permission": "owner",
-      "target": false,
+      "target": true,
       "destructive": false,
       "freeForm": true,
-      "expectedResponse": "text-or-card"
+      "expectedResponse": "action-result"
     },
     {
       "command": "نسخ_احتياطي",

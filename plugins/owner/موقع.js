@@ -17,7 +17,7 @@ const pluginConfig = {
   alias: ["website", "web", "sitio"],
   category: "owner",
   description: "حالة منصة Bot Terboo Web وإعداد الدومين والشهادة والرابط",
-  usage: ".موقع [حالة|رابط|دومين <نطاق>|تحقق|شهادة|تشغيل|ايقاف]",
+  usage: ".موقع [حالة|رابط|دومين <نطاق>|تحقق|شهادة|تشغيل|ايقاف|فحص <رقم>]",
   example: ".موقع حالة",
   isOwner: true,
   cooldown: 3,
@@ -33,6 +33,8 @@ const SUB = {
   tls: ["شهادة", "تشفير", "tls", "ssl", "certificado"],
   enable: ["تشغيل", "فعل", "enable", "on", "activar"],
   disable: ["ايقاف", "إيقاف", "تعطيل", "disable", "off", "desactivar"],
+  // تشخيص تسليم رمز الدخول: يرسل رسالة اختبار (لا رمزاً) إلى رقم ويقول ماذا حدث
+  otptest: ["فحص", "تشخيص", "اختبار", "otptest", "otp-test", "diagnose", "test", "probar"],
 };
 
 function subcommandOf(token) {
@@ -217,6 +219,44 @@ async function handler(m, { text }) {
       UI.row("المنفذ", String(site.port), lang),
       UI.row("الحالة", stateLabel(status.state, lang), lang),
       UI.row("الرابط", status.url || "—", lang),
+    ], { lang }));
+  }
+
+  // ── تشخيص تسليم رمز الدخول ──
+  if (sub === "otptest") {
+    const raw = rest.join(" ").trim();
+    if (!raw) {
+      return m.reply(UI.infoCard("فحص تسليم الدخول", [
+        "يرسل رسالة اختبار (بلا رمز) إلى رقم ويخبرك هل تصل فعلاً.",
+        "",
+        "الاستخدام: .موقع فحص +201012345678",
+        "اكتب رقمك أنت لتتأكد أن رمز الدخول سيصلك.",
+      ], { lang }));
+    }
+    const { identityFromInput } = await import("../../src/web/services/identity-service.js");
+    const { diagnoseDelivery } = await import("../../src/web/services/otp-service.js");
+    const identity = identityFromInput(raw);
+    if (!identity) {
+      return m.reply(UI.errorCard("رقم غير صالح", ["اكتب الرقم بالصيغة الدولية، مثل +201012345678."], { lang }));
+    }
+    const result = await diagnoseDelivery(identity, lang);
+    if (result.ok) {
+      return m.reply(UI.successCard("التسليم يعمل", [
+        "أُرسلت رسالة اختبار بنجاح — افتح واتساب وتأكد من وصولها.",
+        UI.row("الهدف", result.maskedTarget, lang),
+        UI.row("مؤكَّد من واتساب", result.confirmed ? "نعم" : "لا (أُرسل بالمعرّف المشتقّ)", lang),
+        "",
+        "إن لم تصلك الرسالة رغم «أُرسلت»: الرقم قد لا يقبل رسالة أولى من البوت، أو هو رقم البوت نفسه (إرسال لنفسه).",
+      ], { lang }));
+    }
+    const reasons = {
+      "bot-offline": "اتصال واتساب غير متاح الآن — تأكد أن البوت متصل.",
+      "not-on-whatsapp": "هذا الرقم غير موجود على واتساب (onWhatsApp أكّد غيابه).",
+      "delivery-failed": "فشل الإرسال فعلياً — راجع سجل [transport] / [web-otp].",
+    };
+    return m.reply(UI.errorCard("التسليم لا يعمل", [
+      UI.row("السبب", reasons[result.reason] || result.reason, lang),
+      result.maskedTarget ? UI.row("الهدف", result.maskedTarget, lang) : "",
     ], { lang }));
   }
 
