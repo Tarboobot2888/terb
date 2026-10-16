@@ -134,11 +134,14 @@ async function subbotSummary() {
     for (const session of stored.slice(0, 10)) {
       const live = manager.getJadibotStatus(session.jid);
       if (session.isActive) active += 1;
+      const follow = String(live?.channelFollow || "pending");
       const state = !session.isActive
         ? "متوقف"
-        : live?.followedChannel ? "متصل ومتابع للقناة"
-        : live?.connectionReady ? "متصل"
-        : "قيد الاتصال";
+        : !live?.connectionReady ? "قيد الاتصال"
+        : follow === "followed" ? "متصل ومتابع للقناة"
+        : follow === "failed" ? "متصل · تعذّرت متابعة القناة"
+        : follow === "skipped" ? "متصل · المتابعة معطَّلة"
+        : "متصل · جاري متابعة القناة";
       rows.push(`${maskPhone(String(session.id || "").replace(/\D/g, ""))} · ${state}`);
     }
     return { active, stored: stored.length, max: manager.MAX_JADIBOT_COUNT ?? 5, rows };

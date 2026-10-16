@@ -130,7 +130,11 @@ async function reconcile(rec) {
   if (live && live.connectionReady) {
     rec.hasLiveSession = true;
     wipeCode(rec); // الرمز لم يعد لازماً بعد الاتصال
-    rec.state = live.followedChannel ? STATES.READY : STATES.CONNECTED;
+    // جاهز فقط بعد أن تستقرّ مرحلة متابعة القناة (نجحت أو فشلت أو تُخطّيت).
+    // فشل المتابعة لا يمنع الجاهزية، لكنه لا يُقدَّم نجاحاً أيضاً.
+    const follow = String(live.channelFollow || "pending");
+    rec.channelFollow = follow;
+    rec.state = follow === "pending" ? STATES.FOLLOWING_CHANNEL : STATES.READY;
     rec.updatedAt = now;
     return rec;
   }
@@ -157,6 +161,8 @@ function view(rec) {
     label: INSTALL_LABEL,
     maskedTarget: rec.maskedTarget,
     expiresInSeconds: fresh ? Math.max(0, Math.ceil((rec.codeExpiresAt - now) / 1000)) : 0,
+    // حالة متابعة القناة الحقيقية (pending/followed/failed/skipped) أو "" قبل الاتصال
+    channelFollow: rec.channelFollow || "",
     // الرمز للطالب الموثَّق وحده، وفقط ضمن نافذة العرض
     code: fresh ? rec.code : undefined,
     copyCode: fresh ? rec.copyCode : undefined,
@@ -230,6 +236,7 @@ async function startProvision({ principal, sessionId, ip }) {
     copyCode: null,
     codeExpiresAt: 0,
     hasLiveSession: false,
+    channelFollow: "",
     createdAt: Date.now(),
     updatedAt: Date.now(),
   };

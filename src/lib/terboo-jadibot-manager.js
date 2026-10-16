@@ -502,7 +502,8 @@ async function startJadibot(sock, m, userJid, usePairing = true, isRetry = false
         ownerJid: m?.sender || userJid,
         status: "متصل",
         connectionReady: true,
-        followedChannel: false,
+        // حالة متابعة القناة الحقيقية: pending → followed/failed/skipped
+        channelFollow: "pending",
         pendingMessages: [],
       });
 
@@ -524,23 +525,28 @@ async function startJadibot(sock, m, userJid, usePairing = true, isRetry = false
       addJadibotOwner(id, m?.sender || userJid);
 
       // متابعة قناة واتساب المُعرّفة مرة واحدة بعد اتصال البوت الفرعي (نفس سلوك المقبس الرئيسي).
+      // الحالة الحقيقية تُحفَظ كما هي ولا تُقدَّم المحاولة نجاحاً:
+      //   pending ⇒ جارية · followed ⇒ نجحت · failed ⇒ فشلت · skipped ⇒ معطَّلة/غير مدعومة.
       // الفشل لا يمنع الجاهزية: البوت يعمل حتى لو تعذّرت المتابعة.
       (async () => {
         const saluranId = config.saluran?.id;
         const autoFollow = config.saluran?.autoFollow !== false;
-        if (!autoFollow || !saluranId || typeof childSock.newsletterFollow !== "function") return;
-        try {
-          await Promise.race([
-            childSock.newsletterFollow(saluranId),
-            new Promise((_, reject) => setTimeout(() => reject(new Error("timeout")), 8000)),
-          ]);
-          logger.info("Jadibot", `تابع القناة: ${id}`);
-        } catch (error) {
-          noteFailure("jadibot-manager", error, { where: "src/lib/terboo-jadibot-manager.js:newsletterFollow", stage: "newsletterFollow" });
-        } finally {
-          const live = jadibotSessions.get(id);
-          if (live) live.followedChannel = true;
+        let outcome = "skipped";
+        if (autoFollow && saluranId && typeof childSock.newsletterFollow === "function") {
+          try {
+            await Promise.race([
+              childSock.newsletterFollow(saluranId),
+              new Promise((_, reject) => setTimeout(() => reject(new Error("timeout")), 8000)),
+            ]);
+            outcome = "followed";
+            logger.info("Jadibot", `تابع القناة: ${id}`);
+          } catch (error) {
+            outcome = "failed";
+            noteFailure("jadibot-manager", error, { where: "src/lib/terboo-jadibot-manager.js:newsletterFollow", stage: "newsletterFollow" });
+          }
         }
+        const live = jadibotSessions.get(id);
+        if (live) live.channelFollow = outcome;
       })();
 
       if (m?.chat) {
@@ -886,7 +892,8 @@ function getJadibotStatus(jid) {
     ownerJid: session.ownerJid,
     uptime: Date.now() - session.startedAt,
     connectionReady: Boolean(session.connectionReady),
-    followedChannel: Boolean(session.followedChannel),
+    // الحالة كما هي: لا تُقدَّم محاولة فاشلة نجاحاً
+    channelFollow: String(session.channelFollow || "pending"),
   };
 }
 

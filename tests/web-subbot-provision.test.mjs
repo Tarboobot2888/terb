@@ -88,14 +88,25 @@ assert.equal(r2.requestId, reqId, "نفس الطلب للنقر المزدوج")
 assert.equal(pairingCalls, 1, "لا اقتران جديد عند النقر المزدوج");
 
 // ── 5. تقدّم الحالة: اتصال مفتوح ⇒ connected (والرمز يُمحى)، ثم ready بعد المتابعة ──
-liveStatus = { connectionReady: true, followedChannel: false };
+liveStatus = { connectionReady: true, channelFollow: "pending" };
 r = await prov.getProvision({ principal: A, sessionId: "sessA", requestId: reqId });
-assert.equal(r.state, "connected");
+assert.equal(r.state, "following-channel", "متابعة القناة جارية بعد فتح الاتصال");
+assert.equal(r.channelFollow, "pending");
 assert.equal(r.code, undefined, "الرمز يُمحى بعد فتح الاتصال");
-liveStatus = { connectionReady: true, followedChannel: true };
+
+liveStatus = { connectionReady: true, channelFollow: "followed" };
 r = await prov.getProvision({ principal: A, sessionId: "sessA", requestId: reqId });
-assert.equal(r.state, "ready", "ready فقط بعد اتصال socket حقيقي + متابعة القناة");
+assert.equal(r.state, "ready", "ready فقط بعد اتصال socket حقيقي واستقرار المتابعة");
+assert.equal(r.channelFollow, "followed");
 assert.equal(r.code, undefined);
+
+// فشل المتابعة لا يمنع الجاهزية ولا يُقدَّم نجاحاً
+for (const outcome of ["failed", "skipped"]) {
+  liveStatus = { connectionReady: true, channelFollow: outcome };
+  r = await prov.getProvision({ principal: A, sessionId: "sessA", requestId: reqId });
+  assert.equal(r.state, "ready", `الجاهزية لا تتعطّل بـ${outcome}`);
+  assert.equal(r.channelFollow, outcome, "حالة المتابعة الحقيقية تُعاد كما هي");
+}
 
 // ── 6. انتهاء نافذة الرمز بلا اتصال ⇒ expired، بلا رمز ──
 fresh();
@@ -155,7 +166,10 @@ for (const line of loggerLines) {
 assert.ok(mgrSrc.includes("جاهز للتسليم الآمن"), "لوق بديل آمن بلا كود موجود");
 // المدير يعيد pairingCode ويكشف حقول الحالة الجديدة
 assert.ok(/return\s*\{\s*sock:\s*childSock,\s*pairingCode\s*\}/.test(mgrSrc), "startJadibot يعيد pairingCode");
-assert.ok(mgrSrc.includes("followedChannel") && mgrSrc.includes("connectionReady"), "getJadibotStatus يكشف حالة الاتصال/المتابعة");
+assert.ok(mgrSrc.includes("channelFollow") && mgrSrc.includes("connectionReady"), "getJadibotStatus يكشف حالة الاتصال/المتابعة");
+// المتابعة الفاشلة لا تُسجَّل نجاحاً في المدير
+assert.ok(/outcome = "followed"/.test(mgrSrc) && /outcome = "failed"/.test(mgrSrc), "المدير يميّز نجاح المتابعة من فشلها");
+assert.ok(!/followedChannel\s*=\s*true/.test(mgrSrc), "لا علم يُقدّم المحاولة نجاحاً");
 assert.ok(mgrSrc.includes("newsletterFollow"), "متابعة القناة عند الاتصال");
 
 console.log("✅ web-subbot-provision: نواة واحدة · رمز حقيقي من requestPairingCode · لا تسريب للرمز · ملكية في كل poll · idempotency · تهدئة · انتهاء · إلغاء · محو بعد الاتصال · TARBOOV6 وسم فقط");

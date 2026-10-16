@@ -72,6 +72,17 @@ provision.setManagerProvider(() => ({
   stopJadibot: async () => true,
 }));
 
+// التنزيلات والبحث: نحقن مُشغّل الأدوات (بلا شبكة خارجية في الاختبار)
+const downloadService = await import("../src/web/services/download-service.js");
+const searchService = await import("../src/web/services/search-service.js");
+downloadService._setToolRunner(async ({ toolId }) => (toolId === "tiktok"
+  ? { ok: false, error: "scraper_failed", items: [], latencyMs: 4 }
+  : { ok: true, error: "", title: "clip", items: [{ type: "video", url: "https://cdn.example/v.mp4", external: true, note: "", thumbnail: false }], latencyMs: 9 }));
+searchService._setToolRunner(async ({ input }) => ({
+  ok: true, error: "", latencyMs: 6, text: "",
+  items: [{ title: `نتيجة ${input.query}`, url: "https://ok.example/a", note: "مقتطف" }],
+}));
+
 // الخادم: نبنيه مباشرة حتى نستعمل مخزن مؤقت بدل data/web
 const { createWebServer } = await import("../src/web/http/server.js");
 const { buildRouter } = await import("../src/web/http/routes/index.js");
@@ -368,12 +379,85 @@ assert.equal(res.body.code, "WXYZ-7788");
 res = await bob.call("GET", "/subbots/pair/deadbeefdeadbeefdead");
 assert.equal(res.status, 404);
 // فتح الاتصال ⇒ connected والرمز يُمحى من الرد
-provLive = { connectionReady: true, followedChannel: false };
+provLive = { connectionReady: true, channelFollow: "pending" };
 res = await bob.call("GET", `/subbots/pair/${pairRequestId}`);
 assert.equal(res.status, 200);
-assert.equal(res.body.state, "connected");
+assert.equal(res.body.state, "following-channel");
 assert.equal(res.body.code, undefined, "لا رمز بعد فتح الاتصال");
 provLive = null;
+
+// ═══ ⑰-ب التنزيلات والبحث عبر HTTP حقيقي ═══
+// المنصات مشتقّة من السجل الحقيقي
+res = await bob.call("GET", "/downloads/platforms");
+assert.equal(res.status, 200);
+assert.ok(res.body.platforms.length >= 10, "منصات التنزيل من السجل");
+assert.ok(res.body.platforms.every((row) => row.scrapers.length > 0), "كل منصة لها أداة");
+
+// فحص رابط: منصة معروفة
+res = await bob.call("POST", "/downloads/resolve", { body: { url: "https://www.tiktok.com/@a/video/1" } });
+assert.equal(res.status, 200);
+assert.equal(res.body.target.platform, "tiktok");
+assert.equal(res.body.target.supported, true);
+
+// مضيف غير مدعوم ⇒ سبب صريح لا محاولة
+res = await bob.call("POST", "/downloads/resolve", { body: { url: "https://example.com/x" } });
+assert.equal(res.status, 200);
+assert.equal(res.body.target.supported, false);
+assert.equal(res.body.target.reason, "unsupported-host");
+
+// حماية SSRF على مستوى الـHTTP: loopback وميتاداتا وfile:// كلها مرفوضة
+for (const bad of ["http://127.0.0.1/x", "http://169.254.169.254/latest/meta-data", "file:///etc/passwd"]) {
+  res = await bob.call("POST", "/downloads/resolve", { body: { url: bad } });
+  assert.equal(res.status, 400, `رابط خطر لم يُرفض: ${bad}`);
+  assert.equal(res.body.error.code, "INVALID_INPUT");
+}
+
+// مهمة تنزيل حقيقية: 202 ثم متابعة حتى النتيجة الكاملة
+res = await bob.call("POST", "/downloads/jobs", { body: { url: "https://www.tiktok.com/@a/video/1" } });
+assert.equal(res.status, 202);
+assert.ok(res.body.taskId, "معرّف مهمة");
+assert.ok(res.body.poll.startsWith("/api/v1/downloads/jobs/"), "التتابع على مسار التنزيلات");
+const downloadTaskId = res.body.taskId;
+let jobBody = null;
+for (let attempt = 0; attempt < 80; attempt += 1) {
+  res = await bob.call("GET", `/downloads/jobs/${encodeURIComponent(downloadTaskId)}`);
+  assert.equal(res.status, 200);
+  jobBody = res.body;
+  if (["completed", "failed", "cancelled", "expired"].includes(jobBody.task.status)) break;
+  await new Promise((resolve) => setTimeout(resolve, 60));
+}
+assert.equal(jobBody.task.status, "completed", "المهمة اكتملت");
+assert.equal(jobBody.outcome.ok, true, "النتيجة الكاملة متاحة لمالكها");
+assert.equal(jobBody.outcome.result.items.length, 1);
+assert.deepEqual(jobBody.outcome.tried.map((row) => row.ok), [false, true], "البديل جُرّب بعد فشل المتخصّصة");
+
+// تاريخ التنزيلات من الطابور نفسه
+res = await bob.call("GET", "/downloads/history");
+assert.equal(res.status, 200);
+assert.ok(res.body.downloads.some((row) => row.id === downloadTaskId), "المهمة في التاريخ");
+
+// مصادر البحث حقيقية، والبحث يعيد بطاقات منقّحة
+res = await bob.call("GET", "/search/sources");
+assert.equal(res.status, 200);
+assert.ok(res.body.sources.length > 0, "مصادر بحث من السجل");
+res = await bob.call("POST", "/search", { body: { query: "قطط" } });
+assert.equal(res.status, 200);
+assert.equal(res.body.ok, true);
+assert.equal(res.body.results.length, 1);
+assert.equal(res.body.results[0].domain, "ok.example", "النطاق من الرابط");
+assert.equal(res.body.results[0].external, true);
+// مصدر مجهول ⇒ 404 · استعلام فارغ ⇒ 400
+res = await bob.call("POST", "/search", { body: { query: "x", source: "no-such" } });
+assert.equal(res.status, 404);
+res = await bob.call("POST", "/search", { body: { query: "   " } });
+assert.equal(res.status, 400);
+
+// زائر بلا جلسة لا يصل أي مسار من الجديد
+const stranger = client();
+for (const [method, routePath] of [["GET", "/downloads/platforms"], ["POST", "/downloads/resolve"], ["GET", "/search/sources"], ["POST", "/search"], ["GET", "/subbots"]]) {
+  res = await stranger.call(method, routePath, { body: method === "POST" ? {} : null });
+  assert.equal(res.status, 401, `مسار مكشوف بلا جلسة: ${method} ${routePath}`);
+}
 
 // ═══ ⑱ الحظر يسري على جلسة قائمة ═══
 const { getDatabase } = await import("../src/lib/terboo-database.js");
@@ -389,5 +473,5 @@ await new Promise((resolve) => server.close(resolve));
 // البيانات ومخزن الموقع تكتب بعد نهاية السكربت، وحذفه هنا يُنتج ضجيج ENOENT.
 store.flushWebStore();
 
-console.log("✅ web-api-integration: خادم حقيقي · دخول كامل بالرمز · ترويسات أمان · CSRF وفحص المصدر · منع تزوير الدور · IDOR على المحادثات والملفات والمهام · SSRF · حدود الجسم · لا تسريب مسار أو رمز · أوامر واتساب معلَنة غير قابلة للتشغيل · الحظر فوري");
+console.log("✅ web-api-integration: خادم حقيقي · دخول كامل بالرمز · ترويسات أمان · CSRF وفحص المصدر · منع تزوير الدور · IDOR على المحادثات والملفات والمهام · SSRF · حدود الجسم · لا تسريب مسار أو رمز · أوامر واتساب معلَنة غير قابلة للتشغيل · تنصيب بوت فرعي · تنزيلات بمهمة حقيقية وبديل · بحث ببطاقات منقّحة · الحظر فوري");
 process.exit(0);
